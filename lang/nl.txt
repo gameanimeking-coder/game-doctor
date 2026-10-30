@@ -1,0 +1,836 @@
+#name Nederlands
+e77b83c2 Speltest klaar: {n} scènes op {m} manieren gespeeld, {k} probleem/problemen gevonden tijdens het spelen.
+e9dd5680 Gekopieerd naar het klembord
+e00ac23f Soort
+764b4aa3 Hoe erg
+33446003 Scène
+44819483 Niets
+36c4a06f Bezig met controleren…
+ecab72e7 De spelmap / het hele spel
+95263aa8 De regel in het spelbestand (gemarkeerd)
+adac6937 Code
+4dc2eddf Gevonden met {app}. {n} probleem/problemen.
+6b21fb79 Over
+b8bb1461 Hoe komen spelers bij deze scène?
+d07d7afa Hoe komen spelers bij "{name}"?
+fa893d87 Schoon
+70440046 Opmerkingen
+1430f976 Waarschuwingen
+805e86a8 Fouten
+dcad8ee5 Codeweergave voorbereiden…
+7f2f6a15 Fout
+e9c45563 Waarschuwing
+2c924e30 Opmerking
+f4808ecd Spel openen…
+f6ab55dd Opnieuw controleren
+dd3fa3ce ▶ Speltest
+5e4797ea Herstelhulp
+4fa8cc86 Extra
+c47ae153 Help
+9d454f7c Geen spel geopend
+7869cc5c Ik bewerk in Twine
+db8da328 Ik bewerk het .html-bestand (Notepad++ enz.)
+20c7c552 Klaar
+26a93eac Een spelmap openen (Ren'Py, RPG Maker, Ink, ChoiceScript)…
+775b3ab8 Map met afbeeldingen en geluiden…
+cd9a3d88 Reservekopie van het spelbestand maken
+2505d3da Een regel testen voordat je hem wijzigt…
+3536c70a Vergelijken met een andere versie…
+080460a5 Een foutmelding voor de ontwikkelaar schrijven…
+0cbf16ea Rapport exporteren…
+490c3a52 Het spelbestand in de gaten houden en opnieuw controleren bij opslaan
+09e02e95 Problemen tonen die als bedoeld zijn gemarkeerd
+80f65544 Teksteditor…
+3a4dad84 Rondleiding volgen
+f996200a Lessen (F1)
+e5aaa5b5 Woordenlijst
+320067c6 Extra grote tekst
+07471db5 Kleurenblind-vriendelijke kleuren
+c2cebede Alle soorten
+1baa06b4 Probleem
+ced091e8 Scène / plek
+ea967600 Regel
+99a42316 Oplossing
+3cd62e5f Openen in mijn teksteditor
+a4f34926 Verbeterde regel kopiëren
+0973fd22 Zoektekst kopiëren
+28a1dc64 Ik heb het opgelost - controleer
+1a256c63 De ontwikkelaar laten weten
+b491a51b Tonen in codeweergave
+463e5e78 Markeren als bedoeld
+562107b8 Voorlezen
+e42bc527 Details kopiëren
+d7c5a824 Precies tonen zoals in het bestand opgeslagen (&lt;-codes)
+2314cd9a Het spel openen
+7a8e0cf0 Kies de spelmap
+ff10f24c Map met de afbeeldingen, geluiden en video's van het spel
+38e9a3e9 Spel: {path}     Map: {folder}
+24fc8907 Stoppen met voorlezen
+7335beba Niet meer gemarkeerd als bedoeld
+24fec833 Gemarkeerd als bedoeld - verborgen in de lijst (Extra > Problemen tonen die als bedoeld zijn gemarkeerd)
+615c9a3f {fmt} · {units} delen · {files} bestanden in map · {e} kapot, {w} waarschijnlijk kapot, {i} te controleren · {s} s
+f229a698 Codegezondheid: {n}% · {label}
+d8d62e38 Controle klaar
+dd3a39d8 Codegezondheid
+c6643b25 Schaal: 100% uitstekend · 90% heel goed · 80% goed · 70% redelijk · onder 70% werk nodig
+7e0056d2 Het is gebaseerd op hoeveel scènes problemen hebben en hoe ernstig die zijn.
+07c80477 Per soort
+45b733c9 Klik op een probleem in de lijst om de details te zien.
+525f61b6 Waar
+4090e818 Zo los je het op
+0b975974 Open je verhaal in Twine en open de passage "{name}".
+905dc77d Dezelfde naam staat ook op {n} andere regel(s): {lines}. Wijzig hem daar ook.
+3cfafb7c Publiceer het verhaal opnieuw (Build > Publish to File) en laad het spel opnieuw om te controleren.
+64cb91c6 Waar: {where}
+4383fcfd Wat er mis is: {text}
+07bddb04 Zo los je het op: {text}
+cf36743b Nu: {text}
+0cacfdc2 Wijzig in: {text}
+70fbdd39 Verbeterde regel gekopieerd. Selecteer in Twine de oude regel in passage "{name}" en plak.
+60eafc99 Verbeterde regel gekopieerd. Selecteer in je editor regel {n} en plak eroverheen.
+67a9f511 Zoektekst gekopieerd. Druk in je editor op Ctrl+F en plak hem.
+67c1b9a0 Het bestand is niet veranderd sinds de vorige controle. Heb je het opgeslagen?
+2693cf86 Vergelijk je regel nog eens met de regel "Wijzig in".
+1b930787 Open eerst een spel.
+9dbf0a77 Reservekopie opgeslagen: {path}
+88e09b05 (jouw tekst)
+e835a0e1 Foutmelding voor {game}
+338c5072 Technisch: {text}
+fc5e62a8 Instellingenbestand: {path}
+0f83a323 Het spelbestand wordt in de gaten gehouden. Elke keer dat je het opslaat, wordt het opnieuw gecontroleerd.
+24b5689b Gestopt met het in de gaten houden van het spelbestand.
+6bbf59c5 Speltest wordt gestopt…
+c5726162 Voor de speltest is Microsoft Edge of Google Chrome nodig, en geen van beide is gevonden.
+efe69072 Het spel is tijdens de speltest veranderd. Start hem opnieuw.
+4e1a8e3c Geen problemen
+59cd52ee Het bekijken waard
+80c66d73 Waarschijnlijk kapot
+3ad465ce Kapot
+8ea8e60f Regel {n}: geen problemen gevonden
+421fe500 dubbelklik voor details
+a6e7e8d6 "{text}" niet gevonden
+fc748144 De {n} problemen in de lijst exporteren
+c8ca2957 Rapport opgeslagen: {path}
+09188221 Hele spel
+5a7ee5ac Foutmelding
+203dee52 De details zijn opgeslagen in {path}
+5abfea7d Eenvoudige woorden: uit
+de314fa0 Ernst
+fc55cc19 Passage / plek
+3deb7456 Type
+61790945 ■ Speltest stoppen
+e23fd7cf Markering als bedoeld weghalen
+5ffa6ce4 Controleert spellen op fouten en vertelt je in gewone woorden wat er mis is en hoe je het oplost. Werkt met Twine-spellen (SugarCube, Harlowe, Chapbook, Snowman), andere HTML-spellen, Ren'Py, RPG Maker MV/MZ, Ink en ChoiceScript.
+e13e18f3 Zo gebruik je het
+c3abe9f5 Veilig in gebruik
+4d688496 Dit programma leest je spel alleen. Het verandert het nooit. Gebruik Extra > Reservekopie maken voordat je iets bewerkt.
+90c93523 Sneltoetsen
+8e990034 Ctrl+O openen · F5 opnieuw controleren · Ctrl+F zoeken · F3 volgende · Ctrl+E exporteren · F1 lessen · Ctrl + / Ctrl − / Ctrl+0 of Ctrl+muiswiel om de grootte te wijzigen
+21e5904b {n} bestandsverwijzingen gecontroleerd
+052df047 Begin hier - de belangrijkste oplossingen
+eff36495 Of klik op "Herstelhulp" om ze een voor een te doorlopen.
+23bd8fe4 Scène "{name}"
+8cb67e05 Passage "{name}"
+12b1a199 regel {n} van de passage
+280d0541 regel {n} van {file}
+a684f161 Je hebt dit als bedoeld gemarkeerd, dus het telt niet mee.
+6aeb39ef Wat er mis is
+c1bcc130 Wat er mis is
+ebcf7d18 Wat spelers merken
+e7f32d0f Klik op "Openen in mijn teksteditor". Die opent {file} op regel {n}.
+73c8627d Verwijder die regel (hij staat hieronder bij "Nu").
+b44b2225 Wijzig hem zoals hieronder bij "Wijzig in" staat. "Verbeterde regel kopiëren" kopieert de hele verbeterde regel om over de oude te plakken.
+d640e11b Zie de uitleg hierboven.
+33d1a502 Sla het bestand op, laad het spel opnieuw en klik op "Ik heb het opgelost - controleer".
+fd3e0dfe Gemaakt in Twine? Los het dan in Twine op (zet "Ik bewerk het .html-bestand" hierboven op "Ik bewerk in Twine"). Publiceren vanuit Twine overschrijft wijzigingen die direct in het .html-bestand zijn gemaakt.
+e3b82040 Nu
+b9b6aac4 Wijzig in
+3895c256 Kan ik dit negeren?
+189da0ef Wat spelers merken: {text}
+7d949b29 Code: {text}
+80411ece Nog niet opgelost - het probleem is er nog
+71a91179 druk op Ctrl+G en typ {n} om naar de regel te gaan
+84d3bdef Geopend in {name}
+7bf2bdbd Scène: {name}
+f8e71156 Regel {n} van {file}
+e9331864 Wat er gebeurt: {text}
+16fcd5a1 ({n} tekens meer op deze regel)
+6dcc62dd Rapport opgeslagen. Nu openen?
+02fbc53c Probleem (eenvoudige woorden)
+2c3cafa4 Bestand
+1bea2fb0 Zo los je het op
+fdccd352 Er ging iets mis in de app:
+b7152342 Grootte
+8e6b86dc Problemen
+8f0d8d83 Groeperen op
+bce06414 Zoeken
+74c14ca3 Codeweergave
+a3d77701 ◀ Vorig probleem
+3a289dc9 Volgend probleem ▶
+2e0b45f2 Ga
+ececaefe Volgende zoeken
+df251b06 Zoeken
+7e08ebec Ontwikkelaar
+e53407cf Speler
+0406a446 Eenvoudige woorden
+2edb004b Ik bewerk het .html-bestand
+b45e0101 Let op wijzigingen
+398ed329 Spellen
+6f80238e HTML-spellen
+f7857dcc Alle bestanden
+6798c955 Bezig met controleren, even geduld…
+be4bd50c Codegezondheid: {n}%
+16dd1f3a {n} gemarkeerd als bedoeld
+901b56b2 Niets te tonen
+ea64a687 4. Help > Lessen legt de basis uit in een paar minuten. Help > Rondleiding volgen laat je alles zien.
+570f71b7 Scènes die kapot zijn
+08f7f24d Sla je spel op voordat je hier komt, zodat je terug kunt als er iets misgaat:
+29e8d770 Gebruik "De ontwikkelaar laten weten" bij een probleem, of Extra > Een foutmelding schrijven, om de details te sturen.
+d19ceca5 Tip
+251eb9e2 Sla je spel op voordat je bij deze scène komt, zodat je terug kunt als hij kapotgaat.
+d782b266 Zoek de plek: gebruik "Find and replace" in Twine (of kijk goed) voor deze tekst:
+eb92d56f Open het project in RPG Maker en ga naar: {where}
+7e7c7eb1 (verwijder deze regel)
+d40baaa7 ✔ Opgelost! Het probleem is weg. De codegezondheid is nu {n}%.
+fce98782 Kies een andere editor via Extra > Teksteditor…
+55d0a707 Reservekopie opgeslagen:
+802cfe54 Kon de reservekopie niet maken:
+a01ce386 Voorgestelde oplossing (in Twine):
+d9cb995e Vertalingen naast Engels zijn gemaakt door een AI en kunnen fouten bevatten. Technische details blijven in het Engels, zoals de spelengines en hun handleidingen.
+987dd9b8 Open een spel om de code hier te zien.
+f4fd7854 {name} ({n} regels)
+db3b1ca2 Rapport als webpagina
+1b5f6570 Spreadsheet (CSV)
+ee3d21a8 Tekstbestand
+934a1886 Kon het rapport niet opslaan:
+29211387 Systeemthema
+9e5ba0f0 Licht thema
+d51c5960 Donker thema
+71df97be Bestand opgeslagen - opnieuw gecontroleerd: {fixed} opgelost, {new} nieuw
+12d21609 (hele spel)
+4671f2fd {n} delen
+af4e5ffa {n} probleem/problemen in deze groep. Klik er een aan voor de details.
+e065ed24 Als de regel verschoven is, druk dan op Ctrl+F in je editor en zoek naar:
+d6cd9bbc Kon niet controleren:
+e8b6a7a1 (regel {lines})
+2a87805d Kon {name} niet starten:
+50803478 Zo los je het op: {text}
+cbbf7064 Versie {v}. Vindt problemen in spellen en legt uit hoe je ze oplost. Leest alleen bestanden en verandert je spel nooit.
+7e16f294 Codegezondheid: {n}% ({label})
+13b7bfca Bezig…
+944d285f Controle mislukt
+5117eb3e Geen problemen die bij de huidige filters passen.
+84a26cd3 Geen problemen gevonden. Goed gedaan!
+e961739d 3. Weet je niet waar je moet beginnen? Gebruik de Herstelhulp - die loopt de problemen een voor een door en controleert je oplossingen.
+dfa2b6e9 Regel {n}:
+27a41ea2 (verwijderen)
+966d414d regel {n}
+a37a62b5 2. Klik op een probleem in de lijst. Daaronder zie je wat er mis is, wat spelers merken en precies hoe je het oplost.
+47faaf63 Speltest gestopt
+9de8b1a5 1. Klik op "Spel openen…" en kies het .html-bestand van het spel (of gebruik Extra voor een spelmap). De controle begint vanzelf.
+836bf385 De speltest kon niet starten:
+3dd51c5a Kies je teksteditor
+1f7611ea Teksteditor ingesteld op {name}
+43320d49 Een regel testen voordat je hem wijzigt
+18e673bc Er wordt niets in je spel veranderd. Dit controleert alleen de tekst die je hier typt.
+8ecc7800 Een foutmelding voor de ontwikkelaar schrijven
+2e2b95ec Twee versies vergelijken
+ccdb5389 Kies de andere versie van het spel en klik op Vergelijken. Beide worden alleen gelezen, nooit veranderd.
+cabad4eb De andere versie wordt gecontroleerd…
+cb9ce97b Lessen
+9255b9a1 Kies het teksteditorprogramma
+67094e72 Dat programma is niet gevonden. Gebruik "Bladeren…" om het te kiezen.
+21461571 ◀ Terug
+2d8a1625 Overslaan ▶
+7c5d9f51 {done} van {total} opgelost
+cb70c72b Probleem {n} van {total}
+820d6004 Controleren…
+e461d5d0 {n} probleem/problemen gevonden:
+9580fcbc Platte tekst
+26a49ee7 Discord / Reddit
+1f82bc1e Forum (BBCode)
+616ce66d Kapot + waarschijnlijk kapot
+34d5d395 Alleen het geselecteerde probleem
+ced1fd2f De foutmelding opslaan
+ec9135a3 Foutmelding opgeslagen: {path}
+8d105cf4 Vergelijken
+a1cd6b54 Kies de andere versie
+1f5bf765 Kies eerst de andere versie.
+ad916050 Vergelijken…
+f4f29947 Codegezondheid: {a}% → {b}%
+a81eb289 Opgelost in de nieuwere versie ({n})
+53da970f Nieuwe problemen in de nieuwere versie ({n})
+2be41ba6 Nog steeds aanwezig ({n})
+9ec4aa53 Woorden die in deze app worden gebruikt
+ce12714d Niets op te lossen
+d231fca7 Er zijn geen problemen meer die opgelost moeten worden. Goed gedaan!
+76c1c7de Dit probleem is weg - het is opgelost of het bestand is veranderd. Klik op Overslaan om verder te gaan.
+55855f77 Losse regels testen werkt voor Twine-spellen (SugarCube). Open er eerst een.
+bbfa773e Sluiten
+af74f7c5 Kopiëren
+571a03ba Welk programma moet het spelbestand openen?
+113fa56b Deze teksteditors zijn op deze computer gevonden:
+d4b86cfd Een ander programma…
+9d68007b Programma
+c1b20f52 Bladeren…
+6bf5da9c Opties
+4ee6279e {file} wordt vervangen door het spelbestand en {line} door het regelnummer. Notepad++ gebruikt: -n{line} "{file}"
+77dfd213 Annuleren
+efc007a3 Opslaan
+ab14d0a7 Programma's
+4abacc60 ✔ Opgelost! Goed gedaan. Hier is de volgende.
+1ed684b1 Plak of typ de regel (of de hele passage) die je wilt gebruiken:
+45f9116a Dit is een hele passage (controleer ook of elke tag gesloten is)
+4b5e84be Controleren
+6a17f3f6 Geen problemen gevonden in deze tekst.
+44b39131 Voorgesteld:
+4020c08c Stijl:
+2f32f781 Meenemen:
+4705cad6 Uitleg om op te lossen meenemen
+d9057148 Opslaan als…
+83c52802 Andere versie:
+c3c1e96d De andere versie is:
+6fa5fbbc ouder
+1d47386a nieuwer
+78cee4b8 Stap {n} van {total}
+57bc79e3 Rondleiding overslaan
+bc981983 Volgende
+e9b450d1 Klaar
+682c160f Huidig spel:
+74c063af Fout:
+3a82310a Goed:
+c7c15bca Dit gaat mis voor spelers.
+8df34ecb Dit is zeer waarschijnlijk een fout.
+1d894da2 Niet dringend. Het kan goed zijn, maar kijk er even naar.
+58da2ccb Links naar ontbrekende scènes
+78d3da9d Ontbrekende afbeeldingen en geluiden
+59327131 Kapotte spelopdrachten
+dfe69b5d Verkeerd gespelde spelopdrachten
+140d954e "Als"-controles die misgaan
+169a1b52 Opdrachten die niets doen of kapotgaan
+c3f4070a Verkeerd gespelde statistieken en waarden
+ee27480a Herbruikbare blokken
+9c0fe2ed Code voor de paginaopmaak
+2c0f0a6d Stijlen (kleuren en uiterlijk)
+f77fd1fd Scènes
+45e35cfc Scènes die niemand kan bereiken
+a2406e53 Bestanden die het spel nooit gebruikt
+68320599 Onafgemaakte tekst
+8a21b1ee Spelling
+169b486d Tikfouten
+a1d181bd Werkt alleen op Windows
+3e9d9ae4 Heel grote bestanden
+50a12988 Beschadigde bestanden
+aab2b305 Ouderwetse opdrachten
+3f55c07b Scriptcode
+cc0718f5 Spelinstellingen
+c7ee483a Scanner
+c916a1ad Fouten tijdens het spelen
+0e66b49d afbeelding
+5e2e97c3 geluid
+ffbaf58f video
+4642576d lettertype
+767013ce pagina
+971c419d bestand
+8c657028 de scène "{name}"
+84db7a65 het spel
+27260418 Gaat naar een scène die niet bestaat: "{name}"
+65a1b892 In {where} probeert een link of opdracht een scène met de naam "{name}" te openen. Geen enkele scène in het spel heeft precies die naam.
+eddc288b Als de speler erop klikt (of het spel er aankomt), krijgt die een foutmelding of een lege pagina in plaats van de scène.
+6690f7df Laat de naam precies overeenkomen met een bestaande scène. Hoofdletters en spaties tellen mee.
+ee186081 Gaat naar een deel van het verhaal dat niet bestaat: "{name}"
+adcab89d Het verhaal probeert verder te gaan bij "{name}", maar niets in het spel heeft die naam.
+c68c7536 Het spel stopt hier met een fout (of start helemaal niet).
+262dea9c Laat de naam precies overeenkomen met een bestaand deel van het verhaal.
+8a2045c6 Gaat naar een hoofdstuk dat niet bestaat: "{name}"
+6b99d3d7 Het verhaal probeert "{name}" te openen, maar zo'n hoofdstuk of plek bestaat niet.
+54721a92 Het spel stopt hier met een fout.
+bfe449ab Verbeter de naam zodat die overeenkomt met een bestaand hoofdstuk.
+8569b71c Opent een scherm dat niet bestaat: "{name}"
+ed323960 Het spel probeert een scherm met de naam "{name}" te tonen, maar geen scherm heeft die naam.
+31aaf0f7 Het spel stopt hier met een fout.
+ecedecaf Verbeter de naam zodat die overeenkomt met een bestaand scherm.
+1c82d0d0 Een event stuurt de speler naar een plek die niet bestaat
+f7bb6caa Een event verplaatst de speler naar een map, of start een common event, die niet in het spel zit.
+11068616 Het spel crasht of loopt vast als dit event draait.
+17c8c384 Kies een bestaande map of common event in die eventopdracht.
+924f14ec Een link die nergens heen gaat
+ac25c348 Een link in {where} zegt niet welke scène hij moet openen.
+cc208a80 Erop klikken geeft een fout.
+81510156 Schrijf de naam van de scène die de link moet openen.
+a620e5a7 Een link mist zijn einde
+75319c60 Een link begint met [[ maar eindigt nooit met ]].
+d94d2b45 De tekst erna raakt vermengd met de link en de scène ziet er kapot uit.
+da97338b Zet ]] aan het einde van de link.
+de752d36 Niemand kan "{name}" bereiken
+ad06e184 Niets in het spel leidt naar dit deel van het verhaal.
+49f72405 Spelers zien het nooit. Onschuldig, tenzij het speelbaar moest zijn.
+41e81f9d Als spelers het moeten zien, voeg dan vanuit een andere scène een link toe. Als het oud is, kun je het negeren.
+12017de3 De scène "{name}" is leeg
+e1c78333 Deze scène heeft geen tekst of inhoud.
+eb036a1b Een speler die hier komt, ziet een lege pagina.
+95468775 Schrijf de scène, of haal de links weg die ernaartoe leiden.
+65f5f00d Twee delen van het verhaal hebben dezelfde naam
+3a661399 Meer dan één scène of label gebruikt de naam "{name}".
+14b99f6a Maar één ervan kan ooit getoond worden, of het spel weigert te starten.
+5017f902 Geef elk een eigen naam.
+8ee54eec Het spel heeft geen startscène
+e4b1267b Het spel weet niet waar het moet beginnen.
+67fece68 Het spel start misschien helemaal niet.
+6f3c3583 Markeer in Twine de eerste scène als start.
+891a7ccc Een spronglink gaat nergens heen
+723d0b6c Een link wijst naar een plek op de pagina die niet bestaat.
+9d2a3ab1 Erop klikken doet niets.
+a17d6d9d Verbeter de naam van de plek, of haal de link weg.
+f7e0927c Ontbrekend(e) {kind}: {file}
+471ab6b6 Het spel wil {kind} "{path}" gebruiken, maar zo'n bestand staat niet in de spelmap.
+215d84f2 Spelers zien een kapotte afbeelding of lege ruimte, of horen niets.
+95495e08 Zet het bestand op die plek, of verander de naam in het spelbestand naar het bestand dat echt bestaat.
+4e187285 Bestandsnaam heeft verkeerde hoofdletters: {file}
+10dd7eb2 Het bestand bestaat, maar het spel schrijft de naam met andere hoofdletters.
+445b1f51 Werkt op Windows. Op telefoons, Macs, Linux of een website ontbreekt de afbeelding of het geluid.
+bcc2cd24 Verander de naam in het spelbestand zodat de hoofdletters overeenkomen met het echte bestand.
+fc7f8ac2 Een afbeelding wijst naar de computer van de ontwikkelaar
+bf1eaea6 De bestandslocatie begint met een stationsletter zoals "D:\". Die map bestaat alleen op de computer waarop het spel is gemaakt.
+8e9a7d52 Spelers zien deze afbeelding nooit.
+e5baac7c Verander het in een locatie binnen de spelmap, zoals images/characters/name.jpg.
+006a8fb9 Bestandslocaties gebruiken \ in plaats van /
+d6cb43a9 Het spel schrijft mappaden met backslashes (\).
+42ad75cd Prima op Windows. Op telefoons, Macs, Linux of een website laden afbeeldingen en geluiden niet.
+02bf9e76 Alleen belangrijk als het spel buiten Windows moet werken: vervang \ door / in de afbeeldingspaden.
+0fa2cd7a {n} bestanden in "{folder}" worden nooit gebruikt
+1b78ff55 Deze bestanden staan in de spelmap, maar het spel gebruikt ze nooit.
+55acf4db Er gaat niets kapot. Ze maken de download alleen groter.
+aa1a0c6f Verwijder ze als je zeker weet dat ze niet nodig zijn. (Sommige kiest het spel misschien op slimme manieren die de scanner niet ziet.)
+cb4cc629 Een leeg bestand
+4642643c Dit bestand is leeg (0 bytes).
+24ec314d Het wordt niet getoond of afgespeeld.
+6cd06e6e Vervang het door een werkende kopie van het bestand.
+07046633 Beschadigd bestand (afgekapt): {file}
+932dbf75 Het einde van dit bestand ontbreekt, meestal omdat een download, kopie of uitpakken niet af was.
+feda3672 De afbeelding verschijnt maar deels of helemaal niet, of het geluid/de video stopt te vroeg.
+968dc7a4 Kopieer of download dit bestand opnieuw uit de originele spelbestanden.
+6081a951 Niet echt een afbeelding of geluid: {file}
+dc397b7a Het bestand heeft de juiste naam, maar er zit een webpagina in (vaak een foutpagina van een downloadsite).
+7f495908 Spelers zien een kapotte afbeelding of horen niets.
+eee27da5 Download het echte bestand opnieuw en vervang dit.
+2a1c1b71 Mogelijk beschadigd bestand: {file}
+4c30367e Het begin van dit bestand lijkt op geen enkel bekend afbeeldings-, geluids- of videoformaat.
+d3b9cea3 Het wordt waarschijnlijk niet getoond of afgespeeld.
+0ab570a5 Open het in een afbeeldingsviewer of mediaspeler. Vervang het als het niet opent.
+f68470e5 Sommige bestanden hebben de verkeerde extensie (.png, .jpg ...)
+d608da1e Deze bestanden bevatten een ander formaat dan hun naam zegt, bijvoorbeeld een JPEG-afbeelding met de naam .png.
+2e39b508 Browsers tonen ze meestal toch. Sommige telefoons en programma's misschien niet.
+097a3703 Optioneel: zet ze om of hernoem ze zodat de naam bij het echte formaat past.
+283d2070 Sommige bestanden zijn heel groot
+c7fa15ff Deze afbeeldingen of video's zijn erg groot.
+ae5369ab Ze laden langzaam, vooral op telefoons.
+e125a92c Optioneel: maak ze kleiner met een afbeeldingsprogramma.
+385f4329 Er ontbreekt een spelbestand: {name}
+2e700532 Het spel verwacht een bestand dat er niet is.
+99467808 Het spel toont een fout bij het starten of wanneer dit deel bereikt wordt.
+b3496ea7 Zet het ontbrekende bestand terug, of haal de verwijzing ernaar weg.
+75e6334a Een speldatabestand is beschadigd
+db02e969 Dit bestand kan niet goed gelezen worden.
+79b96faf Het spel start niet of crasht.
+7ebbbeec Zet het bestand terug uit een reservekopie of het originele spel.
+d399fac1 Een "{name}"-opdracht wordt nooit gesloten
+e6c66d5b Sommige spelopdrachten hebben een bijpassend einde nodig. Deze heeft er geen.
+0b1cb09f Het spel toont een rood foutvak in deze scène, en een deel van de scène kan ontbreken.
+afdabc18 Voeg het ontbrekende einde toe (bijvoorbeeld <</{name}>>) waar dit deel moet eindigen.
+744245d7 Een extra eindtag <</{name}>>
+adb1bea4 Er is een eindtag zonder iets om af te sluiten.
+b39fd74f Het spel toont een rood foutvak in deze scène.
+a53d4f4e Verwijder deze extra eindtag.
+fa8c8072 "{name}" staat op de verkeerde plek
+9009044d <<{name}>> moet binnen een <<if>>-blok staan. Hier is dat niet zo, meestal omdat een eindtag erboven op de verkeerde plek staat.
+1e9acaea Het spel toont een rood foutvak.
+1d2d751d Bekijk de regels er net boven en zet de eindtag op de juiste plek.
+bfaae414 Een eindtag mist een ">": <</{name}>
+a280c34f De eindtag is geschreven met één ">" maar heeft er twee nodig.
+71be19aa Het spel ziet de eindtag niet. Het toont een rood foutvak en de scène kan er verkeerd uitzien.
+a3c69d1f Voeg één ">" toe zodat hij eindigt op ">>".
+413ace46 Een extra ">"-teken
+4e791f5a Er staat één ">" te veel na een tag.
+4ecd446f Spelers zien een losse ">" op het scherm.
+c1c069b2 Verwijder de extra ">".
+cacfbdbb Een extra "<"-teken
+fe9088b6 Er staat één "<" te veel voor een opdracht.
+0c7a0bb7 Spelers zien een losse "<" op het scherm.
+87807bf8 Verwijder de extra "<".
+b0d2d4e4 Een half geschreven opdracht "<<"
+012a6c88 Er staat een "<<" met niets erachter.
+fd941db0 De opdracht erna gaat kapot en het spel kan een fout tonen.
+73f8070a Verwijder de losse "<<".
+7037d71a Een opdracht mist zijn ">>"
+87bde2ac Een opdracht begint met << maar eindigt nooit met >>.
+7f93f879 Tekst erna verdwijnt of de scène toont een fout.
+dbda1f76 Zet ">>" aan het einde van de opdracht.
+5a30164d Een haakje wordt geopend maar nooit gesloten
+d5b047f2 Iets begint met een haakje, maar het sluithaakje ontbreekt.
+8d50e9a9 Alles erna wordt opgeslokt of het spel toont een fout.
+912c548c Voeg het ontbrekende sluithaakje toe.
+35852e81 Een extra sluithaakje
+a1d86e33 Er is een sluithaakje zonder openingshaakje.
+fdeb2ba4 Spelers kunnen een los teken of een fout zien.
+254fbb5b Haal het extra haakje weg.
+98cb6b2f Aan een opdracht hangt geen tekst
+1afec1b9 Deze opdracht hoort de tekst direct erna te sturen, geschreven tussen blokhaken [zoals dit]. Er volgt niets.
+073266b4 Harlowe toont een fout, of de tekst wordt altijd getoond.
+29369e93 Zet de tekst die hij stuurt direct erna tussen blokhaken.
+4093f80e Het spel toont een fout, en het deel van de scène dat hij stuurt werkt niet.
+ef3a7877 Een ouderwetse opdracht
+54dead55 Deze opdracht werkt nog, maar is verouderd.
+01500c48 Nu niets. Het kan kapotgaan bij een toekomstige update van de engine.
+b1a70201 Optioneel: vervang hem door de nieuwere opdracht.
+a4a93d21 Een "if"-controle gebruikt "=" in plaats van "is"
+582b6716 Binnen een "if"-controle betekent "=" "maak het gelijk", niet "is het gelijk?".
+564cdad0 Het spel toont een rood foutvak, of de controle is altijd waar en het verkeerde deel van de scène wordt gespeeld.
+e3105e2f Vervang de enkele "=" door "is".
+f0b64920 "=>" of "=<" achterstevoren geschreven
+897ec753 Groter-of-gelijk schrijf je als ">=", niet "=>".
+0167d9bc De controle werkt niet.
+0b498ace Schrijf in plaats daarvan ">=" of "<=".
+f917ca5e "is not" hoort één woord te zijn
+4e8bbdf4 In deze spelengine betekent "is not" iets anders dan "isnot".
+e40cd819 De controle is bijna altijd fout.
+7f3a1402 Schrijf "isnot" als één woord.
+694143a3 Een "or"-controle die altijd waar is
+b760633e Iets als "$x is 1 or 2" vergelijkt $x alleen met 1; de losse "2" telt altijd als ja.
+f8b8cc75 Dit deel wordt ook gespeeld als dat niet zou moeten.
+b1a0ec7e Herhaal de naam: "$x is 1 or $x is 2".
+1c4512b1 Een "if"-controle die op het verkeerde moment kan afgaan
+bb598d2b Deze controle mengt "and" en "or" zonder haakjes. De computer doet altijd eerst de "and"-delen, dus de controle betekent misschien niet wat bedoeld was.
+71408d55 Een scène of keuze kan verschijnen wanneer dat niet zou moeten - bijvoorbeeld als een personage ontvoerd is of een statistiek te laag is.
+045d6c6c Zet haakjes ( ) om de delen die bij elkaar horen. Bekijk de code hieronder en groepeer de "or"-keuzes.
+dbb9ed0f Haakjes ( ) kloppen niet
+6bbb5c72 Er zijn meer "(" dan ")" of andersom.
+d2676c8c Voeg een haakje toe of haal er een weg zodat ze paren vormen.
+8f746eaa Een lege "if"-controle
+70ac1e0e De "if" heeft niets te controleren.
+8fa764c4 Het spel toont een fout.
+f72f83b1 Schrijf op wat er gecontroleerd moet worden.
+00b75afd Een statistiekwijziging die niets doet ("==")
+d3024696 Deze regel hoort een waarde te veranderen, maar "==" vergelijkt alleen - het verandert niets.
+4bb1b350 De waarde verandert nooit. Wat ervan afhangt (timers, tellers) blijft hangen.
+bb9d82a8 Vervang "==" door "to".
+88b997d5 Een statistiekwijziging die niets doet
+47b56b1e Deze regel hoort een waarde te veranderen, maar heeft geen "to", "=", "+=" of "-=", dus er verandert niets.
+b3edbcbf Bijvoorbeeld energie of geld wordt nooit afgenomen of gegeven.
+5a19bb57 Schrijf "-=" in plaats van "-" (of "+=" in plaats van "+").
+24335c15 Een lege statistiekwijziging
+d7c9d917 De opdracht is leeg.
+1ca2b36b Verwijder hem of schrijf de wijziging.
+2d2715a0 Een waarde wordt ingesteld met "=" in plaats van "to"
+b3386569 Deze engine stelt waarden in met "to".
+be353939 Vervang "=" door "to".
+6b135470 Een ontbrekend aanhalingsteken "
+b7ed7d6f Een stuk tekst in een opdracht begint met " maar wordt nooit gesloten.
+4b70c1d8 Het spel toont een fout of slokt de tekst erna op.
+081a0ff8 Voeg het ontbrekende " toe.
+1a1cb7a5 Tabs gebruikt waar spaties nodig zijn
+0d83ecca Deze engine wil dat regels alleen met spaties inspringen.
+1928be6f Het spel start niet, of stopt hier met een fout.
+6707540b Vervang de tab aan het begin van de regel door spaties.
+50e72b08 Een regel mist ":" aan het einde
+1590b870 Regels zoals "if", "menu" en "else" moeten eindigen met een dubbele punt.
+34cb1caf Het spel start niet.
+739781b1 Zet ":" aan het einde van de regel.
+463c9c22 Kapotte scriptcode
+90393617 Een haakje of aanhalingsteken in de scriptcode klopt niet.
+10b6ae9e Het hele script werkt niet meer, waardoor veel functies kapot kunnen gaan.
+208a3574 Controleer de haakjes en aanhalingstekens rond deze regel.
+08a420a2 Achtergebleven testcode
+f523c19b Code die tijdens het testen werd gebruikt, is blijven staan.
+a161c8db Meestal niets zichtbaar.
+5512920c Optioneel: haal hem weg.
+e14ae90f Een naam met een "-" erin
+a5d94a86 Namen van waarden mogen geen "-" bevatten. Het spel leest alleen het deel voor de "-".
+1d915eed Spelers zien het verkeerde woord of een lege plek in plaats van een naam.
+1ff6bd49 Gebruik "_" in plaats van "-".
+929dc82b Controles erop zijn altijd "nee", dus sommige tekst of scènes verschijnen nooit (of er staat een lege plek in plaats van een naam).
+aa241baa Zelfde naam, andere hoofdletters: ${a} / ${b}
+fe615c75 Voor het spel zijn dit twee verschillende waarden, omdat hoofdletters meetellen.
+1549316e Wijzigingen aan de ene worden door de andere niet gezien, dus statistieken of scènes gaan mis.
+485f98c5 Verander ${a} in ${b}.
+fbb1a8ec Verkeerd gespelde waardenaam: {name}
+baa2f1ac "{name}" wordt nooit aangemaakt, maar "{near}" wel. Het is vrijwel zeker een tikfout.
+37eb4d71 Het spel toont een fout of de waarde is altijd leeg.
+69b0c997 Verander "{name}" in "{near}".
+958390b8 Een tijdelijke waarde die nooit wordt ingesteld: _{name}
+66d98956 Deze kortlevende waarde wordt gebruikt maar krijgt nooit een waarde.
+f6d72946 Controles erop werken nooit.
+b150a824 Stel hem eerst in, of verbeter de naam.
+bb2ac176 Een waarde die nooit is aangemaakt: {name}
+418bb0cf Gebruikt een switch/variabele die niet bestaat (#{n})
+60eb5de9 Het event gebruikt nummer {n}, maar de lijst van het spel is korter.
+ab5e6d39 Het event werkt niet zoals bedoeld.
+27e3bd51 Kies een bestaande switch/variabele in het event.
+5e339cd0 Een switch/variabele heeft geen naam (#{n})
+e3546a24 Hij wordt gebruikt, maar heeft geen naam in de Database.
+15f64977 Niets zichtbaar. Het is alleen makkelijk te verwarren.
+a8723260 Geef hem een naam in de Database.
+bd3955c1 Een herbruikbaar blok is twee keer gedefinieerd: {name}
+0a743f0a Twee definities delen deze naam.
+4d983cee Maar één versie wordt gebruikt.
+08c1e9fa Verwijder of hernoem er een.
+20982092 Een herbruikbaar blok wordt niet geladen
+3ed9bdd5 Zijn scène mist de tag "widget".
+4f7fa681 Elke scène die het gebruikt, toont een fout.
+a3c57c94 Voeg in Twine de tag "widget" toe aan die scène.
+769d38d3 Een ongebruikt herbruikbaar blok: {name}
+91caae31 Het is gedefinieerd maar wordt nooit gebruikt.
+92f3557e Er gaat niets kapot.
+48518178 Niets nodig.
+549a08bd Een ontbrekend aanhalingsteken in paginacode
+2616e9ea Er ontbreekt een aanhalingsteken " in een paginatag (vaak een afbeelding).
+c1ac2a6e De afbeelding of het element wordt misschien niet getoond, of de opmaak gaat kapot.
+1359ec48 Paginavakken die niet goed gesloten zijn
+c5eaf192 Een opmaakvak (zoals <div> of <center>) wordt geopend maar niet gesloten, of te vaak gesloten.
+bff958b5 Tekst of afbeeldingen kunnen op de verkeerde plek of met de verkeerde stijl terechtkomen.
+2055d18e Voeg de ontbrekende sluittag toe, of haal de extra weg.
+3ec38cbd Twee dingen hebben dezelfde naam (id)
+0bf6eee0 Elke id moet uniek zijn op de pagina.
+ff424805 Knoppen die dit deel bijwerken, kunnen de verkeerde plek veranderen.
+3d5e5acf Geef elk een eigen id.
+9ef419aa Een afbeelding of link zonder bestand
+41c88499 De tag wijst nergens naar.
+30064ec6 Er kan een icoon van een kapotte afbeelding verschijnen.
+0e8cdbfd Vul de bestandsnaam in, of haal de tag weg.
+8c62dd1b Afbeeldingsformaten geschreven op een manier die browsers negeren
+c97c9dc5 Formaten zoals height="450wv" bevatten letters die de browser niet begrijpt ("wv" is geen eenheid).
+38f858bc Afbeeldingen worden nog getoond, alleen op een vaste pixelgrootte. Meestal onschuldig.
+c33de17c Optioneel: haal de letters weg, bijv. height="450".
+b2030de7 Een stijlnaam die niet klopt: "{name}"
+912e16dc Het uiterlijk van dit deel wordt gekozen met de naam "{name}", maar de stijl heet "{near}".
+93f6e366 Dit deel verschijnt zonder de bedoelde kleuren of opmaak.
+de3efded Een stijlnaam zonder stijl: "{name}"
+46cc76e2 Geen enkele stijlregel gebruikt deze naam.
+3a6cc944 Meestal onschuldig.
+d91f6b60 Onafgemaakte tekst die spelers kunnen zien
+a2d31ceb De ontwikkelaar heeft een notitie als "PLACEHOLDER" of "TODO" in het verhaal laten staan.
+33f40845 Spelers zien deze notitie, of de scène is niet af.
+a398b7c0 Schrijf de echte tekst, of haal de notitie weg.
+a89ee2d1 Spelling: "{wrong}" moet "{right}" zijn
+bf0afa72 Een veelvoorkomende spelfout.
+979c6e99 Spelers zien het verkeerd gespelde woord.
+7e32de5a Verander "{wrong}" in "{right}".
+b2d44d92 Dubbel woord: "{words}"
+670755a1 Hetzelfde woord is twee keer achter elkaar getypt.
+f901109b Spelers zien het dubbele woord.
+c8f90b31 Verwijder er een.
+fd88a85b Toont een afbeelding die niet bestaat: "{name}"
+d99288f0 Er is geen afbeelding met deze naam gedefinieerd, en geen bestand in images/ past erbij.
+61cd07a0 Spelers zien een tijdelijke afbeelding of een fout.
+3b215908 Voeg de afbeelding toe, of verbeter de naam.
+a08bad60 Het spel heeft geen ID-nummer
+91a06fd9 Twine gebruikt een ID om verhalen uit elkaar te houden.
+7ff45b55 Publiceer het verhaal opnieuw vanuit Twine.
+ce8325ca Toont een rood foutvak tijdens het spelen: "{name}"
+212a3e36 Toen de scène echt gespeeld werd, toonde het spel deze fout: {msg}
+1cda4ad4 Spelers zien een rood foutvak in deze scène, en een deel ervan ontbreekt.
+fe183b9c Bekijk de problemen die voor deze zelfde scène zijn gevonden - die verklaren meestal de oorzaak.
+5a4709f8 Een script kan niet eens door de browser gelezen worden
+417e0923 De browser vond een tikfout in dit script, dus niets ervan werkt.
+711c9902 Functies van dit script (speciale opdrachten, instellingen) ontbreken of zijn kapot.
+289bf8bb Zoek naar een ontbrekend haakje, aanhalingsteken of komma op deze regel of de regel ervoor.
+fefc36ad Afbeeldingen of geluiden ontbreken tijdens het spelen
+d47a66be Deze bestanden werden opgevraagd terwijl de scènes werden gespeeld, maar ze bestaan niet.
+80b8b71b Spelers zien kapotte afbeeldingen of horen niets in sommige scènes.
+9733445f Voeg de ontbrekende bestanden toe, of verbeter hun namen.
+4f504ebe Een fout bij het starten van het spel
+92243591 De browser meldde een fout bij het laden van het spel.
+2fea6477 Het startscherm of sommige functies kunnen kapot zijn.
+608156d3 Zoek in het hoofdscript van het spel naar het probleem dat in de melding staat.
+231d0f49 Verkeerd gespelde opdracht: {name}
+388bf136 Onbekende opdracht: {name}
+9b686aa1 Het spel kent deze opdracht niet. Het is vrijwel zeker een tikfout van {near}.
+d1f769ee Het spel kent deze opdracht niet.
+6a1cce2c Verander het in {near}.
+46c692e0 Controleer de spelling van de opdracht.
+6db67833 Een waarde die nooit wordt ingesteld: {name}
+c0ceb098 Het spel gebruikt "{name}", maar overal elders heet het "{near}". Het is een tikfout.
+8acbe929 Het spel controleert of toont "{name}", maar niets geeft het ooit een waarde.
+fbb2c20c Geef het een beginwaarde, of verbeter de naam.
+33e186ef Een waarde die het spel nooit gebruikt: {name}
+72bf1ee8 Dit verandert "{name}", maar het spel kijkt alleen naar "${near}". Het is een tikfout.
+7f81aa2e "{name}" wordt veranderd, maar het spel kijkt er nooit naar.
+fd3f859d De wijziging gaat verloren - bijvoorbeeld een statistiekverhoging die nooit meetelt.
+4857ea9f Er gaat niets kapot. Het kan een overblijfsel van oudere versies zijn.
+d2118ba7 Verander "{name}" in "${near}".
+3867ee62 Niets nodig, tenzij het gebruikt moest worden.
+11e31f78 "{name}" is nooit aangemaakt. Het is waarschijnlijk een tikfout van "{near}".
+8f03aa6d "{name}" is aan het begin van het spel nooit aangemaakt.
+dd8d9eef Maak het aan het begin van het spel aan.
+a62731f6 passage
+f8de5ecc Eén pagina of scène van een Twine-spel. Elke passage heeft een naam, en links gaan van de ene passage naar de andere.
+ea5e0445 scène
+ad88890f Eén pagina van het verhaal. In Twine heet dit een "passage".
+78f3a3d9 macro
+480a06b0 Een spelopdracht tussen << en >>, zoals <<if>> of <<set>>. Het spel voert hem uit in plaats van hem te tonen.
+1925f793 opdracht
+410ae6be Een instructie voor het spel, zoals "toon deze afbeelding" of "als de speler 5 goud heeft". In SugarCube staan ze tussen << en >>.
+b46d0172 variabele
+2ef301de Een waarde met een naam die het spel onthoudt, zoals $gold of $mother_love. In SugarCube begint die met $.
+f32b67c7 waarde
+a746abd2 Een getal, woord of ja/nee dat het spel onthoudt, zoals de hoeveelheid goud.
+afad9a69 voorwaarde
+1dc59f8f Een controle zoals "$gold gte 5" (heeft de speler minstens 5 goud?). De tekst erna verschijnt alleen als de controle waar is.
+5e9b60f6 tag
+1df6d68c Een markering in code. Openingstags zoals <<if>> beginnen een deel, sluittags zoals <</if>> beëindigen het.
+4f0aa52d link
+5afc9751 Klikbare tekst die de speler naar een andere scène brengt. In Twine: [[Tekst|Scènenaam]].
+d3ecb0d8 include
+bbc9ce26 Een opdracht die een andere passage in deze plakt: <<include "Naam">>.
+ff700e02 widget
+fd5df966 Een zelfgemaakte opdracht die één keer wordt gedefinieerd en in veel scènes wordt hergebruikt.
+9f738ce8 HTML
+16d38297 De taal waarin webpagina's geschreven zijn. Tags zoals <img> (afbeelding) en <div> (vak).
+194e13da CSS
+28d26723 Stijlregels: kleuren, groottes en opmaak. Een "class" koppelt een element aan een stijl.
+ee620923 JavaScript
+2d04472d De programmeertaal van webpagina's. Spellen gebruiken hem voor speciale functies.
+cb5346a0 script
+302bcb23 Een stuk programmacode (meestal JavaScript).
+0c4da6cb Twine
+5deecf78 Het gratis programma waarmee veel tekstspellen gemaakt worden. Het publiceert het spel als één .html-bestand.
+9b2ab238 SugarCube
+5a15607f Het meest gebruikte "story format" (engine) voor Twine-spellen. Het levert de << >>-opdrachten.
+5e2fb0c2 publiceren
+9eb9fe5a In Twine: Build > Publish to File. Het schrijft het speelbare .html-bestand van je verhaal.
+1af607c7 bestandspad
+3bee6183 Waar een bestand staat, zoals images/hero.png (de map "images", het bestand "hero.png").
+264f39ca regel
+f44c6b66 Eén rij tekst in het bestand. Teksteditors tonen regelnummers aan de linkerkant.
+3cc46d20 inspringing
+2a14602c Spaties aan het begin van een regel. Sommige engines gebruiken ze om te weten welke regels bij elkaar horen.
+64c65374 label
+0419b517 Een plek met een naam in een Ren'Py- of ChoiceScript-verhaal waar andere delen naartoe kunnen springen.
+40a22a4a knot
+fba17772 Een deel met een naam in een Ink-verhaal. "-> naam" springt ernaartoe.
+fd8c7c8e plug-in
+45e375e0 Een extra script dat aan een RPG Maker-spel is toegevoegd.
+67db3ab6 1. Wat is een passage (scène)?
+6cfa54e4 2. Opdrachten tussen << en >>
+fcaf062f 3. Openen en sluiten
+47887091 4. Waarden die het spel onthoudt ($variabelen)
+c3bcb980 5. "If"-controles
+d8cc0b48 6. Afbeeldingen en geluiden
+c413d282 7. Veilig bewerken
+fb4c49ae 8. Deze app lezen
+a9af7910 Begin hier: open het .html-bestand van het spel (of een Ren'Py-, RPG Maker-, Ink- of ChoiceScript-spelmap). De controle begint vanzelf.
+de845e69 "Eenvoudige woorden" legt alles in gewone taal uit. Zet het uit om technische details te zien.
+6c84c615 Ontwikkelaar of Speler: spelers krijgen een korte lijst kapotte scènes met weinig spoilers en een foutmelding voor de ontwikkelaar. Ontwikkelaars krijgen de hulpmiddelen om te herstellen.
+ba413de9 Alle gevonden problemen. Rood is kapot, geel is waarschijnlijk kapot, blauw is het bekijken waard. Klik er een aan om te zien wat je moet doen.
+476c1a70 Hier zie je wat er mis is, wat spelers merken en precies hoe je het oplost - met de regel ervoor en erna.
+e871d7cc De Herstelhulp neemt je een voor een door de problemen, en controleert elke oplossing voor je.
+3d56d049 De speltest speelt elke scène in een onzichtbare browser en vindt fouten die je alleen tijdens het spelen ziet.
+41da0a4f Extra: reservekopie van het spel, een regel testen voor je hem wijzigt, twee versies vergelijken, een foutmelding schrijven, wijzigingen in de gaten houden.
+75d05bed Help: lessen, een woordenlijst, deze rondleiding en comfortinstellingen zoals extra grote tekst.
+52c5f193 De codegezondheidsscore: 100% uitstekend, 90% heel goed, 80% goed, 70% redelijk.
+bcecc3cb Een Twine-spel bestaat uit passages. Elke passage is één scène: wat tekst, misschien een afbeelding, en links naar andere passages.
+b1f433c6 Links zien er zo uit. Het deel voor | is wat de speler ziet, het deel na | is de naam van de passage die geopend wordt:
+33dd3c05 De naam moet precies overeenkomen, inclusief hoofdletters en spaties. "kitchen" en "Kitchen" zijn verschillende passages.
+14a03cdc SugarCube-spellen gebruiken opdrachten tussen << en >>. Het spel voert ze uit in plaats van ze te tonen.
+fffc20ea Altijd precies twee < aan het begin en twee > aan het einde. Eén te veel of te weinig maakt de opdracht kapot:
+1e192fbd Sommige opdrachten zijn als haakjes: ze openen een deel en moeten gesloten worden. <<if>> wordt gesloten met <</if>>.
+fd08a19b Als de sluitende <</if>> ontbreekt, toont het spel een rood foutvak. Bij één te veel ook.
+b25bf333 Een woord dat begint met $ is een waarde die het spel tussen scènes onthoudt, zoals $gold of $mother_love.
+d4d0415d Hoofdletters tellen: $Gold en $gold zijn twee verschillende waarden. Een tikfout maakt een nieuwe, lege waarde, dus de wijziging gaat verloren.
+340aacf8 Om een waarde te veranderen gebruik je "to", "+=" of "-=". Een gewone "-" rekent maar verandert niets:
+87dc8b35 Binnen een "if" vergelijk je met "is", "isnot", "gte" (minstens), "lte" (hoogstens). Een enkele "=" is daar fout:
+add346a2 "and" wordt eerder gecontroleerd dan "or". Gebruik haakjes om te groeperen, anders kan de controle op het verkeerde moment waar zijn:
+f07da221 Afbeeldingen worden getoond met een <img>-tag. Het pad zegt waar het bestand staat, vanaf de map van het spel:
+9e333b42 Gebruik / tussen mappen. \ werkt alleen op Windows. Hoofdletters moeten kloppen met de echte bestandsnaam voor telefoons, Macs en websites.
+9d1c8406 Elk aanhalingsteken " dat opent moet ook sluiten, anders verschijnt de afbeelding niet.
+6f7151f5 Maak een reservekopie voordat je iets verandert (Extra > Reservekopie van het spelbestand maken).
+73b5381e Als het spel in Twine is gemaakt, breng de wijzigingen dan in Twine aan en publiceer opnieuw. Wijzigingen die direct in het .html-bestand zijn gemaakt, gaan verloren als het spel de volgende keer vanuit Twine gepubliceerd wordt.
+0dab15d3 Als je alleen het .html-bestand hebt (geen Twine-verhaal), bewerk het dan met een teksteditor zoals Notepad++. In het .html-bestand staan < en > als &lt; en &gt; - de app toont de precieze tekst om te kopiëren.
+a877adb7 Na elke wijziging: opslaan, het spel opnieuw laden in de browser en op "Ik heb het opgelost - controleer" drukken in deze app.
+e6cfd88c Rood = kapot: spelers lopen ertegenaan. Geel = waarschijnlijk kapot. Blauw = het bekijken waard, vaak in orde.
+3c06ac34 Begin met de lijst "Begin hier" in de samenvatting, of gebruik de Herstelhulp: die leidt je probleem voor probleem.
+f5a4fb88 "Markeren als bedoeld" verbergt een bevinding die je hebt gecontroleerd en wilt houden. Die blijft verborgen voor dit spel.
+f3979521 Ongeveer 1 minuut
+d621d05d 5-15 minuten
+bea680e1 De ontwikkelaar is nodig (een keuze over verhaal of ontwerp)
+0c6c4102 Optioneel
+e53abb3c Makkelijk op te lossen
+c4f93c0c Vraagt wat zorg
+a22663d7 De ontwikkelaar is nodig
+230659f7 Waarschijnlijk wel, maar kijk er even snel naar.
+6d9d36d5 Nee. Spelers lopen hier tegenaan.
+ddad7bf2 Alleen als je de logica hebt gecontroleerd en die doet wat je wilt. Markeer het dan als bedoeld.
+6cf97a3f Ja, als de scène oud is of niet bedoeld om gespeeld te worden.
+d54dbf6e Ja. Er gaat niets kapot.
+3b411bc1 Ja, als het spel alleen op Windows gespeeld wordt.
+667e089a Ja, voorlopig. Het kan kapotgaan bij een toekomstige update van de engine.
+ca7eea8c Ja, maar spelers zien de tikfout.
+6225e68e Alleen als de scène met opzet niet af is.
+47ecb09c Ja. Afbeeldingen worden nog getoond.
+178ca96e Ja. Er verandert niets zichtbaars.
+e2fca6c0 Meestal wel. Het is vaak een overblijfsel van oudere versies.
+bcc248b9 Liever niet. Het is zeer waarschijnlijk een echte fout.
+557f2555 niet
+cffa50a3 en
+1758356d of
+6981b0db Geen enkele scène linkt naar "{name}" op een manier die de scanner kan volgen. Spelers zien hem misschien nooit, of ze komen er via code die de scènenaam uit variabelen opbouwt.
+0f56183f Spelers komen bij "{name}" vanaf {n} plek(ken):
+02e974ba Dit is de eerste scène van het spel.
+5ffe533b waar
+7cb6efb9 onwaar
+1ed06825 een link
+3d22ef57 een include
+ccdfd8c1 een automatische sprong
+3f80e4d1 Vanaf "{src}" ({how}), als: {cond}
+084fcdcf Vanaf "{src}" ({how}), altijd.
+8adbc573 …en meer.
+1aafbf54 Uitstekend
+bd846adf Heel goed
+61dedcf0 Goed
+226d7ec9 Redelijk
+eafabce9 Werk nodig
+4e0fa437 Slecht
+75fb2b10 Bestand lezen
+ac133acf Verhaalgegevens zoeken
+456caef0 Scripts en stijlen verzamelen
+fc404c89 Passages en links controleren
+6a4d36f9 Macrotags controleren
+546de9d0 Voorwaarden en codelogica controleren
+c338107e Variabelen controleren
+5730c93f HTML-tags controleren
+ea4c65ed CSS-klassen controleren
+d874e65d Afbeeldingen, audio, video en bestanden controleren
+6517d389 Tekst controleren (tikfouten, tijdelijke tekst)
+87beeee4 JavaScript controleren
+7b7efd8b Regels van het story format controleren
+25f3b361 Het {label}-spel lezen
+a28b6c50 Bestanden controleren op beschadiging
+5aedb280 De onzichtbare browser starten
+f5a5071d Het spel laden
+8466e7c7 Scripts controleren met de JavaScript-engine van de browser
+bf197daa Scènes spelen ({mode}): {k} van {n}
+f70cf464 Speltest klaar
+427c9fd7 In scènes die niemand kan bereiken
+9b9f5c3d Spelers zien dit nooit: het staat in een scène die niemand kan bereiken. Mag zo blijven.
+e58020da Niemand kan "{name}" bereiken: de link staat uit
+2795ab1b De enige link naar deze scène staat in "{where}" (regel {line}), in een verborgen notitie /* ... */. Alles tussen /* en */ staat uit.
+4ed22111 Spelers zien deze scène nooit.
+30fda4f3 Als spelers haar moeten zien, verwijder dan de /* en de */ rond de link. Heb je haar expres uitgezet, laat het dan zo.
+7a9ce2ca De enige links naar deze scène staan in andere scènes die niemand kan bereiken.
+3aafeed1 Als spelers haar moeten zien, voeg een link toe vanuit een bereikbare scène. Is ze oud, dan kun je haar negeren.
+0c4d1909 {n} bestanden in {k} mappen worden nooit gebruikt
+0efdb085 {n} waarden die het spel nooit gebruikt
+425a6a2a Deze waarden worden veranderd, maar het spel kijkt er nooit naar.
+849cdd9b Er gaat niets kapot. Ze zijn misschien over van oudere versies.
+a82d56f5 Een paginavak wordt niet gesloten: <{tag}> op regel {line}
+5c73814e De <{tag}> op regel {line} wordt nooit gesloten met </{tag}>.
+b587a89d Zet </{tag}> waar het vak moet eindigen.
+f1a6f13d Een sluittag te veel: </{tag}> op regel {line}
+d887494b De </{tag}> op regel {line} sluit een vak dat nooit geopend is.
+f3d6de5f Verwijder de extra </{tag}>, of voeg de ontbrekende <{tag}> toe.
+94b62097 Spelling: "{wrong}" moet "{a}" of "{b}" zijn
+45919c5c Een veelgemaakte spelfout. Het kan twee verschillende woorden betekenen.
+d3631b3f Lees de zin en verander "{wrong}" in "{a}" of in "{b}", wat het beste past.
+4f2e0c01 Niets nodig, tenzij er een gebruikt had moeten worden.
+37a88891 Meestal niets: de browser sluit het zelf aan het einde van de scène.
+9c393632 Ja. Het staat in een scène die niemand kan bereiken, dus spelers zien het nooit. Los het alleen op als je later een link naar die scène toevoegt.

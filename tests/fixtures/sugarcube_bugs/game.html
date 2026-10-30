@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head><title>Test</title></head><body>
+<tw-storydata name="Test" startnode="1" creator="Twine" creator-version="2.6" format="SugarCube" format-version="1.0" ifid="11111111-2222-3333-4444-555555555555" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.speech { color: red }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script>
+<tw-passagedata pid="1" name="Start" tags="" position="0,0" size="100,100">&lt;&lt;set $gold to 5&gt;&gt;&lt;&lt;set $Gold to 1&gt;&gt;&lt;&lt;set $energy to 10&gt;&gt;
+[[Go to the town|Town]]
+[[Visit|Castel]]
+&lt;&lt;include &quot;Missing scene&quot;&gt;&gt;
+&lt;img src=&quot;images/hero.png&quot;&gt;&lt;img src=&quot;images/castle.png&quot;&gt;&lt;img src=&quot;images/nothere.png&quot;&gt;
+&lt;img src=&quot;images/cut.png&quot;&gt;&lt;img src=&quot;images/fake.png&quot;&gt;&lt;img src=&quot;images/photo.jpg&quot;&gt;
+&lt;img src=&quot;C:\Users\dev\game\images\hero.png&quot;&gt;
+&lt;div class=&quot;speach&quot;&gt;hi&lt;/div&gt;</tw-passagedata>
+<tw-passagedata pid="2" name="Town" tags="" position="0,0" size="100,100">&lt;&lt;if $gold = 5&gt;&gt;Rich&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $gold is 1 or 2&gt;&gt;x&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $a and $b or $c&gt;&gt;y&lt;&lt;/if&gt;&gt;
+&lt;&lt;set $energy - 20&gt;&gt;
+&lt;&lt;set $days==0&gt;&gt;
+&lt;&lt;elesif $gold&gt;&gt;
+&lt;&lt;if $gold gt 1&gt;&gt;open
+&lt;&lt;speech&gt;&gt;Hello&lt;&lt;/speech&gt;&gt;
+&lt;&lt;/speech&gt;&gt;
+The the end.
+It was for for nothing.
+PLACEHOLDER
+I recieve it.
+$mother-name is here.
+&lt;&lt;/if&gt;
+&lt;&lt;goto &quot;Town&quot;&gt;&gt;&gt;
+&lt;img src=&quot;images/hero.png&quot;&gt;&gt;
+[[Back|Start]]</tw-passagedata>
+<tw-passagedata pid="3" name="Unclosed" tags="" position="0,0" size="100,100">&lt;&lt;if $gold&gt;&gt;Never closed. [[Start]]</tw-passagedata>
+<tw-passagedata pid="4" name="Castle" tags="" position="0,0" size="100,100">You are in the castle. [[Start]] &lt;&lt;print $energyy&gt;&gt; &lt;&lt;print $energyy&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="5" name="Lonely" tags="" position="0,0" size="100,100">Nobody comes here.</tw-passagedata>
+<tw-passagedata pid="6" name="Empty" tags="" position="0,0" size="100,100"></tw-passagedata>
+<tw-passagedata pid="7" name="Widgets" tags="widget" position="0,0" size="100,100">&lt;&lt;widget &quot;speech&quot; container&gt;&gt;&lt;div class=&quot;speech&quot;&gt;_contents&lt;/div&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="8" name="Broken script" tags="script" position="0,0" size="100,100">Macro.add(&quot;x&quot;, { handler() { if (a { } } });</tw-passagedata>
+<tw-passagedata pid="9" name="Old" tags="" position="0,0" size="100,100">&lt;&lt;click &quot;Go&quot;&gt;&gt;&lt;&lt;goto &quot;Start&quot;&gt;&gt;&lt;&lt;/click&gt;&gt; &lt;&lt;display &quot;Castle&quot;&gt;&gt; [[Empty]] [[Unclosed]]</tw-passagedata>
+</tw-storydata></body></html>

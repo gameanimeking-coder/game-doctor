@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><title>Test</title></head><body>
+<tw-storydata name="Test" startnode="1" creator="Twine" creator-version="2.6" format="SugarCube" format-version="1.0" ifid="11111111-2222-3333-4444-555555555555" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script>
+<tw-passagedata pid="1" name="Start" tags="" position="0,0" size="100,100">&lt;&lt;set $gold to 5&gt;&gt;
+&lt;&lt;if $gold gte 5&gt;&gt;You are rich.&lt;&lt;else&gt;&gt;You are poor.&lt;&lt;/if&gt;&gt;
+&lt;img src=&quot;images/hero.png&quot;&gt;
+[[Go to town|Town]]</tw-passagedata>
+<tw-passagedata pid="2" name="Town" tags="" position="0,0" size="100,100">&lt;&lt;if ($gold is 5 or $gold is 6) and $gold lt 10&gt;&gt;Nice.&lt;&lt;/if&gt;&gt;
+You have $gold coins. [[Start]]</tw-passagedata>
+</tw-storydata></body></html>

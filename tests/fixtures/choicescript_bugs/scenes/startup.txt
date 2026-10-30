@@ -1,0 +1,11 @@
+*title Test
+*scene_list
+  startup
+  chapter1
+  chapter2
+
+*create gold 5
+*create name "Bob"
+
+Hello ${name}, you have ${goldd} gold.
+*goto_scene chapter1

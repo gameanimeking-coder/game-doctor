@@ -1,0 +1,836 @@
+#name Deutsch
+e77b83c2 Spieltest beendet: {n} Szenen auf {m} Arten gespielt, {k} Problem(e) beim Spielen gefunden.
+e9dd5680 In die Zwischenablage kopiert
+e00ac23f Art
+764b4aa3 Wie schlimm
+33446003 Szene
+44819483 Nichts
+36c4a06f Wird geprüft…
+ecab72e7 Der Spielordner / das ganze Spiel
+95263aa8 Die Zeile in der Spieldatei (markiert)
+adac6937 Code
+4dc2eddf Gefunden mit {app}. {n} Problem(e).
+6b21fb79 Über
+b8bb1461 Wie kommen Spieler zu dieser Szene?
+d07d7afa Wie kommen Spieler zu „{name}“?
+fa893d87 Sauber
+70440046 Hinweise
+1430f976 Warnungen
+805e86a8 Fehler
+dcad8ee5 Codeansicht wird vorbereitet…
+7f2f6a15 Fehler
+e9c45563 Warnung
+2c924e30 Hinweis
+f4808ecd Spiel öffnen…
+f6ab55dd Erneut prüfen
+dd3fa3ce ▶ Probespielen
+5e4797ea Reparatur-Assistent
+4fa8cc86 Werkzeuge
+c47ae153 Hilfe
+9d454f7c Kein Spiel geöffnet
+7869cc5c Ich bearbeite in Twine
+db8da328 Ich bearbeite die .html-Datei (Notepad++ usw.)
+20c7c552 Bereit
+26a93eac Spielordner öffnen (Ren'Py, RPG Maker, Ink, ChoiceScript)…
+775b3ab8 Ordner für Bilder und Töne…
+cd9a3d88 Sicherungskopie der Spieldatei
+2505d3da Eine Zeile testen, bevor du sie änderst…
+3536c70a Mit einer anderen Version vergleichen…
+080460a5 Fehlerbericht für den Entwickler schreiben…
+0cbf16ea Bericht exportieren…
+490c3a52 Spieldatei beobachten und beim Speichern neu prüfen
+09e02e95 Als beabsichtigt markierte Probleme anzeigen
+80f65544 Texteditor…
+3a4dad84 Rundgang starten
+f996200a Lektionen (F1)
+e5aaa5b5 Wörterliste
+320067c6 Extragroßer Text
+07471db5 Farben für Farbenblinde
+c2cebede Alle Arten
+1baa06b4 Problem
+ced091e8 Szene / Ort
+ea967600 Zeile
+99a42316 Reparatur
+3cd62e5f In meinem Texteditor öffnen
+a4f34926 Korrigierte Zeile kopieren
+0973fd22 Suchtext kopieren
+28a1dc64 Behoben - prüfen
+1a256c63 Dem Entwickler melden
+b491a51b In der Codeansicht zeigen
+463e5e78 Als beabsichtigt markieren
+562107b8 Vorlesen
+e42bc527 Details kopieren
+d7c5a824 Genau so zeigen, wie es in der Datei steht (&lt;-Codes)
+2314cd9a Spiel öffnen
+7a8e0cf0 Spielordner auswählen
+ff10f24c Ordner mit den Bildern, Tönen und Videos des Spiels
+38e9a3e9 Spiel: {path}     Ordner: {folder}
+24fc8907 Vorlesen beenden
+7335beba Nicht mehr als beabsichtigt markiert
+24fec833 Als beabsichtigt markiert - aus der Liste ausgeblendet (Werkzeuge > Als beabsichtigt markierte Probleme anzeigen)
+615c9a3f {fmt} · {units} Teile · {files} Dateien im Ordner · {e} kaputt, {w} wahrscheinlich kaputt, {i} zu prüfen · {s} s
+f229a698 Code-Gesundheit: {n}% · {label}
+d8d62e38 Prüfung abgeschlossen
+dd3a39d8 Code-Gesundheit
+c6643b25 Skala: 100% ausgezeichnet · 90% sehr gut · 80% gut · 70% in Ordnung · unter 70% braucht Arbeit
+7e0056d2 Sie hängt davon ab, wie viele Szenen Probleme haben und wie schwer diese sind.
+07c80477 Nach Art
+45b733c9 Klicke auf ein Problem in der Liste, um die Details zu sehen.
+525f61b6 Wo
+4090e818 So behebst du es
+0b975974 Öffne deine Geschichte in Twine und öffne die Passage „{name}“.
+905dc77d Derselbe Name kommt auch in {n} weiteren Zeile(n) vor: {lines}. Ändere ihn dort auch.
+3cfafb7c Veröffentliche die Geschichte erneut (Build > Publish to File) und lade das Spiel neu, um es zu prüfen.
+64cb91c6 Wo: {where}
+4383fcfd Was falsch ist: {text}
+07bddb04 So behebst du es: {text}
+cf36743b Jetzt: {text}
+0cacfdc2 Ändern in: {text}
+70fbdd39 Korrigierte Zeile kopiert. Markiere in Twine die alte Zeile in der Passage „{name}“ und füge ein.
+60eafc99 Korrigierte Zeile kopiert. Markiere in deinem Editor Zeile {n} und füge darüber ein.
+67a9f511 Suchtext kopiert. Drücke in deinem Editor Strg+F und füge ihn ein.
+67c1b9a0 Die Datei hat sich seit der letzten Prüfung nicht geändert. Hast du gespeichert?
+2693cf86 Vergleiche deine Zeile noch einmal mit der Zeile unter „Ändern in“.
+1b930787 Öffne zuerst ein Spiel.
+9dbf0a77 Sicherung gespeichert: {path}
+88e09b05 (dein Text)
+e835a0e1 Fehlerbericht für {game}
+338c5072 Technisch: {text}
+fc5e62a8 Einstellungsdatei: {path}
+0f83a323 Die Spieldatei wird beobachtet. Jedes Mal, wenn du sie speicherst, wird sie neu geprüft.
+24b5689b Beobachtung der Spieldatei beendet.
+6bbf59c5 Spieltest wird gestoppt…
+c5726162 Für den Spieltest wird Microsoft Edge oder Google Chrome benötigt, aber keins von beiden wurde gefunden.
+efe69072 Das Spiel hat sich während des Spieltests geändert. Starte ihn erneut.
+226d7ec9 In Ordnung
+59cd52ee Prüfenswert
+80c66d73 Wahrscheinlich kaputt
+3ad465ce Kaputt
+8ea8e60f Zeile {n}: keine Probleme gefunden
+421fe500 Doppelklick für Details
+a6e7e8d6 „{text}“ nicht gefunden
+fc748144 Die {n} angezeigten Probleme exportieren
+c8ca2957 Bericht gespeichert: {path}
+09188221 Ganzes Spiel
+5a7ee5ac Fehlerbericht
+203dee52 Die Details wurden gespeichert in {path}
+5abfea7d Einfache Worte: aus
+de314fa0 Schweregrad
+fc55cc19 Passage / Ort
+3deb7456 Typ
+61790945 ■ Spieltest stoppen
+e23fd7cf Markierung „beabsichtigt“ entfernen
+5ffa6ce4 Prüft Spiele auf Fehler und sagt dir in einfachen Worten, was falsch ist und wie du es behebst. Funktioniert mit Twine-Spielen (SugarCube, Harlowe, Chapbook, Snowman), anderen HTML-Spielen, Ren'Py, RPG Maker MV/MZ, Ink und ChoiceScript.
+e13e18f3 So benutzt du es
+c3abe9f5 Sicher in der Nutzung
+4d688496 Dieses Programm liest dein Spiel nur. Es ändert es nie. Nutze Werkzeuge > Sicherungskopie der Spieldatei, bevor du etwas bearbeitest.
+90c93523 Tastenkürzel
+8e990034 Strg+O öffnen · F5 erneut prüfen · Strg+F suchen · F3 weitersuchen · Strg+E exportieren · F1 Lektionen · Strg + / Strg − / Strg+0 oder Strg+Mausrad für die Größe
+21e5904b {n} Dateiverweise geprüft
+052df047 Hier anfangen - die wichtigsten Reparaturen
+eff36495 Oder klicke auf „Reparatur-Assistent“, um sie nacheinander durchzugehen.
+23bd8fe4 Szene „{name}“
+8cb67e05 Passage „{name}“
+12b1a199 Zeile {n} der Passage
+280d0541 Zeile {n} von {file}
+a684f161 Du hast dies als beabsichtigt markiert, daher zählt es nicht.
+6aeb39ef Was falsch ist
+c1bcc130 Was falsch ist
+ebcf7d18 Was Spieler bemerken
+e7f32d0f Klicke auf „In meinem Texteditor öffnen“. Er öffnet {file} in Zeile {n}.
+73c8627d Lösche diese Zeile (sie steht unten unter „Jetzt“).
+b44b2225 Ändere sie wie unten unter „Ändern in“ gezeigt. „Korrigierte Zeile kopieren“ kopiert die ganze korrigierte Zeile, damit du sie über die alte einfügen kannst.
+d640e11b Siehe die Erklärung oben.
+33d1a502 Speichere die Datei, lade das Spiel neu und klicke dann auf „Behoben - prüfen“.
+fd3e0dfe Mit Twine gemacht? Dann behebe es lieber in Twine (stelle oben „Ich bearbeite die .html-Datei“ auf „Ich bearbeite in Twine“ um). Beim Veröffentlichen aus Twine werden Änderungen direkt in der .html-Datei überschrieben.
+e3b82040 Jetzt
+b9b6aac4 Ändern in
+3895c256 Kann ich das ignorieren?
+189da0ef Was Spieler bemerken: {text}
+7d949b29 Code: {text}
+80411ece Noch nicht behoben - das Problem ist noch da
+71a91179 drücke Strg+G und gib {n} ein, um zur Zeile zu springen
+84d3bdef Geöffnet in {name}
+7bf2bdbd Szene: {name}
+f8e71156 Zeile {n} von {file}
+e9331864 Was passiert: {text}
+16fcd5a1 ({n} weitere Zeichen in dieser Zeile)
+6dcc62dd Bericht gespeichert. Jetzt öffnen?
+02fbc53c Problem (einfache Worte)
+2c3cafa4 Datei
+1bea2fb0 So behebst du es
+fdccd352 In der App ist etwas schiefgelaufen:
+b7152342 Größe
+8e6b86dc Probleme
+8f0d8d83 Gruppieren nach
+bce06414 Suchen
+74c14ca3 Codeansicht
+a3d77701 ◀ Vorheriges Problem
+3a289dc9 Nächstes Problem ▶
+2e0b45f2 Los
+ececaefe Weitersuchen
+df251b06 Suchen
+7e08ebec Entwickler
+e53407cf Spieler
+0406a446 Einfache Worte
+2edb004b Ich bearbeite die .html-Datei
+b45e0101 Änderungen werden beobachtet
+398ed329 Spiele
+6f80238e HTML-Spiele
+f7857dcc Alle Dateien
+6798c955 Wird geprüft, bitte warten…
+be4bd50c Code-Gesundheit: {n}%
+16dd1f3a {n} als beabsichtigt markiert
+901b56b2 Nichts anzuzeigen
+ea64a687 4. Hilfe > Lektionen erklärt die Grundlagen in wenigen Minuten. Hilfe > Rundgang starten zeigt dir alles.
+570f71b7 Kaputte Szenen
+08f7f24d Speichere dein Spiel, bevor du dorthin gehst, damit du zurück kannst, falls etwas schiefgeht:
+29e8d770 Nutze „Dem Entwickler melden“ bei einem Problem oder Werkzeuge > Fehlerbericht schreiben, um die Details zu schicken.
+d19ceca5 Tipp
+251eb9e2 Speichere dein Spiel, bevor du diese Szene erreichst, damit du zurück kannst, falls sie kaputtgeht.
+d782b266 Finde die Stelle: Nutze „Find and replace“ in Twine (oder schau genau hin) für diesen Text:
+eb92d56f Öffne das Projekt im RPG Maker und gehe zu: {where}
+7e7c7eb1 (diese Zeile löschen)
+d40baaa7 ✔ Behoben! Das Problem ist weg. Die Code-Gesundheit ist jetzt {n}%.
+fce98782 Wähle unter Werkzeuge > Texteditor… einen anderen Editor
+55d0a707 Sicherung gespeichert:
+802cfe54 Sicherung konnte nicht erstellt werden:
+a01ce386 Vorgeschlagene Reparatur (in Twine):
+d9cb995e Übersetzungen außer Englisch wurden von einer KI erstellt und können Fehler enthalten. Technische Details bleiben auf Englisch, so wie die Spiel-Engines und ihre Handbücher.
+987dd9b8 Öffne ein Spiel, um hier seinen Code zu sehen.
+f4fd7854 {name} ({n} Zeilen)
+db3b1ca2 Bericht als Webseite
+1b5f6570 Tabelle (CSV)
+ee3d21a8 Textdatei
+934a1886 Bericht konnte nicht gespeichert werden:
+29211387 System-Design
+9e5ba0f0 Helles Design
+d51c5960 Dunkles Design
+71df97be Datei gespeichert - neu geprüft: {fixed} behoben, {new} neu
+12d21609 (ganzes Spiel)
+4671f2fd {n} Teile
+af4e5ffa {n} Problem(e) in dieser Gruppe. Klicke auf eins, um die Details zu sehen.
+e065ed24 Falls die Zeile verrutscht ist, drücke Strg+F in deinem Editor und suche nach:
+d6cd9bbc Prüfen nicht möglich:
+e8b6a7a1 (Zeile {lines})
+2a87805d {name} konnte nicht gestartet werden:
+50803478 So behebst du es: {text}
+cbbf7064 Version {v}. Findet Probleme in Spielen und erklärt, wie man sie behebt. Liest nur Dateien und ändert dein Spiel nie.
+7e16f294 Code-Gesundheit: {n}% ({label})
+13b7bfca Wird bearbeitet…
+944d285f Prüfung fehlgeschlagen
+5117eb3e Kein Problem passt zu den aktuellen Filtern.
+84a26cd3 Keine Probleme gefunden. Gute Arbeit!
+e961739d 3. Du weißt nicht, wo du anfangen sollst? Nutze den Reparatur-Assistenten - er geht die Probleme nacheinander durch und prüft deine Reparaturen.
+dfa2b6e9 Zeile {n}:
+27a41ea2 (löschen)
+966d414d Zeile {n}
+a37a62b5 2. Klicke auf ein Problem in der Liste. Darunter siehst du, was falsch ist, was Spieler bemerken und genau, wie du es behebst.
+47faaf63 Spieltest gestoppt
+9de8b1a5 1. Klicke auf „Spiel öffnen…“ und wähle die .html-Datei des Spiels (oder nutze Werkzeuge für einen Spielordner). Die Prüfung startet von selbst.
+836bf385 Der Spieltest konnte nicht laufen:
+3dd51c5a Wähle deinen Texteditor
+1f7611ea Texteditor auf {name} gesetzt
+43320d49 Eine Zeile testen, bevor du sie änderst
+18e673bc An deinem Spiel wird nichts geändert. Hier wird nur der Text geprüft, den du eingibst.
+8ecc7800 Fehlerbericht für den Entwickler schreiben
+2e2b95ec Zwei Versionen vergleichen
+ccdb5389 Wähle die andere Version des Spiels und klicke auf Vergleichen. Beide werden nur gelesen, nie geändert.
+cabad4eb Die andere Version wird geprüft…
+cb9ce97b Lektionen
+9255b9a1 Texteditor-Programm auswählen
+67094e72 Dieses Programm wurde nicht gefunden. Wähle es mit „Durchsuchen…“ aus.
+21461571 ◀ Zurück
+2d8a1625 Überspringen ▶
+7c5d9f51 {done} von {total} behoben
+cb70c72b Problem {n} von {total}
+820d6004 Wird geprüft…
+e461d5d0 {n} Problem(e) gefunden:
+9580fcbc Einfacher Text
+26a49ee7 Discord / Reddit
+1f82bc1e Forum (BBCode)
+616ce66d Kaputt + wahrscheinlich kaputt
+34d5d395 Nur das ausgewählte Problem
+ced1fd2f Fehlerbericht speichern
+ec9135a3 Fehlerbericht gespeichert: {path}
+8d105cf4 Vergleichen
+a1cd6b54 Andere Version auswählen
+1f5bf765 Wähle zuerst die andere Version aus.
+ad916050 Wird verglichen…
+f4f29947 Code-Gesundheit: {a}% → {b}%
+a81eb289 In der neueren Version behoben ({n})
+53da970f Neue Probleme in der neueren Version ({n})
+2be41ba6 Noch vorhanden ({n})
+9ec4aa53 Wörter in dieser App
+ce12714d Nichts zu reparieren
+d231fca7 Es gibt keine Probleme mehr, die behoben werden müssen. Gut gemacht!
+76c1c7de Dieses Problem ist weg - es wurde behoben oder die Datei hat sich geändert. Klicke auf Überspringen, um weiterzumachen.
+55855f77 Einzelne Zeilen testen funktioniert bei Twine-Spielen (SugarCube). Öffne zuerst eins.
+bbfa773e Schließen
+af74f7c5 Kopieren
+571a03ba Welches Programm soll die Spieldatei öffnen?
+113fa56b Diese Texteditoren wurden auf diesem Computer gefunden:
+d4b86cfd Anderes Programm…
+9d68007b Programm
+c1b20f52 Durchsuchen…
+6bf5da9c Optionen
+4ee6279e {file} wird durch die Spieldatei ersetzt und {line} durch die Zeilennummer. Notepad++ nutzt: -n{line} "{file}"
+77dfd213 Abbrechen
+efc007a3 Speichern
+ab14d0a7 Programme
+4abacc60 ✔ Behoben! Gut gemacht. Hier ist das nächste.
+1ed684b1 Füge die Zeile (oder die ganze Passage) ein, die du verwenden willst, oder tippe sie:
+45f9116a Das ist eine ganze Passage (auch prüfen, ob jedes Tag geschlossen ist)
+4b5e84be Prüfen
+6a17f3f6 In diesem Text wurden keine Probleme gefunden.
+44b39131 Vorschlag:
+4020c08c Stil:
+2f32f781 Enthalten:
+4705cad6 Reparaturhinweise einfügen
+d9057148 Speichern unter…
+83c52802 Andere Version:
+c3c1e96d Die andere Version ist:
+6fa5fbbc älter
+1d47386a neuer
+78cee4b8 Schritt {n} von {total}
+57bc79e3 Rundgang überspringen
+bc981983 Weiter
+e9b450d1 Fertig
+682c160f Aktuelles Spiel:
+74c063af Falsch:
+3a82310a Richtig:
+c7c15bca Das geht für Spieler schief.
+8df34ecb Das ist sehr wahrscheinlich ein Fehler.
+1d894da2 Nicht dringend. Kann in Ordnung sein, aber schau es dir an.
+58da2ccb Links zu fehlenden Szenen
+78d3da9d Fehlende Bilder und Töne
+59327131 Kaputte Spielbefehle
+dfe69b5d Falsch geschriebene Spielbefehle
+140d954e „Wenn“-Prüfungen, die schiefgehen
+169a1b52 Befehle, die nichts tun oder kaputt sind
+c3f4070a Falsch geschriebene Werte
+ee27480a Wiederverwendbare Bausteine
+9c0fe2ed Seitenlayout-Code
+2c0f0a6d Stile (Farben und Aussehen)
+f77fd1fd Szenen
+45e35cfc Szenen, die niemand erreichen kann
+a2406e53 Dateien, die das Spiel nie benutzt
+68320599 Unfertiger Text
+8a21b1ee Rechtschreibung
+169b486d Tippfehler
+a1d181bd Funktioniert nur unter Windows
+3e9d9ae4 Sehr große Dateien
+50a12988 Beschädigte Dateien
+aab2b305 Veraltete Befehle
+3f55c07b Skriptcode
+cc0718f5 Spiel-Einrichtung
+c7ee483a Prüfprogramm
+c916a1ad Fehler beim Spielen
+0e66b49d Bild
+5e2e97c3 Ton
+ffbaf58f Video
+4642576d Schrift
+767013ce Seite
+971c419d Datei
+8c657028 der Szene „{name}“
+84db7a65 dem Spiel
+27260418 Führt zu einer Szene, die es nicht gibt: „{name}“
+65a1b892 In {where} versucht ein Link oder Befehl, eine Szene namens „{name}“ zu öffnen. Keine Szene im Spiel heißt genau so.
+eddc288b Wenn der Spieler darauf klickt (oder das Spiel dorthin kommt), sieht er eine Fehlermeldung oder eine leere Seite statt der Szene.
+6690f7df Lass den Namen genau mit einer vorhandenen Szene übereinstimmen. Groß-/Kleinschreibung und Leerzeichen zählen.
+ee186081 Führt zu einem Teil der Geschichte, den es nicht gibt: „{name}“
+adcab89d Die Geschichte will bei „{name}“ weitermachen, aber nichts im Spiel hat diesen Namen.
+c68c7536 Das Spiel stoppt hier mit einem Fehler (oder startet gar nicht).
+262dea9c Lass den Namen genau mit einem vorhandenen Teil der Geschichte übereinstimmen.
+8a2045c6 Führt zu einem Kapitel, das es nicht gibt: „{name}“
+6b99d3d7 Die Geschichte will „{name}“ öffnen, aber dieses Kapitel oder diese Stelle gibt es nicht.
+54721a92 Das Spiel stoppt hier mit einem Fehler.
+bfe449ab Korrigiere den Namen, damit er zu einem vorhandenen Kapitel passt.
+8569b71c Öffnet einen Bildschirm, den es nicht gibt: „{name}“
+ed323960 Das Spiel will einen Bildschirm namens „{name}“ zeigen, aber kein Bildschirm heißt so.
+31aaf0f7 Das Spiel stoppt hier mit einem Fehler.
+ecedecaf Korrigiere den Namen, damit er zu einem vorhandenen Bildschirm passt.
+1c82d0d0 Ein Ereignis schickt den Spieler an einen Ort, den es nicht gibt
+f7bb6caa Ein Ereignis bringt den Spieler auf eine Karte oder startet ein allgemeines Ereignis, das es im Spiel nicht gibt.
+11068616 Das Spiel stürzt ab oder friert ein, wenn dieses Ereignis läuft.
+17c8c384 Wähle in diesem Ereignisbefehl eine vorhandene Karte oder ein vorhandenes allgemeines Ereignis.
+924f14ec Ein Link, der nirgendwohin führt
+ac25c348 Ein Link in {where} sagt nicht, welche Szene er öffnen soll.
+cc208a80 Ein Klick darauf zeigt einen Fehler.
+81510156 Schreibe den Namen der Szene, die der Link öffnen soll.
+a620e5a7 Einem Link fehlt das Ende
+75319c60 Ein Link beginnt mit [[, endet aber nie mit ]].
+d94d2b45 Der Text danach wird in den Link gemischt und die Szene sieht kaputt aus.
+da97338b Füge ]] am Ende des Links hinzu.
+de752d36 Niemand kann „{name}“ erreichen
+ad06e184 Nichts im Spiel führt zu diesem Teil der Geschichte.
+49f72405 Spieler sehen ihn nie. Harmlos, außer er sollte spielbar sein.
+41e81f9d Wenn Spieler ihn sehen sollen, füge in einer anderen Szene einen Link dorthin hinzu. Ist er alt, kannst du es ignorieren.
+12017de3 Die Szene „{name}“ ist leer
+e1c78333 Diese Szene hat keinen Text und keinen Inhalt.
+eb036a1b Ein Spieler, der hierher kommt, sieht eine leere Seite.
+95468775 Schreibe die Szene oder entferne die Links, die zu ihr führen.
+65f5f00d Zwei Teile der Geschichte haben denselben Namen
+3a661399 Mehr als eine Szene oder Marke benutzt den Namen „{name}“.
+14b99f6a Nur eine davon kann je angezeigt werden, oder das Spiel startet nicht.
+5017f902 Gib jeder einen eigenen Namen.
+8ee54eec Das Spiel hat keine Startszene
+e4b1267b Das Spiel weiß nicht, wo es anfangen soll.
+67fece68 Das Spiel startet vielleicht gar nicht.
+6f3c3583 Markiere in Twine die erste Szene als Start.
+891a7ccc Ein Sprung-Link führt nirgendwohin
+723d0b6c Ein Link zeigt auf eine Stelle der Seite, die es nicht gibt.
+9d2a3ab1 Ein Klick darauf bewirkt nichts.
+a17d6d9d Korrigiere den Namen der Stelle oder entferne den Link.
+f7e0927c Fehlende Datei ({kind}): {file}
+471ab6b6 Das Spiel will die Datei ({kind}) „{path}“ verwenden, aber diese Datei ist nicht im Spielordner.
+215d84f2 Spieler sehen ein kaputtes Bild oder eine leere Stelle oder hören nichts.
+95495e08 Lege die Datei an diese Stelle oder ändere den Namen in der Spieldatei auf die Datei, die wirklich existiert.
+4e187285 Der Dateiname hat falsche Groß-/Kleinschreibung: {file}
+10dd7eb2 Die Datei existiert, aber das Spiel schreibt ihren Namen mit anderer Groß-/Kleinschreibung.
+445b1f51 Funktioniert unter Windows. Auf Handys, Macs, Linux oder einer Website fehlt das Bild oder der Ton.
+bcc2cd24 Ändere den Namen in der Spieldatei, damit die Groß-/Kleinschreibung zur echten Datei passt.
+fc7f8ac2 Ein Bild zeigt auf den eigenen Computer des Entwicklers
+bf1eaea6 Der Speicherort beginnt mit einem Laufwerksbuchstaben wie „D:\“. Diesen Ordner gibt es nur auf dem Computer, auf dem das Spiel gemacht wurde.
+8e9a7d52 Spieler sehen dieses Bild nie.
+e5baac7c Ändere es in einen Ort im Spielordner, z. B. images/characters/name.jpg.
+006a8fb9 Dateipfade benutzen \ statt /
+d6cb43a9 Das Spiel schreibt Ordnerpfade mit umgekehrten Schrägstrichen (\).
+42ad75cd Unter Windows in Ordnung. Auf Handys, Macs, Linux oder einer Website laden Bilder und Töne nicht.
+02bf9e76 Nur wichtig, wenn das Spiel außerhalb von Windows laufen soll: ersetze \ durch / in den Bildpfaden.
+0fa2cd7a {n} Dateien in „{folder}“ werden nie benutzt
+1b78ff55 Diese Dateien liegen im Spielordner, aber das Spiel benutzt sie nie.
+55acf4db Nichts geht kaputt. Sie machen nur den Download größer.
+aa1a0c6f Lösche sie, wenn du sicher bist, dass sie nicht gebraucht werden. (Manche wählt das Spiel vielleicht auf Wegen aus, die das Prüfprogramm nicht sieht.)
+cb4cc629 Eine leere Datei
+4642643c Diese Datei ist leer (0 Byte).
+24ec314d Sie wird nicht angezeigt oder abgespielt.
+6cd06e6e Ersetze sie durch eine funktionierende Kopie der Datei.
+07046633 Beschädigte Datei (abgeschnitten): {file}
+932dbf75 Das Ende dieser Datei fehlt, meist weil ein Download, Kopiervorgang oder Entpacken nicht fertig wurde.
+feda3672 Das Bild wird nur teilweise oder gar nicht angezeigt, oder der Ton/das Video endet zu früh.
+968dc7a4 Kopiere oder lade diese Datei erneut aus den Originaldateien des Spiels.
+6081a951 Gar kein echtes Bild oder kein echter Ton: {file}
+dc397b7a Die Datei hat den richtigen Namen, aber darin steckt eine Webseite (oft eine Fehlerseite einer Download-Seite).
+7f495908 Spieler sehen ein kaputtes Bild oder hören nichts.
+eee27da5 Lade die echte Datei erneut herunter und ersetze diese.
+2a1c1b71 Möglicherweise beschädigte Datei: {file}
+4c30367e Der Anfang dieser Datei sieht nach keinem bekannten Bild-, Ton- oder Videoformat aus.
+d3b9cea3 Sie wird wahrscheinlich nicht angezeigt oder abgespielt.
+0ab570a5 Öffne sie in einem Bildbetrachter oder Medienplayer. Ersetze sie, wenn sie sich nicht öffnet.
+f68470e5 Manche Dateien haben die falsche Endung (.png, .jpg ...)
+d608da1e Diese Dateien enthalten ein anderes Format als ihr Name sagt, z. B. ein JPEG-Bild mit der Endung .png.
+2e39b508 Browser zeigen sie meist trotzdem an. Manche Handys und Programme vielleicht nicht.
+097a3703 Optional: Wandle sie um oder benenne sie um, damit der Name zum echten Format passt.
+283d2070 Manche Dateien sind sehr groß
+c7fa15ff Diese Bilder oder Videos sind sehr groß.
+ae5369ab Sie laden langsam, besonders auf Handys.
+e125a92c Optional: Mache sie mit einem Bildprogramm kleiner.
+385f4329 Eine Spieldatei fehlt: {name}
+2e700532 Das Spiel erwartet eine Datei, die nicht da ist.
+99467808 Das Spiel zeigt beim Start oder an dieser Stelle einen Fehler.
+b3496ea7 Lege die fehlende Datei zurück oder entferne den Verweis darauf.
+75e6334a Eine Spieldatendatei ist beschädigt
+db02e969 Diese Datei kann nicht richtig gelesen werden.
+79b96faf Das Spiel startet nicht oder stürzt ab.
+7ebbbeec Stelle die Datei aus einer Sicherung oder dem Originalspiel wieder her.
+d399fac1 Ein „{name}“-Befehl wird nie geschlossen
+e6c66d5b Manche Spielbefehle brauchen ein passendes Ende. Dieser hat keins.
+0b1cb09f Das Spiel zeigt in dieser Szene einen roten Fehlerkasten, und ein Teil der Szene fehlt vielleicht.
+afdabc18 Füge das fehlende Ende (z. B. <</{name}>>) dort ein, wo dieser Teil enden soll.
+744245d7 Ein überzähliges End-Tag <</{name}>>
+adb1bea4 Es gibt ein End-Tag, das nichts zu beenden hat.
+b39fd74f Das Spiel zeigt in dieser Szene einen roten Fehlerkasten.
+a53d4f4e Lösche dieses überzählige End-Tag.
+fa8c8072 „{name}“ steht an der falschen Stelle
+9009044d <<{name}>> muss innerhalb eines <<if>>-Blocks stehen. Hier ist das nicht so, meist weil ein End-Tag weiter oben falsch steht.
+1e9acaea Das Spiel zeigt einen roten Fehlerkasten.
+1d2d751d Prüfe die Zeilen direkt darüber und verschiebe das End-Tag an die richtige Stelle.
+bfaae414 Einem End-Tag fehlt ein „>“: <</{name}>
+a280c34f Das End-Tag ist mit einem „>“ geschrieben, braucht aber zwei.
+71be19aa Das Spiel erkennt das End-Tag nicht. Es zeigt einen roten Fehlerkasten und die Szene sieht vielleicht falsch aus.
+a3c69d1f Füge ein „>“ hinzu, damit es mit „>>“ endet.
+413ace46 Ein überzähliges „>“
+4e791f5a Nach einem Tag steht ein „>“ zu viel.
+4ecd446f Spieler sehen ein verirrtes „>“ auf dem Bildschirm.
+c1c069b2 Lösche das überzählige „>“.
+cacfbdbb Ein überzähliges „<“
+fe9088b6 Vor einem Befehl steht ein „<“ zu viel.
+0c7a0bb7 Spieler sehen ein verirrtes „<“ auf dem Bildschirm.
+87807bf8 Lösche das überzählige „<“.
+b0d2d4e4 Ein halb geschriebener Befehl „<<“
+012a6c88 Da steht ein „<<“, dem nichts folgt.
+fd941db0 Der Befehl danach geht kaputt und das Spiel zeigt vielleicht einen Fehler.
+73f8070a Lösche das verirrte „<<“.
+7037d71a Einem Befehl fehlt sein „>>“
+87bde2ac Ein Befehl beginnt mit <<, endet aber nie mit >>.
+7f93f879 Der Text danach verschwindet oder die Szene zeigt einen Fehler.
+dbda1f76 Füge „>>“ am Ende des Befehls hinzu.
+5a30164d Eine Klammer wird geöffnet, aber nie geschlossen
+d5b047f2 Etwas beginnt mit einer Klammer, aber die schließende Klammer fehlt.
+8d50e9a9 Alles danach wird verschluckt oder das Spiel zeigt einen Fehler.
+912c548c Füge die fehlende schließende Klammer hinzu.
+35852e81 Eine überzählige schließende Klammer
+a1d86e33 Es gibt eine schließende Klammer ohne öffnende.
+fdeb2ba4 Spieler sehen vielleicht ein verirrtes Zeichen oder einen Fehler.
+254fbb5b Entferne die überzählige Klammer.
+98cb6b2f Ein Befehl hat keinen Text dabei
+1afec1b9 Dieser Befehl soll den Text direkt danach steuern, in eckigen Klammern [so]. Es folgt aber nichts.
+073266b4 Harlowe zeigt einen Fehler, oder der Text wird immer angezeigt.
+29369e93 Setze den Text, den er steuert, direkt danach in eckige Klammern.
+4093f80e Das Spiel zeigt einen Fehler, und der Teil der Szene, den er steuert, funktioniert nicht.
+ef3a7877 Ein veralteter Befehl
+54dead55 Dieser Befehl funktioniert noch, ist aber veraltet.
+01500c48 Im Moment nichts. Er könnte bei einem künftigen Engine-Update kaputtgehen.
+b1a70201 Optional: Ersetze ihn durch den neueren Befehl.
+a4a93d21 Eine „Wenn“-Prüfung benutzt „=“ statt „is“
+582b6716 In einer „Wenn“-Prüfung bedeutet „=“ „mach es gleich“, nicht „ist es gleich?“.
+564cdad0 Das Spiel zeigt einen roten Fehlerkasten, oder die Prüfung ist immer wahr und der falsche Teil der Szene läuft.
+e3105e2f Ersetze das einzelne „=“ durch „is“.
+f0b64920 „=>“ oder „=<“ verkehrt herum geschrieben
+897ec753 Größer-gleich schreibt man „>=“, nicht „=>“.
+0167d9bc Die Prüfung funktioniert nicht.
+0b498ace Schreibe stattdessen „>=“ oder „<=“.
+f917ca5e „is not“ sollte ein Wort sein
+4e8bbdf4 In dieser Spiel-Engine bedeutet „is not“ etwas anderes als „isnot“.
+e40cd819 Die Prüfung ist fast immer falsch.
+7f3a1402 Schreibe „isnot“ als ein Wort.
+694143a3 Eine „Oder“-Prüfung, die immer wahr ist
+b760633e Etwas wie „$x is 1 or 2“ prüft $x nur gegen 1; die „2“ allein zählt immer als Ja.
+f8b8cc75 Dieser Teil läuft, auch wenn er nicht sollte.
+b1a0ec7e Wiederhole den Namen: „$x is 1 or $x is 2“.
+1c4512b1 Eine „Wenn“-Prüfung, die zur falschen Zeit auslösen kann
+bb598d2b Diese Prüfung mischt „and“ und „or“ ohne Klammern. Der Computer wertet immer zuerst die „and“-Teile aus, also bedeutet die Prüfung vielleicht nicht, was gemeint war.
+71408d55 Eine Szene oder Option kann erscheinen, wenn sie nicht soll - z. B. wenn eine Figur entführt ist oder ein Wert zu niedrig ist.
+045d6c6c Setze Klammern ( ) um die Teile, die zusammengehören. Schau dir den Code unten an und gruppiere die „or“-Möglichkeiten.
+dbb9ed0f Klammern ( ) passen nicht zusammen
+6bbb5c72 Es gibt mehr „(“ als „)“ oder umgekehrt.
+d2676c8c Füge eine Klammer hinzu oder entferne eine, damit sie paarweise passen.
+8f746eaa Eine leere „Wenn“-Prüfung
+70ac1e0e Das „Wenn“ hat nichts zu prüfen.
+8fa764c4 Das Spiel zeigt einen Fehler.
+f72f83b1 Schreibe, was geprüft werden soll.
+00b75afd Eine Wertänderung, die nichts tut („==“)
+d3024696 Diese Zeile soll einen Wert ändern, aber „==“ vergleicht nur - es ändert nichts.
+4bb1b350 Der Wert ändert sich nie. Was davon abhängt (Timer, Zähler), bleibt hängen.
+bb9d82a8 Ersetze „==“ durch „to“.
+88b997d5 Eine Wertänderung, die nichts tut
+47b56b1e Diese Zeile soll einen Wert ändern, hat aber kein „to“, „=“, „+=“ oder „-=“, also ändert sich nichts.
+b3edbcbf Zum Beispiel wird nie Energie oder Geld abgezogen oder gegeben.
+5a19bb57 Schreibe „-=“ statt „-“ (oder „+=“ statt „+“).
+24335c15 Eine leere Wertänderung
+d7c9d917 Der Befehl ist leer.
+1ca2b36b Lösche ihn oder schreibe die Änderung.
+2d2715a0 Ein Wert wird mit „=“ statt „to“ gesetzt
+b3386569 Diese Engine setzt Werte mit „to“.
+be353939 Ersetze „=“ durch „to“.
+6b135470 Ein Anführungszeichen " fehlt
+b7ed7d6f Ein Textstück in einem Befehl beginnt mit ", wird aber nie geschlossen.
+4b70c1d8 Das Spiel zeigt einen Fehler oder verschluckt den Text danach.
+081a0ff8 Füge das fehlende " hinzu.
+1a1cb7a5 Tabulatoren, wo Leerzeichen nötig sind
+0d83ecca Diese Engine braucht Einrückungen nur mit Leerzeichen.
+1928be6f Das Spiel startet nicht oder stoppt hier mit einem Fehler.
+6707540b Ersetze den Tabulator am Zeilenanfang durch Leerzeichen.
+50e72b08 Einer Zeile fehlt „:“ am Ende
+1590b870 Zeilen wie „if“, „menu“ und „else“ müssen mit einem Doppelpunkt enden.
+34cb1caf Das Spiel startet nicht.
+739781b1 Füge „:“ am Ende der Zeile hinzu.
+463c9c22 Kaputter Skriptcode
+90393617 Eine Klammer oder ein Anführungszeichen im Skriptcode passt nicht.
+10b6ae9e Das ganze Skript funktioniert nicht mehr, was viele Funktionen kaputtmachen kann.
+208a3574 Prüfe die Klammern und Anführungszeichen um diese Zeile.
+08a420a2 Übrig gebliebener Testcode
+f523c19b Code, der zum Testen benutzt wurde, ist noch drin.
+a161c8db Meist nichts Sichtbares.
+5512920c Optional: entferne ihn.
+e14ae90f Ein Name mit einem „-“ darin
+a5d94a86 Namen von Werten dürfen kein „-“ enthalten. Das Spiel liest nur den Teil vor dem „-“.
+1d915eed Spieler sehen das falsche Wort oder eine Lücke statt eines Namens.
+1ff6bd49 Benutze „_“ statt „-“.
+929dc82b Prüfungen darauf ergeben immer „nein“, also erscheinen manche Texte oder Szenen nie (oder statt eines Namens steht eine Lücke).
+aa241baa Gleicher Name, andere Groß-/Kleinschreibung: ${a} / ${b}
+fe615c75 Für das Spiel sind das zwei verschiedene Werte, weil Groß-/Kleinschreibung zählt.
+1549316e Änderungen am einen sieht der andere nicht, also stimmen Werte oder Szenen nicht.
+485f98c5 Ändere ${a} in ${b}.
+fbb1a8ec Falsch geschriebener Wertname: {name}
+baa2f1ac „{name}“ wird nie angelegt, aber „{near}“ schon. Das ist fast sicher ein Tippfehler.
+37eb4d71 Das Spiel zeigt einen Fehler oder der Wert ist immer leer.
+69b0c997 Ändere „{name}“ in „{near}“.
+958390b8 Ein temporärer Wert, der nie gesetzt wird: _{name}
+66d98956 Dieser kurzlebige Wert wird benutzt, bekommt aber nie einen Wert.
+f6d72946 Prüfungen darauf funktionieren nie.
+b150a824 Setze ihn zuerst oder korrigiere den Namen.
+bb2ac176 Ein Wert, der nie angelegt wurde: {name}
+418bb0cf Benutzt einen Spielschalter/eine Variable, die es nicht gibt (#{n})
+60eb5de9 Das Ereignis benutzt Nummer {n}, aber die Liste des Spiels ist kürzer.
+ab5e6d39 Das Ereignis funktioniert nicht wie gedacht.
+27e3bd51 Wähle im Ereignis einen vorhandenen Schalter/eine vorhandene Variable.
+5e339cd0 Ein Spielschalter/eine Variable hat keinen Namen (#{n})
+e3546a24 Er/sie wird benutzt, hat aber keinen Namen in der Datenbank.
+15f64977 Nichts Sichtbares. Es ist nur leicht zu verwechseln.
+a8723260 Gib ihm/ihr einen Namen in der Datenbank.
+bd3955c1 Ein wiederverwendbarer Baustein ist doppelt definiert: {name}
+0a743f0a Zwei Definitionen haben diesen Namen.
+4d983cee Nur eine Version wird benutzt.
+08c1e9fa Lösche oder benenne eine davon um.
+20982092 Ein wiederverwendbarer Baustein wird nicht geladen
+3ed9bdd5 Seiner Szene fehlt das Tag „widget“.
+4f7fa681 Jede Szene, die ihn benutzt, zeigt einen Fehler.
+a3c57c94 Füge dieser Szene in Twine das Tag „widget“ hinzu.
+769d38d3 Ein unbenutzter wiederverwendbarer Baustein: {name}
+91caae31 Er ist definiert, wird aber nie benutzt.
+92f3557e Nichts geht kaputt.
+48518178 Nichts nötig.
+549a08bd Ein fehlendes Anführungszeichen im Seitencode
+2616e9ea In einem Seiten-Tag (oft einem Bild) fehlt ein Anführungszeichen ".
+c1ac2a6e Das Bild oder Element wird vielleicht nicht angezeigt, oder das Layout bricht.
+1359ec48 Seitenkästen, die nicht richtig geschlossen sind
+c5eaf192 Ein Layout-Kasten (wie <div> oder <center>) wird geöffnet, aber nicht geschlossen, oder zu oft geschlossen.
+bff958b5 Text oder Bilder landen vielleicht an der falschen Stelle oder im falschen Stil.
+2055d18e Füge das fehlende schließende Tag hinzu oder entferne das überzählige.
+3ec38cbd Zwei Dinge haben dieselbe Namensmarke (id)
+0bf6eee0 Jede id muss auf der Seite einmalig sein.
+ff424805 Knöpfe, die diesen Teil aktualisieren, ändern vielleicht die falsche Stelle.
+3d5e5acf Gib jedem eine eigene id.
+9ef419aa Ein Bild oder Link ohne Datei
+41c88499 Das Tag zeigt auf nichts.
+30064ec6 Vielleicht wird ein kaputtes Bildsymbol angezeigt.
+0e8cdbfd Trage den Dateinamen ein oder entferne das Tag.
+8c62dd1b Bildgrößen, die Browser ignorieren
+c97c9dc5 Bildgrößen wie height="450wv" enthalten Buchstaben, die der Browser nicht versteht („wv“ ist keine Einheit).
+38f858bc Bilder werden trotzdem angezeigt, nur in einer festen Pixelgröße. Meist harmlos.
+c33de17c Optional: entferne die Buchstaben, z. B. height="450".
+b2030de7 Ein Stilname, der nicht passt: „{name}“
+912e16dc Das Aussehen dieses Teils wird über den Namen „{name}“ gewählt, aber der Stil heißt „{near}“.
+93f6e366 Dieser Teil wird ohne die gewünschten Farben oder das Layout angezeigt.
+de3efded Ein Stilname ohne Stil: „{name}“
+46cc76e2 Keine Stilregel benutzt diesen Namen.
+3a6cc944 Meist harmlos.
+d91f6b60 Unfertiger Text, den Spieler sehen können
+a2d31ceb Der Entwickler hat eine Notiz wie „PLACEHOLDER“ oder „TODO“ in der Geschichte gelassen.
+33f40845 Spieler sehen diese Notiz, oder die Szene ist unfertig.
+a398b7c0 Schreibe den echten Text oder entferne die Notiz.
+a89ee2d1 Rechtschreibung: „{wrong}“ sollte „{right}“ sein
+bf0afa72 Ein häufiger Rechtschreibfehler.
+979c6e99 Spieler sehen das falsch geschriebene Wort.
+7e32de5a Ändere „{wrong}“ in „{right}“.
+b2d44d92 Doppeltes Wort: „{words}“
+670755a1 Dasselbe Wort steht zweimal hintereinander.
+f901109b Spieler sehen das doppelte Wort.
+c8f90b31 Lösche eins davon.
+fd88a85b Zeigt ein Bild, das es nicht gibt: „{name}“
+d99288f0 Kein Bild mit diesem Namen ist definiert, und keine Datei in images/ passt.
+61cd07a0 Spieler sehen ein Platzhalterbild oder einen Fehler.
+3b215908 Füge das Bild hinzu oder korrigiere den Namen.
+a08bad60 Das Spiel hat keine ID-Nummer
+91a06fd9 Twine benutzt eine ID, um Geschichten auseinanderzuhalten.
+7ff45b55 Veröffentliche die Geschichte erneut aus Twine.
+ce8325ca Zeigt beim Spielen einen roten Fehlerkasten: „{name}“
+212a3e36 Als die Szene wirklich gespielt wurde, zeigte das Spiel diesen Fehler: {msg}
+1cda4ad4 Spieler sehen in dieser Szene einen roten Fehlerkasten, und ein Teil fehlt.
+fe183b9c Schau dir die Probleme an, die für dieselbe Szene aufgelistet sind - sie erklären meist die Ursache.
+5a4709f8 Ein Skript kann der Browser nicht einmal lesen
+417e0923 Der Browser hat in diesem Skript einen Schreibfehler gefunden, daher läuft nichts davon.
+711c9902 Funktionen aus diesem Skript (besondere Befehle, Einstellungen) fehlen oder sind kaputt.
+289bf8bb Suche in dieser oder der vorigen Zeile nach einer fehlenden Klammer, einem Anführungszeichen oder einem Komma.
+fefc36ad Beim Spielen fehlende Bilder oder Töne
+d47a66be Diese Dateien wurden beim Spielen der Szenen angefordert, existieren aber nicht.
+80b8b71b Spieler sehen in manchen Szenen kaputte Bilder oder hören nichts.
+9733445f Füge die fehlenden Dateien hinzu oder korrigiere ihre Namen.
+4f504ebe Ein Fehler beim Start des Spiels
+92243591 Der Browser hat beim Laden des Spiels einen Fehler gemeldet.
+2fea6477 Der Startbildschirm oder manche Funktionen sind vielleicht kaputt.
+608156d3 Suche im Hauptskript des Spiels nach dem Problem, das in der Meldung genannt wird.
+231d0f49 Falsch geschriebener Befehl: {name}
+388bf136 Unbekannter Befehl: {name}
+9b686aa1 Das Spiel kennt diesen Befehl nicht. Fast sicher ein Tippfehler für {near}.
+d1f769ee Das Spiel kennt diesen Befehl nicht.
+6a1cce2c Ändere ihn in {near}.
+46c692e0 Prüfe die Schreibweise des Befehls.
+6db67833 Ein Wert, der nie gesetzt wird: {name}
+c0ceb098 Das Spiel benutzt „{name}“, aber überall sonst heißt er „{near}“. Das ist ein Tippfehler.
+8acbe929 Das Spiel prüft oder zeigt „{name}“, aber nichts gibt ihm je einen Wert.
+fbb2c20c Gib ihm einen Startwert oder korrigiere den Namen.
+33e186ef Ein Wert, den das Spiel nie benutzt: {name}
+72bf1ee8 Das ändert „{name}“, aber das Spiel schaut nur auf „${near}“. Das ist ein Tippfehler.
+7f81aa2e „{name}“ wird geändert, aber das Spiel schaut nie darauf.
+fd3f859d Die Änderung geht verloren - z. B. eine Wertsteigerung, die nie zählt.
+4857ea9f Nichts geht kaputt. Vielleicht ein Rest aus älteren Versionen.
+d2118ba7 Ändere „{name}“ in „${near}“.
+3867ee62 Nichts nötig, außer er sollte benutzt werden.
+11e31f78 „{name}“ wurde nie angelegt. Wahrscheinlich ein Tippfehler für „{near}“.
+8f03aa6d „{name}“ wurde am Anfang des Spiels nie angelegt.
+dd8d9eef Lege ihn am Anfang des Spiels an.
+a62731f6 Passage
+f8de5ecc Eine Seite oder Szene eines Twine-Spiels. Jede Passage hat einen Namen, und Links führen von einer Passage zur anderen.
+ea5e0445 Szene
+ad88890f Eine Seite der Geschichte. In Twine heißt sie „Passage“.
+78f3a3d9 Makro
+480a06b0 Ein Spielbefehl zwischen << und >>, z. B. <<if>> oder <<set>>. Das Spiel führt ihn aus, statt ihn anzuzeigen.
+1925f793 Befehl
+410ae6be Eine Anweisung an das Spiel, z. B. „zeige dieses Bild“ oder „wenn der Spieler 5 Gold hat“. In SugarCube steht sie zwischen << und >>.
+b46d0172 Variable
+2ef301de Ein benannter Wert, den sich das Spiel merkt, z. B. $gold oder $mother_love. In SugarCube beginnt er mit $.
+f32b67c7 Wert
+a746abd2 Eine Zahl, ein Wort oder ein Ja/Nein, das sich das Spiel merkt, z. B. die Menge Gold.
+afad9a69 Bedingung
+1dc59f8f Eine Prüfung wie „$gold gte 5“ (hat der Spieler mindestens 5 Gold?). Der Text danach erscheint nur, wenn die Prüfung wahr ist.
+5e9b60f6 Tag
+1df6d68c Eine Markierung im Code. Öffnende Tags wie <<if>> beginnen einen Teil, schließende Tags wie <</if>> beenden ihn.
+4f0aa52d Link
+5afc9751 Anklickbarer Text, der den Spieler zu einer anderen Szene bringt. In Twine: [[Text|Szenenname]].
+d3ecb0d8 include
+bbc9ce26 Ein Befehl, der eine andere Passage in diese einfügt: <<include "Name">>.
+ff700e02 Widget
+fd5df966 Ein selbstgemachter Befehl, der einmal definiert und in vielen Szenen wiederverwendet wird.
+9f738ce8 HTML
+16d38297 Die Sprache, in der Webseiten geschrieben sind. Tags wie <img> (Bild) und <div> (Kasten).
+194e13da CSS
+28d26723 Stilregeln: Farben, Größen und Layout. Eine „class“ verbindet ein Element mit einem Stil.
+ee620923 JavaScript
+2d04472d Die Programmiersprache von Webseiten. Spiele benutzen sie für besondere Funktionen.
+cb5346a0 Skript
+302bcb23 Ein Stück Programmcode (meist JavaScript).
+0c4da6cb Twine
+5deecf78 Das kostenlose Programm, mit dem viele Textspiele gemacht werden. Es veröffentlicht das Spiel als eine einzige .html-Datei.
+9b2ab238 SugarCube
+5a15607f Das häufigste „Story-Format“ (die Engine) für Twine-Spiele. Es liefert die << >>-Befehle.
+5e2fb0c2 veröffentlichen
+9eb9fe5a In Twine: Build > Publish to File. Das schreibt die spielbare .html-Datei aus deiner Geschichte.
+1af607c7 Dateipfad
+3bee6183 Wo eine Datei liegt, z. B. images/hero.png (der Ordner „images“, die Datei „hero.png“).
+264f39ca Zeile
+f44c6b66 Eine Textzeile in der Datei. Texteditoren zeigen links die Zeilennummern.
+3cc46d20 Einrückung
+2a14602c Leerzeichen am Zeilenanfang. Manche Engines erkennen daran, welche Zeilen zusammengehören.
+64c65374 Marke
+0419b517 Eine benannte Stelle (label) in einer Ren'Py- oder ChoiceScript-Geschichte, zu der andere Teile springen können.
+40a22a4a Knoten
+fba17772 Ein benannter Abschnitt (knot) einer Ink-Geschichte. „-> name“ springt dorthin.
+fd8c7c8e Plugin
+45e375e0 Ein zusätzliches Skript in einem RPG-Maker-Spiel.
+67db3ab6 1. Was ist eine Passage (Szene)?
+6cfa54e4 2. Befehle zwischen << und >>
+fcaf062f 3. Öffnen und schließen
+47887091 4. Werte, die sich das Spiel merkt ($Variablen)
+c3bcb980 5. „Wenn“-Prüfungen
+d8cc0b48 6. Bilder und Töne
+c413d282 7. Sicher bearbeiten
+fb4c49ae 8. Diese App lesen
+a9af7910 Fang hier an: Öffne die .html-Datei des Spiels (oder einen Ren'Py-, RPG-Maker-, Ink- oder ChoiceScript-Spielordner). Die Prüfung startet von selbst.
+de845e69 „Einfache Worte“ erklärt alles in Alltagssprache. Schalte es aus, um technische Details zu sehen.
+6c84c615 Entwickler oder Spieler: Spieler bekommen eine kurze, fast spoilerfreie Liste kaputter Szenen und einen Fehlerbericht für den Entwickler. Entwickler bekommen die Reparaturwerkzeuge.
+ba413de9 Alle gefundenen Probleme. Rot ist kaputt, Gelb ist wahrscheinlich kaputt, Blau ist prüfenswert. Klicke auf eins, um zu sehen, was zu tun ist.
+476c1a70 Hier siehst du, was falsch ist, was Spieler bemerken und genau, wie du es behebst - mit der Zeile vorher und nachher.
+e871d7cc Der Reparatur-Assistent führt dich nacheinander durch die Probleme und prüft jede Reparatur für dich.
+3d56d049 Probespielen spielt jede Szene in einem unsichtbaren Browser und findet Fehler, die nur beim Spielen auftauchen.
+41da0a4f Werkzeuge: Spiel sichern, eine Zeile vor dem Ändern testen, zwei Versionen vergleichen, einen Fehlerbericht schreiben, Änderungen beobachten.
+75d05bed Hilfe: Lektionen, eine Wörterliste, dieser Rundgang und Komfort-Einstellungen wie extragroßer Text.
+52c5f193 Der Code-Gesundheitswert: 100% ausgezeichnet, 90% sehr gut, 80% gut, 70% in Ordnung.
+bcecc3cb Ein Twine-Spiel besteht aus Passagen. Jede Passage ist eine Szene: etwas Text, vielleicht ein Bild und Links zu anderen Passagen.
+b1f433c6 Links sehen so aus. Der Teil vor | ist das, was der Spieler sieht, der Teil nach | ist der Name der Passage, die geöffnet wird:
+33dd3c05 Der Name muss genau stimmen, auch Groß-/Kleinschreibung und Leerzeichen. „kitchen“ und „Kitchen“ sind verschiedene Passagen.
+14a03cdc SugarCube-Spiele benutzen Befehle zwischen << und >>. Das Spiel führt sie aus, statt sie anzuzeigen.
+fffc20ea Immer genau zwei < am Anfang und zwei > am Ende. Eins zu viel oder zu wenig macht den Befehl kaputt:
+1e192fbd Manche Befehle sind wie Klammern: Sie öffnen einen Teil und müssen geschlossen werden. <<if>> wird mit <</if>> geschlossen.
+fd08a19b Fehlt das schließende <</if>>, zeigt das Spiel einen roten Fehlerkasten. Bei einem zu viel ebenfalls.
+b25bf333 Ein Wort, das mit $ beginnt, ist ein Wert, den sich das Spiel zwischen Szenen merkt, z. B. $gold oder $mother_love.
+d4d0415d Groß-/Kleinschreibung zählt: $Gold und $gold sind zwei verschiedene Werte. Ein Tippfehler erzeugt einen neuen, leeren Wert, und die Änderung geht verloren.
+340aacf8 Um einen Wert zu ändern, benutze „to“, „+=“ oder „-=“. Ein einfaches „-“ rechnet, ändert aber nichts:
+87dc8b35 In einem „if“ vergleicht man mit „is“, „isnot“, „gte“ (mindestens), „lte“ (höchstens). Ein einzelnes „=“ ist dort falsch:
+add346a2 „and“ wird vor „or“ ausgewertet. Benutze Klammern zum Gruppieren, sonst kann die Prüfung zur falschen Zeit wahr sein:
+f07da221 Bilder werden mit einem <img>-Tag gezeigt. Der Pfad sagt, wo die Datei liegt, ausgehend vom Spielordner:
+9e333b42 Benutze / zwischen Ordnern. \ funktioniert nur unter Windows. Groß-/Kleinschreibung muss für Handys, Macs und Websites zum echten Dateinamen passen.
+9d1c8406 Jedes Anführungszeichen ", das geöffnet wird, muss geschlossen werden, sonst wird das Bild nicht angezeigt.
+6f7151f5 Bevor du etwas änderst, mache eine Sicherung (Werkzeuge > Sicherungskopie der Spieldatei).
+73b5381e Wenn das Spiel in Twine gemacht ist, ändere es in Twine und veröffentliche es erneut. Änderungen direkt in der .html-Datei gehen beim nächsten Veröffentlichen aus Twine verloren.
+0dab15d3 Wenn du nur die .html-Datei hast (keine Twine-Geschichte), bearbeite sie mit einem Texteditor wie Notepad++. In der .html-Datei werden < und > als &lt; und &gt; geschrieben - die App zeigt den genauen Text zum Kopieren.
+a877adb7 Nach jeder Änderung: speichern, das Spiel im Browser neu laden und in dieser App „Behoben - prüfen“ drücken.
+e6cfd88c Rot = kaputt: Spieler werden darauf stoßen. Gelb = wahrscheinlich kaputt. Blau = prüfenswert, oft in Ordnung.
+3c06ac34 Fang mit der Liste „Hier anfangen“ in der Übersicht an, oder nutze den Reparatur-Assistenten: Er führt dich Problem für Problem.
+f5a4fb88 „Als beabsichtigt markieren“ blendet einen Fund aus, den du geprüft hast und behalten willst. Er bleibt für dieses Spiel ausgeblendet.
+f3979521 Etwa 1 Minute
+d621d05d 5-15 Minuten
+bea680e1 Braucht den Entwickler (eine Story- oder Designentscheidung)
+0c6c4102 Optional
+e53abb3c Leichte Reparatur
+c4f93c0c Braucht etwas Sorgfalt
+a22663d7 Braucht den Entwickler
+230659f7 Wahrscheinlich ja, aber schau kurz drauf.
+6d9d36d5 Nein. Spieler werden darauf stoßen.
+ddad7bf2 Nur wenn du die Logik geprüft hast und sie tut, was du willst. Dann markiere es als beabsichtigt.
+6cf97a3f Ja, wenn die Szene alt ist oder nicht gespielt werden soll.
+d54dbf6e Ja. Nichts geht kaputt.
+3b411bc1 Ja, wenn das Spiel nur unter Windows gespielt wird.
+667e089a Ja, vorerst. Es könnte bei einem künftigen Engine-Update kaputtgehen.
+ca7eea8c Ja, aber Spieler sehen den Tippfehler.
+6225e68e Nur wenn die Szene absichtlich unfertig ist.
+47ecb09c Ja. Bilder werden trotzdem angezeigt.
+178ca96e Ja. Nichts Sichtbares ändert sich.
+e2fca6c0 Meist ja. Es ist oft ein Rest aus älteren Versionen.
+bcc248b9 Lieber nicht. Es ist sehr wahrscheinlich ein echter Fehler.
+557f2555 nicht
+cffa50a3 und
+1758356d oder
+6981b0db Keine Szene führt auf eine Weise zu „{name}“, der das Prüfprogramm folgen kann. Spieler sehen sie vielleicht nie, oder sie wird über Code erreicht, der den Szenennamen aus Variablen zusammensetzt.
+0f56183f Spieler erreichen „{name}“ von {n} Stelle(n):
+02e974ba Das ist die erste Szene des Spiels.
+5ffe533b wahr
+7cb6efb9 falsch
+1ed06825 ein Link
+3d22ef57 ein include
+ccdfd8c1 ein automatischer Sprung
+3f80e4d1 Von „{src}“ ({how}), wenn: {cond}
+084fcdcf Von „{src}“ ({how}), immer.
+8adbc573 …und mehr.
+1aafbf54 Ausgezeichnet
+bd846adf Sehr gut
+61dedcf0 Gut
+eafabce9 Braucht Arbeit
+4e0fa437 Schlecht
+75fb2b10 Datei wird gelesen
+ac133acf Geschichtsdaten werden gesucht
+456caef0 Skripte und Stile werden gesammelt
+fc404c89 Passagen und Links werden geprüft
+6a4d36f9 Makro-Tags werden geprüft
+546de9d0 Bedingungen und Code-Logik werden geprüft
+c338107e Variablen werden geprüft
+5730c93f HTML-Tags werden geprüft
+ea4c65ed CSS-Klassen werden geprüft
+d874e65d Bilder, Audio, Video und Dateien werden geprüft
+6517d389 Text wird geprüft (Tippfehler, Platzhalter)
+87beeee4 JavaScript wird geprüft
+7b7efd8b Story-Format-Regeln werden geprüft
+25f3b361 {label}-Spiel wird gelesen
+a28b6c50 Dateien werden auf Schäden geprüft
+5aedb280 Unsichtbarer Browser wird gestartet
+f5a5071d Spiel wird geladen
+8466e7c7 Skripte werden mit der JavaScript-Engine des Browsers geprüft
+bf197daa Szenen werden gespielt ({mode}): {k} von {n}
+f70cf464 Spieltest beendet
+4e1a8e3c Keine Probleme
+427c9fd7 In Szenen, die niemand erreichen kann
+9b9f5c3d Spieler sehen das nie: Es steht in einer Szene, die niemand erreichen kann. Kann so bleiben.
+e58020da Niemand kann „{name}“ erreichen: der Link ist ausgeschaltet
+2795ab1b Der einzige Link zu dieser Szene steht in „{where}“ (Zeile {line}), in einer versteckten Notiz /* ... */. Alles zwischen /* und */ ist ausgeschaltet.
+4ed22111 Spieler sehen diese Szene nie.
+30fda4f3 Wenn Spieler sie sehen sollen, lösche das /* und das */ um den Link. Wenn du sie absichtlich ausgeschaltet hast, lass sie so.
+7a9ce2ca Die einzigen Links zu dieser Szene stehen in anderen Szenen, die niemand erreichen kann.
+3aafeed1 Wenn Spieler sie sehen sollen, füge einen Link aus einer erreichbaren Szene hinzu. Wenn sie alt ist, kannst du sie ignorieren.
+0c4d1909 {n} Dateien in {k} Ordnern werden nie benutzt
+0efdb085 {n} Werte, die das Spiel nie benutzt
+425a6a2a Diese Werte werden geändert, aber das Spiel schaut sie nie an.
+849cdd9b Nichts geht kaputt. Sie sind vielleicht von älteren Versionen übrig.
+a82d56f5 Ein Seitenkasten wird nicht geschlossen: <{tag}> in Zeile {line}
+5c73814e Das <{tag}> in Zeile {line} wird nie mit </{tag}> geschlossen.
+b587a89d Füge </{tag}> dort ein, wo der Kasten enden soll.
+f1a6f13d Ein schließendes Tag zu viel: </{tag}> in Zeile {line}
+d887494b Das </{tag}> in Zeile {line} schließt einen Kasten, der nie geöffnet wurde.
+f3d6de5f Lösche das überzählige </{tag}> oder füge das fehlende <{tag}> hinzu.
+94b62097 Rechtschreibung: „{wrong}“ sollte „{a}“ oder „{b}“ sein
+45919c5c Ein häufiger Rechtschreibfehler. Er kann zwei verschiedene Wörter meinen.
+d3631b3f Lies den Satz und ändere „{wrong}“ zu „{a}“ oder zu „{b}“, je nachdem, was passt.
+4f2e0c01 Nichts nötig, außer einer sollte benutzt werden.
+37a88891 Meist nichts: Der Browser schließt ihn am Ende der Szene von selbst.
+9c393632 Ja. Es steht in einer Szene, die niemand erreichen kann, also sehen Spieler es nie. Behebe es nur, wenn du später einen Link zu dieser Szene hinzufügst.

@@ -1,0 +1,18 @@
+{
+ "open": ".",
+ "must": [
+  "Scene \"chapter2\" in the scene list has no file",
+  "${goldd} is not a declared variable",
+  "*set on undeclared variable \"silver\"",
+  "Unknown command *got",
+  "*goto to missing label \"bottom\"",
+  "*goto_scene to missing scene \"chaptr2\"",
+  "*goto_scene to missing label \"nolabel\"",
+  "Tabs and spaces mixed",
+  "\"TODO\" text shown"
+ ],
+ "must_not": [
+  "*set on undeclared variable \"gold\"",
+  "*goto to missing label \"top\""
+ ]
+}

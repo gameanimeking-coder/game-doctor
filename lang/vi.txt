@@ -1,0 +1,836 @@
+#name Tiếng Việt
+e77b83c2 Chơi thử xong: đã chơi {n} cảnh theo {m} cách, tìm thấy {k} vấn đề khi chơi.
+e9dd5680 Đã sao chép vào bảng nhớ tạm
+e00ac23f Loại
+764b4aa3 Mức độ
+33446003 Cảnh
+44819483 Không có
+36c4a06f Đang quét…
+ecab72e7 Thư mục trò chơi / toàn bộ trò chơi
+95263aa8 Dòng trong tệp trò chơi (được tô sáng)
+adac6937 Mã
+4dc2eddf Tìm thấy bằng {app}. {n} vấn đề.
+6b21fb79 Giới thiệu
+b8bb1461 Người chơi đến cảnh này bằng cách nào?
+d07d7afa Người chơi đến "{name}" bằng cách nào?
+fa893d87 Sạch
+70440046 Ghi chú
+1430f976 Cảnh báo
+805e86a8 Lỗi
+dcad8ee5 Đang chuẩn bị chế độ xem mã…
+7f2f6a15 Lỗi
+e9c45563 Cảnh báo
+2c924e30 Ghi chú
+f4808ecd Mở trò chơi…
+f6ab55dd Quét lại
+dd3fa3ce ▶ Chơi thử
+5e4797ea Trình hướng dẫn sửa lỗi
+4fa8cc86 Công cụ
+c47ae153 Trợ giúp
+9d454f7c Chưa mở trò chơi nào
+7869cc5c Tôi chỉnh sửa trong Twine
+db8da328 Tôi chỉnh sửa tệp .html (Notepad++, v.v.)
+20c7c552 Sẵn sàng
+26a93eac Mở thư mục trò chơi (Ren'Py, RPG Maker, Ink, ChoiceScript)…
+775b3ab8 Thư mục hình ảnh và âm thanh…
+cd9a3d88 Sao lưu tệp trò chơi
+2505d3da Thử một dòng trước khi sửa…
+3536c70a So sánh với phiên bản khác…
+080460a5 Viết báo cáo lỗi cho nhà phát triển…
+0cbf16ea Xuất báo cáo…
+490c3a52 Theo dõi tệp trò chơi và kiểm tra lại khi lưu
+09e02e95 Hiện các vấn đề đã đánh dấu là cố ý
+80f65544 Trình soạn thảo văn bản…
+3a4dad84 Xem hướng dẫn tham quan
+f996200a Bài học (F1)
+e5aaa5b5 Danh sách thuật ngữ
+320067c6 Chữ rất lớn
+07471db5 Màu thân thiện với người mù màu
+c2cebede Tất cả các loại
+1baa06b4 Vấn đề
+ced091e8 Cảnh / vị trí
+ea967600 Dòng
+99a42316 Cách sửa
+3cd62e5f Mở trong trình soạn thảo của tôi
+a4f34926 Sao chép dòng đã sửa
+0973fd22 Sao chép văn bản cần tìm
+28a1dc64 Tôi đã sửa - kiểm tra
+1a256c63 Báo cho nhà phát triển
+b491a51b Hiện trong chế độ xem mã
+463e5e78 Đánh dấu là cố ý
+562107b8 Đọc to
+e42bc527 Sao chép chi tiết
+d7c5a824 Hiện đúng như lưu trong tệp (mã &lt;)
+2314cd9a Mở trò chơi
+7a8e0cf0 Chọn thư mục trò chơi
+ff10f24c Thư mục chứa hình ảnh, âm thanh và video của trò chơi
+38e9a3e9 Trò chơi: {path}     Thư mục: {folder}
+24fc8907 Dừng đọc
+7335beba Không còn đánh dấu là cố ý
+24fec833 Đã đánh dấu là cố ý - ẩn khỏi danh sách (Công cụ > Hiện các vấn đề đã đánh dấu là cố ý)
+615c9a3f {fmt} · {units} phần · {files} tệp trong thư mục · {e} hỏng, {w} có lẽ hỏng, {i} cần xem · {s} giây
+f229a698 Sức khỏe mã: {n}% · {label}
+d8d62e38 Đã kiểm tra xong
+dd3a39d8 Sức khỏe mã
+c6643b25 Thang điểm: 100% xuất sắc · 90% rất tốt · 80% tốt · 70% tạm được · dưới 70% cần cải thiện
+7e0056d2 Dựa trên số cảnh có vấn đề và mức độ nghiêm trọng của chúng.
+07c80477 Theo loại
+45b733c9 Nhấp vào một vấn đề trong danh sách để xem chi tiết.
+525f61b6 Ở đâu
+4090e818 Cách sửa
+0b975974 Mở câu chuyện trong Twine rồi mở đoạn "{name}".
+905dc77d Tên này cũng được dùng ở {n} dòng khác: {lines}. Hãy đổi cả ở đó.
+3cfafb7c Xuất bản lại câu chuyện (Build > Publish to File), rồi tải lại trò chơi để kiểm tra.
+64cb91c6 Ở đâu: {where}
+4383fcfd Lỗi gì: {text}
+07bddb04 Cách sửa: {text}
+cf36743b Hiện tại: {text}
+0cacfdc2 Đổi thành: {text}
+70fbdd39 Đã sao chép dòng đã sửa. Trong Twine, chọn dòng cũ trong đoạn "{name}" rồi dán.
+60eafc99 Đã sao chép dòng đã sửa. Trong trình soạn thảo, chọn dòng {n} rồi dán đè lên.
+67a9f511 Đã sao chép văn bản tìm kiếm. Trong trình soạn thảo, nhấn Ctrl+F rồi dán vào.
+67c1b9a0 Tệp chưa thay đổi kể từ lần kiểm tra trước. Bạn đã lưu chưa?
+2693cf86 Hãy so sánh lại dòng của bạn với dòng "Đổi thành".
+1b930787 Hãy mở một trò chơi trước.
+9dbf0a77 Đã lưu bản sao lưu: {path}
+88e09b05 (văn bản của bạn)
+e835a0e1 Báo cáo lỗi cho {game}
+338c5072 Kỹ thuật: {text}
+fc5e62a8 Tệp cài đặt: {path}
+0f83a323 Đang theo dõi tệp trò chơi. Mỗi lần bạn lưu, tệp sẽ được kiểm tra lại.
+24b5689b Đã dừng theo dõi tệp trò chơi.
+6bbf59c5 Đang dừng chơi thử…
+c5726162 Chơi thử cần Microsoft Edge hoặc Google Chrome, nhưng không tìm thấy cái nào.
+efe69072 Trò chơi đã thay đổi trong lúc chơi thử. Hãy chạy lại.
+4e1a8e3c Không có vấn đề
+59cd52ee Nên xem lại
+80c66d73 Có lẽ hỏng
+3ad465ce Hỏng
+8ea8e60f Dòng {n}: không tìm thấy vấn đề
+421fe500 nhấp đúp để xem chi tiết
+a6e7e8d6 Không tìm thấy "{text}"
+fc748144 Xuất {n} vấn đề đang hiện trong danh sách
+c8ca2957 Đã lưu báo cáo: {path}
+09188221 Toàn bộ trò chơi
+5a7ee5ac Báo cáo lỗi
+203dee52 Chi tiết đã được lưu vào {path}
+5abfea7d Lời đơn giản: tắt
+de314fa0 Mức độ
+fc55cc19 Đoạn / vị trí
+3deb7456 Kiểu
+61790945 ■ Dừng chơi thử
+e23fd7cf Bỏ đánh dấu cố ý
+5ffa6ce4 Kiểm tra lỗi trong trò chơi và cho bạn biết bằng lời đơn giản cái gì sai và cách sửa. Dùng được với trò chơi Twine (SugarCube, Harlowe, Chapbook, Snowman), các trò chơi HTML khác, Ren'Py, RPG Maker MV/MZ, Ink và ChoiceScript.
+e13e18f3 Cách dùng
+c3abe9f5 An toàn khi dùng
+4d688496 Chương trình này chỉ đọc trò chơi của bạn. Nó không bao giờ thay đổi trò chơi. Hãy dùng Công cụ > Sao lưu tệp trò chơi trước khi sửa bất cứ thứ gì.
+90c93523 Phím tắt
+8e990034 Ctrl+O mở · F5 quét lại · Ctrl+F tìm · F3 tìm tiếp · Ctrl+E xuất · F1 bài học · Ctrl + / Ctrl − / Ctrl+0 hoặc Ctrl+con lăn chuột để đổi cỡ
+21e5904b Đã kiểm tra {n} tham chiếu tệp
+052df047 Bắt đầu từ đây - những chỗ cần sửa quan trọng nhất
+eff36495 Hoặc nhấp "Trình hướng dẫn sửa lỗi" để làm từng cái một.
+23bd8fe4 Cảnh "{name}"
+8cb67e05 Đoạn "{name}"
+12b1a199 dòng {n} của đoạn
+280d0541 dòng {n} của {file}
+a684f161 Bạn đã đánh dấu mục này là cố ý nên nó không được tính.
+6aeb39ef Lỗi gì
+c1bcc130 Lỗi gì
+ebcf7d18 Người chơi sẽ thấy gì
+e7f32d0f Nhấp "Mở trong trình soạn thảo của tôi". Nó sẽ mở {file} ở dòng {n}.
+73c8627d Xóa dòng đó (hiện bên dưới ở mục "Hiện tại").
+b44b2225 Sửa như bên dưới ở mục "Đổi thành". "Sao chép dòng đã sửa" sẽ chép cả dòng đã sửa để bạn dán đè lên dòng cũ.
+d640e11b Xem phần giải thích ở trên.
+33d1a502 Lưu tệp, tải lại trò chơi, rồi nhấp "Tôi đã sửa - kiểm tra".
+fd3e0dfe Làm bằng Twine? Vậy hãy sửa trong Twine (chuyển "Tôi chỉnh sửa tệp .html" ở trên sang "Tôi chỉnh sửa trong Twine"). Xuất bản từ Twine sẽ ghi đè các thay đổi sửa trực tiếp trong tệp .html.
+e3b82040 Hiện tại
+b9b6aac4 Đổi thành
+3895c256 Tôi có thể bỏ qua không?
+189da0ef Người chơi sẽ thấy gì: {text}
+7d949b29 Mã: {text}
+80411ece Chưa sửa được - vấn đề vẫn còn
+71a91179 nhấn Ctrl+G rồi gõ {n} để nhảy tới dòng đó
+84d3bdef Đã mở trong {name}
+7bf2bdbd Cảnh: {name}
+f8e71156 Dòng {n} của {file}
+e9331864 Chuyện gì xảy ra: {text}
+16fcd5a1 (dòng này còn {n} ký tự nữa)
+6dcc62dd Đã lưu báo cáo. Mở ngay bây giờ?
+02fbc53c Vấn đề (lời đơn giản)
+2c3cafa4 Tệp
+1bea2fb0 Cách sửa
+fdccd352 Đã có lỗi bên trong ứng dụng:
+b7152342 Kích thước
+8e6b86dc Vấn đề
+8f0d8d83 Nhóm theo
+bce06414 Tìm kiếm
+74c14ca3 Xem mã
+a3d77701 ◀ Vấn đề trước
+3a289dc9 Vấn đề tiếp ▶
+2e0b45f2 Đi
+ececaefe Tìm tiếp
+df251b06 Tìm
+7e08ebec Nhà phát triển
+e53407cf Người chơi
+0406a446 Lời đơn giản
+2edb004b Tôi chỉnh sửa tệp .html
+b45e0101 Đang theo dõi thay đổi
+398ed329 Trò chơi
+6f80238e Trò chơi HTML
+f7857dcc Tất cả các tệp
+6798c955 Đang quét, vui lòng chờ…
+be4bd50c Sức khỏe mã: {n}%
+16dd1f3a {n} mục đánh dấu là cố ý
+901b56b2 Không có gì để hiện
+ea64a687 4. Trợ giúp > Bài học giải thích những điều cơ bản trong vài phút. Trợ giúp > Xem hướng dẫn tham quan sẽ dẫn bạn đi một vòng.
+570f71b7 Những cảnh bị hỏng
+08f7f24d Hãy lưu game trước khi vào những cảnh này để có thể quay lại nếu có trục trặc:
+29e8d770 Dùng "Báo cho nhà phát triển" trên một vấn đề, hoặc Công cụ > Viết báo cáo lỗi, để gửi chi tiết.
+d19ceca5 Mẹo
+251eb9e2 Hãy lưu game trước khi tới cảnh này để có thể quay lại nếu nó bị hỏng.
+d782b266 Tìm chỗ đó: dùng "Find and replace" của Twine (hoặc nhìn kỹ) để tìm đoạn văn bản này:
+eb92d56f Mở dự án trong RPG Maker rồi đi tới: {where}
+7e7c7eb1 (xóa dòng này)
+d40baaa7 ✔ Đã sửa! Vấn đề đã hết. Sức khỏe mã giờ là {n}%.
+fce98782 Chọn trình soạn thảo khác ở Công cụ > Trình soạn thảo văn bản…
+55d0a707 Đã lưu bản sao lưu:
+802cfe54 Không tạo được bản sao lưu:
+a01ce386 Cách sửa đề xuất (trong Twine):
+d9cb995e Các bản dịch không phải tiếng Anh do AI thực hiện và có thể có sai sót. Chi tiết kỹ thuật vẫn giữ bằng tiếng Anh, như các engine trò chơi và tài liệu hướng dẫn của chúng.
+987dd9b8 Mở một trò chơi để xem mã của nó ở đây.
+f4fd7854 {name} ({n} dòng)
+db3b1ca2 Báo cáo dạng trang web
+1b5f6570 Bảng tính (CSV)
+ee3d21a8 Tệp văn bản
+934a1886 Không lưu được báo cáo:
+29211387 Giao diện theo hệ thống
+9e5ba0f0 Giao diện sáng
+d51c5960 Giao diện tối
+71df97be Đã lưu tệp - đã kiểm tra lại: {fixed} đã sửa, {new} mới
+12d21609 (toàn bộ trò chơi)
+4671f2fd {n} phần
+af4e5ffa Nhóm này có {n} vấn đề. Nhấp vào một vấn đề để xem chi tiết.
+e065ed24 Nếu dòng đã dịch chuyển, nhấn Ctrl+F trong trình soạn thảo và tìm:
+d6cd9bbc Không quét được:
+e8b6a7a1 (dòng {lines})
+2a87805d Không khởi động được {name}:
+50803478 Cách sửa: {text}
+cbbf7064 Phiên bản {v}. Tìm vấn đề trong trò chơi và giải thích cách sửa. Chỉ đọc tệp và không bao giờ thay đổi trò chơi của bạn.
+7e16f294 Sức khỏe mã: {n}% ({label})
+13b7bfca Đang xử lý…
+944d285f Quét thất bại
+5117eb3e Không có vấn đề nào khớp với bộ lọc hiện tại.
+84a26cd3 Không tìm thấy vấn đề nào. Làm tốt lắm!
+e961739d 3. Không biết bắt đầu từ đâu? Dùng Trình hướng dẫn sửa lỗi - nó đi qua từng vấn đề và kiểm tra các chỗ bạn sửa.
+dfa2b6e9 Dòng {n}:
+27a41ea2 (xóa)
+966d414d dòng {n}
+a37a62b5 2. Nhấp vào một vấn đề trong danh sách. Bên dưới bạn sẽ thấy lỗi gì, người chơi sẽ thấy gì và chính xác cách sửa.
+47faaf63 Đã dừng chơi thử
+9de8b1a5 1. Nhấp "Mở trò chơi…" và chọn tệp .html của trò chơi (hoặc dùng Công cụ cho thư mục trò chơi). Việc kiểm tra tự bắt đầu.
+836bf385 Không chạy được chơi thử:
+3dd51c5a Chọn trình soạn thảo văn bản
+1f7611ea Đã đặt trình soạn thảo văn bản là {name}
+43320d49 Thử một dòng trước khi sửa
+18e673bc Trò chơi của bạn không bị thay đổi gì. Chỉ kiểm tra văn bản bạn gõ ở đây.
+8ecc7800 Viết báo cáo lỗi cho nhà phát triển
+2e2b95ec So sánh hai phiên bản
+ccdb5389 Chọn phiên bản kia của trò chơi rồi nhấp So sánh. Cả hai chỉ được đọc, không bao giờ bị thay đổi.
+cabad4eb Đang quét phiên bản kia…
+cb9ce97b Bài học
+9255b9a1 Chọn chương trình soạn thảo văn bản
+67094e72 Không tìm thấy chương trình đó. Dùng "Duyệt…" để chọn.
+21461571 ◀ Quay lại
+2d8a1625 Bỏ qua ▶
+7c5d9f51 Đã sửa {done} / {total}
+cb70c72b Vấn đề {n} / {total}
+820d6004 Đang kiểm tra…
+e461d5d0 Tìm thấy {n} vấn đề:
+9580fcbc Văn bản thuần
+26a49ee7 Discord / Reddit
+1f82bc1e Diễn đàn (BBCode)
+616ce66d Hỏng + có lẽ hỏng
+34d5d395 Chỉ vấn đề đang chọn
+ced1fd2f Lưu báo cáo lỗi
+ec9135a3 Đã lưu báo cáo lỗi: {path}
+8d105cf4 So sánh
+a1cd6b54 Chọn phiên bản kia
+1f5bf765 Hãy chọn phiên bản kia trước.
+ad916050 Đang so sánh…
+f4f29947 Sức khỏe mã: {a}% → {b}%
+a81eb289 Đã sửa trong phiên bản mới hơn ({n})
+53da970f Vấn đề mới trong phiên bản mới hơn ({n})
+2be41ba6 Vẫn còn ({n})
+9ec4aa53 Các từ dùng trong ứng dụng này
+ce12714d Không có gì để sửa
+d231fca7 Không còn vấn đề nào cần sửa. Làm tốt lắm!
+76c1c7de Vấn đề này đã hết - đã được sửa hoặc tệp đã thay đổi. Nhấp Bỏ qua để tiếp tục.
+55855f77 Thử từng dòng dùng được với trò chơi Twine (SugarCube). Hãy mở một trò chơi như vậy trước.
+bbfa773e Đóng
+af74f7c5 Sao chép
+571a03ba Chương trình nào sẽ mở tệp trò chơi?
+113fa56b Đã tìm thấy các trình soạn thảo văn bản này trên máy:
+d4b86cfd Chương trình khác…
+9d68007b Chương trình
+c1b20f52 Duyệt…
+6bf5da9c Tùy chọn
+4ee6279e {file} được thay bằng tệp trò chơi và {line} bằng số dòng. Notepad++ dùng: -n{line} "{file}"
+77dfd213 Hủy
+efc007a3 Lưu
+ab14d0a7 Chương trình
+4abacc60 ✔ Đã sửa! Làm tốt lắm. Đây là cái tiếp theo.
+1ed684b1 Dán hoặc gõ dòng (hoặc cả đoạn) bạn muốn dùng:
+45f9116a Đây là cả một đoạn (kiểm tra luôn mọi thẻ đã được đóng)
+4b5e84be Kiểm tra
+6a17f3f6 Không tìm thấy vấn đề trong văn bản này.
+44b39131 Đề xuất:
+4020c08c Kiểu:
+2f32f781 Bao gồm:
+4705cad6 Kèm cách sửa
+d9057148 Lưu thành…
+83c52802 Phiên bản khác:
+c3c1e96d Phiên bản kia là:
+6fa5fbbc cũ hơn
+1d47386a mới hơn
+78cee4b8 Bước {n} / {total}
+57bc79e3 Bỏ qua phần tham quan
+bc981983 Tiếp
+e9b450d1 Xong
+682c160f Trò chơi hiện tại:
+74c063af Sai:
+3a82310a Đúng:
+c7c15bca Chỗ này sẽ gây lỗi cho người chơi.
+8df34ecb Rất có thể đây là lỗi.
+1d894da2 Không gấp. Có thể không sao, nhưng hãy xem qua.
+58da2ccb Liên kết tới cảnh không tồn tại
+78d3da9d Thiếu hình ảnh và âm thanh
+59327131 Lệnh trò chơi bị hỏng
+dfe69b5d Lệnh trò chơi viết sai
+140d954e Câu kiểm tra "nếu" bị sai
+169a1b52 Lệnh không làm gì hoặc bị hỏng
+c3f4070a Chỉ số và giá trị viết sai
+ee27480a Khối dùng lại
+9c0fe2ed Mã bố cục trang
+2c0f0a6d Kiểu (màu sắc và giao diện)
+f77fd1fd Cảnh
+45e35cfc Cảnh không ai tới được
+a2406e53 Tệp trò chơi không bao giờ dùng
+68320599 Văn bản chưa viết xong
+8a21b1ee Chính tả
+169b486d Lỗi gõ
+a1d181bd Chỉ chạy trên Windows
+3e9d9ae4 Tệp rất lớn
+50a12988 Tệp bị hỏng
+aab2b305 Lệnh kiểu cũ
+3f55c07b Mã script
+cc0718f5 Thiết lập trò chơi
+c7ee483a Trình quét
+c916a1ad Lỗi khi chơi
+0e66b49d hình ảnh
+5e2e97c3 âm thanh
+ffbaf58f video
+4642576d phông chữ
+767013ce trang
+971c419d tệp
+8c657028 cảnh "{name}"
+84db7a65 trò chơi
+27260418 Đi tới cảnh không tồn tại: "{name}"
+65a1b892 Trong {where}, một liên kết hoặc lệnh cố mở cảnh tên "{name}". Không có cảnh nào trong trò chơi có đúng tên đó.
+eddc288b Khi người chơi nhấp vào (hoặc trò chơi chạy tới đó), họ thấy thông báo lỗi hoặc trang trắng thay vì cảnh.
+6690f7df Sửa tên cho khớp chính xác với một cảnh có thật. Chữ hoa và khoảng trắng đều tính.
+ee186081 Đi tới phần truyện không tồn tại: "{name}"
+adcab89d Câu chuyện cố tiếp tục ở "{name}", nhưng không có gì trong trò chơi mang tên đó.
+c68c7536 Trò chơi dừng với lỗi ở đây (hoặc không khởi động được).
+262dea9c Sửa tên cho khớp chính xác với một phần truyện có thật.
+8a2045c6 Đi tới chương không tồn tại: "{name}"
+6b99d3d7 Câu chuyện cố mở "{name}", nhưng không có chương hay vị trí nào như vậy.
+54721a92 Trò chơi dừng với lỗi ở đây.
+bfe449ab Sửa tên cho khớp với một chương có thật.
+8569b71c Mở màn hình không tồn tại: "{name}"
+ed323960 Trò chơi cố hiện màn hình tên "{name}", nhưng không có màn hình nào tên như vậy.
+31aaf0f7 Trò chơi dừng với lỗi ở đây.
+ecedecaf Sửa tên cho khớp với một màn hình có thật.
+1c82d0d0 Một sự kiện đưa người chơi tới nơi không tồn tại
+f7bb6caa Một sự kiện đưa người chơi tới bản đồ, hoặc chạy common event, không có trong trò chơi.
+11068616 Trò chơi bị văng hoặc treo khi sự kiện này chạy.
+17c8c384 Chọn một bản đồ hoặc common event có thật trong lệnh sự kiện đó.
+924f14ec Liên kết không dẫn đi đâu
+ac25c348 Một liên kết trong {where} không nói nó sẽ mở cảnh nào.
+cc208a80 Nhấp vào sẽ hiện lỗi.
+81510156 Viết tên cảnh mà liên kết cần mở.
+a620e5a7 Liên kết thiếu phần kết thúc
+75319c60 Liên kết bắt đầu bằng [[ nhưng không kết thúc bằng ]].
+d94d2b45 Văn bản phía sau bị trộn vào liên kết và cảnh trông như bị hỏng.
+da97338b Thêm ]] vào cuối liên kết.
+de752d36 Không ai tới được "{name}"
+ad06e184 Không có gì trong trò chơi dẫn tới phần truyện này.
+49f72405 Người chơi không bao giờ thấy nó. Vô hại, trừ khi nó phải chơi được.
+41e81f9d Nếu người chơi cần thấy nó, hãy thêm liên kết tới nó từ cảnh khác. Nếu nó đã cũ, bạn có thể bỏ qua.
+12017de3 Cảnh "{name}" bị trống
+e1c78333 Cảnh này không có chữ hay nội dung.
+eb036a1b Người chơi tới đây sẽ thấy trang trắng.
+95468775 Viết nội dung cảnh, hoặc xóa các liên kết dẫn tới nó.
+65f5f00d Hai phần truyện trùng tên
+3a661399 Có hơn một cảnh hoặc nhãn dùng tên "{name}".
+14b99f6a Chỉ một trong số đó được hiện, hoặc trò chơi không chịu khởi động.
+5017f902 Đặt cho mỗi cái một tên riêng.
+8ee54eec Trò chơi không có cảnh bắt đầu
+e4b1267b Trò chơi không biết bắt đầu từ đâu.
+67fece68 Trò chơi có thể không khởi động được.
+6f3c3583 Trong Twine, đánh dấu cảnh đầu tiên làm điểm bắt đầu.
+891a7ccc Liên kết nhảy không dẫn đi đâu
+723d0b6c Liên kết trỏ tới một vị trí trên trang không tồn tại.
+9d2a3ab1 Nhấp vào không có gì xảy ra.
+a17d6d9d Sửa tên vị trí, hoặc xóa liên kết.
+f7e0927c Thiếu {kind}: {file}
+471ab6b6 Trò chơi muốn dùng {kind} "{path}", nhưng không có tệp như vậy trong thư mục trò chơi.
+215d84f2 Người chơi thấy hình bị vỡ hoặc khoảng trống, hoặc không nghe thấy gì.
+95495e08 Đặt tệp vào chỗ đó, hoặc đổi tên trong tệp trò chơi thành tệp thật sự có.
+4e187285 Tên tệp sai chữ hoa/thường: {file}
+10dd7eb2 Tệp có tồn tại, nhưng trò chơi viết tên nó với chữ hoa/thường khác.
+445b1f51 Chạy được trên Windows. Trên điện thoại, Mac, Linux hoặc website, hình ảnh hay âm thanh sẽ bị thiếu.
+bcc2cd24 Đổi tên trong tệp trò chơi để chữ hoa/thường khớp với tệp thật.
+fc7f8ac2 Một hình ảnh trỏ tới máy tính riêng của nhà phát triển
+bf1eaea6 Vị trí tệp bắt đầu bằng ký tự ổ đĩa như "D:\". Thư mục đó chỉ có trên máy đã làm ra trò chơi.
+8e9a7d52 Người chơi không bao giờ thấy hình này.
+e5baac7c Đổi thành vị trí bên trong thư mục trò chơi, như images/characters/name.jpg.
+006a8fb9 Vị trí tệp dùng \ thay vì /
+d6cb43a9 Trò chơi viết đường dẫn thư mục bằng dấu gạch chéo ngược (\).
+42ad75cd Ổn trên Windows. Trên điện thoại, Mac, Linux hoặc website, hình ảnh và âm thanh sẽ không tải được.
+02bf9e76 Chỉ quan trọng nếu trò chơi cần chạy ngoài Windows: thay \ bằng / trong đường dẫn hình ảnh.
+0fa2cd7a {n} tệp trong "{folder}" không bao giờ được dùng
+1b78ff55 Những tệp này nằm trong thư mục trò chơi, nhưng trò chơi không bao giờ dùng chúng.
+55acf4db Không có gì hỏng. Chúng chỉ làm bản tải về nặng hơn.
+aa1a0c6f Xóa chúng nếu bạn chắc là không cần. (Có thể trò chơi chọn một số tệp bằng cách khéo léo mà trình quét không thấy.)
+cb4cc629 Một tệp trống
+4642643c Tệp này trống (0 byte).
+24ec314d Nó sẽ không hiện hay phát được.
+6cd06e6e Thay nó bằng một bản sao còn dùng được.
+07046633 Tệp bị hỏng (bị cắt): {file}
+932dbf75 Phần cuối của tệp này bị thiếu, thường vì việc tải về, sao chép hoặc giải nén chưa xong.
+feda3672 Hình chỉ hiện một phần hoặc không hiện, hoặc âm thanh/video dừng sớm.
+968dc7a4 Sao chép hoặc tải lại tệp này từ bộ tệp gốc của trò chơi.
+6081a951 Thật ra không phải hình ảnh hay âm thanh: {file}
+dc397b7a Tệp có tên đúng, nhưng bên trong là một trang web (thường là trang báo lỗi của trang tải về).
+7f495908 Người chơi thấy hình bị vỡ hoặc không nghe thấy gì.
+eee27da5 Tải lại tệp thật và thay tệp này.
+2a1c1b71 Tệp có thể bị hỏng: {file}
+4c30367e Phần đầu tệp này không giống định dạng hình ảnh, âm thanh hay video nào đã biết.
+d3b9cea3 Có lẽ nó sẽ không hiện hay phát được.
+0ab570a5 Mở nó bằng trình xem ảnh hoặc trình phát. Nếu không mở được thì thay nó.
+f68470e5 Một số tệp có đuôi sai (.png, .jpg ...)
+d608da1e Những tệp này chứa định dạng khác với tên của chúng, ví dụ ảnh JPEG nhưng đặt tên .png.
+2e39b508 Trình duyệt thường vẫn hiện được. Một số điện thoại và chương trình có thể không.
+097a3703 Tùy chọn: chuyển đổi hoặc đổi tên để tên khớp với định dạng thật.
+283d2070 Một số tệp rất lớn
+c7fa15ff Những hình ảnh hoặc video này rất lớn.
+ae5369ab Chúng tải chậm, nhất là trên điện thoại.
+e125a92c Tùy chọn: thu nhỏ chúng bằng công cụ chỉnh ảnh.
+385f4329 Thiếu một tệp trò chơi: {name}
+2e700532 Trò chơi cần một tệp không có ở đó.
+99467808 Trò chơi hiện lỗi khi khởi động hoặc khi tới phần này.
+b3496ea7 Đặt lại tệp bị thiếu, hoặc xóa chỗ tham chiếu tới nó.
+75e6334a Một tệp dữ liệu của trò chơi bị hỏng
+db02e969 Tệp này không đọc đúng được.
+79b96faf Trò chơi không khởi động hoặc bị văng.
+7ebbbeec Khôi phục tệp từ bản sao lưu hoặc từ trò chơi gốc.
+d399fac1 Lệnh "{name}" không bao giờ được đóng
+e6c66d5b Một số lệnh trò chơi cần phần kết thúc tương ứng. Lệnh này không có.
+0b1cb09f Trò chơi hiện ô lỗi màu đỏ ở cảnh này, và một phần cảnh có thể bị mất.
+afdabc18 Thêm phần kết thúc bị thiếu (ví dụ <</{name}>>) ở chỗ phần này cần kết thúc.
+744245d7 Thẻ đóng thừa <</{name}>>
+adb1bea4 Có một thẻ đóng mà không có gì để đóng.
+b39fd74f Trò chơi hiện ô lỗi màu đỏ ở cảnh này.
+a53d4f4e Xóa thẻ đóng thừa này.
+fa8c8072 "{name}" nằm sai chỗ
+9009044d <<{name}>> phải nằm trong một khối <<if>>. Ở đây thì không, thường vì một thẻ đóng phía trên bị đặt sai chỗ.
+1e9acaea Trò chơi hiện ô lỗi màu đỏ.
+1d2d751d Xem các dòng ngay phía trên và chuyển thẻ đóng về đúng chỗ.
+bfaae414 Thẻ đóng thiếu một dấu ">": <</{name}>
+a280c34f Thẻ đóng được viết với một dấu ">" nhưng cần hai.
+71be19aa Trò chơi không nhận ra thẻ đóng. Nó hiện ô lỗi màu đỏ và cảnh có thể trông sai.
+a3c69d1f Thêm một dấu ">" để kết thúc bằng ">>".
+413ace46 Dấu ">" thừa
+4e791f5a Có một dấu ">" thừa sau một thẻ.
+4ecd446f Người chơi thấy một dấu ">" lạc trên màn hình.
+c1c069b2 Xóa dấu ">" thừa.
+cacfbdbb Dấu "<" thừa
+fe9088b6 Có một dấu "<" thừa trước một lệnh.
+0c7a0bb7 Người chơi thấy một dấu "<" lạc trên màn hình.
+87807bf8 Xóa dấu "<" thừa.
+b0d2d4e4 Lệnh viết dở "<<"
+012a6c88 Có một "<<" mà phía sau không có gì.
+fd941db0 Lệnh phía sau bị hỏng và trò chơi có thể hiện lỗi.
+73f8070a Xóa dấu "<<" bị lạc.
+7037d71a Lệnh thiếu ">>"
+87bde2ac Lệnh bắt đầu bằng << nhưng không kết thúc bằng >>.
+7f93f879 Văn bản phía sau biến mất hoặc cảnh hiện lỗi.
+dbda1f76 Thêm ">>" vào cuối lệnh.
+5a30164d Dấu ngoặc được mở nhưng không đóng
+d5b047f2 Có chỗ bắt đầu bằng dấu ngoặc nhưng thiếu dấu ngoặc đóng.
+8d50e9a9 Mọi thứ phía sau bị nuốt mất hoặc trò chơi hiện lỗi.
+912c548c Thêm dấu ngoặc đóng bị thiếu.
+35852e81 Dấu ngoặc đóng thừa
+a1d86e33 Có dấu ngoặc đóng mà không có dấu ngoặc mở.
+fdeb2ba4 Người chơi có thể thấy ký tự lạc hoặc lỗi.
+254fbb5b Xóa dấu ngoặc thừa.
+98cb6b2f Lệnh không có văn bản đi kèm
+1afec1b9 Lệnh này cần điều khiển văn bản ngay sau nó, viết trong ngoặc vuông [như thế này]. Nhưng phía sau không có gì.
+073266b4 Harlowe hiện lỗi, hoặc văn bản luôn được hiện.
+29369e93 Đặt văn bản mà lệnh điều khiển vào ngoặc vuông ngay sau lệnh.
+4093f80e Trò chơi hiện lỗi, và phần cảnh mà lệnh điều khiển không hoạt động.
+ef3a7877 Lệnh kiểu cũ
+54dead55 Lệnh này vẫn chạy, nhưng đã lỗi thời.
+01500c48 Hiện tại không sao. Có thể hỏng trong một bản cập nhật engine sau này.
+b1a70201 Tùy chọn: thay bằng lệnh mới hơn.
+a4a93d21 Câu kiểm tra "if" dùng "=" thay vì "is"
+582b6716 Trong câu kiểm tra "if", "=" có nghĩa là "gán cho bằng", không phải "có bằng không?".
+564cdad0 Trò chơi hiện ô lỗi màu đỏ, hoặc câu kiểm tra luôn đúng và phần cảnh sai được chạy.
+e3105e2f Thay dấu "=" đơn bằng "is".
+f0b64920 "=>" hoặc "=<" bị viết ngược
+897ec753 Lớn hơn hoặc bằng phải viết ">=", không phải "=>".
+0167d9bc Câu kiểm tra không hoạt động.
+0b498ace Hãy viết ">=" hoặc "<=" thay vào.
+f917ca5e "is not" nên viết liền thành một từ
+4e8bbdf4 Trong engine trò chơi này, "is not" có nghĩa khác với "isnot".
+e40cd819 Câu kiểm tra gần như luôn sai.
+7f3a1402 Viết "isnot" liền thành một từ.
+694143a3 Câu kiểm tra "or" luôn đúng
+b760633e Kiểu như "$x is 1 or 2" chỉ so $x với 1; số "2" đứng riêng luôn được tính là có.
+f8b8cc75 Phần này vẫn chạy cả khi lẽ ra không được chạy.
+b1a0ec7e Lặp lại tên: "$x is 1 or $x is 2".
+1c4512b1 Câu kiểm tra "if" có thể kích hoạt sai lúc
+bb598d2b Câu kiểm tra này trộn "and" và "or" mà không có ngoặc. Máy tính luôn xử lý các phần "and" trước, nên câu kiểm tra có thể không đúng ý định.
+71408d55 Một cảnh hoặc lựa chọn có thể xuất hiện khi không nên - ví dụ khi một nhân vật đang bị bắt cóc hoặc một chỉ số quá thấp.
+045d6c6c Thêm ngoặc ( ) quanh các phần đi cùng nhau. Xem mã bên dưới và nhóm các lựa chọn "or" lại.
+dbb9ed0f Ngoặc ( ) không khớp
+6bbb5c72 Số "(" nhiều hơn ")" hoặc ngược lại.
+d2676c8c Thêm hoặc bớt một dấu ngoặc để chúng thành cặp.
+8f746eaa Câu kiểm tra "if" rỗng
+70ac1e0e "if" không có gì để kiểm tra.
+8fa764c4 Trò chơi hiện lỗi.
+f72f83b1 Viết điều cần kiểm tra.
+00b75afd Lệnh đổi chỉ số không có tác dụng ("==")
+d3024696 Dòng này lẽ ra đổi một giá trị, nhưng "==" chỉ so sánh - nó không đổi gì cả.
+4bb1b350 Giá trị không bao giờ đổi. Những thứ phụ thuộc vào nó (bộ đếm giờ, bộ đếm) bị kẹt.
+bb9d82a8 Thay "==" bằng "to".
+88b997d5 Lệnh đổi chỉ số không có tác dụng
+47b56b1e Dòng này lẽ ra đổi một giá trị, nhưng không có "to", "=", "+=" hay "-=", nên không có gì thay đổi.
+b3edbcbf Ví dụ năng lượng hay tiền không bao giờ bị trừ hay được cộng.
+5a19bb57 Viết "-=" thay vì "-" (hoặc "+=" thay vì "+").
+24335c15 Lệnh đổi chỉ số rỗng
+d7c9d917 Lệnh bị trống.
+1ca2b36b Xóa nó hoặc viết thay đổi vào.
+2d2715a0 Giá trị được gán bằng "=" thay vì "to"
+b3386569 Engine này gán giá trị bằng "to".
+be353939 Thay "=" bằng "to".
+6b135470 Thiếu dấu ngoặc kép "
+b7ed7d6f Một đoạn văn bản trong lệnh mở bằng " nhưng không bao giờ đóng.
+4b70c1d8 Trò chơi hiện lỗi hoặc nuốt mất văn bản phía sau.
+081a0ff8 Thêm dấu " bị thiếu.
+1a1cb7a5 Dùng tab ở chỗ cần dấu cách
+0d83ecca Engine này yêu cầu dòng chỉ được thụt lề bằng dấu cách.
+1928be6f Trò chơi không khởi động, hoặc dừng với lỗi ở đây.
+6707540b Thay tab ở đầu dòng bằng dấu cách.
+50e72b08 Dòng thiếu ":" ở cuối
+1590b870 Các dòng như "if", "menu" và "else" phải kết thúc bằng dấu hai chấm.
+34cb1caf Trò chơi không khởi động.
+739781b1 Thêm ":" vào cuối dòng.
+463c9c22 Mã script bị hỏng
+90393617 Một dấu ngoặc hoặc dấu ngoặc kép trong mã script không khớp.
+10b6ae9e Cả script ngừng hoạt động, có thể làm hỏng nhiều tính năng.
+208a3574 Kiểm tra các dấu ngoặc và ngoặc kép quanh dòng này.
+08a420a2 Mã thử nghiệm còn sót
+f523c19b Mã dùng lúc thử nghiệm vẫn còn trong trò chơi.
+a161c8db Thường không thấy gì.
+5512920c Tùy chọn: xóa nó.
+e14ae90f Tên có dấu "-"
+a5d94a86 Tên giá trị không được chứa "-". Trò chơi chỉ đọc phần trước dấu "-".
+1d915eed Người chơi thấy từ sai hoặc chỗ trống thay vì tên.
+1ff6bd49 Dùng "_" thay cho "-".
+929dc82b Kiểm tra trên nó luôn ra "không", nên một số đoạn văn hay cảnh không bao giờ xuất hiện (hoặc hiện chỗ trống thay vì tên).
+aa241baa Cùng tên, khác chữ hoa/thường: ${a} / ${b}
+fe615c75 Với trò chơi đây là hai giá trị khác nhau, vì chữ hoa/thường có phân biệt.
+1549316e Thay đổi ở cái này không được cái kia thấy, nên chỉ số hoặc cảnh bị sai.
+485f98c5 Đổi ${a} thành ${b}.
+fbb1a8ec Tên giá trị viết sai: {name}
+baa2f1ac "{name}" không bao giờ được tạo, nhưng "{near}" thì có. Gần như chắc chắn là lỗi gõ.
+37eb4d71 Trò chơi hiện lỗi hoặc giá trị luôn trống.
+69b0c997 Đổi "{name}" thành "{near}".
+958390b8 Giá trị tạm không bao giờ được gán: _{name}
+66d98956 Giá trị tạm thời này được dùng nhưng chưa bao giờ được gán giá trị.
+f6d72946 Kiểm tra trên nó không bao giờ hoạt động.
+b150a824 Gán nó trước, hoặc sửa lại tên.
+bb2ac176 Giá trị chưa bao giờ được tạo: {name}
+418bb0cf Dùng công tắc/biến không tồn tại (#{n})
+60eb5de9 Sự kiện dùng số {n}, nhưng danh sách của trò chơi ngắn hơn.
+ab5e6d39 Sự kiện không hoạt động như ý muốn.
+27e3bd51 Chọn một công tắc/biến có thật trong sự kiện.
+5e339cd0 Công tắc/biến không có tên (#{n})
+e3546a24 Nó được dùng, nhưng không có tên trong Database.
+15f64977 Không thấy gì cả. Chỉ là dễ nhầm lẫn.
+a8723260 Đặt tên cho nó trong Database.
+bd3955c1 Khối dùng lại được định nghĩa hai lần: {name}
+0a743f0a Hai định nghĩa có cùng tên này.
+4d983cee Chỉ một phiên bản được dùng.
+08c1e9fa Xóa hoặc đổi tên một trong hai.
+20982092 Khối dùng lại không tải được
+3ed9bdd5 Cảnh chứa nó thiếu thẻ "widget".
+4f7fa681 Mọi cảnh dùng nó đều hiện lỗi.
+a3c57c94 Thêm thẻ "widget" cho cảnh đó trong Twine.
+769d38d3 Khối dùng lại không được dùng: {name}
+91caae31 Nó được định nghĩa nhưng không bao giờ được dùng.
+92f3557e Không có gì hỏng.
+48518178 Không cần làm gì.
+549a08bd Thiếu dấu ngoặc kép trong mã trang
+2616e9ea Thiếu một dấu ngoặc kép " trong thẻ của trang (thường là hình ảnh).
+c1ac2a6e Hình ảnh hoặc phần tử có thể không hiện, hoặc bố cục bị vỡ.
+1359ec48 Hộp trang không được đóng đúng
+c5eaf192 Một hộp bố cục (như <div> hoặc <center>) được mở mà không đóng, hoặc đóng quá nhiều lần.
+bff958b5 Văn bản hoặc hình ảnh có thể nằm sai chỗ hoặc sai kiểu.
+2055d18e Thêm thẻ đóng bị thiếu, hoặc xóa thẻ thừa.
+3ec38cbd Hai thứ dùng chung một nhãn tên (id)
+0bf6eee0 Mỗi id phải là duy nhất trên trang.
+ff424805 Các nút cập nhật phần này có thể đổi nhầm chỗ.
+3d5e5acf Đặt cho mỗi cái một id riêng.
+9ef419aa Hình ảnh hoặc liên kết không có tệp
+41c88499 Thẻ không trỏ tới gì cả.
+30064ec6 Có thể hiện biểu tượng hình bị vỡ.
+0e8cdbfd Điền tên tệp, hoặc xóa thẻ.
+8c62dd1b Kích thước hình viết theo kiểu trình duyệt bỏ qua
+c97c9dc5 Kích thước như height="450wv" có chữ mà trình duyệt không hiểu ("wv" không phải đơn vị).
+38f858bc Hình vẫn hiện, chỉ là với kích thước điểm ảnh cố định. Thường vô hại.
+c33de17c Tùy chọn: bỏ các chữ đi, ví dụ height="450".
+b2030de7 Tên kiểu không khớp: "{name}"
+912e16dc Giao diện phần này được chọn theo tên "{name}", nhưng kiểu lại tên là "{near}".
+93f6e366 Phần này hiện ra không có màu sắc hay bố cục như dự định.
+de3efded Tên kiểu không có kiểu nào: "{name}"
+46cc76e2 Không có quy tắc kiểu nào dùng tên này.
+3a6cc944 Thường vô hại.
+d91f6b60 Văn bản chưa xong mà người chơi thấy được
+a2d31ceb Nhà phát triển để lại ghi chú như "PLACEHOLDER" hoặc "TODO" trong truyện.
+33f40845 Người chơi thấy ghi chú này, hoặc cảnh chưa làm xong.
+a398b7c0 Viết văn bản thật, hoặc xóa ghi chú.
+a89ee2d1 Chính tả: "{wrong}" phải là "{right}"
+bf0afa72 Một lỗi chính tả thường gặp.
+979c6e99 Người chơi thấy từ bị viết sai.
+7e32de5a Đổi "{wrong}" thành "{right}".
+b2d44d92 Từ bị lặp: "{words}"
+670755a1 Cùng một từ được gõ hai lần liền nhau.
+f901109b Người chơi thấy từ bị lặp.
+c8f90b31 Xóa một trong hai.
+fd88a85b Hiện hình ảnh không tồn tại: "{name}"
+d99288f0 Không có hình nào được định nghĩa với tên này, và không có tệp nào trong images/ khớp.
+61cd07a0 Người chơi thấy hình thay thế hoặc lỗi.
+3b215908 Thêm hình ảnh, hoặc sửa lại tên.
+a08bad60 Trò chơi không có số ID
+91a06fd9 Twine dùng ID để phân biệt các câu chuyện.
+7ff45b55 Xuất bản lại câu chuyện từ Twine.
+ce8325ca Hiện ô lỗi màu đỏ khi chơi: "{name}"
+212a3e36 Khi cảnh được chơi thật, trò chơi đã hiện lỗi này: {msg}
+1cda4ad4 Người chơi thấy ô lỗi màu đỏ trong cảnh này, và một phần của cảnh bị mất.
+fe183b9c Xem các vấn đề được liệt kê cho cùng cảnh này - chúng thường giải thích nguyên nhân.
+5a4709f8 Trình duyệt thậm chí không đọc được một script
+417e0923 Trình duyệt tìm thấy lỗi gõ trong script này, nên không phần nào của nó chạy được.
+711c9902 Các tính năng do script này tạo ra (lệnh đặc biệt, cài đặt) bị thiếu hoặc hỏng.
+289bf8bb Tìm dấu ngoặc, ngoặc kép hoặc dấu phẩy bị thiếu ở dòng này hoặc dòng trước đó.
+fefc36ad Thiếu hình ảnh hoặc âm thanh khi chơi
+d47a66be Những tệp này được yêu cầu khi chơi các cảnh, nhưng chúng không tồn tại.
+80b8b71b Người chơi thấy hình bị vỡ hoặc không nghe thấy gì ở một số cảnh.
+9733445f Thêm các tệp bị thiếu, hoặc sửa tên của chúng.
+4f504ebe Lỗi khi trò chơi khởi động
+92243591 Trình duyệt báo lỗi khi tải trò chơi.
+2fea6477 Màn hình bắt đầu hoặc một số tính năng có thể bị hỏng.
+608156d3 Tìm trong script chính của trò chơi vấn đề được nêu trong thông báo.
+231d0f49 Lệnh viết sai: {name}
+388bf136 Lệnh không xác định: {name}
+9b686aa1 Trò chơi không biết lệnh này. Gần như chắc chắn là gõ sai của {near}.
+d1f769ee Trò chơi không biết lệnh này.
+6a1cce2c Đổi thành {near}.
+46c692e0 Kiểm tra cách viết của lệnh.
+6db67833 Giá trị không bao giờ được gán: {name}
+c0ceb098 Trò chơi dùng "{name}", nhưng mọi chỗ khác đều gọi là "{near}". Đây là lỗi gõ.
+8acbe929 Trò chơi kiểm tra hoặc hiện "{name}", nhưng không có gì gán giá trị cho nó.
+fbb2c20c Cho nó một giá trị ban đầu, hoặc sửa lại tên.
+33e186ef Giá trị trò chơi không bao giờ dùng: {name}
+72bf1ee8 Chỗ này đổi "{name}", nhưng trò chơi chỉ nhìn vào "${near}". Đây là lỗi gõ.
+7f81aa2e "{name}" bị thay đổi, nhưng trò chơi không bao giờ đọc nó.
+fd3f859d Thay đổi bị mất - ví dụ chỉ số được tăng nhưng không bao giờ được tính.
+4857ea9f Không có gì hỏng. Có thể còn sót lại từ phiên bản cũ.
+d2118ba7 Đổi "{name}" thành "${near}".
+3867ee62 Không cần làm gì, trừ khi nó cần được dùng.
+11e31f78 "{name}" chưa bao giờ được tạo. Có lẽ là lỗi gõ của "{near}".
+8f03aa6d "{name}" chưa bao giờ được tạo ở đầu trò chơi.
+dd8d9eef Tạo nó ở đầu trò chơi.
+a62731f6 đoạn (passage)
+f8de5ecc Một trang hoặc một cảnh của trò chơi Twine. Mỗi đoạn có một tên, và các liên kết dẫn từ đoạn này sang đoạn khác.
+ea5e0445 cảnh
+ad88890f Một trang của câu chuyện. Trong Twine gọi là "passage" (đoạn).
+78f3a3d9 macro
+480a06b0 Một lệnh trò chơi viết giữa << và >>, như <<if>> hoặc <<set>>. Trò chơi chạy nó thay vì hiện nó ra.
+1925f793 lệnh
+410ae6be Một chỉ dẫn cho trò chơi, như "hiện hình này" hoặc "nếu người chơi có 5 vàng". Trong SugarCube chúng được viết giữa << và >>.
+b46d0172 biến
+2ef301de Một giá trị có tên mà trò chơi ghi nhớ, như $gold hoặc $mother_love. Trong SugarCube nó bắt đầu bằng $.
+f32b67c7 giá trị
+a746abd2 Một con số, từ ngữ hoặc có/không mà trò chơi ghi nhớ, như số vàng.
+afad9a69 điều kiện
+1dc59f8f Một phép kiểm tra như "$gold gte 5" (người chơi có ít nhất 5 vàng không?). Văn bản sau nó chỉ hiện khi kiểm tra đúng.
+5e9b60f6 thẻ
+1df6d68c Một dấu đánh trong mã. Thẻ mở như <<if>> bắt đầu một phần, thẻ đóng như <</if>> kết thúc nó.
+4f0aa52d liên kết
+5afc9751 Chữ có thể nhấp để đưa người chơi sang cảnh khác. Trong Twine: [[Chữ|Tên cảnh]].
+d3ecb0d8 include
+bbc9ce26 Lệnh dán một đoạn khác vào đoạn này: <<include "Tên">>.
+ff700e02 widget
+fd5df966 Một lệnh tự làm, định nghĩa một lần và dùng lại ở nhiều cảnh.
+9f738ce8 HTML
+16d38297 Ngôn ngữ dùng để viết trang web. Các thẻ như <img> (hình ảnh) và <div> (hộp).
+194e13da CSS
+28d26723 Quy tắc kiểu: màu sắc, kích thước và bố cục. Một "class" nối một phần tử với một kiểu.
+ee620923 JavaScript
+2d04472d Ngôn ngữ lập trình của trang web. Trò chơi dùng nó cho các tính năng đặc biệt.
+cb5346a0 script
+302bcb23 Một đoạn mã chương trình (thường là JavaScript).
+0c4da6cb Twine
+5deecf78 Chương trình miễn phí dùng để làm nhiều trò chơi chữ. Nó xuất bản trò chơi thành một tệp .html duy nhất.
+9b2ab238 SugarCube
+5a15607f "Định dạng truyện" (engine) phổ biến nhất cho trò chơi Twine. Nó cung cấp các lệnh << >>.
+5e2fb0c2 xuất bản
+9eb9fe5a Trong Twine: Build > Publish to File. Nó tạo tệp .html chơi được từ câu chuyện của bạn.
+1af607c7 đường dẫn tệp
+3bee6183 Nơi một tệp nằm, như images/hero.png (thư mục "images", tệp "hero.png").
+264f39ca dòng
+f44c6b66 Một hàng chữ trong tệp. Trình soạn thảo văn bản hiện số dòng ở bên trái.
+3cc46d20 thụt lề
+2a14602c Dấu cách ở đầu dòng. Một số engine dùng chúng để biết những dòng nào đi cùng nhau.
+64c65374 nhãn (label)
+0419b517 Một vị trí có tên trong truyện Ren'Py hoặc ChoiceScript mà các phần khác có thể nhảy tới.
+40a22a4a knot
+fba17772 Một phần có tên trong truyện Ink. "-> tên" sẽ nhảy tới đó.
+fd8c7c8e plugin
+45e375e0 Một script bổ sung được thêm vào trò chơi RPG Maker.
+67db3ab6 1. Đoạn (cảnh) là gì?
+6cfa54e4 2. Lệnh giữa << và >>
+fcaf062f 3. Mở và đóng
+47887091 4. Giá trị trò chơi ghi nhớ ($biến)
+c3bcb980 5. Câu kiểm tra "if"
+d8cc0b48 6. Hình ảnh và âm thanh
+c413d282 7. Chỉnh sửa an toàn
+fb4c49ae 8. Đọc ứng dụng này
+a9af7910 Bắt đầu từ đây: mở tệp .html của trò chơi (hoặc thư mục trò chơi Ren'Py, RPG Maker, Ink hoặc ChoiceScript). Việc kiểm tra tự bắt đầu.
+de845e69 "Lời đơn giản" giải thích mọi thứ bằng lời dễ hiểu. Tắt nó đi để xem chi tiết kỹ thuật.
+6c84c615 Nhà phát triển hay Người chơi: người chơi nhận một danh sách ngắn, ít tiết lộ nội dung, về các cảnh bị hỏng và một báo cáo lỗi gửi nhà phát triển. Nhà phát triển nhận các công cụ sửa lỗi.
+ba413de9 Tất cả các vấn đề tìm thấy. Đỏ là hỏng, vàng là có lẽ hỏng, xanh dương là nên xem lại. Nhấp vào một mục để xem cần làm gì.
+476c1a70 Ở đây bạn thấy lỗi gì, người chơi sẽ thấy gì và chính xác cách sửa - kèm dòng trước và sau khi sửa.
+e871d7cc Trình hướng dẫn sửa lỗi đưa bạn qua từng vấn đề một và kiểm tra mỗi chỗ sửa giúp bạn.
+3d56d049 Chơi thử sẽ chơi mọi cảnh trong một trình duyệt ẩn và tìm các lỗi chỉ xuất hiện khi chơi.
+41da0a4f Công cụ: sao lưu trò chơi, thử một dòng trước khi sửa, so sánh hai phiên bản, viết báo cáo lỗi, theo dõi thay đổi.
+75d05bed Trợ giúp: bài học, danh sách thuật ngữ, phần tham quan này và các cài đặt dễ dùng như chữ rất lớn.
+52c5f193 Điểm sức khỏe mã: 100% xuất sắc, 90% rất tốt, 80% tốt, 70% tạm được.
+bcecc3cb Trò chơi Twine được làm từ các đoạn. Mỗi đoạn là một cảnh: ít chữ, có thể có hình, và liên kết tới các đoạn khác.
+b1f433c6 Liên kết trông như thế này. Phần trước | là chữ người chơi thấy, phần sau | là tên đoạn sẽ mở:
+33dd3c05 Tên phải khớp chính xác, kể cả chữ hoa và khoảng trắng. "kitchen" và "Kitchen" là hai đoạn khác nhau.
+14a03cdc Trò chơi SugarCube dùng các lệnh viết giữa << và >>. Trò chơi chạy chúng thay vì hiện ra.
+fffc20ea Luôn đúng hai dấu < ở đầu và hai dấu > ở cuối. Thừa hoặc thiếu một dấu là lệnh bị hỏng:
+1e192fbd Một số lệnh giống như dấu ngoặc: chúng mở một phần và phải được đóng lại. <<if>> được đóng bằng <</if>>.
+fd08a19b Nếu thiếu thẻ đóng <</if>>, trò chơi hiện ô lỗi màu đỏ. Thừa một cái cũng vậy.
+b25bf333 Một từ bắt đầu bằng $ là giá trị trò chơi ghi nhớ giữa các cảnh, như $gold hoặc $mother_love.
+d4d0415d Chữ hoa có phân biệt: $Gold và $gold là hai giá trị khác nhau. Gõ sai sẽ tạo ra một giá trị mới, trống, nên thay đổi bị mất.
+340aacf8 Để đổi giá trị, dùng "to", "+=" hoặc "-=". Một dấu "-" đơn chỉ tính toán chứ không đổi gì:
+87dc8b35 Trong "if", so sánh bằng "is", "isnot", "gte" (ít nhất), "lte" (nhiều nhất). Một dấu "=" đơn ở đó là sai:
+add346a2 "and" được kiểm tra trước "or". Hãy dùng ngoặc để nhóm, nếu không câu kiểm tra có thể đúng sai lúc:
+f07da221 Hình ảnh được hiện bằng thẻ <img>. Đường dẫn cho biết tệp nằm ở đâu, tính từ thư mục trò chơi:
+9e333b42 Dùng / giữa các thư mục. \ chỉ chạy trên Windows. Chữ hoa/thường phải khớp với tên tệp thật trên điện thoại, Mac và website.
+9d1c8406 Mỗi dấu ngoặc kép " đã mở thì phải đóng, nếu không hình sẽ không hiện.
+6f7151f5 Trước khi đổi bất cứ thứ gì, hãy sao lưu (Công cụ > Sao lưu tệp trò chơi).
+73b5381e Nếu trò chơi làm bằng Twine, hãy sửa trong Twine rồi xuất bản lại. Các thay đổi sửa trực tiếp trong tệp .html sẽ mất ở lần xuất bản tiếp theo từ Twine.
+0dab15d3 Nếu bạn chỉ có tệp .html (không có truyện Twine), hãy sửa bằng trình soạn thảo như Notepad++. Trong tệp .html, < và > được viết là &lt; và &gt; - ứng dụng hiện đúng văn bản cần sao chép.
+a877adb7 Sau mỗi lần sửa: lưu, tải lại trò chơi trong trình duyệt, rồi nhấn "Tôi đã sửa - kiểm tra" trong ứng dụng này.
+e6cfd88c Đỏ = hỏng: người chơi sẽ gặp phải. Vàng = có lẽ hỏng. Xanh dương = nên xem lại, thường không sao.
+3c06ac34 Bắt đầu với danh sách "Bắt đầu từ đây" trong phần tóm tắt, hoặc dùng Trình hướng dẫn sửa lỗi: nó dẫn bạn qua từng vấn đề một.
+f5a4fb88 "Đánh dấu là cố ý" ẩn một phát hiện mà bạn đã kiểm tra và muốn giữ nguyên. Nó sẽ bị ẩn với trò chơi này.
+f3979521 Khoảng 1 phút
+d621d05d 5-15 phút
+bea680e1 Cần nhà phát triển (quyết định về cốt truyện hoặc thiết kế)
+0c6c4102 Tùy chọn
+e53abb3c Dễ sửa
+c4f93c0c Cần cẩn thận một chút
+a22663d7 Cần nhà phát triển
+230659f7 Có lẽ được, nhưng hãy xem nhanh.
+6d9d36d5 Không. Người chơi sẽ gặp phải.
+ddad7bf2 Chỉ khi bạn đã kiểm tra logic và nó làm đúng điều bạn muốn. Khi đó hãy đánh dấu là cố ý.
+6cf97a3f Được, nếu cảnh đã cũ hoặc không dành để chơi.
+d54dbf6e Được. Không có gì hỏng.
+3b411bc1 Được, nếu trò chơi chỉ chơi trên Windows.
+667e089a Được, hiện tại. Có thể hỏng trong một bản cập nhật engine sau này.
+ca7eea8c Được, nhưng người chơi sẽ thấy lỗi gõ.
+6225e68e Chỉ khi cảnh cố ý để dở dang.
+47ecb09c Được. Hình vẫn hiện.
+178ca96e Được. Không có gì thay đổi bên ngoài.
+e2fca6c0 Thường là được. Nó thường còn sót lại từ phiên bản cũ.
+bcc248b9 Tốt nhất là không. Rất có thể đây là lỗi thật.
+557f2555 không
+cffa50a3 và
+1758356d hoặc
+6981b0db Không cảnh nào liên kết tới "{name}" theo cách trình quét có thể lần theo. Người chơi có thể không bao giờ thấy nó, hoặc tới được nhờ đoạn mã ghép tên cảnh từ các biến.
+0f56183f Người chơi tới "{name}" từ {n} nơi:
+02e974ba Đây là cảnh đầu tiên của trò chơi.
+5ffe533b đúng
+7cb6efb9 sai
+1ed06825 một liên kết
+3d22ef57 một include
+ccdfd8c1 một bước nhảy tự động
+3f80e4d1 Từ "{src}" ({how}), khi: {cond}
+084fcdcf Từ "{src}" ({how}), luôn luôn.
+8adbc573 …và còn nữa.
+1aafbf54 Xuất sắc
+bd846adf Rất tốt
+61dedcf0 Tốt
+226d7ec9 Tạm được
+eafabce9 Cần cải thiện
+4e0fa437 Kém
+75fb2b10 Đang đọc tệp
+ac133acf Đang tìm dữ liệu truyện
+456caef0 Đang thu thập script và kiểu
+fc404c89 Đang kiểm tra đoạn và liên kết
+6a4d36f9 Đang kiểm tra thẻ macro
+546de9d0 Đang kiểm tra điều kiện và logic mã
+c338107e Đang kiểm tra biến
+5730c93f Đang kiểm tra thẻ HTML
+ea4c65ed Đang kiểm tra lớp CSS
+d874e65d Đang kiểm tra hình ảnh, âm thanh, video và tệp
+6517d389 Đang kiểm tra văn bản (lỗi gõ, chữ giữ chỗ)
+87beeee4 Đang kiểm tra JavaScript
+7b7efd8b Đang kiểm tra quy tắc định dạng truyện
+25f3b361 Đang đọc trò chơi {label}
+a28b6c50 Đang kiểm tra tệp bị hỏng
+5aedb280 Đang khởi động trình duyệt ẩn
+f5a5071d Đang tải trò chơi
+8466e7c7 Đang kiểm tra script bằng engine JavaScript của trình duyệt
+bf197daa Đang chơi các cảnh ({mode}): {k} / {n}
+f70cf464 Chơi thử xong
+427c9fd7 Trong các cảnh không ai đến được
+9b9f5c3d Người chơi không bao giờ thấy điều này: nó nằm trong cảnh không ai đến được. Có thể để nguyên.
+e58020da Không ai đến được "{name}": liên kết của nó đã bị tắt
+2795ab1b Liên kết duy nhất tới cảnh này nằm trong "{where}" (dòng {line}), bên trong một ghi chú ẩn /* ... */. Mọi thứ giữa /* và */ đều bị tắt.
+4ed22111 Người chơi không bao giờ thấy cảnh này.
+30fda4f3 Nếu người chơi cần thấy nó, hãy xóa /* và */ quanh liên kết. Nếu bạn cố ý tắt nó, hãy để nguyên.
+7a9ce2ca Các liên kết duy nhất tới cảnh này nằm trong những cảnh khác mà không ai đến được.
+3aafeed1 Nếu người chơi cần thấy nó, hãy thêm liên kết từ một cảnh đến được. Nếu nó cũ, bạn có thể bỏ qua.
+0c4d1909 {n} tệp trong {k} thư mục không bao giờ được dùng
+0efdb085 {n} giá trị mà trò chơi không bao giờ dùng
+425a6a2a Các giá trị này bị thay đổi, nhưng trò chơi không bao giờ xem chúng.
+849cdd9b Không có gì hỏng. Có thể chúng còn sót từ phiên bản cũ.
+a82d56f5 Một khung trang chưa được đóng: <{tag}> ở dòng {line}
+5c73814e <{tag}> ở dòng {line} không bao giờ được đóng bằng </{tag}>.
+b587a89d Thêm </{tag}> ở chỗ khung cần kết thúc.
+f1a6f13d Thừa một thẻ đóng: </{tag}> ở dòng {line}
+d887494b </{tag}> ở dòng {line} đóng một khung chưa từng được mở.
+f3d6de5f Xóa </{tag}> thừa, hoặc thêm <{tag}> còn thiếu.
+94b62097 Chính tả: "{wrong}" nên là "{a}" hoặc "{b}"
+45919c5c Một lỗi chính tả thường gặp. Nó có thể là hai từ khác nhau.
+d3631b3f Đọc câu và đổi "{wrong}" thành "{a}" hoặc "{b}", tùy cái nào hợp.
+4f2e0c01 Không cần làm gì, trừ khi một trong số đó lẽ ra phải được dùng.
+37a88891 Thường không sao: trình duyệt tự đóng nó ở cuối cảnh.
+9c393632 Có. Nó nằm trong cảnh không ai đến được, nên người chơi không bao giờ thấy. Chỉ sửa nếu sau này bạn thêm liên kết tới cảnh đó.

@@ -1,0 +1,836 @@
+#name Svenska
+e77b83c2 Speltest klar: {n} scener spelade på {m} sätt, {k} problem hittade under spelandet.
+e9dd5680 Kopierat till urklipp
+e00ac23f Sort
+764b4aa3 Hur allvarligt
+33446003 Scen
+44819483 Ingenting
+36c4a06f Kontrollerar…
+ecab72e7 Spelmappen / hela spelet
+95263aa8 Raden i spelfilen (markerad)
+adac6937 Kod
+4dc2eddf Hittat med {app}. {n} problem.
+6b21fb79 Om
+b8bb1461 Hur når spelarna den här scenen?
+d07d7afa Hur når spelarna "{name}"?
+fa893d87 Ren
+70440046 Anteckningar
+1430f976 Varningar
+805e86a8 Fel
+dcad8ee5 Förbereder kodvyn…
+7f2f6a15 Fel
+e9c45563 Varning
+2c924e30 Anteckning
+f4808ecd Öppna spel…
+f6ab55dd Kontrollera igen
+dd3fa3ce ▶ Speltest
+5e4797ea Rättningsguide
+4fa8cc86 Verktyg
+c47ae153 Hjälp
+9d454f7c Inget spel öppnat
+7869cc5c Jag redigerar i Twine
+db8da328 Jag redigerar .html-filen (Notepad++ m.fl.)
+20c7c552 Klar
+26a93eac Öppna en spelmapp (Ren'Py, RPG Maker, Ink, ChoiceScript)…
+775b3ab8 Mapp med bilder och ljud…
+cd9a3d88 Säkerhetskopiera spelfilen
+2505d3da Testa en rad innan du ändrar den…
+3536c70a Jämför med en annan version…
+080460a5 Skriv en felrapport till utvecklaren…
+0cbf16ea Exportera rapport…
+490c3a52 Bevaka spelfilen och kontrollera igen när den sparas
+09e02e95 Visa problem som markerats som avsiktliga
+80f65544 Textredigerare…
+3a4dad84 Gå rundturen
+f996200a Lektioner (F1)
+e5aaa5b5 Ordlista
+320067c6 Extra stor text
+07471db5 Färgblindvänliga färger
+c2cebede Alla sorter
+1baa06b4 Problem
+ced091e8 Scen / plats
+ea967600 Rad
+99a42316 Åtgärd
+3cd62e5f Öppna i min textredigerare
+a4f34926 Kopiera rättad rad
+0973fd22 Kopiera text att söka efter
+28a1dc64 Jag har rättat - kontrollera
+1a256c63 Berätta för utvecklaren
+b491a51b Visa i kodvyn
+463e5e78 Markera som avsiktligt
+562107b8 Läs upp
+e42bc527 Kopiera detaljer
+d7c5a824 Visa exakt som det är sparat i filen (&lt;-koder)
+2314cd9a Öppna spelet
+7a8e0cf0 Välj spelmappen
+ff10f24c Mapp med spelets bilder, ljud och videor
+38e9a3e9 Spel: {path}     Mapp: {folder}
+24fc8907 Sluta läsa
+7335beba Inte längre markerat som avsiktligt
+24fec833 Markerat som avsiktligt - dolt i listan (Verktyg > Visa problem som markerats som avsiktliga)
+615c9a3f {fmt} · {units} delar · {files} filer i mappen · {e} trasiga, {w} troligen trasiga, {i} att kontrollera · {s} s
+f229a698 Kodhälsa: {n}% · {label}
+d8d62e38 Kontrollen är klar
+dd3a39d8 Kodhälsa
+c6643b25 Skala: 100% utmärkt · 90% mycket bra · 80% bra · 70% godkänt · under 70% behöver arbete
+7e0056d2 Den bygger på hur många scener som har problem och hur allvarliga de är.
+07c80477 Efter sort
+45b733c9 Klicka på ett problem i listan för att se detaljerna.
+525f61b6 Var
+4090e818 Så rättar du det
+0b975974 Öppna din berättelse i Twine och öppna passagen "{name}".
+905dc77d Samma namn används också på {n} annan/andra rad(er): {lines}. Ändra det där också.
+3cfafb7c Publicera berättelsen igen (Build > Publish to File) och ladda sedan om spelet för att kontrollera.
+64cb91c6 Var: {where}
+4383fcfd Vad som är fel: {text}
+07bddb04 Så rättar du det: {text}
+cf36743b Nu: {text}
+0cacfdc2 Ändra till: {text}
+70fbdd39 Rättad rad kopierad. Markera den gamla raden i passagen "{name}" i Twine och klistra in.
+60eafc99 Rättad rad kopierad. Markera rad {n} i din redigerare och klistra in över den.
+67a9f511 Söktext kopierad. Tryck Ctrl+F i din redigerare och klistra in den.
+67c1b9a0 Filen har inte ändrats sedan förra kontrollen. Sparade du den?
+2693cf86 Jämför din rad med raden "Ändra till" igen.
+1b930787 Öppna ett spel först.
+9dbf0a77 Säkerhetskopia sparad: {path}
+88e09b05 (din text)
+e835a0e1 Felrapport för {game}
+338c5072 Tekniskt: {text}
+fc5e62a8 Inställningsfil: {path}
+0f83a323 Spelfilen bevakas. Varje gång du sparar den kontrolleras den igen.
+24b5689b Slutade bevaka spelfilen.
+6bbf59c5 Stoppar speltestet…
+c5726162 Speltestet behöver Microsoft Edge eller Google Chrome, och ingen av dem hittades.
+efe69072 Spelet ändrades under speltestet. Kör det igen.
+4e1a8e3c Inga problem
+59cd52ee Värt att kontrollera
+80c66d73 Troligen trasigt
+3ad465ce Trasigt
+8ea8e60f Rad {n}: inga problem hittades
+421fe500 dubbelklicka för detaljer
+a6e7e8d6 "{text}" hittades inte
+fc748144 Exportera de {n} problem som visas i listan
+c8ca2957 Rapporten sparad: {path}
+09188221 Hela spelet
+5a7ee5ac Felrapport
+203dee52 Detaljerna sparades i {path}
+5abfea7d Enkla ord: av
+de314fa0 Allvarlighet
+fc55cc19 Passage / plats
+3deb7456 Typ
+61790945 ■ Stoppa speltest
+e23fd7cf Ta bort markering som avsiktligt
+5ffa6ce4 Kontrollerar spel efter misstag och berättar med enkla ord vad som är fel och hur du rättar det. Fungerar med Twine-spel (SugarCube, Harlowe, Chapbook, Snowman), andra HTML-spel, Ren'Py, RPG Maker MV/MZ, Ink och ChoiceScript.
+e13e18f3 Så använder du det
+c3abe9f5 Säkert att använda
+4d688496 Det här programmet läser bara ditt spel. Det ändrar det aldrig. Använd Verktyg > Säkerhetskopiera spelfilen innan du redigerar något.
+90c93523 Kortkommandon
+8e990034 Ctrl+O öppna · F5 kontrollera igen · Ctrl+F sök · F3 sök nästa · Ctrl+E exportera · F1 lektioner · Ctrl + / Ctrl − / Ctrl+0 eller Ctrl+mushjul för att ändra storlek
+21e5904b {n} filreferenser kontrollerade
+052df047 Börja här - de viktigaste rättningarna
+eff36495 Eller klicka på "Rättningsguide" för att gå igenom dem en i taget.
+23bd8fe4 Scenen "{name}"
+8cb67e05 Passagen "{name}"
+12b1a199 rad {n} i passagen
+280d0541 rad {n} i {file}
+a684f161 Du markerade detta som avsiktligt, så det räknas inte.
+6aeb39ef Vad som är fel
+c1bcc130 Vad som är fel
+ebcf7d18 Vad spelarna märker
+e7f32d0f Klicka på "Öppna i min textredigerare". Den öppnar {file} på rad {n}.
+73c8627d Ta bort den raden (den visas nedan under "Nu").
+b44b2225 Ändra den som visas nedan under "Ändra till". "Kopiera rättad rad" kopierar hela den rättade raden så att du kan klistra in den över den gamla.
+d640e11b Se förklaringen ovan.
+33d1a502 Spara filen, ladda om spelet och klicka sedan på "Jag har rättat - kontrollera".
+fd3e0dfe Gjort i Twine? Rätta det då i Twine i stället (byt "Jag redigerar .html-filen" ovan till "Jag redigerar i Twine"). När du publicerar från Twine skrivs ändringar som gjorts direkt i .html-filen över.
+e3b82040 Nu
+b9b6aac4 Ändra till
+3895c256 Kan jag strunta i detta?
+189da0ef Vad spelarna märker: {text}
+7d949b29 Kod: {text}
+80411ece Inte rättat än - problemet finns kvar
+71a91179 tryck Ctrl+G och skriv {n} för att hoppa till raden
+84d3bdef Öppnat i {name}
+7bf2bdbd Scen: {name}
+f8e71156 Rad {n} i {file}
+e9331864 Vad som händer: {text}
+16fcd5a1 ({n} tecken till på den här raden)
+6dcc62dd Rapporten sparad. Öppna den nu?
+02fbc53c Problem (enkla ord)
+2c3cafa4 Fil
+1bea2fb0 Så rättar du
+fdccd352 Något gick fel inne i appen:
+b7152342 Storlek
+8e6b86dc Problem
+8f0d8d83 Gruppera efter
+bce06414 Sök
+74c14ca3 Kodvy
+a3d77701 ◀ Föregående problem
+3a289dc9 Nästa problem ▶
+2e0b45f2 Gå
+ececaefe Sök nästa
+df251b06 Sök
+7e08ebec Utvecklare
+e53407cf Spelare
+0406a446 Enkla ord
+2edb004b Jag redigerar .html-filen
+b45e0101 Bevakar ändringar
+398ed329 Spel
+6f80238e HTML-spel
+f7857dcc Alla filer
+6798c955 Kontrollerar, vänta…
+be4bd50c Kodhälsa: {n}%
+16dd1f3a {n} markerade som avsiktliga
+901b56b2 Inget att visa
+ea64a687 4. Hjälp > Lektioner förklarar grunderna på några minuter. Hjälp > Gå rundturen visar dig runt.
+570f71b7 Scener som är trasiga
+08f7f24d Spara ditt spel innan du besöker dem, så att du kan gå tillbaka om något går fel:
+29e8d770 Använd "Berätta för utvecklaren" på ett problem, eller Verktyg > Skriv en felrapport, för att skicka detaljerna.
+d19ceca5 Tips
+251eb9e2 Spara ditt spel innan du når den här scenen, så att du kan gå tillbaka om den går sönder.
+d782b266 Hitta stället: använd Twines "Find and replace" (eller titta noga) efter den här texten:
+eb92d56f Öppna projektet i RPG Maker och gå till: {where}
+7e7c7eb1 (ta bort den här raden)
+d40baaa7 ✔ Rättat! Problemet är borta. Kodhälsan är nu {n}%.
+fce98782 Välj en annan redigerare med Verktyg > Textredigerare…
+55d0a707 Säkerhetskopia sparad:
+802cfe54 Kunde inte göra säkerhetskopian:
+a01ce386 Föreslagen rättning (i Twine):
+d9cb995e Översättningar till andra språk än engelska har gjorts av en AI och kan innehålla fel. Tekniska detaljer står kvar på engelska, som spelmotorerna och deras manualer.
+987dd9b8 Öppna ett spel för att se dess kod här.
+f4fd7854 {name} ({n} rader)
+db3b1ca2 Rapport som webbsida
+1b5f6570 Kalkylblad (CSV)
+ee3d21a8 Textfil
+934a1886 Kunde inte spara rapporten:
+29211387 Systemtema
+9e5ba0f0 Ljust tema
+d51c5960 Mörkt tema
+71df97be Filen sparad - kontrollerad igen: {fixed} rättade, {new} nya
+12d21609 (hela spelet)
+4671f2fd {n} delar
+af4e5ffa {n} problem i den här gruppen. Klicka på ett för att se detaljerna.
+e065ed24 Om raden har flyttats, tryck Ctrl+F i din redigerare och sök efter:
+d6cd9bbc Kunde inte kontrollera:
+e8b6a7a1 (rad {lines})
+2a87805d Kunde inte starta {name}:
+50803478 Så rättar du: {text}
+cbbf7064 Version {v}. Hittar problem i spel och förklarar hur du rättar dem. Läser bara filer och ändrar aldrig ditt spel.
+7e16f294 Kodhälsa: {n}% ({label})
+13b7bfca Arbetar…
+944d285f Kontrollen misslyckades
+5117eb3e Inga problem matchar de aktuella filtren.
+84a26cd3 Inga problem hittades. Bra jobbat!
+e961739d 3. Vet du inte var du ska börja? Använd Rättningsguiden - den går igenom problemen ett i taget och kontrollerar dina rättningar.
+dfa2b6e9 Rad {n}:
+27a41ea2 (ta bort)
+966d414d rad {n}
+a37a62b5 2. Klicka på ett problem i listan. Nedanför ser du vad som är fel, vad spelarna märker och exakt hur du rättar det.
+47faaf63 Speltestet stoppat
+9de8b1a5 1. Klicka på "Öppna spel…" och välj spelets .html-fil (eller använd Verktyg för en spelmapp). Kontrollen startar av sig själv.
+836bf385 Speltestet kunde inte köras:
+3dd51c5a Välj din textredigerare
+1f7611ea Textredigeraren är inställd på {name}
+43320d49 Testa en rad innan du ändrar den
+18e673bc Ingenting ändras i ditt spel. Detta kontrollerar bara texten du skriver här.
+8ecc7800 Skriv en felrapport till utvecklaren
+2e2b95ec Jämför två versioner
+ccdb5389 Välj den andra versionen av spelet och klicka på Jämför. Båda läses bara, ändras aldrig.
+cabad4eb Kontrollerar den andra versionen…
+cb9ce97b Lektioner
+9255b9a1 Välj textredigeringsprogrammet
+67094e72 Det programmet hittades inte. Använd "Bläddra…" för att välja det.
+21461571 ◀ Tillbaka
+2d8a1625 Hoppa över ▶
+7c5d9f51 {done} av {total} rättade
+cb70c72b Problem {n} av {total}
+820d6004 Kontrollerar…
+e461d5d0 {n} problem hittade:
+9580fcbc Vanlig text
+26a49ee7 Discord / Reddit
+1f82bc1e Forum (BBCode)
+616ce66d Trasiga + troligen trasiga
+34d5d395 Bara det valda problemet
+ced1fd2f Spara felrapporten
+ec9135a3 Felrapport sparad: {path}
+8d105cf4 Jämför
+a1cd6b54 Välj den andra versionen
+1f5bf765 Välj den andra versionen först.
+ad916050 Jämför…
+f4f29947 Kodhälsa: {a}% → {b}%
+a81eb289 Rättade i den nyare versionen ({n})
+53da970f Nya problem i den nyare versionen ({n})
+2be41ba6 Finns kvar ({n})
+9ec4aa53 Ord som används i den här appen
+ce12714d Inget att rätta
+d231fca7 Det finns inga problem kvar som behöver rättas. Bra gjort!
+76c1c7de Det här problemet är borta - det rättades eller filen ändrades. Klicka på Hoppa över för att fortsätta.
+55855f77 Att testa enskilda rader fungerar för Twine-spel (SugarCube). Öppna ett först.
+bbfa773e Stäng
+af74f7c5 Kopiera
+571a03ba Vilket program ska öppna spelfilen?
+113fa56b De här textredigerarna hittades på datorn:
+d4b86cfd Ett annat program…
+9d68007b Program
+c1b20f52 Bläddra…
+6bf5da9c Alternativ
+4ee6279e {file} ersätts med spelfilen och {line} med radnumret. Notepad++ använder: -n{line} "{file}"
+77dfd213 Avbryt
+efc007a3 Spara
+ab14d0a7 Program
+4abacc60 ✔ Rättat! Bra gjort. Här är nästa.
+1ed684b1 Klistra in eller skriv raden (eller hela passagen) som du vill använda:
+45f9116a Detta är en hel passage (kontrollera också att varje tagg är stängd)
+4b5e84be Kontrollera
+6a17f3f6 Inga problem hittades i den här texten.
+44b39131 Förslag:
+4020c08c Stil:
+2f32f781 Ta med:
+4705cad6 Ta med hur man rättar
+d9057148 Spara som…
+83c52802 Annan version:
+c3c1e96d Den andra versionen är:
+6fa5fbbc äldre
+1d47386a nyare
+78cee4b8 Steg {n} av {total}
+57bc79e3 Hoppa över rundturen
+bc981983 Nästa
+e9b450d1 Klar
+682c160f Aktuellt spel:
+74c063af Fel:
+3a82310a Rätt:
+c7c15bca Det här kommer att gå fel för spelarna.
+8df34ecb Det här är mycket troligt ett misstag.
+1d894da2 Inte brådskande. Det kan vara okej, men ta en titt.
+58da2ccb Länkar till scener som saknas
+78d3da9d Bilder och ljud som saknas
+59327131 Trasiga spelkommandon
+dfe69b5d Felstavade spelkommandon
+140d954e "Om"-kontroller som går fel
+169a1b52 Kommandon som inte gör något eller går sönder
+c3f4070a Felstavade egenskaper och värden
+ee27480a Återanvändbara block
+9c0fe2ed Kod för sidlayout
+2c0f0a6d Stilar (färger och utseende)
+f77fd1fd Scener
+45e35cfc Scener som ingen kan nå
+a2406e53 Filer som spelet aldrig använder
+68320599 Ofärdig text
+8a21b1ee Stavning
+169b486d Skrivfel
+a1d181bd Fungerar bara på Windows
+3e9d9ae4 Mycket stora filer
+50a12988 Skadade filer
+aab2b305 Gammaldags kommandon
+3f55c07b Skriptkod
+cc0718f5 Spelinställningar
+c7ee483a Skanner
+c916a1ad Fel under spelandet
+0e66b49d bild
+5e2e97c3 ljud
+ffbaf58f video
+4642576d typsnitt
+767013ce sida
+971c419d fil
+8c657028 scenen "{name}"
+84db7a65 spelet
+27260418 Går till en scen som inte finns: "{name}"
+65a1b892 I {where} försöker en länk eller ett kommando öppna en scen som heter "{name}". Ingen scen i spelet har exakt det namnet.
+eddc288b När spelaren klickar på den (eller spelet kommer dit) får hen ett felmeddelande eller en tom sida i stället för scenen.
+6690f7df Gör så att namnet stämmer exakt med en befintlig scen. Versaler och mellanslag räknas.
+ee186081 Går till en del av berättelsen som inte finns: "{name}"
+adcab89d Berättelsen försöker fortsätta vid "{name}", men inget i spelet har det namnet.
+c68c7536 Spelet stannar med ett fel här (eller startar inte alls).
+262dea9c Gör så att namnet stämmer exakt med en befintlig del av berättelsen.
+8a2045c6 Går till ett kapitel som inte finns: "{name}"
+6b99d3d7 Berättelsen försöker öppna "{name}", men det finns inget sådant kapitel eller ställe.
+54721a92 Spelet stannar med ett fel här.
+bfe449ab Rätta namnet så att det stämmer med ett befintligt kapitel.
+8569b71c Öppnar en skärm som inte finns: "{name}"
+ed323960 Spelet försöker visa en skärm som heter "{name}", men ingen skärm har det namnet.
+31aaf0f7 Spelet stannar med ett fel här.
+ecedecaf Rätta namnet så att det stämmer med en befintlig skärm.
+1c82d0d0 En händelse skickar spelaren någonstans som inte finns
+f7bb6caa En händelse flyttar spelaren till en karta, eller kör en common event, som inte finns i spelet.
+11068616 Spelet kraschar eller fryser när den här händelsen körs.
+17c8c384 Välj en befintlig karta eller common event i det händelsekommandot.
+924f14ec En länk som inte leder någonstans
+ac25c348 En länk i {where} säger inte vilken scen den ska öppna.
+cc208a80 Ett klick på den visar ett fel.
+81510156 Skriv namnet på scenen som länken ska öppna.
+a620e5a7 En länk saknar sitt slut
+75319c60 En länk börjar med [[ men slutar aldrig med ]].
+d94d2b45 Texten efter den blandas in i länken och scenen ser trasig ut.
+da97338b Lägg till ]] i slutet av länken.
+de752d36 Ingen kan nå "{name}"
+ad06e184 Inget i spelet leder till den här delen av berättelsen.
+49f72405 Spelarna ser den aldrig. Ofarligt, om den inte var tänkt att vara spelbar.
+41e81f9d Om spelarna ska se den, lägg till en länk till den från en annan scen. Om den är gammal kan du strunta i den.
+12017de3 Scenen "{name}" är tom
+e1c78333 Den här scenen har ingen text eller något innehåll.
+eb036a1b En spelare som kommer hit ser en tom sida.
+95468775 Skriv scenen, eller ta bort länkarna som leder dit.
+65f5f00d Två delar av berättelsen har samma namn
+3a661399 Mer än en scen eller etikett använder namnet "{name}".
+14b99f6a Bara en av dem kan någonsin visas, eller så vägrar spelet att starta.
+5017f902 Ge var och en ett eget namn.
+8ee54eec Spelet har ingen startscen
+e4b1267b Spelet vet inte var det ska börja.
+67fece68 Spelet kanske inte startar alls.
+6f3c3583 Markera den första scenen som start i Twine.
+891a7ccc En hopplänk leder ingenstans
+723d0b6c En länk pekar på ett ställe på sidan som inte finns.
+9d2a3ab1 Ett klick på den gör ingenting.
+a17d6d9d Rätta namnet på stället, eller ta bort länken.
+f7e0927c Saknad {kind}: {file}
+471ab6b6 Spelet vill använda {kind} "{path}", men det finns ingen sådan fil i spelmappen.
+215d84f2 Spelarna ser en trasig bild eller ett tomt utrymme, eller hör ingenting.
+95495e08 Lägg filen på det stället, eller ändra namnet i spelfilen till den fil som verkligen finns.
+4e187285 Filnamnet har fel versaler: {file}
+10dd7eb2 Filen finns, men spelet skriver namnet med andra versaler.
+445b1f51 Fungerar på Windows. På mobiler, Mac, Linux eller en webbplats saknas bilden eller ljudet.
+bcc2cd24 Ändra namnet i spelfilen så att versalerna stämmer med den riktiga filen.
+fc7f8ac2 En bild pekar på utvecklarens egen dator
+bf1eaea6 Filens plats börjar med en enhetsbokstav som "D:\". Den mappen finns bara på datorn där spelet gjordes.
+8e9a7d52 Spelarna ser aldrig den här bilden.
+e5baac7c Ändra den till en plats inne i spelmappen, som images/characters/name.jpg.
+006a8fb9 Filplatser använder \ i stället för /
+d6cb43a9 Spelet skriver mappsökvägar med bakåtstreck (\).
+42ad75cd Fungerar på Windows. På mobiler, Mac, Linux eller en webbplats laddas inte bilder och ljud.
+02bf9e76 Spelar bara roll om spelet ska köras utanför Windows: byt \ mot / i bildsökvägarna.
+0fa2cd7a {n} filer i "{folder}" används aldrig
+1b78ff55 De här filerna ligger i spelmappen, men spelet använder dem aldrig.
+55acf4db Inget går sönder. De gör bara nedladdningen större.
+aa1a0c6f Ta bort dem om du är säker på att de inte behövs. (Vissa kan väljas av spelet på smarta sätt som skannern inte ser.)
+cb4cc629 En tom fil
+4642643c Den här filen är tom (0 byte).
+24ec314d Den visas eller spelas inte.
+6cd06e6e Ersätt den med en fungerande kopia av filen.
+07046633 Skadad fil (avklippt): {file}
+932dbf75 Slutet av den här filen saknas, oftast för att en nedladdning, kopiering eller uppackning inte blev klar.
+feda3672 Bilden visas bara delvis eller inte alls, eller så slutar ljudet/videon för tidigt.
+968dc7a4 Kopiera eller ladda ner filen igen från spelets originalfiler.
+6081a951 Inte egentligen en bild eller ett ljud: {file}
+dc397b7a Filen har rätt namn, men inuti finns en webbsida (ofta en felsida från en nedladdningssajt).
+7f495908 Spelarna ser en trasig bild eller hör ingenting.
+eee27da5 Ladda ner den riktiga filen igen och ersätt den här.
+2a1c1b71 Möjligen skadad fil: {file}
+4c30367e Början av filen liknar inget känt bild-, ljud- eller videoformat.
+d3b9cea3 Den visas eller spelas troligen inte.
+0ab570a5 Öppna den i en bildvisare eller mediaspelare. Ersätt den om den inte öppnas.
+f68470e5 Vissa filer har fel filändelse (.png, .jpg ...)
+d608da1e De här filerna innehåller ett annat format än namnet säger, till exempel en JPEG-bild som heter .png.
+2e39b508 Webbläsare visar dem oftast ändå. Vissa mobiler och program gör det kanske inte.
+097a3703 Valfritt: konvertera eller byt namn så att namnet stämmer med det riktiga formatet.
+283d2070 Vissa filer är mycket stora
+c7fa15ff De här bilderna eller videorna är mycket stora.
+ae5369ab De laddas långsamt, särskilt på mobiler.
+e125a92c Valfritt: gör dem mindre med ett bildprogram.
+385f4329 En spelfil saknas: {name}
+2e700532 Spelet förväntar sig en fil som inte finns.
+99467808 Spelet visar ett fel vid start eller när den här delen nås.
+b3496ea7 Lägg tillbaka den saknade filen, eller ta bort hänvisningen till den.
+75e6334a En speldatafil är skadad
+db02e969 Den här filen kan inte läsas ordentligt.
+79b96faf Spelet startar inte eller kraschar.
+7ebbbeec Återställ filen från en säkerhetskopia eller originalspelet.
+d399fac1 Ett "{name}"-kommando stängs aldrig
+e6c66d5b Vissa spelkommandon behöver ett matchande slut. Det här har inget.
+0b1cb09f Spelet visar en röd felruta i den här scenen, och en del av scenen kan saknas.
+afdabc18 Lägg till det saknade slutet (till exempel <</{name}>>) där den här delen ska sluta.
+744245d7 En extra sluttagg <</{name}>>
+adb1bea4 Det finns en sluttagg utan något att avsluta.
+b39fd74f Spelet visar en röd felruta i den här scenen.
+a53d4f4e Ta bort den extra sluttaggen.
+fa8c8072 "{name}" står på fel ställe
+9009044d <<{name}>> måste stå inuti ett <<if>>-block. Här gör det inte det, oftast för att en sluttagg ovanför står på fel ställe.
+1e9acaea Spelet visar en röd felruta.
+1d2d751d Titta på raderna precis ovanför och flytta sluttaggen till rätt ställe.
+bfaae414 En sluttagg saknar ett ">": <</{name}>
+a280c34f Sluttaggen är skriven med ett ">" men behöver två.
+71be19aa Spelet ser inte sluttaggen. Det visar en röd felruta och scenen kan se fel ut.
+a3c69d1f Lägg till ett ">" så att den slutar med ">>".
+413ace46 Ett extra ">"-tecken
+4e791f5a Det finns ett ">" för mycket efter en tagg.
+4ecd446f Spelarna ser ett lösryckt ">" på skärmen.
+c1c069b2 Ta bort det extra ">".
+cacfbdbb Ett extra "<"-tecken
+fe9088b6 Det finns ett "<" för mycket före ett kommando.
+0c7a0bb7 Spelarna ser ett lösryckt "<" på skärmen.
+87807bf8 Ta bort det extra "<".
+b0d2d4e4 Ett halvskrivet kommando "<<"
+012a6c88 Det finns ett "<<" utan något efter.
+fd941db0 Kommandot efter går sönder och spelet kan visa ett fel.
+73f8070a Ta bort det lösryckta "<<".
+7037d71a Ett kommando saknar sina ">>"
+87bde2ac Ett kommando börjar med << men slutar aldrig med >>.
+7f93f879 Text efter det försvinner eller scenen visar ett fel.
+dbda1f76 Lägg till ">>" i slutet av kommandot.
+5a30164d En parentes öppnas men stängs aldrig
+d5b047f2 Något börjar med en parentes men den avslutande parentesen saknas.
+8d50e9a9 Allt efter den sväljs eller spelet visar ett fel.
+912c548c Lägg till den saknade avslutande parentesen.
+35852e81 En extra avslutande parentes
+a1d86e33 Det finns en avslutande parentes utan någon öppnande.
+fdeb2ba4 Spelarna kan se ett lösryckt tecken eller ett fel.
+254fbb5b Ta bort den extra parentesen.
+98cb6b2f Ett kommando har ingen text kopplad till sig
+1afec1b9 Det här kommandot ska styra texten direkt efter, skriven inom hakparenteser [så här]. Inget följer efter det.
+073266b4 Harlowe visar ett fel, eller så visas texten alltid.
+29369e93 Lägg texten som det styr inom hakparenteser direkt efter det.
+4093f80e Spelet visar ett fel, och den del av scenen som det styr fungerar inte.
+ef3a7877 Ett gammaldags kommando
+54dead55 Det här kommandot fungerar fortfarande, men är föråldrat.
+01500c48 Inget just nu. Det kan gå sönder i en framtida motoruppdatering.
+b1a70201 Valfritt: byt ut det mot det nyare kommandot.
+a4a93d21 En "if"-kontroll använder "=" i stället för "is"
+582b6716 Inuti en "if"-kontroll betyder "=" "gör det lika", inte "är det lika?".
+564cdad0 Spelet visar en röd felruta, eller så är kontrollen alltid sann och fel del av scenen spelas.
+e3105e2f Byt det ensamma "=" mot "is".
+f0b64920 "=>" eller "=<" skrivet baklänges
+897ec753 Större-än-eller-lika skrivs ">=", inte "=>".
+0167d9bc Kontrollen fungerar inte.
+0b498ace Skriv ">=" eller "<=" i stället.
+f917ca5e "is not" ska vara ett ord
+4e8bbdf4 I den här spelmotorn betyder "is not" något annat än "isnot".
+e40cd819 Kontrollen blir nästan alltid fel.
+7f3a1402 Skriv "isnot" som ett ord.
+694143a3 En "or"-kontroll som alltid är sann
+b760633e Något som "$x is 1 or 2" jämför bara $x med 1; "2" ensam räknas alltid som ja.
+f8b8cc75 Den här delen spelas även när den inte borde.
+b1a0ec7e Upprepa namnet: "$x is 1 or $x is 2".
+1c4512b1 En "if"-kontroll som kan slå till vid fel tillfälle
+bb598d2b Den här kontrollen blandar "and" och "or" utan parenteser. Datorn gör alltid "and"-delarna först, så kontrollen kanske inte betyder det som var tänkt.
+71408d55 En scen eller ett val kan dyka upp när det inte borde - till exempel när en person är kidnappad eller en egenskap är för låg.
+045d6c6c Sätt parenteser ( ) runt delarna som hör ihop. Titta på koden nedan och gruppera "or"-valen.
+dbb9ed0f Parenteserna ( ) stämmer inte
+6bbb5c72 Det finns fler "(" än ")" eller tvärtom.
+d2676c8c Lägg till eller ta bort en parentes så att de bildar par.
+8f746eaa En tom "if"-kontroll
+70ac1e0e "if" har inget att kontrollera.
+8fa764c4 Spelet visar ett fel.
+f72f83b1 Skriv vad som ska kontrolleras.
+00b75afd En ändring av en egenskap som inte gör något ("==")
+d3024696 Den här raden ska ändra ett värde, men "==" jämför bara - den ändrar ingenting.
+4bb1b350 Värdet ändras aldrig. Det som beror på det (timers, räknare) fastnar.
+bb9d82a8 Byt "==" mot "to".
+88b997d5 En ändring av en egenskap som inte gör något
+47b56b1e Den här raden ska ändra ett värde, men har inget "to", "=", "+=" eller "-=", så inget ändras.
+b3edbcbf Till exempel tas energi eller pengar aldrig bort eller ges.
+5a19bb57 Skriv "-=" i stället för "-" (eller "+=" i stället för "+").
+24335c15 En tom ändring av en egenskap
+d7c9d917 Kommandot är tomt.
+1ca2b36b Ta bort det eller skriv ändringen.
+2d2715a0 Ett värde sätts med "=" i stället för "to"
+b3386569 Den här motorn sätter värden med "to".
+be353939 Byt "=" mot "to".
+6b135470 Ett citattecken " saknas
+b7ed7d6f En bit text i ett kommando börjar med " men stängs aldrig.
+4b70c1d8 Spelet visar ett fel eller sväljer texten efter det.
+081a0ff8 Lägg till det saknade ".
+1a1cb7a5 Tabbar används där det behövs mellanslag
+0d83ecca Den här motorn kräver att raderna bara dras in med mellanslag.
+1928be6f Spelet startar inte, eller stannar med ett fel här.
+6707540b Byt tabben i början av raden mot mellanslag.
+50e72b08 En rad saknar ":" i slutet
+1590b870 Rader som "if", "menu" och "else" måste sluta med kolon.
+34cb1caf Spelet startar inte.
+739781b1 Lägg till ":" i slutet av raden.
+463c9c22 Trasig skriptkod
+90393617 En parentes eller ett citattecken i skriptkoden stämmer inte.
+10b6ae9e Hela skriptet slutar fungera, vilket kan förstöra många funktioner.
+208a3574 Kontrollera parenteserna och citattecknen runt den här raden.
+08a420a2 Kvarglömd testkod
+f523c19b Kod som användes vid testning blev kvar.
+a161c8db Oftast inget synligt.
+5512920c Valfritt: ta bort den.
+e14ae90f Ett namn med ett "-" i
+a5d94a86 Namn på värden får inte innehålla "-". Spelet läser bara delen före "-".
+1d915eed Spelarna ser fel ord eller en tom plats i stället för ett namn.
+1ff6bd49 Använd "_" i stället för "-".
+929dc82b Kontroller av det blir alltid "nej", så viss text eller vissa scener visas aldrig (eller så visas en tom plats i stället för ett namn).
+aa241baa Samma namn, olika versaler: ${a} / ${b}
+fe615c75 För spelet är detta två olika värden, eftersom versaler räknas.
+1549316e Ändringar i det ena syns inte i det andra, så egenskaper eller scener blir fel.
+485f98c5 Ändra ${a} till ${b}.
+fbb1a8ec Felstavat värdenamn: {name}
+baa2f1ac "{name}" skapas aldrig, men "{near}" gör det. Det är nästan säkert ett skrivfel.
+37eb4d71 Spelet visar ett fel eller så är värdet alltid tomt.
+69b0c997 Ändra "{name}" till "{near}".
+958390b8 Ett tillfälligt värde som aldrig sätts: _{name}
+66d98956 Det här kortlivade värdet används men får aldrig något värde.
+f6d72946 Kontroller av det fungerar aldrig.
+b150a824 Sätt det först, eller rätta namnet.
+bb2ac176 Ett värde som aldrig skapades: {name}
+418bb0cf Använder en switch/variabel som inte finns (#{n})
+60eb5de9 Händelsen använder nummer {n}, men spelets lista är kortare.
+ab5e6d39 Händelsen fungerar inte som tänkt.
+27e3bd51 Välj en befintlig switch/variabel i händelsen.
+5e339cd0 En switch/variabel saknar namn (#{n})
+e3546a24 Den används, men har inget namn i Database.
+15f64977 Inget synligt. Den är bara lätt att blanda ihop.
+a8723260 Ge den ett namn i Database.
+bd3955c1 Ett återanvändbart block är definierat två gånger: {name}
+0a743f0a Två definitioner delar det här namnet.
+4d983cee Bara en version används.
+08c1e9fa Ta bort eller byt namn på en av dem.
+20982092 Ett återanvändbart block laddas inte
+3ed9bdd5 Dess scen saknar taggen "widget".
+4f7fa681 Varje scen som använder det visar ett fel.
+a3c57c94 Lägg till taggen "widget" på den scenen i Twine.
+769d38d3 Ett oanvänt återanvändbart block: {name}
+91caae31 Det är definierat men används aldrig.
+92f3557e Inget går sönder.
+48518178 Inget behövs.
+549a08bd Ett citattecken saknas i sidkoden
+2616e9ea Ett citattecken " saknas i en sidtagg (ofta en bild).
+c1ac2a6e Bilden eller elementet kanske inte visas, eller så går layouten sönder.
+1359ec48 Sidrutor som inte är ordentligt stängda
+c5eaf192 En layoutruta (som <div> eller <center>) öppnas men stängs inte, eller stängs för många gånger.
+bff958b5 Text eller bilder kan hamna på fel ställe eller med fel stil.
+2055d18e Lägg till den saknade sluttaggen, eller ta bort den extra.
+3ec38cbd Två saker har samma namnetikett (id)
+0bf6eee0 Varje id måste vara unikt på sidan.
+ff424805 Knappar som uppdaterar den här delen kan ändra fel ställe.
+3d5e5acf Ge var och en ett eget id.
+9ef419aa En bild eller länk utan fil
+41c88499 Taggen pekar på ingenting.
+30064ec6 En ikon för trasig bild kan visas.
+0e8cdbfd Fyll i filnamnet, eller ta bort taggen.
+8c62dd1b Bildstorlekar skrivna på ett sätt som webbläsare ignorerar
+c97c9dc5 Storlekar som height="450wv" har bokstäver som webbläsaren inte förstår ("wv" är ingen enhet).
+38f858bc Bilderna visas ändå, bara i en fast pixelstorlek. Oftast ofarligt.
+c33de17c Valfritt: ta bort bokstäverna, t.ex. height="450".
+b2030de7 Ett stilnamn som inte stämmer: "{name}"
+912e16dc Utseendet på den här delen väljs med namnet "{name}", men stilen heter "{near}".
+93f6e366 Den här delen visas utan sina tänkta färger eller layout.
+de3efded Ett stilnamn utan stil: "{name}"
+46cc76e2 Ingen stilregel använder det här namnet.
+3a6cc944 Oftast ofarligt.
+d91f6b60 Ofärdig text som spelarna kan se
+a2d31ceb Utvecklaren lämnade en anteckning som "PLACEHOLDER" eller "TODO" i berättelsen.
+33f40845 Spelarna ser anteckningen, eller så är scenen inte färdig.
+a398b7c0 Skriv den riktiga texten, eller ta bort anteckningen.
+a89ee2d1 Stavning: "{wrong}" ska vara "{right}"
+bf0afa72 Ett vanligt stavfel.
+979c6e99 Spelarna ser det felstavade ordet.
+7e32de5a Ändra "{wrong}" till "{right}".
+b2d44d92 Dubbelt ord: "{words}"
+670755a1 Samma ord är skrivet två gånger i rad.
+f901109b Spelarna ser det dubbla ordet.
+c8f90b31 Ta bort det ena.
+fd88a85b Visar en bild som inte finns: "{name}"
+d99288f0 Ingen bild med det här namnet är definierad, och ingen fil i images/ matchar.
+61cd07a0 Spelarna ser en platshållare eller ett fel.
+3b215908 Lägg till bilden, eller rätta namnet.
+a08bad60 Spelet har inget ID-nummer
+91a06fd9 Twine använder ett ID för att skilja berättelser åt.
+7ff45b55 Publicera berättelsen igen från Twine.
+ce8325ca Visar en röd felruta när den spelas: "{name}"
+212a3e36 När scenen faktiskt spelades visade spelet det här felet: {msg}
+1cda4ad4 Spelarna ser en röd felruta i den här scenen, och en del av den saknas.
+fe183b9c Titta på problemen som listas för samma scen - de förklarar oftast orsaken.
+5a4709f8 Ett skript kan inte ens läsas av webbläsaren
+417e0923 Webbläsaren hittade ett skrivfel i det här skriptet, så inget av det körs.
+711c9902 Funktioner som skriptet skapar (specialkommandon, inställningar) saknas eller är trasiga.
+289bf8bb Leta efter en saknad parentes, ett citattecken eller ett kommatecken på den här raden eller raden före.
+fefc36ad Bilder eller ljud saknas under spelandet
+d47a66be De här filerna efterfrågades när scenerna spelades, men de finns inte.
+80b8b71b Spelarna ser trasiga bilder eller hör ingenting i vissa scener.
+9733445f Lägg till de saknade filerna, eller rätta deras namn.
+4f504ebe Ett fel när spelet startar
+92243591 Webbläsaren rapporterade ett fel när spelet laddades.
+2fea6477 Startskärmen eller vissa funktioner kan vara trasiga.
+608156d3 Leta i spelets huvudskript efter problemet som nämns i meddelandet.
+231d0f49 Felstavat kommando: {name}
+388bf136 Okänt kommando: {name}
+9b686aa1 Spelet känner inte till det här kommandot. Det är nästan säkert ett skrivfel för {near}.
+d1f769ee Spelet känner inte till det här kommandot.
+6a1cce2c Ändra det till {near}.
+46c692e0 Kontrollera stavningen av kommandot.
+6db67833 Ett värde som aldrig sätts: {name}
+c0ceb098 Spelet använder "{name}", men överallt annars heter det "{near}". Det är ett skrivfel.
+8acbe929 Spelet kontrollerar eller visar "{name}", men inget ger det någonsin ett värde.
+fbb2c20c Ge det ett startvärde, eller rätta namnet.
+33e186ef Ett värde som spelet aldrig använder: {name}
+72bf1ee8 Detta ändrar "{name}", men spelet tittar bara på "${near}". Det är ett skrivfel.
+7f81aa2e "{name}" ändras, men spelet tittar aldrig på det.
+fd3f859d Ändringen går förlorad - till exempel en ökning av en egenskap som aldrig räknas.
+4857ea9f Inget går sönder. Det kan vara kvar från äldre versioner.
+d2118ba7 Ändra "{name}" till "${near}".
+3867ee62 Inget behövs, om det inte var tänkt att användas.
+11e31f78 "{name}" skapades aldrig. Det är troligen ett skrivfel för "{near}".
+8f03aa6d "{name}" skapades aldrig i början av spelet.
+dd8d9eef Skapa det i början av spelet.
+a62731f6 passage
+f8de5ecc En sida eller scen i ett Twine-spel. Varje passage har ett namn, och länkar går från en passage till en annan.
+ea5e0445 scen
+ad88890f En sida i berättelsen. I Twine kallas det en "passage".
+78f3a3d9 makro
+480a06b0 Ett spelkommando skrivet mellan << och >>, som <<if>> eller <<set>>. Spelet kör det i stället för att visa det.
+1925f793 kommando
+410ae6be En instruktion till spelet, som "visa den här bilden" eller "om spelaren har 5 guld". I SugarCube skrivs de mellan << och >>.
+b46d0172 variabel
+2ef301de Ett namngivet värde som spelet kommer ihåg, som $gold eller $mother_love. I SugarCube börjar det med $.
+f32b67c7 värde
+a746abd2 Ett tal, ett ord eller ett ja/nej som spelet kommer ihåg, som mängden guld.
+afad9a69 villkor
+1dc59f8f En kontroll som "$gold gte 5" (har spelaren minst 5 guld?). Texten efter visas bara när kontrollen är sann.
+5e9b60f6 tagg
+1df6d68c En markering i koden. Starttaggar som <<if>> börjar en del, sluttaggar som <</if>> avslutar den.
+4f0aa52d länk
+5afc9751 Klickbar text som tar spelaren till en annan scen. I Twine: [[Text|Scenens namn]].
+d3ecb0d8 include
+bbc9ce26 Ett kommando som klistrar in en annan passage i den här: <<include "Namn">>.
+ff700e02 widget
+fd5df966 Ett hemmagjort kommando som definieras en gång och återanvänds i många scener.
+9f738ce8 HTML
+16d38297 Språket som webbsidor skrivs i. Taggar som <img> (bild) och <div> (ruta).
+194e13da CSS
+28d26723 Stilregler: färger, storlekar och layout. En "class" kopplar ett element till en stil.
+ee620923 JavaScript
+2d04472d Webbsidornas programmeringsspråk. Spel använder det för specialfunktioner.
+cb5346a0 skript
+302bcb23 En bit programkod (oftast JavaScript).
+0c4da6cb Twine
+5deecf78 Det gratis program som många textspel görs med. Det publicerar spelet som en enda .html-fil.
+9b2ab238 SugarCube
+5a15607f Det vanligaste "story format" (motorn) för Twine-spel. Det ger << >>-kommandona.
+5e2fb0c2 publicera
+9eb9fe5a I Twine: Build > Publish to File. Det skriver den spelbara .html-filen från din berättelse.
+1af607c7 sökväg
+3bee6183 Var en fil ligger, som images/hero.png (mappen "images", filen "hero.png").
+264f39ca rad
+f44c6b66 En rad text i filen. Textredigerare visar radnummer till vänster.
+3cc46d20 indrag
+2a14602c Mellanslag i början av en rad. Vissa motorer använder dem för att veta vilka rader som hör ihop.
+64c65374 etikett
+0419b517 Ett namngivet ställe i en Ren'Py- eller ChoiceScript-berättelse som andra delar kan hoppa till.
+40a22a4a knot
+fba17772 En namngiven del av en Ink-berättelse. "-> namn" hoppar dit.
+fd8c7c8e insticksprogram
+45e375e0 Ett extra skript som lagts till i ett RPG Maker-spel.
+67db3ab6 1. Vad är en passage (scen)?
+6cfa54e4 2. Kommandon mellan << och >>
+fcaf062f 3. Öppna och stänga
+47887091 4. Värden som spelet kommer ihåg ($variabler)
+c3bcb980 5. "If"-kontroller
+d8cc0b48 6. Bilder och ljud
+c413d282 7. Redigera säkert
+fb4c49ae 8. Att läsa den här appen
+a9af7910 Börja här: öppna spelets .html-fil (eller en Ren'Py-, RPG Maker-, Ink- eller ChoiceScript-spelmapp). Kontrollen startar av sig själv.
+de845e69 "Enkla ord" förklarar allt på vanlig svenska. Stäng av det för att se tekniska detaljer.
+6c84c615 Utvecklare eller Spelare: spelare får en kort lista över trasiga scener med få spoilers och en felrapport till utvecklaren. Utvecklare får verktygen för att rätta.
+ba413de9 Alla hittade problem. Rött är trasigt, gult är troligen trasigt, blått är värt att kontrollera. Klicka på ett för att se vad du ska göra.
+476c1a70 Här ser du vad som är fel, vad spelarna märker och exakt hur du rättar det - med raden före och efter.
+e871d7cc Rättningsguiden tar dig genom problemen ett i taget och kontrollerar varje rättning åt dig.
+3d56d049 Speltestet spelar varje scen i en osynlig webbläsare och hittar fel som bara syns när man spelar.
+41da0a4f Verktyg: säkerhetskopiera spelet, testa en rad innan du ändrar den, jämför två versioner, skriv en felrapport, bevaka ändringar.
+75d05bed Hjälp: lektioner, en ordlista, den här rundturen och bekvämlighetsinställningar som extra stor text.
+52c5f193 Kodhälsopoängen: 100% utmärkt, 90% mycket bra, 80% bra, 70% godkänt.
+bcecc3cb Ett Twine-spel består av passager. Varje passage är en scen: lite text, kanske en bild, och länkar till andra passager.
+b1f433c6 Länkar ser ut så här. Delen före | är det spelaren ser, delen efter | är namnet på passagen som öppnas:
+33dd3c05 Namnet måste stämma exakt, inklusive versaler och mellanslag. "kitchen" och "Kitchen" är olika passager.
+14a03cdc SugarCube-spel använder kommandon skrivna mellan << och >>. Spelet kör dem i stället för att visa dem.
+fffc20ea Alltid exakt två < i början och två > i slutet. Ett för mycket eller för lite förstör kommandot:
+1e192fbd Vissa kommandon är som parenteser: de öppnar en del och måste stängas. <<if>> stängs av <</if>>.
+fd08a19b Om den avslutande <</if>> saknas visar spelet en röd felruta. Om det finns en för mycket också.
+b25bf333 Ett ord som börjar med $ är ett värde som spelet kommer ihåg mellan scener, som $gold eller $mother_love.
+d4d0415d Versaler räknas: $Gold och $gold är två olika värden. Ett skrivfel skapar ett nytt, tomt värde, så ändringen går förlorad.
+340aacf8 För att ändra ett värde använder du "to", "+=" eller "-=". Ett vanligt "-" räknar men ändrar ingenting:
+87dc8b35 Inuti en "if" jämför du med "is", "isnot", "gte" (minst), "lte" (högst). Ett ensamt "=" är fel där:
+add346a2 "and" kontrolleras före "or". Använd parenteser för att gruppera, annars kan kontrollen bli sann vid fel tillfälle:
+f07da221 Bilder visas med en <img>-tagg. Sökvägen säger var filen ligger, räknat från spelets mapp:
+9e333b42 Använd / mellan mappar. \ fungerar bara på Windows. Versalerna måste stämma med det riktiga filnamnet för mobiler, Mac och webbplatser.
+9d1c8406 Varje citattecken " som öppnas måste stängas, annars visas inte bilden.
+6f7151f5 Gör en säkerhetskopia innan du ändrar något (Verktyg > Säkerhetskopiera spelfilen).
+73b5381e Om spelet är gjort i Twine, gör ändringarna i Twine och publicera igen. Ändringar som görs direkt i .html-filen försvinner nästa gång spelet publiceras från Twine.
+0dab15d3 Om du bara har .html-filen (ingen Twine-berättelse), redigera den med en textredigerare som Notepad++. Inuti .html-filen skrivs < och > som &lt; och &gt; - appen visar den exakta texten att kopiera.
+a877adb7 Efter varje ändring: spara, ladda om spelet i webbläsaren och tryck på "Jag har rättat - kontrollera" i den här appen.
+e6cfd88c Rött = trasigt: spelarna kommer att stöta på det. Gult = troligen trasigt. Blått = värt att kontrollera, ofta okej.
+3c06ac34 Börja med listan "Börja här" i sammanfattningen, eller använd Rättningsguiden: den leder dig genom ett problem i taget.
+f5a4fb88 "Markera som avsiktligt" döljer ett fynd som du har kontrollerat och vill behålla. Det förblir dolt för det här spelet.
+f3979521 Ungefär 1 minut
+d621d05d 5-15 minuter
+bea680e1 Kräver utvecklaren (ett beslut om berättelse eller design)
+0c6c4102 Valfritt
+e53abb3c Lätt att rätta
+c4f93c0c Kräver lite omsorg
+a22663d7 Kräver utvecklaren
+230659f7 Troligen ja, men ta en snabb titt.
+6d9d36d5 Nej. Spelarna kommer att stöta på detta.
+ddad7bf2 Bara om du har kontrollerat logiken och den gör det du vill. Markera det då som avsiktligt.
+6cf97a3f Ja, om scenen är gammal eller inte är tänkt att spelas.
+d54dbf6e Ja. Inget går sönder.
+3b411bc1 Ja, om spelet bara spelas på Windows.
+667e089a Ja, för tillfället. Det kan gå sönder i en framtida motoruppdatering.
+ca7eea8c Ja, men spelarna ser skrivfelet.
+6225e68e Bara om scenen är ofärdig med flit.
+47ecb09c Ja. Bilderna visas ändå.
+178ca96e Ja. Inget synligt ändras.
+e2fca6c0 Oftast ja. Det är ofta kvar från äldre versioner.
+bcc248b9 Hellre inte. Det är mycket troligt ett riktigt misstag.
+557f2555 inte
+cffa50a3 och
+1758356d eller
+6981b0db Ingen scen länkar till "{name}" på ett sätt som skannern kan följa. Spelarna kanske aldrig ser den, eller så nås den via kod som bygger scennamnet från variabler.
+0f56183f Spelarna når "{name}" från {n} ställe(n):
+02e974ba Det här är spelets första scen.
+5ffe533b sant
+7cb6efb9 falskt
+1ed06825 en länk
+3d22ef57 en include
+ccdfd8c1 ett automatiskt hopp
+3f80e4d1 Från "{src}" ({how}), när: {cond}
+084fcdcf Från "{src}" ({how}), alltid.
+8adbc573 …och fler.
+1aafbf54 Utmärkt
+bd846adf Mycket bra
+61dedcf0 Bra
+226d7ec9 Godkänt
+eafabce9 Behöver arbete
+4e0fa437 Dåligt
+75fb2b10 Läser filen
+ac133acf Letar efter berättelsedata
+456caef0 Samlar in skript och stilar
+fc404c89 Kontrollerar passager och länkar
+6a4d36f9 Kontrollerar makrotaggar
+546de9d0 Kontrollerar villkor och kodlogik
+c338107e Kontrollerar variabler
+5730c93f Kontrollerar HTML-taggar
+ea4c65ed Kontrollerar CSS-klasser
+d874e65d Kontrollerar bilder, ljud, video och filer
+6517d389 Kontrollerar text (skrivfel, platshållare)
+87beeee4 Kontrollerar JavaScript
+7b7efd8b Kontrollerar story format-regler
+25f3b361 Läser {label}-spelet
+a28b6c50 Kontrollerar filer efter skador
+5aedb280 Startar den osynliga webbläsaren
+f5a5071d Laddar spelet
+8466e7c7 Kontrollerar skript med webbläsarens JavaScript-motor
+bf197daa Spelar scener ({mode}): {k} av {n}
+f70cf464 Speltest klart
+427c9fd7 I scener som ingen kan nå
+9b9f5c3d Spelarna ser aldrig detta: det finns i en scen som ingen kan nå. Kan lämnas.
+e58020da Ingen kan nå "{name}": länken är avstängd
+2795ab1b Den enda länken till scenen finns i "{where}" (rad {line}), i en dold anteckning /* ... */. Allt mellan /* och */ är avstängt.
+4ed22111 Spelarna ser aldrig den här scenen.
+30fda4f3 Om spelarna ska se den, ta bort /* och */ runt länken. Om du stängde av den med flit, låt den vara.
+7a9ce2ca De enda länkarna till scenen finns i andra scener som ingen kan nå.
+3aafeed1 Om spelarna ska se den, lägg till en länk från en scen som går att nå. Om den är gammal kan du strunta i den.
+0c4d1909 {n} filer i {k} mappar används aldrig
+0efdb085 {n} värden som spelet aldrig använder
+425a6a2a De här värdena ändras, men spelet tittar aldrig på dem.
+849cdd9b Inget går sönder. De kan vara kvar från äldre versioner.
+a82d56f5 En sidruta stängs inte: <{tag}> på rad {line}
+5c73814e <{tag}> på rad {line} stängs aldrig med </{tag}>.
+b587a89d Lägg till </{tag}> där rutan ska sluta.
+f1a6f13d En stängningstagg för mycket: </{tag}> på rad {line}
+d887494b </{tag}> på rad {line} stänger en ruta som aldrig öppnades.
+f3d6de5f Ta bort den extra </{tag}>, eller lägg till den saknade <{tag}>.
+94b62097 Stavning: "{wrong}" ska vara "{a}" eller "{b}"
+45919c5c Ett vanligt stavfel. Det kan betyda två olika ord.
+d3631b3f Läs meningen och ändra "{wrong}" till "{a}" eller till "{b}", det som passar.
+4f2e0c01 Inget behövs, om inte något av dem skulle användas.
+37a88891 Oftast inget: webbläsaren stänger den själv i slutet av scenen.
+9c393632 Ja. Det finns i en scen som ingen kan nå, så spelarna ser det aldrig. Rätta det bara om du senare lägger till en länk till scenen.

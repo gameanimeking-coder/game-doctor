@@ -1,0 +1,836 @@
+#name Română
+e77b83c2 Testul de joc s-a terminat: {n} scene jucate în {m} moduri, {k} problemă/probleme găsite în timpul jocului.
+e9dd5680 Copiat în clipboard
+e00ac23f Fel
+764b4aa3 Cât de grav
+33446003 Scenă
+44819483 Nimic
+36c4a06f Se verifică…
+ecab72e7 Folderul jocului / tot jocul
+95263aa8 Rândul din fișierul jocului (evidențiat)
+adac6937 Cod
+4dc2eddf Găsit cu {app}. {n} problemă/probleme.
+6b21fb79 Despre
+b8bb1461 Cum ajung jucătorii la această scenă?
+d07d7afa Cum ajung jucătorii la "{name}"?
+fa893d87 Curat
+70440046 Observații
+1430f976 Avertismente
+805e86a8 Erori
+dcad8ee5 Se pregătește vizualizarea codului…
+7f2f6a15 Eroare
+e9c45563 Avertisment
+2c924e30 Observație
+f4808ecd Deschide jocul…
+f6ab55dd Verifică din nou
+dd3fa3ce ▶ Test de joc
+5e4797ea Asistent de reparare
+4fa8cc86 Unelte
+c47ae153 Ajutor
+9d454f7c Niciun joc deschis
+7869cc5c Editez în Twine
+db8da328 Editez fișierul .html (Notepad++ etc.)
+20c7c552 Gata
+26a93eac Deschide un folder de joc (Ren'Py, RPG Maker, Ink, ChoiceScript)…
+775b3ab8 Folder cu imagini și sunete…
+cd9a3d88 Fă o copie de siguranță a fișierului jocului
+2505d3da Testează un rând înainte să-l schimbi…
+3536c70a Compară cu altă versiune…
+080460a5 Scrie un raport de eroare pentru dezvoltator…
+0cbf16ea Exportă raportul…
+490c3a52 Urmărește fișierul jocului și verifică din nou când este salvat
+09e02e95 Arată problemele marcate ca intenționate
+80f65544 Editor de text…
+3a4dad84 Fă turul
+f996200a Lecții (F1)
+e5aaa5b5 Glosar
+320067c6 Text foarte mare
+07471db5 Culori potrivite pentru daltoniști
+c2cebede Toate felurile
+1baa06b4 Problemă
+ced091e8 Scenă / loc
+ea967600 Rând
+99a42316 Reparare
+3cd62e5f Deschide în editorul meu de text
+a4f34926 Copiază rândul reparat
+0973fd22 Copiază textul de căutat
+28a1dc64 L-am reparat - verifică
+1a256c63 Anunță dezvoltatorul
+b491a51b Arată în vizualizarea codului
+463e5e78 Marchează ca intenționat
+562107b8 Citește cu voce tare
+e42bc527 Copiază detaliile
+d7c5a824 Arată exact cum e salvat în fișier (coduri &lt;)
+2314cd9a Deschide jocul
+7a8e0cf0 Alege folderul jocului
+ff10f24c Folderul cu imaginile, sunetele și videoclipurile jocului
+38e9a3e9 Joc: {path}     Folder: {folder}
+24fc8907 Oprește citirea
+7335beba Nu mai este marcat ca intenționat
+24fec833 Marcat ca intenționat - ascuns din listă (Unelte > Arată problemele marcate ca intenționate)
+615c9a3f {fmt} · {units} părți · {files} fișiere în folder · {e} stricate, {w} probabil stricate, {i} de verificat · {s} s
+f229a698 Sănătatea codului: {n}% · {label}
+d8d62e38 Verificare terminată
+dd3a39d8 Sănătatea codului
+c6643b25 Scară: 100% excelent · 90% foarte bine · 80% bine · 70% acceptabil · sub 70% necesită muncă
+7e0056d2 Se bazează pe câte scene au probleme și cât de grave sunt.
+07c80477 După fel
+45b733c9 Dă clic pe o problemă din listă ca să vezi detaliile.
+525f61b6 Unde
+4090e818 Cum se repară
+0b975974 Deschide povestea în Twine și deschide pasajul "{name}".
+905dc77d Același nume este folosit și pe {n} alt(e) rând(uri): {lines}. Schimbă-l și acolo.
+3cfafb7c Publică din nou povestea (Build > Publish to File), apoi reîncarcă jocul ca să verifici.
+64cb91c6 Unde: {where}
+4383fcfd Ce nu e în regulă: {text}
+07bddb04 Cum se repară: {text}
+cf36743b Acum: {text}
+0cacfdc2 Schimbă în: {text}
+70fbdd39 Rândul reparat a fost copiat. În Twine, selectează rândul vechi din pasajul "{name}" și lipește.
+60eafc99 Rândul reparat a fost copiat. În editor, selectează rândul {n} și lipește peste el.
+67a9f511 Textul de căutare a fost copiat. În editor apasă Ctrl+F și lipește-l.
+67c1b9a0 Fișierul nu s-a schimbat de la ultima verificare. L-ai salvat?
+2693cf86 Compară din nou rândul tău cu rândul "Schimbă în".
+1b930787 Deschide mai întâi un joc.
+9dbf0a77 Copie de siguranță salvată: {path}
+88e09b05 (textul tău)
+e835a0e1 Raport de eroare pentru {game}
+338c5072 Tehnic: {text}
+fc5e62a8 Fișier de setări: {path}
+0f83a323 Fișierul jocului este urmărit. De fiecare dată când îl salvezi, este verificat din nou.
+24b5689b Fișierul jocului nu mai este urmărit.
+6bbf59c5 Se oprește testul de joc…
+c5726162 Testul de joc are nevoie de Microsoft Edge sau Google Chrome și niciunul nu a fost găsit.
+efe69072 Jocul s-a schimbat în timpul testului. Rulează-l din nou.
+4e1a8e3c Nicio problemă
+59cd52ee Merită verificat
+80c66d73 Probabil stricat
+3ad465ce Stricat
+8ea8e60f Rândul {n}: nicio problemă găsită
+421fe500 dublu-clic pentru detalii
+a6e7e8d6 "{text}" nu a fost găsit
+fc748144 Exportă cele {n} probleme afișate în listă
+c8ca2957 Raport salvat: {path}
+09188221 Tot jocul
+5a7ee5ac Raport de eroare
+203dee52 Detaliile au fost salvate în {path}
+5abfea7d Cuvinte simple: oprit
+de314fa0 Gravitate
+fc55cc19 Pasaj / loc
+3deb7456 Tip
+61790945 ■ Oprește testul de joc
+e23fd7cf Anulează marcajul de intenționat
+5ffa6ce4 Verifică jocurile pentru greșeli și îți spune în cuvinte simple ce nu e în regulă și cum să repari. Funcționează cu jocuri Twine (SugarCube, Harlowe, Chapbook, Snowman), alte jocuri HTML, Ren'Py, RPG Maker MV/MZ, Ink și ChoiceScript.
+e13e18f3 Cum se folosește
+c3abe9f5 Sigur de folosit
+4d688496 Acest program doar citește jocul tău. Nu îl schimbă niciodată. Folosește Unelte > Fă o copie de siguranță înainte să editezi ceva.
+90c93523 Scurtături
+8e990034 Ctrl+O deschide · F5 verifică din nou · Ctrl+F caută · F3 următorul · Ctrl+E exportă · F1 lecții · Ctrl + / Ctrl − / Ctrl+0 sau Ctrl+rotița mouse-ului pentru redimensionare
+21e5904b {n} referințe la fișiere verificate
+052df047 Începe aici - cele mai importante reparații
+eff36495 Sau dă clic pe "Asistent de reparare" ca să le parcurgi una câte una.
+23bd8fe4 Scena "{name}"
+8cb67e05 Pasajul "{name}"
+12b1a199 rândul {n} din pasaj
+280d0541 rândul {n} din {file}
+a684f161 Ai marcat asta ca intenționat, deci nu se pune la socoteală.
+6aeb39ef Ce nu e în regulă
+c1bcc130 Ce nu e în regulă
+ebcf7d18 Ce vor observa jucătorii
+e7f32d0f Dă clic pe "Deschide în editorul meu de text". Deschide {file} la rândul {n}.
+73c8627d Șterge acel rând (este afișat mai jos la "Acum").
+b44b2225 Schimbă-l cum arată mai jos la "Schimbă în". "Copiază rândul reparat" copiază tot rândul reparat ca să-l lipești peste cel vechi.
+d640e11b Vezi explicația de mai sus.
+33d1a502 Salvează fișierul, reîncarcă jocul, apoi dă clic pe "L-am reparat - verifică".
+fd3e0dfe Făcut în Twine? Atunci repară-l în Twine (schimbă mai sus "Editez fișierul .html" în "Editez în Twine"). Publicarea din Twine suprascrie modificările făcute direct în fișierul .html.
+e3b82040 Acum
+b9b6aac4 Schimbă în
+3895c256 Pot să ignor asta?
+189da0ef Ce vor observa jucătorii: {text}
+7d949b29 Cod: {text}
+80411ece Încă nereparat - problema e tot acolo
+71a91179 apasă Ctrl+G și scrie {n} ca să sari la rând
+84d3bdef Deschis în {name}
+7bf2bdbd Scenă: {name}
+f8e71156 Rândul {n} din {file}
+e9331864 Ce se întâmplă: {text}
+16fcd5a1 (încă {n} caractere pe acest rând)
+6dcc62dd Raport salvat. Îl deschizi acum?
+02fbc53c Problemă (cuvinte simple)
+2c3cafa4 Fișier
+1bea2fb0 Cum se repară
+fdccd352 Ceva a mers prost în aplicație:
+b7152342 Dimensiune
+8e6b86dc Probleme
+8f0d8d83 Grupează după
+bce06414 Caută
+74c14ca3 Vizualizarea codului
+a3d77701 ◀ Problema anterioară
+3a289dc9 Problema următoare ▶
+2e0b45f2 Du-te
+ececaefe Caută următorul
+df251b06 Caută
+7e08ebec Dezvoltator
+e53407cf Jucător
+0406a446 Cuvinte simple
+2edb004b Editez fișierul .html
+b45e0101 Se urmăresc modificările
+398ed329 Jocuri
+6f80238e Jocuri HTML
+f7857dcc Toate fișierele
+6798c955 Se verifică, te rog așteaptă…
+be4bd50c Sănătatea codului: {n}%
+16dd1f3a {n} marcate ca intenționate
+901b56b2 Nimic de afișat
+ea64a687 4. Ajutor > Lecții explică noțiunile de bază în câteva minute. Ajutor > Fă turul îți arată aplicația.
+570f71b7 Scene stricate
+08f7f24d Salvează jocul înainte să ajungi la ele, ca să te poți întoarce dacă ceva merge prost:
+29e8d770 Folosește "Anunță dezvoltatorul" la o problemă sau Unelte > Scrie un raport de eroare, ca să trimiți detaliile.
+d19ceca5 Sfat
+251eb9e2 Salvează jocul înainte să ajungi la această scenă, ca să te poți întoarce dacă se strică.
+d782b266 Găsește locul: folosește "Find and replace" din Twine (sau caută atent) pentru acest text:
+eb92d56f Deschide proiectul în RPG Maker și mergi la: {where}
+7e7c7eb1 (șterge acest rând)
+d40baaa7 ✔ Reparat! Problema a dispărut. Sănătatea codului este acum {n}%.
+fce98782 Alege alt editor din Unelte > Editor de text…
+55d0a707 Copie de siguranță salvată:
+802cfe54 Nu s-a putut face copia de siguranță:
+a01ce386 Reparație sugerată (în Twine):
+d9cb995e Traducerile în alte limbi decât engleza au fost făcute de o IA și pot conține greșeli. Detaliile tehnice rămân în engleză, ca motoarele de joc și manualele lor.
+987dd9b8 Deschide un joc ca să-i vezi codul aici.
+f4fd7854 {name} ({n} rânduri)
+db3b1ca2 Raport ca pagină web
+1b5f6570 Foaie de calcul (CSV)
+ee3d21a8 Fișier text
+934a1886 Nu s-a putut salva raportul:
+29211387 Tema sistemului
+9e5ba0f0 Temă luminoasă
+d51c5960 Temă întunecată
+71df97be Fișier salvat - verificat din nou: {fixed} reparate, {new} noi
+12d21609 (tot jocul)
+4671f2fd {n} părți
+af4e5ffa {n} problemă/probleme în acest grup. Dă clic pe una pentru detalii.
+e065ed24 Dacă rândul s-a mutat, apasă Ctrl+F în editor și caută:
+d6cd9bbc Nu s-a putut verifica:
+e8b6a7a1 (rândul {lines})
+2a87805d Nu s-a putut porni {name}:
+50803478 Cum se repară: {text}
+cbbf7064 Versiunea {v}. Găsește probleme în jocuri și explică cum să le repari. Doar citește fișierele și nu îți schimbă niciodată jocul.
+7e16f294 Sănătatea codului: {n}% ({label})
+13b7bfca Se lucrează…
+944d285f Verificarea a eșuat
+5117eb3e Nicio problemă nu corespunde filtrelor actuale.
+84a26cd3 Nicio problemă găsită. Bravo!
+e961739d 3. Nu știi de unde să începi? Folosește Asistentul de reparare - parcurge problemele una câte una și îți verifică reparațiile.
+dfa2b6e9 Rândul {n}:
+27a41ea2 (șterge)
+966d414d rândul {n}
+a37a62b5 2. Dă clic pe o problemă din listă. Dedesubt vezi ce nu e în regulă, ce vor observa jucătorii și exact cum să repari.
+47faaf63 Testul de joc a fost oprit
+9de8b1a5 1. Dă clic pe "Deschide jocul…" și alege fișierul .html al jocului (sau folosește Unelte pentru un folder de joc). Verificarea pornește singură.
+836bf385 Testul de joc nu a putut rula:
+3dd51c5a Alege editorul de text
+1f7611ea Editorul de text a fost setat la {name}
+43320d49 Testează un rând înainte să-l schimbi
+18e673bc Nimic nu se schimbă în jocul tău. Se verifică doar textul pe care îl scrii aici.
+8ecc7800 Scrie un raport de eroare pentru dezvoltator
+2e2b95ec Compară două versiuni
+ccdb5389 Alege cealaltă versiune a jocului și dă clic pe Compară. Ambele sunt doar citite, niciodată schimbate.
+cabad4eb Se verifică cealaltă versiune…
+cb9ce97b Lecții
+9255b9a1 Alege programul editor de text
+67094e72 Acel program nu a fost găsit. Folosește "Răsfoiește…" ca să-l alegi.
+21461571 ◀ Înapoi
+2d8a1625 Sari ▶
+7c5d9f51 {done} din {total} reparate
+cb70c72b Problema {n} din {total}
+820d6004 Se verifică…
+e461d5d0 {n} problemă/probleme găsite:
+9580fcbc Text simplu
+26a49ee7 Discord / Reddit
+1f82bc1e Forum (BBCode)
+616ce66d Stricate + probabil stricate
+34d5d395 Doar problema selectată
+ced1fd2f Salvează raportul de eroare
+ec9135a3 Raport de eroare salvat: {path}
+8d105cf4 Compară
+a1cd6b54 Alege cealaltă versiune
+1f5bf765 Alege mai întâi cealaltă versiune.
+ad916050 Se compară…
+f4f29947 Sănătatea codului: {a}% → {b}%
+a81eb289 Reparate în versiunea mai nouă ({n})
+53da970f Probleme noi în versiunea mai nouă ({n})
+2be41ba6 Încă prezente ({n})
+9ec4aa53 Cuvinte folosite în această aplicație
+ce12714d Nimic de reparat
+d231fca7 Nu a mai rămas nicio problemă de reparat. Bravo!
+76c1c7de Această problemă a dispărut - a fost reparată sau fișierul s-a schimbat. Dă clic pe Sari ca să continui.
+55855f77 Testarea rândurilor separate funcționează pentru jocurile Twine (SugarCube). Deschide mai întâi unul.
+bbfa773e Închide
+af74f7c5 Copiază
+571a03ba Ce program trebuie să deschidă fișierul jocului?
+113fa56b Aceste editoare de text au fost găsite pe acest calculator:
+d4b86cfd Alt program…
+9d68007b Program
+c1b20f52 Răsfoiește…
+6bf5da9c Opțiuni
+4ee6279e {file} este înlocuit cu fișierul jocului și {line} cu numărul rândului. Notepad++ folosește: -n{line} "{file}"
+77dfd213 Anulează
+efc007a3 Salvează
+ab14d0a7 Programe
+4abacc60 ✔ Reparat! Bravo. Iată următoarea.
+1ed684b1 Lipește sau scrie rândul (sau tot pasajul) pe care vrei să-l folosești:
+45f9116a Este un pasaj întreg (verifică și că fiecare etichetă e închisă)
+4b5e84be Verifică
+6a17f3f6 Nicio problemă găsită în acest text.
+44b39131 Sugestie:
+4020c08c Stil:
+2f32f781 Include:
+4705cad6 Include modul de reparare
+d9057148 Salvează ca…
+83c52802 Altă versiune:
+c3c1e96d Cealaltă versiune este:
+6fa5fbbc mai veche
+1d47386a mai nouă
+78cee4b8 Pasul {n} din {total}
+57bc79e3 Sari peste tur
+bc981983 Următorul
+e9b450d1 Gata
+682c160f Jocul curent:
+74c063af Greșit:
+3a82310a Corect:
+c7c15bca Asta va merge prost pentru jucători.
+8df34ecb Aceasta este foarte probabil o greșeală.
+1d894da2 Nu e urgent. Poate fi în regulă, dar aruncă o privire.
+58da2ccb Linkuri către scene care lipsesc
+78d3da9d Imagini și sunete care lipsesc
+59327131 Comenzi de joc stricate
+dfe69b5d Comenzi de joc scrise greșit
+140d954e Verificări "dacă" care merg prost
+169a1b52 Comenzi care nu fac nimic sau se strică
+c3f4070a Statistici și valori scrise greșit
+ee27480a Blocuri reutilizabile
+9c0fe2ed Cod de aranjare a paginii
+2c0f0a6d Stiluri (culori și aspect)
+f77fd1fd Scene
+45e35cfc Scene la care nu ajunge nimeni
+a2406e53 Fișiere pe care jocul nu le folosește niciodată
+68320599 Text neterminat
+8a21b1ee Ortografie
+169b486d Greșeli de tastare
+a1d181bd Funcționează doar pe Windows
+3e9d9ae4 Fișiere foarte mari
+50a12988 Fișiere deteriorate
+aab2b305 Comenzi de modă veche
+3f55c07b Cod de script
+cc0718f5 Configurarea jocului
+c7ee483a Scaner
+c916a1ad Erori în timpul jocului
+0e66b49d imagine
+5e2e97c3 sunet
+ffbaf58f video
+4642576d font
+767013ce pagină
+971c419d fișier
+8c657028 scena "{name}"
+84db7a65 jocul
+27260418 Duce la o scenă care nu există: "{name}"
+65a1b892 În {where}, un link sau o comandă încearcă să deschidă o scenă numită "{name}". Nicio scenă din joc nu are exact acest nume.
+eddc288b Când jucătorul dă clic (sau jocul ajunge acolo), primește un mesaj de eroare sau o pagină goală în loc de scenă.
+6690f7df Fă ca numele să se potrivească exact cu o scenă existentă. Majusculele și spațiile contează.
+ee186081 Duce la o parte a poveștii care nu există: "{name}"
+adcab89d Povestea încearcă să continue la "{name}", dar nimic din joc nu are acest nume.
+c68c7536 Jocul se oprește cu o eroare în acest punct (sau nu pornește deloc).
+262dea9c Fă ca numele să se potrivească exact cu o parte existentă a poveștii.
+8a2045c6 Duce la un capitol care nu există: "{name}"
+6b99d3d7 Povestea încearcă să deschidă "{name}", dar nu există un asemenea capitol sau loc.
+54721a92 Jocul se oprește cu o eroare în acest punct.
+bfe449ab Corectează numele ca să se potrivească cu un capitol existent.
+8569b71c Deschide un ecran care nu există: "{name}"
+ed323960 Jocul încearcă să afișeze un ecran numit "{name}", dar niciun ecran nu are acest nume.
+31aaf0f7 Jocul se oprește aici cu o eroare.
+ecedecaf Corectează numele ca să se potrivească cu un ecran existent.
+1c82d0d0 Un eveniment trimite jucătorul într-un loc care nu există
+f7bb6caa Un eveniment mută jucătorul pe o hartă, sau rulează un common event, care nu este în joc.
+11068616 Jocul se blochează sau îngheață când rulează acest eveniment.
+17c8c384 Alege o hartă sau un common event existent în acea comandă de eveniment.
+924f14ec Un link care nu duce nicăieri
+ac25c348 Un link din {where} nu spune ce scenă trebuie să deschidă.
+cc208a80 Un clic pe el afișează o eroare.
+81510156 Scrie numele scenei pe care trebuie s-o deschidă linkul.
+a620e5a7 Unui link îi lipsește finalul
+75319c60 Un link începe cu [[ dar nu se termină niciodată cu ]].
+d94d2b45 Textul de după se amestecă în link și scena arată stricată.
+da97338b Adaugă ]] la finalul linkului.
+de752d36 Nimeni nu poate ajunge la "{name}"
+ad06e184 Nimic din joc nu duce la această parte a poveștii.
+49f72405 Jucătorii nu o văd niciodată. Inofensiv, dacă nu trebuia să fie jucabilă.
+41e81f9d Dacă jucătorii trebuie s-o vadă, adaugă un link către ea din altă scenă. Dacă e veche, o poți ignora.
+12017de3 Scena "{name}" este goală
+e1c78333 Această scenă nu are text sau conținut.
+eb036a1b Un jucător care ajunge aici vede o pagină goală.
+95468775 Scrie scena sau elimină linkurile care duc la ea.
+65f5f00d Două părți ale poveștii au același nume
+3a661399 Mai multe scene sau etichete folosesc numele "{name}".
+14b99f6a Doar una dintre ele poate fi afișată vreodată, sau jocul refuză să pornească.
+5017f902 Dă fiecăreia propriul nume.
+8ee54eec Jocul nu are scenă de început
+e4b1267b Jocul nu știe de unde să înceapă.
+67fece68 Jocul s-ar putea să nu pornească deloc.
+6f3c3583 În Twine, marchează prima scenă ca început.
+891a7ccc Un link de salt nu duce nicăieri
+723d0b6c Un link indică un loc din pagină care nu există.
+9d2a3ab1 Un clic pe el nu face nimic.
+a17d6d9d Corectează numele locului sau elimină linkul.
+f7e0927c Lipsește {kind}: {file}
+471ab6b6 Jocul vrea să folosească {kind} "{path}", dar nu există un asemenea fișier în folderul jocului.
+215d84f2 Jucătorii văd o imagine stricată sau spațiu gol, sau nu aud nimic.
+95495e08 Pune fișierul în acel loc sau schimbă numele în fișierul jocului cu fișierul care există cu adevărat.
+4e187285 Numele fișierului are majuscule greșite: {file}
+10dd7eb2 Fișierul există, dar jocul îi scrie numele cu alte majuscule.
+445b1f51 Funcționează pe Windows. Pe telefoane, Mac, Linux sau pe un site, imaginea sau sunetul vor lipsi.
+bcc2cd24 Schimbă numele în fișierul jocului ca majusculele să se potrivească cu fișierul real.
+fc7f8ac2 O imagine indică propriul calculator al dezvoltatorului
+bf1eaea6 Locația fișierului începe cu o literă de unitate ca "D:\". Acel folder există doar pe calculatorul pe care s-a făcut jocul.
+8e9a7d52 Jucătorii nu văd niciodată această imagine.
+e5baac7c Schimb-o într-o locație din folderul jocului, ca images/characters/name.jpg.
+006a8fb9 Locațiile fișierelor folosesc \ în loc de /
+d6cb43a9 Jocul scrie căile folderelor cu bare inverse (\).
+42ad75cd Merge pe Windows. Pe telefoane, Mac, Linux sau pe un site, imaginile și sunetele nu se vor încărca.
+02bf9e76 Contează doar dacă jocul trebuie să ruleze în afara Windows: înlocuiește \ cu / în căile imaginilor.
+0fa2cd7a {n} fișiere din "{folder}" nu sunt folosite niciodată
+1b78ff55 Aceste fișiere sunt în folderul jocului, dar jocul nu le folosește niciodată.
+55acf4db Nu se strică nimic. Doar fac descărcarea mai mare.
+aa1a0c6f Șterge-le dacă ești sigur că nu sunt necesare. (Unele pot fi alese de joc în moduri ingenioase pe care scanerul nu le vede.)
+cb4cc629 Un fișier gol
+4642643c Acest fișier este gol (0 octeți).
+24ec314d Nu va fi afișat sau redat.
+6cd06e6e Înlocuiește-l cu o copie funcțională a fișierului.
+07046633 Fișier deteriorat (tăiat): {file}
+932dbf75 Lipsește finalul acestui fișier, de obicei pentru că o descărcare, o copiere sau o dezarhivare nu s-a terminat.
+feda3672 Imaginea apare doar parțial sau deloc, sau sunetul/videoclipul se oprește prea devreme.
+968dc7a4 Copiază sau descarcă din nou acest fișier din fișierele originale ale jocului.
+6081a951 Nu este de fapt o imagine sau un sunet: {file}
+dc397b7a Fișierul are numele corect, dar înăuntru este o pagină web (adesea o pagină de eroare de pe un site de descărcare).
+7f495908 Jucătorii văd o imagine stricată sau nu aud nimic.
+eee27da5 Descarcă din nou fișierul real și înlocuiește-l pe acesta.
+2a1c1b71 Fișier posibil deteriorat: {file}
+4c30367e Începutul acestui fișier nu seamănă cu niciun format cunoscut de imagine, sunet sau video.
+d3b9cea3 Probabil nu va fi afișat sau redat.
+0ab570a5 Deschide-l într-un vizualizator de imagini sau player media. Înlocuiește-l dacă nu se deschide.
+f68470e5 Unele fișiere au extensia greșită (.png, .jpg ...)
+d608da1e Aceste fișiere conțin alt format decât spune numele lor, de exemplu o imagine JPEG numită .png.
+2e39b508 Browserele le afișează de obicei oricum. Unele telefoane și programe s-ar putea să nu.
+097a3703 Opțional: convertește-le sau redenumește-le ca numele să se potrivească cu formatul real.
+283d2070 Unele fișiere sunt foarte mari
+c7fa15ff Aceste imagini sau videoclipuri sunt foarte mari.
+ae5369ab Se încarcă încet, mai ales pe telefoane.
+e125a92c Opțional: micșorează-le cu un program de imagini.
+385f4329 Lipsește un fișier al jocului: {name}
+2e700532 Jocul așteaptă un fișier care nu este acolo.
+99467808 Jocul afișează o eroare la pornire sau când ajunge la această parte.
+b3496ea7 Pune la loc fișierul lipsă sau elimină referința la el.
+75e6334a Un fișier de date al jocului este deteriorat
+db02e969 Acest fișier nu poate fi citit corect.
+79b96faf Jocul nu pornește sau se blochează.
+7ebbbeec Restaurează fișierul dintr-o copie de siguranță sau din jocul original.
+d399fac1 O comandă "{name}" nu este închisă niciodată
+e6c66d5b Unele comenzi de joc au nevoie de un final potrivit. Aceasta nu are.
+0b1cb09f Jocul afișează o casetă roșie de eroare în această scenă și o parte din scenă poate lipsi.
+afdabc18 Adaugă finalul lipsă (de exemplu <</{name}>>) unde trebuie să se termine această parte.
+744245d7 O etichetă de închidere în plus <</{name}>>
+adb1bea4 Există o etichetă de închidere care nu are ce închide.
+b39fd74f Jocul afișează o casetă roșie de eroare în această scenă.
+a53d4f4e Șterge această etichetă de închidere în plus.
+fa8c8072 "{name}" este în locul greșit
+9009044d <<{name}>> trebuie să stea într-un bloc <<if>>. Aici nu stă, de obicei pentru că o etichetă de închidere de mai sus e în locul greșit.
+1e9acaea Jocul afișează o casetă roșie de eroare.
+1d2d751d Verifică rândurile chiar de deasupra și mută eticheta de închidere în locul potrivit.
+bfaae414 Unei etichete de închidere îi lipsește un ">": <</{name}>
+a280c34f Eticheta de închidere e scrisă cu un ">", dar are nevoie de două.
+71be19aa Jocul nu vede eticheta de închidere. Afișează o casetă roșie de eroare și scena poate arăta greșit.
+a3c69d1f Adaugă un ">" ca să se termine cu ">>".
+413ace46 Un semn ">" în plus
+4e791f5a Există un ">" în plus după o etichetă.
+4ecd446f Jucătorii văd un ">" rătăcit pe ecran.
+c1c069b2 Șterge ">" în plus.
+cacfbdbb Un semn "<" în plus
+fe9088b6 Există un "<" în plus înaintea unei comenzi.
+0c7a0bb7 Jucătorii văd un "<" rătăcit pe ecran.
+87807bf8 Șterge "<" în plus.
+b0d2d4e4 O comandă scrisă pe jumătate "<<"
+012a6c88 Există un "<<" fără nimic după el.
+fd941db0 Comanda de după se strică și jocul poate afișa o eroare.
+73f8070a Șterge "<<" rătăcit.
+7037d71a Unei comenzi îi lipsește ">>"
+87bde2ac O comandă începe cu << dar nu se termină niciodată cu >>.
+7f93f879 Textul de după dispare sau scena afișează o eroare.
+dbda1f76 Adaugă ">>" la finalul comenzii.
+5a30164d O paranteză e deschisă, dar niciodată închisă
+d5b047f2 Ceva începe cu o paranteză, dar lipsește paranteza de închidere.
+8d50e9a9 Tot ce urmează e înghițit sau jocul afișează o eroare.
+912c548c Adaugă paranteza de închidere lipsă.
+35852e81 O paranteză de închidere în plus
+a1d86e33 Există o paranteză de închidere fără una de deschidere.
+fdeb2ba4 Jucătorii pot vedea un caracter rătăcit sau o eroare.
+254fbb5b Elimină paranteza în plus.
+98cb6b2f O comandă nu are text atașat
+1afec1b9 Această comandă ar trebui să controleze textul de imediat după ea, scris între paranteze pătrate [așa]. Nu urmează nimic.
+073266b4 Harlowe afișează o eroare sau textul este afișat mereu.
+29369e93 Pune textul pe care îl controlează între paranteze pătrate imediat după ea.
+4093f80e Jocul afișează o eroare, iar partea din scenă pe care o controlează nu funcționează.
+ef3a7877 O comandă de modă veche
+54dead55 Această comandă încă funcționează, dar este învechită.
+01500c48 Deocamdată nimic. Se poate strica într-o actualizare viitoare a motorului.
+b1a70201 Opțional: înlocuiește-o cu comanda mai nouă.
+a4a93d21 O verificare "if" folosește "=" în loc de "is"
+582b6716 Într-o verificare "if", "=" înseamnă "fă-l egal", nu "este egal?".
+564cdad0 Jocul afișează o casetă roșie de eroare, sau verificarea este mereu adevărată și se joacă partea greșită a scenei.
+e3105e2f Înlocuiește "=" simplu cu "is".
+f0b64920 "=>" sau "=<" scris invers
+897ec753 Mai mare sau egal se scrie ">=", nu "=>".
+0167d9bc Verificarea nu funcționează.
+0b498ace Scrie în schimb ">=" sau "<=".
+f917ca5e "is not" ar trebui să fie un singur cuvânt
+4e8bbdf4 În acest motor de joc, "is not" înseamnă altceva decât "isnot".
+e40cd819 Verificarea este aproape mereu greșită.
+7f3a1402 Scrie "isnot" ca un singur cuvânt.
+694143a3 O verificare "or" care este mereu adevărată
+b760633e Ceva ca "$x is 1 or 2" compară $x doar cu 1; "2" singur contează mereu ca da.
+f8b8cc75 Această parte se joacă chiar și când n-ar trebui.
+b1a0ec7e Repetă numele: "$x is 1 or $x is 2".
+1c4512b1 O verificare "if" care se poate declanșa la momentul greșit
+bb598d2b Această verificare amestecă "and" și "or" fără paranteze. Calculatorul face mereu întâi părțile cu "and", deci verificarea s-ar putea să nu însemne ce s-a vrut.
+71408d55 O scenă sau o opțiune poate apărea când n-ar trebui - de exemplu când un personaj e răpit sau o statistică e prea mică.
+045d6c6c Pune paranteze ( ) în jurul părților care merg împreună. Uită-te la codul de mai jos și grupează alegerile "or".
+dbb9ed0f Parantezele ( ) nu se potrivesc
+6bbb5c72 Sunt mai multe "(" decât ")" sau invers.
+d2676c8c Adaugă sau elimină o paranteză ca să formeze perechi.
+8f746eaa O verificare "if" goală
+70ac1e0e "if" nu are nimic de verificat.
+8fa764c4 Jocul afișează o eroare.
+f72f83b1 Scrie ce trebuie verificat.
+00b75afd O schimbare de statistică ce nu face nimic ("==")
+d3024696 Acest rând ar trebui să schimbe o valoare, dar "==" doar compară - nu schimbă nimic.
+4bb1b350 Valoarea nu se schimbă niciodată. Ce depinde de ea (cronometre, contoare) rămâne blocat.
+bb9d82a8 Înlocuiește "==" cu "to".
+88b997d5 O schimbare de statistică ce nu face nimic
+47b56b1e Acest rând ar trebui să schimbe o valoare, dar nu are "to", "=", "+=" sau "-=", deci nu se schimbă nimic.
+b3edbcbf De exemplu, energia sau banii nu sunt niciodată luați sau dați.
+5a19bb57 Scrie "-=" în loc de "-" (sau "+=" în loc de "+").
+24335c15 O schimbare de statistică goală
+d7c9d917 Comanda este goală.
+1ca2b36b Șterge-o sau scrie schimbarea.
+2d2715a0 O valoare e setată cu "=" în loc de "to"
+b3386569 Acest motor setează valorile cu "to".
+be353939 Înlocuiește "=" cu "to".
+6b135470 Lipsește o ghilimea "
+b7ed7d6f O bucată de text dintr-o comandă se deschide cu " dar nu se închide niciodată.
+4b70c1d8 Jocul afișează o eroare sau înghite textul de după.
+081a0ff8 Adaugă " care lipsește.
+1a1cb7a5 Taburi folosite unde trebuie spații
+0d83ecca Acest motor cere ca rândurile să fie indentate doar cu spații.
+1928be6f Jocul nu pornește sau se oprește aici cu o eroare.
+6707540b Înlocuiește tabul de la începutul rândului cu spații.
+50e72b08 Unui rând îi lipsește ":" la final
+1590b870 Rânduri ca "if", "menu" și "else" trebuie să se termine cu două puncte.
+34cb1caf Jocul nu pornește.
+739781b1 Adaugă ":" la finalul rândului.
+463c9c22 Cod de script stricat
+90393617 O paranteză sau o ghilimea din codul scriptului nu se potrivește.
+10b6ae9e Tot scriptul încetează să funcționeze, ceea ce poate strica multe funcții.
+208a3574 Verifică parantezele și ghilimelele din jurul acestui rând.
+08a420a2 Cod de test rămas
+f523c19b A rămas cod folosit la testare.
+a161c8db De obicei nu se vede nimic.
+5512920c Opțional: elimină-l.
+e14ae90f Un nume care conține "-"
+a5d94a86 Numele valorilor nu pot conține "-". Jocul citește doar partea dinaintea lui "-".
+1d915eed Jucătorii văd cuvântul greșit sau un spațiu gol în loc de un nume.
+1ff6bd49 Folosește "_" în loc de "-".
+929dc82b Verificările pe ea dau mereu "nu", deci unele texte sau scene nu apar niciodată (sau apare un spațiu gol în loc de un nume).
+aa241baa Același nume, majuscule diferite: ${a} / ${b}
+fe615c75 Pentru joc acestea sunt două valori diferite, pentru că majusculele contează.
+1549316e Schimbările făcute uneia nu sunt văzute de cealaltă, deci statisticile sau scenele merg prost.
+485f98c5 Schimbă ${a} în ${b}.
+fbb1a8ec Nume de valoare scris greșit: {name}
+baa2f1ac "{name}" nu este creat niciodată, dar "{near}" este. Aproape sigur este o greșeală de tastare.
+37eb4d71 Jocul afișează o eroare sau valoarea e mereu goală.
+69b0c997 Schimbă "{name}" în "{near}".
+958390b8 O valoare temporară care nu e setată niciodată: _{name}
+66d98956 Această valoare de scurtă durată e folosită, dar nu primește niciodată o valoare.
+f6d72946 Verificările pe ea nu funcționează niciodată.
+b150a824 Seteaz-o mai întâi sau corectează numele.
+bb2ac176 O valoare care nu a fost creată niciodată: {name}
+418bb0cf Folosește un switch/o variabilă care nu există (#{n})
+60eb5de9 Evenimentul folosește numărul {n}, dar lista jocului e mai scurtă.
+ab5e6d39 Evenimentul nu funcționează cum trebuie.
+27e3bd51 Alege în eveniment un switch/o variabilă existentă.
+5e339cd0 Un switch/o variabilă nu are nume (#{n})
+e3546a24 Este folosit, dar nu are nume în Database.
+15f64977 Nimic vizibil. Doar e ușor de confundat.
+a8723260 Dă-i un nume în Database.
+bd3955c1 Un bloc reutilizabil este definit de două ori: {name}
+0a743f0a Două definiții au acest nume.
+4d983cee Este folosită doar o versiune.
+08c1e9fa Șterge sau redenumește una dintre ele.
+20982092 Un bloc reutilizabil nu se încarcă
+3ed9bdd5 Scenei lui îi lipsește eticheta "widget".
+4f7fa681 Fiecare scenă care îl folosește afișează o eroare.
+a3c57c94 Adaugă eticheta "widget" acelei scene în Twine.
+769d38d3 Un bloc reutilizabil nefolosit: {name}
+91caae31 Este definit, dar nu este folosit niciodată.
+92f3557e Nu se strică nimic.
+48518178 Nu e nevoie de nimic.
+549a08bd O ghilimea lipsă în codul paginii
+2616e9ea Lipsește o ghilimea " într-o etichetă a paginii (adesea o imagine).
+c1ac2a6e Imaginea sau elementul s-ar putea să nu apară, sau aranjarea se strică.
+1359ec48 Casete ale paginii care nu sunt închise corect
+c5eaf192 O casetă de aranjare (ca <div> sau <center>) e deschisă, dar nu închisă, sau închisă de prea multe ori.
+bff958b5 Textul sau imaginile pot ajunge în locul greșit sau cu stilul greșit.
+2055d18e Adaugă eticheta de închidere lipsă sau elimină-o pe cea în plus.
+3ec38cbd Două lucruri au același identificator (id)
+0bf6eee0 Fiecare id trebuie să fie unic în pagină.
+ff424805 Butoanele care actualizează această parte pot schimba locul greșit.
+3d5e5acf Dă fiecăruia propriul id.
+9ef419aa O imagine sau un link fără fișier
+41c88499 Eticheta nu indică nimic.
+30064ec6 Poate apărea iconița unei imagini stricate.
+0e8cdbfd Completează numele fișierului sau elimină eticheta.
+8c62dd1b Dimensiuni de imagini scrise într-un fel pe care browserele îl ignoră
+c97c9dc5 Dimensiuni ca height="450wv" au litere pe care browserul nu le înțelege ("wv" nu e o unitate).
+38f858bc Imaginile tot apar, doar la o dimensiune fixă în pixeli. De obicei inofensiv.
+c33de17c Opțional: elimină literele, de ex. height="450".
+b2030de7 Un nume de stil care nu se potrivește: "{name}"
+912e16dc Aspectul acestei părți e ales prin numele "{name}", dar stilul se numește "{near}".
+93f6e366 Această parte apare fără culorile sau aranjarea dorite.
+de3efded Un nume de stil fără stil: "{name}"
+46cc76e2 Nicio regulă de stil nu folosește acest nume.
+3a6cc944 De obicei inofensiv.
+d91f6b60 Text neterminat pe care jucătorii îl pot vedea
+a2d31ceb Dezvoltatorul a lăsat în poveste o notă ca "PLACEHOLDER" sau "TODO".
+33f40845 Jucătorii văd această notă sau scena e neterminată.
+a398b7c0 Scrie textul real sau elimină nota.
+a89ee2d1 Ortografie: "{wrong}" ar trebui să fie "{right}"
+bf0afa72 O greșeală de ortografie comună.
+979c6e99 Jucătorii văd cuvântul scris greșit.
+7e32de5a Schimbă "{wrong}" în "{right}".
+b2d44d92 Cuvânt dublat: "{words}"
+670755a1 Același cuvânt e scris de două ori la rând.
+f901109b Jucătorii văd cuvântul dublat.
+c8f90b31 Șterge unul dintre ele.
+fd88a85b Afișează o imagine care nu există: "{name}"
+d99288f0 Nu e definită nicio imagine cu acest nume și niciun fișier din images/ nu se potrivește.
+61cd07a0 Jucătorii văd un înlocuitor sau o eroare.
+3b215908 Adaugă imaginea sau corectează numele.
+a08bad60 Jocul nu are un număr ID
+91a06fd9 Twine folosește un ID ca să deosebească poveștile.
+7ff45b55 Publică din nou povestea din Twine.
+ce8325ca Afișează o casetă roșie de eroare când e jucată: "{name}"
+212a3e36 Când scena a fost jucată efectiv, jocul a afișat această eroare: {msg}
+1cda4ad4 Jucătorii văd o casetă roșie de eroare în această scenă și o parte din ea lipsește.
+fe183b9c Uită-te la problemele listate pentru aceeași scenă - de obicei explică motivul.
+5a4709f8 Browserul nici măcar nu poate citi un script
+417e0923 Browserul a găsit o greșeală de tastare în acest script, deci nimic din el nu rulează.
+711c9902 Funcțiile create de acest script (comenzi speciale, setări) lipsesc sau sunt stricate.
+289bf8bb Caută o paranteză, ghilimea sau virgulă lipsă pe acest rând sau pe cel dinainte.
+fefc36ad Imagini sau sunete lipsă în timpul jocului
+d47a66be Aceste fișiere au fost cerute în timp ce scenele erau jucate, dar nu există.
+80b8b71b Jucătorii văd imagini stricate sau nu aud nimic în unele scene.
+9733445f Adaugă fișierele lipsă sau corectează-le numele.
+4f504ebe O eroare la pornirea jocului
+92243591 Browserul a raportat o eroare la încărcarea jocului.
+2fea6477 Ecranul de start sau unele funcții pot fi stricate.
+608156d3 Caută în scriptul principal al jocului problema menționată în mesaj.
+231d0f49 Comandă scrisă greșit: {name}
+388bf136 Comandă necunoscută: {name}
+9b686aa1 Jocul nu cunoaște această comandă. Aproape sigur este o greșeală de tastare pentru {near}.
+d1f769ee Jocul nu cunoaște această comandă.
+6a1cce2c Schimb-o în {near}.
+46c692e0 Verifică ortografia comenzii.
+6db67833 O valoare care nu e setată niciodată: {name}
+c0ceb098 Jocul folosește "{name}", dar peste tot altundeva se numește "{near}". E o greșeală de tastare.
+8acbe929 Jocul verifică sau afișează "{name}", dar nimic nu-i dă vreodată o valoare.
+fbb2c20c Dă-i o valoare de start sau corectează numele.
+33e186ef O valoare pe care jocul n-o folosește niciodată: {name}
+72bf1ee8 Asta schimbă "{name}", dar jocul se uită doar la "${near}". E o greșeală de tastare.
+7f81aa2e "{name}" se schimbă, dar jocul nu se uită niciodată la ea.
+fd3f859d Schimbarea se pierde - de exemplu o creștere de statistică ce nu contează niciodată.
+4857ea9f Nu se strică nimic. Poate fi rămasă din versiuni mai vechi.
+d2118ba7 Schimbă "{name}" în "${near}".
+3867ee62 Nu e nevoie de nimic, dacă nu trebuia folosită.
+11e31f78 "{name}" nu a fost creat niciodată. Probabil este o greșeală de tastare pentru "{near}".
+8f03aa6d "{name}" nu a fost creat niciodată la începutul jocului.
+dd8d9eef Creează-l la începutul jocului.
+a62731f6 pasaj
+f8de5ecc O pagină sau scenă dintr-un joc Twine. Fiecare pasaj are un nume, iar linkurile duc de la un pasaj la altul.
+ea5e0445 scenă
+ad88890f O pagină a poveștii. În Twine se numește "passage" (pasaj).
+78f3a3d9 macro
+480a06b0 O comandă de joc scrisă între << și >>, ca <<if>> sau <<set>>. Jocul o execută în loc s-o afișeze.
+1925f793 comandă
+410ae6be O instrucțiune pentru joc, ca "arată această imagine" sau "dacă jucătorul are 5 monede de aur". În SugarCube se scriu între << și >>.
+b46d0172 variabilă
+2ef301de O valoare cu nume pe care jocul o ține minte, ca $gold sau $mother_love. În SugarCube începe cu $.
+f32b67c7 valoare
+a746abd2 Un număr, un cuvânt sau un da/nu pe care jocul îl ține minte, ca numărul de monede de aur.
+afad9a69 condiție
+1dc59f8f O verificare ca "$gold gte 5" (are jucătorul cel puțin 5 monede de aur?). Textul de după apare doar când verificarea e adevărată.
+5e9b60f6 etichetă
+1df6d68c Un marcaj în cod. Etichetele de deschidere ca <<if>> încep o parte, cele de închidere ca <</if>> o termină.
+4f0aa52d link
+5afc9751 Text pe care se poate da clic și care duce jucătorul în altă scenă. În Twine: [[Text|Numele scenei]].
+d3ecb0d8 include
+bbc9ce26 O comandă care lipește alt pasaj în acesta: <<include "Nume">>.
+ff700e02 widget
+fd5df966 O comandă făcută în casă, definită o dată și refolosită în multe scene.
+9f738ce8 HTML
+16d38297 Limbajul în care sunt scrise paginile web. Etichete ca <img> (imagine) și <div> (casetă).
+194e13da CSS
+28d26723 Reguli de stil: culori, dimensiuni și aranjare. O "class" leagă un element de un stil.
+ee620923 JavaScript
+2d04472d Limbajul de programare al paginilor web. Jocurile îl folosesc pentru funcții speciale.
+cb5346a0 script
+302bcb23 O bucată de cod de program (de obicei JavaScript).
+0c4da6cb Twine
+5deecf78 Programul gratuit cu care se fac multe jocuri text. Publică jocul ca un singur fișier .html.
+9b2ab238 SugarCube
+5a15607f Cel mai folosit "story format" (motor) pentru jocurile Twine. Oferă comenzile << >>.
+5e2fb0c2 a publica
+9eb9fe5a În Twine: Build > Publish to File. Scrie fișierul .html jucabil din povestea ta.
+1af607c7 calea fișierului
+3bee6183 Unde se află un fișier, ca images/hero.png (folderul "images", fișierul "hero.png").
+264f39ca rând
+f44c6b66 Un rând de text din fișier. Editoarele de text arată numerele rândurilor în stânga.
+3cc46d20 indentare
+2a14602c Spații la începutul unui rând. Unele motoare le folosesc ca să știe ce rânduri merg împreună.
+64c65374 etichetă (label)
+0419b517 Un loc cu nume dintr-o poveste Ren'Py sau ChoiceScript la care pot sări alte părți.
+40a22a4a knot
+fba17772 O secțiune cu nume dintr-o poveste Ink. "-> nume" sare la ea.
+fd8c7c8e plugin
+45e375e0 Un script suplimentar adăugat unui joc RPG Maker.
+67db3ab6 1. Ce este un pasaj (scenă)?
+6cfa54e4 2. Comenzi între << și >>
+fcaf062f 3. Deschidere și închidere
+47887091 4. Valori pe care jocul le ține minte ($variabile)
+c3bcb980 5. Verificări "if"
+d8cc0b48 6. Imagini și sunete
+c413d282 7. Editare în siguranță
+fb4c49ae 8. Cum citești această aplicație
+a9af7910 Începe aici: deschide fișierul .html al jocului (sau un folder de joc Ren'Py, RPG Maker, Ink sau ChoiceScript). Verificarea pornește singură.
+de845e69 "Cuvinte simple" explică totul pe înțeles. Oprește-l ca să vezi detaliile tehnice.
+6c84c615 Dezvoltator sau Jucător: jucătorii primesc o listă scurtă de scene stricate, cu puține spoilere, și un raport de eroare pentru dezvoltator. Dezvoltatorii primesc uneltele de reparare.
+ba413de9 Toate problemele găsite. Roșu e stricat, galben e probabil stricat, albastru merită verificat. Dă clic pe una ca să vezi ce să faci.
+476c1a70 Aici vezi ce nu e în regulă, ce vor observa jucătorii și exact cum să repari - cu rândul dinainte și de după.
+e871d7cc Asistentul de reparare te poartă prin probleme una câte una și îți verifică fiecare reparație.
+3d56d049 Testul de joc joacă fiecare scenă într-un browser invizibil și găsește erori care apar doar în timpul jocului.
+41da0a4f Unelte: copie de siguranță a jocului, testează un rând înainte să-l schimbi, compară două versiuni, scrie un raport de eroare, urmărește modificările.
+75d05bed Ajutor: lecții, un glosar, acest tur și setări de confort ca textul foarte mare.
+52c5f193 Scorul sănătății codului: 100% excelent, 90% foarte bine, 80% bine, 70% acceptabil.
+bcecc3cb Un joc Twine e făcut din pasaje. Fiecare pasaj e o scenă: puțin text, poate o imagine, și linkuri către alte pasaje.
+b1f433c6 Linkurile arată așa. Partea dinainte de | e ce vede jucătorul, partea de după | e numele pasajului pe care îl deschide:
+33dd3c05 Numele trebuie să se potrivească exact, inclusiv majusculele și spațiile. "kitchen" și "Kitchen" sunt pasaje diferite.
+14a03cdc Jocurile SugarCube folosesc comenzi scrise între << și >>. Jocul le execută în loc să le afișeze.
+fffc20ea Mereu exact două < la început și două > la final. Unul în plus sau în minus strică comanda:
+1e192fbd Unele comenzi sunt ca parantezele: deschid o parte și trebuie închise. <<if>> se închide cu <</if>>.
+fd08a19b Dacă lipsește <</if>> de închidere, jocul afișează o casetă roșie de eroare. La fel dacă e unul în plus.
+b25bf333 Un cuvânt care începe cu $ e o valoare pe care jocul o ține minte între scene, ca $gold sau $mother_love.
+d4d0415d Majusculele contează: $Gold și $gold sunt două valori diferite. O greșeală de tastare creează o valoare nouă, goală, deci schimbarea se pierde.
+340aacf8 Ca să schimbi o valoare folosește "to", "+=" sau "-=". Un simplu "-" calculează, dar nu schimbă nimic:
+87dc8b35 Într-un "if", compară cu "is", "isnot", "gte" (cel puțin), "lte" (cel mult). Un singur "=" e greșit acolo:
+add346a2 "and" se verifică înaintea lui "or". Folosește paranteze ca să grupezi, altfel verificarea poate fi adevărată la momentul greșit:
+f07da221 Imaginile se afișează cu o etichetă <img>. Calea spune unde e fișierul, pornind din folderul jocului:
+9e333b42 Folosește / între foldere. \ merge doar pe Windows. Majusculele trebuie să se potrivească cu numele real al fișierului pentru telefoane, Mac și site-uri.
+9d1c8406 Fiecare ghilimea " care se deschide trebuie să se închidă, altfel imaginea nu apare.
+6f7151f5 Înainte să schimbi ceva, fă o copie de siguranță (Unelte > Fă o copie de siguranță a fișierului jocului).
+73b5381e Dacă jocul e făcut în Twine, fă modificările în Twine și publică din nou. Modificările făcute direct în fișierul .html se pierd data viitoare când jocul e publicat din Twine.
+0dab15d3 Dacă ai doar fișierul .html (fără poveste Twine), editează-l cu un editor de text ca Notepad++. În fișierul .html, < și > sunt scrise ca &lt; și &gt; - aplicația arată textul exact de copiat.
+a877adb7 După fiecare modificare: salvează, reîncarcă jocul în browser și apasă "L-am reparat - verifică" în această aplicație.
+e6cfd88c Roșu = stricat: jucătorii vor da de el. Galben = probabil stricat. Albastru = merită verificat, adesea e în regulă.
+3c06ac34 Începe cu lista "Începe aici" din rezumat sau folosește Asistentul de reparare: te ghidează prin câte o problemă.
+f5a4fb88 "Marchează ca intenționat" ascunde o constatare pe care ai verificat-o și vrei s-o păstrezi. Rămâne ascunsă pentru acest joc.
+f3979521 Cam 1 minut
+d621d05d 5-15 minute
+bea680e1 E nevoie de dezvoltator (o decizie de poveste sau de design)
+0c6c4102 Opțional
+e53abb3c Reparație ușoară
+c4f93c0c Necesită puțină atenție
+a22663d7 E nevoie de dezvoltator
+230659f7 Probabil da, dar aruncă o privire rapidă.
+6d9d36d5 Nu. Jucătorii vor da de asta.
+ddad7bf2 Doar dacă ai verificat logica și face ce vrei. Atunci marcheaz-o ca intenționată.
+6cf97a3f Da, dacă scena e veche sau nu e făcută pentru a fi jucată.
+d54dbf6e Da. Nu se strică nimic.
+3b411bc1 Da, dacă jocul e jucat doar pe Windows.
+667e089a Da, deocamdată. Se poate strica într-o actualizare viitoare a motorului.
+ca7eea8c Da, dar jucătorii vor vedea greșeala de tastare.
+6225e68e Doar dacă scena e neterminată intenționat.
+47ecb09c Da. Imaginile tot apar.
+178ca96e Da. Nimic vizibil nu se schimbă.
+e2fca6c0 De obicei da. Adesea e rămasă din versiuni mai vechi.
+bcc248b9 Mai bine nu. Foarte probabil e o greșeală reală.
+557f2555 nu
+cffa50a3 și
+1758356d sau
+6981b0db Nicio scenă nu are link către "{name}" într-un mod pe care scanerul să-l poată urmări. Jucătorii s-ar putea să n-o vadă niciodată, sau se ajunge la ea prin cod care construiește numele scenei din variabile.
+0f56183f Jucătorii ajung la "{name}" din {n} loc(uri):
+02e974ba Aceasta este prima scenă a jocului.
+5ffe533b adevărat
+7cb6efb9 fals
+1ed06825 un link
+3d22ef57 un include
+ccdfd8c1 un salt automat
+3f80e4d1 Din "{src}" ({how}), când: {cond}
+084fcdcf Din "{src}" ({how}), mereu.
+8adbc573 …și altele.
+1aafbf54 Excelent
+bd846adf Foarte bine
+61dedcf0 Bine
+226d7ec9 Acceptabil
+eafabce9 Necesită muncă
+4e0fa437 Slab
+75fb2b10 Se citește fișierul
+ac133acf Se caută datele poveștii
+456caef0 Se adună scripturile și stilurile
+fc404c89 Se verifică pasajele și linkurile
+6a4d36f9 Se verifică etichetele macro
+546de9d0 Se verifică condițiile și logica codului
+c338107e Se verifică variabilele
+5730c93f Se verifică etichetele HTML
+ea4c65ed Se verifică clasele CSS
+d874e65d Se verifică imaginile, sunetul, video și fișierele
+6517d389 Se verifică textul (greșeli de tastare, înlocuitori)
+87beeee4 Se verifică JavaScript
+7b7efd8b Se verifică regulile story format
+25f3b361 Se citește jocul {label}
+a28b6c50 Se verifică fișierele pentru deteriorări
+5aedb280 Se pornește browserul invizibil
+f5a5071d Se încarcă jocul
+8466e7c7 Se verifică scripturile cu motorul JavaScript al browserului
+bf197daa Se joacă scenele ({mode}): {k} din {n}
+f70cf464 Testul de joc s-a terminat
+427c9fd7 În scene la care nu ajunge nimeni
+9b9f5c3d Jucătorii nu văd niciodată asta: e într-o scenă la care nu ajunge nimeni. Poate rămâne așa.
+e58020da Nimeni nu ajunge la „{name}”: linkul este oprit
+2795ab1b Singurul link spre această scenă este în „{where}” (rândul {line}), într-o notă ascunsă /* ... */. Tot ce e între /* și */ este oprit.
+4ed22111 Jucătorii nu văd niciodată această scenă.
+30fda4f3 Dacă jucătorii trebuie s-o vadă, șterge /* și */ din jurul linkului. Dacă ai oprit-o intenționat, las-o așa.
+7a9ce2ca Singurele linkuri spre această scenă sunt în alte scene la care nu ajunge nimeni.
+3aafeed1 Dacă jucătorii trebuie s-o vadă, adaugă un link dintr-o scenă la care se poate ajunge. Dacă e veche, o poți ignora.
+0c4d1909 {n} fișiere din {k} foldere nu sunt folosite niciodată
+0efdb085 {n} valori pe care jocul nu le folosește niciodată
+425a6a2a Aceste valori se schimbă, dar jocul nu se uită niciodată la ele.
+849cdd9b Nu se strică nimic. Pot fi rămășițe din versiuni mai vechi.
+a82d56f5 O casetă a paginii nu este închisă: <{tag}> la rândul {line}
+5c73814e <{tag}> de la rândul {line} nu este închis niciodată cu </{tag}>.
+b587a89d Adaugă </{tag}> acolo unde trebuie să se termine caseta.
+f1a6f13d O etichetă de închidere în plus: </{tag}> la rândul {line}
+d887494b </{tag}> de la rândul {line} închide o casetă care nu a fost deschisă niciodată.
+f3d6de5f Șterge </{tag}> în plus sau adaugă <{tag}> care lipsește.
+94b62097 Ortografie: „{wrong}” ar trebui să fie „{a}” sau „{b}”
+45919c5c O greșeală de ortografie frecventă. Poate însemna două cuvinte diferite.
+d3631b3f Citește propoziția și schimbă „{wrong}” în „{a}” sau în „{b}”, după cum se potrivește.
+4f2e0c01 Nu e nevoie de nimic, decât dacă una trebuia folosită.
+37a88891 De obicei nimic: browserul o închide singur la sfârșitul scenei.
+9c393632 Da. E într-o scenă la care nu ajunge nimeni, deci jucătorii nu o văd niciodată. Repar-o doar dacă adaugi mai târziu un link spre acea scenă.

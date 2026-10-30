@@ -1,0 +1,11 @@
+{
+ "open": "index.html",
+ "must": [
+  "Image not found: img/missing.png",
+  "Link to missing page anchor \"#nowhere\"",
+  "<img> tag has an unclosed quote",
+  "JavaScript brackets/quotes problem",
+  "Class \"boxx\" does not match"
+ ],
+ "must_not": []
+}

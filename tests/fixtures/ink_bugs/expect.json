@@ -1,0 +1,15 @@
+{
+ "open": "story.ink",
+ "must": [
+  "Included file not found: gone.ink",
+  "Divert to missing knot/stitch \"twon\"",
+  "Assignment to undeclared variable \"goldd\"",
+  "Assignment to undeclared variable \"silver\"",
+  "\"{\" is never closed",
+  "\"TODO\" text shown"
+ ],
+ "must_not": [
+  "Divert to missing knot/stitch \"town\"",
+  "Divert to missing knot/stitch \"END\""
+ ]
+}

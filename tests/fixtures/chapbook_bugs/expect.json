@@ -1,0 +1,14 @@
+{
+ "open": "game.html",
+ "must": [
+  "Unknown insert {lnk to",
+  "Chapbook link to missing passage \"Nowhere\"",
+  "Single \"=\" inside a condition",
+  "goldd is used but never set",
+  "Insert \"{\" is never closed"
+ ],
+ "must_not": [
+  "gold is used but never set",
+  "Unknown insert {link to"
+ ]
+}

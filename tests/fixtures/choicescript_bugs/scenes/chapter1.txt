@@ -1,0 +1,11 @@
+*label top
+*set gold +1
+*set silver 2
+*got top
+*goto bottom
+*goto_scene chaptr2
+*goto_scene startup nolabel
+*if gold > 1
+  Rich. TODO
+	*finish
+*finish

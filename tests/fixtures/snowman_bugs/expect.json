@@ -1,0 +1,11 @@
+{
+ "open": "game.html",
+ "must": [
+  "s.goldd is used but never set",
+  "Script link to missing passage \"Nowhere\"",
+  "Script code problem"
+ ],
+ "must_not": [
+  "s.gold is used but never set"
+ ]
+}

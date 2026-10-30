@@ -1,0 +1,18 @@
+GAME DOCTOR 2.0
+
+Game Doctor checks games for mistakes and explains, in plain words, what is
+wrong, what players will notice and how to fix it.
+
+Works with Twine games (SugarCube, Harlowe, Chapbook, Snowman), other HTML
+games, Ren'Py, RPG Maker MV/MZ, Ink and ChoiceScript.
+
+Safe to use: Game Doctor only reads your game. It never changes your game
+files. Every fix is a suggestion; you decide what to change.
+
+Optional extras:
+- Play-test needs Microsoft Edge or Google Chrome (already on most PCs).
+- The AI helper needs an API key from an AI service, or LM Studio / Ollama
+  on this computer. Nothing is sent anywhere unless you use it.
+
+Your settings are kept in %APPDATA%\GameDoctor and are not removed when you
+uninstall.

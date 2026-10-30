@@ -1,0 +1,20 @@
+{
+ "open": "game",
+ "must": [
+  "Tab character used for indentation",
+  "\"if\" line is missing \":\"",
+  "Jump to missing label \"chapter_too\"",
+  "Label \"chapter_two\" is defined twice",
+  "Screen \"inventori\" does not exist",
+  "Audio not found: audio/boom.ogg",
+  "\"goldd\" looks like a misspelling of \"gold\"",
+  "Image \"eilen sad\" is not defined",
+  "Label \"lonely\" is never",
+  "\"PLACEHOLDER\" text shown"
+ ],
+ "must_not": [
+  "Image \"eileen happy\"",
+  "Image \"bg room\"",
+  "Audio not found: audio/theme.ogg"
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "open": ".",
+ "must": [
+  "Image not found: img/characters/Actor2",
+  "Audio not found: audio/bgm/Missing tune",
+  "Switch #5 does not exist",
+  "Transfer to missing map #9",
+  "Call to missing common event #7",
+  "Map file missing: Map002.json",
+  "Plugin file missing: GonePlugin.js",
+  "Plugin BadPlugin.js",
+  "Switch #2 has no name",
+  "Placeholder text shown"
+ ],
+ "must_not": [
+  "Image not found: img/faces/Actor1",
+  "Audio not found: audio/bgm/Theme1",
+  "GoodPlugin"
+ ]
+}

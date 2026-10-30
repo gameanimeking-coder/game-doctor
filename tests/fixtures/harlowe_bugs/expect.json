@@ -1,0 +1,18 @@
+{
+ "open": "game.html",
+ "must": [
+  "Unknown macro (prnt:)",
+  "Harlowe link to missing passage \"Twon\"",
+  "(set:) uses \"=\" instead of \"to\"",
+  "Single \"=\" inside a condition",
+  "(if:) has no hook",
+  "Hook \"[\" is never closed",
+  "$goldd is used but never set",
+  "Image not found: images/gone.png"
+ ],
+ "must_not": [
+  "Unknown macro (if:)",
+  "Unknown macro (else:)",
+  "Unknown macro (set:)"
+ ]
+}

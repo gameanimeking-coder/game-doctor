@@ -1,0 +1,836 @@
+#name Dansk
+e77b83c2 Spiltest færdig: {n} scener spillet på {m} måder, {k} problem(er) fundet under spillet.
+e9dd5680 Kopieret til udklipsholderen
+e00ac23f Type
+764b4aa3 Hvor slemt
+33446003 Scene
+44819483 Intet
+36c4a06f Tjekker…
+ecab72e7 Spilmappen / hele spillet
+95263aa8 Linjen i spilfilen (fremhævet)
+adac6937 Kode
+4dc2eddf Fundet med {app}. {n} problem(er).
+6b21fb79 Om
+b8bb1461 Hvordan når spillerne denne scene?
+d07d7afa Hvordan når spillerne "{name}"?
+fa893d87 Ren
+70440046 Bemærkninger
+1430f976 Advarsler
+805e86a8 Fejl
+dcad8ee5 Forbereder kodevisningen…
+7f2f6a15 Fejl
+e9c45563 Advarsel
+2c924e30 Bemærkning
+f4808ecd Åbn spil…
+f6ab55dd Tjek igen
+dd3fa3ce ▶ Spiltest
+5e4797ea Rettelsesguide
+4fa8cc86 Værktøjer
+c47ae153 Hjælp
+9d454f7c Intet spil åbnet
+7869cc5c Jeg redigerer i Twine
+db8da328 Jeg redigerer .html-filen (Notepad++ osv.)
+20c7c552 Klar
+26a93eac Åbn en spilmappe (Ren'Py, RPG Maker, Ink, ChoiceScript)…
+775b3ab8 Mappe med billeder og lyde…
+cd9a3d88 Tag en sikkerhedskopi af spilfilen
+2505d3da Test en linje, før du ændrer den…
+3536c70a Sammenlign med en anden version…
+080460a5 Skriv en fejlrapport til udvikleren…
+0cbf16ea Eksportér rapport…
+490c3a52 Hold øje med spilfilen og tjek igen, når den gemmes
+09e02e95 Vis problemer markeret som tilsigtede
+80f65544 Teksteditor…
+3a4dad84 Tag rundvisningen
+f996200a Lektioner (F1)
+e5aaa5b5 Ordliste
+320067c6 Ekstra stor tekst
+07471db5 Farveblindvenlige farver
+c2cebede Alle typer
+1baa06b4 Problem
+ced091e8 Scene / sted
+ea967600 Linje
+99a42316 Rettelse
+3cd62e5f Åbn i min teksteditor
+a4f34926 Kopiér rettet linje
+0973fd22 Kopiér tekst at søge efter
+28a1dc64 Jeg har rettet det - tjek
+1a256c63 Fortæl udvikleren
+b491a51b Vis i kodevisning
+463e5e78 Markér som tilsigtet
+562107b8 Læs højt
+e42bc527 Kopiér detaljer
+d7c5a824 Vis præcis som gemt i filen (&lt;-koder)
+2314cd9a Åbn spillet
+7a8e0cf0 Vælg spilmappen
+ff10f24c Mappe med spillets billeder, lyde og videoer
+38e9a3e9 Spil: {path}     Mappe: {folder}
+24fc8907 Stop oplæsning
+7335beba Ikke længere markeret som tilsigtet
+24fec833 Markeret som tilsigtet - skjult fra listen (Værktøjer > Vis problemer markeret som tilsigtede)
+615c9a3f {fmt} · {units} dele · {files} filer i mappen · {e} i stykker, {w} sandsynligvis i stykker, {i} at tjekke · {s} s
+f229a698 Kodesundhed: {n}% · {label}
+d8d62e38 Tjek færdigt
+dd3a39d8 Kodesundhed
+c6643b25 Skala: 100% fremragende · 90% rigtig godt · 80% godt · 70% fint · under 70% kræver arbejde
+7e0056d2 Den bygger på, hvor mange scener der har problemer, og hvor alvorlige de er.
+07c80477 Efter type
+45b733c9 Klik på et problem i listen for at se detaljerne.
+525f61b6 Hvor
+4090e818 Sådan retter du det
+0b975974 Åbn din historie i Twine og åbn passagen "{name}".
+905dc77d Det samme navn bruges også på {n} anden/andre linje(r): {lines}. Ret det også der.
+3cfafb7c Udgiv historien igen (Build > Publish to File), og genindlæs så spillet for at tjekke.
+64cb91c6 Hvor: {where}
+4383fcfd Hvad der er galt: {text}
+07bddb04 Sådan retter du det: {text}
+cf36743b Nu: {text}
+0cacfdc2 Ret til: {text}
+70fbdd39 Rettet linje kopieret. Markér den gamle linje i passagen "{name}" i Twine, og indsæt.
+60eafc99 Rettet linje kopieret. Markér linje {n} i din editor, og indsæt over den.
+67a9f511 Søgetekst kopieret. Tryk Ctrl+F i din editor, og indsæt den.
+67c1b9a0 Filen er ikke ændret siden sidste tjek. Gemte du den?
+2693cf86 Sammenlign din linje med linjen "Ret til" igen.
+1b930787 Åbn et spil først.
+9dbf0a77 Sikkerhedskopi gemt: {path}
+88e09b05 (din tekst)
+e835a0e1 Fejlrapport for {game}
+338c5072 Teknisk: {text}
+fc5e62a8 Indstillingsfil: {path}
+0f83a323 Holder øje med spilfilen. Hver gang du gemmer den, bliver den tjekket igen.
+24b5689b Holder ikke længere øje med spilfilen.
+6bbf59c5 Stopper spiltesten…
+c5726162 Spiltesten kræver Microsoft Edge eller Google Chrome, og ingen af dem blev fundet.
+efe69072 Spillet ændrede sig under spiltesten. Kør den igen.
+4e1a8e3c Ingen problemer
+59cd52ee Værd at tjekke
+80c66d73 Sandsynligvis i stykker
+3ad465ce I stykker
+8ea8e60f Linje {n}: ingen problemer fundet
+421fe500 dobbeltklik for detaljer
+a6e7e8d6 "{text}" blev ikke fundet
+fc748144 Eksportér de {n} problemer, der vises i listen
+c8ca2957 Rapport gemt: {path}
+09188221 Hele spillet
+5a7ee5ac Fejlrapport
+203dee52 Detaljerne blev gemt i {path}
+5abfea7d Enkle ord: fra
+de314fa0 Alvor
+fc55cc19 Passage / sted
+3deb7456 Type
+61790945 ■ Stop spiltest
+e23fd7cf Fjern markering som tilsigtet
+5ffa6ce4 Tjekker spil for fejl og fortæller dig med enkle ord, hvad der er galt, og hvordan du retter det. Virker med Twine-spil (SugarCube, Harlowe, Chapbook, Snowman), andre HTML-spil, Ren'Py, RPG Maker MV/MZ, Ink og ChoiceScript.
+e13e18f3 Sådan bruger du det
+c3abe9f5 Sikkert at bruge
+4d688496 Dette program læser kun dit spil. Det ændrer det aldrig. Brug Værktøjer > Tag en sikkerhedskopi af spilfilen, før du redigerer noget.
+90c93523 Genveje
+8e990034 Ctrl+O åbn · F5 tjek igen · Ctrl+F søg · F3 find næste · Ctrl+E eksportér · F1 lektioner · Ctrl + / Ctrl − / Ctrl+0 eller Ctrl+musehjul for at ændre størrelse
+21e5904b {n} filhenvisninger tjekket
+052df047 Start her - de vigtigste rettelser
+eff36495 Eller klik på "Rettelsesguide" for at gå dem igennem én ad gangen.
+23bd8fe4 Scenen "{name}"
+8cb67e05 Passagen "{name}"
+12b1a199 linje {n} i passagen
+280d0541 linje {n} i {file}
+a684f161 Du markerede dette som tilsigtet, så det tæller ikke.
+6aeb39ef Hvad der er galt
+c1bcc130 Hvad der er galt
+ebcf7d18 Hvad spillerne vil opleve
+e7f32d0f Klik på "Åbn i min teksteditor". Den åbner {file} på linje {n}.
+73c8627d Slet den linje (den vises nedenfor under "Nu").
+b44b2225 Ret den som vist nedenfor under "Ret til". "Kopiér rettet linje" kopierer hele den rettede linje, så du kan indsætte den over den gamle.
+d640e11b Se forklaringen ovenfor.
+33d1a502 Gem filen, genindlæs spillet, og klik så på "Jeg har rettet det - tjek".
+fd3e0dfe Lavet i Twine? Så ret det i Twine i stedet (skift "Jeg redigerer .html-filen" ovenfor til "Jeg redigerer i Twine"). Udgivelse fra Twine overskriver ændringer, der er lavet direkte i .html-filen.
+e3b82040 Nu
+b9b6aac4 Ret til
+3895c256 Kan jeg ignorere dette?
+189da0ef Hvad spillerne vil opleve: {text}
+7d949b29 Kode: {text}
+80411ece Ikke rettet endnu - problemet er der stadig
+71a91179 tryk Ctrl+G og skriv {n} for at springe til linjen
+84d3bdef Åbnet i {name}
+7bf2bdbd Scene: {name}
+f8e71156 Linje {n} i {file}
+e9331864 Hvad der sker: {text}
+16fcd5a1 ({n} tegn mere på denne linje)
+6dcc62dd Rapport gemt. Åbn den nu?
+02fbc53c Problem (enkle ord)
+2c3cafa4 Fil
+1bea2fb0 Sådan retter du
+fdccd352 Noget gik galt inde i appen:
+b7152342 Størrelse
+8e6b86dc Problemer
+8f0d8d83 Gruppér efter
+bce06414 Søg
+74c14ca3 Kodevisning
+a3d77701 ◀ Forrige problem
+3a289dc9 Næste problem ▶
+2e0b45f2 Gå
+ececaefe Find næste
+df251b06 Find
+7e08ebec Udvikler
+e53407cf Spiller
+0406a446 Enkle ord
+2edb004b Jeg redigerer .html-filen
+b45e0101 Holder øje med ændringer
+398ed329 Spil
+6f80238e HTML-spil
+f7857dcc Alle filer
+6798c955 Tjekker, vent venligst…
+be4bd50c Kodesundhed: {n}%
+16dd1f3a {n} markeret som tilsigtet
+901b56b2 Intet at vise
+ea64a687 4. Hjælp > Lektioner forklarer det grundlæggende på få minutter. Hjælp > Tag rundvisningen viser dig rundt.
+570f71b7 Scener, der er i stykker
+08f7f24d Gem dit spil, før du besøger dem, så du kan gå tilbage, hvis noget går galt:
+29e8d770 Brug "Fortæl udvikleren" på et problem, eller Værktøjer > Skriv en fejlrapport, for at sende detaljerne.
+d19ceca5 Tip
+251eb9e2 Gem dit spil, før du når denne scene, så du kan gå tilbage, hvis den går i stykker.
+d782b266 Find stedet: brug Twines "Find and replace" (eller kig godt efter) efter denne tekst:
+eb92d56f Åbn projektet i RPG Maker, og gå til: {where}
+7e7c7eb1 (slet denne linje)
+d40baaa7 ✔ Rettet! Problemet er væk. Kodesundheden er nu {n}%.
+fce98782 Vælg en anden editor med Værktøjer > Teksteditor…
+55d0a707 Sikkerhedskopi gemt:
+802cfe54 Kunne ikke lave sikkerhedskopien:
+a01ce386 Foreslået rettelse (i Twine):
+d9cb995e Oversættelser til andre sprog end engelsk er lavet af en AI og kan indeholde fejl. Tekniske detaljer forbliver på engelsk, som spilmotorerne og deres manualer.
+987dd9b8 Åbn et spil for at se dets kode her.
+f4fd7854 {name} ({n} linjer)
+db3b1ca2 Rapport som webside
+1b5f6570 Regneark (CSV)
+ee3d21a8 Tekstfil
+934a1886 Kunne ikke gemme rapporten:
+29211387 Systemtema
+9e5ba0f0 Lyst tema
+d51c5960 Mørkt tema
+71df97be Fil gemt - tjekket igen: {fixed} rettet, {new} nye
+12d21609 (hele spillet)
+4671f2fd {n} dele
+af4e5ffa {n} problem(er) i denne gruppe. Klik på et for at se detaljerne.
+e065ed24 Hvis linjen er flyttet, så tryk Ctrl+F i din editor og søg efter:
+d6cd9bbc Kunne ikke tjekke:
+e8b6a7a1 (linje {lines})
+2a87805d Kunne ikke starte {name}:
+50803478 Sådan retter du: {text}
+cbbf7064 Version {v}. Finder problemer i spil og forklarer, hvordan du retter dem. Læser kun filer og ændrer aldrig dit spil.
+7e16f294 Kodesundhed: {n}% ({label})
+13b7bfca Arbejder…
+944d285f Tjek mislykkedes
+5117eb3e Ingen problemer passer til de aktuelle filtre.
+84a26cd3 Ingen problemer fundet. Godt arbejde!
+e961739d 3. Ved du ikke, hvor du skal starte? Brug Rettelsesguiden - den går problemerne igennem et ad gangen og tjekker dine rettelser.
+dfa2b6e9 Linje {n}:
+27a41ea2 (slet)
+966d414d linje {n}
+a37a62b5 2. Klik på et problem i listen. Nedenunder ser du, hvad der er galt, hvad spillerne vil opleve, og præcis hvordan du retter det.
+47faaf63 Spiltest stoppet
+9de8b1a5 1. Klik på "Åbn spil…" og vælg spillets .html-fil (eller brug Værktøjer til en spilmappe). Tjekket starter af sig selv.
+836bf385 Spiltesten kunne ikke køre:
+3dd51c5a Vælg din teksteditor
+1f7611ea Teksteditor sat til {name}
+43320d49 Test en linje, før du ændrer den
+18e673bc Der ændres intet i dit spil. Dette tjekker kun den tekst, du skriver her.
+8ecc7800 Skriv en fejlrapport til udvikleren
+2e2b95ec Sammenlign to versioner
+ccdb5389 Vælg den anden version af spillet, og klik på Sammenlign. Begge bliver kun læst, aldrig ændret.
+cabad4eb Tjekker den anden version…
+cb9ce97b Lektioner
+9255b9a1 Vælg teksteditorprogrammet
+67094e72 Programmet blev ikke fundet. Brug "Gennemse…" for at vælge det.
+21461571 ◀ Tilbage
+2d8a1625 Spring over ▶
+7c5d9f51 {done} af {total} rettet
+cb70c72b Problem {n} af {total}
+820d6004 Tjekker…
+e461d5d0 {n} problem(er) fundet:
+9580fcbc Almindelig tekst
+26a49ee7 Discord / Reddit
+1f82bc1e Forum (BBCode)
+616ce66d I stykker + sandsynligvis i stykker
+34d5d395 Kun det valgte problem
+ced1fd2f Gem fejlrapporten
+ec9135a3 Fejlrapport gemt: {path}
+8d105cf4 Sammenlign
+a1cd6b54 Vælg den anden version
+1f5bf765 Vælg den anden version først.
+ad916050 Sammenligner…
+f4f29947 Kodesundhed: {a}% → {b}%
+a81eb289 Rettet i den nyere version ({n})
+53da970f Nye problemer i den nyere version ({n})
+2be41ba6 Stadig der ({n})
+9ec4aa53 Ord, der bruges i denne app
+ce12714d Intet at rette
+d231fca7 Der er ingen problemer tilbage, der skal rettes. Godt klaret!
+76c1c7de Dette problem er væk - det blev rettet, eller filen ændrede sig. Klik på Spring over for at fortsætte.
+55855f77 Test af enkelte linjer virker til Twine-spil (SugarCube). Åbn et først.
+bbfa773e Luk
+af74f7c5 Kopiér
+571a03ba Hvilket program skal åbne spilfilen?
+113fa56b Disse teksteditorer blev fundet på computeren:
+d4b86cfd Et andet program…
+9d68007b Program
+c1b20f52 Gennemse…
+6bf5da9c Indstillinger
+4ee6279e {file} erstattes med spilfilen og {line} med linjenummeret. Notepad++ bruger: -n{line} "{file}"
+77dfd213 Annullér
+efc007a3 Gem
+ab14d0a7 Programmer
+4abacc60 ✔ Rettet! Godt klaret. Her er den næste.
+1ed684b1 Indsæt eller skriv den linje (eller hele passagen), du vil bruge:
+45f9116a Dette er en hel passage (tjek også, at hvert tag er lukket)
+4b5e84be Tjek
+6a17f3f6 Ingen problemer fundet i denne tekst.
+44b39131 Forslag:
+4020c08c Stil:
+2f32f781 Medtag:
+4705cad6 Medtag hvordan det rettes
+d9057148 Gem som…
+83c52802 Anden version:
+c3c1e96d Den anden version er:
+6fa5fbbc ældre
+1d47386a nyere
+78cee4b8 Trin {n} af {total}
+57bc79e3 Spring rundvisningen over
+bc981983 Næste
+e9b450d1 Færdig
+682c160f Aktuelt spil:
+74c063af Forkert:
+3a82310a Rigtigt:
+c7c15bca Dette vil gå galt for spillerne.
+8df34ecb Dette er meget sandsynligt en fejl.
+1d894da2 Ikke presserende. Det kan være i orden, men kig på det.
+58da2ccb Links til scener, der mangler
+78d3da9d Billeder og lyde, der mangler
+59327131 Spilkommandoer i stykker
+dfe69b5d Stavefejl i spilkommandoer
+140d954e "Hvis"-tjek, der går galt
+169a1b52 Kommandoer, der intet gør eller går i stykker
+c3f4070a Stavefejl i egenskaber og værdier
+ee27480a Genbrugelige blokke
+9c0fe2ed Kode til sidelayout
+2c0f0a6d Stilarter (farver og udseende)
+f77fd1fd Scener
+45e35cfc Scener, ingen kan nå
+a2406e53 Filer, spillet aldrig bruger
+68320599 Ufærdig tekst
+8a21b1ee Stavning
+169b486d Tastefejl
+a1d181bd Virker kun på Windows
+3e9d9ae4 Meget store filer
+50a12988 Beskadigede filer
+aab2b305 Gammeldags kommandoer
+3f55c07b Scriptkode
+cc0718f5 Spilopsætning
+c7ee483a Scanner
+c916a1ad Fejl under spillet
+0e66b49d billede
+5e2e97c3 lyd
+ffbaf58f video
+4642576d skrifttype
+767013ce side
+971c419d fil
+8c657028 scenen "{name}"
+84db7a65 spillet
+27260418 Går til en scene, der ikke findes: "{name}"
+65a1b892 I {where} prøver et link eller en kommando at åbne en scene, der hedder "{name}". Ingen scene i spillet har præcis det navn.
+eddc288b Når spilleren klikker på det (eller spillet når dertil), får spilleren en fejlmeddelelse eller en tom side i stedet for scenen.
+6690f7df Få navnet til at passe præcis med en eksisterende scene. Store bogstaver og mellemrum tæller.
+ee186081 Går til en del af historien, der ikke findes: "{name}"
+adcab89d Historien prøver at fortsætte ved "{name}", men intet i spillet har det navn.
+c68c7536 Spillet stopper med en fejl her (eller starter slet ikke).
+262dea9c Få navnet til at passe præcis med en eksisterende del af historien.
+8a2045c6 Går til et kapitel, der ikke findes: "{name}"
+6b99d3d7 Historien prøver at åbne "{name}", men der er intet sådant kapitel eller sted.
+54721a92 Spillet stopper med en fejl her.
+bfe449ab Ret navnet, så det passer med et eksisterende kapitel.
+8569b71c Åbner en skærm, der ikke findes: "{name}"
+ed323960 Spillet prøver at vise en skærm, der hedder "{name}", men ingen skærm har det navn.
+31aaf0f7 Spillet stopper med en fejl her.
+ecedecaf Ret navnet, så det passer med en eksisterende skærm.
+1c82d0d0 En begivenhed sender spilleren et sted hen, der ikke findes
+f7bb6caa En begivenhed flytter spilleren til et kort, eller kører en common event, som ikke er i spillet.
+11068616 Spillet går ned eller fryser, når denne begivenhed kører.
+17c8c384 Vælg et eksisterende kort eller en common event i den begivenhedskommando.
+924f14ec Et link, der ikke fører nogen steder hen
+ac25c348 Et link i {where} siger ikke, hvilken scene det skal åbne.
+cc208a80 Et klik på det viser en fejl.
+81510156 Skriv navnet på den scene, linket skal åbne.
+a620e5a7 Et link mangler sin slutning
+75319c60 Et link starter med [[ men slutter aldrig med ]].
+d94d2b45 Teksten efter blandes ind i linket, og scenen ser ødelagt ud.
+da97338b Tilføj ]] i slutningen af linket.
+de752d36 Ingen kan nå "{name}"
+ad06e184 Intet i spillet fører til denne del af historien.
+49f72405 Spillerne ser den aldrig. Harmløst, medmindre den skulle kunne spilles.
+41e81f9d Hvis spillerne skal se den, så tilføj et link til den fra en anden scene. Hvis den er gammel, kan du ignorere den.
+12017de3 Scenen "{name}" er tom
+e1c78333 Denne scene har ingen tekst eller indhold.
+eb036a1b En spiller, der kommer hertil, ser en tom side.
+95468775 Skriv scenen, eller fjern de links, der fører dertil.
+65f5f00d To dele af historien har samme navn
+3a661399 Mere end én scene eller label bruger navnet "{name}".
+14b99f6a Kun én af dem kan nogensinde vises, eller spillet nægter at starte.
+5017f902 Giv hver sit eget navn.
+8ee54eec Spillet har ingen startscene
+e4b1267b Spillet ved ikke, hvor det skal begynde.
+67fece68 Spillet starter måske slet ikke.
+6f3c3583 Markér den første scene som start i Twine.
+891a7ccc Et springlink fører ingen steder hen
+723d0b6c Et link peger på et sted på siden, der ikke findes.
+9d2a3ab1 Et klik på det gør ingenting.
+a17d6d9d Ret navnet på stedet, eller fjern linket.
+f7e0927c Manglende {kind}: {file}
+471ab6b6 Spillet vil bruge {kind} "{path}", men der er ingen sådan fil i spilmappen.
+215d84f2 Spillerne ser et ødelagt billede eller et tomt felt, eller hører ingenting.
+95495e08 Læg filen på det sted, eller ret navnet i spilfilen til den fil, der faktisk findes.
+4e187285 Filnavnet har forkerte store bogstaver: {file}
+10dd7eb2 Filen findes, men spillet skriver navnet med andre store bogstaver.
+445b1f51 Virker på Windows. På telefoner, Mac, Linux eller en hjemmeside mangler billedet eller lyden.
+bcc2cd24 Ret navnet i spilfilen, så de store bogstaver passer med den rigtige fil.
+fc7f8ac2 Et billede peger på udviklerens egen computer
+bf1eaea6 Filens placering starter med et drevbogstav som "D:\". Den mappe findes kun på den computer, der lavede spillet.
+8e9a7d52 Spillerne ser aldrig dette billede.
+e5baac7c Ret den til en placering inde i spilmappen, som images/characters/name.jpg.
+006a8fb9 Filplaceringer bruger \ i stedet for /
+d6cb43a9 Spillet skriver mappestier med omvendt skråstreg (\).
+42ad75cd Fint på Windows. På telefoner, Mac, Linux eller en hjemmeside indlæses billeder og lyde ikke.
+02bf9e76 Har kun betydning, hvis spillet skal køre uden for Windows: erstat \ med / i billedstierne.
+0fa2cd7a {n} filer i "{folder}" bruges aldrig
+1b78ff55 Disse filer ligger i spilmappen, men spillet bruger dem aldrig.
+55acf4db Intet går i stykker. De gør bare downloadet større.
+aa1a0c6f Slet dem, hvis du er sikker på, at de ikke skal bruges. (Nogle vælges måske af spillet på smarte måder, som scanneren ikke kan se.)
+cb4cc629 En tom fil
+4642643c Denne fil er tom (0 byte).
+24ec314d Den bliver ikke vist eller afspillet.
+6cd06e6e Erstat den med en fungerende kopi af filen.
+07046633 Beskadiget fil (afkortet): {file}
+932dbf75 Slutningen af denne fil mangler, som regel fordi en download, kopiering eller udpakning ikke blev færdig.
+feda3672 Billedet vises kun delvist eller slet ikke, eller lyden/videoen stopper for tidligt.
+968dc7a4 Kopiér eller download filen igen fra spillets originale filer.
+6081a951 Ikke rigtigt et billede eller en lyd: {file}
+dc397b7a Filen har det rigtige navn, men indeni er der en webside (ofte en fejlside fra et downloadsite).
+7f495908 Spillerne ser et ødelagt billede eller hører ingenting.
+eee27da5 Download den rigtige fil igen, og erstat denne.
+2a1c1b71 Muligvis beskadiget fil: {file}
+4c30367e Starten af denne fil ligner ikke noget kendt billed-, lyd- eller videoformat.
+d3b9cea3 Den bliver sandsynligvis ikke vist eller afspillet.
+0ab570a5 Åbn den i en billedfremviser eller medieafspiller. Erstat den, hvis den ikke åbner.
+f68470e5 Nogle filer har den forkerte endelse (.png, .jpg ...)
+d608da1e Disse filer indeholder et andet format, end navnet siger, for eksempel et JPEG-billede, der hedder .png.
+2e39b508 Browsere viser dem som regel alligevel. Nogle telefoner og programmer gør måske ikke.
+097a3703 Valgfrit: konvertér eller omdøb dem, så navnet passer med det rigtige format.
+283d2070 Nogle filer er meget store
+c7fa15ff Disse billeder eller videoer er meget store.
+ae5369ab De indlæses langsomt, især på telefoner.
+e125a92c Valgfrit: gør dem mindre med et billedprogram.
+385f4329 En spilfil mangler: {name}
+2e700532 Spillet forventer en fil, der ikke er der.
+99467808 Spillet viser en fejl ved start, eller når denne del nås.
+b3496ea7 Læg den manglende fil tilbage, eller fjern henvisningen til den.
+75e6334a En spildatafil er beskadiget
+db02e969 Denne fil kan ikke læses ordentligt.
+79b96faf Spillet starter ikke eller går ned.
+7ebbbeec Gendan filen fra en sikkerhedskopi eller det originale spil.
+d399fac1 En "{name}"-kommando bliver aldrig lukket
+e6c66d5b Nogle spilkommandoer skal have en matchende slutning. Denne har ingen.
+0b1cb09f Spillet viser en rød fejlboks i denne scene, og en del af scenen kan mangle.
+afdabc18 Tilføj den manglende slutning (for eksempel <</{name}>>), hvor denne del skal slutte.
+744245d7 Et ekstra slut-tag <</{name}>>
+adb1bea4 Der er et slut-tag uden noget at afslutte.
+b39fd74f Spillet viser en rød fejlboks i denne scene.
+a53d4f4e Slet dette ekstra slut-tag.
+fa8c8072 "{name}" står det forkerte sted
+9009044d <<{name}>> skal stå inde i en <<if>>-blok. Her gør den ikke, som regel fordi et slut-tag ovenover står det forkerte sted.
+1e9acaea Spillet viser en rød fejlboks.
+1d2d751d Tjek linjerne lige ovenover, og flyt slut-tagget til det rigtige sted.
+bfaae414 Et slut-tag mangler et ">": <</{name}>
+a280c34f Slut-tagget er skrevet med ét ">", men skal have to.
+71be19aa Spillet ser ikke slut-tagget. Det viser en rød fejlboks, og scenen kan se forkert ud.
+a3c69d1f Tilføj ét ">", så det slutter med ">>".
+413ace46 Et ekstra ">"-tegn
+4e791f5a Der er ét ">" for meget efter et tag.
+4ecd446f Spillerne ser et løst ">" på skærmen.
+c1c069b2 Slet det ekstra ">".
+cacfbdbb Et ekstra "<"-tegn
+fe9088b6 Der er ét "<" for meget før en kommando.
+0c7a0bb7 Spillerne ser et løst "<" på skærmen.
+87807bf8 Slet det ekstra "<".
+b0d2d4e4 En halvskrevet kommando "<<"
+012a6c88 Der er et "<<" uden noget efter.
+fd941db0 Kommandoen efter går i stykker, og spillet kan vise en fejl.
+73f8070a Slet det løse "<<".
+7037d71a En kommando mangler sit ">>"
+87bde2ac En kommando starter med << men slutter aldrig med >>.
+7f93f879 Tekst efter den forsvinder, eller scenen viser en fejl.
+dbda1f76 Tilføj ">>" i slutningen af kommandoen.
+5a30164d En parentes åbnes, men lukkes aldrig
+d5b047f2 Noget starter med en parentes, men den lukkende parentes mangler.
+8d50e9a9 Alt efter den bliver slugt, eller spillet viser en fejl.
+912c548c Tilføj den manglende lukkende parentes.
+35852e81 En ekstra lukkende parentes
+a1d86e33 Der er en lukkende parentes uden en åbnende.
+fdeb2ba4 Spillerne kan se et løst tegn eller en fejl.
+254fbb5b Fjern den ekstra parentes.
+98cb6b2f En kommando har ingen tekst tilknyttet
+1afec1b9 Denne kommando skal styre teksten lige efter, skrevet i firkantede parenteser [sådan her]. Der følger intet efter.
+073266b4 Harlowe viser en fejl, eller teksten vises altid.
+29369e93 Sæt den tekst, den styrer, i firkantede parenteser lige efter den.
+4093f80e Spillet viser en fejl, og den del af scenen, den styrer, virker ikke.
+ef3a7877 En gammeldags kommando
+54dead55 Denne kommando virker stadig, men er forældet.
+01500c48 Intet lige nu. Den kan gå i stykker i en fremtidig opdatering af motoren.
+b1a70201 Valgfrit: erstat den med den nyere kommando.
+a4a93d21 Et "if"-tjek bruger "=" i stedet for "is"
+582b6716 Inde i et "if"-tjek betyder "=" "gør det lig med", ikke "er det lig med?".
+564cdad0 Spillet viser en rød fejlboks, eller tjekket er altid sandt, og den forkerte del af scenen spilles.
+e3105e2f Erstat det enkelte "=" med "is".
+f0b64920 "=>" eller "=<" skrevet bagvendt
+897ec753 Større-end-eller-lig-med skrives ">=", ikke "=>".
+0167d9bc Tjekket virker ikke.
+0b498ace Skriv ">=" eller "<=" i stedet.
+f917ca5e "is not" skal være ét ord
+4e8bbdf4 I denne spilmotor betyder "is not" noget andet end "isnot".
+e40cd819 Tjekket er næsten altid forkert.
+7f3a1402 Skriv "isnot" som ét ord.
+694143a3 Et "or"-tjek, der altid er sandt
+b760633e Noget som "$x is 1 or 2" tjekker kun $x mod 1; "2" alene tæller altid som ja.
+f8b8cc75 Denne del spilles, selv når den ikke burde.
+b1a0ec7e Gentag navnet: "$x is 1 or $x is 2".
+1c4512b1 Et "if"-tjek, der kan slå til på det forkerte tidspunkt
+bb598d2b Dette tjek blander "and" og "or" uden parenteser. Computeren tager altid "and"-delene først, så tjekket betyder måske ikke det, der var meningen.
+71408d55 En scene eller et valg kan dukke op, når det ikke burde - for eksempel når en person er kidnappet, eller en egenskap er for lav.
+045d6c6c Sæt parenteser ( ) om de dele, der hører sammen. Se på koden nedenfor, og gruppér "or"-valgene.
+dbb9ed0f Parenteserne ( ) passer ikke
+6bbb5c72 Der er flere "(" end ")" eller omvendt.
+d2676c8c Tilføj eller fjern en parentes, så de danner par.
+8f746eaa Et tomt "if"-tjek
+70ac1e0e "if" har intet at tjekke.
+8fa764c4 Spillet viser en fejl.
+f72f83b1 Skriv, hvad der skal tjekkes.
+00b75afd En ændring af en egenskab, der intet gør ("==")
+d3024696 Denne linje skal ændre en værdi, men "==" sammenligner kun - den ændrer intet.
+4bb1b350 Værdien ændres aldrig. Det, der afhænger af den (timere, tællere), sidder fast.
+bb9d82a8 Erstat "==" med "to".
+88b997d5 En ændring af en egenskab, der intet gør
+47b56b1e Denne linje skal ændre en værdi, men har intet "to", "=", "+=" eller "-=", så intet ændres.
+b3edbcbf For eksempel bliver energi eller penge aldrig taget eller givet.
+5a19bb57 Skriv "-=" i stedet for "-" (eller "+=" i stedet for "+").
+24335c15 En tom ændring af en egenskab
+d7c9d917 Kommandoen er tom.
+1ca2b36b Slet den, eller skriv ændringen.
+2d2715a0 En værdi sættes med "=" i stedet for "to"
+b3386569 Denne motor sætter værdier med "to".
+be353939 Erstat "=" med "to".
+6b135470 Et anførselstegn " mangler
+b7ed7d6f Et stykke tekst i en kommando åbner med " men lukkes aldrig.
+4b70c1d8 Spillet viser en fejl eller sluger teksten efter.
+081a0ff8 Tilføj det manglende ".
+1a1cb7a5 Tabulatorer brugt, hvor der skal være mellemrum
+0d83ecca Denne motor kræver, at linjer kun indrykkes med mellemrum.
+1928be6f Spillet starter ikke, eller stopper med en fejl her.
+6707540b Erstat tabulatoren i starten af linjen med mellemrum.
+50e72b08 En linje mangler ":" i slutningen
+1590b870 Linjer som "if", "menu" og "else" skal slutte med kolon.
+34cb1caf Spillet starter ikke.
+739781b1 Tilføj ":" i slutningen af linjen.
+463c9c22 Scriptkode i stykker
+90393617 En parentes eller et anførselstegn i scriptkoden passer ikke.
+10b6ae9e Hele scriptet holder op med at virke, hvilket kan ødelægge mange funktioner.
+208a3574 Tjek parenteserne og anførselstegnene omkring denne linje.
+08a420a2 Glemt testkode
+f523c19b Kode, der blev brugt under test, er blevet liggende.
+a161c8db Som regel intet synligt.
+5512920c Valgfrit: fjern den.
+e14ae90f Et navn med "-" i
+a5d94a86 Navne på værdier må ikke indeholde "-". Spillet læser kun delen før "-".
+1d915eed Spillerne ser det forkerte ord eller et tomt felt i stedet for et navn.
+1ff6bd49 Brug "_" i stedet for "-".
+929dc82b Tjek på den giver altid "nej", så noget tekst eller nogle scener vises aldrig (eller der vises et tomt felt i stedet for et navn).
+aa241baa Samme navn, forskellige store bogstaver: ${a} / ${b}
+fe615c75 For spillet er det to forskellige værdier, fordi store bogstaver tæller.
+1549316e Ændringer i den ene ses ikke af den anden, så egenskaber eller scener går galt.
+485f98c5 Ret ${a} til ${b}.
+fbb1a8ec Stavefejl i værdinavn: {name}
+baa2f1ac "{name}" bliver aldrig oprettet, men det gør "{near}". Det er næsten helt sikkert en tastefejl.
+37eb4d71 Spillet viser en fejl, eller værdien er altid tom.
+69b0c997 Ret "{name}" til "{near}".
+958390b8 En midlertidig værdi, der aldrig sættes: _{name}
+66d98956 Denne kortlivede værdi bruges, men får aldrig en værdi.
+f6d72946 Tjek på den virker aldrig.
+b150a824 Sæt den først, eller ret navnet.
+bb2ac176 En værdi, der aldrig blev oprettet: {name}
+418bb0cf Bruger en switch/variabel, der ikke findes (#{n})
+60eb5de9 Begivenheden bruger nummer {n}, men spillets liste er kortere.
+ab5e6d39 Begivenheden virker ikke som tænkt.
+27e3bd51 Vælg en eksisterende switch/variabel i begivenheden.
+5e339cd0 En switch/variabel har intet navn (#{n})
+e3546a24 Den bruges, men har intet navn i Database.
+15f64977 Intet synligt. Den er bare let at forveksle.
+a8723260 Giv den et navn i Database.
+bd3955c1 En genbrugelig blok er defineret to gange: {name}
+0a743f0a To definitioner deler dette navn.
+4d983cee Kun én version bruges.
+08c1e9fa Slet eller omdøb en af dem.
+20982092 En genbrugelig blok indlæses ikke
+3ed9bdd5 Dens scene mangler tagget "widget".
+4f7fa681 Hver scene, der bruger den, viser en fejl.
+a3c57c94 Tilføj tagget "widget" til den scene i Twine.
+769d38d3 En ubrugt genbrugelig blok: {name}
+91caae31 Den er defineret, men bruges aldrig.
+92f3557e Intet går i stykker.
+48518178 Intet nødvendigt.
+549a08bd Et anførselstegn mangler i sidekoden
+2616e9ea Et anførselstegn " mangler i et side-tag (ofte et billede).
+c1ac2a6e Billedet eller elementet vises måske ikke, eller layoutet går i stykker.
+1359ec48 Sidebokse, der ikke er lukket ordentligt
+c5eaf192 En layoutboks (som <div> eller <center>) åbnes, men lukkes ikke, eller lukkes for mange gange.
+bff958b5 Tekst eller billeder kan havne det forkerte sted eller med den forkerte stil.
+2055d18e Tilføj det manglende slut-tag, eller fjern det ekstra.
+3ec38cbd To ting deler det samme navneskilt (id)
+0bf6eee0 Hvert id skal være unikt på siden.
+ff424805 Knapper, der opdaterer denne del, kan ændre det forkerte sted.
+3d5e5acf Giv hver sit eget id.
+9ef419aa Et billede eller link uden fil
+41c88499 Tagget peger på ingenting.
+30064ec6 Et ikon for et ødelagt billede kan blive vist.
+0e8cdbfd Udfyld filnavnet, eller fjern tagget.
+8c62dd1b Billedstørrelser skrevet på en måde, browsere ignorerer
+c97c9dc5 Størrelser som height="450wv" har bogstaver, browseren ikke forstår ("wv" er ikke en enhed).
+38f858bc Billederne vises stadig, bare i en fast pixelstørrelse. Som regel harmløst.
+c33de17c Valgfrit: fjern bogstaverne, f.eks. height="450".
+b2030de7 Et stilnavn, der ikke passer: "{name}"
+912e16dc Udseendet af denne del vælges med navnet "{name}", men stilen hedder "{near}".
+93f6e366 Denne del vises uden de tiltænkte farver eller det tiltænkte layout.
+de3efded Et stilnavn uden stil: "{name}"
+46cc76e2 Ingen stilregel bruger dette navn.
+3a6cc944 Som regel harmløst.
+d91f6b60 Ufærdig tekst, som spillerne kan se
+a2d31ceb Udvikleren har efterladt en note som "PLACEHOLDER" eller "TODO" i historien.
+33f40845 Spillerne ser noten, eller scenen er ufærdig.
+a398b7c0 Skriv den rigtige tekst, eller fjern noten.
+a89ee2d1 Stavning: "{wrong}" skal være "{right}"
+bf0afa72 En almindelig stavefejl.
+979c6e99 Spillerne ser det forkert stavede ord.
+7e32de5a Ret "{wrong}" til "{right}".
+b2d44d92 Dobbelt ord: "{words}"
+670755a1 Det samme ord er skrevet to gange i træk.
+f901109b Spillerne ser det dobbelte ord.
+c8f90b31 Slet det ene.
+fd88a85b Viser et billede, der ikke findes: "{name}"
+d99288f0 Intet billede med dette navn er defineret, og ingen fil i images/ passer.
+61cd07a0 Spillerne ser en pladsholder eller en fejl.
+3b215908 Tilføj billedet, eller ret navnet.
+a08bad60 Spillet har intet ID-nummer
+91a06fd9 Twine bruger et ID til at kende historier fra hinanden.
+7ff45b55 Udgiv historien igen fra Twine.
+ce8325ca Viser en rød fejlboks, når den spilles: "{name}"
+212a3e36 Da scenen faktisk blev spillet, viste spillet denne fejl: {msg}
+1cda4ad4 Spillerne ser en rød fejlboks i denne scene, og en del af den mangler.
+fe183b9c Se på de problemer, der er fundet for samme scene - de forklarer som regel årsagen.
+5a4709f8 Et script kan ikke engang læses af browseren
+417e0923 Browseren fandt en tastefejl i dette script, så intet af det kører.
+711c9902 Funktioner fra dette script (særlige kommandoer, indstillinger) mangler eller er i stykker.
+289bf8bb Kig efter en manglende parentes, et anførselstegn eller et komma på denne linje eller linjen før.
+fefc36ad Billeder eller lyde mangler under spillet
+d47a66be Disse filer blev efterspurgt, mens scenerne blev spillet, men de findes ikke.
+80b8b71b Spillerne ser ødelagte billeder eller hører ingenting i nogle scener.
+9733445f Tilføj de manglende filer, eller ret deres navne.
+4f504ebe En fejl, når spillet starter
+92243591 Browseren meldte en fejl, da spillet blev indlæst.
+2fea6477 Startskærmen eller nogle funktioner kan være i stykker.
+608156d3 Kig i spillets hovedscript efter det problem, der nævnes i meddelelsen.
+231d0f49 Stavefejl i kommando: {name}
+388bf136 Ukendt kommando: {name}
+9b686aa1 Spillet kender ikke denne kommando. Det er næsten helt sikkert en tastefejl for {near}.
+d1f769ee Spillet kender ikke denne kommando.
+6a1cce2c Ret den til {near}.
+46c692e0 Tjek stavningen af kommandoen.
+6db67833 En værdi, der aldrig sættes: {name}
+c0ceb098 Spillet bruger "{name}", men alle andre steder hedder den "{near}". Det er en tastefejl.
+8acbe929 Spillet tjekker eller viser "{name}", men intet giver den nogensinde en værdi.
+fbb2c20c Giv den en startværdi, eller ret navnet.
+33e186ef En værdi, spillet aldrig bruger: {name}
+72bf1ee8 Dette ændrer "{name}", men spillet kigger kun på "${near}". Det er en tastefejl.
+7f81aa2e "{name}" bliver ændret, men spillet kigger aldrig på den.
+fd3f859d Ændringen går tabt - for eksempel en stigning i en egenskab, der aldrig tæller.
+4857ea9f Intet går i stykker. Den kan være tilbage fra ældre versioner.
+d2118ba7 Ret "{name}" til "${near}".
+3867ee62 Intet nødvendigt, medmindre den skulle bruges.
+11e31f78 "{name}" blev aldrig oprettet. Det er sandsynligvis en tastefejl for "{near}".
+8f03aa6d "{name}" blev aldrig oprettet i starten af spillet.
+dd8d9eef Opret den i starten af spillet.
+a62731f6 passage
+f8de5ecc En side eller scene i et Twine-spil. Hver passage har et navn, og links går fra én passage til en anden.
+ea5e0445 scene
+ad88890f En side i historien. I Twine kaldes det en "passage".
+78f3a3d9 makro
+480a06b0 En spilkommando skrevet mellem << og >>, som <<if>> eller <<set>>. Spillet kører den i stedet for at vise den.
+1925f793 kommando
+410ae6be En instruktion til spillet, som "vis dette billede" eller "hvis spilleren har 5 guld". I SugarCube skrives de mellem << og >>.
+b46d0172 variabel
+2ef301de En navngivet værdi, som spillet husker, som $gold eller $mother_love. I SugarCube starter den med $.
+f32b67c7 værdi
+a746abd2 Et tal, et ord eller et ja/nej, som spillet husker, som mængden af guld.
+afad9a69 betingelse
+1dc59f8f Et tjek som "$gold gte 5" (har spilleren mindst 5 guld?). Teksten efter vises kun, når tjekket er sandt.
+5e9b60f6 tag
+1df6d68c En markering i koden. Start-tags som <<if>> starter en del, slut-tags som <</if>> afslutter den.
+4f0aa52d link
+5afc9751 Klikbar tekst, der fører spilleren til en anden scene. I Twine: [[Tekst|Scenenavn]].
+d3ecb0d8 include
+bbc9ce26 En kommando, der indsætter en anden passage i denne: <<include "Navn">>.
+ff700e02 widget
+fd5df966 En hjemmelavet kommando, der defineres én gang og genbruges i mange scener.
+9f738ce8 HTML
+16d38297 Det sprog, websider er skrevet i. Tags som <img> (billede) og <div> (boks).
+194e13da CSS
+28d26723 Stilregler: farver, størrelser og layout. En "class" forbinder et element med en stil.
+ee620923 JavaScript
+2d04472d Websidernes programmeringssprog. Spil bruger det til særlige funktioner.
+cb5346a0 script
+302bcb23 Et stykke programkode (som regel JavaScript).
+0c4da6cb Twine
+5deecf78 Det gratis program, mange tekstspil laves med. Det udgiver spillet som én .html-fil.
+9b2ab238 SugarCube
+5a15607f Det mest almindelige "story format" (motor) til Twine-spil. Det giver << >>-kommandoerne.
+5e2fb0c2 udgive
+9eb9fe5a I Twine: Build > Publish to File. Det skriver den spilbare .html-fil ud fra din historie.
+1af607c7 filsti
+3bee6183 Hvor en fil ligger, som images/hero.png (mappen "images", filen "hero.png").
+264f39ca linje
+f44c6b66 Én række tekst i filen. Teksteditorer viser linjenumre til venstre.
+3cc46d20 indrykning
+2a14602c Mellemrum i starten af en linje. Nogle motorer bruger dem til at vide, hvilke linjer der hører sammen.
+64c65374 label
+0419b517 Et navngivet sted i en Ren'Py- eller ChoiceScript-historie, som andre dele kan springe til.
+40a22a4a knot
+fba17772 En navngivet del af en Ink-historie. "-> navn" springer dertil.
+fd8c7c8e plugin
+45e375e0 Et ekstra script, der er føjet til et RPG Maker-spil.
+67db3ab6 1. Hvad er en passage (scene)?
+6cfa54e4 2. Kommandoer mellem << og >>
+fcaf062f 3. Åbne og lukke
+47887091 4. Værdier, spillet husker ($variabler)
+c3bcb980 5. "If"-tjek
+d8cc0b48 6. Billeder og lyde
+c413d282 7. Redigér sikkert
+fb4c49ae 8. Sådan læser du denne app
+a9af7910 Start her: åbn spillets .html-fil (eller en Ren'Py-, RPG Maker-, Ink- eller ChoiceScript-spilmappe). Tjekket starter af sig selv.
+de845e69 "Enkle ord" forklarer alt på almindeligt dansk. Slå det fra for at se tekniske detaljer.
+6c84c615 Udvikler eller Spiller: spillere får en kort liste over scener i stykker med få spoilere og en fejlrapport til udvikleren. Udviklere får værktøjerne til at rette.
+ba413de9 Alle fundne problemer. Rød er i stykker, gul er sandsynligvis i stykker, blå er værd at tjekke. Klik på et for at se, hvad du skal gøre.
+476c1a70 Her ser du, hvad der er galt, hvad spillerne vil opleve, og præcis hvordan du retter det - med linjen før og efter.
+e871d7cc Rettelsesguiden tager dig gennem problemerne et ad gangen og tjekker hver rettelse for dig.
+3d56d049 Spiltesten spiller hver scene i en usynlig browser og finder fejl, der kun viser sig, når man spiller.
+41da0a4f Værktøjer: sikkerhedskopi af spillet, test en linje før du ændrer den, sammenlign to versioner, skriv en fejlrapport, hold øje med ændringer.
+75d05bed Hjælp: lektioner, en ordliste, denne rundvisning og komfortindstillinger som ekstra stor tekst.
+52c5f193 Kodesundhedsscoren: 100% fremragende, 90% rigtig godt, 80% godt, 70% fint.
+bcecc3cb Et Twine-spil består af passager. Hver passage er én scene: noget tekst, måske et billede, og links til andre passager.
+b1f433c6 Links ser sådan ud. Delen før | er det, spilleren ser, delen efter | er navnet på den passage, der åbnes:
+33dd3c05 Navnet skal passe præcis, også store bogstaver og mellemrum. "kitchen" og "Kitchen" er forskellige passager.
+14a03cdc SugarCube-spil bruger kommandoer skrevet mellem << og >>. Spillet kører dem i stedet for at vise dem.
+fffc20ea Altid præcis to < i starten og to > i slutningen. Én for meget eller for lidt ødelægger kommandoen:
+1e192fbd Nogle kommandoer er som parenteser: de åbner en del og skal lukkes. <<if>> lukkes med <</if>>.
+fd08a19b Hvis den lukkende <</if>> mangler, viser spillet en rød fejlboks. Det samme, hvis der er én for meget.
+b25bf333 Et ord, der starter med $, er en værdi, spillet husker mellem scener, som $gold eller $mother_love.
+d4d0415d Store bogstaver tæller: $Gold og $gold er to forskellige værdier. En tastefejl skaber en ny, tom værdi, så ændringen går tabt.
+340aacf8 For at ændre en værdi bruger du "to", "+=" eller "-=". Et almindeligt "-" regner, men ændrer intet:
+87dc8b35 Inde i en "if" sammenligner du med "is", "isnot", "gte" (mindst), "lte" (højst). Et enkelt "=" er forkert der:
+add346a2 "and" tjekkes før "or". Brug parenteser til at gruppere, ellers kan tjekket blive sandt på det forkerte tidspunkt:
+f07da221 Billeder vises med et <img>-tag. Stien siger, hvor filen ligger, regnet fra spillets mappe:
+9e333b42 Brug / mellem mapper. \ virker kun på Windows. Store bogstaver skal passe med det rigtige filnavn på telefoner, Mac og hjemmesider.
+9d1c8406 Hvert anførselstegn ", der åbner, skal også lukke, ellers vises billedet ikke.
+6f7151f5 Tag en sikkerhedskopi, før du ændrer noget (Værktøjer > Tag en sikkerhedskopi af spilfilen).
+73b5381e Hvis spillet er lavet i Twine, så lav ændringerne i Twine og udgiv igen. Ændringer lavet direkte i .html-filen går tabt, næste gang spillet udgives fra Twine.
+0dab15d3 Hvis du kun har .html-filen (ingen Twine-historie), så redigér den med en teksteditor som Notepad++. Inde i .html-filen skrives < og > som &lt; og &gt; - appen viser den præcise tekst, du skal kopiere.
+a877adb7 Efter hver ændring: gem, genindlæs spillet i browseren, og tryk på "Jeg har rettet det - tjek" i denne app.
+e6cfd88c Rød = i stykker: spillerne vil støde på det. Gul = sandsynligvis i stykker. Blå = værd at tjekke, ofte i orden.
+3c06ac34 Start med listen "Start her" i oversigten, eller brug Rettelsesguiden: den fører dig gennem ét problem ad gangen.
+f5a4fb88 "Markér som tilsigtet" skjuler et fund, du har tjekket og vil beholde. Det forbliver skjult for dette spil.
+f3979521 Omkring 1 minut
+d621d05d 5-15 minutter
+bea680e1 Kræver udvikleren (en beslutning om historie eller design)
+0c6c4102 Valgfrit
+e53abb3c Let at rette
+c4f93c0c Kræver lidt omhu
+a22663d7 Kræver udvikleren
+230659f7 Sandsynligvis ja, men kig hurtigt på det.
+6d9d36d5 Nej. Spillerne vil støde på dette.
+ddad7bf2 Kun hvis du har tjekket logikken, og den gør det, du vil. Markér det så som tilsigtet.
+6cf97a3f Ja, hvis scenen er gammel eller ikke er ment til at blive spillet.
+d54dbf6e Ja. Intet går i stykker.
+3b411bc1 Ja, hvis spillet kun spilles på Windows.
+667e089a Ja, indtil videre. Det kan gå i stykker i en fremtidig opdatering af motoren.
+ca7eea8c Ja, men spillerne vil se tastefejlen.
+6225e68e Kun hvis scenen med vilje er ufærdig.
+47ecb09c Ja. Billederne vises stadig.
+178ca96e Ja. Intet synligt ændrer sig.
+e2fca6c0 Som regel ja. Det er ofte tilbage fra ældre versioner.
+bcc248b9 Hellere ikke. Det er meget sandsynligt en rigtig fejl.
+557f2555 ikke
+cffa50a3 og
+1758356d eller
+6981b0db Ingen scene linker til "{name}" på en måde, scanneren kan følge. Spillerne ser den måske aldrig, eller den nås gennem kode, der bygger scenenavnet ud fra variabler.
+0f56183f Spillerne når "{name}" fra {n} sted(er):
+02e974ba Dette er spillets første scene.
+5ffe533b sand
+7cb6efb9 falsk
+1ed06825 et link
+3d22ef57 en include
+ccdfd8c1 et automatisk spring
+3f80e4d1 Fra "{src}" ({how}), når: {cond}
+084fcdcf Fra "{src}" ({how}), altid.
+8adbc573 …og flere.
+1aafbf54 Fremragende
+bd846adf Rigtig godt
+61dedcf0 Godt
+226d7ec9 Fint
+eafabce9 Kræver arbejde
+4e0fa437 Dårligt
+75fb2b10 Læser filen
+ac133acf Leder efter historiedata
+456caef0 Samler scripts og stilarter
+fc404c89 Tjekker passager og links
+6a4d36f9 Tjekker makro-tags
+546de9d0 Tjekker betingelser og kodelogik
+c338107e Tjekker variabler
+5730c93f Tjekker HTML-tags
+ea4c65ed Tjekker CSS-klasser
+d874e65d Tjekker billeder, lyd, video og filer
+6517d389 Tjekker tekst (tastefejl, pladsholdere)
+87beeee4 Tjekker JavaScript
+7b7efd8b Tjekker regler for story format
+25f3b361 Læser {label}-spillet
+a28b6c50 Tjekker filer for skader
+5aedb280 Starter den usynlige browser
+f5a5071d Indlæser spillet
+8466e7c7 Tjekker scripts med browserens JavaScript-motor
+bf197daa Spiller scener ({mode}): {k} af {n}
+f70cf464 Spiltest færdig
+427c9fd7 I scener ingen kan nå
+9b9f5c3d Spillerne ser aldrig dette: det er i en scene ingen kan nå. Kan blive stående.
+e58020da Ingen kan nå "{name}": linket er slået fra
+2795ab1b Det eneste link til scenen er i "{where}" (linje {line}), inde i en skjult note /* ... */. Alt mellem /* og */ er slået fra.
+4ed22111 Spillerne ser aldrig denne scene.
+30fda4f3 Hvis spillerne skal se den, så slet /* og */ omkring linket. Hvis du slog den fra med vilje, så lad den være.
+7a9ce2ca De eneste links til scenen er i andre scener ingen kan nå.
+3aafeed1 Hvis spillerne skal se den, så tilføj et link fra en scene der kan nås. Hvis den er gammel, kan du ignorere den.
+0c4d1909 {n} filer i {k} mapper bliver aldrig brugt
+0efdb085 {n} værdier spillet aldrig bruger
+425a6a2a Disse værdier ændres, men spillet kigger aldrig på dem.
+849cdd9b Intet går i stykker. De kan være rester fra ældre versioner.
+a82d56f5 En sideboks er ikke lukket: <{tag}> på linje {line}
+5c73814e <{tag}> på linje {line} bliver aldrig lukket med </{tag}>.
+b587a89d Tilføj </{tag}> der hvor boksen skal slutte.
+f1a6f13d Et lukketag for meget: </{tag}> på linje {line}
+d887494b </{tag}> på linje {line} lukker en boks, der aldrig blev åbnet.
+f3d6de5f Slet det ekstra </{tag}>, eller tilføj det manglende <{tag}>.
+94b62097 Stavning: "{wrong}" skal være "{a}" eller "{b}"
+45919c5c En almindelig stavefejl. Den kan betyde to forskellige ord.
+d3631b3f Læs sætningen og ret "{wrong}" til "{a}" eller til "{b}", alt efter hvad der passer.
+4f2e0c01 Intet nødvendigt, medmindre en af dem skulle bruges.
+37a88891 Som regel intet: browseren lukker den selv ved slutningen af scenen.
+9c393632 Ja. Det er i en scene ingen kan nå, så spillerne ser det aldrig. Ret det kun, hvis du senere tilføjer et link til scenen.

@@ -1,0 +1,12 @@
+# made by build.bat / make_installer.bat
+build/
+dist/
+installer/
+.venv/
+*.spec
+__pycache__/
+*.pyc
+selftest-report.txt
+# test snapshots contain scene names and paths from other people's games
+tests/snapshots/
+forum post (F95zone).txt

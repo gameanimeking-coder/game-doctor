@@ -1,0 +1,836 @@
+#name Bahasa Indonesia
+e77b83c2 Uji main selesai: {n} adegan dimainkan dengan {m} cara, {k} masalah ditemukan saat bermain.
+e9dd5680 Disalin ke papan klip
+e00ac23f Jenis
+764b4aa3 Seberapa parah
+33446003 Adegan
+44819483 Tidak ada
+36c4a06f Memindai…
+ecab72e7 Folder game / seluruh game
+95263aa8 Baris di file game (disorot)
+adac6937 Kode
+4dc2eddf Ditemukan dengan {app}. {n} masalah.
+6b21fb79 Tentang
+b8bb1461 Bagaimana pemain sampai ke adegan ini?
+d07d7afa Bagaimana pemain sampai ke "{name}"?
+fa893d87 Bersih
+70440046 Catatan
+1430f976 Peringatan
+805e86a8 Galat
+dcad8ee5 Menyiapkan tampilan kode…
+7f2f6a15 Galat
+e9c45563 Peringatan
+2c924e30 Catatan
+f4808ecd Buka game…
+f6ab55dd Pindai lagi
+dd3fa3ce ▶ Uji main
+5e4797ea Panduan perbaikan
+4fa8cc86 Alat
+c47ae153 Bantuan
+9d454f7c Belum ada game yang dibuka
+7869cc5c Saya mengedit di Twine
+db8da328 Saya mengedit file .html (Notepad++ dll.)
+20c7c552 Siap
+26a93eac Buka folder game (Ren'Py, RPG Maker, Ink, ChoiceScript)…
+775b3ab8 Folder gambar dan suara…
+cd9a3d88 Cadangkan file game
+2505d3da Uji satu baris sebelum mengubahnya…
+3536c70a Bandingkan dengan versi lain…
+080460a5 Tulis laporan bug untuk pengembang…
+0cbf16ea Ekspor laporan…
+490c3a52 Pantau file game dan periksa lagi saat disimpan
+09e02e95 Tampilkan masalah yang ditandai disengaja
+80f65544 Editor teks…
+3a4dad84 Ikuti tur
+f996200a Pelajaran (F1)
+e5aaa5b5 Daftar istilah
+320067c6 Teks ekstra besar
+07471db5 Warna ramah buta warna
+c2cebede Semua jenis
+1baa06b4 Masalah
+ced091e8 Adegan / tempat
+ea967600 Baris
+99a42316 Perbaikan
+3cd62e5f Buka di editor teks saya
+a4f34926 Salin baris yang sudah diperbaiki
+0973fd22 Salin teks untuk dicari
+28a1dc64 Sudah saya perbaiki - periksa
+1a256c63 Beri tahu pengembang
+b491a51b Tampilkan di tampilan kode
+463e5e78 Tandai sebagai disengaja
+562107b8 Bacakan
+e42bc527 Salin detail
+d7c5a824 Tampilkan persis seperti tersimpan di file (kode &lt;)
+2314cd9a Buka game
+7a8e0cf0 Pilih folder game
+ff10f24c Folder berisi gambar, suara, dan video game
+38e9a3e9 Game: {path}     Folder: {folder}
+24fc8907 Berhenti membaca
+7335beba Tidak lagi ditandai disengaja
+24fec833 Ditandai sebagai disengaja - disembunyikan dari daftar (Alat > Tampilkan masalah yang ditandai disengaja)
+615c9a3f {fmt} · {units} bagian · {files} file di folder · {e} rusak, {w} mungkin rusak, {i} perlu dicek · {s} dtk
+f229a698 Kesehatan kode: {n}% · {label}
+d8d62e38 Pemeriksaan selesai
+dd3a39d8 Kesehatan kode
+c6643b25 Skala: 100% luar biasa · 90% sangat baik · 80% baik · 70% cukup · di bawah 70% perlu perbaikan
+7e0056d2 Dihitung dari berapa banyak adegan yang bermasalah dan seberapa serius masalahnya.
+07c80477 Menurut jenis
+45b733c9 Klik masalah di daftar untuk melihat detailnya.
+525f61b6 Di mana
+4090e818 Cara memperbaiki
+0b975974 Buka ceritamu di Twine lalu buka passage "{name}".
+905dc77d Nama yang sama juga dipakai di {n} baris lain: {lines}. Ubah juga di sana.
+3cfafb7c Terbitkan ulang ceritanya (Build > Publish to File), lalu muat ulang game untuk memeriksa.
+64cb91c6 Di mana: {where}
+4383fcfd Apa yang salah: {text}
+07bddb04 Cara memperbaiki: {text}
+cf36743b Sekarang: {text}
+0cacfdc2 Ubah menjadi: {text}
+70fbdd39 Baris perbaikan disalin. Di Twine, pilih baris lama di passage "{name}" lalu tempel.
+60eafc99 Baris perbaikan disalin. Di editor, pilih baris {n} lalu tempel menimpanya.
+67a9f511 Teks pencarian disalin. Di editor, tekan Ctrl+F lalu tempel.
+67c1b9a0 File belum berubah sejak pemeriksaan terakhir. Apakah sudah disimpan?
+2693cf86 Bandingkan lagi barismu dengan baris "Ubah menjadi".
+1b930787 Buka game dulu.
+9dbf0a77 Cadangan disimpan: {path}
+88e09b05 (teksmu)
+e835a0e1 Laporan bug untuk {game}
+338c5072 Teknis: {text}
+fc5e62a8 File pengaturan: {path}
+0f83a323 Memantau file game. Setiap kali kamu menyimpannya, file akan diperiksa lagi.
+24b5689b Berhenti memantau file game.
+6bbf59c5 Menghentikan uji main…
+c5726162 Uji main membutuhkan Microsoft Edge atau Google Chrome, dan keduanya tidak ditemukan.
+efe69072 Game berubah selama uji main. Jalankan lagi.
+4e1a8e3c Tidak ada masalah
+59cd52ee Perlu dicek
+80c66d73 Mungkin rusak
+3ad465ce Rusak
+8ea8e60f Baris {n}: tidak ada masalah
+421fe500 klik dua kali untuk detail
+a6e7e8d6 "{text}" tidak ditemukan
+fc748144 Ekspor {n} masalah yang tampil di daftar
+c8ca2957 Laporan disimpan: {path}
+09188221 Seluruh game
+5a7ee5ac Laporan bug
+203dee52 Detail disimpan ke {path}
+5abfea7d Kata sederhana: mati
+de314fa0 Tingkat keparahan
+fc55cc19 Passage / tempat
+3deb7456 Tipe
+61790945 ■ Hentikan uji main
+e23fd7cf Batalkan tanda disengaja
+5ffa6ce4 Memeriksa kesalahan di game dan memberi tahu dengan kata sederhana apa yang salah dan cara memperbaikinya. Bisa dipakai untuk game Twine (SugarCube, Harlowe, Chapbook, Snowman), game HTML lain, Ren'Py, RPG Maker MV/MZ, Ink, dan ChoiceScript.
+e13e18f3 Cara memakai
+c3abe9f5 Aman dipakai
+4d688496 Program ini hanya membaca game-mu. Program ini tidak pernah mengubahnya. Gunakan Alat > Cadangkan file game sebelum mengedit apa pun.
+90c93523 Pintasan
+8e990034 Ctrl+O buka · F5 pindai lagi · Ctrl+F cari · F3 cari berikutnya · Ctrl+E ekspor · F1 pelajaran · Ctrl + / Ctrl − / Ctrl+0 atau Ctrl+roda tetikus untuk ubah ukuran
+21e5904b {n} referensi file diperiksa
+052df047 Mulai dari sini - perbaikan paling penting
+eff36495 Atau klik "Panduan perbaikan" untuk mengerjakannya satu per satu.
+23bd8fe4 Adegan "{name}"
+8cb67e05 Passage "{name}"
+12b1a199 baris {n} pada passage
+280d0541 baris {n} di {file}
+a684f161 Kamu menandai ini sebagai disengaja, jadi tidak dihitung.
+6aeb39ef Apa yang salah
+c1bcc130 Apa yang salah
+ebcf7d18 Yang akan dilihat pemain
+e7f32d0f Klik "Buka di editor teks saya". Editor akan membuka {file} di baris {n}.
+73c8627d Hapus baris itu (tampil di bawah pada "Sekarang").
+b44b2225 Ubah seperti yang tampil di bawah pada "Ubah menjadi". "Salin baris yang sudah diperbaiki" menyalin seluruh baris baru untuk ditempel menimpa yang lama.
+d640e11b Lihat penjelasan di atas.
+33d1a502 Simpan file, muat ulang game, lalu klik "Sudah saya perbaiki - periksa".
+fd3e0dfe Dibuat dengan Twine? Kalau begitu perbaiki di Twine (ubah "Saya mengedit file .html" di atas menjadi "Saya mengedit di Twine"). Menerbitkan dari Twine akan menimpa perubahan yang dibuat langsung di file .html.
+e3b82040 Sekarang
+b9b6aac4 Ubah menjadi
+3895c256 Boleh saya abaikan?
+189da0ef Yang akan dilihat pemain: {text}
+7d949b29 Kode: {text}
+80411ece Belum diperbaiki - masalahnya masih ada
+71a91179 tekan Ctrl+G lalu ketik {n} untuk melompat ke baris itu
+84d3bdef Dibuka di {name}
+7bf2bdbd Adegan: {name}
+f8e71156 Baris {n} di {file}
+e9331864 Yang terjadi: {text}
+16fcd5a1 (masih ada {n} karakter lagi di baris ini)
+6dcc62dd Laporan disimpan. Buka sekarang?
+02fbc53c Masalah (kata sederhana)
+2c3cafa4 File
+1bea2fb0 Cara memperbaiki
+fdccd352 Ada yang salah di dalam aplikasi:
+b7152342 Ukuran
+8e6b86dc Masalah
+8f0d8d83 Kelompokkan menurut
+bce06414 Cari
+74c14ca3 Tampilan kode
+a3d77701 ◀ Masalah sebelumnya
+3a289dc9 Masalah berikutnya ▶
+2e0b45f2 Pergi
+ececaefe Cari berikutnya
+df251b06 Cari
+7e08ebec Pengembang
+e53407cf Pemain
+0406a446 Kata sederhana
+2edb004b Saya mengedit file .html
+b45e0101 Memantau perubahan
+398ed329 Game
+6f80238e Game HTML
+f7857dcc Semua file
+6798c955 Memindai, mohon tunggu…
+be4bd50c Kesehatan kode: {n}%
+16dd1f3a {n} ditandai disengaja
+901b56b2 Tidak ada yang ditampilkan
+ea64a687 4. Bantuan > Pelajaran menjelaskan dasar-dasarnya dalam beberapa menit. Bantuan > Ikuti tur akan mengajakmu berkeliling.
+570f71b7 Adegan yang rusak
+08f7f24d Simpan permainanmu sebelum masuk ke adegan ini, supaya bisa kembali kalau ada yang salah:
+29e8d770 Gunakan "Beri tahu pengembang" pada sebuah masalah, atau Alat > Tulis laporan bug, untuk mengirim detailnya.
+d19ceca5 Tips
+251eb9e2 Simpan permainanmu sebelum sampai ke adegan ini, supaya bisa kembali kalau adegannya rusak.
+d782b266 Cari tempatnya: gunakan "Find and replace" di Twine (atau lihat dengan teliti) untuk teks ini:
+eb92d56f Buka proyek di RPG Maker lalu pergi ke: {where}
+7e7c7eb1 (hapus baris ini)
+d40baaa7 ✔ Beres! Masalahnya hilang. Kesehatan kode sekarang {n}%.
+fce98782 Pilih editor lain lewat Alat > Editor teks…
+55d0a707 Cadangan disimpan:
+802cfe54 Tidak bisa membuat cadangan:
+a01ce386 Saran perbaikan (di Twine):
+d9cb995e Terjemahan selain bahasa Inggris dibuat oleh AI dan mungkin mengandung kesalahan. Detail teknis tetap dalam bahasa Inggris, seperti mesin game dan manualnya.
+987dd9b8 Buka game untuk melihat kodenya di sini.
+f4fd7854 {name} ({n} baris)
+db3b1ca2 Laporan halaman web
+1b5f6570 Lembar kerja (CSV)
+ee3d21a8 File teks
+934a1886 Tidak bisa menyimpan laporan:
+29211387 Tema sistem
+9e5ba0f0 Tema terang
+d51c5960 Tema gelap
+71df97be File disimpan - diperiksa lagi: {fixed} diperbaiki, {new} baru
+12d21609 (seluruh game)
+4671f2fd {n} bagian
+af4e5ffa {n} masalah di grup ini. Klik salah satu untuk melihat detailnya.
+e065ed24 Kalau barisnya bergeser, tekan Ctrl+F di editor dan cari:
+d6cd9bbc Tidak bisa memindai:
+e8b6a7a1 (baris {lines})
+2a87805d Tidak bisa menjalankan {name}:
+50803478 Cara memperbaiki: {text}
+cbbf7064 Versi {v}. Menemukan masalah di game dan menjelaskan cara memperbaikinya. Hanya membaca file dan tidak pernah mengubah game-mu.
+7e16f294 Kesehatan kode: {n}% ({label})
+13b7bfca Sedang bekerja…
+944d285f Pemindaian gagal
+5117eb3e Tidak ada masalah yang cocok dengan filter saat ini.
+84a26cd3 Tidak ada masalah. Kerja bagus!
+e961739d 3. Bingung mulai dari mana? Gunakan Panduan perbaikan - panduan ini membahas masalah satu per satu dan memeriksa perbaikanmu.
+dfa2b6e9 Baris {n}:
+27a41ea2 (hapus)
+966d414d baris {n}
+a37a62b5 2. Klik masalah di daftar. Di bawahnya kamu akan melihat apa yang salah, apa yang akan dilihat pemain, dan cara tepat memperbaikinya.
+47faaf63 Uji main dihentikan
+9de8b1a5 1. Klik "Buka game…" dan pilih file .html game (atau gunakan Alat untuk folder game). Pemeriksaan mulai dengan sendirinya.
+836bf385 Uji main tidak bisa dijalankan:
+3dd51c5a Pilih editor teksmu
+1f7611ea Editor teks diatur ke {name}
+43320d49 Uji satu baris sebelum mengubahnya
+18e673bc Tidak ada yang diubah di game-mu. Ini hanya memeriksa teks yang kamu ketik di sini.
+8ecc7800 Tulis laporan bug untuk pengembang
+2e2b95ec Bandingkan dua versi
+ccdb5389 Pilih versi lain dari game lalu klik Bandingkan. Keduanya hanya dibaca, tidak pernah diubah.
+cabad4eb Memindai versi lain…
+cb9ce97b Pelajaran
+9255b9a1 Pilih program editor teks
+67094e72 Program itu tidak ditemukan. Gunakan "Telusuri…" untuk memilihnya.
+21461571 ◀ Kembali
+2d8a1625 Lewati ▶
+7c5d9f51 {done} dari {total} diperbaiki
+cb70c72b Masalah {n} dari {total}
+820d6004 Memeriksa…
+e461d5d0 {n} masalah ditemukan:
+9580fcbc Teks biasa
+26a49ee7 Discord / Reddit
+1f82bc1e Forum (BBCode)
+616ce66d Rusak + mungkin rusak
+34d5d395 Hanya masalah yang dipilih
+ced1fd2f Simpan laporan bug
+ec9135a3 Laporan bug disimpan: {path}
+8d105cf4 Bandingkan
+a1cd6b54 Pilih versi lain
+1f5bf765 Pilih versi lain dulu.
+ad916050 Membandingkan…
+f4f29947 Kesehatan kode: {a}% → {b}%
+a81eb289 Diperbaiki di versi yang lebih baru ({n})
+53da970f Masalah baru di versi yang lebih baru ({n})
+2be41ba6 Masih ada ({n})
+9ec4aa53 Kata-kata yang dipakai di aplikasi ini
+ce12714d Tidak ada yang perlu diperbaiki
+d231fca7 Tidak ada lagi masalah yang perlu diperbaiki. Hebat!
+76c1c7de Masalah ini sudah hilang - sudah diperbaiki atau filenya berubah. Klik Lewati untuk lanjut.
+55855f77 Uji satu baris bisa dipakai untuk game Twine (SugarCube). Buka game seperti itu dulu.
+bbfa773e Tutup
+af74f7c5 Salin
+571a03ba Program mana yang membuka file game?
+113fa56b Editor teks ini ditemukan di komputer ini:
+d4b86cfd Program lain…
+9d68007b Program
+c1b20f52 Telusuri…
+6bf5da9c Opsi
+4ee6279e {file} diganti dengan file game dan {line} dengan nomor baris. Notepad++ memakai: -n{line} "{file}"
+77dfd213 Batal
+efc007a3 Simpan
+ab14d0a7 Program
+4abacc60 ✔ Beres! Kerja bagus. Ini yang berikutnya.
+1ed684b1 Tempel atau ketik baris (atau seluruh passage) yang ingin kamu pakai:
+45f9116a Ini satu passage utuh (periksa juga apakah setiap tag sudah ditutup)
+4b5e84be Periksa
+6a17f3f6 Tidak ada masalah di teks ini.
+44b39131 Saran:
+4020c08c Gaya:
+2f32f781 Sertakan:
+4705cad6 Sertakan cara memperbaiki
+d9057148 Simpan sebagai…
+83c52802 Versi lain:
+c3c1e96d Versi lain itu:
+6fa5fbbc lebih lama
+1d47386a lebih baru
+78cee4b8 Langkah {n} dari {total}
+57bc79e3 Lewati tur
+bc981983 Berikutnya
+e9b450d1 Selesai
+682c160f Game saat ini:
+74c063af Salah:
+3a82310a Benar:
+c7c15bca Ini akan bermasalah bagi pemain.
+8df34ecb Ini sangat mungkin sebuah kesalahan.
+1d894da2 Tidak mendesak. Mungkin tidak apa-apa, tapi coba lihat.
+58da2ccb Tautan ke adegan yang tidak ada
+78d3da9d Gambar dan suara yang hilang
+59327131 Perintah game yang rusak
+dfe69b5d Perintah game yang salah ketik
+140d954e Pengecekan "jika" yang salah
+169a1b52 Perintah yang tidak berbuat apa-apa atau rusak
+c3f4070a Atribut dan nilai yang salah ketik
+ee27480a Blok yang bisa dipakai ulang
+9c0fe2ed Kode tata letak halaman
+2c0f0a6d Gaya (warna dan tampilan)
+f77fd1fd Adegan
+45e35cfc Adegan yang tidak bisa dicapai
+a2406e53 File yang tidak pernah dipakai game
+68320599 Teks yang belum selesai
+8a21b1ee Ejaan
+169b486d Salah ketik
+a1d181bd Hanya jalan di Windows
+3e9d9ae4 File sangat besar
+50a12988 File rusak
+aab2b305 Perintah gaya lama
+3f55c07b Kode skrip
+cc0718f5 Pengaturan game
+c7ee483a Pemindai
+c916a1ad Galat saat bermain
+0e66b49d gambar
+5e2e97c3 suara
+ffbaf58f video
+4642576d font
+767013ce halaman
+971c419d file
+8c657028 adegan "{name}"
+84db7a65 game
+27260418 Menuju adegan yang tidak ada: "{name}"
+65a1b892 Di {where}, sebuah tautan atau perintah mencoba membuka adegan bernama "{name}". Tidak ada adegan di game yang namanya persis seperti itu.
+eddc288b Saat pemain mengekliknya (atau game sampai ke sana), mereka melihat pesan galat atau halaman kosong, bukan adegannya.
+6690f7df Samakan namanya persis dengan adegan yang ada. Huruf besar dan spasi berpengaruh.
+ee186081 Menuju bagian cerita yang tidak ada: "{name}"
+adcab89d Cerita mencoba berlanjut di "{name}", tapi tidak ada apa pun di game dengan nama itu.
+c68c7536 Game berhenti dengan galat di titik ini (atau tidak bisa dimulai sama sekali).
+262dea9c Samakan namanya persis dengan bagian cerita yang ada.
+8a2045c6 Menuju bab yang tidak ada: "{name}"
+6b99d3d7 Cerita mencoba membuka "{name}", tapi bab atau titik itu tidak ada.
+54721a92 Game berhenti dengan galat di titik ini.
+bfe449ab Perbaiki namanya agar cocok dengan bab yang ada.
+8569b71c Membuka layar yang tidak ada: "{name}"
+ed323960 Game mencoba menampilkan layar bernama "{name}", tapi tidak ada layar dengan nama itu.
+31aaf0f7 Game berhenti dengan galat di sini.
+ecedecaf Perbaiki namanya agar cocok dengan layar yang ada.
+1c82d0d0 Sebuah event mengirim pemain ke tempat yang tidak ada
+f7bb6caa Sebuah event memindahkan pemain ke peta, atau menjalankan common event, yang tidak ada di game.
+11068616 Game macet atau crash saat event ini berjalan.
+17c8c384 Pilih peta atau common event yang ada di perintah event tersebut.
+924f14ec Tautan yang tidak mengarah ke mana pun
+ac25c348 Sebuah tautan di {where} tidak menyebut adegan mana yang harus dibuka.
+cc208a80 Mengekliknya memunculkan galat.
+81510156 Tulis nama adegan yang harus dibuka tautan itu.
+a620e5a7 Sebuah tautan tidak punya penutup
+75319c60 Sebuah tautan diawali [[ tapi tidak pernah diakhiri ]].
+d94d2b45 Teks sesudahnya tercampur ke dalam tautan dan adegan tampak rusak.
+da97338b Tambahkan ]] di akhir tautan.
+de752d36 Tidak ada yang bisa mencapai "{name}"
+ad06e184 Tidak ada apa pun di game yang mengarah ke bagian cerita ini.
+49f72405 Pemain tidak pernah melihatnya. Tidak berbahaya, kecuali memang seharusnya bisa dimainkan.
+41e81f9d Kalau pemain harus melihatnya, tambahkan tautan ke sana dari adegan lain. Kalau sudah lama, boleh diabaikan.
+12017de3 Adegan "{name}" kosong
+e1c78333 Adegan ini tidak punya teks atau isi.
+eb036a1b Pemain yang sampai di sini melihat halaman kosong.
+95468775 Tulis adegannya, atau hapus tautan yang menuju ke sana.
+65f5f00d Dua bagian cerita punya nama yang sama
+3a661399 Lebih dari satu adegan atau label memakai nama "{name}".
+14b99f6a Hanya salah satunya yang bisa tampil, atau game menolak dimulai.
+5017f902 Beri masing-masing nama sendiri.
+8ee54eec Game tidak punya adegan awal
+e4b1267b Game tidak tahu harus mulai dari mana.
+67fece68 Game mungkin tidak bisa dimulai sama sekali.
+6f3c3583 Di Twine, tandai adegan pertama sebagai awal.
+891a7ccc Tautan lompat tidak mengarah ke mana pun
+723d0b6c Sebuah tautan menunjuk ke tempat di halaman yang tidak ada.
+9d2a3ab1 Mengekliknya tidak terjadi apa-apa.
+a17d6d9d Perbaiki nama tempatnya, atau hapus tautannya.
+f7e0927c {kind} hilang: {file}
+471ab6b6 Game ingin memakai {kind} "{path}", tapi file itu tidak ada di folder game.
+215d84f2 Pemain melihat gambar rusak atau ruang kosong, atau tidak mendengar apa pun.
+95495e08 Taruh file di tempat itu, atau ubah nama di file game ke file yang benar-benar ada.
+4e187285 Nama file salah huruf besar/kecilnya: {file}
+10dd7eb2 Filenya ada, tapi game menulis namanya dengan huruf besar/kecil yang berbeda.
+445b1f51 Jalan di Windows. Di ponsel, Mac, Linux, atau situs web, gambar atau suaranya akan hilang.
+bcc2cd24 Ubah nama di file game agar huruf besar/kecilnya cocok dengan file aslinya.
+fc7f8ac2 Sebuah gambar menunjuk ke komputer milik pengembang
+bf1eaea6 Lokasi file diawali huruf drive seperti "D:\". Folder itu hanya ada di komputer yang membuat game.
+8e9a7d52 Pemain tidak pernah melihat gambar ini.
+e5baac7c Ubah ke lokasi di dalam folder game, misalnya images/characters/name.jpg.
+006a8fb9 Lokasi file memakai \ alih-alih /
+d6cb43a9 Game menulis jalur folder dengan garis miring terbalik (\).
+42ad75cd Aman di Windows. Di ponsel, Mac, Linux, atau situs web, gambar dan suara tidak akan termuat.
+02bf9e76 Hanya penting kalau game harus jalan di luar Windows: ganti \ dengan / di jalur gambar.
+0fa2cd7a {n} file di "{folder}" tidak pernah dipakai
+1b78ff55 File-file ini ada di folder game, tapi game tidak pernah memakainya.
+55acf4db Tidak ada yang rusak. File ini hanya membuat unduhan lebih besar.
+aa1a0c6f Hapus kalau kamu yakin tidak dibutuhkan. (Beberapa mungkin dipilih game dengan cara cerdik yang tidak terlihat oleh pemindai.)
+cb4cc629 File kosong
+4642643c File ini kosong (0 byte).
+24ec314d File ini tidak akan tampil atau berbunyi.
+6cd06e6e Ganti dengan salinan file yang berfungsi.
+07046633 File rusak (terpotong): {file}
+932dbf75 Bagian akhir file ini hilang, biasanya karena unduhan, penyalinan, atau ekstraksi tidak selesai.
+feda3672 Gambar hanya tampil sebagian atau tidak sama sekali, atau suara/video berhenti lebih awal.
+968dc7a4 Salin atau unduh lagi file ini dari file game aslinya.
+6081a951 Sebenarnya bukan gambar atau suara: {file}
+dc397b7a Nama filenya benar, tapi isinya halaman web (sering kali halaman galat dari situs unduhan).
+7f495908 Pemain melihat gambar rusak atau tidak mendengar apa pun.
+eee27da5 Unduh lagi file aslinya dan ganti yang ini.
+2a1c1b71 File yang mungkin rusak: {file}
+4c30367e Awal file ini tidak mirip format gambar, suara, atau video yang dikenal.
+d3b9cea3 Kemungkinan tidak akan tampil atau berbunyi.
+0ab570a5 Buka dengan penampil gambar atau pemutar media. Ganti kalau tidak bisa dibuka.
+f68470e5 Beberapa file punya ekstensi yang salah (.png, .jpg ...)
+d608da1e File-file ini berisi format yang berbeda dari namanya, misalnya gambar JPEG yang dinamai .png.
+2e39b508 Peramban biasanya tetap menampilkannya. Beberapa ponsel dan program mungkin tidak.
+097a3703 Opsional: konversi atau ganti namanya agar sesuai format aslinya.
+283d2070 Beberapa file sangat besar
+c7fa15ff Gambar atau video ini sangat besar.
+ae5369ab File ini lambat dimuat, terutama di ponsel.
+e125a92c Opsional: perkecil dengan alat pengolah gambar.
+385f4329 Sebuah file game hilang: {name}
+2e700532 Game membutuhkan file yang tidak ada.
+99467808 Game menampilkan galat saat dimulai atau saat sampai di bagian ini.
+b3496ea7 Kembalikan file yang hilang, atau hapus rujukan ke file itu.
+75e6334a Sebuah file data game rusak
+db02e969 File ini tidak bisa dibaca dengan benar.
+79b96faf Game tidak bisa dimulai atau crash.
+7ebbbeec Pulihkan file dari cadangan atau dari game aslinya.
+d399fac1 Perintah "{name}" tidak pernah ditutup
+e6c66d5b Beberapa perintah game butuh penutup yang sesuai. Yang ini tidak punya.
+0b1cb09f Game menampilkan kotak galat merah di adegan ini, dan sebagian adegan bisa hilang.
+afdabc18 Tambahkan penutup yang hilang (misalnya <</{name}>>) di tempat bagian ini seharusnya berakhir.
+744245d7 Tag penutup berlebih <</{name}>>
+adb1bea4 Ada tag penutup yang tidak menutup apa pun.
+b39fd74f Game menampilkan kotak galat merah di adegan ini.
+a53d4f4e Hapus tag penutup berlebih ini.
+fa8c8072 "{name}" ada di tempat yang salah
+9009044d <<{name}>> harus berada di dalam blok <<if>>. Di sini tidak, biasanya karena tag penutup di atasnya ada di tempat yang salah.
+1e9acaea Game menampilkan kotak galat merah.
+1d2d751d Periksa baris tepat di atasnya dan pindahkan tag penutup ke tempat yang benar.
+bfaae414 Tag penutup kurang satu ">": <</{name}>
+a280c34f Tag penutup ditulis dengan satu ">" padahal butuh dua.
+71be19aa Game tidak mengenali tag penutupnya. Muncul kotak galat merah dan adegan bisa tampak salah.
+a3c69d1f Tambahkan satu ">" agar berakhir dengan ">>".
+413ace46 Tanda ">" berlebih
+4e791f5a Ada satu ">" kelebihan setelah sebuah tag.
+4ecd446f Pemain melihat ">" nyasar di layar.
+c1c069b2 Hapus ">" yang berlebih.
+cacfbdbb Tanda "<" berlebih
+fe9088b6 Ada satu "<" kelebihan sebelum sebuah perintah.
+0c7a0bb7 Pemain melihat "<" nyasar di layar.
+87807bf8 Hapus "<" yang berlebih.
+b0d2d4e4 Perintah setengah jadi "<<"
+012a6c88 Ada "<<" yang tidak diikuti apa pun.
+fd941db0 Perintah sesudahnya rusak dan game bisa menampilkan galat.
+73f8070a Hapus "<<" yang nyasar.
+7037d71a Sebuah perintah tidak punya ">>"
+87bde2ac Sebuah perintah diawali << tapi tidak pernah diakhiri >>.
+7f93f879 Teks sesudahnya hilang atau adegan menampilkan galat.
+dbda1f76 Tambahkan ">>" di akhir perintah.
+5a30164d Kurung dibuka tapi tidak pernah ditutup
+d5b047f2 Sesuatu diawali tanda kurung, tapi kurung tutupnya tidak ada.
+8d50e9a9 Semua sesudahnya tertelan atau game menampilkan galat.
+912c548c Tambahkan kurung tutup yang hilang.
+35852e81 Kurung tutup berlebih
+a1d86e33 Ada kurung tutup tanpa kurung buka.
+fdeb2ba4 Pemain bisa melihat karakter nyasar atau galat.
+254fbb5b Hapus kurung yang berlebih.
+98cb6b2f Sebuah perintah tidak punya teks yang terkait
+1afec1b9 Perintah ini seharusnya mengatur teks tepat sesudahnya, yang ditulis dalam kurung siku [seperti ini]. Tidak ada apa pun sesudahnya.
+073266b4 Harlowe menampilkan galat, atau teksnya selalu tampil.
+29369e93 Taruh teks yang diatur dalam kurung siku tepat sesudahnya.
+4093f80e Game menampilkan galat, dan bagian adegan yang diaturnya tidak berfungsi.
+ef3a7877 Perintah gaya lama
+54dead55 Perintah ini masih jalan, tapi sudah usang.
+01500c48 Untuk sekarang tidak apa-apa. Bisa rusak di pembaruan mesin berikutnya.
+b1a70201 Opsional: ganti dengan perintah yang lebih baru.
+a4a93d21 Pengecekan "if" memakai "=" alih-alih "is"
+582b6716 Di dalam pengecekan "if", "=" berarti "jadikan sama", bukan "apakah sama?".
+564cdad0 Game menampilkan kotak galat merah, atau pengecekan selalu benar dan bagian adegan yang salah dimainkan.
+e3105e2f Ganti "=" tunggal dengan "is".
+f0b64920 "=>" atau "=<" ditulis terbalik
+897ec753 Lebih besar atau sama dengan ditulis ">=", bukan "=>".
+0167d9bc Pengecekan tidak berfungsi.
+0b498ace Tulis ">=" atau "<=" sebagai gantinya.
+f917ca5e "is not" seharusnya satu kata
+4e8bbdf4 Di mesin game ini, "is not" artinya berbeda dengan "isnot".
+e40cd819 Pengecekannya hampir selalu salah.
+7f3a1402 Tulis "isnot" sebagai satu kata.
+694143a3 Pengecekan "or" yang selalu benar
+b760633e Sesuatu seperti "$x is 1 or 2" hanya membandingkan $x dengan 1; "2" yang berdiri sendiri selalu dianggap ya.
+f8b8cc75 Bagian ini tetap dimainkan meski seharusnya tidak.
+b1a0ec7e Ulangi namanya: "$x is 1 or $x is 2".
+1c4512b1 Pengecekan "if" yang bisa aktif di saat yang salah
+bb598d2b Pengecekan ini mencampur "and" dan "or" tanpa kurung. Komputer selalu mengerjakan bagian "and" lebih dulu, jadi artinya mungkin tidak sesuai maksudmu.
+71408d55 Adegan atau pilihan bisa muncul saat seharusnya tidak - misalnya saat karakter sedang diculik atau atribut terlalu rendah.
+045d6c6c Beri kurung ( ) di sekitar bagian yang satu kelompok. Lihat kode di bawah dan kelompokkan pilihan "or".
+dbb9ed0f Kurung ( ) tidak cocok
+6bbb5c72 Jumlah "(" lebih banyak dari ")" atau sebaliknya.
+d2676c8c Tambah atau hapus kurung agar berpasangan.
+8f746eaa Pengecekan "if" kosong
+70ac1e0e "if" ini tidak punya apa pun untuk dicek.
+8fa764c4 Game menampilkan galat.
+f72f83b1 Tulis apa yang harus dicek.
+00b75afd Perubahan atribut yang tidak berbuat apa-apa ("==")
+d3024696 Baris ini dimaksudkan untuk mengubah nilai, tapi "==" hanya membandingkan - tidak mengubah apa pun.
+4bb1b350 Nilainya tidak pernah berubah. Apa pun yang bergantung padanya (pengatur waktu, penghitung) jadi macet.
+bb9d82a8 Ganti "==" dengan "to".
+88b997d5 Perubahan atribut yang tidak berbuat apa-apa
+47b56b1e Baris ini dimaksudkan untuk mengubah nilai, tapi tidak ada "to", "=", "+=" atau "-=", jadi tidak ada yang berubah.
+b3edbcbf Misalnya energi atau uang tidak pernah dikurangi atau ditambah.
+5a19bb57 Tulis "-=" alih-alih "-" (atau "+=" alih-alih "+").
+24335c15 Perubahan atribut kosong
+d7c9d917 Perintahnya kosong.
+1ca2b36b Hapus atau tulis perubahannya.
+2d2715a0 Nilai diatur dengan "=" alih-alih "to"
+b3386569 Mesin ini mengatur nilai dengan "to".
+be353939 Ganti "=" dengan "to".
+6b135470 Tanda kutip " hilang
+b7ed7d6f Sepotong teks di sebuah perintah dibuka dengan " tapi tidak pernah ditutup.
+4b70c1d8 Game menampilkan galat atau menelan teks sesudahnya.
+081a0ff8 Tambahkan " yang hilang.
+1a1cb7a5 Tab dipakai di tempat yang butuh spasi
+0d83ecca Mesin ini mengharuskan baris diberi indentasi hanya dengan spasi.
+1928be6f Game tidak bisa dimulai, atau berhenti dengan galat di sini.
+6707540b Ganti tab di awal baris dengan spasi.
+50e72b08 Sebuah baris kurang ":" di akhir
+1590b870 Baris seperti "if", "menu", dan "else" harus diakhiri titik dua.
+34cb1caf Game tidak bisa dimulai.
+739781b1 Tambahkan ":" di akhir baris.
+463c9c22 Kode skrip rusak
+90393617 Kurung atau tanda kutip di kode skrip tidak cocok.
+10b6ae9e Seluruh skrip berhenti bekerja, yang bisa merusak banyak fitur.
+208a3574 Periksa kurung dan tanda kutip di sekitar baris ini.
+08a420a2 Sisa kode uji coba
+f523c19b Kode yang dipakai saat menguji masih tertinggal.
+a161c8db Biasanya tidak terlihat apa-apa.
+5512920c Opsional: hapus saja.
+e14ae90f Nama yang mengandung "-"
+a5d94a86 Nama nilai tidak boleh mengandung "-". Game hanya membaca bagian sebelum "-".
+1d915eed Pemain melihat kata yang salah atau kosong, bukan nama.
+1ff6bd49 Pakai "_" alih-alih "-".
+929dc82b Pengecekan terhadapnya selalu "tidak", jadi beberapa teks atau adegan tidak pernah muncul (atau muncul kosong alih-alih nama).
+aa241baa Nama sama, huruf besar/kecil berbeda: ${a} / ${b}
+fe615c75 Bagi game ini dua nilai yang berbeda, karena huruf besar/kecil berpengaruh.
+1549316e Perubahan pada yang satu tidak terlihat oleh yang lain, jadi atribut atau adegan jadi kacau.
+485f98c5 Ubah ${a} menjadi ${b}.
+fbb1a8ec Nama nilai salah ketik: {name}
+baa2f1ac "{name}" tidak pernah dibuat, tapi "{near}" dibuat. Hampir pasti salah ketik.
+37eb4d71 Game menampilkan galat atau nilainya selalu kosong.
+69b0c997 Ubah "{name}" menjadi "{near}".
+958390b8 Nilai sementara yang tidak pernah diisi: _{name}
+66d98956 Nilai sementara ini dipakai tapi tidak pernah diberi isi.
+f6d72946 Pengecekan terhadapnya tidak pernah berfungsi.
+b150a824 Isi dulu, atau perbaiki namanya.
+bb2ac176 Nilai yang tidak pernah dibuat: {name}
+418bb0cf Memakai switch/variabel yang tidak ada (#{n})
+60eb5de9 Event memakai nomor {n}, tapi daftar di game lebih pendek.
+ab5e6d39 Event tidak bekerja sesuai rencana.
+27e3bd51 Pilih switch/variabel yang ada di event tersebut.
+5e339cd0 Sebuah switch/variabel tidak punya nama (#{n})
+e3546a24 Dipakai, tapi tidak punya nama di Database.
+15f64977 Tidak ada yang terlihat. Hanya mudah tertukar.
+a8723260 Beri nama di Database.
+bd3955c1 Blok yang bisa dipakai ulang didefinisikan dua kali: {name}
+0a743f0a Dua definisi memakai nama ini.
+4d983cee Hanya satu versi yang dipakai.
+08c1e9fa Hapus atau ganti nama salah satunya.
+20982092 Blok yang bisa dipakai ulang tidak termuat
+3ed9bdd5 Adegannya tidak punya tag "widget".
+4f7fa681 Setiap adegan yang memakainya menampilkan galat.
+a3c57c94 Tambahkan tag "widget" ke adegan itu di Twine.
+769d38d3 Blok pakai ulang yang tidak terpakai: {name}
+91caae31 Sudah didefinisikan tapi tidak pernah dipakai.
+92f3557e Tidak ada yang rusak.
+48518178 Tidak perlu apa-apa.
+549a08bd Tanda kutip hilang di kode halaman
+2616e9ea Tanda kutip " hilang di dalam tag halaman (sering pada gambar).
+c1ac2a6e Gambar atau elemen mungkin tidak tampil, atau tata letaknya rusak.
+1359ec48 Kotak halaman yang tidak ditutup dengan benar
+c5eaf192 Sebuah kotak tata letak (seperti <div> atau <center>) dibuka tapi tidak ditutup, atau ditutup terlalu sering.
+bff958b5 Teks atau gambar bisa berakhir di tempat atau gaya yang salah.
+2055d18e Tambahkan tag penutup yang hilang, atau hapus yang berlebih.
+3ec38cbd Dua hal memakai label nama (id) yang sama
+0bf6eee0 Setiap id harus unik di halaman.
+ff424805 Tombol yang memperbarui bagian ini bisa mengubah tempat yang salah.
+3d5e5acf Beri masing-masing id sendiri.
+9ef419aa Gambar atau tautan tanpa file
+41c88499 Tag ini tidak menunjuk ke apa pun.
+30064ec6 Ikon gambar rusak bisa muncul.
+0e8cdbfd Isi nama filenya, atau hapus tag-nya.
+8c62dd1b Ukuran gambar ditulis dengan cara yang diabaikan peramban
+c97c9dc5 Ukuran seperti height="450wv" punya huruf yang tidak dipahami peramban ("wv" bukan satuan).
+38f858bc Gambar tetap tampil, hanya dengan ukuran piksel tetap. Biasanya tidak berbahaya.
+c33de17c Opsional: hapus hurufnya, mis. height="450".
+b2030de7 Nama gaya yang tidak cocok: "{name}"
+912e16dc Tampilan bagian ini dipilih dengan nama "{name}", tapi gayanya bernama "{near}".
+93f6e366 Bagian ini tampil tanpa warna atau tata letak yang dimaksud.
+de3efded Nama gaya tanpa gaya: "{name}"
+46cc76e2 Tidak ada aturan gaya yang memakai nama ini.
+3a6cc944 Biasanya tidak berbahaya.
+d91f6b60 Teks belum selesai yang bisa dilihat pemain
+a2d31ceb Pengembang meninggalkan catatan seperti "PLACEHOLDER" atau "TODO" di cerita.
+33f40845 Pemain melihat catatan ini, atau adegannya belum selesai.
+a398b7c0 Tulis teks yang sebenarnya, atau hapus catatannya.
+a89ee2d1 Ejaan: "{wrong}" seharusnya "{right}"
+bf0afa72 Salah eja yang umum.
+979c6e99 Pemain melihat kata yang salah eja.
+7e32de5a Ubah "{wrong}" menjadi "{right}".
+b2d44d92 Kata ganda: "{words}"
+670755a1 Kata yang sama diketik dua kali berturut-turut.
+f901109b Pemain melihat kata ganda.
+c8f90b31 Hapus salah satunya.
+fd88a85b Menampilkan gambar yang tidak ada: "{name}"
+d99288f0 Tidak ada gambar dengan nama ini yang didefinisikan, dan tidak ada file di images/ yang cocok.
+61cd07a0 Pemain melihat gambar pengganti atau galat.
+3b215908 Tambahkan gambarnya, atau perbaiki namanya.
+a08bad60 Game tidak punya nomor ID
+91a06fd9 Twine memakai ID untuk membedakan cerita.
+7ff45b55 Terbitkan ulang cerita dari Twine.
+ce8325ca Menampilkan kotak galat merah saat dimainkan: "{name}"
+212a3e36 Saat adegan benar-benar dimainkan, game menampilkan galat ini: {msg}
+1cda4ad4 Pemain melihat kotak galat merah di adegan ini, dan sebagiannya hilang.
+fe183b9c Lihat masalah yang tercantum untuk adegan yang sama - biasanya menjelaskan penyebabnya.
+5a4709f8 Peramban bahkan tidak bisa membaca sebuah skrip
+417e0923 Peramban menemukan salah ketik di skrip ini, jadi tidak ada bagian yang berjalan.
+711c9902 Fitur buatan skrip ini (perintah khusus, pengaturan) hilang atau rusak.
+289bf8bb Cari kurung, tanda kutip, atau koma yang hilang di baris ini atau baris sebelumnya.
+fefc36ad Gambar atau suara hilang saat bermain
+d47a66be File-file ini diminta saat adegan dimainkan, tapi tidak ada.
+80b8b71b Pemain melihat gambar rusak atau tidak mendengar apa pun di beberapa adegan.
+9733445f Tambahkan file yang hilang, atau perbaiki namanya.
+4f504ebe Galat saat game dimulai
+92243591 Peramban melaporkan galat saat memuat game.
+2fea6477 Layar awal atau beberapa fitur mungkin rusak.
+608156d3 Cari di skrip utama game masalah yang disebut dalam pesan.
+231d0f49 Perintah salah ketik: {name}
+388bf136 Perintah tidak dikenal: {name}
+9b686aa1 Game tidak mengenal perintah ini. Hampir pasti salah ketik dari {near}.
+d1f769ee Game tidak mengenal perintah ini.
+6a1cce2c Ubah menjadi {near}.
+46c692e0 Periksa ejaan perintahnya.
+6db67833 Nilai yang tidak pernah diisi: {name}
+c0ceb098 Game memakai "{name}", tapi di tempat lain namanya "{near}". Ini salah ketik.
+8acbe929 Game mengecek atau menampilkan "{name}", tapi tidak ada yang pernah memberinya nilai.
+fbb2c20c Beri nilai awal, atau perbaiki namanya.
+33e186ef Nilai yang tidak pernah dipakai game: {name}
+72bf1ee8 Ini mengubah "{name}", tapi game hanya melihat "${near}". Ini salah ketik.
+7f81aa2e "{name}" diubah, tapi game tidak pernah melihatnya.
+fd3f859d Perubahannya hilang - misalnya kenaikan atribut yang tidak pernah dihitung.
+4857ea9f Tidak ada yang rusak. Mungkin sisa dari versi lama.
+d2118ba7 Ubah "{name}" menjadi "${near}".
+3867ee62 Tidak perlu apa-apa, kecuali memang seharusnya dipakai.
+11e31f78 "{name}" tidak pernah dibuat. Mungkin salah ketik dari "{near}".
+8f03aa6d "{name}" tidak pernah dibuat di awal game.
+dd8d9eef Buat di awal game.
+a62731f6 passage
+f8de5ecc Satu halaman atau adegan di game Twine. Setiap passage punya nama, dan tautan menghubungkan satu passage ke passage lain.
+ea5e0445 adegan
+ad88890f Satu halaman cerita. Di Twine disebut "passage".
+78f3a3d9 makro
+480a06b0 Perintah game yang ditulis di antara << dan >>, seperti <<if>> atau <<set>>. Game menjalankannya, bukan menampilkannya.
+1925f793 perintah
+410ae6be Instruksi untuk game, seperti "tampilkan gambar ini" atau "jika pemain punya 5 emas". Di SugarCube ditulis di antara << dan >>.
+b46d0172 variabel
+2ef301de Nilai bernama yang diingat game, seperti $gold atau $mother_love. Di SugarCube diawali $.
+f32b67c7 nilai
+a746abd2 Angka, kata, atau ya/tidak yang diingat game, seperti jumlah emas.
+afad9a69 kondisi
+1dc59f8f Pengecekan seperti "$gold gte 5" (apakah pemain punya minimal 5 emas?). Teks sesudahnya hanya tampil kalau pengecekannya benar.
+5e9b60f6 tag
+1df6d68c Penanda dalam kode. Tag pembuka seperti <<if>> memulai sebuah bagian, tag penutup seperti <</if>> mengakhirinya.
+4f0aa52d tautan
+5afc9751 Teks yang bisa diklik untuk membawa pemain ke adegan lain. Di Twine: [[Teks|Nama adegan]].
+d3ecb0d8 include
+bbc9ce26 Perintah yang menempelkan passage lain ke passage ini: <<include "Nama">>.
+ff700e02 widget
+fd5df966 Perintah buatan sendiri yang didefinisikan sekali dan dipakai ulang di banyak adegan.
+9f738ce8 HTML
+16d38297 Bahasa yang dipakai untuk menulis halaman web. Tag seperti <img> (gambar) dan <div> (kotak).
+194e13da CSS
+28d26723 Aturan gaya: warna, ukuran, dan tata letak. "class" menghubungkan elemen dengan gaya.
+ee620923 JavaScript
+2d04472d Bahasa pemrograman halaman web. Game memakainya untuk fitur khusus.
+cb5346a0 skrip
+302bcb23 Sepotong kode program (biasanya JavaScript).
+0c4da6cb Twine
+5deecf78 Program gratis yang dipakai untuk membuat banyak game teks. Program ini menerbitkan game sebagai satu file .html.
+9b2ab238 SugarCube
+5a15607f "Format cerita" (mesin) yang paling umum untuk game Twine. Format ini menyediakan perintah << >>.
+5e2fb0c2 terbitkan
+9eb9fe5a Di Twine: Build > Publish to File. Ini menulis file .html yang bisa dimainkan dari ceritamu.
+1af607c7 jalur file
+3bee6183 Tempat sebuah file berada, seperti images/hero.png (folder "images", file "hero.png").
+264f39ca baris
+f44c6b66 Satu baris teks di file. Editor teks menampilkan nomor baris di sebelah kiri.
+3cc46d20 indentasi
+2a14602c Spasi di awal baris. Beberapa mesin memakainya untuk tahu baris mana yang satu kelompok.
+64c65374 label
+0419b517 Tempat bernama di cerita Ren'Py atau ChoiceScript yang bisa dituju bagian lain.
+40a22a4a knot
+fba17772 Bagian bernama di cerita Ink. "-> nama" melompat ke sana.
+fd8c7c8e plugin
+45e375e0 Skrip tambahan yang dipasang di game RPG Maker.
+67db3ab6 1. Apa itu passage (adegan)?
+6cfa54e4 2. Perintah di antara << dan >>
+fcaf062f 3. Membuka dan menutup
+47887091 4. Nilai yang diingat game ($variabel)
+c3bcb980 5. Pengecekan "if"
+d8cc0b48 6. Gambar dan suara
+c413d282 7. Mengedit dengan aman
+fb4c49ae 8. Membaca aplikasi ini
+a9af7910 Mulai dari sini: buka file .html game (atau folder game Ren'Py, RPG Maker, Ink, atau ChoiceScript). Pemeriksaan mulai dengan sendirinya.
+de845e69 "Kata sederhana" menjelaskan semuanya dengan bahasa sehari-hari. Matikan untuk melihat detail teknis.
+6c84c615 Pengembang atau Pemain: pemain mendapat daftar singkat adegan yang rusak dengan sedikit bocoran cerita, plus laporan bug untuk pengembang. Pengembang mendapat alat perbaikan.
+ba413de9 Semua masalah yang ditemukan. Merah berarti rusak, kuning mungkin rusak, biru perlu dicek. Klik salah satu untuk melihat apa yang harus dilakukan.
+476c1a70 Di sini kamu melihat apa yang salah, apa yang akan dilihat pemain, dan cara tepat memperbaikinya - lengkap dengan baris sebelum dan sesudah.
+e871d7cc Panduan perbaikan mengajakmu membahas masalah satu per satu, dan memeriksa setiap perbaikan untukmu.
+3d56d049 Uji main memainkan setiap adegan di peramban tak terlihat dan menemukan galat yang hanya muncul saat bermain.
+41da0a4f Alat: cadangkan game, uji baris sebelum diubah, bandingkan dua versi, tulis laporan bug, pantau perubahan.
+75d05bed Bantuan: pelajaran, daftar istilah, tur ini, dan pengaturan kenyamanan seperti teks ekstra besar.
+52c5f193 Skor kesehatan kode: 100% luar biasa, 90% sangat baik, 80% baik, 70% cukup.
+bcecc3cb Game Twine terdiri dari passage. Setiap passage adalah satu adegan: sedikit teks, mungkin gambar, dan tautan ke passage lain.
+b1f433c6 Tautan terlihat seperti ini. Bagian sebelum | adalah yang dilihat pemain, bagian sesudah | adalah nama passage yang dibuka:
+33dd3c05 Namanya harus cocok persis, termasuk huruf besar dan spasi. "kitchen" dan "Kitchen" adalah passage yang berbeda.
+14a03cdc Game SugarCube memakai perintah yang ditulis di antara << dan >>. Game menjalankannya, bukan menampilkannya.
+fffc20ea Selalu tepat dua < di awal dan dua > di akhir. Kelebihan atau kekurangan satu saja merusak perintah:
+1e192fbd Beberapa perintah seperti tanda kurung: membuka sebuah bagian dan harus ditutup. <<if>> ditutup dengan <</if>>.
+fd08a19b Kalau penutup <</if>> tidak ada, game menampilkan kotak galat merah. Kalau kelebihan satu, juga begitu.
+b25bf333 Kata yang diawali $ adalah nilai yang diingat game antar adegan, seperti $gold atau $mother_love.
+d4d0415d Huruf besar berpengaruh: $Gold dan $gold adalah dua nilai berbeda. Salah ketik membuat nilai baru yang kosong, jadi perubahannya hilang.
+340aacf8 Untuk mengubah nilai, pakai "to", "+=" atau "-=". "-" biasa hanya menghitung tapi tidak mengubah apa pun:
+87dc8b35 Di dalam "if", bandingkan dengan "is", "isnot", "gte" (minimal), "lte" (maksimal). "=" tunggal di situ salah:
+add346a2 "and" dicek sebelum "or". Pakai kurung untuk mengelompokkan, kalau tidak pengecekannya bisa benar di saat yang salah:
+f07da221 Gambar ditampilkan dengan tag <img>. Jalurnya menyebut di mana file berada, dihitung dari folder game:
+9e333b42 Pakai / di antara folder. \ hanya jalan di Windows. Huruf besar/kecil harus cocok dengan nama file aslinya untuk ponsel, Mac, dan situs web.
+9d1c8406 Setiap tanda kutip " yang dibuka harus ditutup, kalau tidak gambar tidak akan tampil.
+6f7151f5 Sebelum mengubah apa pun, buat cadangan (Alat > Cadangkan file game).
+73b5381e Kalau game dibuat dengan Twine, lakukan perubahan di Twine lalu terbitkan ulang. Perubahan yang dibuat langsung di file .html akan hilang saat game diterbitkan lagi dari Twine.
+0dab15d3 Kalau kamu hanya punya file .html (tanpa cerita Twine), edit dengan editor teks seperti Notepad++. Di dalam file .html, < dan > ditulis sebagai &lt; dan &gt; - aplikasi menampilkan teks persis yang perlu disalin.
+a877adb7 Setelah setiap perubahan: simpan, muat ulang game di peramban, lalu tekan "Sudah saya perbaiki - periksa" di aplikasi ini.
+e6cfd88c Merah = rusak: pemain pasti mengalaminya. Kuning = mungkin rusak. Biru = perlu dicek, sering kali tidak apa-apa.
+3c06ac34 Mulailah dari daftar "Mulai dari sini" di ringkasan, atau gunakan Panduan perbaikan: panduan ini menuntunmu satu masalah demi satu masalah.
+f5a4fb88 "Tandai sebagai disengaja" menyembunyikan temuan yang sudah kamu cek dan ingin kamu biarkan. Temuan itu tetap tersembunyi untuk game ini.
+f3979521 Sekitar 1 menit
+d621d05d 5-15 menit
+bea680e1 Butuh pengembang (keputusan cerita atau desain)
+0c6c4102 Opsional
+e53abb3c Mudah diperbaiki
+c4f93c0c Perlu sedikit ketelitian
+a22663d7 Butuh pengembang
+230659f7 Mungkin boleh, tapi lihat sebentar.
+6d9d36d5 Tidak. Pemain pasti mengalaminya.
+ddad7bf2 Hanya kalau kamu sudah mengecek logikanya dan hasilnya sesuai keinginanmu. Lalu tandai sebagai disengaja.
+6cf97a3f Boleh, kalau adegannya sudah lama atau memang tidak untuk dimainkan.
+d54dbf6e Boleh. Tidak ada yang rusak.
+3b411bc1 Boleh, kalau game hanya dimainkan di Windows.
+667e089a Boleh, untuk sekarang. Bisa rusak di pembaruan mesin berikutnya.
+ca7eea8c Boleh, tapi pemain akan melihat salah ketiknya.
+6225e68e Hanya kalau adegannya sengaja dibiarkan belum selesai.
+47ecb09c Boleh. Gambar tetap tampil.
+178ca96e Boleh. Tidak ada perubahan yang terlihat.
+e2fca6c0 Biasanya boleh. Sering kali sisa dari versi lama.
+bcc248b9 Sebaiknya jangan. Sangat mungkin ini kesalahan sungguhan.
+557f2555 bukan
+cffa50a3 dan
+1758356d atau
+6981b0db Tidak ada adegan yang menaut ke "{name}" dengan cara yang bisa dilacak pemindai. Pemain mungkin tidak pernah melihatnya, atau sampai ke sana lewat kode yang menyusun nama adegan dari variabel.
+0f56183f Pemain sampai ke "{name}" dari {n} tempat:
+02e974ba Ini adegan pertama game.
+5ffe533b benar
+7cb6efb9 salah
+1ed06825 sebuah tautan
+3d22ef57 sebuah include
+ccdfd8c1 lompatan otomatis
+3f80e4d1 Dari "{src}" ({how}), saat: {cond}
+084fcdcf Dari "{src}" ({how}), selalu.
+8adbc573 …dan lainnya.
+1aafbf54 Luar biasa
+bd846adf Sangat baik
+61dedcf0 Baik
+226d7ec9 Cukup
+eafabce9 Perlu perbaikan
+4e0fa437 Buruk
+75fb2b10 Membaca file
+ac133acf Mencari data cerita
+456caef0 Mengumpulkan skrip dan gaya
+fc404c89 Memeriksa passage dan tautan
+6a4d36f9 Memeriksa tag makro
+546de9d0 Memeriksa kondisi dan logika kode
+c338107e Memeriksa variabel
+5730c93f Memeriksa tag HTML
+ea4c65ed Memeriksa kelas CSS
+d874e65d Memeriksa gambar, audio, video, dan file
+6517d389 Memeriksa teks (salah ketik, teks sementara)
+87beeee4 Memeriksa JavaScript
+7b7efd8b Memeriksa aturan format cerita
+25f3b361 Membaca game {label}
+a28b6c50 Memeriksa kerusakan file
+5aedb280 Menjalankan peramban tak terlihat
+f5a5071d Memuat game
+8466e7c7 Memeriksa skrip dengan mesin JavaScript peramban
+bf197daa Memainkan adegan ({mode}): {k} dari {n}
+f70cf464 Uji main selesai
+427c9fd7 Di adegan yang tidak bisa dicapai siapa pun
+9b9f5c3d Pemain tidak pernah melihat ini: letaknya di adegan yang tidak bisa dicapai siapa pun. Boleh dibiarkan.
+e58020da Tidak ada yang bisa mencapai "{name}": tautannya dimatikan
+2795ab1b Satu-satunya tautan ke adegan ini ada di "{where}" (baris {line}), di dalam catatan tersembunyi /* ... */. Semua di antara /* dan */ dimatikan.
+4ed22111 Pemain tidak pernah melihat adegan ini.
+30fda4f3 Jika pemain harus melihatnya, hapus /* dan */ di sekitar tautan. Jika kamu sengaja mematikannya, biarkan saja.
+7a9ce2ca Satu-satunya tautan ke adegan ini ada di adegan lain yang tidak bisa dicapai siapa pun.
+3aafeed1 Jika pemain harus melihatnya, tambahkan tautan dari adegan yang bisa dicapai. Jika sudah lama, boleh diabaikan.
+0c4d1909 {n} file di {k} folder tidak pernah dipakai
+0efdb085 {n} nilai yang tidak pernah dipakai game
+425a6a2a Nilai-nilai ini diubah, tetapi game tidak pernah melihatnya.
+849cdd9b Tidak ada yang rusak. Mungkin sisa dari versi lama.
+a82d56f5 Sebuah kotak halaman tidak ditutup: <{tag}> di baris {line}
+5c73814e <{tag}> di baris {line} tidak pernah ditutup dengan </{tag}>.
+b587a89d Tambahkan </{tag}> di tempat kotak itu harus berakhir.
+f1a6f13d Tag penutup berlebih: </{tag}> di baris {line}
+d887494b </{tag}> di baris {line} menutup kotak yang tidak pernah dibuka.
+f3d6de5f Hapus </{tag}> yang berlebih, atau tambahkan <{tag}> yang kurang.
+94b62097 Ejaan: "{wrong}" seharusnya "{a}" atau "{b}"
+45919c5c Salah ejaan yang umum. Bisa berarti dua kata yang berbeda.
+d3631b3f Baca kalimatnya dan ubah "{wrong}" menjadi "{a}" atau "{b}", mana yang cocok.
+4f2e0c01 Tidak perlu apa-apa, kecuali salah satunya memang seharusnya dipakai.
+37a88891 Biasanya tidak apa-apa: browser menutupnya sendiri di akhir adegan.
+9c393632 Ya. Letaknya di adegan yang tidak bisa dicapai siapa pun, jadi pemain tidak pernah melihatnya. Perbaiki hanya jika nanti kamu menambahkan tautan ke adegan itu.

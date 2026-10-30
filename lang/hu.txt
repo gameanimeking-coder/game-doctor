@@ -1,0 +1,836 @@
+#name Magyar
+e77b83c2 A játékteszt kész: {n} jelenet {m} módon lejátszva, játék közben {k} hiba található.
+e9dd5680 Vágólapra másolva
+e00ac23f Fajta
+764b4aa3 Mennyire súlyos
+33446003 Jelenet
+44819483 Semmi
+36c4a06f Ellenőrzés…
+ecab72e7 A játék mappája / az egész játék
+95263aa8 A sor a játékfájlban (kiemelve)
+adac6937 Kód
+4dc2eddf Megtalálta: {app}. {n} hiba.
+6b21fb79 Névjegy
+b8bb1461 Hogyan jutnak el a játékosok ehhez a jelenethez?
+d07d7afa Hogyan jutnak el a játékosok ide: "{name}"?
+fa893d87 Tiszta
+70440046 Megjegyzések
+1430f976 Figyelmeztetések
+805e86a8 Hibák
+dcad8ee5 A kódnézet előkészítése…
+7f2f6a15 Hiba
+e9c45563 Figyelmeztetés
+2c924e30 Megjegyzés
+f4808ecd Játék megnyitása…
+f6ab55dd Újraellenőrzés
+dd3fa3ce ▶ Játékteszt
+5e4797ea Javítási varázsló
+4fa8cc86 Eszközök
+c47ae153 Súgó
+9d454f7c Nincs megnyitott játék
+7869cc5c Twine-ban szerkesztek
+db8da328 A .html fájlt szerkesztem (Notepad++ stb.)
+20c7c552 Kész
+26a93eac Játékmappa megnyitása (Ren'Py, RPG Maker, Ink, ChoiceScript)…
+775b3ab8 Képek és hangok mappája…
+cd9a3d88 Biztonsági mentés a játékfájlról
+2505d3da Sor kipróbálása módosítás előtt…
+3536c70a Összehasonlítás egy másik verzióval…
+080460a5 Hibajelentés írása a fejlesztőnek…
+0cbf16ea Jelentés exportálása…
+490c3a52 A játékfájl figyelése és újraellenőrzés mentéskor
+09e02e95 Szándékosnak jelölt hibák megjelenítése
+80f65544 Szövegszerkesztő…
+3a4dad84 Bemutató indítása
+f996200a Leckék (F1)
+e5aaa5b5 Szójegyzék
+320067c6 Extra nagy szöveg
+07471db5 Színtévesztőknek való színek
+c2cebede Minden fajta
+1baa06b4 Hiba
+ced091e8 Jelenet / hely
+ea967600 Sor
+99a42316 Javítás
+3cd62e5f Megnyitás a szövegszerkesztőmben
+a4f34926 Javított sor másolása
+0973fd22 Keresendő szöveg másolása
+28a1dc64 Kijavítottam - ellenőrzés
+1a256c63 Szólok a fejlesztőnek
+b491a51b Megjelenítés a kódnézetben
+463e5e78 Megjelölés szándékosként
+562107b8 Felolvasás
+e42bc527 Részletek másolása
+d7c5a824 Pontosan úgy, ahogy a fájlban tárolva van (&lt; kódok)
+2314cd9a A játék megnyitása
+7a8e0cf0 Válaszd ki a játék mappáját
+ff10f24c A játék képeit, hangjait és videóit tartalmazó mappa
+38e9a3e9 Játék: {path}     Mappa: {folder}
+24fc8907 Felolvasás leállítása
+7335beba Már nincs szándékosnak jelölve
+24fec833 Szándékosnak jelölve - elrejtve a listából (Eszközök > Szándékosnak jelölt hibák megjelenítése)
+615c9a3f {fmt} · {units} rész · {files} fájl a mappában · {e} hibás, {w} valószínűleg hibás, {i} ellenőrizendő · {s} mp
+f229a698 Kód egészsége: {n}% · {label}
+d8d62e38 Ellenőrzés kész
+dd3a39d8 Kód egészsége
+c6643b25 Skála: 100% kiváló · 90% nagyszerű · 80% jó · 70% elfogadható · 70% alatt dolgozni kell rajta
+7e0056d2 Azon alapul, hány jelenetben van hiba, és mennyire súlyosak.
+07c80477 Fajta szerint
+45b733c9 Kattints egy hibára a listában a részletekért.
+525f61b6 Hol
+4090e818 Hogyan javítsd
+0b975974 Nyisd meg a történetedet a Twine-ban, és nyisd meg a(z) "{name}" passzázst.
+905dc77d Ugyanez a név {n} másik sorban is szerepel: {lines}. Ott is változtasd meg.
+3cfafb7c Tedd közzé újra a történetet (Build > Publish to File), majd töltsd újra a játékot az ellenőrzéshez.
+64cb91c6 Hol: {where}
+4383fcfd Mi a hiba: {text}
+07bddb04 Hogyan javítsd: {text}
+cf36743b Most: {text}
+0cacfdc2 Erre változtasd: {text}
+70fbdd39 Javított sor másolva. A Twine-ban jelöld ki a régi sort a(z) "{name}" passzázsban, és illeszd be.
+60eafc99 Javított sor másolva. A szerkesztőben jelöld ki a(z) {n}. sort, és illeszd be fölé.
+67a9f511 Keresőszöveg másolva. A szerkesztőben nyomd meg a Ctrl+F-et, és illeszd be.
+67c1b9a0 A fájl nem változott a legutóbbi ellenőrzés óta. Elmentetted?
+2693cf86 Hasonlítsd össze újra a sorodat az "Erre változtasd" sorral.
+1b930787 Előbb nyiss meg egy játékot.
+9dbf0a77 Biztonsági mentés elmentve: {path}
+88e09b05 (a te szöveged)
+e835a0e1 Hibajelentés: {game}
+338c5072 Technikai: {text}
+fc5e62a8 Beállításfájl: {path}
+0f83a323 A játékfájl figyelése folyamatban. Minden mentéskor újra ellenőrzi.
+24b5689b A játékfájl figyelése leállítva.
+6bbf59c5 A játékteszt leállítása…
+c5726162 A játékteszthez Microsoft Edge vagy Google Chrome kell, de egyik sem található.
+efe69072 A játék megváltozott a teszt közben. Futtasd újra.
+4e1a8e3c Nincs hiba
+59cd52ee Érdemes megnézni
+80c66d73 Valószínűleg hibás
+3ad465ce Hibás
+8ea8e60f {n}. sor: nincs hiba
+421fe500 dupla kattintás a részletekért
+a6e7e8d6 "{text}" nem található
+fc748144 A listában látható {n} hiba exportálása
+c8ca2957 Jelentés elmentve: {path}
+09188221 Egész játék
+5a7ee5ac Hibajelentés
+203dee52 A részletek ide lettek mentve: {path}
+5abfea7d Egyszerű szavak: ki
+de314fa0 Súlyosság
+fc55cc19 Passzázs / hely
+3deb7456 Típus
+61790945 ■ Játékteszt leállítása
+e23fd7cf Szándékos jelölés törlése
+5ffa6ce4 Hibákat keres a játékokban, és egyszerű szavakkal elmondja, mi a baj és hogyan javíthatod. Működik Twine-játékokkal (SugarCube, Harlowe, Chapbook, Snowman), más HTML-játékokkal, Ren'Py, RPG Maker MV/MZ, Ink és ChoiceScript játékokkal.
+e13e18f3 Használat
+c3abe9f5 Biztonságos
+4d688496 Ez a program csak olvassa a játékodat. Soha nem változtatja meg. Szerkesztés előtt használd az Eszközök > Biztonsági mentés a játékfájlról menüt.
+90c93523 Billentyűparancsok
+8e990034 Ctrl+O megnyitás · F5 újraellenőrzés · Ctrl+F keresés · F3 következő · Ctrl+E exportálás · F1 leckék · Ctrl + / Ctrl − / Ctrl+0 vagy Ctrl+egérgörgő az átméretezéshez
+21e5904b {n} fájlhivatkozás ellenőrizve
+052df047 Kezdd itt - a legfontosabb javítások
+eff36495 Vagy kattints a "Javítási varázsló" gombra, és vedd végig egyenként.
+23bd8fe4 "{name}" jelenet
+8cb67e05 "{name}" passzázs
+12b1a199 a passzázs {n}. sora
+280d0541 {file}, {n}. sor
+a684f161 Ezt szándékosnak jelölted, ezért nem számít bele.
+6aeb39ef Mi a hiba
+c1bcc130 Mi a hiba
+ebcf7d18 Mit vesznek észre a játékosok
+e7f32d0f Kattints a "Megnyitás a szövegszerkesztőmben" gombra. Megnyitja a(z) {file} fájlt a(z) {n}. sornál.
+73c8627d Töröld azt a sort (lent látható a "Most" alatt).
+b44b2225 Változtasd meg úgy, ahogy lent az "Erre változtasd" alatt látható. A "Javított sor másolása" az egész javított sort másolja, hogy a régi helyére illeszd.
+d640e11b Lásd a fenti magyarázatot.
+33d1a502 Mentsd el a fájlt, töltsd újra a játékot, majd kattints a "Kijavítottam - ellenőrzés" gombra.
+fd3e0dfe Twine-ban készült? Akkor inkább a Twine-ban javítsd (fent állítsd át "A .html fájlt szerkesztem" beállítást "Twine-ban szerkesztek"-re). A Twine-ból való közzététel felülírja a közvetlenül a .html fájlban tett módosításokat.
+e3b82040 Most
+b9b6aac4 Erre változtasd
+3895c256 Figyelmen kívül hagyhatom?
+189da0ef Mit vesznek észre a játékosok: {text}
+7d949b29 Kód: {text}
+80411ece Még nincs javítva - a hiba még megvan
+71a91179 nyomd meg a Ctrl+G-t, és írd be: {n}, hogy a sorra ugorj
+84d3bdef Megnyitva itt: {name}
+7bf2bdbd Jelenet: {name}
+f8e71156 {file}, {n}. sor
+e9331864 Mi történik: {text}
+16fcd5a1 (még {n} karakter ebben a sorban)
+6dcc62dd Jelentés elmentve. Megnyitod most?
+02fbc53c Hiba (egyszerű szavakkal)
+2c3cafa4 Fájl
+1bea2fb0 Javítás módja
+fdccd352 Valami hiba történt az alkalmazáson belül:
+b7152342 Méret
+8e6b86dc Hibák
+8f0d8d83 Csoportosítás
+bce06414 Keresés
+74c14ca3 Kódnézet
+a3d77701 ◀ Előző hiba
+3a289dc9 Következő hiba ▶
+2e0b45f2 Ugrás
+ececaefe Következő keresése
+df251b06 Keresés
+7e08ebec Fejlesztő
+e53407cf Játékos
+0406a446 Egyszerű szavak
+2edb004b A .html fájlt szerkesztem
+b45e0101 Változások figyelése
+398ed329 Játékok
+6f80238e HTML-játékok
+f7857dcc Minden fájl
+6798c955 Ellenőrzés, kérlek várj…
+be4bd50c Kód egészsége: {n}%
+16dd1f3a {n} szándékosnak jelölve
+901b56b2 Nincs mit mutatni
+ea64a687 4. A Súgó > Leckék pár perc alatt elmagyarázza az alapokat. A Súgó > Bemutató indítása körbevezet.
+570f71b7 Hibás jelenetek
+08f7f24d Mentsd el a játékot, mielőtt ezekhez érsz, hogy visszatérhess, ha valami elromlik:
+29e8d770 Egy hibánál használd a "Szólok a fejlesztőnek" gombot, vagy az Eszközök > Hibajelentés írása menüt a részletek elküldéséhez.
+d19ceca5 Tipp
+251eb9e2 Mentsd el a játékot, mielőtt ehhez a jelenethez érsz, hogy visszatérhess, ha elromlik.
+d782b266 Keresd meg a helyet: használd a Twine "Find and replace" funkcióját (vagy nézd meg alaposan) ehhez a szöveghez:
+eb92d56f Nyisd meg a projektet az RPG Makerben, és menj ide: {where}
+7e7c7eb1 (töröld ezt a sort)
+d40baaa7 ✔ Javítva! A hiba eltűnt. A kód egészsége most {n}%.
+fce98782 Válassz másik szerkesztőt: Eszközök > Szövegszerkesztő…
+55d0a707 Biztonsági mentés elmentve:
+802cfe54 Nem sikerült biztonsági mentést készíteni:
+a01ce386 Javasolt javítás (Twine-ban):
+d9cb995e Az angoltól eltérő fordításokat MI készítette, és hibákat tartalmazhatnak. A technikai részletek angolul maradnak, akárcsak a játékmotorok és kézikönyveik.
+987dd9b8 Nyiss meg egy játékot, hogy itt lásd a kódját.
+f4fd7854 {name} ({n} sor)
+db3b1ca2 Jelentés weboldalként
+1b5f6570 Táblázat (CSV)
+ee3d21a8 Szövegfájl
+934a1886 Nem sikerült menteni a jelentést:
+29211387 Rendszertéma
+9e5ba0f0 Világos téma
+d51c5960 Sötét téma
+71df97be Fájl elmentve - újraellenőrizve: {fixed} javítva, {new} új
+12d21609 (egész játék)
+4671f2fd {n} rész
+af4e5ffa {n} hiba ebben a csoportban. Kattints egyre a részletekért.
+e065ed24 Ha a sor elmozdult, nyomd meg a Ctrl+F-et a szerkesztőben, és keresd ezt:
+d6cd9bbc Nem sikerült ellenőrizni:
+e8b6a7a1 ({lines}. sor)
+2a87805d Nem sikerült elindítani: {name}
+50803478 Javítás módja: {text}
+cbbf7064 {v} verzió. Hibákat keres a játékokban, és elmagyarázza, hogyan javítsd őket. Csak olvassa a fájlokat, és soha nem változtatja meg a játékodat.
+7e16f294 Kód egészsége: {n}% ({label})
+13b7bfca Dolgozom…
+944d285f Az ellenőrzés nem sikerült
+5117eb3e Egy hiba sem felel meg a jelenlegi szűrőknek.
+84a26cd3 Nincs hiba. Szép munka!
+e961739d 3. Nem tudod, hol kezdd? Használd a Javítási varázslót - egyenként végigmegy a hibákon, és ellenőrzi a javításaidat.
+dfa2b6e9 {n}. sor:
+27a41ea2 (törlés)
+966d414d {n}. sor
+a37a62b5 2. Kattints egy hibára a listában. Alatta látod, mi a baj, mit vesznek észre a játékosok, és pontosan hogyan javítsd.
+47faaf63 Játékteszt leállítva
+9de8b1a5 1. Kattints a "Játék megnyitása…" gombra, és válaszd ki a játék .html fájlját (vagy játékmappához használd az Eszközöket). Az ellenőrzés magától indul.
+836bf385 A játékteszt nem tudott lefutni:
+3dd51c5a Válaszd ki a szövegszerkesztődet
+1f7611ea Szövegszerkesztő beállítva: {name}
+43320d49 Sor kipróbálása módosítás előtt
+18e673bc A játékodban semmi sem változik. Ez csak az ide beírt szöveget ellenőrzi.
+8ecc7800 Hibajelentés írása a fejlesztőnek
+2e2b95ec Két verzió összehasonlítása
+ccdb5389 Válaszd ki a játék másik verzióját, és kattints az Összehasonlítás gombra. Mindkettőt csak olvassa, soha nem módosítja.
+cabad4eb A másik verzió ellenőrzése…
+cb9ce97b Leckék
+9255b9a1 Válaszd ki a szövegszerkesztő programot
+67094e72 Az a program nem található. Válaszd ki a "Tallózás…" gombbal.
+21461571 ◀ Vissza
+2d8a1625 Kihagyás ▶
+7c5d9f51 {done}/{total} javítva
+cb70c72b {n}/{total}. hiba
+820d6004 Ellenőrzés…
+e461d5d0 {n} hiba található:
+9580fcbc Egyszerű szöveg
+26a49ee7 Discord / Reddit
+1f82bc1e Fórum (BBCode)
+616ce66d Hibás + valószínűleg hibás
+34d5d395 Csak a kiválasztott hiba
+ced1fd2f Hibajelentés mentése
+ec9135a3 Hibajelentés elmentve: {path}
+8d105cf4 Összehasonlítás
+a1cd6b54 Válaszd ki a másik verziót
+1f5bf765 Előbb válaszd ki a másik verziót.
+ad916050 Összehasonlítás…
+f4f29947 Kód egészsége: {a}% → {b}%
+a81eb289 Javítva az újabb verzióban ({n})
+53da970f Új hibák az újabb verzióban ({n})
+2be41ba6 Még mindig ott van ({n})
+9ec4aa53 Az alkalmazásban használt szavak
+ce12714d Nincs mit javítani
+d231fca7 Nem maradt javítandó hiba. Szép munka!
+76c1c7de Ez a hiba eltűnt - kijavították, vagy a fájl megváltozott. A folytatáshoz kattints a Kihagyás gombra.
+55855f77 Egyes sorok kipróbálása Twine (SugarCube) játékoknál működik. Előbb nyiss meg egyet.
+bbfa773e Bezárás
+af74f7c5 Másolás
+571a03ba Melyik program nyissa meg a játékfájlt?
+113fa56b Ezeket a szövegszerkesztőket találtam a gépen:
+d4b86cfd Másik program…
+9d68007b Program
+c1b20f52 Tallózás…
+6bf5da9c Beállítások
+4ee6279e A {file} helyére a játékfájl, a {line} helyére a sorszám kerül. A Notepad++ ezt használja: -n{line} "{file}"
+77dfd213 Mégse
+efc007a3 Mentés
+ab14d0a7 Programok
+4abacc60 ✔ Javítva! Szép munka. Itt a következő.
+1ed684b1 Illeszd be vagy írd be a sort (vagy az egész passzázst), amit használni szeretnél:
+45f9116a Ez egy teljes passzázs (azt is ellenőrzi, hogy minden címke le van-e zárva)
+4b5e84be Ellenőrzés
+6a17f3f6 Ebben a szövegben nincs hiba.
+44b39131 Javaslat:
+4020c08c Stílus:
+2f32f781 Tartalmazza:
+4705cad6 A javítás módja is
+d9057148 Mentés másként…
+83c52802 Másik verzió:
+c3c1e96d A másik verzió:
+6fa5fbbc régebbi
+1d47386a újabb
+78cee4b8 {n}/{total}. lépés
+57bc79e3 Bemutató kihagyása
+bc981983 Tovább
+e9b450d1 Kész
+682c160f Jelenlegi játék:
+74c063af Rossz:
+3a82310a Jó:
+c7c15bca Ez a játékosoknál el fog romlani.
+8df34ecb Ez nagyon valószínűleg hiba.
+1d894da2 Nem sürgős. Lehet, hogy rendben van, de nézd meg.
+58da2ccb Hiányzó jelenetekre mutató linkek
+78d3da9d Hiányzó képek és hangok
+59327131 Hibás játékparancsok
+dfe69b5d Elírt játékparancsok
+140d954e Rosszul működő "ha" feltételek
+169a1b52 Semmit sem csináló vagy elromló parancsok
+c3f4070a Elírt jellemzők és értékek
+ee27480a Újrahasználható blokkok
+9c0fe2ed Oldalelrendezés kódja
+2c0f0a6d Stílusok (színek és megjelenés)
+f77fd1fd Jelenetek
+45e35cfc Jelenetek, ahová senki sem jut el
+a2406e53 Fájlok, amelyeket a játék soha nem használ
+68320599 Befejezetlen szöveg
+8a21b1ee Helyesírás
+169b486d Elgépelések
+a1d181bd Csak Windowson működik
+3e9d9ae4 Nagyon nagy fájlok
+50a12988 Sérült fájlok
+aab2b305 Régi stílusú parancsok
+3f55c07b Szkriptkód
+cc0718f5 Játékbeállítások
+c7ee483a Szkenner
+c916a1ad Hibák játék közben
+0e66b49d kép
+5e2e97c3 hang
+ffbaf58f videó
+4642576d betűtípus
+767013ce oldal
+971c419d fájl
+8c657028 a(z) "{name}" jelenet
+84db7a65 a játék
+27260418 Nem létező jelenetre visz: "{name}"
+65a1b892 Itt: {where}, egy link vagy parancs megpróbál megnyitni egy "{name}" nevű jelenetet. A játékban egyetlen jelenetnek sincs pontosan ilyen neve.
+eddc288b Amikor a játékos rákattint (vagy a játék odaér), hibaüzenetet vagy üres oldalt kap a jelenet helyett.
+6690f7df Írd a nevet pontosan egy létező jelenet nevére. A kis- és nagybetűk és a szóközök számítanak.
+ee186081 A történet nem létező részére visz: "{name}"
+adcab89d A történet itt próbál folytatódni: "{name}", de a játékban semminek sincs ilyen neve.
+c68c7536 A játék ezen a ponton hibával leáll (vagy el sem indul).
+262dea9c Írd a nevet pontosan a történet egy létező részének nevére.
+8a2045c6 Nem létező fejezetre visz: "{name}"
+6b99d3d7 A történet megpróbálja megnyitni ezt: "{name}", de nincs ilyen fejezet vagy pont.
+54721a92 A játék ezen a ponton hibával leáll.
+bfe449ab Javítsd a nevet, hogy egy létező fejezetnek feleljen meg.
+8569b71c Nem létező képernyőt nyit meg: "{name}"
+ed323960 A játék megpróbál megjeleníteni egy "{name}" nevű képernyőt, de nincs ilyen nevű képernyő.
+31aaf0f7 A játék itt hibával leáll.
+ecedecaf Javítsd a nevet, hogy egy létező képernyőnek feleljen meg.
+1c82d0d0 Egy esemény nem létező helyre küldi a játékost
+f7bb6caa Egy esemény olyan térképre viszi a játékost, vagy olyan common eventet futtat, amely nincs a játékban.
+11068616 A játék összeomlik vagy lefagy, amikor ez az esemény fut.
+17c8c384 Válassz létező térképet vagy common eventet abban az eseményparancsban.
+924f14ec Sehová sem vezető link
+ac25c348 Egy link itt: {where} nem mondja meg, melyik jelenetet nyissa meg.
+cc208a80 Rákattintva hiba jelenik meg.
+81510156 Írd be annak a jelenetnek a nevét, amelyet a link megnyit.
+a620e5a7 Egy linknek hiányzik a vége
+75319c60 Egy link [[ jellel kezdődik, de soha nem végződik ]] jellel.
+d94d2b45 Az utána következő szöveg belekeveredik a linkbe, és a jelenet hibásnak tűnik.
+da97338b Tedd a ]] jelet a link végére.
+de752d36 Senki sem jut el ide: "{name}"
+ad06e184 A játékban semmi sem vezet a történet ezen részéhez.
+49f72405 A játékosok soha nem látják. Ártalmatlan, hacsak nem játszhatónak szánták.
+41e81f9d Ha a játékosoknak látniuk kell, tegyél rá linket egy másik jelenetből. Ha régi, figyelmen kívül hagyhatod.
+12017de3 A(z) "{name}" jelenet üres
+e1c78333 Ennek a jelenetnek nincs szövege vagy tartalma.
+eb036a1b Az ide érő játékos üres oldalt lát.
+95468775 Írd meg a jelenetet, vagy töröld az ide vezető linkeket.
+65f5f00d A történet két részének ugyanaz a neve
+3a661399 Több jelenet vagy címke is a(z) "{name}" nevet használja.
+14b99f6a Közülük mindig csak egy jelenhet meg, vagy a játék nem indul el.
+5017f902 Adj mindegyiknek saját nevet.
+8ee54eec A játéknak nincs kezdő jelenete
+e4b1267b A játék nem tudja, hol kezdjen.
+67fece68 Lehet, hogy a játék el sem indul.
+6f3c3583 A Twine-ban jelöld meg az első jelenetet kezdőként.
+891a7ccc Egy ugrólink sehová sem vezet
+723d0b6c Egy link az oldal egy nem létező pontjára mutat.
+9d2a3ab1 Rákattintva semmi sem történik.
+a17d6d9d Javítsd a pont nevét, vagy töröld a linket.
+f7e0927c Hiányzó {kind}: {file}
+471ab6b6 A játék használni szeretné ezt ({kind}): "{path}", de nincs ilyen fájl a játék mappájában.
+215d84f2 A játékosok törött képet vagy üres helyet látnak, vagy nem hallanak semmit.
+95495e08 Tedd a fájlt arra a helyre, vagy írd át a nevet a játékfájlban arra a fájlra, amely tényleg létezik.
+4e187285 A fájlnévben rosszak a kis- és nagybetűk: {file}
+10dd7eb2 A fájl létezik, de a játék más kis- és nagybetűkkel írja a nevét.
+445b1f51 Windowson működik. Telefonon, Macen, Linuxon vagy weboldalon a kép vagy a hang hiányozni fog.
+bcc2cd24 Írd át a nevet a játékfájlban, hogy a kis- és nagybetűk egyezzenek a valódi fájléval.
+fc7f8ac2 Egy kép a fejlesztő saját gépére mutat
+bf1eaea6 A fájl helye meghajtóbetűvel kezdődik, például "D:\". Az a mappa csak azon a gépen létezik, amelyen a játék készült.
+8e9a7d52 A játékosok soha nem látják ezt a képet.
+e5baac7c Változtasd meg a játék mappáján belüli helyre, például images/characters/name.jpg.
+006a8fb9 A fájlhelyek \ jelet használnak / helyett
+d6cb43a9 A játék fordított perjellel (\) írja a mappaútvonalakat.
+42ad75cd Windowson rendben van. Telefonon, Macen, Linuxon vagy weboldalon a képek és hangok nem töltődnek be.
+02bf9e76 Csak akkor számít, ha a játéknak Windowson kívül is futnia kell: a képek útvonalaiban cseréld a \ jelet / jelre.
+0fa2cd7a {n} fájl a(z) "{folder}" mappában soha nincs használva
+1b78ff55 Ezek a fájlok a játék mappájában vannak, de a játék soha nem használja őket.
+55acf4db Semmi sem romlik el. Csak nagyobb lesz tőlük a letöltés.
+aa1a0c6f Töröld őket, ha biztos vagy benne, hogy nem kellenek. (A játék néhányat ügyes módon választhat ki, amit a szkenner nem lát.)
+cb4cc629 Üres fájl
+4642643c Ez a fájl üres (0 bájt).
+24ec314d Nem jelenik meg és nem szólal meg.
+6cd06e6e Cseréld le a fájl egy működő másolatára.
+07046633 Sérült fájl (csonka): {file}
+932dbf75 Hiányzik a fájl vége, általában mert egy letöltés, másolás vagy kicsomagolás nem fejeződött be.
+feda3672 A kép csak részben vagy egyáltalán nem jelenik meg, vagy a hang/videó túl korán leáll.
+968dc7a4 Másold vagy töltsd le újra ezt a fájlt a játék eredeti fájljaiból.
+6081a951 Valójában nem kép vagy hang: {file}
+dc397b7a A fájlnak jó a neve, de belül egy weboldal van (gyakran egy letöltőoldal hibaoldala).
+7f495908 A játékosok törött képet látnak, vagy nem hallanak semmit.
+eee27da5 Töltsd le újra a valódi fájlt, és cseréld le ezt.
+2a1c1b71 Valószínűleg sérült fájl: {file}
+4c30367e A fájl eleje nem hasonlít semmilyen ismert kép-, hang- vagy videóformátumra.
+d3b9cea3 Valószínűleg nem jelenik meg és nem szólal meg.
+0ab570a5 Nyisd meg egy képnézegetőben vagy médialejátszóban. Ha nem nyílik meg, cseréld le.
+f68470e5 Egyes fájloknak rossz a kiterjesztése (.png, .jpg ...)
+d608da1e Ezek a fájlok más formátumot tartalmaznak, mint amit a nevük mond, például egy .png nevű JPEG-kép.
+2e39b508 A böngészők általában így is megjelenítik. Egyes telefonok és programok talán nem.
+097a3703 Nem kötelező: alakítsd át vagy nevezd át őket, hogy a név megfeleljen a valódi formátumnak.
+283d2070 Egyes fájlok nagyon nagyok
+c7fa15ff Ezek a képek vagy videók nagyon nagyok.
+ae5369ab Lassan töltődnek be, főleg telefonon.
+e125a92c Nem kötelező: kicsinyítsd őket egy képszerkesztővel.
+385f4329 Hiányzik egy játékfájl: {name}
+2e700532 A játék egy olyan fájlt vár, amely nincs ott.
+99467808 A játék hibát jelez induláskor, vagy amikor ehhez a részhez ér.
+b3496ea7 Tedd vissza a hiányzó fájlt, vagy töröld a rá mutató hivatkozást.
+75e6334a Egy játékadat-fájl sérült
+db02e969 Ez a fájl nem olvasható be rendesen.
+79b96faf A játék nem indul el, vagy összeomlik.
+7ebbbeec Állítsd vissza a fájlt egy biztonsági mentésből vagy az eredeti játékból.
+d399fac1 Egy "{name}" parancs soha nincs lezárva
+e6c66d5b Egyes játékparancsoknak kell egy hozzájuk illő vég. Ennek nincs.
+0b1cb09f A játék piros hibadobozt mutat ebben a jelenetben, és a jelenet egy része hiányozhat.
+afdabc18 Tedd be a hiányzó véget (például <</{name}>>) oda, ahol ennek a résznek véget kell érnie.
+744245d7 Egy fölösleges záró címke <</{name}>>
+adb1bea4 Van egy záró címke, amelynek nincs mit lezárnia.
+b39fd74f A játék piros hibadobozt mutat ebben a jelenetben.
+a53d4f4e Töröld ezt a fölösleges záró címkét.
+fa8c8072 A(z) "{name}" rossz helyen van
+9009044d A <<{name}>> egy <<if>> blokkon belül kell legyen. Itt nincs, általában mert egy fölötte lévő záró címke rossz helyen van.
+1e9acaea A játék piros hibadobozt mutat.
+1d2d751d Nézd meg a közvetlenül fölötte lévő sorokat, és tedd a záró címkét a megfelelő helyre.
+bfaae414 Egy záró címkéből hiányzik egy ">": <</{name}>
+a280c34f A záró címke egy ">" jellel van írva, de kettő kell.
+71be19aa A játék nem látja a záró címkét. Piros hibadobozt mutat, és a jelenet rosszul nézhet ki.
+a3c69d1f Tegyél hozzá egy ">" jelet, hogy ">>" legyen a vége.
+413ace46 Egy fölösleges ">" jel
+4e791f5a Egy címke után eggyel több ">" van.
+4ecd446f A játékosok egy kósza ">" jelet látnak a képernyőn.
+c1c069b2 Töröld a fölösleges ">" jelet.
+cacfbdbb Egy fölösleges "<" jel
+fe9088b6 Egy parancs előtt eggyel több "<" van.
+0c7a0bb7 A játékosok egy kósza "<" jelet látnak a képernyőn.
+87807bf8 Töröld a fölösleges "<" jelet.
+b0d2d4e4 Félig megírt parancs: "<<"
+012a6c88 Van egy "<<", ami után nincs semmi.
+fd941db0 Az utána jövő parancs elromlik, és a játék hibát mutathat.
+73f8070a Töröld a kósza "<<" jelet.
+7037d71a Egy parancsból hiányzik a ">>"
+87bde2ac Egy parancs << jellel kezdődik, de soha nem végződik >> jellel.
+7f93f879 Az utána lévő szöveg eltűnik, vagy a jelenet hibát mutat.
+dbda1f76 Tedd a ">>" jelet a parancs végére.
+5a30164d Egy zárójel ki van nyitva, de soha nincs bezárva
+d5b047f2 Valami zárójellel kezdődik, de hiányzik a záró zárójel.
+8d50e9a9 Minden utána elnyelődik, vagy a játék hibát mutat.
+912c548c Tedd be a hiányzó záró zárójelet.
+35852e81 Egy fölösleges záró zárójel
+a1d86e33 Van egy záró zárójel nyitó nélkül.
+fdeb2ba4 A játékosok kósza karaktert vagy hibát láthatnak.
+254fbb5b Töröld a fölösleges zárójelet.
+98cb6b2f Egy parancshoz nem tartozik szöveg
+1afec1b9 Ennek a parancsnak a közvetlenül utána, szögletes zárójelben [így] írt szöveget kellene vezérelnie. Semmi sem követi.
+073266b4 A Harlowe hibát mutat, vagy a szöveg mindig megjelenik.
+29369e93 Tedd az általa vezérelt szöveget szögletes zárójelbe közvetlenül utána.
+4093f80e A játék hibát mutat, és a jelenetnek az a része, amit vezérel, nem működik.
+ef3a7877 Régi stílusú parancs
+54dead55 Ez a parancs még működik, de elavult.
+01500c48 Most semmi. Egy jövőbeli motorfrissítésben elromolhat.
+b1a70201 Nem kötelező: cseréld le az újabb parancsra.
+a4a93d21 Egy "if" feltétel "=" jelet használ "is" helyett
+582b6716 Egy "if" feltételben a "=" azt jelenti, hogy "legyen egyenlő", nem azt, hogy "egyenlő-e?".
+564cdad0 A játék piros hibadobozt mutat, vagy a feltétel mindig igaz, és a jelenet rossz része fut le.
+e3105e2f Cseréld az egyes "=" jelet "is"-re.
+f0b64920 "=>" vagy "=<" fordítva írva
+897ec753 A nagyobb vagy egyenlő jele ">=", nem "=>".
+0167d9bc A feltétel nem működik.
+0b498ace Írd helyette: ">=" vagy "<=".
+f917ca5e Az "is not" egy szó kellene legyen
+4e8bbdf4 Ebben a játékmotorban az "is not" mást jelent, mint az "isnot".
+e40cd819 A feltétel szinte mindig rossz.
+7f3a1402 Írd egy szóba: "isnot".
+694143a3 Egy mindig igaz "or" feltétel
+b760633e Az olyan, mint "$x is 1 or 2", csak az 1-gyel hasonlítja össze a $x-et; a magában álló "2" mindig igennek számít.
+f8b8cc75 Ez a rész akkor is lefut, amikor nem kellene.
+b1a0ec7e Ismételd meg a nevet: "$x is 1 or $x is 2".
+1c4512b1 Egy "if" feltétel, amely rossz időben teljesülhet
+bb598d2b Ez a feltétel zárójelek nélkül keveri az "and" és "or" szavakat. A számítógép mindig az "and" részeket értékeli ki előbb, így a feltétel talán nem azt jelenti, amit szántak.
+71408d55 Egy jelenet vagy választás megjelenhet, amikor nem kellene - például amikor egy szereplőt elraboltak, vagy egy jellemző túl alacsony.
+045d6c6c Tegyél zárójelet ( ) az összetartozó részek köré. Nézd meg a lenti kódot, és csoportosítsd az "or" választásokat.
+dbb9ed0f A zárójelek ( ) nem egyeznek
+6bbb5c72 Több a "(", mint a ")", vagy fordítva.
+d2676c8c Tegyél hozzá vagy vegyél el egy zárójelet, hogy párokat alkossanak.
+8f746eaa Üres "if" feltétel
+70ac1e0e Az "if"-nek nincs mit ellenőriznie.
+8fa764c4 A játék hibát mutat.
+f72f83b1 Írd be, mit kell ellenőrizni.
+00b75afd Semmit sem csináló értékváltoztatás ("==")
+d3024696 Ennek a sornak egy értéket kellene megváltoztatnia, de a "==" csak összehasonlít - semmit sem változtat.
+4bb1b350 Az érték soha nem változik. Ami tőle függ (időzítők, számlálók), elakad.
+bb9d82a8 Cseréld a "==" jelet "to"-ra.
+88b997d5 Semmit sem csináló értékváltoztatás
+47b56b1e Ennek a sornak egy értéket kellene megváltoztatnia, de nincs benne "to", "=", "+=" vagy "-=", így semmi sem változik.
+b3edbcbf Például az energiát vagy a pénzt soha nem veszi el vagy adja meg.
+5a19bb57 Írj "-=" jelet "-" helyett (vagy "+=" jelet "+" helyett).
+24335c15 Üres értékváltoztatás
+d7c9d917 A parancs üres.
+1ca2b36b Töröld, vagy írd be a változtatást.
+2d2715a0 Egy érték "=" jellel van beállítva "to" helyett
+b3386569 Ez a motor "to"-val állítja be az értékeket.
+be353939 Cseréld a "=" jelet "to"-ra.
+6b135470 Hiányzó idézőjel "
+b7ed7d6f Egy parancsban lévő szövegrész " jellel nyílik, de soha nem zárul.
+4b70c1d8 A játék hibát mutat, vagy elnyeli az utána lévő szöveget.
+081a0ff8 Tedd be a hiányzó " jelet.
+1a1cb7a5 Tabulátorok ott, ahol szóközök kellenek
+0d83ecca Ez a motor megköveteli, hogy a sorok csak szóközökkel legyenek behúzva.
+1928be6f A játék nem indul el, vagy itt hibával leáll.
+6707540b Cseréld a sor elején lévő tabulátort szóközökre.
+50e72b08 Egy sor végéről hiányzik a ":"
+1590b870 Az olyan soroknak, mint "if", "menu" és "else", kettősponttal kell végződniük.
+34cb1caf A játék nem indul el.
+739781b1 Tedd a ":" jelet a sor végére.
+463c9c22 Hibás szkriptkód
+90393617 Egy zárójel vagy idézőjel a szkriptkódban nem egyezik.
+10b6ae9e Az egész szkript leáll, ami sok funkciót elronthat.
+208a3574 Ellenőrizd a zárójeleket és idézőjeleket a sor körül.
+08a420a2 Bent maradt tesztkód
+f523c19b Benne maradt a teszteléskor használt kód.
+a161c8db Általában semmi sem látszik.
+5512920c Nem kötelező: töröld.
+e14ae90f Egy név, amelyben "-" van
+a5d94a86 Az értékek neve nem tartalmazhat "-" jelet. A játék csak a "-" előtti részt olvassa.
+1d915eed A játékosok rossz szót vagy üres helyet látnak egy név helyett.
+1ff6bd49 Használj "_" jelet "-" helyett.
+929dc82b Az erre vonatkozó feltételek mindig "nem" eredményt adnak, így egyes szövegek vagy jelenetek soha nem jelennek meg (vagy név helyett üres hely látszik).
+aa241baa Ugyanaz a név, más kis- és nagybetűkkel: ${a} / ${b}
+fe615c75 A játék számára ez két különböző érték, mert a kis- és nagybetűk számítanak.
+1549316e Az egyiken végzett változást a másik nem látja, így a jellemzők vagy jelenetek rosszul működnek.
+485f98c5 Írd át ezt: ${a} erre: ${b}.
+fbb1a8ec Elírt értéknév: {name}
+baa2f1ac A(z) "{name}" soha nem jön létre, de a(z) "{near}" igen. Szinte biztosan elgépelés.
+37eb4d71 A játék hibát mutat, vagy az érték mindig üres.
+69b0c997 Írd át ezt: "{name}" erre: "{near}".
+958390b8 Egy ideiglenes érték, amely soha nincs beállítva: _{name}
+66d98956 Ezt a rövid életű értéket használják, de soha nem kap értéket.
+f6d72946 Az erre vonatkozó feltételek soha nem működnek.
+b150a824 Előbb állítsd be, vagy javítsd a nevet.
+bb2ac176 Egy soha létre nem hozott érték: {name}
+418bb0cf Nem létező kapcsolót/változót használ (#{n})
+60eb5de9 Az esemény a(z) {n}. számot használja, de a játék listája rövidebb.
+ab5e6d39 Az esemény nem úgy működik, ahogy kellene.
+27e3bd51 Válassz létező kapcsolót/változót az eseményben.
+5e339cd0 Egy kapcsolónak/változónak nincs neve (#{n})
+e3546a24 Használatban van, de nincs neve a Database-ben.
+15f64977 Semmi sem látszik. Csak könnyű összekeverni.
+a8723260 Adj neki nevet a Database-ben.
+bd3955c1 Egy újrahasználható blokk kétszer van definiálva: {name}
+0a743f0a Két definíciónak ez a neve.
+4d983cee Csak az egyik verzió van használatban.
+08c1e9fa Töröld vagy nevezd át az egyiket.
+20982092 Egy újrahasználható blokk nem töltődik be
+3ed9bdd5 A jelenetéről hiányzik a "widget" címke.
+4f7fa681 Minden jelenet, amely használja, hibát mutat.
+a3c57c94 Add hozzá a "widget" címkét ahhoz a jelenethez a Twine-ban.
+769d38d3 Egy nem használt újrahasználható blokk: {name}
+91caae31 Definiálva van, de soha nincs használva.
+92f3557e Semmi sem romlik el.
+48518178 Nincs teendő.
+549a08bd Hiányzó idézőjel az oldal kódjában
+2616e9ea Egy oldalcímkéből hiányzik egy " idézőjel (gyakran egy képnél).
+c1ac2a6e A kép vagy elem talán nem jelenik meg, vagy szétesik az elrendezés.
+1359ec48 Nem rendesen lezárt oldaldobozok
+c5eaf192 Egy elrendezési doboz (például <div> vagy <center>) meg van nyitva, de nincs lezárva, vagy túl sokszor van lezárva.
+bff958b5 A szöveg vagy a képek rossz helyre vagy rossz stílussal kerülhetnek.
+2055d18e Tedd be a hiányzó záró címkét, vagy töröld a fölöslegeset.
+3ec38cbd Két elemnek ugyanaz az azonosítója (id)
+0bf6eee0 Minden id-nek egyedinek kell lennie az oldalon.
+ff424805 Az ezt a részt frissítő gombok rossz helyet változtathatnak meg.
+3d5e5acf Adj mindegyiknek saját id-t.
+9ef419aa Kép vagy link fájl nélkül
+41c88499 A címke semmire sem mutat.
+30064ec6 Törött kép ikonja jelenhet meg.
+0e8cdbfd Írd be a fájlnevet, vagy töröld a címkét.
+8c62dd1b Képméretek, amelyeket a böngészők figyelmen kívül hagynak
+c97c9dc5 Az olyan méretekben, mint height="450wv", vannak betűk, amelyeket a böngésző nem ért ("wv" nem mértékegység).
+38f858bc A képek így is megjelennek, csak rögzített pixelmérettel. Általában ártalmatlan.
+c33de17c Nem kötelező: töröld a betűket, pl. height="450".
+b2030de7 Nem egyező stílusnév: "{name}"
+912e16dc Ennek a résznek a kinézetét a(z) "{name}" név választja ki, de a stílus neve "{near}".
+93f6e366 Ez a rész a tervezett színek és elrendezés nélkül jelenik meg.
+de3efded Stílusnév stílus nélkül: "{name}"
+46cc76e2 Egyetlen stílusszabály sem használja ezt a nevet.
+3a6cc944 Általában ártalmatlan.
+d91f6b60 A játékosok által látható befejezetlen szöveg
+a2d31ceb A fejlesztő egy "PLACEHOLDER" vagy "TODO" jellegű jegyzetet hagyott a történetben.
+33f40845 A játékosok látják ezt a jegyzetet, vagy a jelenet befejezetlen.
+a398b7c0 Írd meg a valódi szöveget, vagy töröld a jegyzetet.
+a89ee2d1 Helyesírás: "{wrong}" helyett "{right}"
+bf0afa72 Gyakori helyesírási hiba.
+979c6e99 A játékosok látják a hibásan írt szót.
+7e32de5a Írd át ezt: "{wrong}" erre: "{right}".
+b2d44d92 Ismételt szó: "{words}"
+670755a1 Ugyanaz a szó kétszer szerepel egymás után.
+f901109b A játékosok látják az ismételt szót.
+c8f90b31 Töröld az egyiket.
+fd88a85b Nem létező képet mutat: "{name}"
+d99288f0 Nincs ilyen nevű kép definiálva, és egyetlen fájl sem illik rá az images/ mappában.
+61cd07a0 A játékosok helyőrzőt vagy hibát látnak.
+3b215908 Add hozzá a képet, vagy javítsd a nevet.
+a08bad60 A játéknak nincs azonosítószáma (ID)
+91a06fd9 A Twine egy ID-vel különbözteti meg a történeteket.
+7ff45b55 Tedd közzé újra a történetet a Twine-ból.
+ce8325ca Játék közben piros hibadobozt mutat: "{name}"
+212a3e36 Amikor a jelenetet ténylegesen lejátszották, a játék ezt a hibát mutatta: {msg}
+1cda4ad4 A játékosok piros hibadobozt látnak ebben a jelenetben, és egy része hiányzik.
+fe183b9c Nézd meg az ugyanehhez a jelenethez felsorolt hibákat - általában megmagyarázzák az okot.
+5a4709f8 A böngésző még elolvasni sem tud egy szkriptet
+417e0923 A böngésző elgépelést talált ebben a szkriptben, ezért semmi sem fut belőle.
+711c9902 A szkript által nyújtott funkciók (különleges parancsok, beállítások) hiányoznak vagy hibásak.
+289bf8bb Keress hiányzó zárójelet, idézőjelet vagy vesszőt ebben vagy az előző sorban.
+fefc36ad Hiányzó képek vagy hangok játék közben
+d47a66be Ezeket a fájlokat kérte a játék a jelenetek lejátszása közben, de nem léteznek.
+80b8b71b A játékosok egyes jelenetekben törött képeket látnak, vagy nem hallanak semmit.
+9733445f Add hozzá a hiányzó fájlokat, vagy javítsd a nevüket.
+4f504ebe Hiba a játék indulásakor
+92243591 A böngésző hibát jelzett a játék betöltésekor.
+2fea6477 A kezdőképernyő vagy egyes funkciók hibásak lehetnek.
+608156d3 Keresd meg a játék fő szkriptjében az üzenetben említett hibát.
+231d0f49 Elírt parancs: {name}
+388bf136 Ismeretlen parancs: {name}
+9b686aa1 A játék nem ismeri ezt a parancsot. Szinte biztosan elgépelése ennek: {near}.
+d1f769ee A játék nem ismeri ezt a parancsot.
+6a1cce2c Írd át erre: {near}.
+46c692e0 Ellenőrizd a parancs helyesírását.
+6db67833 Egy érték, amely soha nincs beállítva: {name}
+c0ceb098 A játék a(z) "{name}" nevet használja, de mindenhol máshol "{near}" a neve. Ez elgépelés.
+8acbe929 A játék ellenőrzi vagy megjeleníti ezt: "{name}", de soha semmi nem ad neki értéket.
+fbb2c20c Adj neki kezdőértéket, vagy javítsd a nevet.
+33e186ef Egy érték, amelyet a játék soha nem használ: {name}
+72bf1ee8 Ez a(z) "{name}" értéket változtatja, de a játék csak a(z) "${near}" értéket nézi. Ez elgépelés.
+7f81aa2e A(z) "{name}" változik, de a játék soha nem nézi meg.
+fd3f859d A változás elvész - például egy jellemzőnövelés, amely soha nem számít bele.
+4857ea9f Semmi sem romlik el. Lehet, hogy régebbi verziókból maradt.
+d2118ba7 Írd át ezt: "{name}" erre: "${near}".
+3867ee62 Nincs teendő, hacsak nem használatra szánták.
+11e31f78 A(z) "{name}" soha nem jött létre. Valószínűleg ennek az elgépelése: "{near}".
+8f03aa6d A(z) "{name}" soha nem jött létre a játék elején.
+dd8d9eef Hozd létre a játék elején.
+a62731f6 passzázs
+f8de5ecc Egy Twine-játék egy oldala vagy jelenete. Minden passzázsnak van neve, és a linkek egyik passzázsból a másikba visznek.
+ea5e0445 jelenet
+ad88890f A történet egy oldala. A Twine-ban ezt "passage"-nek (passzázsnak) hívják.
+78f3a3d9 makró
+480a06b0 << és >> közé írt játékparancs, például <<if>> vagy <<set>>. A játék végrehajtja, ahelyett hogy megjelenítené.
+1925f793 parancs
+410ae6be Utasítás a játéknak, például "mutasd ezt a képet" vagy "ha a játékosnak van 5 aranya". A SugarCube-ban << és >> közé írják őket.
+b46d0172 változó
+2ef301de Egy elnevezett érték, amelyet a játék megjegyez, például $gold vagy $mother_love. A SugarCube-ban $ jellel kezdődik.
+f32b67c7 érték
+a746abd2 Egy szám, szó vagy igen/nem, amelyet a játék megjegyez, például az arany mennyisége.
+afad9a69 feltétel
+1dc59f8f Egy ellenőrzés, mint "$gold gte 5" (van-e a játékosnak legalább 5 aranya?). Az utána lévő szöveg csak akkor jelenik meg, ha a feltétel igaz.
+5e9b60f6 címke
+1df6d68c Jelölés a kódban. A nyitó címkék, mint <<if>>, elkezdenek egy részt, a záró címkék, mint <</if>>, befejezik.
+4f0aa52d link
+5afc9751 Kattintható szöveg, amely egy másik jelenetbe viszi a játékost. A Twine-ban: [[Szöveg|Jelenet neve]].
+d3ecb0d8 include
+bbc9ce26 Egy parancs, amely egy másik passzázst illeszt ebbe: <<include "Név">>.
+ff700e02 widget
+fd5df966 Saját készítésű parancs, amelyet egyszer definiálnak és sok jelenetben újrahasználnak.
+9f738ce8 HTML
+16d38297 A nyelv, amelyen a weboldalak készülnek. Címkék, mint <img> (kép) és <div> (doboz).
+194e13da CSS
+28d26723 Stílusszabályok: színek, méretek és elrendezés. A "class" egy elemet köt egy stílushoz.
+ee620923 JavaScript
+2d04472d A weboldalak programozási nyelve. A játékok különleges funkciókhoz használják.
+cb5346a0 szkript
+302bcb23 Egy darab programkód (általában JavaScript).
+0c4da6cb Twine
+5deecf78 Az ingyenes program, amellyel sok szöveges játék készül. Egyetlen .html fájlként teszi közzé a játékot.
+9b2ab238 SugarCube
+5a15607f A Twine-játékok leggyakoribb "story format"-ja (motorja). Ez adja a << >> parancsokat.
+5e2fb0c2 közzététel
+9eb9fe5a A Twine-ban: Build > Publish to File. A történetedből elkészíti a játszható .html fájlt.
+1af607c7 fájlútvonal
+3bee6183 Ahol egy fájl van, például images/hero.png (az "images" mappa, a "hero.png" fájl).
+264f39ca sor
+f44c6b66 Egy sornyi szöveg a fájlban. A szövegszerkesztők bal oldalon mutatják a sorszámokat.
+3cc46d20 behúzás
+2a14602c Szóközök egy sor elején. Egyes motorok ezekből tudják, mely sorok tartoznak össze.
+64c65374 címke (label)
+0419b517 Egy elnevezett pont egy Ren'Py vagy ChoiceScript történetben, ahová más részek ugorhatnak.
+40a22a4a knot
+fba17772 Egy Ink-történet elnevezett része. A "-> név" oda ugrik.
+fd8c7c8e bővítmény
+45e375e0 Egy RPG Maker játékhoz adott extra szkript.
+67db3ab6 1. Mi az a passzázs (jelenet)?
+6cfa54e4 2. Parancsok << és >> között
+fcaf062f 3. Nyitás és zárás
+47887091 4. Értékek, amelyeket a játék megjegyez ($változók)
+c3bcb980 5. "If" feltételek
+d8cc0b48 6. Képek és hangok
+c413d282 7. Biztonságos szerkesztés
+fb4c49ae 8. Hogyan olvasd ezt az alkalmazást
+a9af7910 Kezdd itt: nyisd meg a játék .html fájlját (vagy egy Ren'Py, RPG Maker, Ink vagy ChoiceScript játékmappát). Az ellenőrzés magától indul.
+de845e69 Az "Egyszerű szavak" mindent hétköznapi nyelven magyaráz el. Kapcsold ki a technikai részletekhez.
+6c84c615 Fejlesztő vagy Játékos: a játékosok rövid, kevés spoilert tartalmazó listát kapnak a hibás jelenetekről, és egy hibajelentést a fejlesztőnek. A fejlesztők a javítóeszközöket kapják.
+ba413de9 Az összes talált hiba. A piros hibás, a sárga valószínűleg hibás, a kéket érdemes megnézni. Kattints egyre, hogy lásd, mit tegyél.
+476c1a70 Itt látod, mi a baj, mit vesznek észre a játékosok, és pontosan hogyan javítsd - az előtte és utána lévő sorral.
+e871d7cc A Javítási varázsló egyenként végigvezet a hibákon, és ellenőrzi helyetted minden javításodat.
+3d56d049 A játékteszt minden jelenetet lejátszik egy láthatatlan böngészőben, és megtalálja azokat a hibákat, amelyek csak játék közben látszanak.
+41da0a4f Eszközök: biztonsági mentés, sor kipróbálása módosítás előtt, két verzió összehasonlítása, hibajelentés írása, változások figyelése.
+75d05bed Súgó: leckék, szójegyzék, ez a bemutató és kényelmi beállítások, mint az extra nagy szöveg.
+52c5f193 A kód egészségének pontszáma: 100% kiváló, 90% nagyszerű, 80% jó, 70% elfogadható.
+bcecc3cb Egy Twine-játék passzázsokból áll. Minden passzázs egy jelenet: egy kis szöveg, talán egy kép, és linkek más passzázsokhoz.
+b1f433c6 A linkek így néznek ki. A | előtti rész az, amit a játékos lát, a | utáni rész annak a passzázsnak a neve, amelyet megnyit:
+33dd3c05 A névnek pontosan egyeznie kell, a kis- és nagybetűkkel és szóközökkel együtt. A "kitchen" és a "Kitchen" két különböző passzázs.
+14a03cdc A SugarCube játékok << és >> közé írt parancsokat használnak. A játék végrehajtja őket, ahelyett hogy megjelenítené.
+fffc20ea Mindig pontosan két < az elején és két > a végén. Eggyel több vagy kevesebb elrontja a parancsot:
+1e192fbd Egyes parancsok olyanok, mint a zárójelek: megnyitnak egy részt, és le kell zárni őket. Az <<if>> párja az <</if>>.
+fd08a19b Ha a záró <</if>> hiányzik, a játék piros hibadobozt mutat. Ha eggyel több van, akkor is.
+b25bf333 A $ jellel kezdődő szó egy érték, amelyet a játék jelenetek között megjegyez, például $gold vagy $mother_love.
+d4d0415d A kis- és nagybetűk számítanak: a $Gold és a $gold két különböző érték. Egy elgépelés új, üres értéket hoz létre, így a változás elvész.
+340aacf8 Egy érték megváltoztatásához használd a "to", "+=" vagy "-=" jelet. Egy sima "-" számol, de nem változtat semmit:
+87dc8b35 Egy "if"-en belül ezekkel hasonlíts: "is", "isnot", "gte" (legalább), "lte" (legfeljebb). Egy sima "=" ott hibás:
+add346a2 Az "and" az "or" előtt értékelődik ki. Zárójelekkel csoportosíts, különben a feltétel rossz időben is igaz lehet:
+f07da221 A képeket <img> címke jeleníti meg. Az útvonal megmondja, hol van a fájl, a játék mappájától számítva:
+9e333b42 A mappák között használj / jelet. A \ csak Windowson működik. A kis- és nagybetűknek egyezniük kell a valódi fájlnévvel telefonon, Macen és weboldalon.
+9d1c8406 Minden megnyitott " idézőjelet le kell zárni, különben a kép nem jelenik meg.
+6f7151f5 Mielőtt bármit változtatsz, készíts biztonsági mentést (Eszközök > Biztonsági mentés a játékfájlról).
+73b5381e Ha a játék Twine-ban készült, a módosításokat a Twine-ban végezd, és tedd közzé újra. A közvetlenül a .html fájlban tett módosítások elvesznek, amikor a játékot legközelebb a Twine-ból teszik közzé.
+0dab15d3 Ha csak a .html fájlod van (Twine-történet nincs), szerkeszd egy szövegszerkesztővel, például Notepad++-szal. A .html fájlban a < és > jelek &lt; és &gt; formában szerepelnek - az alkalmazás megmutatja a pontos másolandó szöveget.
+a877adb7 Minden módosítás után: ments, töltsd újra a játékot a böngészőben, és nyomd meg ebben az alkalmazásban a "Kijavítottam - ellenőrzés" gombot.
+e6cfd88c Piros = hibás: a játékosok bele fognak futni. Sárga = valószínűleg hibás. Kék = érdemes megnézni, gyakran rendben van.
+3c06ac34 Kezdd az összefoglaló "Kezdd itt" listájával, vagy használd a Javítási varázslót: egyszerre egy hibán vezet végig.
+f5a4fb88 A "Megjelölés szándékosként" elrejt egy olyan találatot, amit ellenőriztél, és meg akarsz tartani. Ennél a játéknál rejtve marad.
+f3979521 Kb. 1 perc
+d621d05d 5-15 perc
+bea680e1 A fejlesztő kell hozzá (történeti vagy tervezési döntés)
+0c6c4102 Nem kötelező
+e53abb3c Könnyű javítás
+c4f93c0c Némi figyelmet igényel
+a22663d7 A fejlesztő kell hozzá
+230659f7 Valószínűleg igen, de nézd meg gyorsan.
+6d9d36d5 Nem. A játékosok bele fognak futni.
+ddad7bf2 Csak ha ellenőrizted a logikát, és azt csinálja, amit szeretnél. Akkor jelöld meg szándékosként.
+6cf97a3f Igen, ha a jelenet régi, vagy nem játszásra szánták.
+d54dbf6e Igen. Semmi sem romlik el.
+3b411bc1 Igen, ha a játékot csak Windowson játsszák.
+667e089a Igen, egyelőre. Egy jövőbeli motorfrissítésben elromolhat.
+ca7eea8c Igen, de a játékosok látni fogják az elgépelést.
+6225e68e Csak ha a jelenet szándékosan befejezetlen.
+47ecb09c Igen. A képek így is megjelennek.
+178ca96e Igen. Semmi látható nem változik.
+e2fca6c0 Általában igen. Gyakran régebbi verziókból maradt.
+bcc248b9 Inkább ne. Nagyon valószínűleg valódi hiba.
+557f2555 nem
+cffa50a3 és
+1758356d vagy
+6981b0db Egyetlen jelenet sem linkel ide: "{name}" olyan módon, amit a szkenner követni tud. Lehet, hogy a játékosok soha nem látják, vagy olyan kód visz oda, amely változókból rakja össze a jelenet nevét.
+0f56183f A játékosok {n} helyről jutnak el ide: "{name}"
+02e974ba Ez a játék első jelenete.
+5ffe533b igaz
+7cb6efb9 hamis
+1ed06825 egy link
+3d22ef57 egy include
+ccdfd8c1 egy automatikus ugrás
+3f80e4d1 Innen: "{src}" ({how}), ha: {cond}
+084fcdcf Innen: "{src}" ({how}), mindig.
+8adbc573 …és még több.
+1aafbf54 Kiváló
+bd846adf Nagyszerű
+61dedcf0 Jó
+226d7ec9 Elfogadható
+eafabce9 Dolgozni kell rajta
+4e0fa437 Gyenge
+75fb2b10 Fájl olvasása
+ac133acf Történetadatok keresése
+456caef0 Szkriptek és stílusok összegyűjtése
+fc404c89 Passzázsok és linkek ellenőrzése
+6a4d36f9 Makrócímkék ellenőrzése
+546de9d0 Feltételek és kódlogika ellenőrzése
+c338107e Változók ellenőrzése
+5730c93f HTML-címkék ellenőrzése
+ea4c65ed CSS-osztályok ellenőrzése
+d874e65d Képek, hang, videó és fájlok ellenőrzése
+6517d389 Szöveg ellenőrzése (elgépelések, helyőrzők)
+87beeee4 JavaScript ellenőrzése
+7b7efd8b A story format szabályainak ellenőrzése
+25f3b361 A(z) {label} játék beolvasása
+a28b6c50 Fájlok sérülésének ellenőrzése
+5aedb280 A láthatatlan böngésző indítása
+f5a5071d A játék betöltése
+8466e7c7 Szkriptek ellenőrzése a böngésző JavaScript-motorjával
+bf197daa Jelenetek lejátszása ({mode}): {k}/{n}
+f70cf464 A játékteszt kész
+427c9fd7 Olyan jelenetekben, ahová senki sem jut el
+9b9f5c3d A játékosok ezt sosem látják: olyan jelenetben van, ahová senki sem jut el. Nyugodtan maradhat.
+e58020da Senki sem jut el ide: „{name}”, mert a linkje ki van kapcsolva
+2795ab1b Az egyetlen link erre a jelenetre itt van: „{where}” ({line}. sor), egy rejtett megjegyzésben /* ... */. Ami /* és */ között van, az ki van kapcsolva.
+4ed22111 A játékosok sosem látják ezt a jelenetet.
+30fda4f3 Ha a játékosoknak látniuk kell, töröld a /* és a */ jelet a link körül. Ha szándékosan kapcsoltad ki, hagyd így.
+7a9ce2ca Az egyetlen linkek erre a jelenetre olyan jelenetekben vannak, ahová senki sem jut el.
+3aafeed1 Ha a játékosoknak látniuk kell, adj hozzá linket egy elérhető jelenetből. Ha régi, figyelmen kívül hagyhatod.
+0c4d1909 {n} fájl {k} mappában soha nincs használva
+0efdb085 {n} érték, amit a játék sosem használ
+425a6a2a Ezek az értékek változnak, de a játék sosem nézi meg őket.
+849cdd9b Semmi sem romlik el. Lehet, hogy régebbi verziókból maradtak.
+a82d56f5 Egy oldaldoboz nincs lezárva: <{tag}> a(z) {line}. sorban
+5c73814e A(z) {line}. sor <{tag}> eleme sosem zárul le </{tag}> jellel.
+b587a89d Tedd be a </{tag}> jelet oda, ahol a doboznak véget kell érnie.
+f1a6f13d Egy fölösleges záró címke: </{tag}> a(z) {line}. sorban
+d887494b A(z) {line}. sor </{tag}> eleme egy sosem megnyitott dobozt zár le.
+f3d6de5f Töröld a fölösleges </{tag}> jelet, vagy add hozzá a hiányzó <{tag}> jelet.
+94b62097 Helyesírás: „{wrong}” helyett „{a}” vagy „{b}” kell
+45919c5c Gyakori helyesírási hiba. Két különböző szót is jelenthet.
+d3631b3f Olvasd el a mondatot, és írd át a(z) „{wrong}” szót „{a}” vagy „{b}” alakra, amelyik illik.
+4f2e0c01 Nem kell semmit tenni, hacsak valamelyiket nem kellett volna használni.
+37a88891 Általában semmi: a böngésző magától lezárja a jelenet végén.
+9c393632 Igen. Olyan jelenetben van, ahová senki sem jut el, így a játékosok sosem látják. Csak akkor javítsd, ha később linket adsz ehhez a jelenethez.

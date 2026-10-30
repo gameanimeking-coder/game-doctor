@@ -1,0 +1,836 @@
+#name Čeština
+e77b83c2 Test hry dokončen: {n} scén zahráno {m} způsoby, při hraní nalezeno problémů: {k}.
+e9dd5680 Zkopírováno do schránky
+e00ac23f Druh
+764b4aa3 Jak vážné
+33446003 Scéna
+44819483 Nic
+36c4a06f Kontroluji…
+ecab72e7 Složka hry / celá hra
+95263aa8 Řádek v souboru hry (zvýrazněný)
+adac6937 Kód
+4dc2eddf Nalezeno pomocí {app}. Problémů: {n}.
+6b21fb79 O aplikaci
+b8bb1461 Jak se hráči dostanou do této scény?
+d07d7afa Jak se hráči dostanou do "{name}"?
+fa893d87 Čisté
+70440046 Poznámky
+1430f976 Varování
+805e86a8 Chyby
+dcad8ee5 Připravuji zobrazení kódu…
+7f2f6a15 Chyba
+e9c45563 Varování
+2c924e30 Poznámka
+f4808ecd Otevřít hru…
+f6ab55dd Zkontrolovat znovu
+dd3fa3ce ▶ Test hry
+5e4797ea Průvodce opravami
+4fa8cc86 Nástroje
+c47ae153 Nápověda
+9d454f7c Není otevřena žádná hra
+7869cc5c Upravuji v Twine
+db8da328 Upravuji soubor .html (Notepad++ apod.)
+20c7c552 Připraveno
+26a93eac Otevřít složku hry (Ren'Py, RPG Maker, Ink, ChoiceScript)…
+775b3ab8 Složka s obrázky a zvuky…
+cd9a3d88 Zálohovat soubor hry
+2505d3da Vyzkoušet řádek před změnou…
+3536c70a Porovnat s jinou verzí…
+080460a5 Napsat hlášení chyby pro vývojáře…
+0cbf16ea Exportovat zprávu…
+490c3a52 Sledovat soubor hry a po uložení znovu zkontrolovat
+09e02e95 Zobrazit problémy označené jako záměrné
+80f65544 Textový editor…
+3a4dad84 Projít prohlídku
+f996200a Lekce (F1)
+e5aaa5b5 Slovníček
+320067c6 Extra velký text
+07471db5 Barvy vhodné pro barvoslepé
+c2cebede Všechny druhy
+1baa06b4 Problém
+ced091e8 Scéna / místo
+ea967600 Řádek
+99a42316 Oprava
+3cd62e5f Otevřít v mém textovém editoru
+a4f34926 Kopírovat opravený řádek
+0973fd22 Kopírovat text k vyhledání
+28a1dc64 Opravil jsem to - zkontrolovat
+1a256c63 Dát vědět vývojáři
+b491a51b Zobrazit v zobrazení kódu
+463e5e78 Označit jako záměrné
+562107b8 Přečíst nahlas
+e42bc527 Kopírovat podrobnosti
+d7c5a824 Zobrazit přesně tak, jak je uloženo v souboru (kódy &lt;)
+2314cd9a Otevřít hru
+7a8e0cf0 Vyberte složku hry
+ff10f24c Složka s obrázky, zvuky a videi hry
+38e9a3e9 Hra: {path}     Složka: {folder}
+24fc8907 Přestat číst
+7335beba Už není označeno jako záměrné
+24fec833 Označeno jako záměrné - skryto ze seznamu (Nástroje > Zobrazit problémy označené jako záměrné)
+615c9a3f {fmt} · {units} částí · {files} souborů ve složce · {e} rozbitých, {w} asi rozbitých, {i} ke kontrole · {s} s
+f229a698 Zdraví kódu: {n}% · {label}
+d8d62e38 Kontrola dokončena
+dd3a39d8 Zdraví kódu
+c6643b25 Stupnice: 100% výborné · 90% skvělé · 80% dobré · 70% ucházející · pod 70% potřebuje práci
+7e0056d2 Vychází z toho, kolik scén má problémy a jak vážné jsou.
+07c80477 Podle druhu
+45b733c9 Klikněte na problém v seznamu a uvidíte podrobnosti.
+525f61b6 Kde
+4090e818 Jak to opravit
+0b975974 Otevřete svůj příběh v Twine a otevřete pasáž "{name}".
+905dc77d Stejný název je použit i na dalších řádcích ({n}): {lines}. Změňte ho i tam.
+3cfafb7c Znovu publikujte příběh (Build > Publish to File) a pak hru znovu načtěte a zkontrolujte.
+64cb91c6 Kde: {where}
+4383fcfd Co je špatně: {text}
+07bddb04 Jak to opravit: {text}
+cf36743b Teď: {text}
+0cacfdc2 Změnit na: {text}
+70fbdd39 Opravený řádek zkopírován. V Twine označte starý řádek v pasáži "{name}" a vložte.
+60eafc99 Opravený řádek zkopírován. V editoru označte řádek {n} a vložte přes něj.
+67a9f511 Hledaný text zkopírován. V editoru stiskněte Ctrl+F a vložte ho.
+67c1b9a0 Soubor se od poslední kontroly nezměnil. Uložili jste ho?
+2693cf86 Porovnejte svůj řádek znovu s řádkem "Změnit na".
+1b930787 Nejdřív otevřete hru.
+9dbf0a77 Záloha uložena: {path}
+88e09b05 (váš text)
+e835a0e1 Hlášení chyby pro {game}
+338c5072 Technické: {text}
+fc5e62a8 Soubor nastavení: {path}
+0f83a323 Soubor hry je sledován. Při každém uložení se znovu zkontroluje.
+24b5689b Sledování souboru hry ukončeno.
+6bbf59c5 Zastavuji test hry…
+c5726162 Test hry potřebuje Microsoft Edge nebo Google Chrome a ani jeden nebyl nalezen.
+efe69072 Hra se během testu změnila. Spusťte ho znovu.
+4e1a8e3c Žádné problémy
+59cd52ee Stojí za kontrolu
+80c66d73 Asi rozbité
+3ad465ce Rozbité
+8ea8e60f Řádek {n}: nenalezeny žádné problémy
+421fe500 dvojklikem zobrazíte podrobnosti
+a6e7e8d6 "{text}" nenalezeno
+fc748144 Exportovat {n} problémů zobrazených v seznamu
+c8ca2957 Zpráva uložena: {path}
+09188221 Celá hra
+5a7ee5ac Hlášení chyby
+203dee52 Podrobnosti byly uloženy do {path}
+5abfea7d Jednoduchá slova: vyp.
+de314fa0 Závažnost
+fc55cc19 Pasáž / místo
+3deb7456 Typ
+61790945 ■ Zastavit test hry
+e23fd7cf Zrušit označení jako záměrné
+5ffa6ce4 Kontroluje hry, zda neobsahují chyby, a jednoduchými slovy vám řekne, co je špatně a jak to opravit. Funguje s hrami Twine (SugarCube, Harlowe, Chapbook, Snowman), dalšími HTML hrami, Ren'Py, RPG Maker MV/MZ, Ink a ChoiceScript.
+e13e18f3 Jak to používat
+c3abe9f5 Bezpečné používání
+4d688496 Tento program vaši hru jen čte. Nikdy ji nemění. Než cokoli upravíte, použijte Nástroje > Zálohovat soubor hry.
+90c93523 Klávesové zkratky
+8e990034 Ctrl+O otevřít · F5 zkontrolovat znovu · Ctrl+F hledat · F3 najít další · Ctrl+E exportovat · F1 lekce · Ctrl + / Ctrl − / Ctrl+0 nebo Ctrl+kolečko myši pro změnu velikosti
+21e5904b Zkontrolováno odkazů na soubory: {n}
+052df047 Začněte zde - nejdůležitější opravy
+eff36495 Nebo klikněte na "Průvodce opravami" a projděte je jednu po druhé.
+23bd8fe4 Scéna "{name}"
+8cb67e05 Pasáž "{name}"
+12b1a199 řádek {n} pasáže
+280d0541 řádek {n} v {file}
+a684f161 Toto jste označili jako záměrné, takže se to nepočítá.
+6aeb39ef Co je špatně
+c1bcc130 Co je špatně
+ebcf7d18 Čeho si hráči všimnou
+e7f32d0f Klikněte na "Otevřít v mém textovém editoru". Otevře {file} na řádku {n}.
+73c8627d Smažte ten řádek (je zobrazen níže pod "Teď").
+b44b2225 Změňte ho, jak je ukázáno níže pod "Změnit na". "Kopírovat opravený řádek" zkopíruje celý opravený řádek, který vložíte přes ten starý.
+d640e11b Viz vysvětlení výše.
+33d1a502 Uložte soubor, znovu načtěte hru a klikněte na "Opravil jsem to - zkontrolovat".
+fd3e0dfe Vytvořeno v Twine? Pak to opravte v Twine (přepněte výše "Upravuji soubor .html" na "Upravuji v Twine"). Publikování z Twine přepíše změny provedené přímo v souboru .html.
+e3b82040 Teď
+b9b6aac4 Změnit na
+3895c256 Můžu to ignorovat?
+189da0ef Čeho si hráči všimnou: {text}
+7d949b29 Kód: {text}
+80411ece Ještě neopraveno - problém tam stále je
+71a91179 stiskněte Ctrl+G a napište {n} pro skok na řádek
+84d3bdef Otevřeno v {name}
+7bf2bdbd Scéna: {name}
+f8e71156 Řádek {n} v {file}
+e9331864 Co se stane: {text}
+16fcd5a1 (na tomto řádku je ještě {n} znaků)
+6dcc62dd Zpráva uložena. Otevřít ji teď?
+02fbc53c Problém (jednoduchými slovy)
+2c3cafa4 Soubor
+1bea2fb0 Jak opravit
+fdccd352 Uvnitř aplikace se něco pokazilo:
+b7152342 Velikost
+8e6b86dc Problémy
+8f0d8d83 Seskupit podle
+bce06414 Hledat
+74c14ca3 Zobrazení kódu
+a3d77701 ◀ Předchozí problém
+3a289dc9 Další problém ▶
+2e0b45f2 Přejít
+ececaefe Najít další
+df251b06 Najít
+7e08ebec Vývojář
+e53407cf Hráč
+0406a446 Jednoduchá slova
+2edb004b Upravuji soubor .html
+b45e0101 Sleduji změny
+398ed329 Hry
+6f80238e HTML hry
+f7857dcc Všechny soubory
+6798c955 Kontroluji, čekejte prosím…
+be4bd50c Zdraví kódu: {n}%
+16dd1f3a Označeno jako záměrné: {n}
+901b56b2 Nic k zobrazení
+ea64a687 4. Nápověda > Lekce vysvětlí základy za pár minut. Nápověda > Projít prohlídku vám vše ukáže.
+570f71b7 Scény, které jsou rozbité
+08f7f24d Uložte si hru, než je navštívíte, ať se můžete vrátit, kdyby se něco pokazilo:
+29e8d770 Použijte u problému "Dát vědět vývojáři" nebo Nástroje > Napsat hlášení chyby a pošlete mu podrobnosti.
+d19ceca5 Tip
+251eb9e2 Uložte si hru, než se dostanete do této scény, ať se můžete vrátit, kdyby se rozbila.
+d782b266 Najděte místo: použijte v Twine "Find and replace" (nebo se pozorně podívejte) a hledejte tento text:
+eb92d56f Otevřete projekt v RPG Makeru a přejděte na: {where}
+7e7c7eb1 (smazat tento řádek)
+d40baaa7 ✔ Opraveno! Problém zmizel. Zdraví kódu je teď {n}%.
+fce98782 Vyberte jiný editor v Nástroje > Textový editor…
+55d0a707 Záloha uložena:
+802cfe54 Zálohu se nepodařilo vytvořit:
+a01ce386 Navržená oprava (v Twine):
+d9cb995e Překlady do jiných jazyků než angličtiny vytvořila AI a mohou obsahovat chyby. Technické podrobnosti zůstávají anglicky, stejně jako herní enginy a jejich příručky.
+987dd9b8 Otevřete hru a uvidíte tu její kód.
+f4fd7854 {name} (řádků: {n})
+db3b1ca2 Zpráva jako webová stránka
+1b5f6570 Tabulka (CSV)
+ee3d21a8 Textový soubor
+934a1886 Zprávu se nepodařilo uložit:
+29211387 Motiv systému
+9e5ba0f0 Světlý motiv
+d51c5960 Tmavý motiv
+71df97be Soubor uložen - znovu zkontrolován: opraveno {fixed}, nových {new}
+12d21609 (celá hra)
+4671f2fd Částí: {n}
+af4e5ffa Problémů v této skupině: {n}. Klikněte na jeden a uvidíte podrobnosti.
+e065ed24 Pokud se řádek posunul, stiskněte v editoru Ctrl+F a hledejte:
+d6cd9bbc Nepodařilo se zkontrolovat:
+e8b6a7a1 (řádek {lines})
+2a87805d Nepodařilo se spustit {name}:
+50803478 Jak opravit: {text}
+cbbf7064 Verze {v}. Hledá problémy ve hrách a vysvětluje, jak je opravit. Soubory jen čte a vaši hru nikdy nemění.
+7e16f294 Zdraví kódu: {n}% ({label})
+13b7bfca Pracuji…
+944d285f Kontrola selhala
+5117eb3e Současným filtrům neodpovídá žádný problém.
+84a26cd3 Nenalezeny žádné problémy. Dobrá práce!
+e961739d 3. Nevíte, kde začít? Použijte Průvodce opravami - projde problémy jeden po druhém a zkontroluje vaše opravy.
+dfa2b6e9 Řádek {n}:
+27a41ea2 (smazat)
+966d414d řádek {n}
+a37a62b5 2. Klikněte na problém v seznamu. Pod ním uvidíte, co je špatně, čeho si hráči všimnou a přesně jak to opravit.
+47faaf63 Test hry zastaven
+9de8b1a5 1. Klikněte na "Otevřít hru…" a vyberte soubor .html hry (nebo pro složku hry použijte Nástroje). Kontrola začne sama.
+836bf385 Test hry se nepodařilo spustit:
+3dd51c5a Vyberte svůj textový editor
+1f7611ea Textový editor nastaven na {name}
+43320d49 Vyzkoušet řádek před změnou
+18e673bc Ve vaší hře se nic nemění. Kontroluje se jen text, který sem napíšete.
+8ecc7800 Napsat hlášení chyby pro vývojáře
+2e2b95ec Porovnat dvě verze
+ccdb5389 Vyberte druhou verzi hry a klikněte na Porovnat. Obě se jen čtou, nikdy nemění.
+cabad4eb Kontroluji druhou verzi…
+cb9ce97b Lekce
+9255b9a1 Vyberte program textového editoru
+67094e72 Ten program nebyl nalezen. Vyberte ho pomocí "Procházet…".
+21461571 ◀ Zpět
+2d8a1625 Přeskočit ▶
+7c5d9f51 Opraveno {done} z {total}
+cb70c72b Problém {n} z {total}
+820d6004 Kontroluji…
+e461d5d0 Nalezené problémy ({n}):
+9580fcbc Prostý text
+26a49ee7 Discord / Reddit
+1f82bc1e Fórum (BBCode)
+616ce66d Rozbité + asi rozbité
+34d5d395 Jen vybraný problém
+ced1fd2f Uložit hlášení chyby
+ec9135a3 Hlášení chyby uloženo: {path}
+8d105cf4 Porovnat
+a1cd6b54 Vyberte druhou verzi
+1f5bf765 Nejdřív vyberte druhou verzi.
+ad916050 Porovnávám…
+f4f29947 Zdraví kódu: {a}% → {b}%
+a81eb289 Opraveno v novější verzi ({n})
+53da970f Nové problémy v novější verzi ({n})
+2be41ba6 Stále tam ({n})
+9ec4aa53 Slova používaná v této aplikaci
+ce12714d Není co opravovat
+d231fca7 Nezbyly žádné problémy k opravě. Výborně!
+76c1c7de Tento problém zmizel - byl opraven nebo se soubor změnil. Pokračujte kliknutím na Přeskočit.
+55855f77 Zkoušení jednotlivých řádků funguje pro hry Twine (SugarCube). Nejdřív nějakou otevřete.
+bbfa773e Zavřít
+af74f7c5 Kopírovat
+571a03ba Který program má otevírat soubor hry?
+113fa56b Na tomto počítači byly nalezeny tyto textové editory:
+d4b86cfd Jiný program…
+9d68007b Program
+c1b20f52 Procházet…
+6bf5da9c Možnosti
+4ee6279e {file} se nahradí souborem hry a {line} číslem řádku. Notepad++ používá: -n{line} "{file}"
+77dfd213 Zrušit
+efc007a3 Uložit
+ab14d0a7 Programy
+4abacc60 ✔ Opraveno! Výborně. Tady je další.
+1ed684b1 Vložte nebo napište řádek (nebo celou pasáž), který chcete použít:
+45f9116a Toto je celá pasáž (zkontrolovat také, že je každá značka uzavřená)
+4b5e84be Zkontrolovat
+6a17f3f6 V tomto textu nebyly nalezeny žádné problémy.
+44b39131 Návrh:
+4020c08c Styl:
+2f32f781 Zahrnout:
+4705cad6 Zahrnout postup opravy
+d9057148 Uložit jako…
+83c52802 Jiná verze:
+c3c1e96d Druhá verze je:
+6fa5fbbc starší
+1d47386a novější
+78cee4b8 Krok {n} z {total}
+57bc79e3 Přeskočit prohlídku
+bc981983 Další
+e9b450d1 Hotovo
+682c160f Aktuální hra:
+74c063af Špatně:
+3a82310a Správně:
+c7c15bca Hráčům se tohle pokazí.
+8df34ecb Toto je velmi pravděpodobně chyba.
+1d894da2 Nespěchá. Může to být v pořádku, ale podívejte se na to.
+58da2ccb Odkazy na chybějící scény
+78d3da9d Chybějící obrázky a zvuky
+59327131 Rozbité herní příkazy
+dfe69b5d Překlepy v herních příkazech
+140d954e Podmínky "když", které selhávají
+169a1b52 Příkazy, které nic nedělají nebo se rozbijí
+c3f4070a Překlepy ve statistikách a hodnotách
+ee27480a Opakovaně použitelné bloky
+9c0fe2ed Kód rozvržení stránky
+2c0f0a6d Styly (barvy a vzhled)
+f77fd1fd Scény
+45e35cfc Scény, kam se nikdo nedostane
+a2406e53 Soubory, které hra nikdy nepoužije
+68320599 Nedokončený text
+8a21b1ee Pravopis
+169b486d Překlepy
+a1d181bd Funguje jen ve Windows
+3e9d9ae4 Velmi velké soubory
+50a12988 Poškozené soubory
+aab2b305 Zastaralé příkazy
+3f55c07b Kód skriptu
+cc0718f5 Nastavení hry
+c7ee483a Skener
+c916a1ad Chyby při hraní
+0e66b49d obrázek
+5e2e97c3 zvuk
+ffbaf58f video
+4642576d písmo
+767013ce stránka
+971c419d soubor
+8c657028 scéna "{name}"
+84db7a65 hra
+27260418 Vede do scény, která neexistuje: "{name}"
+65a1b892 V {where} se odkaz nebo příkaz snaží otevřít scénu jménem "{name}". Žádná scéna ve hře nemá přesně takový název.
+eddc288b Když na něj hráč klikne (nebo se tam hra dostane), dostane chybovou hlášku nebo prázdnou stránku místo scény.
+6690f7df Upravte název tak, aby přesně odpovídal existující scéně. Velká písmena a mezery se počítají.
+ee186081 Vede do části příběhu, která neexistuje: "{name}"
+adcab89d Příběh se snaží pokračovat v "{name}", ale nic ve hře takový název nemá.
+c68c7536 Hra se v tomto místě zastaví s chybou (nebo se vůbec nespustí).
+262dea9c Upravte název tak, aby přesně odpovídal existující části příběhu.
+8a2045c6 Vede do kapitoly, která neexistuje: "{name}"
+6b99d3d7 Příběh se snaží otevřít "{name}", ale žádná taková kapitola ani místo není.
+54721a92 Hra se v tomto místě zastaví s chybou.
+bfe449ab Opravte název, aby odpovídal existující kapitole.
+8569b71c Otevírá obrazovku, která neexistuje: "{name}"
+ed323960 Hra se snaží zobrazit obrazovku jménem "{name}", ale žádná obrazovka takový název nemá.
+31aaf0f7 Hra se tady zastaví s chybou.
+ecedecaf Opravte název, aby odpovídal existující obrazovce.
+1c82d0d0 Událost posílá hráče někam, co neexistuje
+f7bb6caa Událost přesune hráče na mapu nebo spustí common event, který ve hře není.
+11068616 Hra spadne nebo zamrzne, když se tato událost spustí.
+17c8c384 Vyberte v tom příkazu události existující mapu nebo common event.
+924f14ec Odkaz, který nikam nevede
+ac25c348 Odkaz v {where} neříká, kterou scénu má otevřít.
+cc208a80 Kliknutí na něj zobrazí chybu.
+81510156 Napište název scény, kterou má odkaz otevřít.
+a620e5a7 Odkazu chybí konec
+75319c60 Odkaz začíná [[ ale nikdy nekončí ]].
+d94d2b45 Text za ním se smíchá s odkazem a scéna vypadá rozbitě.
+da97338b Přidejte na konec odkazu ]].
+de752d36 Do "{name}" se nikdo nedostane
+ad06e184 Nic ve hře nevede do této části příběhu.
+49f72405 Hráči ji nikdy neuvidí. Neškodné, pokud neměla být hratelná.
+41e81f9d Pokud ji hráči mají vidět, přidejte na ni odkaz z jiné scény. Pokud je stará, můžete ji ignorovat.
+12017de3 Scéna "{name}" je prázdná
+e1c78333 Tato scéna nemá žádný text ani obsah.
+eb036a1b Hráč, který se sem dostane, uvidí prázdnou stránku.
+95468775 Napište scénu, nebo odstraňte odkazy, které do ní vedou.
+65f5f00d Dvě části příběhu mají stejný název
+3a661399 Název "{name}" používá více než jedna scéna nebo návěstí.
+14b99f6a Zobrazit se může vždy jen jedna z nich, nebo se hra odmítne spustit.
+5017f902 Dejte každé vlastní název.
+8ee54eec Hra nemá úvodní scénu
+e4b1267b Hra neví, kde začít.
+67fece68 Hra se možná vůbec nespustí.
+6f3c3583 V Twine označte první scénu jako začátek.
+891a7ccc Odkaz pro skok nikam nevede
+723d0b6c Odkaz ukazuje na místo na stránce, které neexistuje.
+9d2a3ab1 Kliknutí na něj nic neudělá.
+a17d6d9d Opravte název místa, nebo odkaz odstraňte.
+f7e0927c Chybí {kind}: {file}
+471ab6b6 Hra chce použít soubor ({kind}) "{path}", ale ve složce hry žádný takový není.
+215d84f2 Hráči uvidí rozbitý obrázek nebo prázdné místo, nebo nic neuslyší.
+95495e08 Dejte soubor na to místo, nebo změňte název v souboru hry na soubor, který opravdu existuje.
+4e187285 Název souboru má špatná velká písmena: {file}
+10dd7eb2 Soubor existuje, ale hra píše jeho název s jinými velkými písmeny.
+445b1f51 Ve Windows funguje. Na telefonech, Macu, Linuxu nebo webu bude obrázek nebo zvuk chybět.
+bcc2cd24 Změňte název v souboru hry tak, aby velká písmena odpovídala skutečnému souboru.
+fc7f8ac2 Obrázek ukazuje na vývojářův vlastní počítač
+bf1eaea6 Umístění souboru začíná písmenem disku jako "D:\". Ta složka existuje jen na počítači, kde hra vznikla.
+8e9a7d52 Hráči tento obrázek nikdy neuvidí.
+e5baac7c Změňte ho na umístění uvnitř složky hry, například images/characters/name.jpg.
+006a8fb9 Umístění souborů používají \ místo /
+d6cb43a9 Hra píše cesty ke složkám se zpětnými lomítky (\).
+42ad75cd Ve Windows v pořádku. Na telefonech, Macu, Linuxu nebo webu se obrázky a zvuky nenačtou.
+02bf9e76 Záleží na tom, jen pokud má hra běžet mimo Windows: v cestách k obrázkům nahraďte \ za /.
+0fa2cd7a {n} souborů ve složce "{folder}" se nikdy nepoužije
+1b78ff55 Tyto soubory jsou ve složce hry, ale hra je nikdy nepoužije.
+55acf4db Nic se nerozbije. Jen zvětšují stahování.
+aa1a0c6f Smažte je, pokud jste si jisti, že nejsou potřeba. (Některé může hra vybírat chytrými způsoby, které skener nevidí.)
+cb4cc629 Prázdný soubor
+4642643c Tento soubor je prázdný (0 bajtů).
+24ec314d Nezobrazí se ani nepřehraje.
+6cd06e6e Nahraďte ho funkční kopií souboru.
+07046633 Poškozený soubor (useknutý): {file}
+932dbf75 Chybí konec tohoto souboru, obvykle proto, že se stahování, kopírování nebo rozbalení nedokončilo.
+feda3672 Obrázek se zobrazí jen zčásti nebo vůbec, nebo zvuk/video skončí předčasně.
+968dc7a4 Zkopírujte nebo stáhněte tento soubor znovu z původních souborů hry.
+6081a951 Ve skutečnosti to není obrázek ani zvuk: {file}
+dc397b7a Soubor má správný název, ale uvnitř je webová stránka (často chybová stránka ze stahovacího webu).
+7f495908 Hráči uvidí rozbitý obrázek nebo nic neuslyší.
+eee27da5 Stáhněte znovu skutečný soubor a nahraďte jím tento.
+2a1c1b71 Možná poškozený soubor: {file}
+4c30367e Začátek tohoto souboru nevypadá jako žádný známý formát obrázku, zvuku ani videa.
+d3b9cea3 Pravděpodobně se nezobrazí ani nepřehraje.
+0ab570a5 Otevřete ho v prohlížeči obrázků nebo přehrávači. Pokud se neotevře, nahraďte ho.
+f68470e5 Některé soubory mají špatnou příponu (.png, .jpg ...)
+d608da1e Tyto soubory obsahují jiný formát, než říká jejich název, například obrázek JPEG pojmenovaný .png.
+2e39b508 Prohlížeče je obvykle stejně zobrazí. Některé telefony a programy možná ne.
+097a3703 Volitelné: převeďte je nebo přejmenujte, aby název odpovídal skutečnému formátu.
+283d2070 Některé soubory jsou velmi velké
+c7fa15ff Tyto obrázky nebo videa jsou velmi velké.
+ae5369ab Načítají se pomalu, zvlášť na telefonech.
+e125a92c Volitelné: zmenšete je grafickým programem.
+385f4329 Chybí soubor hry: {name}
+2e700532 Hra očekává soubor, který tam není.
+99467808 Hra zobrazí chybu při spuštění nebo když dojde k této části.
+b3496ea7 Vraťte chybějící soubor zpět, nebo odstraňte odkaz na něj.
+75e6334a Datový soubor hry je poškozený
+db02e969 Tento soubor nejde správně přečíst.
+79b96faf Hra se nespustí nebo spadne.
+7ebbbeec Obnovte soubor ze zálohy nebo z původní hry.
+d399fac1 Příkaz "{name}" není nikdy uzavřen
+e6c66d5b Některé herní příkazy potřebují odpovídající konec. Tento ho nemá.
+0b1cb09f Hra v této scéně zobrazí červené chybové okno a část scény může chybět.
+afdabc18 Přidejte chybějící konec (například <</{name}>>) tam, kde má tato část končit.
+744245d7 Nadbytečná uzavírací značka <</{name}>>
+adb1bea4 Je tu uzavírací značka, která nemá co uzavřít.
+b39fd74f Hra v této scéně zobrazí červené chybové okno.
+a53d4f4e Smažte tuto nadbytečnou uzavírací značku.
+fa8c8072 "{name}" je na špatném místě
+9009044d <<{name}>> musí být uvnitř bloku <<if>>. Tady není, obvykle proto, že uzavírací značka nad ním je na špatném místě.
+1e9acaea Hra zobrazí červené chybové okno.
+1d2d751d Zkontrolujte řádky těsně nad tím a přesuňte uzavírací značku na správné místo.
+bfaae414 Uzavírací značce chybí ">": <</{name}>
+a280c34f Uzavírací značka je napsaná s jedním ">", ale potřebuje dva.
+71be19aa Hra uzavírací značku nevidí. Zobrazí červené chybové okno a scéna může vypadat špatně.
+a3c69d1f Přidejte jeden ">", aby končila na ">>".
+413ace46 Nadbytečný znak ">"
+4e791f5a Za značkou je o jeden ">" navíc.
+4ecd446f Hráči uvidí na obrazovce zatoulaný ">".
+c1c069b2 Smažte nadbytečný ">".
+cacfbdbb Nadbytečný znak "<"
+fe9088b6 Před příkazem je o jeden "<" navíc.
+0c7a0bb7 Hráči uvidí na obrazovce zatoulaný "<".
+87807bf8 Smažte nadbytečný "<".
+b0d2d4e4 Napůl napsaný příkaz "<<"
+012a6c88 Je tu "<<", za kterým nic není.
+fd941db0 Příkaz za ním se rozbije a hra může zobrazit chybu.
+73f8070a Smažte zatoulané "<<".
+7037d71a Příkazu chybí ">>"
+87bde2ac Příkaz začíná << ale nikdy nekončí >>.
+7f93f879 Text za ním zmizí nebo scéna zobrazí chybu.
+dbda1f76 Přidejte na konec příkazu ">>".
+5a30164d Závorka je otevřená, ale nikdy uzavřená
+d5b047f2 Něco začíná závorkou, ale chybí uzavírací závorka.
+8d50e9a9 Vše za ní se pohltí nebo hra zobrazí chybu.
+912c548c Přidejte chybějící uzavírací závorku.
+35852e81 Nadbytečná uzavírací závorka
+a1d86e33 Je tu uzavírací závorka bez otevírací.
+fdeb2ba4 Hráči mohou vidět zatoulaný znak nebo chybu.
+254fbb5b Odstraňte nadbytečnou závorku.
+98cb6b2f Příkaz nemá připojený žádný text
+1afec1b9 Tento příkaz má ovládat text hned za ním, napsaný v hranatých závorkách [takto]. Nic za ním nenásleduje.
+073266b4 Harlowe zobrazí chybu, nebo se text zobrazuje vždy.
+29369e93 Dejte text, který ovládá, do hranatých závorek hned za něj.
+4093f80e Hra zobrazí chybu a část scény, kterou ovládá, nefunguje.
+ef3a7877 Zastaralý příkaz
+54dead55 Tento příkaz stále funguje, ale je zastaralý.
+01500c48 Zatím nic. Může se rozbít v budoucí aktualizaci enginu.
+b1a70201 Volitelné: nahraďte ho novějším příkazem.
+a4a93d21 Podmínka "if" používá "=" místo "is"
+582b6716 Uvnitř podmínky "if" znamená "=" "udělej to rovné", ne "je to rovné?".
+564cdad0 Hra zobrazí červené chybové okno, nebo je podmínka vždy pravdivá a hraje se špatná část scény.
+e3105e2f Nahraďte jednoduché "=" slovem "is".
+f0b64920 "=>" nebo "=<" napsané obráceně
+897ec753 Větší nebo rovno se píše ">=", ne "=>".
+0167d9bc Podmínka nefunguje.
+0b498ace Napište místo toho ">=" nebo "<=".
+f917ca5e "is not" má být jedno slovo
+4e8bbdf4 V tomto herním enginu znamená "is not" něco jiného než "isnot".
+e40cd819 Podmínka je téměř vždy špatně.
+7f3a1402 Napište "isnot" jako jedno slovo.
+694143a3 Podmínka "or", která je vždy pravdivá
+b760633e Něco jako "$x is 1 or 2" porovnává $x jen s 1; samotné "2" se vždy počítá jako ano.
+f8b8cc75 Tato část se hraje, i když by neměla.
+b1a0ec7e Zopakujte název: "$x is 1 or $x is 2".
+1c4512b1 Podmínka "if", která se může spustit ve špatnou chvíli
+bb598d2b Tato podmínka míchá "and" a "or" bez závorek. Počítač vždy nejdřív vyhodnotí části s "and", takže podmínka nemusí znamenat to, co bylo zamýšleno.
+71408d55 Scéna nebo volba se může objevit, když by neměla - například když je postava unesená nebo je statistika příliš nízká.
+045d6c6c Dejte závorky ( ) kolem částí, které patří k sobě. Podívejte se na kód níže a seskupte volby s "or".
+dbb9ed0f Závorky ( ) nesedí
+6bbb5c72 Je víc "(" než ")" nebo naopak.
+d2676c8c Přidejte nebo odeberte závorku, aby tvořily páry.
+8f746eaa Prázdná podmínka "if"
+70ac1e0e "if" nemá co kontrolovat.
+8fa764c4 Hra zobrazí chybu.
+f72f83b1 Napište, co se má kontrolovat.
+00b75afd Změna statistiky, která nic nedělá ("==")
+d3024696 Tento řádek má změnit hodnotu, ale "==" jen porovnává - nic nezmění.
+4bb1b350 Hodnota se nikdy nezmění. Co na ní závisí (časovače, počítadla), se zasekne.
+bb9d82a8 Nahraďte "==" slovem "to".
+88b997d5 Změna statistiky, která nic nedělá
+47b56b1e Tento řádek má změnit hodnotu, ale nemá "to", "=", "+=" ani "-=", takže se nic nezmění.
+b3edbcbf Například energie nebo peníze se nikdy neuberou ani nepřidají.
+5a19bb57 Napište "-=" místo "-" (nebo "+=" místo "+").
+24335c15 Prázdná změna statistiky
+d7c9d917 Příkaz je prázdný.
+1ca2b36b Smažte ho, nebo napište změnu.
+2d2715a0 Hodnota se nastavuje pomocí "=" místo "to"
+b3386569 Tento engine nastavuje hodnoty pomocí "to".
+be353939 Nahraďte "=" slovem "to".
+6b135470 Chybí uvozovka "
+b7ed7d6f Kus textu v příkazu začíná " ale nikdy se neuzavře.
+4b70c1d8 Hra zobrazí chybu nebo pohltí text za ním.
+081a0ff8 Přidejte chybějící ".
+1a1cb7a5 Tabulátory použité tam, kde jsou potřeba mezery
+0d83ecca Tento engine vyžaduje, aby řádky byly odsazené jen mezerami.
+1928be6f Hra se nespustí, nebo se tu zastaví s chybou.
+6707540b Nahraďte tabulátor na začátku řádku mezerami.
+50e72b08 Řádku chybí na konci ":"
+1590b870 Řádky jako "if", "menu" a "else" musí končit dvojtečkou.
+34cb1caf Hra se nespustí.
+739781b1 Přidejte na konec řádku ":".
+463c9c22 Rozbitý kód skriptu
+90393617 Závorka nebo uvozovka v kódu skriptu nesedí.
+10b6ae9e Celý skript přestane fungovat, což může rozbít mnoho funkcí.
+208a3574 Zkontrolujte závorky a uvozovky kolem tohoto řádku.
+08a420a2 Zapomenutý testovací kód
+f523c19b Zůstal tu kód použitý při testování.
+a161c8db Obvykle nic viditelného.
+5512920c Volitelné: odstraňte ho.
+e14ae90f Název obsahující "-"
+a5d94a86 Názvy hodnot nesmí obsahovat "-". Hra přečte jen část před "-".
+1d915eed Hráči uvidí špatné slovo nebo prázdné místo místo jména.
+1ff6bd49 Použijte "_" místo "-".
+929dc82b Podmínky na ni vždy vyjdou "ne", takže se některý text nebo scény nikdy nezobrazí (nebo se místo jména zobrazí prázdné místo).
+aa241baa Stejný název, jiná velká písmena: ${a} / ${b}
+fe615c75 Pro hru jsou to dvě různé hodnoty, protože velká písmena se počítají.
+1549316e Změny jedné druhá nevidí, takže statistiky nebo scény nefungují správně.
+485f98c5 Změňte ${a} na ${b}.
+fbb1a8ec Překlep v názvu hodnoty: {name}
+baa2f1ac "{name}" se nikdy nevytváří, ale "{near}" ano. Téměř jistě jde o překlep.
+37eb4d71 Hra zobrazí chybu nebo je hodnota vždy prázdná.
+69b0c997 Změňte "{name}" na "{near}".
+958390b8 Dočasná hodnota, která se nikdy nenastaví: _{name}
+66d98956 Tato krátkodobá hodnota se používá, ale nikdy nedostane hodnotu.
+f6d72946 Podmínky na ni nikdy nefungují.
+b150a824 Nejdřív ji nastavte, nebo opravte název.
+bb2ac176 Hodnota, která nikdy nebyla vytvořena: {name}
+418bb0cf Používá přepínač/proměnnou, která neexistuje (#{n})
+60eb5de9 Událost používá číslo {n}, ale seznam hry je kratší.
+ab5e6d39 Událost nefunguje tak, jak má.
+27e3bd51 Vyberte v události existující přepínač/proměnnou.
+5e339cd0 Přepínač/proměnná nemá název (#{n})
+e3546a24 Používá se, ale v Database nemá název.
+15f64977 Nic viditelného. Jen se snadno splete.
+a8723260 Dejte mu název v Database.
+bd3955c1 Opakovaně použitelný blok je definován dvakrát: {name}
+0a743f0a Dvě definice sdílejí tento název.
+4d983cee Používá se jen jedna verze.
+08c1e9fa Jednu z nich smažte nebo přejmenujte.
+20982092 Opakovaně použitelný blok se nenačte
+3ed9bdd5 Jeho scéně chybí značka "widget".
+4f7fa681 Každá scéna, která ho používá, zobrazí chybu.
+a3c57c94 Přidejte v Twine té scéně značku "widget".
+769d38d3 Nepoužitý opakovaně použitelný blok: {name}
+91caae31 Je definovaný, ale nikdy se nepoužije.
+92f3557e Nic se nerozbije.
+48518178 Není potřeba nic dělat.
+549a08bd Chybějící uvozovka v kódu stránky
+2616e9ea Uvnitř značky stránky chybí uvozovka " (často u obrázku).
+c1ac2a6e Obrázek nebo prvek se nemusí zobrazit, nebo se rozbije rozvržení.
+1359ec48 Rámečky stránky, které nejsou správně uzavřené
+c5eaf192 Rámeček rozvržení (jako <div> nebo <center>) je otevřený, ale neuzavřený, nebo uzavřený příliš mnohokrát.
+bff958b5 Text nebo obrázky mohou skončit na špatném místě nebo se špatným stylem.
+2055d18e Přidejte chybějící uzavírací značku, nebo odstraňte nadbytečnou.
+3ec38cbd Dvě věci mají stejný identifikátor (id)
+0bf6eee0 Každé id musí být na stránce jedinečné.
+ff424805 Tlačítka, která tuto část aktualizují, mohou změnit špatné místo.
+3d5e5acf Dejte každému vlastní id.
+9ef419aa Obrázek nebo odkaz bez souboru
+41c88499 Značka na nic neukazuje.
+30064ec6 Může se zobrazit ikona rozbitého obrázku.
+0e8cdbfd Doplňte název souboru, nebo značku odstraňte.
+8c62dd1b Velikosti obrázků zapsané způsobem, který prohlížeče ignorují
+c97c9dc5 Velikosti jako height="450wv" obsahují písmena, kterým prohlížeč nerozumí ("wv" není jednotka).
+38f858bc Obrázky se stále zobrazí, jen v pevné velikosti v pixelech. Obvykle neškodné.
+c33de17c Volitelné: odstraňte písmena, např. height="450".
+b2030de7 Název stylu, který nesedí: "{name}"
+912e16dc Vzhled této části se vybírá názvem "{name}", ale styl se jmenuje "{near}".
+93f6e366 Tato část se zobrazí bez zamýšlených barev nebo rozvržení.
+de3efded Název stylu bez stylu: "{name}"
+46cc76e2 Žádné pravidlo stylu tento název nepoužívá.
+3a6cc944 Obvykle neškodné.
+d91f6b60 Nedokončený text, který hráči uvidí
+a2d31ceb Vývojář nechal v příběhu poznámku jako "PLACEHOLDER" nebo "TODO".
+33f40845 Hráči uvidí tuto poznámku, nebo je scéna nedokončená.
+a398b7c0 Napište skutečný text, nebo poznámku odstraňte.
+a89ee2d1 Pravopis: "{wrong}" má být "{right}"
+bf0afa72 Běžná pravopisná chyba.
+979c6e99 Hráči uvidí špatně napsané slovo.
+7e32de5a Změňte "{wrong}" na "{right}".
+b2d44d92 Zdvojené slovo: "{words}"
+670755a1 Stejné slovo je napsáno dvakrát za sebou.
+f901109b Hráči uvidí zdvojené slovo.
+c8f90b31 Jedno z nich smažte.
+fd88a85b Zobrazuje obrázek, který neexistuje: "{name}"
+d99288f0 Není definován žádný obrázek s tímto názvem a žádný soubor v images/ neodpovídá.
+61cd07a0 Hráči uvidí zástupný obrázek nebo chybu.
+3b215908 Přidejte obrázek, nebo opravte název.
+a08bad60 Hra nemá číslo ID
+91a06fd9 Twine používá ID k rozlišení příběhů.
+7ff45b55 Znovu publikujte příběh z Twine.
+ce8325ca Při hraní zobrazí červené chybové okno: "{name}"
+212a3e36 Když se scéna opravdu hrála, hra zobrazila tuto chybu: {msg}
+1cda4ad4 Hráči v této scéně uvidí červené chybové okno a část scény chybí.
+fe183b9c Podívejte se na problémy uvedené u stejné scény - obvykle vysvětlují příčinu.
+5a4709f8 Prohlížeč skript nedokáže ani přečíst
+417e0923 Prohlížeč v tomto skriptu našel překlep, takže nic z něj neběží.
+711c9902 Funkce, které skript vytváří (zvláštní příkazy, nastavení), chybí nebo jsou rozbité.
+289bf8bb Hledejte chybějící závorku, uvozovku nebo čárku na tomto řádku nebo na řádku před ním.
+fefc36ad Při hraní chybí obrázky nebo zvuky
+d47a66be Tyto soubory byly vyžádány při hraní scén, ale neexistují.
+80b8b71b Hráči v některých scénách vidí rozbité obrázky nebo nic neslyší.
+9733445f Přidejte chybějící soubory, nebo opravte jejich názvy.
+4f504ebe Chyba při spuštění hry
+92243591 Prohlížeč při načítání hry ohlásil chybu.
+2fea6477 Úvodní obrazovka nebo některé funkce mohou být rozbité.
+608156d3 Hledejte v hlavním skriptu hry problém uvedený ve zprávě.
+231d0f49 Překlep v příkazu: {name}
+388bf136 Neznámý příkaz: {name}
+9b686aa1 Hra tento příkaz nezná. Téměř jistě jde o překlep v {near}.
+d1f769ee Hra tento příkaz nezná.
+6a1cce2c Změňte ho na {near}.
+46c692e0 Zkontrolujte pravopis příkazu.
+6db67833 Hodnota, která se nikdy nenastaví: {name}
+c0ceb098 Hra používá "{name}", ale všude jinde se to jmenuje "{near}". Je to překlep.
+8acbe929 Hra kontroluje nebo zobrazuje "{name}", ale nic tomu nikdy nedá hodnotu.
+fbb2c20c Dejte tomu počáteční hodnotu, nebo opravte název.
+33e186ef Hodnota, kterou hra nikdy nepoužije: {name}
+72bf1ee8 Toto mění "{name}", ale hra se dívá jen na "${near}". Je to překlep.
+7f81aa2e "{name}" se mění, ale hra se na to nikdy nepodívá.
+fd3f859d Změna se ztratí - například zvýšení statistiky, které se nikdy nezapočítá.
+4857ea9f Nic se nerozbije. Může jít o pozůstatek ze starších verzí.
+d2118ba7 Změňte "{name}" na "${near}".
+3867ee62 Není potřeba nic dělat, pokud to nemělo být použito.
+11e31f78 "{name}" nebylo nikdy vytvořeno. Pravděpodobně jde o překlep v "{near}".
+8f03aa6d "{name}" nebylo nikdy vytvořeno na začátku hry.
+dd8d9eef Vytvořte to na začátku hry.
+a62731f6 pasáž
+f8de5ecc Jedna stránka nebo scéna hry Twine. Každá pasáž má název a odkazy vedou z jedné pasáže do druhé.
+ea5e0445 scéna
+ad88890f Jedna stránka příběhu. V Twine se tomu říká "passage" (pasáž).
+78f3a3d9 makro
+480a06b0 Herní příkaz napsaný mezi << a >>, třeba <<if>> nebo <<set>>. Hra ho provede, místo aby ho zobrazila.
+1925f793 příkaz
+410ae6be Pokyn pro hru, jako "ukaž tento obrázek" nebo "pokud má hráč 5 zlatých". V SugarCube se píšou mezi << a >>.
+b46d0172 proměnná
+2ef301de Pojmenovaná hodnota, kterou si hra pamatuje, jako $gold nebo $mother_love. V SugarCube začíná na $.
+f32b67c7 hodnota
+a746abd2 Číslo, slovo nebo ano/ne, které si hra pamatuje, například množství zlata.
+afad9a69 podmínka
+1dc59f8f Kontrola jako "$gold gte 5" (má hráč aspoň 5 zlatých?). Text za ní se zobrazí, jen když je kontrola pravdivá.
+5e9b60f6 značka
+1df6d68c Značka v kódu. Otevírací značky jako <<if>> začínají část, uzavírací jako <</if>> ji ukončují.
+4f0aa52d odkaz
+5afc9751 Klikací text, který hráče přenese do jiné scény. V Twine: [[Text|Název scény]].
+d3ecb0d8 include
+bbc9ce26 Příkaz, který vloží jinou pasáž do této: <<include "Název">>.
+ff700e02 widget
+fd5df966 Vlastní příkaz definovaný jednou a použitý v mnoha scénách.
+9f738ce8 HTML
+16d38297 Jazyk, ve kterém se píšou webové stránky. Značky jako <img> (obrázek) a <div> (rámeček).
+194e13da CSS
+28d26723 Pravidla stylu: barvy, velikosti a rozvržení. "class" propojuje prvek se stylem.
+ee620923 JavaScript
+2d04472d Programovací jazyk webových stránek. Hry ho používají pro zvláštní funkce.
+cb5346a0 skript
+302bcb23 Kus programového kódu (obvykle JavaScript).
+0c4da6cb Twine
+5deecf78 Bezplatný program, ve kterém vzniká mnoho textových her. Publikuje hru jako jediný soubor .html.
+9b2ab238 SugarCube
+5a15607f Nejběžnější "story format" (engine) pro hry Twine. Poskytuje příkazy << >>.
+5e2fb0c2 publikovat
+9eb9fe5a V Twine: Build > Publish to File. Zapíše z vašeho příběhu hratelný soubor .html.
+1af607c7 cesta k souboru
+3bee6183 Kde soubor je, například images/hero.png (složka "images", soubor "hero.png").
+264f39ca řádek
+f44c6b66 Jeden řádek textu v souboru. Textové editory ukazují čísla řádků vlevo.
+3cc46d20 odsazení
+2a14602c Mezery na začátku řádku. Některé enginy podle nich poznají, které řádky patří k sobě.
+64c65374 návěstí
+0419b517 Pojmenované místo v příběhu Ren'Py nebo ChoiceScript, kam mohou jiné části skočit.
+40a22a4a knot
+fba17772 Pojmenovaná část příběhu Ink. "-> název" na ni skočí.
+fd8c7c8e plugin
+45e375e0 Přidaný skript ve hře RPG Maker.
+67db3ab6 1. Co je pasáž (scéna)?
+6cfa54e4 2. Příkazy mezi << a >>
+fcaf062f 3. Otevírání a zavírání
+47887091 4. Hodnoty, které si hra pamatuje ($proměnné)
+c3bcb980 5. Podmínky "if"
+d8cc0b48 6. Obrázky a zvuky
+c413d282 7. Bezpečné úpravy
+fb4c49ae 8. Jak číst tuto aplikaci
+a9af7910 Začněte zde: otevřete soubor .html hry (nebo složku hry Ren'Py, RPG Maker, Ink či ChoiceScript). Kontrola začne sama.
+de845e69 "Jednoduchá slova" vše vysvětlí běžnou řečí. Vypněte je, chcete-li vidět technické podrobnosti.
+6c84c615 Vývojář nebo Hráč: hráči dostanou krátký seznam rozbitých scén s minimem spoilerů a hlášení chyby pro vývojáře. Vývojáři dostanou nástroje na opravy.
+ba413de9 Všechny nalezené problémy. Červená je rozbité, žlutá asi rozbité, modrá stojí za kontrolu. Klikněte na jeden a uvidíte, co dělat.
+476c1a70 Tady vidíte, co je špatně, čeho si hráči všimnou a přesně jak to opravit - s řádkem před a po.
+e871d7cc Průvodce opravami vás provede problémy jeden po druhém a každou opravu za vás zkontroluje.
+3d56d049 Test hry zahraje každou scénu v neviditelném prohlížeči a najde chyby, které se ukážou jen při hraní.
+41da0a4f Nástroje: zálohovat hru, vyzkoušet řádek před změnou, porovnat dvě verze, napsat hlášení chyby, sledovat změny.
+75d05bed Nápověda: lekce, slovníček, tato prohlídka a pohodlí jako extra velký text.
+52c5f193 Skóre zdraví kódu: 100% výborné, 90% skvělé, 80% dobré, 70% ucházející.
+bcecc3cb Hra Twine se skládá z pasáží. Každá pasáž je jedna scéna: trocha textu, možná obrázek a odkazy na další pasáže.
+b1f433c6 Odkazy vypadají takto. Část před | je to, co hráč vidí, část za | je název pasáže, kterou otevře:
+33dd3c05 Název musí přesně odpovídat, včetně velkých písmen a mezer. "kitchen" a "Kitchen" jsou různé pasáže.
+14a03cdc Hry SugarCube používají příkazy psané mezi << a >>. Hra je provede, místo aby je zobrazila.
+fffc20ea Vždy přesně dvě < na začátku a dvě > na konci. O jednu víc nebo méně příkaz rozbije:
+1e192fbd Některé příkazy jsou jako závorky: otevírají část a musí se zavřít. <<if>> se zavírá pomocí <</if>>.
+fd08a19b Pokud uzavírací <</if>> chybí, hra zobrazí červené chybové okno. Když je jich o jednu víc, také.
+b25bf333 Slovo začínající na $ je hodnota, kterou si hra pamatuje mezi scénami, jako $gold nebo $mother_love.
+d4d0415d Velká písmena se počítají: $Gold a $gold jsou dvě různé hodnoty. Překlep vytvoří novou prázdnou hodnotu, takže se změna ztratí.
+340aacf8 Ke změně hodnoty použijte "to", "+=" nebo "-=". Samotné "-" počítá, ale nic nezmění:
+87dc8b35 Uvnitř "if" porovnávejte pomocí "is", "isnot", "gte" (aspoň), "lte" (nejvýše). Jednoduché "=" je tam špatně:
+add346a2 "and" se vyhodnocuje před "or". Seskupujte závorkami, jinak může být podmínka pravdivá ve špatnou chvíli:
+f07da221 Obrázky se zobrazují značkou <img>. Cesta říká, kde soubor je, počítáno od složky hry:
+9e333b42 Mezi složkami používejte /. \ funguje jen ve Windows. Velká písmena musí odpovídat skutečnému názvu souboru kvůli telefonům, Macu a webu.
+9d1c8406 Každá otevřená uvozovka " se musí uzavřít, jinak se obrázek nezobrazí.
+6f7151f5 Než cokoli změníte, udělejte zálohu (Nástroje > Zálohovat soubor hry).
+73b5381e Pokud je hra vytvořená v Twine, dělejte změny v Twine a znovu publikujte. Změny provedené přímo v souboru .html se ztratí, až bude hra příště publikována z Twine.
+0dab15d3 Pokud máte jen soubor .html (žádný příběh Twine), upravujte ho textovým editorem jako Notepad++. Uvnitř souboru .html se < a > píšou jako &lt; a &gt; - aplikace ukáže přesný text ke zkopírování.
+a877adb7 Po každé změně: uložte, znovu načtěte hru v prohlížeči a v této aplikaci stiskněte "Opravil jsem to - zkontrolovat".
+e6cfd88c Červená = rozbité: hráči na to narazí. Žlutá = asi rozbité. Modrá = stojí za kontrolu, často v pořádku.
+3c06ac34 Začněte seznamem "Začněte zde" v souhrnu, nebo použijte Průvodce opravami: provede vás jedním problémem po druhém.
+f5a4fb88 "Označit jako záměrné" skryje nález, který jste zkontrolovali a chcete ponechat. Pro tuto hru zůstane skrytý.
+f3979521 Asi 1 minuta
+d621d05d 5-15 minut
+bea680e1 Potřebuje vývojáře (rozhodnutí o příběhu nebo designu)
+0c6c4102 Volitelné
+e53abb3c Snadná oprava
+c4f93c0c Vyžaduje trochu péče
+a22663d7 Potřebuje vývojáře
+230659f7 Asi ano, ale rychle se podívejte.
+6d9d36d5 Ne. Hráči na to narazí.
+ddad7bf2 Jen pokud jste zkontrolovali logiku a dělá, co chcete. Pak to označte jako záměrné.
+6cf97a3f Ano, pokud je scéna stará nebo není určená ke hraní.
+d54dbf6e Ano. Nic se nerozbije.
+3b411bc1 Ano, pokud se hra hraje jen ve Windows.
+667e089a Ano, zatím. Může se to rozbít v budoucí aktualizaci enginu.
+ca7eea8c Ano, ale hráči uvidí překlep.
+6225e68e Jen pokud je scéna záměrně nedokončená.
+47ecb09c Ano. Obrázky se stále zobrazí.
+178ca96e Ano. Nic viditelného se nezmění.
+e2fca6c0 Obvykle ano. Často jde o pozůstatek ze starších verzí.
+bcc248b9 Raději ne. Velmi pravděpodobně jde o skutečnou chybu.
+557f2555 ne
+cffa50a3 a
+1758356d nebo
+6981b0db Žádná scéna neodkazuje na "{name}" způsobem, který by skener dokázal sledovat. Hráči ji možná nikdy neuvidí, nebo se do ní dostanou přes kód, který skládá název scény z proměnných.
+0f56183f Hráči se do "{name}" dostanou z míst: {n}
+02e974ba Toto je první scéna hry.
+5ffe533b pravda
+7cb6efb9 nepravda
+1ed06825 odkaz
+3d22ef57 include
+ccdfd8c1 automatický skok
+3f80e4d1 Z "{src}" ({how}), když: {cond}
+084fcdcf Z "{src}" ({how}), vždy.
+8adbc573 …a další.
+1aafbf54 Výborné
+bd846adf Skvělé
+61dedcf0 Dobré
+226d7ec9 Ucházející
+eafabce9 Potřebuje práci
+4e0fa437 Slabé
+75fb2b10 Čtu soubor
+ac133acf Hledám data příběhu
+456caef0 Sbírám skripty a styly
+fc404c89 Kontroluji pasáže a odkazy
+6a4d36f9 Kontroluji značky maker
+546de9d0 Kontroluji podmínky a logiku kódu
+c338107e Kontroluji proměnné
+5730c93f Kontroluji HTML značky
+ea4c65ed Kontroluji CSS třídy
+d874e65d Kontroluji obrázky, zvuk, video a soubory
+6517d389 Kontroluji text (překlepy, zástupný text)
+87beeee4 Kontroluji JavaScript
+7b7efd8b Kontroluji pravidla story formatu
+25f3b361 Čtu hru {label}
+a28b6c50 Kontroluji poškození souborů
+5aedb280 Spouštím neviditelný prohlížeč
+f5a5071d Načítám hru
+8466e7c7 Kontroluji skripty JavaScriptovým enginem prohlížeče
+bf197daa Hraji scény ({mode}): {k} z {n}
+f70cf464 Test hry dokončen
+427c9fd7 Ve scénách, kam se nikdo nedostane
+9b9f5c3d Hráči tohle nikdy neuvidí: je to ve scéně, kam se nikdo nedostane. Můžete to nechat.
+e58020da Do „{name}“ se nikdo nedostane: odkaz je vypnutý
+2795ab1b Jediný odkaz na tuto scénu je v „{where}“ (řádek {line}) uvnitř skryté poznámky /* ... */. Vše mezi /* a */ je vypnuté.
+4ed22111 Hráči tuto scénu nikdy neuvidí.
+30fda4f3 Pokud ji hráči mají vidět, smažte /* a */ kolem odkazu. Pokud jste ji vypnuli schválně, nechte ji tak.
+7a9ce2ca Jediné odkazy na tuto scénu jsou v jiných scénách, kam se nikdo nedostane.
+3aafeed1 Pokud ji hráči mají vidět, přidejte odkaz ze scény, kam se dá dostat. Pokud je stará, můžete ji ignorovat.
+0c4d1909 {n} souborů v {k} složkách se nikdy nepoužívá
+0efdb085 {n} hodnot, které hra nikdy nepoužívá
+425a6a2a Tyto hodnoty se mění, ale hra se na ně nikdy nedívá.
+849cdd9b Nic se nerozbije. Mohou to být zbytky ze starších verzí.
+a82d56f5 Rámeček stránky není uzavřený: <{tag}> na řádku {line}
+5c73814e <{tag}> na řádku {line} se nikdy neuzavře pomocí </{tag}>.
+b587a89d Přidejte </{tag}> tam, kde má rámeček končit.
+f1a6f13d Přebytečná uzavírací značka: </{tag}> na řádku {line}
+d887494b </{tag}> na řádku {line} uzavírá rámeček, který nebyl nikdy otevřen.
+f3d6de5f Smažte přebytečné </{tag}>, nebo přidejte chybějící <{tag}>.
+94b62097 Pravopis: „{wrong}“ má být „{a}“ nebo „{b}“
+45919c5c Častá pravopisná chyba. Může znamenat dvě různá slova.
+d3631b3f Přečtěte větu a změňte „{wrong}“ na „{a}“ nebo na „{b}“, podle toho, co sedí.
+4f2e0c01 Nic není potřeba, pokud se některá neměla používat.
+37a88891 Obvykle nic: prohlížeč ho sám uzavře na konci scény.
+9c393632 Ano. Je to ve scéně, kam se nikdo nedostane, takže to hráči nikdy neuvidí. Opravte to, jen pokud později přidáte odkaz na tu scénu.

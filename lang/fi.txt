@@ -1,0 +1,836 @@
+#name Suomi
+e77b83c2 Pelitesti valmis: {n} kohtausta pelattu {m} tavalla, {k} ongelmaa löytyi pelatessa.
+e9dd5680 Kopioitu leikepöydälle
+e00ac23f Laji
+764b4aa3 Kuinka paha
+33446003 Kohtaus
+44819483 Ei mitään
+36c4a06f Tarkistetaan…
+ecab72e7 Pelikansio / koko peli
+95263aa8 Rivi pelitiedostossa (korostettu)
+adac6937 Koodi
+4dc2eddf Löydetty ohjelmalla {app}. {n} ongelmaa.
+6b21fb79 Tietoja
+b8bb1461 Miten pelaajat pääsevät tähän kohtaukseen?
+d07d7afa Miten pelaajat pääsevät kohtaan "{name}"?
+fa893d87 Puhdas
+70440046 Huomiot
+1430f976 Varoitukset
+805e86a8 Virheet
+dcad8ee5 Valmistellaan koodinäkymää…
+7f2f6a15 Virhe
+e9c45563 Varoitus
+2c924e30 Huomio
+f4808ecd Avaa peli…
+f6ab55dd Tarkista uudelleen
+dd3fa3ce ▶ Pelitesti
+5e4797ea Korjausavustaja
+4fa8cc86 Työkalut
+c47ae153 Ohje
+9d454f7c Peliä ei ole avattu
+7869cc5c Muokkaan Twinessä
+db8da328 Muokkaan .html-tiedostoa (Notepad++ ym.)
+20c7c552 Valmis
+26a93eac Avaa pelikansio (Ren'Py, RPG Maker, Ink, ChoiceScript)…
+775b3ab8 Kuvien ja äänten kansio…
+cd9a3d88 Varmuuskopioi pelitiedosto
+2505d3da Testaa rivi ennen kuin muutat sitä…
+3536c70a Vertaa toiseen versioon…
+080460a5 Kirjoita vikailmoitus kehittäjälle…
+0cbf16ea Vie raportti…
+490c3a52 Seuraa pelitiedostoa ja tarkista uudelleen, kun se tallennetaan
+09e02e95 Näytä tarkoituksellisiksi merkityt ongelmat
+80f65544 Tekstieditori…
+3a4dad84 Katso esittely
+f996200a Oppitunnit (F1)
+e5aaa5b5 Sanasto
+320067c6 Erittäin suuri teksti
+07471db5 Värisokeille sopivat värit
+c2cebede Kaikki lajit
+1baa06b4 Ongelma
+ced091e8 Kohtaus / paikka
+ea967600 Rivi
+99a42316 Korjaus
+3cd62e5f Avaa tekstieditorissani
+a4f34926 Kopioi korjattu rivi
+0973fd22 Kopioi haettava teksti
+28a1dc64 Korjasin sen - tarkista
+1a256c63 Kerro kehittäjälle
+b491a51b Näytä koodinäkymässä
+463e5e78 Merkitse tarkoitukselliseksi
+562107b8 Lue ääneen
+e42bc527 Kopioi tiedot
+d7c5a824 Näytä täsmälleen kuten tiedostoon tallennettu (&lt;-koodit)
+2314cd9a Avaa peli
+7a8e0cf0 Valitse pelikansio
+ff10f24c Kansio, jossa ovat pelin kuvat, äänet ja videot
+38e9a3e9 Peli: {path}     Kansio: {folder}
+24fc8907 Lopeta lukeminen
+7335beba Ei enää merkitty tarkoitukselliseksi
+24fec833 Merkitty tarkoitukselliseksi - piilotettu listasta (Työkalut > Näytä tarkoituksellisiksi merkityt ongelmat)
+615c9a3f {fmt} · {units} osaa · {files} tiedostoa kansiossa · {e} rikki, {w} luultavasti rikki, {i} tarkistettavaa · {s} s
+f229a698 Koodin kunto: {n}% · {label}
+d8d62e38 Tarkistus valmis
+dd3a39d8 Koodin kunto
+c6643b25 Asteikko: 100% erinomainen · 90% loistava · 80% hyvä · 70% kelvollinen · alle 70% vaatii työtä
+7e0056d2 Se perustuu siihen, kuinka monessa kohtauksessa on ongelmia ja kuinka vakavia ne ovat.
+07c80477 Lajin mukaan
+45b733c9 Napsauta listan ongelmaa nähdäksesi tiedot.
+525f61b6 Missä
+4090e818 Näin korjaat sen
+0b975974 Avaa tarinasi Twinessä ja avaa kohtaus (passage) "{name}".
+905dc77d Samaa nimeä käytetään myös {n} muulla rivillä: {lines}. Muuta se myös sinne.
+3cfafb7c Julkaise tarina uudelleen (Build > Publish to File) ja lataa peli uudelleen tarkistaaksesi.
+64cb91c6 Missä: {where}
+4383fcfd Mikä on vialla: {text}
+07bddb04 Näin korjaat sen: {text}
+cf36743b Nyt: {text}
+0cacfdc2 Muuta muotoon: {text}
+70fbdd39 Korjattu rivi kopioitu. Valitse Twinessä vanha rivi kohtauksesta "{name}" ja liitä.
+60eafc99 Korjattu rivi kopioitu. Valitse editorissasi rivi {n} ja liitä sen päälle.
+67a9f511 Hakuteksti kopioitu. Paina editorissasi Ctrl+F ja liitä se.
+67c1b9a0 Tiedosto ei ole muuttunut edellisen tarkistuksen jälkeen. Tallensitko sen?
+2693cf86 Vertaa riviäsi uudelleen riviin "Muuta muotoon".
+1b930787 Avaa ensin peli.
+9dbf0a77 Varmuuskopio tallennettu: {path}
+88e09b05 (sinun tekstisi)
+e835a0e1 Vikailmoitus: {game}
+338c5072 Tekninen: {text}
+fc5e62a8 Asetustiedosto: {path}
+0f83a323 Pelitiedostoa seurataan. Aina kun tallennat sen, se tarkistetaan uudelleen.
+24b5689b Pelitiedoston seuranta lopetettu.
+6bbf59c5 Pysäytetään pelitestiä…
+c5726162 Pelitesti tarvitsee Microsoft Edgen tai Google Chromen, eikä kumpaakaan löytynyt.
+efe69072 Peli muuttui pelitestin aikana. Aja se uudelleen.
+4e1a8e3c Ei ongelmia
+59cd52ee Kannattaa tarkistaa
+80c66d73 Luultavasti rikki
+3ad465ce Rikki
+8ea8e60f Rivi {n}: ongelmia ei löytynyt
+421fe500 kaksoisnapsauta nähdäksesi tiedot
+a6e7e8d6 "{text}" ei löytynyt
+fc748144 Vie listassa näkyvät {n} ongelmaa
+c8ca2957 Raportti tallennettu: {path}
+09188221 Koko peli
+5a7ee5ac Vikailmoitus
+203dee52 Tiedot tallennettiin: {path}
+5abfea7d Selkokieli: pois
+de314fa0 Vakavuus
+fc55cc19 Kohtaus / paikka
+3deb7456 Tyyppi
+61790945 ■ Pysäytä pelitesti
+e23fd7cf Poista tarkoituksellinen-merkintä
+5ffa6ce4 Tarkistaa pelit virheiden varalta ja kertoo selkokielellä, mikä on vialla ja miten sen korjaa. Toimii Twine-pelien (SugarCube, Harlowe, Chapbook, Snowman), muiden HTML-pelien, Ren'Pyn, RPG Maker MV/MZ:n, Inkin ja ChoiceScriptin kanssa.
+e13e18f3 Näin käytät sitä
+c3abe9f5 Turvallinen käyttää
+4d688496 Tämä ohjelma vain lukee peliäsi. Se ei koskaan muuta sitä. Käytä Työkalut > Varmuuskopioi pelitiedosto ennen kuin muokkaat mitään.
+90c93523 Pikanäppäimet
+8e990034 Ctrl+O avaa · F5 tarkista uudelleen · Ctrl+F hae · F3 hae seuraava · Ctrl+E vie · F1 oppitunnit · Ctrl + / Ctrl − / Ctrl+0 tai Ctrl+hiiren rulla koon muuttamiseen
+21e5904b {n} tiedostoviittausta tarkistettu
+052df047 Aloita tästä - tärkeimmät korjaukset
+eff36495 Tai napsauta "Korjausavustaja" käydäksesi ne läpi yksi kerrallaan.
+23bd8fe4 Kohtaus "{name}"
+8cb67e05 Kohtaus (passage) "{name}"
+12b1a199 kohtauksen rivi {n}
+280d0541 tiedoston {file} rivi {n}
+a684f161 Merkitsit tämän tarkoitukselliseksi, joten sitä ei lasketa.
+6aeb39ef Mikä on vialla
+c1bcc130 Mikä on vialla
+ebcf7d18 Mitä pelaajat huomaavat
+e7f32d0f Napsauta "Avaa tekstieditorissani". Se avaa tiedoston {file} riviltä {n}.
+73c8627d Poista tuo rivi (se näkyy alla kohdassa "Nyt").
+b44b2225 Muuta se alla kohdassa "Muuta muotoon" näkyvällä tavalla. "Kopioi korjattu rivi" kopioi koko korjatun rivin, jonka voit liittää vanhan päälle.
+d640e11b Katso yllä oleva selitys.
+33d1a502 Tallenna tiedosto, lataa peli uudelleen ja napsauta sitten "Korjasin sen - tarkista".
+fd3e0dfe Tehty Twinellä? Korjaa se silloin Twinessä (vaihda yltä "Muokkaan .html-tiedostoa" valintaan "Muokkaan Twinessä"). Twinestä julkaiseminen korvaa suoraan .html-tiedostoon tehdyt muutokset.
+e3b82040 Nyt
+b9b6aac4 Muuta muotoon
+3895c256 Voinko jättää tämän huomiotta?
+189da0ef Mitä pelaajat huomaavat: {text}
+7d949b29 Koodi: {text}
+80411ece Ei vielä korjattu - ongelma on yhä olemassa
+71a91179 paina Ctrl+G ja kirjoita {n} siirtyäksesi riville
+84d3bdef Avattu ohjelmassa {name}
+7bf2bdbd Kohtaus: {name}
+f8e71156 Tiedoston {file} rivi {n}
+e9331864 Mitä tapahtuu: {text}
+16fcd5a1 ({n} merkkiä lisää tällä rivillä)
+6dcc62dd Raportti tallennettu. Avataanko se nyt?
+02fbc53c Ongelma (selkokielellä)
+2c3cafa4 Tiedosto
+1bea2fb0 Näin korjaat
+fdccd352 Sovelluksen sisällä meni jotain pieleen:
+b7152342 Koko
+8e6b86dc Ongelmat
+8f0d8d83 Ryhmittele
+bce06414 Hae
+74c14ca3 Koodinäkymä
+a3d77701 ◀ Edellinen ongelma
+3a289dc9 Seuraava ongelma ▶
+2e0b45f2 Siirry
+ececaefe Hae seuraava
+df251b06 Hae
+7e08ebec Kehittäjä
+e53407cf Pelaaja
+0406a446 Selkokieli
+2edb004b Muokkaan .html-tiedostoa
+b45e0101 Seurataan muutoksia
+398ed329 Pelit
+6f80238e HTML-pelit
+f7857dcc Kaikki tiedostot
+6798c955 Tarkistetaan, odota…
+be4bd50c Koodin kunto: {n}%
+16dd1f3a {n} merkitty tarkoitukselliseksi
+901b56b2 Ei näytettävää
+ea64a687 4. Ohje > Oppitunnit selittää perusteet muutamassa minuutissa. Ohje > Katso esittely näyttää paikat.
+570f71b7 Rikkinäiset kohtaukset
+08f7f24d Tallenna pelisi ennen kuin menet niihin, jotta voit palata, jos jokin menee pieleen:
+29e8d770 Käytä ongelman kohdalla "Kerro kehittäjälle" tai Työkalut > Kirjoita vikailmoitus lähettääksesi tiedot.
+d19ceca5 Vinkki
+251eb9e2 Tallenna pelisi ennen kuin tulet tähän kohtaukseen, jotta voit palata, jos se hajoaa.
+d782b266 Löydä kohta: käytä Twinen "Find and replace" -toimintoa (tai katso tarkkaan) tälle tekstille:
+eb92d56f Avaa projekti RPG Makerissa ja siirry kohtaan: {where}
+7e7c7eb1 (poista tämä rivi)
+d40baaa7 ✔ Korjattu! Ongelma on poissa. Koodin kunto on nyt {n}%.
+fce98782 Valitse toinen editori kohdasta Työkalut > Tekstieditori…
+55d0a707 Varmuuskopio tallennettu:
+802cfe54 Varmuuskopiota ei voitu tehdä:
+a01ce386 Ehdotettu korjaus (Twinessä):
+d9cb995e Muut kuin englanninkieliset käännökset on tehnyt tekoäly, ja niissä voi olla virheitä. Tekniset yksityiskohdat pysyvät englanniksi, kuten pelimoottorit ja niiden ohjeet.
+987dd9b8 Avaa peli nähdäksesi sen koodin tässä.
+f4fd7854 {name} ({n} riviä)
+db3b1ca2 Raportti verkkosivuna
+1b5f6570 Laskentataulukko (CSV)
+ee3d21a8 Tekstitiedosto
+934a1886 Raporttia ei voitu tallentaa:
+29211387 Järjestelmän teema
+9e5ba0f0 Vaalea teema
+d51c5960 Tumma teema
+71df97be Tiedosto tallennettu - tarkistettu uudelleen: {fixed} korjattu, {new} uutta
+12d21609 (koko peli)
+4671f2fd {n} osaa
+af4e5ffa Tässä ryhmässä on {n} ongelmaa. Napsauta yhtä nähdäksesi tiedot.
+e065ed24 Jos rivi on siirtynyt, paina editorissasi Ctrl+F ja hae:
+d6cd9bbc Tarkistus ei onnistunut:
+e8b6a7a1 (rivi {lines})
+2a87805d Ohjelmaa {name} ei voitu käynnistää:
+50803478 Näin korjaat: {text}
+cbbf7064 Versio {v}. Löytää ongelmat peleistä ja selittää, miten ne korjataan. Vain lukee tiedostoja eikä koskaan muuta peliäsi.
+7e16f294 Koodin kunto: {n}% ({label})
+13b7bfca Työskennellään…
+944d285f Tarkistus epäonnistui
+5117eb3e Mikään ongelma ei vastaa nykyisiä suodattimia.
+84a26cd3 Ongelmia ei löytynyt. Hienoa työtä!
+e961739d 3. Etkö tiedä, mistä aloittaa? Käytä Korjausavustajaa - se käy ongelmat läpi yksi kerrallaan ja tarkistaa korjauksesi.
+dfa2b6e9 Rivi {n}:
+27a41ea2 (poista)
+966d414d rivi {n}
+a37a62b5 2. Napsauta listan ongelmaa. Sen alla näet, mikä on vialla, mitä pelaajat huomaavat ja tarkalleen miten sen korjaat.
+47faaf63 Pelitesti pysäytetty
+9de8b1a5 1. Napsauta "Avaa peli…" ja valitse pelin .html-tiedosto (tai käytä Työkaluja pelikansiolle). Tarkistus alkaa itsestään.
+836bf385 Pelitestiä ei voitu ajaa:
+3dd51c5a Valitse tekstieditorisi
+1f7611ea Tekstieditoriksi asetettu {name}
+43320d49 Testaa rivi ennen kuin muutat sitä
+18e673bc Peliisi ei muuteta mitään. Tämä tarkistaa vain tähän kirjoittamasi tekstin.
+8ecc7800 Kirjoita vikailmoitus kehittäjälle
+2e2b95ec Vertaa kahta versiota
+ccdb5389 Valitse pelin toinen versio ja napsauta Vertaa. Molempia vain luetaan, niitä ei koskaan muuteta.
+cabad4eb Tarkistetaan toista versiota…
+cb9ce97b Oppitunnit
+9255b9a1 Valitse tekstieditoriohjelma
+67094e72 Ohjelmaa ei löytynyt. Valitse se kohdasta "Selaa…".
+21461571 ◀ Takaisin
+2d8a1625 Ohita ▶
+7c5d9f51 {done}/{total} korjattu
+cb70c72b Ongelma {n}/{total}
+820d6004 Tarkistetaan…
+e461d5d0 Löytyi {n} ongelmaa:
+9580fcbc Pelkkä teksti
+26a49ee7 Discord / Reddit
+1f82bc1e Foorumi (BBCode)
+616ce66d Rikki + luultavasti rikki
+34d5d395 Vain valittu ongelma
+ced1fd2f Tallenna vikailmoitus
+ec9135a3 Vikailmoitus tallennettu: {path}
+8d105cf4 Vertaa
+a1cd6b54 Valitse toinen versio
+1f5bf765 Valitse ensin toinen versio.
+ad916050 Verrataan…
+f4f29947 Koodin kunto: {a}% → {b}%
+a81eb289 Korjattu uudemmassa versiossa ({n})
+53da970f Uusia ongelmia uudemmassa versiossa ({n})
+2be41ba6 Yhä olemassa ({n})
+9ec4aa53 Tässä sovelluksessa käytetyt sanat
+ce12714d Ei korjattavaa
+d231fca7 Korjattavia ongelmia ei ole jäljellä. Hyvin tehty!
+76c1c7de Tämä ongelma on poissa - se korjattiin tai tiedosto muuttui. Jatka napsauttamalla Ohita.
+55855f77 Yksittäisten rivien testaus toimii Twine-peleissä (SugarCube). Avaa ensin sellainen.
+bbfa773e Sulje
+af74f7c5 Kopioi
+571a03ba Millä ohjelmalla pelitiedosto avataan?
+113fa56b Tältä tietokoneelta löytyi nämä tekstieditorit:
+d4b86cfd Muu ohjelma…
+9d68007b Ohjelma
+c1b20f52 Selaa…
+6bf5da9c Asetukset
+4ee6279e {file} korvataan pelitiedostolla ja {line} rivinumerolla. Notepad++ käyttää: -n{line} "{file}"
+77dfd213 Peruuta
+efc007a3 Tallenna
+ab14d0a7 Ohjelmat
+4abacc60 ✔ Korjattu! Hyvin tehty. Tässä seuraava.
+1ed684b1 Liitä tai kirjoita rivi (tai koko kohtaus), jota haluat käyttää:
+45f9116a Tämä on kokonainen kohtaus (tarkista myös, että jokainen tagi on suljettu)
+4b5e84be Tarkista
+6a17f3f6 Tästä tekstistä ei löytynyt ongelmia.
+44b39131 Ehdotus:
+4020c08c Tyyli:
+2f32f781 Sisällytä:
+4705cad6 Sisällytä korjausohje
+d9057148 Tallenna nimellä…
+83c52802 Toinen versio:
+c3c1e96d Toinen versio on:
+6fa5fbbc vanhempi
+1d47386a uudempi
+78cee4b8 Vaihe {n}/{total}
+57bc79e3 Ohita esittely
+bc981983 Seuraava
+e9b450d1 Valmis
+682c160f Nykyinen peli:
+74c063af Väärin:
+3a82310a Oikein:
+c7c15bca Tämä menee pelaajilla pieleen.
+8df34ecb Tämä on hyvin todennäköisesti virhe.
+1d894da2 Ei kiireellinen. Voi olla kunnossa, mutta katso sitä.
+58da2ccb Linkit puuttuviin kohtauksiin
+78d3da9d Puuttuvat kuvat ja äänet
+59327131 Rikkinäiset pelikomennot
+dfe69b5d Väärin kirjoitetut pelikomennot
+140d954e Pieleen menevät "jos"-tarkistukset
+169a1b52 Komennot, jotka eivät tee mitään tai hajoavat
+c3f4070a Väärin kirjoitetut ominaisuudet ja arvot
+ee27480a Uudelleenkäytettävät lohkot
+9c0fe2ed Sivun asettelukoodi
+2c0f0a6d Tyylit (värit ja ulkoasu)
+f77fd1fd Kohtaukset
+45e35cfc Kohtaukset, joihin kukaan ei pääse
+a2406e53 Tiedostot, joita peli ei koskaan käytä
+68320599 Keskeneräinen teksti
+8a21b1ee Oikeinkirjoitus
+169b486d Lyöntivirheet
+a1d181bd Toimii vain Windowsissa
+3e9d9ae4 Hyvin suuret tiedostot
+50a12988 Vioittuneet tiedostot
+aab2b305 Vanhanmalliset komennot
+3f55c07b Skriptikoodi
+cc0718f5 Pelin asetukset
+c7ee483a Skanneri
+c916a1ad Virheet pelatessa
+0e66b49d kuva
+5e2e97c3 ääni
+ffbaf58f video
+4642576d fontti
+767013ce sivu
+971c419d tiedosto
+8c657028 kohtaus "{name}"
+84db7a65 peli
+27260418 Vie kohtaukseen, jota ei ole: "{name}"
+65a1b892 Kohdassa {where} linkki tai komento yrittää avata kohtauksen nimeltä "{name}". Yhdelläkään pelin kohtauksella ei ole täsmälleen tätä nimeä.
+eddc288b Kun pelaaja napsauttaa sitä (tai peli tulee siihen), hän saa virheilmoituksen tai tyhjän sivun kohtauksen sijaan.
+6690f7df Tee nimestä täsmälleen sama kuin olemassa olevalla kohtauksella. Isot kirjaimet ja välilyönnit merkitsevät.
+ee186081 Vie tarinan osaan, jota ei ole: "{name}"
+adcab89d Tarina yrittää jatkua kohdasta "{name}", mutta millään pelissä ei ole sitä nimeä.
+c68c7536 Peli pysähtyy tässä kohdassa virheeseen (tai ei käynnisty lainkaan).
+262dea9c Tee nimestä täsmälleen sama kuin olemassa olevalla tarinan osalla.
+8a2045c6 Vie lukuun, jota ei ole: "{name}"
+6b99d3d7 Tarina yrittää avata kohdan "{name}", mutta sellaista lukua tai kohtaa ei ole.
+54721a92 Peli pysähtyy tässä kohdassa virheeseen.
+bfe449ab Korjaa nimi vastaamaan olemassa olevaa lukua.
+8569b71c Avaa näkymän, jota ei ole: "{name}"
+ed323960 Peli yrittää näyttää näkymän nimeltä "{name}", mutta millään näkymällä ei ole sitä nimeä.
+31aaf0f7 Peli pysähtyy tässä virheeseen.
+ecedecaf Korjaa nimi vastaamaan olemassa olevaa näkymää.
+1c82d0d0 Tapahtuma lähettää pelaajan paikkaan, jota ei ole
+f7bb6caa Tapahtuma siirtää pelaajan karttaan tai ajaa common eventin, jota pelissä ei ole.
+11068616 Peli kaatuu tai jumittuu, kun tämä tapahtuma ajetaan.
+17c8c384 Valitse tapahtumakomentoon olemassa oleva kartta tai common event.
+924f14ec Linkki, joka ei vie minnekään
+ac25c348 Kohdan {where} linkki ei kerro, mikä kohtaus avataan.
+cc208a80 Sen napsauttaminen näyttää virheen.
+81510156 Kirjoita sen kohtauksen nimi, jonka linkin pitää avata.
+a620e5a7 Linkistä puuttuu loppu
+75319c60 Linkki alkaa merkeillä [[ mutta ei koskaan pääty merkkeihin ]].
+d94d2b45 Sen jälkeinen teksti sekoittuu linkkiin ja kohtaus näyttää rikkinäiseltä.
+da97338b Lisää ]] linkin loppuun.
+de752d36 Kukaan ei pääse kohtaan "{name}"
+ad06e184 Mikään pelissä ei johda tähän tarinan osaan.
+49f72405 Pelaajat eivät koskaan näe sitä. Harmitonta, ellei sen ollut tarkoitus olla pelattavissa.
+41e81f9d Jos pelaajien pitää nähdä se, lisää siihen linkki toisesta kohtauksesta. Jos se on vanha, voit jättää sen huomiotta.
+12017de3 Kohtaus "{name}" on tyhjä
+e1c78333 Tässä kohtauksessa ei ole tekstiä eikä sisältöä.
+eb036a1b Tänne tuleva pelaaja näkee tyhjän sivun.
+95468775 Kirjoita kohtaus tai poista siihen johtavat linkit.
+65f5f00d Kahdella tarinan osalla on sama nimi
+3a661399 Useampi kuin yksi kohtaus tai nimiö käyttää nimeä "{name}".
+14b99f6a Vain yksi niistä voidaan koskaan näyttää, tai peli ei suostu käynnistymään.
+5017f902 Anna jokaiselle oma nimi.
+8ee54eec Pelillä ei ole aloituskohtausta
+e4b1267b Peli ei tiedä, mistä aloittaa.
+67fece68 Peli ei ehkä käynnisty lainkaan.
+6f3c3583 Merkitse Twinessä ensimmäinen kohtaus aloitukseksi.
+891a7ccc Hyppylinkki ei vie minnekään
+723d0b6c Linkki osoittaa sivun kohtaan, jota ei ole.
+9d2a3ab1 Sen napsauttaminen ei tee mitään.
+a17d6d9d Korjaa kohdan nimi tai poista linkki.
+f7e0927c Puuttuva {kind}: {file}
+471ab6b6 Peli haluaa käyttää tiedostoa ({kind}) "{path}", mutta pelikansiossa ei ole sellaista tiedostoa.
+215d84f2 Pelaajat näkevät rikkinäisen kuvan tai tyhjää tilaa, tai eivät kuule mitään.
+95495e08 Laita tiedosto tuohon paikkaan, tai muuta pelitiedostossa nimi tiedostoon, joka oikeasti on olemassa.
+4e187285 Tiedostonimessä on väärät isot kirjaimet: {file}
+10dd7eb2 Tiedosto on olemassa, mutta peli kirjoittaa sen nimen eri isoilla kirjaimilla.
+445b1f51 Toimii Windowsissa. Puhelimissa, Maceissa, Linuxissa tai verkkosivulla kuva tai ääni puuttuu.
+bcc2cd24 Muuta pelitiedoston nimi niin, että isot kirjaimet vastaavat oikeaa tiedostoa.
+fc7f8ac2 Kuva osoittaa kehittäjän omalle tietokoneelle
+bf1eaea6 Tiedoston sijainti alkaa asemakirjaimella kuten "D:\". Se kansio on olemassa vain tietokoneella, jolla peli tehtiin.
+8e9a7d52 Pelaajat eivät koskaan näe tätä kuvaa.
+e5baac7c Muuta se sijainniksi pelikansion sisällä, esimerkiksi images/characters/name.jpg.
+006a8fb9 Tiedostosijainneissa on \ eikä /
+d6cb43a9 Peli kirjoittaa kansiopolut kenoviivoilla (\).
+42ad75cd Toimii Windowsissa. Puhelimissa, Maceissa, Linuxissa tai verkkosivulla kuvat ja äänet eivät lataudu.
+02bf9e76 Merkitsee vain, jos pelin pitää toimia muualla kuin Windowsissa: vaihda kuvapoluissa \ merkkiin /.
+0fa2cd7a Kansiossa "{folder}" on {n} tiedostoa, joita ei koskaan käytetä
+1b78ff55 Nämä tiedostot ovat pelikansiossa, mutta peli ei koskaan käytä niitä.
+55acf4db Mikään ei hajoa. Ne vain kasvattavat latauksen kokoa.
+aa1a0c6f Poista ne, jos olet varma, ettei niitä tarvita. (Peli voi valita joitakin niistä nokkelin tavoin, joita skanneri ei näe.)
+cb4cc629 Tyhjä tiedosto
+4642643c Tämä tiedosto on tyhjä (0 tavua).
+24ec314d Sitä ei näytetä eikä toisteta.
+6cd06e6e Korvaa se toimivalla kopiolla tiedostosta.
+07046633 Vioittunut tiedosto (katkennut): {file}
+932dbf75 Tämän tiedoston loppu puuttuu, yleensä koska lataus, kopiointi tai purku jäi kesken.
+feda3672 Kuva näkyy vain osittain tai ei lainkaan, tai ääni/video loppuu kesken.
+968dc7a4 Kopioi tai lataa tämä tiedosto uudelleen pelin alkuperäisistä tiedostoista.
+6081a951 Ei oikeasti kuva tai ääni: {file}
+dc397b7a Tiedostolla on oikea nimi, mutta sen sisällä on verkkosivu (usein lataussivuston virhesivu).
+7f495908 Pelaajat näkevät rikkinäisen kuvan tai eivät kuule mitään.
+eee27da5 Lataa oikea tiedosto uudelleen ja korvaa tämä.
+2a1c1b71 Mahdollisesti vioittunut tiedosto: {file}
+4c30367e Tämän tiedoston alku ei näytä miltään tunnetulta kuva-, ääni- tai videomuodolta.
+d3b9cea3 Sitä ei luultavasti näytetä eikä toisteta.
+0ab570a5 Avaa se kuvankatseluohjelmassa tai mediasoittimessa. Korvaa se, jos se ei aukea.
+f68470e5 Joillakin tiedostoilla on väärä pääte (.png, .jpg ...)
+d608da1e Nämä tiedostot sisältävät eri muotoa kuin niiden nimi kertoo, esimerkiksi JPEG-kuva nimeltä .png.
+2e39b508 Selaimet näyttävät ne yleensä silti. Jotkin puhelimet ja ohjelmat eivät ehkä näytä.
+097a3703 Valinnainen: muunna tai nimeä ne uudelleen niin, että nimi vastaa oikeaa muotoa.
+283d2070 Jotkin tiedostot ovat hyvin suuria
+c7fa15ff Nämä kuvat tai videot ovat hyvin suuria.
+ae5369ab Ne latautuvat hitaasti, etenkin puhelimissa.
+e125a92c Valinnainen: pienennä niitä kuvankäsittelyohjelmalla.
+385f4329 Pelitiedosto puuttuu: {name}
+2e700532 Peli odottaa tiedostoa, jota ei ole.
+99467808 Peli näyttää virheen käynnistyessään tai kun tähän osaan tullaan.
+b3496ea7 Palauta puuttuva tiedosto tai poista viittaus siihen.
+75e6334a Pelin datatiedosto on vioittunut
+db02e969 Tätä tiedostoa ei voi lukea kunnolla.
+79b96faf Peli ei käynnisty tai kaatuu.
+7ebbbeec Palauta tiedosto varmuuskopiosta tai alkuperäisestä pelistä.
+d399fac1 "{name}"-komentoa ei koskaan suljeta
+e6c66d5b Jotkin pelikomennot tarvitsevat vastaavan lopun. Tällä ei ole sellaista.
+0b1cb09f Peli näyttää tässä kohtauksessa punaisen virhelaatikon, ja osa kohtauksesta voi puuttua.
+afdabc18 Lisää puuttuva loppu (esimerkiksi <</{name}>>) kohtaan, jossa tämän osan pitää päättyä.
+744245d7 Ylimääräinen lopetustagi <</{name}>>
+adb1bea4 On lopetustagi, jolla ei ole mitään lopetettavaa.
+b39fd74f Peli näyttää tässä kohtauksessa punaisen virhelaatikon.
+a53d4f4e Poista tämä ylimääräinen lopetustagi.
+fa8c8072 "{name}" on väärässä paikassa
+9009044d <<{name}>> täytyy olla <<if>>-lohkon sisällä. Tässä se ei ole, yleensä koska yläpuolella oleva lopetustagi on väärässä paikassa.
+1e9acaea Peli näyttää punaisen virhelaatikon.
+1d2d751d Katso juuri yläpuolella olevat rivit ja siirrä lopetustagi oikeaan paikkaan.
+bfaae414 Lopetustagista puuttuu ">": <</{name}>
+a280c34f Lopetustagi on kirjoitettu yhdellä ">"-merkillä, mutta se tarvitsee kaksi.
+71be19aa Peli ei näe lopetustagia. Se näyttää punaisen virhelaatikon, ja kohtaus voi näyttää väärältä.
+a3c69d1f Lisää yksi ">", jotta se päättyy ">>".
+413ace46 Ylimääräinen ">"-merkki
+4e791f5a Tagin jälkeen on yksi ">" liikaa.
+4ecd446f Pelaajat näkevät irrallisen ">"-merkin ruudulla.
+c1c069b2 Poista ylimääräinen ">".
+cacfbdbb Ylimääräinen "<"-merkki
+fe9088b6 Komennon edessä on yksi "<" liikaa.
+0c7a0bb7 Pelaajat näkevät irrallisen "<"-merkin ruudulla.
+87807bf8 Poista ylimääräinen "<".
+b0d2d4e4 Puoliksi kirjoitettu komento "<<"
+012a6c88 On "<<", jonka jälkeen ei ole mitään.
+fd941db0 Sen jälkeinen komento hajoaa ja peli voi näyttää virheen.
+73f8070a Poista irrallinen "<<".
+7037d71a Komennosta puuttuu ">>"
+87bde2ac Komento alkaa merkeillä << mutta ei koskaan pääty merkkeihin >>.
+7f93f879 Sen jälkeinen teksti katoaa tai kohtaus näyttää virheen.
+dbda1f76 Lisää ">>" komennon loppuun.
+5a30164d Sulku avataan, mutta sitä ei koskaan suljeta
+d5b047f2 Jokin alkaa sululla, mutta sulkeva sulku puuttuu.
+8d50e9a9 Kaikki sen jälkeen nielaistaan tai peli näyttää virheen.
+912c548c Lisää puuttuva sulkeva sulku.
+35852e81 Ylimääräinen sulkeva sulku
+a1d86e33 On sulkeva sulku ilman avaavaa.
+fdeb2ba4 Pelaajat voivat nähdä irrallisen merkin tai virheen.
+254fbb5b Poista ylimääräinen sulku.
+98cb6b2f Komentoon ei ole liitetty tekstiä
+1afec1b9 Tämän komennon pitäisi ohjata heti sen jälkeen tulevaa tekstiä, joka kirjoitetaan hakasulkeisiin [näin]. Sen jälkeen ei tule mitään.
+073266b4 Harlowe näyttää virheen, tai teksti näytetään aina.
+29369e93 Laita sen ohjaama teksti hakasulkeisiin heti sen perään.
+4093f80e Peli näyttää virheen, eikä sen ohjaama kohtauksen osa toimi.
+ef3a7877 Vanhanmallinen komento
+54dead55 Tämä komento toimii yhä, mutta se on vanhentunut.
+01500c48 Ei mitään nyt. Se voi hajota tulevassa moottoripäivityksessä.
+b1a70201 Valinnainen: korvaa se uudemmalla komennolla.
+a4a93d21 "if"-tarkistus käyttää "=" eikä "is"
+582b6716 "if"-tarkistuksen sisällä "=" tarkoittaa "tee yhtä suureksi", ei "onko yhtä suuri?".
+564cdad0 Peli näyttää punaisen virhelaatikon, tai tarkistus on aina tosi ja kohtauksesta pelataan väärä osa.
+e3105e2f Korvaa yksittäinen "=" sanalla "is".
+f0b64920 "=>" tai "=<" kirjoitettu väärinpäin
+897ec753 Suurempi tai yhtä suuri kirjoitetaan ">=", ei "=>".
+0167d9bc Tarkistus ei toimi.
+0b498ace Kirjoita sen sijaan ">=" tai "<=".
+f917ca5e "is not" pitäisi olla yksi sana
+4e8bbdf4 Tässä pelimoottorissa "is not" tarkoittaa eri asiaa kuin "isnot".
+e40cd819 Tarkistus on lähes aina väärin.
+7f3a1402 Kirjoita "isnot" yhtenä sanana.
+694143a3 "or"-tarkistus, joka on aina tosi
+b760633e Esimerkiksi "$x is 1 or 2" vertaa $x:ää vain lukuun 1; yksinäinen "2" lasketaan aina kyllä-vastaukseksi.
+f8b8cc75 Tämä osa pelataan silloinkin, kun ei pitäisi.
+b1a0ec7e Toista nimi: "$x is 1 or $x is 2".
+1c4512b1 "if"-tarkistus, joka voi laueta väärään aikaan
+bb598d2b Tämä tarkistus sekoittaa "and"- ja "or"-sanat ilman sulkuja. Tietokone käsittelee aina ensin "and"-osat, joten tarkistus ei ehkä tarkoita sitä, mitä oli tarkoitus.
+71408d55 Kohtaus tai valinta voi ilmestyä, kun sen ei pitäisi - esimerkiksi kun hahmo on kaapattu tai ominaisuus on liian matala.
+045d6c6c Lisää sulut ( ) yhteen kuuluvien osien ympärille. Katso alla olevaa koodia ja ryhmittele "or"-vaihtoehdot.
+dbb9ed0f Sulut ( ) eivät täsmää
+6bbb5c72 Merkkejä "(" on enemmän kuin ")" tai päinvastoin.
+d2676c8c Lisää tai poista sulku, jotta ne muodostavat parit.
+8f746eaa Tyhjä "if"-tarkistus
+70ac1e0e "if":llä ei ole mitään tarkistettavaa.
+8fa764c4 Peli näyttää virheen.
+f72f83b1 Kirjoita, mitä pitää tarkistaa.
+00b75afd Ominaisuuden muutos, joka ei tee mitään ("==")
+d3024696 Tämän rivin on tarkoitus muuttaa arvoa, mutta "==" vain vertaa - se ei muuta mitään.
+4bb1b350 Arvo ei koskaan muutu. Siitä riippuvat asiat (ajastimet, laskurit) jumittuvat.
+bb9d82a8 Korvaa "==" sanalla "to".
+88b997d5 Ominaisuuden muutos, joka ei tee mitään
+47b56b1e Tämän rivin on tarkoitus muuttaa arvoa, mutta siinä ei ole "to", "=", "+=" tai "-=", joten mikään ei muutu.
+b3edbcbf Esimerkiksi energiaa tai rahaa ei koskaan oteta tai anneta.
+5a19bb57 Kirjoita "-=" eikä "-" (tai "+=" eikä "+").
+24335c15 Tyhjä ominaisuuden muutos
+d7c9d917 Komento on tyhjä.
+1ca2b36b Poista se tai kirjoita muutos.
+2d2715a0 Arvo asetetaan merkillä "=" eikä sanalla "to"
+b3386569 Tämä moottori asettaa arvot sanalla "to".
+be353939 Korvaa "=" sanalla "to".
+6b135470 Lainausmerkki " puuttuu
+b7ed7d6f Komennon tekstinpätkä alkaa merkillä " mutta sitä ei koskaan suljeta.
+4b70c1d8 Peli näyttää virheen tai nielaisee sen jälkeisen tekstin.
+081a0ff8 Lisää puuttuva ".
+1a1cb7a5 Sarkaimia käytetty siellä, missä tarvitaan välilyöntejä
+0d83ecca Tämä moottori vaatii, että rivit sisennetään vain välilyönneillä.
+1928be6f Peli ei käynnisty, tai se pysähtyy tässä virheeseen.
+6707540b Korvaa rivin alussa oleva sarkain välilyönneillä.
+50e72b08 Rivin lopusta puuttuu ":"
+1590b870 Rivien kuten "if", "menu" ja "else" täytyy päättyä kaksoispisteeseen.
+34cb1caf Peli ei käynnisty.
+739781b1 Lisää ":" rivin loppuun.
+463c9c22 Rikkinäinen skriptikoodi
+90393617 Skriptikoodin sulku tai lainausmerkki ei täsmää.
+10b6ae9e Koko skripti lakkaa toimimasta, mikä voi rikkoa monia ominaisuuksia.
+208a3574 Tarkista tämän rivin ympärillä olevat sulut ja lainausmerkit.
+08a420a2 Unohtunut testikoodi
+f523c19b Testauksessa käytettyä koodia jäi peliin.
+a161c8db Yleensä ei mitään näkyvää.
+5512920c Valinnainen: poista se.
+e14ae90f Nimi, jossa on "-"
+a5d94a86 Arvojen nimissä ei voi olla merkkiä "-". Peli lukee vain osan ennen "-"-merkkiä.
+1d915eed Pelaajat näkevät väärän sanan tai tyhjän kohdan nimen sijaan.
+1ff6bd49 Käytä "_" eikä "-".
+929dc82b Sen tarkistukset ovat aina "ei", joten jokin teksti tai kohtaus ei koskaan näy (tai nimen sijaan näkyy tyhjä kohta).
+aa241baa Sama nimi, eri isot kirjaimet: ${a} / ${b}
+fe615c75 Pelille nämä ovat kaksi eri arvoa, koska isot kirjaimet merkitsevät.
+1549316e Toiseen tehdyt muutokset eivät näy toisessa, joten ominaisuudet tai kohtaukset menevät pieleen.
+485f98c5 Muuta ${a} muotoon ${b}.
+fbb1a8ec Väärin kirjoitettu arvon nimi: {name}
+baa2f1ac "{name}" ei koskaan luoda, mutta "{near}" luodaan. Se on lähes varmasti lyöntivirhe.
+37eb4d71 Peli näyttää virheen tai arvo on aina tyhjä.
+69b0c997 Muuta "{name}" muotoon "{near}".
+958390b8 Väliaikainen arvo, jota ei koskaan aseteta: _{name}
+66d98956 Tätä lyhytikäistä arvoa käytetään, mutta se ei koskaan saa arvoa.
+f6d72946 Sen tarkistukset eivät koskaan toimi.
+b150a824 Aseta se ensin tai korjaa nimi.
+bb2ac176 Arvo, jota ei koskaan luotu: {name}
+418bb0cf Käyttää kytkintä/muuttujaa, jota ei ole (#{n})
+60eb5de9 Tapahtuma käyttää numeroa {n}, mutta pelin lista on lyhyempi.
+ab5e6d39 Tapahtuma ei toimi tarkoitetulla tavalla.
+27e3bd51 Valitse tapahtumaan olemassa oleva kytkin/muuttuja.
+5e339cd0 Kytkimellä/muuttujalla ei ole nimeä (#{n})
+e3546a24 Sitä käytetään, mutta sillä ei ole nimeä Databasessa.
+15f64977 Ei mitään näkyvää. Se on vain helppo sekoittaa.
+a8723260 Anna sille nimi Databasessa.
+bd3955c1 Uudelleenkäytettävä lohko on määritelty kahdesti: {name}
+0a743f0a Kahdella määritelmällä on tämä nimi.
+4d983cee Vain yhtä versiota käytetään.
+08c1e9fa Poista tai nimeä uudelleen toinen niistä.
+20982092 Uudelleenkäytettävä lohko ei lataudu
+3ed9bdd5 Sen kohtauksesta puuttuu tagi "widget".
+4f7fa681 Jokainen sitä käyttävä kohtaus näyttää virheen.
+a3c57c94 Lisää Twinessä tagi "widget" tuohon kohtaukseen.
+769d38d3 Käyttämätön uudelleenkäytettävä lohko: {name}
+91caae31 Se on määritelty, mutta sitä ei koskaan käytetä.
+92f3557e Mikään ei hajoa.
+48518178 Mitään ei tarvita.
+549a08bd Lainausmerkki puuttuu sivun koodista
+2616e9ea Sivun tagista puuttuu lainausmerkki " (usein kuvasta).
+c1ac2a6e Kuva tai elementti ei ehkä näy, tai asettelu hajoaa.
+1359ec48 Sivun laatikoita ei ole suljettu kunnolla
+c5eaf192 Asettelulaatikko (kuten <div> tai <center>) avataan mutta ei suljeta, tai suljetaan liian monta kertaa.
+bff958b5 Teksti tai kuvat voivat päätyä väärään paikkaan tai väärällä tyylillä.
+2055d18e Lisää puuttuva lopetustagi tai poista ylimääräinen.
+3ec38cbd Kahdella asialla on sama nimilappu (id)
+0bf6eee0 Jokaisen id:n täytyy olla sivulla ainutlaatuinen.
+ff424805 Tätä osaa päivittävät painikkeet voivat muuttaa väärää kohtaa.
+3d5e5acf Anna jokaiselle oma id.
+9ef419aa Kuva tai linkki ilman tiedostoa
+41c88499 Tagi ei osoita mihinkään.
+30064ec6 Rikkinäisen kuvan kuvake voi näkyä.
+0e8cdbfd Täytä tiedostonimi tai poista tagi.
+8c62dd1b Kuvakoot kirjoitettu tavalla, jonka selaimet ohittavat
+c97c9dc5 Koissa kuten height="450wv" on kirjaimia, joita selain ei ymmärrä ("wv" ei ole yksikkö).
+38f858bc Kuvat näkyvät silti, vain kiinteässä pikselikoossa. Yleensä harmitonta.
+c33de17c Valinnainen: poista kirjaimet, esim. height="450".
+b2030de7 Tyylin nimi, joka ei täsmää: "{name}"
+912e16dc Tämän osan ulkoasu valitaan nimellä "{name}", mutta tyylin nimi on "{near}".
+93f6e366 Tämä osa näkyy ilman tarkoitettuja värejä tai asettelua.
+de3efded Tyylin nimi ilman tyyliä: "{name}"
+46cc76e2 Mikään tyylisääntö ei käytä tätä nimeä.
+3a6cc944 Yleensä harmitonta.
+d91f6b60 Keskeneräistä tekstiä, jonka pelaajat näkevät
+a2d31ceb Kehittäjä jätti tarinaan merkinnän kuten "PLACEHOLDER" tai "TODO".
+33f40845 Pelaajat näkevät merkinnän, tai kohtaus on keskeneräinen.
+a398b7c0 Kirjoita oikea teksti tai poista merkintä.
+a89ee2d1 Oikeinkirjoitus: "{wrong}" pitäisi olla "{right}"
+bf0afa72 Yleinen kirjoitusvirhe.
+979c6e99 Pelaajat näkevät väärin kirjoitetun sanan.
+7e32de5a Muuta "{wrong}" muotoon "{right}".
+b2d44d92 Tuplasana: "{words}"
+670755a1 Sama sana on kirjoitettu kahdesti peräkkäin.
+f901109b Pelaajat näkevät tuplasanan.
+c8f90b31 Poista toinen niistä.
+fd88a85b Näyttää kuvan, jota ei ole: "{name}"
+d99288f0 Tämän nimistä kuvaa ei ole määritelty, eikä mikään images/-kansion tiedosto vastaa sitä.
+61cd07a0 Pelaajat näkevät paikkamerkin tai virheen.
+3b215908 Lisää kuva tai korjaa nimi.
+a08bad60 Pelillä ei ole ID-numeroa
+91a06fd9 Twine käyttää ID:tä tarinoiden erottamiseen.
+7ff45b55 Julkaise tarina uudelleen Twinestä.
+ce8325ca Näyttää pelatessa punaisen virhelaatikon: "{name}"
+212a3e36 Kun kohtaus todella pelattiin, peli näytti tämän virheen: {msg}
+1cda4ad4 Pelaajat näkevät tässä kohtauksessa punaisen virhelaatikon, ja osa siitä puuttuu.
+fe183b9c Katso samalle kohtaukselle listatut ongelmat - ne yleensä selittävät syyn.
+5a4709f8 Selain ei pysty edes lukemaan skriptiä
+417e0923 Selain löysi tästä skriptistä kirjoitusvirheen, joten mitään siitä ei ajeta.
+711c9902 Tämän skriptin tekemät ominaisuudet (erikoiskomennot, asetukset) puuttuvat tai ovat rikki.
+289bf8bb Etsi puuttuvaa sulkua, lainausmerkkiä tai pilkkua tältä tai edelliseltä riviltä.
+fefc36ad Kuvia tai ääniä puuttuu pelatessa
+d47a66be Näitä tiedostoja pyydettiin kohtauksia pelattaessa, mutta niitä ei ole.
+80b8b71b Pelaajat näkevät rikkinäisiä kuvia tai eivät kuule mitään joissain kohtauksissa.
+9733445f Lisää puuttuvat tiedostot tai korjaa niiden nimet.
+4f504ebe Virhe pelin käynnistyessä
+92243591 Selain ilmoitti virheestä peliä ladattaessa.
+2fea6477 Aloitusnäyttö tai jotkin ominaisuudet voivat olla rikki.
+608156d3 Etsi pelin pääskriptistä viestissä mainittu ongelma.
+231d0f49 Väärin kirjoitettu komento: {name}
+388bf136 Tuntematon komento: {name}
+9b686aa1 Peli ei tunne tätä komentoa. Se on lähes varmasti lyöntivirhe sanasta {near}.
+d1f769ee Peli ei tunne tätä komentoa.
+6a1cce2c Muuta se muotoon {near}.
+46c692e0 Tarkista komennon kirjoitusasu.
+6db67833 Arvo, jota ei koskaan aseteta: {name}
+c0ceb098 Peli käyttää nimeä "{name}", mutta kaikkialla muualla sen nimi on "{near}". Se on lyöntivirhe.
+8acbe929 Peli tarkistaa tai näyttää arvon "{name}", mutta mikään ei koskaan anna sille arvoa.
+fbb2c20c Anna sille alkuarvo tai korjaa nimi.
+33e186ef Arvo, jota peli ei koskaan käytä: {name}
+72bf1ee8 Tämä muuttaa arvoa "{name}", mutta peli katsoo vain arvoa "${near}". Se on lyöntivirhe.
+7f81aa2e "{name}" muuttuu, mutta peli ei koskaan katso sitä.
+fd3f859d Muutos katoaa - esimerkiksi ominaisuuden kasvu, joka ei koskaan lasketa.
+4857ea9f Mikään ei hajoa. Se voi olla jäänne vanhemmista versioista.
+d2118ba7 Muuta "{name}" muotoon "${near}".
+3867ee62 Mitään ei tarvita, ellei sitä ollut tarkoitus käyttää.
+11e31f78 "{name}" ei koskaan luotu. Se on luultavasti lyöntivirhe sanasta "{near}".
+8f03aa6d "{name}" ei koskaan luotu pelin alussa.
+dd8d9eef Luo se pelin alussa.
+a62731f6 passage (kohtaus)
+f8de5ecc Twine-pelin yksi sivu tai kohtaus. Jokaisella kohtauksella on nimi, ja linkit vievät kohtauksesta toiseen.
+ea5e0445 kohtaus
+ad88890f Tarinan yksi sivu. Twinessä tätä kutsutaan nimellä "passage".
+78f3a3d9 makro
+480a06b0 Pelikomento merkkien << ja >> välissä, kuten <<if>> tai <<set>>. Peli suorittaa sen näyttämisen sijaan.
+1925f793 komento
+410ae6be Ohje pelille, kuten "näytä tämä kuva" tai "jos pelaajalla on 5 kultaa". SugarCubessa ne kirjoitetaan merkkien << ja >> väliin.
+b46d0172 muuttuja
+2ef301de Nimetty arvo, jonka peli muistaa, kuten $gold tai $mother_love. SugarCubessa se alkaa merkillä $.
+f32b67c7 arvo
+a746abd2 Numero, sana tai kyllä/ei, jonka peli muistaa, kuten kullan määrä.
+afad9a69 ehto
+1dc59f8f Tarkistus kuten "$gold gte 5" (onko pelaajalla vähintään 5 kultaa?). Sen jälkeinen teksti näkyy vain, kun tarkistus on tosi.
+5e9b60f6 tagi
+1df6d68c Merkki koodissa. Avaavat tagit kuten <<if>> aloittavat osan, sulkevat tagit kuten <</if>> lopettavat sen.
+4f0aa52d linkki
+5afc9751 Napsautettava teksti, joka vie pelaajan toiseen kohtaukseen. Twinessä: [[Teksti|Kohtauksen nimi]].
+d3ecb0d8 include
+bbc9ce26 Komento, joka liittää toisen kohtauksen tähän: <<include "Nimi">>.
+ff700e02 widget
+fd5df966 Itse tehty komento, joka määritellään kerran ja jota käytetään monissa kohtauksissa.
+9f738ce8 HTML
+16d38297 Kieli, jolla verkkosivut kirjoitetaan. Tagit kuten <img> (kuva) ja <div> (laatikko).
+194e13da CSS
+28d26723 Tyylisäännöt: värit, koot ja asettelu. "class" yhdistää elementin tyyliin.
+ee620923 JavaScript
+2d04472d Verkkosivujen ohjelmointikieli. Pelit käyttävät sitä erikoisominaisuuksiin.
+cb5346a0 skripti
+302bcb23 Pätkä ohjelmakoodia (yleensä JavaScriptiä).
+0c4da6cb Twine
+5deecf78 Ilmainen ohjelma, jolla tehdään monia tekstipelejä. Se julkaisee pelin yhtenä .html-tiedostona.
+9b2ab238 SugarCube
+5a15607f Twine-pelien yleisin "story format" (moottori). Se tarjoaa << >>-komennot.
+5e2fb0c2 julkaista
+9eb9fe5a Twinessä: Build > Publish to File. Se kirjoittaa tarinastasi pelattavan .html-tiedoston.
+1af607c7 tiedostopolku
+3bee6183 Missä tiedosto on, esimerkiksi images/hero.png (kansio "images", tiedosto "hero.png").
+264f39ca rivi
+f44c6b66 Yksi tekstirivi tiedostossa. Tekstieditorit näyttävät rivinumerot vasemmalla.
+3cc46d20 sisennys
+2a14602c Välilyönnit rivin alussa. Jotkin moottorit käyttävät niitä tietääkseen, mitkä rivit kuuluvat yhteen.
+64c65374 nimiö (label)
+0419b517 Nimetty kohta Ren'Py- tai ChoiceScript-tarinassa, johon muut osat voivat hypätä.
+40a22a4a knot
+fba17772 Nimetty osa Ink-tarinassa. "-> nimi" hyppää siihen.
+fd8c7c8e lisäosa
+45e375e0 RPG Maker -peliin lisätty ylimääräinen skripti.
+67db3ab6 1. Mikä on passage (kohtaus)?
+6cfa54e4 2. Komennot merkkien << ja >> välissä
+fcaf062f 3. Avaaminen ja sulkeminen
+47887091 4. Arvot, jotka peli muistaa ($muuttujat)
+c3bcb980 5. "If"-tarkistukset
+d8cc0b48 6. Kuvat ja äänet
+c413d282 7. Turvallinen muokkaus
+fb4c49ae 8. Tämän sovelluksen lukeminen
+a9af7910 Aloita tästä: avaa pelin .html-tiedosto (tai Ren'Py-, RPG Maker-, Ink- tai ChoiceScript-pelikansio). Tarkistus alkaa itsestään.
+de845e69 "Selkokieli" selittää kaiken arkikielellä. Kytke se pois nähdäksesi tekniset yksityiskohdat.
+6c84c615 Kehittäjä vai Pelaaja: pelaajat saavat lyhyen, vähän juonipaljastuksia sisältävän listan rikkinäisistä kohtauksista ja vikailmoituksen kehittäjälle. Kehittäjät saavat korjaustyökalut.
+ba413de9 Kaikki löydetyt ongelmat. Punainen on rikki, keltainen luultavasti rikki, sininen kannattaa tarkistaa. Napsauta yhtä nähdäksesi, mitä tehdä.
+476c1a70 Tässä näet, mikä on vialla, mitä pelaajat huomaavat ja tarkalleen miten korjaat sen - rivi ennen ja jälkeen.
+e871d7cc Korjausavustaja vie sinut ongelmien läpi yksi kerrallaan ja tarkistaa jokaisen korjauksen puolestasi.
+3d56d049 Pelitesti pelaa jokaisen kohtauksen näkymättömässä selaimessa ja löytää virheet, jotka näkyvät vain pelatessa.
+41da0a4f Työkalut: varmuuskopioi peli, testaa rivi ennen muutosta, vertaa kahta versiota, kirjoita vikailmoitus, seuraa muutoksia.
+75d05bed Ohje: oppitunnit, sanasto, tämä esittely ja mukavuusasetukset kuten erittäin suuri teksti.
+52c5f193 Koodin kunnon pisteet: 100% erinomainen, 90% loistava, 80% hyvä, 70% kelvollinen.
+bcecc3cb Twine-peli koostuu kohtauksista (passage). Jokainen on yksi kohtaus: vähän tekstiä, ehkä kuva, ja linkkejä muihin kohtauksiin.
+b1f433c6 Linkit näyttävät tältä. Osa ennen merkkiä | on se, minkä pelaaja näkee, osa merkin | jälkeen on avattavan kohtauksen nimi:
+33dd3c05 Nimen täytyy täsmätä tarkalleen, myös isot kirjaimet ja välilyönnit. "kitchen" ja "Kitchen" ovat eri kohtauksia.
+14a03cdc SugarCube-pelit käyttävät komentoja, jotka kirjoitetaan merkkien << ja >> väliin. Peli suorittaa ne näyttämisen sijaan.
+fffc20ea Aina tarkalleen kaksi < alussa ja kaksi > lopussa. Yksi liikaa tai liian vähän rikkoo komennon:
+1e192fbd Jotkin komennot ovat kuin sulut: ne avaavat osan ja ne täytyy sulkea. <<if>> suljetaan merkinnällä <</if>>.
+fd08a19b Jos sulkeva <</if>> puuttuu, peli näyttää punaisen virhelaatikon. Samoin jos niitä on yksi liikaa.
+b25bf333 $-merkillä alkava sana on arvo, jonka peli muistaa kohtausten välillä, kuten $gold tai $mother_love.
+d4d0415d Isot kirjaimet merkitsevät: $Gold ja $gold ovat kaksi eri arvoa. Lyöntivirhe luo uuden, tyhjän arvon, joten muutos katoaa.
+340aacf8 Arvon muuttamiseen käytä "to", "+=" tai "-=". Pelkkä "-" laskee mutta ei muuta mitään:
+87dc8b35 "if"-lauseen sisällä vertaa sanoilla "is", "isnot", "gte" (vähintään), "lte" (enintään). Yksittäinen "=" on siinä väärin:
+add346a2 "and" tarkistetaan ennen "or"-sanaa. Ryhmittele suluilla, muuten tarkistus voi olla tosi väärään aikaan:
+f07da221 Kuvat näytetään <img>-tagilla. Polku kertoo, missä tiedosto on, pelin kansiosta alkaen:
+9e333b42 Käytä kansioiden välissä merkkiä /. \ toimii vain Windowsissa. Isojen kirjainten täytyy vastata oikeaa tiedostonimeä puhelimissa, Maceissa ja verkkosivuilla.
+9d1c8406 Jokaisen avautuvan lainausmerkin " täytyy myös sulkeutua, muuten kuva ei näy.
+6f7151f5 Tee varmuuskopio ennen kuin muutat mitään (Työkalut > Varmuuskopioi pelitiedosto).
+73b5381e Jos peli on tehty Twinellä, tee muutokset Twinessä ja julkaise uudelleen. Suoraan .html-tiedostoon tehdyt muutokset katoavat, kun peli seuraavan kerran julkaistaan Twinestä.
+0dab15d3 Jos sinulla on vain .html-tiedosto (ei Twine-tarinaa), muokkaa sitä tekstieditorilla kuten Notepad++. .html-tiedoston sisällä < ja > kirjoitetaan &lt; ja &gt; - sovellus näyttää tarkan kopioitavan tekstin.
+a877adb7 Jokaisen muutoksen jälkeen: tallenna, lataa peli uudelleen selaimessa ja paina tässä sovelluksessa "Korjasin sen - tarkista".
+e6cfd88c Punainen = rikki: pelaajat törmäävät siihen. Keltainen = luultavasti rikki. Sininen = kannattaa tarkistaa, usein kunnossa.
+3c06ac34 Aloita yhteenvedon listasta "Aloita tästä" tai käytä Korjausavustajaa: se opastaa sinut ongelma kerrallaan.
+f5a4fb88 "Merkitse tarkoitukselliseksi" piilottaa havainnon, jonka olet tarkistanut ja haluat pitää. Se pysyy piilossa tässä pelissä.
+f3979521 Noin 1 minuutti
+d621d05d 5-15 minuuttia
+bea680e1 Tarvitsee kehittäjää (tarinaa tai suunnittelua koskeva päätös)
+0c6c4102 Valinnainen
+e53abb3c Helppo korjaus
+c4f93c0c Vaatii hieman huolellisuutta
+a22663d7 Tarvitsee kehittäjää
+230659f7 Luultavasti kyllä, mutta katso nopeasti.
+6d9d36d5 Ei. Pelaajat törmäävät tähän.
+ddad7bf2 Vain jos olet tarkistanut logiikan ja se tekee, mitä haluat. Merkitse se silloin tarkoitukselliseksi.
+6cf97a3f Kyllä, jos kohtaus on vanha tai sitä ei ole tarkoitettu pelattavaksi.
+d54dbf6e Kyllä. Mikään ei hajoa.
+3b411bc1 Kyllä, jos peliä pelataan vain Windowsissa.
+667e089a Kyllä, toistaiseksi. Se voi hajota tulevassa moottoripäivityksessä.
+ca7eea8c Kyllä, mutta pelaajat näkevät lyöntivirheen.
+6225e68e Vain jos kohtaus on tarkoituksella keskeneräinen.
+47ecb09c Kyllä. Kuvat näkyvät silti.
+178ca96e Kyllä. Mikään näkyvä ei muutu.
+e2fca6c0 Yleensä kyllä. Se on usein jäänne vanhemmista versioista.
+bcc248b9 Mieluummin ei. Se on hyvin todennäköisesti todellinen virhe.
+557f2555 ei
+cffa50a3 ja
+1758356d tai
+6981b0db Mikään kohtaus ei linkitä kohtaan "{name}" tavalla, jota skanneri voi seurata. Pelaajat eivät ehkä koskaan näe sitä, tai sinne päästään koodilla, joka muodostaa kohtauksen nimen muuttujista.
+0f56183f Pelaajat pääsevät kohtaan "{name}" {n} paikasta:
+02e974ba Tämä on pelin ensimmäinen kohtaus.
+5ffe533b tosi
+7cb6efb9 epätosi
+1ed06825 linkki
+3d22ef57 include
+ccdfd8c1 automaattinen hyppy
+3f80e4d1 Kohdasta "{src}" ({how}), kun: {cond}
+084fcdcf Kohdasta "{src}" ({how}), aina.
+8adbc573 …ja muita.
+1aafbf54 Erinomainen
+bd846adf Loistava
+61dedcf0 Hyvä
+226d7ec9 Kelvollinen
+eafabce9 Vaatii työtä
+4e0fa437 Heikko
+75fb2b10 Luetaan tiedostoa
+ac133acf Etsitään tarinan tietoja
+456caef0 Kerätään skriptejä ja tyylejä
+fc404c89 Tarkistetaan kohtauksia ja linkkejä
+6a4d36f9 Tarkistetaan makrotageja
+546de9d0 Tarkistetaan ehtoja ja koodin logiikkaa
+c338107e Tarkistetaan muuttujia
+5730c93f Tarkistetaan HTML-tageja
+ea4c65ed Tarkistetaan CSS-luokkia
+d874e65d Tarkistetaan kuvia, ääntä, videota ja tiedostoja
+6517d389 Tarkistetaan tekstiä (lyöntivirheet, paikkamerkit)
+87beeee4 Tarkistetaan JavaScriptiä
+7b7efd8b Tarkistetaan story formatin sääntöjä
+25f3b361 Luetaan {label}-peliä
+a28b6c50 Tarkistetaan tiedostojen vaurioita
+5aedb280 Käynnistetään näkymätöntä selainta
+f5a5071d Ladataan peliä
+8466e7c7 Tarkistetaan skriptejä selaimen JavaScript-moottorilla
+bf197daa Pelataan kohtauksia ({mode}): {k}/{n}
+f70cf464 Pelitesti valmis
+427c9fd7 Kohtauksissa, joihin kukaan ei pääse
+9b9f5c3d Pelaajat eivät koskaan näe tätä: se on kohtauksessa, johon kukaan ei pääse. Voit jättää sen.
+e58020da Kukaan ei pääse kohtaukseen "{name}": sen linkki on pois päältä
+2795ab1b Ainoa linkki tähän kohtaukseen on kohtauksessa "{where}" (rivi {line}) piilotetun muistiinpanon /* ... */ sisällä. Kaikki /* ja */ välissä on pois päältä.
+4ed22111 Pelaajat eivät koskaan näe tätä kohtausta.
+30fda4f3 Jos pelaajien pitää nähdä se, poista linkin ympäriltä /* ja */. Jos laitoit sen pois päältä tarkoituksella, jätä se.
+7a9ce2ca Ainoat linkit tähän kohtaukseen ovat muissa kohtauksissa, joihin kukaan ei pääse.
+3aafeed1 Jos pelaajien pitää nähdä se, lisää linkki kohtauksesta, johon pääsee. Jos se on vanha, voit jättää sen huomiotta.
+0c4d1909 {n} tiedostoa {k} kansiossa ei käytetä koskaan
+0efdb085 {n} arvoa, joita peli ei koskaan käytä
+425a6a2a Näitä arvoja muutetaan, mutta peli ei koskaan katso niitä.
+849cdd9b Mikään ei mene rikki. Ne voivat olla jäänteitä vanhoista versioista.
+a82d56f5 Sivun laatikkoa ei suljeta: <{tag}> rivillä {line}
+5c73814e Rivin {line} <{tag}> ei koskaan sulkeudu tagilla </{tag}>.
+b587a89d Lisää </{tag}> kohtaan, jossa laatikon pitää loppua.
+f1a6f13d Ylimääräinen lopetustagi: </{tag}> rivillä {line}
+d887494b Rivin {line} </{tag}> sulkee laatikon, jota ei koskaan avattu.
+f3d6de5f Poista ylimääräinen </{tag}> tai lisää puuttuva <{tag}>.
+94b62097 Oikeinkirjoitus: "{wrong}" pitäisi olla "{a}" tai "{b}"
+45919c5c Yleinen kirjoitusvirhe. Se voi tarkoittaa kahta eri sanaa.
+d3631b3f Lue lause ja vaihda "{wrong}" sanaksi "{a}" tai "{b}", kumpi sopii.
+4f2e0c01 Mitään ei tarvita, ellei jotain niistä ollut tarkoitus käyttää.
+37a88891 Yleensä ei mitään: selain sulkee sen itse kohtauksen lopussa.
+9c393632 Kyllä. Se on kohtauksessa, johon kukaan ei pääse, joten pelaajat eivät koskaan näe sitä. Korjaa se vain, jos lisäät myöhemmin linkin siihen kohtaukseen.

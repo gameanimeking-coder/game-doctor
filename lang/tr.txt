@@ -1,0 +1,836 @@
+#name Türkçe
+e77b83c2 Oyun testi bitti: {n} sahne {m} şekilde oynandı, oynarken {k} sorun bulundu.
+e9dd5680 Panoya kopyalandı
+e00ac23f Tür
+764b4aa3 Ne kadar kötü
+33446003 Sahne
+44819483 Hiçbir şey
+36c4a06f Taranıyor…
+ecab72e7 Oyun klasörü / tüm oyun
+95263aa8 Oyun dosyasındaki satır (vurgulu)
+adac6937 Kod
+4dc2eddf {app} ile bulundu. {n} sorun.
+6b21fb79 Hakkında
+b8bb1461 Oyuncular bu sahneye nasıl ulaşıyor?
+d07d7afa Oyuncular "{name}" sahnesine nasıl ulaşıyor?
+fa893d87 Temiz
+70440046 Notlar
+1430f976 Uyarılar
+805e86a8 Hatalar
+dcad8ee5 Kod görünümü hazırlanıyor…
+7f2f6a15 Hata
+e9c45563 Uyarı
+2c924e30 Not
+f4808ecd Oyun aç…
+f6ab55dd Tekrar tara
+dd3fa3ce ▶ Oyun testi
+5e4797ea Düzeltme sihirbazı
+4fa8cc86 Araçlar
+c47ae153 Yardım
+9d454f7c Açık oyun yok
+7869cc5c Twine'da düzenliyorum
+db8da328 .html dosyasını düzenliyorum (Notepad++ vb.)
+20c7c552 Hazır
+26a93eac Bir oyun klasörü aç (Ren'Py, RPG Maker, Ink, ChoiceScript)…
+775b3ab8 Resim ve ses klasörü…
+cd9a3d88 Oyun dosyasını yedekle
+2505d3da Değiştirmeden önce bir satırı dene…
+3536c70a Başka bir sürümle karşılaştır…
+080460a5 Geliştirici için hata raporu yaz…
+0cbf16ea Raporu dışa aktar…
+490c3a52 Oyun dosyasını izle ve kaydedilince tekrar kontrol et
+09e02e95 Kasıtlı olarak işaretlenen sorunları göster
+80f65544 Metin düzenleyici…
+3a4dad84 Turu başlat
+f996200a Dersler (F1)
+e5aaa5b5 Kelime listesi
+320067c6 Çok büyük yazı
+07471db5 Renk körlüğüne uygun renkler
+c2cebede Tüm türler
+1baa06b4 Sorun
+ced091e8 Sahne / yer
+ea967600 Satır
+99a42316 Düzeltme
+3cd62e5f Metin düzenleyicimde aç
+a4f34926 Düzeltilmiş satırı kopyala
+0973fd22 Aranacak metni kopyala
+28a1dc64 Düzelttim - kontrol et
+1a256c63 Geliştiriciye bildir
+b491a51b Kod görünümünde göster
+463e5e78 Kasıtlı olarak işaretle
+562107b8 Sesli oku
+e42bc527 Ayrıntıları kopyala
+d7c5a824 Dosyada saklandığı haliyle göster (&lt; kodları)
+2314cd9a Oyunu aç
+7a8e0cf0 Oyun klasörünü seç
+ff10f24c Oyunun resim, ses ve videolarının olduğu klasör
+38e9a3e9 Oyun: {path}     Klasör: {folder}
+24fc8907 Okumayı durdur
+7335beba Artık kasıtlı olarak işaretli değil
+24fec833 Kasıtlı olarak işaretlendi - listeden gizlendi (Araçlar > Kasıtlı olarak işaretlenen sorunları göster)
+615c9a3f {fmt} · {units} parça · klasörde {files} dosya · {e} bozuk, {w} muhtemelen bozuk, {i} kontrol edilecek · {s} sn
+f229a698 Kod sağlığı: %{n} · {label}
+d8d62e38 Kontrol bitti
+dd3a39d8 Kod sağlığı
+c6643b25 Ölçek: %100 mükemmel · %90 harika · %80 iyi · %70 idare eder · %70'in altı çalışma gerekiyor
+7e0056d2 Kaç sahnede sorun olduğuna ve bunların ne kadar ciddi olduğuna göre hesaplanır.
+07c80477 Türe göre
+45b733c9 Ayrıntıları görmek için listeden bir soruna tıkla.
+525f61b6 Nerede
+4090e818 Nasıl düzeltilir
+0b975974 Hikâyeni Twine'da aç ve "{name}" pasajını aç.
+905dc77d Aynı ad {n} başka satırda da kullanılıyor: {lines}. Orada da değiştir.
+3cfafb7c Hikâyeyi yeniden yayınla (Build > Publish to File), sonra kontrol etmek için oyunu yeniden yükle.
+64cb91c6 Nerede: {where}
+4383fcfd Sorun ne: {text}
+07bddb04 Nasıl düzeltilir: {text}
+cf36743b Şu an: {text}
+0cacfdc2 Şununla değiştir: {text}
+70fbdd39 Düzeltilmiş satır kopyalandı. Twine'da "{name}" pasajındaki eski satırı seç ve yapıştır.
+60eafc99 Düzeltilmiş satır kopyalandı. Düzenleyicinde {n}. satırı seç ve üzerine yapıştır.
+67a9f511 Arama metni kopyalandı. Düzenleyicinde Ctrl+F'ye bas ve yapıştır.
+67c1b9a0 Dosya son kontrolden beri değişmedi. Kaydettin mi?
+2693cf86 Satırını "Şununla değiştir" satırıyla tekrar karşılaştır.
+1b930787 Önce bir oyun aç.
+9dbf0a77 Yedek kaydedildi: {path}
+88e09b05 (senin metnin)
+e835a0e1 {game} için hata raporu
+338c5072 Teknik: {text}
+fc5e62a8 Ayar dosyası: {path}
+0f83a323 Oyun dosyası izleniyor. Her kaydettiğinde tekrar kontrol edilir.
+24b5689b Oyun dosyasını izleme durduruldu.
+6bbf59c5 Oyun testi durduruluyor…
+c5726162 Oyun testi için Microsoft Edge veya Google Chrome gerekir ve ikisi de bulunamadı.
+efe69072 Oyun test sırasında değişti. Tekrar çalıştır.
+4e1a8e3c Sorun yok
+59cd52ee Kontrol etmeye değer
+80c66d73 Muhtemelen bozuk
+3ad465ce Bozuk
+8ea8e60f {n}. satır: sorun bulunamadı
+421fe500 ayrıntılar için çift tıkla
+a6e7e8d6 "{text}" bulunamadı
+fc748144 Listede gösterilen {n} sorunu dışa aktar
+c8ca2957 Rapor kaydedildi: {path}
+09188221 Tüm oyun
+5a7ee5ac Hata raporu
+203dee52 Ayrıntılar şuraya kaydedildi: {path}
+5abfea7d Basit kelimeler: kapalı
+de314fa0 Önem
+fc55cc19 Pasaj / yer
+3deb7456 Tip
+61790945 ■ Oyun testini durdur
+e23fd7cf Kasıtlı işaretini kaldır
+5ffa6ce4 Oyunlardaki hataları bulur ve neyin yanlış olduğunu ve nasıl düzeltileceğini basit kelimelerle anlatır. Twine oyunları (SugarCube, Harlowe, Chapbook, Snowman), diğer HTML oyunları, Ren'Py, RPG Maker MV/MZ, Ink ve ChoiceScript ile çalışır.
+e13e18f3 Nasıl kullanılır
+c3abe9f5 Güvenli kullanım
+4d688496 Bu program oyununu yalnızca okur. Asla değiştirmez. Bir şey düzenlemeden önce Araçlar > Oyun dosyasını yedekle'yi kullan.
+90c93523 Kısayollar
+8e990034 Ctrl+O aç · F5 tekrar tara · Ctrl+F ara · F3 sonrakini bul · Ctrl+E dışa aktar · F1 dersler · Ctrl + / Ctrl − / Ctrl+0 veya Ctrl+fare tekerleği ile boyutlandır
+21e5904b {n} dosya referansı kontrol edildi
+052df047 Buradan başla - en önemli düzeltmeler
+eff36495 Ya da tek tek ilerlemek için "Düzeltme sihirbazı"na tıkla.
+23bd8fe4 "{name}" sahnesi
+8cb67e05 "{name}" pasajı
+12b1a199 pasajın {n}. satırı
+280d0541 {file} dosyasının {n}. satırı
+a684f161 Bunu kasıtlı olarak işaretledin, bu yüzden sayılmıyor.
+6aeb39ef Sorun ne
+c1bcc130 Sorun ne
+ebcf7d18 Oyuncular neyi fark edecek
+e7f32d0f "Metin düzenleyicimde aç"a tıkla. {file} dosyasını {n}. satırda açar.
+73c8627d O satırı sil (aşağıda "Şu an" altında gösteriliyor).
+b44b2225 Aşağıda "Şununla değiştir" altında gösterildiği gibi değiştir. "Düzeltilmiş satırı kopyala", eskisinin üzerine yapıştırman için tüm düzeltilmiş satırı kopyalar.
+d640e11b Yukarıdaki açıklamaya bak.
+33d1a502 Dosyayı kaydet, oyunu yeniden yükle, sonra "Düzelttim - kontrol et"e tıkla.
+fd3e0dfe Twine'da mı yapıldı? O zaman Twine'da düzelt (yukarıdaki ".html dosyasını düzenliyorum" seçeneğini "Twine'da düzenliyorum" yap). Twine'dan yayınlamak, doğrudan .html dosyasında yapılan değişikliklerin üzerine yazar.
+e3b82040 Şu an
+b9b6aac4 Şununla değiştir
+3895c256 Bunu görmezden gelebilir miyim?
+189da0ef Oyuncular neyi fark edecek: {text}
+7d949b29 Kod: {text}
+80411ece Henüz düzelmedi - sorun hâlâ orada
+71a91179 satıra gitmek için Ctrl+G'ye bas ve {n} yaz
+84d3bdef {name} içinde açıldı
+7bf2bdbd Sahne: {name}
+f8e71156 {file} dosyasının {n}. satırı
+e9331864 Ne oluyor: {text}
+16fcd5a1 (bu satırda {n} karakter daha var)
+6dcc62dd Rapor kaydedildi. Şimdi açılsın mı?
+02fbc53c Sorun (basit kelimelerle)
+2c3cafa4 Dosya
+1bea2fb0 Nasıl düzeltilir
+fdccd352 Uygulamanın içinde bir şeyler ters gitti:
+b7152342 Boyut
+8e6b86dc Sorunlar
+8f0d8d83 Gruplandır
+bce06414 Ara
+74c14ca3 Kod görünümü
+a3d77701 ◀ Önceki sorun
+3a289dc9 Sonraki sorun ▶
+2e0b45f2 Git
+ececaefe Sonrakini bul
+df251b06 Bul
+7e08ebec Geliştirici
+e53407cf Oyuncu
+0406a446 Basit kelimeler
+2edb004b .html dosyasını düzenliyorum
+b45e0101 Değişiklikler izleniyor
+398ed329 Oyunlar
+6f80238e HTML oyunları
+f7857dcc Tüm dosyalar
+6798c955 Taranıyor, lütfen bekle…
+be4bd50c Kod sağlığı: %{n}
+16dd1f3a {n} kasıtlı olarak işaretli
+901b56b2 Gösterilecek bir şey yok
+ea64a687 4. Yardım > Dersler temelleri birkaç dakikada anlatır. Yardım > Turu başlat sana etrafı gösterir.
+570f71b7 Bozuk sahneler
+08f7f24d Bunlara gitmeden önce oyununu kaydet, böylece bir şey ters giderse geri dönebilirsin:
+29e8d770 Ayrıntıları göndermek için bir sorunda "Geliştiriciye bildir"i veya Araçlar > Hata raporu yaz'ı kullan.
+d19ceca5 İpucu
+251eb9e2 Bu sahneye gelmeden önce oyununu kaydet, böylece bozulursa geri dönebilirsin.
+d782b266 Yeri bul: bu metin için Twine'ın "Find and replace" özelliğini kullan (ya da dikkatlice bak):
+eb92d56f Projeyi RPG Maker'da aç ve şuraya git: {where}
+7e7c7eb1 (bu satırı sil)
+d40baaa7 ✔ Düzeldi! Sorun gitti. Kod sağlığı artık %{n}.
+fce98782 Araçlar > Metin düzenleyici… ile başka bir düzenleyici seç
+55d0a707 Yedek kaydedildi:
+802cfe54 Yedek alınamadı:
+a01ce386 Önerilen düzeltme (Twine'da):
+d9cb995e İngilizce dışındaki çeviriler bir yapay zekâ tarafından yapıldı ve hata içerebilir. Teknik ayrıntılar, oyun motorları ve kılavuzları gibi İngilizce kalır.
+987dd9b8 Kodunu burada görmek için bir oyun aç.
+f4fd7854 {name} ({n} satır)
+db3b1ca2 Web sayfası raporu
+1b5f6570 Elektronik tablo (CSV)
+ee3d21a8 Metin dosyası
+934a1886 Rapor kaydedilemedi:
+29211387 Sistem teması
+9e5ba0f0 Açık tema
+d51c5960 Koyu tema
+71df97be Dosya kaydedildi - tekrar kontrol edildi: {fixed} düzeldi, {new} yeni
+12d21609 (tüm oyun)
+4671f2fd {n} parça
+af4e5ffa Bu grupta {n} sorun var. Ayrıntılar için birine tıkla.
+e065ed24 Satır yer değiştirdiyse düzenleyicinde Ctrl+F'ye bas ve şunu ara:
+d6cd9bbc Taranamadı:
+e8b6a7a1 ({lines}. satır)
+2a87805d {name} başlatılamadı:
+50803478 Nasıl düzeltilir: {text}
+cbbf7064 Sürüm {v}. Oyunlardaki sorunları bulur ve nasıl düzeltileceğini anlatır. Yalnızca dosyaları okur ve oyununu asla değiştirmez.
+7e16f294 Kod sağlığı: %{n} ({label})
+13b7bfca Çalışıyor…
+944d285f Tarama başarısız oldu
+5117eb3e Mevcut filtrelere uyan sorun yok.
+84a26cd3 Sorun bulunamadı. Harika iş!
+e961739d 3. Nereden başlayacağını bilmiyor musun? Düzeltme sihirbazını kullan - sorunları tek tek gezer ve düzeltmelerini kontrol eder.
+dfa2b6e9 {n}. satır:
+27a41ea2 (sil)
+966d414d {n}. satır
+a37a62b5 2. Listeden bir soruna tıkla. Altında neyin yanlış olduğunu, oyuncuların neyi fark edeceğini ve tam olarak nasıl düzelteceğini görürsün.
+47faaf63 Oyun testi durduruldu
+9de8b1a5 1. "Oyun aç…"a tıkla ve oyunun .html dosyasını seç (ya da bir oyun klasörü için Araçlar'ı kullan). Kontrol kendiliğinden başlar.
+836bf385 Oyun testi çalışamadı:
+3dd51c5a Metin düzenleyicini seç
+1f7611ea Metin düzenleyici {name} olarak ayarlandı
+43320d49 Değiştirmeden önce bir satırı dene
+18e673bc Oyununda hiçbir şey değişmez. Bu yalnızca buraya yazdığın metni kontrol eder.
+8ecc7800 Geliştirici için hata raporu yaz
+2e2b95ec İki sürümü karşılaştır
+ccdb5389 Oyunun diğer sürümünü seç ve Karşılaştır'a tıkla. İkisi de yalnızca okunur, asla değiştirilmez.
+cabad4eb Diğer sürüm taranıyor…
+cb9ce97b Dersler
+9255b9a1 Metin düzenleyici programını seç
+67094e72 O program bulunamadı. Seçmek için "Gözat…"ı kullan.
+21461571 ◀ Geri
+2d8a1625 Atla ▶
+7c5d9f51 {total} sorundan {done} tanesi düzeldi
+cb70c72b Sorun {n} / {total}
+820d6004 Kontrol ediliyor…
+e461d5d0 {n} sorun bulundu:
+9580fcbc Düz metin
+26a49ee7 Discord / Reddit
+1f82bc1e Forum (BBCode)
+616ce66d Bozuk + muhtemelen bozuk
+34d5d395 Yalnızca seçili sorun
+ced1fd2f Hata raporunu kaydet
+ec9135a3 Hata raporu kaydedildi: {path}
+8d105cf4 Karşılaştır
+a1cd6b54 Diğer sürümü seç
+1f5bf765 Önce diğer sürümü seç.
+ad916050 Karşılaştırılıyor…
+f4f29947 Kod sağlığı: %{a} → %{b}
+a81eb289 Yeni sürümde düzelenler ({n})
+53da970f Yeni sürümdeki yeni sorunlar ({n})
+2be41ba6 Hâlâ duranlar ({n})
+9ec4aa53 Bu uygulamada kullanılan kelimeler
+ce12714d Düzeltilecek bir şey yok
+d231fca7 Düzeltilmesi gereken sorun kalmadı. Aferin!
+76c1c7de Bu sorun gitti - düzeltildi ya da dosya değişti. Devam etmek için Atla'ya tıkla.
+55855f77 Tek satır denemek Twine (SugarCube) oyunlarında çalışır. Önce birini aç.
+bbfa773e Kapat
+af74f7c5 Kopyala
+571a03ba Oyun dosyasını hangi program açsın?
+113fa56b Bu bilgisayarda şu metin düzenleyiciler bulundu:
+d4b86cfd Başka bir program…
+9d68007b Program
+c1b20f52 Gözat…
+6bf5da9c Seçenekler
+4ee6279e {file} oyun dosyasıyla, {line} satır numarasıyla değiştirilir. Notepad++ şunu kullanır: -n{line} "{file}"
+77dfd213 İptal
+efc007a3 Kaydet
+ab14d0a7 Programlar
+4abacc60 ✔ Düzeldi! Aferin. İşte sıradaki.
+1ed684b1 Kullanmak istediğin satırı (veya tüm pasajı) yapıştır ya da yaz:
+45f9116a Bu tam bir pasaj (her etiketin kapalı olup olmadığını da kontrol et)
+4b5e84be Kontrol et
+6a17f3f6 Bu metinde sorun bulunamadı.
+44b39131 Öneri:
+4020c08c Stil:
+2f32f781 Dahil et:
+4705cad6 Nasıl düzeltileceğini dahil et
+d9057148 Farklı kaydet…
+83c52802 Diğer sürüm:
+c3c1e96d Diğer sürüm:
+6fa5fbbc daha eski
+1d47386a daha yeni
+78cee4b8 Adım {n} / {total}
+57bc79e3 Turu atla
+bc981983 İleri
+e9b450d1 Bitti
+682c160f Mevcut oyun:
+74c063af Yanlış:
+3a82310a Doğru:
+c7c15bca Bu oyuncular için ters gidecek.
+8df34ecb Bu büyük ihtimalle bir hata.
+1d894da2 Acil değil. Sorun olmayabilir ama bir bak.
+58da2ccb Eksik sahnelere giden bağlantılar
+78d3da9d Eksik resim ve sesler
+59327131 Bozuk oyun komutları
+dfe69b5d Yanlış yazılmış oyun komutları
+140d954e Ters giden "eğer" kontrolleri
+169a1b52 Hiçbir şey yapmayan veya bozulan komutlar
+c3f4070a Yanlış yazılmış istatistikler ve değerler
+ee27480a Tekrar kullanılabilir bloklar
+9c0fe2ed Sayfa düzeni kodu
+2c0f0a6d Stiller (renkler ve görünüm)
+f77fd1fd Sahneler
+45e35cfc Kimsenin ulaşamadığı sahneler
+a2406e53 Oyunun hiç kullanmadığı dosyalar
+68320599 Bitmemiş metin
+8a21b1ee Yazım
+169b486d Yazım hataları
+a1d181bd Yalnızca Windows'ta çalışır
+3e9d9ae4 Çok büyük dosyalar
+50a12988 Hasarlı dosyalar
+aab2b305 Eski tarz komutlar
+3f55c07b Betik kodu
+cc0718f5 Oyun ayarları
+c7ee483a Tarayıcı (scanner)
+c916a1ad Oynarken hatalar
+0e66b49d resim
+5e2e97c3 ses
+ffbaf58f video
+4642576d yazı tipi
+767013ce sayfa
+971c419d dosya
+8c657028 "{name}" sahnesi
+84db7a65 oyun
+27260418 Var olmayan bir sahneye gidiyor: "{name}"
+65a1b892 {where} içinde bir bağlantı veya komut "{name}" adlı bir sahneyi açmaya çalışıyor. Oyunda tam olarak bu ada sahip bir sahne yok.
+eddc288b Oyuncu tıkladığında (veya oyun oraya geldiğinde) sahne yerine bir hata mesajı veya boş sayfa görür.
+6690f7df Adı var olan bir sahneyle tam olarak eşleştir. Büyük harfler ve boşluklar önemlidir.
+ee186081 Hikâyenin var olmayan bir bölümüne gidiyor: "{name}"
+adcab89d Hikâye "{name}" noktasından devam etmeye çalışıyor ama oyunda bu ada sahip bir şey yok.
+c68c7536 Oyun bu noktada bir hatayla durur (veya hiç başlamaz).
+262dea9c Adı hikâyenin var olan bir bölümüyle tam olarak eşleştir.
+8a2045c6 Var olmayan bir bölüme gidiyor: "{name}"
+6b99d3d7 Hikâye "{name}" yerini açmaya çalışıyor ama böyle bir bölüm veya nokta yok.
+54721a92 Oyun bu noktada bir hatayla durur.
+bfe449ab Adı var olan bir bölümle eşleşecek şekilde düzelt.
+8569b71c Var olmayan bir ekran açıyor: "{name}"
+ed323960 Oyun "{name}" adlı bir ekranı göstermeye çalışıyor ama bu ada sahip bir ekran yok.
+31aaf0f7 Oyun burada bir hatayla durur.
+ecedecaf Adı var olan bir ekranla eşleşecek şekilde düzelt.
+1c82d0d0 Bir olay oyuncuyu var olmayan bir yere gönderiyor
+f7bb6caa Bir olay oyuncuyu oyunda olmayan bir haritaya taşıyor veya olmayan bir common event çalıştırıyor.
+11068616 Bu olay çalışınca oyun çöker veya donar.
+17c8c384 O olay komutunda var olan bir harita veya common event seç.
+924f14ec Hiçbir yere gitmeyen bir bağlantı
+ac25c348 {where} içindeki bir bağlantı hangi sahneyi açacağını söylemiyor.
+cc208a80 Tıklayınca hata gösterir.
+81510156 Bağlantının açması gereken sahnenin adını yaz.
+a620e5a7 Bir bağlantının sonu eksik
+75319c60 Bir bağlantı [[ ile başlıyor ama hiç ]] ile bitmiyor.
+d94d2b45 Sonraki metin bağlantıya karışır ve sahne bozuk görünür.
+da97338b Bağlantının sonuna ]] ekle.
+de752d36 "{name}" sahnesine kimse ulaşamıyor
+ad06e184 Oyundaki hiçbir şey hikâyenin bu bölümüne götürmüyor.
+49f72405 Oyuncular bunu hiç görmez. Oynanabilir olması gerekmiyorsa zararsızdır.
+41e81f9d Oyuncuların görmesi gerekiyorsa başka bir sahneden buna bağlantı ekle. Eskiyse görmezden gelebilirsin.
+12017de3 "{name}" sahnesi boş
+e1c78333 Bu sahnede metin veya içerik yok.
+eb036a1b Buraya gelen oyuncu boş bir sayfa görür.
+95468775 Sahneyi yaz ya da ona giden bağlantıları kaldır.
+65f5f00d Hikâyenin iki bölümü aynı ada sahip
+3a661399 Birden fazla sahne veya etiket "{name}" adını kullanıyor.
+14b99f6a Bunlardan yalnızca biri gösterilebilir ya da oyun başlamayı reddeder.
+5017f902 Her birine kendi adını ver.
+8ee54eec Oyunun başlangıç sahnesi yok
+e4b1267b Oyun nereden başlayacağını bilmiyor.
+67fece68 Oyun hiç başlamayabilir.
+6f3c3583 Twine'da ilk sahneyi başlangıç olarak işaretle.
+891a7ccc Bir atlama bağlantısı hiçbir yere gitmiyor
+723d0b6c Bir bağlantı sayfada var olmayan bir noktayı gösteriyor.
+9d2a3ab1 Tıklayınca hiçbir şey olmaz.
+a17d6d9d Noktanın adını düzelt ya da bağlantıyı kaldır.
+f7e0927c Eksik {kind}: {file}
+471ab6b6 Oyun {kind} "{path}" kullanmak istiyor ama oyun klasöründe böyle bir dosya yok.
+215d84f2 Oyuncular bozuk bir resim veya boşluk görür ya da hiçbir şey duymaz.
+95495e08 Dosyayı o yere koy ya da oyun dosyasındaki adı gerçekten var olan dosyayla değiştir.
+4e187285 Dosya adının büyük/küçük harfleri yanlış: {file}
+10dd7eb2 Dosya var ama oyun adını farklı büyük/küçük harflerle yazıyor.
+445b1f51 Windows'ta çalışır. Telefonlarda, Mac'lerde, Linux'ta veya bir web sitesinde resim veya ses eksik olur.
+bcc2cd24 Oyun dosyasındaki adı, büyük/küçük harfler gerçek dosyayla eşleşecek şekilde değiştir.
+fc7f8ac2 Bir resim geliştiricinin kendi bilgisayarını gösteriyor
+bf1eaea6 Dosya konumu "D:\" gibi bir sürücü harfiyle başlıyor. O klasör yalnızca oyunu yapan bilgisayarda var.
+8e9a7d52 Oyuncular bu resmi hiç görmez.
+e5baac7c Bunu oyun klasörünün içindeki bir konumla değiştir, örneğin images/characters/name.jpg.
+006a8fb9 Dosya konumlarında / yerine \ kullanılmış
+d6cb43a9 Oyun klasör yollarını ters eğik çizgiyle (\) yazıyor.
+42ad75cd Windows'ta sorun yok. Telefonlarda, Mac'lerde, Linux'ta veya bir web sitesinde resimler ve sesler yüklenmez.
+02bf9e76 Yalnızca oyun Windows dışında da çalışacaksa önemli: resim yollarında \ işaretini / ile değiştir.
+0fa2cd7a "{folder}" içindeki {n} dosya hiç kullanılmıyor
+1b78ff55 Bu dosyalar oyun klasöründe ama oyun onları hiç kullanmıyor.
+55acf4db Hiçbir şey bozulmaz. Sadece indirme boyutunu büyütürler.
+aa1a0c6f Gerekmediklerinden eminsen sil. (Bazılarını oyun, tarayıcının göremediği akıllıca yollarla seçiyor olabilir.)
+cb4cc629 Boş bir dosya
+4642643c Bu dosya boş (0 bayt).
+24ec314d Gösterilmez veya çalınmaz.
+6cd06e6e Dosyanın çalışan bir kopyasıyla değiştir.
+07046633 Hasarlı dosya (yarım kalmış): {file}
+932dbf75 Bu dosyanın sonu eksik, genellikle bir indirme, kopyalama veya arşivden çıkarma bitmediği için.
+feda3672 Resim yalnızca kısmen görünür veya hiç görünmez, ya da ses/video erken kesilir.
+968dc7a4 Bu dosyayı orijinal oyun dosyalarından tekrar kopyala veya indir.
+6081a951 Aslında bir resim veya ses değil: {file}
+dc397b7a Dosyanın adı doğru ama içinde bir web sayfası var (çoğu zaman bir indirme sitesinin hata sayfası).
+7f495908 Oyuncular bozuk bir resim görür veya hiçbir şey duymaz.
+eee27da5 Gerçek dosyayı tekrar indir ve bununla değiştir.
+2a1c1b71 Hasarlı olabilecek dosya: {file}
+4c30367e Bu dosyanın başı bilinen hiçbir resim, ses veya video biçimine benzemiyor.
+d3b9cea3 Muhtemelen gösterilmez veya çalınmaz.
+0ab570a5 Bir resim görüntüleyici veya medya oynatıcıda aç. Açılmazsa değiştir.
+f68470e5 Bazı dosyaların uzantısı yanlış (.png, .jpg ...)
+d608da1e Bu dosyalar adlarının söylediğinden farklı bir biçim içeriyor, örneğin .png adlı bir JPEG resmi.
+2e39b508 Tarayıcılar genellikle yine de gösterir. Bazı telefonlar ve programlar göstermeyebilir.
+097a3703 İsteğe bağlı: adları gerçek biçimle eşleşsin diye dönüştür veya yeniden adlandır.
+283d2070 Bazı dosyalar çok büyük
+c7fa15ff Bu resimler veya videolar çok büyük.
+ae5369ab Yavaş yüklenirler, özellikle telefonlarda.
+e125a92c İsteğe bağlı: bir resim programıyla küçült.
+385f4329 Bir oyun dosyası eksik: {name}
+2e700532 Oyun orada olmayan bir dosya bekliyor.
+99467808 Oyun başlarken veya bu bölüme gelince hata gösterir.
+b3496ea7 Eksik dosyayı geri koy ya da ona yapılan referansı kaldır.
+75e6334a Bir oyun veri dosyası hasarlı
+db02e969 Bu dosya düzgün okunamıyor.
+79b96faf Oyun başlamaz veya çöker.
+7ebbbeec Dosyayı bir yedekten veya orijinal oyundan geri yükle.
+d399fac1 Bir "{name}" komutu hiç kapatılmamış
+e6c66d5b Bazı oyun komutlarının eşleşen bir sonu olması gerekir. Bunun yok.
+0b1cb09f Oyun bu sahnede kırmızı bir hata kutusu gösterir ve sahnenin bir kısmı eksik olabilir.
+afdabc18 Bu bölümün bitmesi gereken yere eksik sonu ekle (örneğin <</{name}>>).
+744245d7 Fazladan bir kapanış etiketi <</{name}>>
+adb1bea4 Kapatacak bir şeyi olmayan bir kapanış etiketi var.
+b39fd74f Oyun bu sahnede kırmızı bir hata kutusu gösterir.
+a53d4f4e Bu fazla kapanış etiketini sil.
+fa8c8072 "{name}" yanlış yerde
+9009044d <<{name}>> bir <<if>> bloğunun içinde olmalı. Burada değil, genellikle yukarıdaki bir kapanış etiketi yanlış yerde olduğu için.
+1e9acaea Oyun kırmızı bir hata kutusu gösterir.
+1d2d751d Hemen yukarıdaki satırlara bak ve kapanış etiketini doğru yere taşı.
+bfaae414 Bir kapanış etiketinde ">" eksik: <</{name}>
+a280c34f Kapanış etiketi tek ">" ile yazılmış ama iki tane gerekiyor.
+71be19aa Oyun kapanış etiketini görmüyor. Kırmızı bir hata kutusu gösterir ve sahne yanlış görünebilir.
+a3c69d1f Sonu ">>" olsun diye bir ">" ekle.
+413ace46 Fazladan bir ">" işareti
+4e791f5a Bir etiketten sonra bir tane fazla ">" var.
+4ecd446f Oyuncular ekranda başıboş bir ">" görür.
+c1c069b2 Fazla ">" işaretini sil.
+cacfbdbb Fazladan bir "<" işareti
+fe9088b6 Bir komuttan önce bir tane fazla "<" var.
+0c7a0bb7 Oyuncular ekranda başıboş bir "<" görür.
+87807bf8 Fazla "<" işaretini sil.
+b0d2d4e4 Yarım yazılmış bir komut "<<"
+012a6c88 Ardından hiçbir şey gelmeyen bir "<<" var.
+fd941db0 Ondan sonraki komut bozulur ve oyun hata gösterebilir.
+73f8070a Başıboş "<<" işaretini sil.
+7037d71a Bir komutun ">>" işareti eksik
+87bde2ac Bir komut << ile başlıyor ama hiç >> ile bitmiyor.
+7f93f879 Ondan sonraki metin kaybolur veya sahne hata gösterir.
+dbda1f76 Komutun sonuna ">>" ekle.
+5a30164d Bir parantez açılmış ama hiç kapanmamış
+d5b047f2 Bir şey parantezle başlıyor ama kapanış parantezi eksik.
+8d50e9a9 Ondan sonraki her şey yutulur veya oyun hata gösterir.
+912c548c Eksik kapanış parantezini ekle.
+35852e81 Fazladan bir kapanış parantezi
+a1d86e33 Açılışı olmayan bir kapanış parantezi var.
+fdeb2ba4 Oyuncular başıboş bir karakter veya hata görebilir.
+254fbb5b Fazla parantezi kaldır.
+98cb6b2f Bir komutun bağlı olduğu metin yok
+1afec1b9 Bu komutun, hemen ardından köşeli parantez içinde [böyle] yazılmış metni kontrol etmesi gerekir. Ardından hiçbir şey gelmiyor.
+073266b4 Harlowe hata gösterir ya da metin her zaman gösterilir.
+29369e93 Kontrol ettiği metni hemen ardından köşeli parantez içine koy.
+4093f80e Oyun hata gösterir ve kontrol ettiği sahne bölümü çalışmaz.
+ef3a7877 Eski tarz bir komut
+54dead55 Bu komut hâlâ çalışıyor ama eskimiş.
+01500c48 Şimdilik bir şey yok. Gelecekteki bir motor güncellemesinde bozulabilir.
+b1a70201 İsteğe bağlı: daha yeni komutla değiştir.
+a4a93d21 Bir "if" kontrolü "is" yerine "=" kullanıyor
+582b6716 Bir "if" kontrolünde "=" "eşit yap" demektir, "eşit mi?" değil.
+564cdad0 Oyun kırmızı bir hata kutusu gösterir ya da kontrol hep doğru çıkar ve sahnenin yanlış bölümü oynanır.
+e3105e2f Tek "=" işaretini "is" ile değiştir.
+f0b64920 "=>" veya "=<" ters yazılmış
+897ec753 Büyük veya eşit ">=" diye yazılır, "=>" değil.
+0167d9bc Kontrol çalışmıyor.
+0b498ace Onun yerine ">=" veya "<=" yaz.
+f917ca5e "is not" tek kelime olmalı
+4e8bbdf4 Bu oyun motorunda "is not", "isnot" ile aynı anlama gelmez.
+e40cd819 Kontrol neredeyse her zaman yanlış.
+7f3a1402 "isnot" diye tek kelime yaz.
+694143a3 Her zaman doğru olan bir "or" kontrolü
+b760633e "$x is 1 or 2" gibi bir şey $x'i yalnızca 1 ile karşılaştırır; tek başına "2" her zaman evet sayılır.
+f8b8cc75 Bu bölüm olmaması gerektiğinde bile oynanır.
+b1a0ec7e Adı tekrarla: "$x is 1 or $x is 2".
+1c4512b1 Yanlış zamanda tetiklenebilecek bir "if" kontrolü
+bb598d2b Bu kontrol "and" ve "or" kelimelerini parantez olmadan karıştırıyor. Bilgisayar her zaman önce "and" kısımlarını yapar, bu yüzden kontrol amaçlanan anlama gelmeyebilir.
+71408d55 Bir sahne veya seçenek olmaması gerektiğinde çıkabilir - örneğin bir karakter kaçırılmışken veya bir istatistik çok düşükken.
+045d6c6c Birlikte olan kısımların etrafına parantez ( ) koy. Aşağıdaki koda bak ve "or" seçeneklerini grupla.
+dbb9ed0f Parantezler ( ) eşleşmiyor
+6bbb5c72 ")" işaretinden daha çok "(" var veya tam tersi.
+d2676c8c Çift oluşturmaları için bir parantez ekle veya çıkar.
+8f746eaa Boş bir "if" kontrolü
+70ac1e0e "if"in kontrol edecek bir şeyi yok.
+8fa764c4 Oyun hata gösterir.
+f72f83b1 Neyin kontrol edileceğini yaz.
+00b75afd Hiçbir şey yapmayan bir istatistik değişikliği ("==")
+d3024696 Bu satırın bir değeri değiştirmesi gerekiyor ama "==" yalnızca karşılaştırır - hiçbir şeyi değiştirmez.
+4bb1b350 Değer hiç değişmez. Ona bağlı olanlar (zamanlayıcılar, sayaçlar) takılı kalır.
+bb9d82a8 "==" yerine "to" yaz.
+88b997d5 Hiçbir şey yapmayan bir istatistik değişikliği
+47b56b1e Bu satırın bir değeri değiştirmesi gerekiyor ama içinde "to", "=", "+=" veya "-=" yok, bu yüzden hiçbir şey değişmez.
+b3edbcbf Örneğin enerji veya para hiç alınmaz ya da verilmez.
+5a19bb57 "-" yerine "-=" yaz (veya "+" yerine "+=").
+24335c15 Boş bir istatistik değişikliği
+d7c9d917 Komut boş.
+1ca2b36b Sil ya da değişikliği yaz.
+2d2715a0 Bir değer "to" yerine "=" ile ayarlanmış
+b3386569 Bu motor değerleri "to" ile ayarlar.
+be353939 "=" yerine "to" yaz.
+6b135470 Eksik tırnak işareti "
+b7ed7d6f Bir komuttaki metin parçası " ile açılıyor ama hiç kapanmıyor.
+4b70c1d8 Oyun hata gösterir veya ondan sonraki metni yutar.
+081a0ff8 Eksik " işaretini ekle.
+1a1cb7a5 Boşluk gereken yerde sekme kullanılmış
+0d83ecca Bu motor satırların yalnızca boşluklarla girintilenmesini ister.
+1928be6f Oyun başlamaz veya burada bir hatayla durur.
+6707540b Satırın başındaki sekmeyi boşluklarla değiştir.
+50e72b08 Bir satırın sonunda ":" eksik
+1590b870 "if", "menu" ve "else" gibi satırlar iki nokta ile bitmeli.
+34cb1caf Oyun başlamaz.
+739781b1 Satırın sonuna ":" ekle.
+463c9c22 Bozuk betik kodu
+90393617 Betik kodundaki bir parantez veya tırnak işareti eşleşmiyor.
+10b6ae9e Tüm betik çalışmayı bırakır, bu da birçok özelliği bozabilir.
+208a3574 Bu satırın etrafındaki parantezleri ve tırnakları kontrol et.
+08a420a2 Unutulmuş test kodu
+f523c19b Test sırasında kullanılan kod içeride kalmış.
+a161c8db Genellikle görünür bir şey olmaz.
+5512920c İsteğe bağlı: kaldır.
+e14ae90f İçinde "-" olan bir ad
+a5d94a86 Değer adları "-" içeremez. Oyun yalnızca "-" işaretinden önceki kısmı okur.
+1d915eed Oyuncular bir ad yerine yanlış kelimeyi veya boşluk görür.
+1ff6bd49 "-" yerine "_" kullan.
+929dc82b Onunla ilgili kontroller hep "hayır" çıkar, bu yüzden bazı metinler veya sahneler hiç görünmez (ya da bir ad yerine boşluk görünür).
+aa241baa Aynı ad, farklı büyük/küçük harf: ${a} / ${b}
+fe615c75 Oyun için bunlar iki farklı değerdir, çünkü büyük/küçük harf önemlidir.
+1549316e Birindeki değişiklikleri diğeri görmez, bu yüzden istatistikler veya sahneler ters gider.
+485f98c5 ${a} değerini ${b} yap.
+fbb1a8ec Yanlış yazılmış değer adı: {name}
+baa2f1ac "{name}" hiç oluşturulmuyor ama "{near}" oluşturuluyor. Neredeyse kesin bir yazım hatası.
+37eb4d71 Oyun hata gösterir veya değer hep boştur.
+69b0c997 "{name}" yerine "{near}" yaz.
+958390b8 Hiç ayarlanmayan geçici bir değer: _{name}
+66d98956 Bu kısa ömürlü değer kullanılıyor ama hiç değer almıyor.
+f6d72946 Onunla ilgili kontroller hiç çalışmaz.
+b150a824 Önce ayarla ya da adı düzelt.
+bb2ac176 Hiç oluşturulmamış bir değer: {name}
+418bb0cf Var olmayan bir anahtar/değişken kullanıyor (#{n})
+60eb5de9 Olay {n} numarasını kullanıyor ama oyunun listesi daha kısa.
+ab5e6d39 Olay amaçlandığı gibi çalışmıyor.
+27e3bd51 Olayda var olan bir anahtar/değişken seç.
+5e339cd0 Bir anahtarın/değişkenin adı yok (#{n})
+e3546a24 Kullanılıyor ama Database'de adı yok.
+15f64977 Görünür bir şey yok. Sadece karıştırması kolay.
+a8723260 Database'de ona bir ad ver.
+bd3955c1 Tekrar kullanılabilir bir blok iki kez tanımlanmış: {name}
+0a743f0a İki tanım bu adı paylaşıyor.
+4d983cee Yalnızca bir sürüm kullanılıyor.
+08c1e9fa Birini sil veya yeniden adlandır.
+20982092 Tekrar kullanılabilir bir blok yüklenmiyor
+3ed9bdd5 Sahnesinde "widget" etiketi eksik.
+4f7fa681 Onu kullanan her sahne hata gösterir.
+a3c57c94 Twine'da o sahneye "widget" etiketini ekle.
+769d38d3 Kullanılmayan tekrar kullanılabilir blok: {name}
+91caae31 Tanımlanmış ama hiç kullanılmıyor.
+92f3557e Hiçbir şey bozulmaz.
+48518178 Bir şey gerekmez.
+549a08bd Sayfa kodunda eksik tırnak işareti
+2616e9ea Bir sayfa etiketinin içinde " tırnak işareti eksik (çoğu zaman bir resim).
+c1ac2a6e Resim veya öğe görünmeyebilir ya da düzen bozulur.
+1359ec48 Düzgün kapatılmamış sayfa kutuları
+c5eaf192 Bir düzen kutusu (<div> veya <center> gibi) açılmış ama kapatılmamış ya da fazla kez kapatılmış.
+bff958b5 Metin veya resimler yanlış yere ya da yanlış stile düşebilir.
+2055d18e Eksik kapanış etiketini ekle ya da fazlasını kaldır.
+3ec38cbd İki şey aynı ad etiketini (id) paylaşıyor
+0bf6eee0 Her id sayfada benzersiz olmalı.
+ff424805 Bu bölümü güncelleyen düğmeler yanlış yeri değiştirebilir.
+3d5e5acf Her birine kendi id'sini ver.
+9ef419aa Dosyası olmayan bir resim veya bağlantı
+41c88499 Etiket hiçbir şeyi göstermiyor.
+30064ec6 Bozuk resim simgesi görünebilir.
+0e8cdbfd Dosya adını yaz ya da etiketi kaldır.
+8c62dd1b Tarayıcıların görmezden geldiği şekilde yazılmış resim boyutları
+c97c9dc5 height="450wv" gibi boyutlarda tarayıcının anlamadığı harfler var ("wv" bir birim değil).
+38f858bc Resimler yine görünür, sadece sabit bir piksel boyutunda. Genellikle zararsız.
+c33de17c İsteğe bağlı: harfleri kaldır, örn. height="450".
+b2030de7 Eşleşmeyen bir stil adı: "{name}"
+912e16dc Bu bölümün görünümü "{name}" adıyla seçiliyor ama stilin adı "{near}".
+93f6e366 Bu bölüm amaçlanan renkleri veya düzeni olmadan görünür.
+de3efded Stili olmayan bir stil adı: "{name}"
+46cc76e2 Hiçbir stil kuralı bu adı kullanmıyor.
+3a6cc944 Genellikle zararsız.
+d91f6b60 Oyuncuların görebileceği bitmemiş metin
+a2d31ceb Geliştirici hikâyede "PLACEHOLDER" veya "TODO" gibi bir not bırakmış.
+33f40845 Oyuncular bu notu görür ya da sahne bitmemiştir.
+a398b7c0 Gerçek metni yaz ya da notu kaldır.
+a89ee2d1 Yazım: "{wrong}" yerine "{right}" olmalı
+bf0afa72 Yaygın bir yazım hatası.
+979c6e99 Oyuncular yanlış yazılmış kelimeyi görür.
+7e32de5a "{wrong}" yerine "{right}" yaz.
+b2d44d92 Tekrarlanan kelime: "{words}"
+670755a1 Aynı kelime arka arkaya iki kez yazılmış.
+f901109b Oyuncular tekrarlanan kelimeyi görür.
+c8f90b31 Birini sil.
+fd88a85b Var olmayan bir resmi gösteriyor: "{name}"
+d99288f0 Bu adla tanımlanmış bir resim yok ve images/ içinde eşleşen dosya yok.
+61cd07a0 Oyuncular bir yer tutucu veya hata görür.
+3b215908 Resmi ekle ya da adı düzelt.
+a08bad60 Oyunun kimlik numarası (ID) yok
+91a06fd9 Twine hikâyeleri ayırt etmek için bir ID kullanır.
+7ff45b55 Hikâyeyi Twine'dan yeniden yayınla.
+ce8325ca Oynarken kırmızı bir hata kutusu gösteriyor: "{name}"
+212a3e36 Sahne gerçekten oynandığında oyun şu hatayı gösterdi: {msg}
+1cda4ad4 Oyuncular bu sahnede kırmızı bir hata kutusu görür ve sahnenin bir kısmı eksiktir.
+fe183b9c Aynı sahne için listelenen sorunlara bak - genellikle nedeni açıklarlar.
+5a4709f8 Tarayıcı bir betiği okuyamıyor bile
+417e0923 Tarayıcı bu betikte bir yazım hatası buldu, bu yüzden hiçbir kısmı çalışmıyor.
+711c9902 Bu betiğin sağladığı özellikler (özel komutlar, ayarlar) eksik veya bozuk.
+289bf8bb Bu satırda veya bir önceki satırda eksik bir parantez, tırnak veya virgül ara.
+fefc36ad Oynarken eksik resim veya sesler
+d47a66be Bu dosyalar sahneler oynanırken istendi ama yoklar.
+80b8b71b Oyuncular bazı sahnelerde bozuk resimler görür veya hiçbir şey duymaz.
+9733445f Eksik dosyaları ekle ya da adlarını düzelt.
+4f504ebe Oyun başlarken bir hata
+92243591 Tarayıcı oyunu yüklerken bir hata bildirdi.
+2fea6477 Başlangıç ekranı veya bazı özellikler bozuk olabilir.
+608156d3 Mesajda adı geçen sorunu oyunun ana betiğinde ara.
+231d0f49 Yanlış yazılmış komut: {name}
+388bf136 Bilinmeyen komut: {name}
+9b686aa1 Oyun bu komutu tanımıyor. Neredeyse kesin {near} komutunun yazım hatası.
+d1f769ee Oyun bu komutu tanımıyor.
+6a1cce2c Bunu {near} olarak değiştir.
+46c692e0 Komutun yazılışını kontrol et.
+6db67833 Hiç ayarlanmayan bir değer: {name}
+c0ceb098 Oyun "{name}" kullanıyor ama başka her yerde adı "{near}". Bu bir yazım hatası.
+8acbe929 Oyun "{name}" değerini kontrol ediyor veya gösteriyor ama hiçbir şey ona değer vermiyor.
+fbb2c20c Ona bir başlangıç değeri ver ya da adı düzelt.
+33e186ef Oyunun hiç kullanmadığı bir değer: {name}
+72bf1ee8 Bu "{name}" değerini değiştiriyor ama oyun yalnızca "${near}" değerine bakıyor. Bu bir yazım hatası.
+7f81aa2e "{name}" değişiyor ama oyun ona hiç bakmıyor.
+fd3f859d Değişiklik kaybolur - örneğin hiç sayılmayan bir istatistik artışı.
+4857ea9f Hiçbir şey bozulmaz. Eski sürümlerden kalmış olabilir.
+d2118ba7 "{name}" yerine "${near}" yaz.
+3867ee62 Kullanılması amaçlanmadıysa bir şey gerekmez.
+11e31f78 "{name}" hiç oluşturulmamış. Muhtemelen "{near}" değerinin yazım hatası.
+8f03aa6d "{name}" oyunun başında hiç oluşturulmamış.
+dd8d9eef Oyunun başında oluştur.
+a62731f6 pasaj
+f8de5ecc Bir Twine oyununun bir sayfası veya sahnesi. Her pasajın bir adı vardır ve bağlantılar bir pasajdan diğerine gider.
+ea5e0445 sahne
+ad88890f Hikâyenin bir sayfası. Twine'da buna "passage" (pasaj) denir.
+78f3a3d9 makro
+480a06b0 << ve >> arasına yazılan bir oyun komutu, örneğin <<if>> veya <<set>>. Oyun onu göstermek yerine çalıştırır.
+1925f793 komut
+410ae6be Oyun için bir talimat, örneğin "bu resmi göster" veya "oyuncunun 5 altını varsa". SugarCube'da << ve >> arasına yazılırlar.
+b46d0172 değişken
+2ef301de Oyunun hatırladığı adlandırılmış bir değer, örneğin $gold veya $mother_love. SugarCube'da $ ile başlar.
+f32b67c7 değer
+a746abd2 Oyunun hatırladığı bir sayı, kelime veya evet/hayır, örneğin altın miktarı.
+afad9a69 koşul
+1dc59f8f "$gold gte 5" gibi bir kontrol (oyuncunun en az 5 altını var mı?). Ondan sonraki metin yalnızca kontrol doğruysa görünür.
+5e9b60f6 etiket
+1df6d68c Koddaki bir işaret. <<if>> gibi açılış etiketleri bir bölümü başlatır, <</if>> gibi kapanış etiketleri bitirir.
+4f0aa52d bağlantı
+5afc9751 Oyuncuyu başka bir sahneye götüren tıklanabilir metin. Twine'da: [[Metin|Sahne adı]].
+d3ecb0d8 include
+bbc9ce26 Başka bir pasajı bunun içine yapıştıran komut: <<include "Ad">>.
+ff700e02 widget
+fd5df966 Bir kez tanımlanıp birçok sahnede tekrar kullanılan ev yapımı bir komut.
+9f738ce8 HTML
+16d38297 Web sayfalarının yazıldığı dil. <img> (resim) ve <div> (kutu) gibi etiketler.
+194e13da CSS
+28d26723 Stil kuralları: renkler, boyutlar ve düzen. Bir "class" bir öğeyi bir stile bağlar.
+ee620923 JavaScript
+2d04472d Web sayfalarının programlama dili. Oyunlar onu özel özellikler için kullanır.
+cb5346a0 betik
+302bcb23 Bir parça program kodu (genellikle JavaScript).
+0c4da6cb Twine
+5deecf78 Birçok metin oyununun yapıldığı ücretsiz program. Oyunu tek bir .html dosyası olarak yayınlar.
+9b2ab238 SugarCube
+5a15607f Twine oyunları için en yaygın "story format" (motor). << >> komutlarını sağlar.
+5e2fb0c2 yayınlamak
+9eb9fe5a Twine'da: Build > Publish to File. Hikâyenden oynanabilir .html dosyasını yazar.
+1af607c7 dosya yolu
+3bee6183 Bir dosyanın bulunduğu yer, örneğin images/hero.png ("images" klasörü, "hero.png" dosyası).
+264f39ca satır
+f44c6b66 Dosyadaki bir metin satırı. Metin düzenleyiciler satır numaralarını solda gösterir.
+3cc46d20 girinti
+2a14602c Bir satırın başındaki boşluklar. Bazı motorlar hangi satırların birlikte olduğunu bunlarla anlar.
+64c65374 etiket (label)
+0419b517 Ren'Py veya ChoiceScript hikâyesinde diğer bölümlerin atlayabileceği adlandırılmış bir nokta.
+40a22a4a knot
+fba17772 Bir Ink hikâyesinin adlandırılmış bir bölümü. "-> ad" oraya atlar.
+fd8c7c8e eklenti
+45e375e0 Bir RPG Maker oyununa eklenmiş ek bir betik.
+67db3ab6 1. Pasaj (sahne) nedir?
+6cfa54e4 2. << ve >> arasındaki komutlar
+fcaf062f 3. Açma ve kapatma
+47887091 4. Oyunun hatırladığı değerler ($değişkenler)
+c3bcb980 5. "If" kontrolleri
+d8cc0b48 6. Resimler ve sesler
+c413d282 7. Güvenle düzenleme
+fb4c49ae 8. Bu uygulamayı okumak
+a9af7910 Buradan başla: oyunun .html dosyasını (veya bir Ren'Py, RPG Maker, Ink ya da ChoiceScript oyun klasörünü) aç. Kontrol kendiliğinden başlar.
+de845e69 "Basit kelimeler" her şeyi sade bir dille anlatır. Teknik ayrıntıları görmek için kapat.
+6c84c615 Geliştirici veya Oyuncu: oyuncular bozuk sahnelerin kısa ve az sürprizbozan bir listesini ve geliştirici için bir hata raporu alır. Geliştiriciler düzeltme araçlarını alır.
+ba413de9 Bulunan tüm sorunlar. Kırmızı bozuk, sarı muhtemelen bozuk, mavi kontrol etmeye değer. Ne yapacağını görmek için birine tıkla.
+476c1a70 Burada neyin yanlış olduğunu, oyuncuların neyi fark edeceğini ve tam olarak nasıl düzelteceğini görürsün - önceki ve sonraki satırla birlikte.
+e871d7cc Düzeltme sihirbazı seni sorunlar arasında tek tek gezdirir ve her düzeltmeyi senin için kontrol eder.
+3d56d049 Oyun testi her sahneyi görünmez bir tarayıcıda oynar ve yalnızca oynarken görünen hataları bulur.
+41da0a4f Araçlar: oyunu yedekle, değiştirmeden önce bir satırı dene, iki sürümü karşılaştır, hata raporu yaz, değişiklikleri izle.
+75d05bed Yardım: dersler, bir kelime listesi, bu tur ve çok büyük yazı gibi rahatlık ayarları.
+52c5f193 Kod sağlığı puanı: %100 mükemmel, %90 harika, %80 iyi, %70 idare eder.
+bcecc3cb Bir Twine oyunu pasajlardan oluşur. Her pasaj bir sahnedir: biraz metin, belki bir resim ve diğer pasajlara bağlantılar.
+b1f433c6 Bağlantılar böyle görünür. | öncesi oyuncunun gördüğü kısım, | sonrası açılacak pasajın adıdır:
+33dd3c05 Ad, büyük harfler ve boşluklar dahil tam olarak eşleşmeli. "kitchen" ve "Kitchen" farklı pasajlardır.
+14a03cdc SugarCube oyunları << ve >> arasına yazılan komutlar kullanır. Oyun onları göstermek yerine çalıştırır.
+fffc20ea Başta her zaman tam iki <, sonda tam iki > olmalı. Bir fazla veya eksik komutu bozar:
+1e192fbd Bazı komutlar parantez gibidir: bir bölümü açar ve kapatılmaları gerekir. <<if>>, <</if>> ile kapatılır.
+fd08a19b Kapanış <</if>> eksikse oyun kırmızı bir hata kutusu gösterir. Bir tane fazlaysa da öyle.
+b25bf333 $ ile başlayan bir kelime, oyunun sahneler arasında hatırladığı bir değerdir, örneğin $gold veya $mother_love.
+d4d0415d Büyük/küçük harf önemlidir: $Gold ve $gold iki farklı değerdir. Bir yazım hatası yeni, boş bir değer oluşturur ve değişiklik kaybolur.
+340aacf8 Bir değeri değiştirmek için "to", "+=" veya "-=" kullan. Düz bir "-" hesaplar ama hiçbir şeyi değiştirmez:
+87dc8b35 Bir "if" içinde "is", "isnot", "gte" (en az), "lte" (en çok) ile karşılaştır. Orada tek bir "=" yanlıştır:
+add346a2 "and", "or"dan önce kontrol edilir. Gruplamak için parantez kullan, yoksa kontrol yanlış zamanda doğru olabilir:
+f07da221 Resimler bir <img> etiketiyle gösterilir. Yol, oyunun klasöründen başlayarak dosyanın nerede olduğunu söyler:
+9e333b42 Klasörler arasında / kullan. \ yalnızca Windows'ta çalışır. Telefonlar, Mac'ler ve web siteleri için büyük/küçük harfler gerçek dosya adıyla eşleşmeli.
+9d1c8406 Açılan her " tırnak işareti kapanmalı, yoksa resim görünmez.
+6f7151f5 Bir şeyi değiştirmeden önce yedek al (Araçlar > Oyun dosyasını yedekle).
+73b5381e Oyun Twine'da yapıldıysa değişiklikleri Twine'da yap ve yeniden yayınla. Doğrudan .html dosyasında yapılan değişiklikler, oyun Twine'dan bir sonraki yayınlanışında kaybolur.
+0dab15d3 Yalnızca .html dosyan varsa (Twine hikâyesi yoksa), Notepad++ gibi bir metin düzenleyiciyle düzenle. .html dosyasının içinde < ve > işaretleri &lt; ve &gt; olarak yazılır - uygulama kopyalanacak tam metni gösterir.
+a877adb7 Her değişiklikten sonra: kaydet, oyunu tarayıcıda yeniden yükle ve bu uygulamada "Düzelttim - kontrol et"e bas.
+e6cfd88c Kırmızı = bozuk: oyuncular buna takılacak. Sarı = muhtemelen bozuk. Mavi = kontrol etmeye değer, çoğu zaman sorun yok.
+3c06ac34 Özetteki "Buradan başla" listesiyle başla ya da Düzeltme sihirbazını kullan: seni her seferinde bir sorunla ilerletir.
+f5a4fb88 "Kasıtlı olarak işaretle", kontrol ettiğin ve tutmak istediğin bir bulguyu gizler. Bu oyun için gizli kalır.
+f3979521 Yaklaşık 1 dakika
+d621d05d 5-15 dakika
+bea680e1 Geliştirici gerekiyor (bir hikâye veya tasarım kararı)
+0c6c4102 İsteğe bağlı
+e53abb3c Kolay düzeltme
+c4f93c0c Biraz özen ister
+a22663d7 Geliştirici gerekiyor
+230659f7 Muhtemelen evet, ama hızlıca bir bak.
+6d9d36d5 Hayır. Oyuncular buna takılacak.
+ddad7bf2 Yalnızca mantığı kontrol ettiysen ve istediğin şeyi yapıyorsa. O zaman kasıtlı olarak işaretle.
+6cf97a3f Evet, sahne eskiyse veya oynanması amaçlanmıyorsa.
+d54dbf6e Evet. Hiçbir şey bozulmaz.
+3b411bc1 Evet, oyun yalnızca Windows'ta oynanıyorsa.
+667e089a Evet, şimdilik. Gelecekteki bir motor güncellemesinde bozulabilir.
+ca7eea8c Evet, ama oyuncular yazım hatasını görür.
+6225e68e Yalnızca sahne bilerek bitmemiş bırakıldıysa.
+47ecb09c Evet. Resimler yine görünür.
+178ca96e Evet. Görünür hiçbir şey değişmez.
+e2fca6c0 Genellikle evet. Çoğu zaman eski sürümlerden kalmadır.
+bcc248b9 Yapmasan iyi olur. Büyük ihtimalle gerçek bir hata.
+557f2555 değil
+cffa50a3 ve
+1758356d veya
+6981b0db Hiçbir sahne "{name}" sahnesine tarayıcının izleyebileceği bir şekilde bağlantı vermiyor. Oyuncular onu hiç görmeyebilir ya da sahne adını değişkenlerden oluşturan bir kodla oraya ulaşılıyordur.
+0f56183f Oyuncular "{name}" sahnesine {n} yerden ulaşıyor:
+02e974ba Bu, oyunun ilk sahnesi.
+5ffe533b doğru
+7cb6efb9 yanlış
+1ed06825 bir bağlantı
+3d22ef57 bir include
+ccdfd8c1 otomatik bir atlama
+3f80e4d1 "{src}" sahnesinden ({how}), şu durumda: {cond}
+084fcdcf "{src}" sahnesinden ({how}), her zaman.
+8adbc573 …ve daha fazlası.
+1aafbf54 Mükemmel
+bd846adf Harika
+61dedcf0 İyi
+226d7ec9 İdare eder
+eafabce9 Çalışma gerekiyor
+4e0fa437 Zayıf
+75fb2b10 Dosya okunuyor
+ac133acf Hikâye verisi aranıyor
+456caef0 Betikler ve stiller toplanıyor
+fc404c89 Pasajlar ve bağlantılar kontrol ediliyor
+6a4d36f9 Makro etiketleri kontrol ediliyor
+546de9d0 Koşullar ve kod mantığı kontrol ediliyor
+c338107e Değişkenler kontrol ediliyor
+5730c93f HTML etiketleri kontrol ediliyor
+ea4c65ed CSS sınıfları kontrol ediliyor
+d874e65d Resimler, ses, video ve dosyalar kontrol ediliyor
+6517d389 Metin kontrol ediliyor (yazım hataları, yer tutucular)
+87beeee4 JavaScript kontrol ediliyor
+7b7efd8b Story format kuralları kontrol ediliyor
+25f3b361 {label} oyunu okunuyor
+a28b6c50 Dosyalar hasar için kontrol ediliyor
+5aedb280 Görünmez tarayıcı başlatılıyor
+f5a5071d Oyun yükleniyor
+8466e7c7 Betikler tarayıcının JavaScript motoruyla kontrol ediliyor
+bf197daa Sahneler oynanıyor ({mode}): {k} / {n}
+f70cf464 Oyun testi bitti
+427c9fd7 Kimsenin ulaşamadığı sahnelerde
+9b9f5c3d Oyuncular bunu asla görmez: kimsenin ulaşamadığı bir sahnede. Bırakabilirsiniz.
+e58020da Kimse "{name}" sahnesine ulaşamıyor: bağlantısı kapalı
+2795ab1b Bu sahneye giden tek bağlantı "{where}" içinde ({line}. satır), gizli bir not /* ... */ içinde. /* ile */ arasındaki her şey kapalıdır.
+4ed22111 Oyuncular bu sahneyi asla görmez.
+30fda4f3 Oyuncuların görmesi gerekiyorsa bağlantının etrafındaki /* ve */ işaretlerini silin. Bilerek kapattıysanız öyle bırakın.
+7a9ce2ca Bu sahneye giden tek bağlantılar, kimsenin ulaşamadığı başka sahnelerde.
+3aafeed1 Oyuncuların görmesi gerekiyorsa ulaşılabilen bir sahneden bağlantı ekleyin. Eskiyse yok sayabilirsiniz.
+0c4d1909 {k} klasördeki {n} dosya hiç kullanılmıyor
+0efdb085 Oyunun hiç kullanmadığı {n} değer
+425a6a2a Bu değerler değişiyor ama oyun onlara hiç bakmıyor.
+849cdd9b Hiçbir şey bozulmaz. Eski sürümlerden kalmış olabilirler.
+a82d56f5 Bir sayfa kutusu kapatılmamış: {line}. satırda <{tag}>
+5c73814e {line}. satırdaki <{tag}> hiçbir zaman </{tag}> ile kapatılmıyor.
+b587a89d Kutunun bitmesi gereken yere </{tag}> ekleyin.
+f1a6f13d Fazladan bir kapanış etiketi: {line}. satırda </{tag}>
+d887494b {line}. satırdaki </{tag}> hiç açılmamış bir kutuyu kapatıyor.
+f3d6de5f Fazla olan </{tag}> etiketini silin ya da eksik <{tag}> etiketini ekleyin.
+94b62097 Yazım: "{wrong}" yerine "{a}" ya da "{b}" olmalı
+45919c5c Sık yapılan bir yazım hatası. İki farklı kelime anlamına gelebilir.
+d3631b3f Cümleyi okuyun ve "{wrong}" kelimesini uygun olana göre "{a}" ya da "{b}" yapın.
+4f2e0c01 Bir şey gerekmez, meğer ki biri kullanılmak için konmuş olsun.
+37a88891 Genelde hiçbir şey: tarayıcı sahnenin sonunda onu kendisi kapatır.
+9c393632 Evet. Kimsenin ulaşamadığı bir sahnede, bu yüzden oyuncular asla görmez. Yalnızca ileride o sahneye bağlantı eklerseniz düzeltin.

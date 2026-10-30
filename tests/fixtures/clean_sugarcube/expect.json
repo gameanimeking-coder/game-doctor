@@ -1,0 +1,8 @@
+{
+ "open": "game.html",
+ "must": [],
+ "must_not": [
+  "Error|",
+  "Warning|"
+ ]
+}

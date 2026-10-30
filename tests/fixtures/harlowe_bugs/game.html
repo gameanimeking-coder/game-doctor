@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><title>Test</title></head><body>
+<tw-storydata name="Test" startnode="1" creator="Twine" creator-version="2.6" format="Harlowe" format-version="1.0" ifid="11111111-2222-3333-4444-555555555555" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script>
+<tw-passagedata pid="1" name="Start" tags="" position="0,0" size="100,100">(set: $gold to 5)(set: $name = &quot;Bob&quot;)
+(if: $gold is 5)[Rich](else:)[Poor]
+(if: $gold = 3)[x]
+(prnt: $gold)
+(link-goto: &quot;Go&quot;, &quot;Twon&quot;)
+(if: $gold &gt; 1)
+[[Town]]
+[unclosed hook
+&lt;img src=&quot;images/hero.png&quot;&gt;&lt;img src=&quot;images/gone.png&quot;&gt;
+(print: $goldd)(print: $goldd)</tw-passagedata>
+<tw-passagedata pid="2" name="Town" tags="" position="0,0" size="100,100">Town. [[Start]] (display: &quot;Start&quot;)</tw-passagedata>
+</tw-storydata></body></html>

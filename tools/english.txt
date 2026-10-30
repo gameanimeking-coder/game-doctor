@@ -1,0 +1,836 @@
+#name English (source texts for translators)
+e77b83c2 Play-test finished: {n} scenes played {m} ways, {k} problem(s) found while playing.
+e9dd5680 Copied to the clipboard
+e00ac23f Kind
+764b4aa3 How bad
+33446003 Scene
+44819483 Nothing
+36c4a06f Scanning…
+ecab72e7 The game folder / whole game
+95263aa8 The line in the game file (highlighted)
+adac6937 Code
+4dc2eddf Found with {app}. {n} problem(s).
+6b21fb79 About
+b8bb1461 How do players reach this scene?
+d07d7afa How do players reach "{name}"?
+fa893d87 Clean
+70440046 Notes
+1430f976 Warnings
+805e86a8 Errors
+dcad8ee5 Preparing the code view…
+7f2f6a15 Error
+e9c45563 Warning
+2c924e30 Note
+f4808ecd Open game…
+f6ab55dd Scan again
+dd3fa3ce ▶ Play-test
+5e4797ea Fix wizard
+4fa8cc86 Tools
+c47ae153 Help
+9d454f7c No game opened
+7869cc5c I edit in Twine
+db8da328 I edit the .html file (Notepad++ etc.)
+20c7c552 Ready
+26a93eac Open a game folder (Ren'Py, RPG Maker, Ink, ChoiceScript)…
+775b3ab8 Pictures and sounds folder…
+cd9a3d88 Back up the game file
+2505d3da Test a line before you change it…
+3536c70a Compare with another version…
+080460a5 Write a bug report for the developer…
+0cbf16ea Export report…
+490c3a52 Watch the game file and re-check when it is saved
+09e02e95 Show problems marked as intentional
+80f65544 Text editor…
+3a4dad84 Take the tour
+f996200a Lessons (F1)
+e5aaa5b5 Word list
+320067c6 Extra-large text
+07471db5 Colour-blind friendly colours
+c2cebede All kinds
+1baa06b4 Problem
+ced091e8 Scene / place
+ea967600 Line
+99a42316 Fix
+3cd62e5f Open in my text editor
+a4f34926 Copy fixed line
+0973fd22 Copy text to search for
+28a1dc64 I fixed it - check
+1a256c63 Tell the developer
+b491a51b Show in Code view
+463e5e78 Mark as intentional
+562107b8 Read aloud
+e42bc527 Copy details
+d7c5a824 Show exactly as stored in the file (&lt; codes)
+2314cd9a Open the game
+7a8e0cf0 Pick the game folder
+ff10f24c Folder with the game's pictures, sounds and videos
+38e9a3e9 Game: {path}     Folder: {folder}
+24fc8907 Stop reading
+7335beba No longer marked as intentional
+24fec833 Marked as intentional - hidden from the list (Tools > Show problems marked as intentional)
+427c9fd7 In scenes nobody can reach
+615c9a3f {fmt} · {units} parts · {files} files in folder · {e} broken, {w} probably broken, {i} to check · {s} s
+f229a698 Code health: {n}% · {label}
+d8d62e38 Check finished
+dd3a39d8 Code health
+c6643b25 Scale: 100% excellent · 90% great · 80% good · 70% fine · below 70% needs work
+7e0056d2 It is based on how many scenes have problems and how serious they are.
+07c80477 By kind
+45b733c9 Click a problem in the list to see the details.
+525f61b6 Where
+4090e818 How to fix it
+0b975974 Open your story in Twine and open the passage "{name}".
+905dc77d The same name is also used on {n} other line(s): {lines}. Change it there too.
+3cfafb7c Publish the story again (Build > Publish to File), then reload the game to check.
+64cb91c6 Where: {where}
+4383fcfd What's wrong: {text}
+07bddb04 How to fix it: {text}
+cf36743b Now: {text}
+0cacfdc2 Change to: {text}
+70fbdd39 Fixed line copied. In Twine, select the old line in passage "{name}" and paste.
+60eafc99 Fixed line copied. In your editor, select line {n} and paste over it.
+67a9f511 Search text copied. In your editor press Ctrl+F and paste it.
+67c1b9a0 The file has not changed since the last check. Did you save it?
+2693cf86 Compare your line with the "Change to" line again.
+1b930787 Open a game first.
+9dbf0a77 Backup saved: {path}
+88e09b05 (your text)
+e835a0e1 Bug report for {game}
+338c5072 Technical: {text}
+fc5e62a8 Settings file: {path}
+0f83a323 Watching the game file. Every time you save it, it is checked again.
+24b5689b Stopped watching the game file.
+6bbf59c5 Stopping the play-test…
+c5726162 Play-testing needs Microsoft Edge or Google Chrome, and neither was found.
+efe69072 The game changed during the play-test. Run it again.
+4e1a8e3c No problems
+59cd52ee Worth checking
+80c66d73 Probably broken
+3ad465ce Broken
+8ea8e60f Line {n}: no problems found
+421fe500 double-click to see details
+a6e7e8d6 "{text}" not found
+fc748144 Export the {n} problems shown in the list
+c8ca2957 Report saved: {path}
+09188221 Whole game
+5a7ee5ac Bug report
+203dee52 Details were saved to {path}
+5abfea7d Simple words: off
+de314fa0 Severity
+fc55cc19 Passage / place
+3deb7456 Type
+61790945 ■ Stop play-test
+e23fd7cf Un-mark as intentional
+5ffa6ce4 Checks games for mistakes and tells you in plain words what is wrong and how to fix it. Works with Twine games (SugarCube, Harlowe, Chapbook, Snowman), other HTML games, Ren'Py, RPG Maker MV/MZ, Ink and ChoiceScript.
+e13e18f3 How to use it
+c3abe9f5 Safe to use
+4d688496 This program only reads your game. It never changes it. Use Tools > Back up the game file before you edit anything.
+90c93523 Shortcuts
+8e990034 Ctrl+O open · F5 scan again · Ctrl+F search · F3 find next · Ctrl+E export · F1 lessons · Ctrl + / Ctrl − / Ctrl+0 or Ctrl+mouse wheel to resize
+21e5904b {n} file references checked
+052df047 Start here - the most important fixes
+eff36495 Or click "Fix wizard" to go through them one by one.
+23bd8fe4 Scene "{name}"
+8cb67e05 Passage "{name}"
+12b1a199 line {n} of the passage
+280d0541 line {n} of {file}
+a684f161 You marked this as intentional, so it does not count.
+6aeb39ef What's wrong
+c1bcc130 What is wrong
+ebcf7d18 What players will notice
+e7f32d0f Click "Open in my text editor". It opens {file} at line {n}.
+73c8627d Delete that line (it is shown below under "Now").
+b44b2225 Change it as shown below under "Change to". "Copy fixed line" copies the whole fixed line for you to paste over the old one.
+d640e11b See the explanation above.
+33d1a502 Save the file, reload the game, then click "I fixed it - check".
+fd3e0dfe Made in Twine? Then fix it in Twine instead (switch "I edit the .html file" above to "I edit in Twine"). Publishing from Twine overwrites changes made directly in the .html file.
+e3b82040 Now
+b9b6aac4 Change to
+3895c256 Can I ignore this?
+189da0ef What players will notice: {text}
+7d949b29 Code: {text}
+80411ece Not fixed yet - the problem is still there
+71a91179 press Ctrl+G and type {n} to jump to the line
+84d3bdef Opened in {name}
+7bf2bdbd Scene: {name}
+f8e71156 Line {n} of {file}
+e9331864 What happens: {text}
+16fcd5a1 ({n} more characters on this line)
+6dcc62dd Report saved. Open it now?
+02fbc53c Problem (simple words)
+2c3cafa4 File
+1bea2fb0 How to fix
+fdccd352 Something went wrong inside the app:
+b7152342 Size
+8e6b86dc Problems
+8f0d8d83 Group by
+bce06414 Search
+74c14ca3 Code view
+a3d77701 ◀ Previous problem
+3a289dc9 Next problem ▶
+2e0b45f2 Go
+ececaefe Find next
+df251b06 Find
+7e08ebec Developer
+e53407cf Player
+0406a446 Simple words
+2edb004b I edit the .html file
+b45e0101 Watching for changes
+398ed329 Games
+6f80238e HTML games
+f7857dcc All files
+6798c955 Scanning, please wait…
+be4bd50c Code health: {n}%
+16dd1f3a {n} marked as intentional
+901b56b2 Nothing to show
+ea64a687 4. Help > Lessons explains the basics in a few minutes. Help > Take the tour shows you around.
+570f71b7 Scenes that are broken
+08f7f24d Save your game before you visit these, so you can go back if something goes wrong:
+29e8d770 Use "Tell the developer" on a problem, or Tools > Write a bug report, to send them the details.
+d19ceca5 Tip
+251eb9e2 Save your game before you reach this scene, so you can go back if it breaks.
+d782b266 Find the spot: use Twine's "Find and replace" (or look carefully) for this text:
+eb92d56f Open the project in RPG Maker and go to: {where}
+7e7c7eb1 (delete this line)
+d40baaa7 ✔ Fixed! The problem is gone. Code health is now {n}%.
+fce98782 Pick another editor with Tools > Text editor…
+55d0a707 Backup saved:
+802cfe54 Could not make the backup:
+a01ce386 Suggested fix (in Twine):
+d9cb995e Translations other than English were made by an AI and may contain mistakes. Technical details stay in English, like the game engines and their manuals.
+987dd9b8 Open a game to see its code here.
+f4fd7854 {name} ({n} lines)
+db3b1ca2 Web page report
+1b5f6570 Spreadsheet (CSV)
+ee3d21a8 Text file
+934a1886 Could not save the report:
+29211387 System theme
+9e5ba0f0 Light theme
+d51c5960 Dark theme
+71df97be File saved - checked again: {fixed} fixed, {new} new
+12d21609 (whole game)
+4671f2fd {n} parts
+af4e5ffa {n} problem(s) in this group. Click one to see the details.
+e065ed24 If the line has moved, press Ctrl+F in your editor and search for:
+d6cd9bbc Could not scan:
+e8b6a7a1 (line {lines})
+2a87805d Could not start {name}:
+50803478 How to fix: {text}
+cbbf7064 Version {v}. Finds problems in games and explains how to fix them. It only reads files and never changes your game.
+7e16f294 Code health: {n}% ({label})
+13b7bfca Working…
+944d285f Scan failed
+5117eb3e No problems match the current filters.
+84a26cd3 No problems found. Nice work!
+e961739d 3. Not sure where to start? Use the Fix wizard - it goes through the problems one by one and checks your fixes.
+dfa2b6e9 Line {n}:
+27a41ea2 (delete)
+966d414d line {n}
+a37a62b5 2. Click a problem in the list. Below it you see what is wrong, what players will notice, and exactly how to fix it.
+47faaf63 Play-test stopped
+9de8b1a5 1. Click "Open game…" and pick the game's .html file (or use Tools for a game folder). The check starts by itself.
+836bf385 The play-test could not run:
+3dd51c5a Choose your text editor
+1f7611ea Text editor set to {name}
+43320d49 Test a line before you change it
+18e673bc Nothing is changed in your game. This only checks the text you type here.
+8ecc7800 Write a bug report for the developer
+2e2b95ec Compare two versions
+ccdb5389 Pick the other version of the game and click Compare. Both are only read, never changed.
+cabad4eb Scanning the other version…
+cb9ce97b Lessons
+9255b9a1 Choose the text editor program
+67094e72 That program could not be found. Use "Browse…" to pick it.
+21461571 ◀ Back
+2d8a1625 Skip ▶
+7c5d9f51 {done} of {total} fixed
+cb70c72b Problem {n} of {total}
+820d6004 Checking…
+e461d5d0 {n} problem(s) found:
+9580fcbc Plain text
+26a49ee7 Discord / Reddit
+1f82bc1e Forum (BBCode)
+616ce66d Broken + probably broken
+34d5d395 Only the selected problem
+ced1fd2f Save the bug report
+ec9135a3 Bug report saved: {path}
+8d105cf4 Compare
+a1cd6b54 Pick the other version
+1f5bf765 Pick the other version first.
+ad916050 Comparing…
+f4f29947 Code health: {a}% → {b}%
+a81eb289 Fixed in the newer version ({n})
+53da970f New problems in the newer version ({n})
+2be41ba6 Still there ({n})
+9ec4aa53 Words used in this app
+ce12714d Nothing to fix
+d231fca7 There are no problems left that need fixing. Well done!
+76c1c7de This problem is gone - it was fixed or the file changed. Click Skip to go on.
+55855f77 Testing single lines works for Twine (SugarCube) games. Open one first.
+bbfa773e Close
+af74f7c5 Copy
+571a03ba Which program should open the game file?
+113fa56b These text editors were found on this computer:
+d4b86cfd Another program…
+9d68007b Program
+c1b20f52 Browse…
+6bf5da9c Options
+4ee6279e {file} is replaced by the game file and {line} by the line number. Notepad++ uses: -n{line} "{file}"
+77dfd213 Cancel
+efc007a3 Save
+ab14d0a7 Programs
+4abacc60 ✔ Fixed! Well done. Here is the next one.
+1ed684b1 Paste or type the line (or the whole passage) you want to use:
+45f9116a This is a whole passage (also check that every tag is closed)
+4b5e84be Check
+6a17f3f6 No problems found in this text.
+44b39131 Suggested:
+4020c08c Style:
+2f32f781 Include:
+4705cad6 Include how to fix
+d9057148 Save as…
+83c52802 Other version:
+c3c1e96d The other version is:
+6fa5fbbc older
+1d47386a newer
+78cee4b8 Step {n} of {total}
+57bc79e3 Skip tour
+bc981983 Next
+e9b450d1 Done
+682c160f Current game:
+74c063af Wrong:
+3a82310a Right:
+c7c15bca This will go wrong for players.
+8df34ecb This is very likely a mistake.
+1d894da2 Not urgent. It may be fine, but have a look.
+58da2ccb Links to missing scenes
+78d3da9d Missing pictures and sounds
+59327131 Broken game commands
+dfe69b5d Misspelled game commands
+140d954e "If" checks that go wrong
+169a1b52 Commands that do nothing or break
+c3f4070a Misspelled stats and values
+ee27480a Reusable blocks
+9c0fe2ed Page layout code
+2c0f0a6d Styles (colours and looks)
+f77fd1fd Scenes
+45e35cfc Scenes nobody can reach
+a2406e53 Files the game never uses
+68320599 Unfinished text
+8a21b1ee Spelling
+169b486d Typing slips
+a1d181bd Works only on Windows
+3e9d9ae4 Very big files
+50a12988 Damaged files
+aab2b305 Old-style commands
+3f55c07b Script code
+cc0718f5 Game setup
+c7ee483a Scanner
+c916a1ad Errors while playing
+0e66b49d picture
+5e2e97c3 sound
+ffbaf58f video
+4642576d font
+767013ce page
+971c419d file
+8c657028 the scene "{name}"
+84db7a65 the game
+9b9f5c3d Players never see this: it is in a scene nobody can reach. Safe to leave.
+27260418 Goes to a scene that doesn't exist: "{name}"
+65a1b892 In {where}, a link or a command tries to open a scene called "{name}". No scene in the game has exactly that name.
+eddc288b When the player clicks it (or the game reaches it), they get an error message or a blank page instead of the scene.
+6690f7df Make the name match an existing scene exactly. Capital letters and spaces count.
+ee186081 Goes to a part of the story that doesn't exist: "{name}"
+adcab89d The story tries to continue at "{name}", but nothing in the game has that name.
+c68c7536 The game stops with an error at this point (or will not start at all).
+262dea9c Make the name match an existing part of the story exactly.
+8a2045c6 Goes to a chapter that doesn't exist: "{name}"
+6b99d3d7 The story tries to open "{name}", but there is no such chapter or spot.
+54721a92 The game stops with an error at this point.
+bfe449ab Fix the name so it matches an existing chapter.
+8569b71c Opens a screen that doesn't exist: "{name}"
+ed323960 The game tries to show a screen called "{name}", but no screen has that name.
+31aaf0f7 The game stops with an error here.
+ecedecaf Fix the name so it matches an existing screen.
+1c82d0d0 An event sends the player somewhere that doesn't exist
+f7bb6caa An event moves the player to a map, or runs a common event, that is not in the game.
+11068616 The game crashes or freezes when this event runs.
+17c8c384 Pick an existing map or common event in that event command.
+924f14ec A link that goes nowhere
+ac25c348 A link in {where} does not say which scene it should open.
+cc208a80 Clicking it shows an error.
+81510156 Write the name of the scene the link should open.
+a620e5a7 A link is missing its ending
+75319c60 A link starts with [[ but never ends with ]].
+d94d2b45 The text after it gets mixed into the link and the scene looks broken.
+da97338b Add ]] at the end of the link.
+de752d36 Nobody can reach "{name}"
+ad06e184 Nothing in the game leads to this part of the story.
+49f72405 Players never see it. Harmless, unless it was supposed to be playable.
+41e81f9d If players should see it, add a link to it from another scene. If it is old, you can ignore it.
+e58020da Nobody can reach "{name}": its link is switched off
+2795ab1b The only link to this scene is in "{where}" (line {line}), inside a hidden note /* ... */. Everything between /* and */ is switched off.
+4ed22111 Players never see this scene.
+30fda4f3 If players should see it, delete the /* and the */ around the link. If you switched it off on purpose, leave it.
+7a9ce2ca The only links to this scene are in other scenes that nobody can reach.
+3aafeed1 If players should see it, add a link to it from a scene players can reach. If it is old, you can ignore it.
+12017de3 The scene "{name}" is empty
+e1c78333 This scene has no text or content.
+eb036a1b A player who gets here sees a blank page.
+95468775 Write the scene, or remove the links that lead to it.
+65f5f00d Two parts of the story have the same name
+3a661399 More than one scene or label uses the name "{name}".
+14b99f6a Only one of them can ever be shown, or the game refuses to start.
+5017f902 Give each one its own name.
+8ee54eec The game has no starting scene
+e4b1267b The game does not know where to begin.
+67fece68 The game may not start at all.
+6f3c3583 In Twine, mark the first scene as the start.
+891a7ccc A jump link goes nowhere
+723d0b6c A link points to a spot on the page that does not exist.
+9d2a3ab1 Clicking it does nothing.
+a17d6d9d Fix the name of the spot, or remove the link.
+f7e0927c Missing {kind}: {file}
+471ab6b6 The game wants to use the {kind} "{path}", but there is no such file in the game folder.
+215d84f2 Players see a broken picture or empty space, or hear nothing.
+95495e08 Put the file in that place, or change the name in the game file to the file that really exists.
+4e187285 File name has wrong capital letters: {file}
+10dd7eb2 The file exists, but the game writes its name with different capital letters.
+445b1f51 Works on Windows. On phones, Macs, Linux or a website the picture or sound will be missing.
+bcc2cd24 Change the name in the game file so the capital letters match the real file.
+fc7f8ac2 A picture points to the developer's own computer
+bf1eaea6 The file location starts with a drive letter like "D:\". That folder only exists on the computer that made the game.
+8e9a7d52 Players never see this picture.
+e5baac7c Change it to a location inside the game folder, like images/characters/name.jpg.
+006a8fb9 File locations use \ instead of /
+d6cb43a9 The game writes folder paths with backslashes (\).
+42ad75cd Fine on Windows. On phones, Macs, Linux or a website, pictures and sounds will not load.
+02bf9e76 Only matters if the game should run outside Windows: replace \ with / inside the picture paths.
+0fa2cd7a {n} files in "{folder}" are never used
+1b78ff55 These files are in the game folder, but the game never uses them.
+55acf4db Nothing breaks. They only make the download bigger.
+0c4d1909 {n} files in {k} folders are never used
+cb4cc629 An empty file
+4642643c This file is empty (0 bytes).
+24ec314d It will not show or play.
+6cd06e6e Replace it with a working copy of the file.
+07046633 Damaged file (cut off): {file}
+932dbf75 The end of this file is missing, usually because a download, copy or unzip did not finish.
+feda3672 The picture shows only partly or not at all, or the sound/video stops early.
+968dc7a4 Copy or download this file again from the original game files.
+6081a951 Not really a picture or sound: {file}
+dc397b7a The file has the right name, but inside it is a web page (often an error page from a download site).
+7f495908 Players see a broken picture or hear nothing.
+eee27da5 Download the real file again and replace this one.
+2a1c1b71 Possibly damaged file: {file}
+4c30367e The start of this file does not look like any known picture, sound or video format.
+d3b9cea3 It probably will not show or play.
+0ab570a5 Open it in a picture viewer or media player. Replace it if it does not open.
+f68470e5 Some files have the wrong ending (.png, .jpg ...)
+d608da1e These files contain a different format than their name says, for example a JPEG picture named .png.
+2e39b508 Browsers usually still show them. Some phones and programs may not.
+097a3703 Optional: convert or rename them so the name matches the real format.
+283d2070 Some files are very big
+c7fa15ff These pictures or videos are very large.
+ae5369ab They load slowly, especially on phones.
+e125a92c Optional: make them smaller with an image tool.
+385f4329 A game file is missing: {name}
+2e700532 The game expects a file that is not there.
+99467808 The game shows an error at start or when this part is reached.
+b3496ea7 Put the missing file back, or remove the reference to it.
+75e6334a A game data file is damaged
+db02e969 This file cannot be read properly.
+79b96faf The game will not start or crashes.
+7ebbbeec Restore the file from a backup or the original game.
+d399fac1 A "{name}" command is never closed
+e6c66d5b Some game commands need a matching end. This one has none.
+0b1cb09f The game shows a red error box in this scene, and part of the scene may be missing.
+afdabc18 Add the missing end (for example <</{name}>>) where this part should end.
+744245d7 An extra end tag <</{name}>>
+adb1bea4 There is an end tag with nothing for it to end.
+b39fd74f The game shows a red error box in this scene.
+a53d4f4e Delete this extra end tag.
+fa8c8072 "{name}" is in the wrong place
+9009044d <<{name}>> must sit inside an <<if>> block. Here it does not, usually because an end tag above it is in the wrong spot.
+1e9acaea The game shows a red error box.
+1d2d751d Check the lines just above and move the end tag to the right place.
+bfaae414 An end tag is missing a ">": <</{name}>
+a280c34f The end tag is written with one ">" but needs two.
+71be19aa The game doesn't see the end tag. It shows a red error box and the scene may look wrong.
+a3c69d1f Add one ">" so it ends with ">>".
+413ace46 An extra ">" sign
+4e791f5a There is one ">" too many after a tag.
+4ecd446f Players see a stray ">" character on screen.
+c1c069b2 Delete the extra ">".
+cacfbdbb An extra "<" sign
+fe9088b6 There is one "<" too many before a command.
+0c7a0bb7 Players see a stray "<" on screen.
+87807bf8 Delete the extra "<".
+b0d2d4e4 A half-written command "<<"
+012a6c88 There is a "<<" with nothing after it.
+fd941db0 The command after it breaks and the game may show an error.
+73f8070a Delete the stray "<<".
+7037d71a A command is missing its ">>"
+87bde2ac A command starts with << but never ends with >>.
+7f93f879 Text after it disappears or the scene shows an error.
+dbda1f76 Add ">>" at the end of the command.
+5a30164d A bracket is opened but never closed
+d5b047f2 Something starts with a bracket but its closing bracket is missing.
+8d50e9a9 Everything after it is swallowed or the game shows an error.
+912c548c Add the missing closing bracket.
+35852e81 An extra closing bracket
+a1d86e33 There is a closing bracket with no opening one.
+fdeb2ba4 Players may see a stray character or an error.
+254fbb5b Remove the extra bracket.
+98cb6b2f A command has no text attached to it
+1afec1b9 This command should control the text right after it, written in square brackets [like this]. Nothing follows it.
+073266b4 Harlowe shows an error, or the text is always shown.
+29369e93 Put the text it controls in square brackets right after it.
+4093f80e The game shows an error, and the part of the scene it controls does not work.
+ef3a7877 An old-style command
+54dead55 This command still works, but is outdated.
+01500c48 Nothing now. It may break in a future engine update.
+b1a70201 Optional: replace it with the newer command.
+a4a93d21 An "if" check uses "=" instead of "is"
+582b6716 Inside an "if" check, "=" means "make it equal", not "is it equal?".
+564cdad0 The game shows a red error box, or the check is always true and the wrong scene part plays.
+e3105e2f Replace the single "=" with "is".
+f0b64920 "=>" or "=<" written backwards
+897ec753 Greater-or-equal is written ">=", not "=>".
+0167d9bc The check does not work.
+0b498ace Write ">=" or "<=" instead.
+f917ca5e "is not" should be one word
+4e8bbdf4 In this game engine "is not" means something different from "isnot".
+e40cd819 The check is almost always wrong.
+7f3a1402 Write "isnot" as one word.
+694143a3 An "or" check that is always true
+b760633e Something like "$x is 1 or 2" only checks $x against 1; the "2" on its own always counts as yes.
+f8b8cc75 This part plays even when it shouldn't.
+b1a0ec7e Repeat the name: "$x is 1 or $x is 2".
+1c4512b1 An "if" check that can trigger at the wrong time
+bb598d2b This check mixes "and" and "or" without brackets. The computer always does the "and" parts first, so the check may not mean what was intended.
+71408d55 A scene or option can appear when it shouldn't - for example when a character is kidnapped or a stat is too low.
+045d6c6c Add brackets ( ) around the parts that belong together. Look at the code below and group the "or" choices.
+dbb9ed0f Brackets ( ) don't match
+6bbb5c72 There are more "(" than ")" or the other way round.
+d2676c8c Add or remove a bracket so they pair up.
+8f746eaa An empty "if" check
+70ac1e0e The "if" has nothing to check.
+8fa764c4 The game shows an error.
+f72f83b1 Write what should be checked.
+00b75afd A stat change that does nothing ("==")
+d3024696 This line is meant to change a value, but "==" only compares - it does not change anything.
+4bb1b350 The value never changes. Whatever depends on it (timers, counters) stays stuck.
+bb9d82a8 Replace "==" with "to".
+88b997d5 A stat change that does nothing
+47b56b1e This line is meant to change a value, but it has no "to", "=", "+=" or "-=", so nothing changes.
+b3edbcbf For example, energy or money is never taken or given.
+5a19bb57 Write "-=" instead of "-" (or "+=" instead of "+").
+24335c15 An empty stat change
+d7c9d917 The command is empty.
+1ca2b36b Delete it or write the change.
+2d2715a0 A value is set with "=" instead of "to"
+b3386569 This engine sets values with "to".
+be353939 Replace "=" with "to".
+6b135470 A missing quote mark "
+b7ed7d6f A piece of text in a command opens with " but never closes.
+4b70c1d8 The game shows an error or swallows the text after it.
+081a0ff8 Add the missing " mark.
+1a1cb7a5 Tabs used where spaces are needed
+0d83ecca This engine needs lines to be indented with spaces only.
+1928be6f The game will not start, or stops with an error here.
+6707540b Replace the tab at the start of the line with spaces.
+50e72b08 A line is missing ":" at the end
+1590b870 Lines like "if", "menu" and "else" must end with a colon.
+34cb1caf The game will not start.
+739781b1 Add ":" at the end of the line.
+463c9c22 Broken script code
+90393617 A bracket or quote mark in the script code does not match.
+10b6ae9e The whole script stops working, which can break many features.
+208a3574 Check the brackets and quotes around this line.
+08a420a2 Leftover test code
+f523c19b Code used while testing was left in.
+a161c8db Usually nothing visible.
+5512920c Optional: remove it.
+e14ae90f A name with a "-" in it
+a5d94a86 Names of values can't contain "-". The game reads only the part before the "-".
+1d915eed Players see the wrong word or a blank instead of a name.
+1ff6bd49 Use "_" instead of "-".
+929dc82b Checks on it are always "no", so some text or scenes never appear (or a blank shows instead of a name).
+0efdb085 {n} values the game never uses
+425a6a2a These values get changed, but the game never looks at them.
+849cdd9b Nothing breaks. They may be left over from older versions.
+aa241baa Same name, different capital letters: ${a} / ${b}
+fe615c75 To the game these are two different values, because capital letters count.
+1549316e Changes to one are not seen by the other, so stats or scenes go wrong.
+485f98c5 Change ${a} to ${b}.
+fbb1a8ec Misspelled value name: {name}
+baa2f1ac "{name}" is never set up, but "{near}" is. It is almost certainly a typo.
+37eb4d71 The game shows an error or the value is always empty.
+69b0c997 Change "{name}" to "{near}".
+958390b8 A temporary value that is never set: _{name}
+66d98956 This short-lived value is used but never gets a value.
+f6d72946 Checks on it never work.
+b150a824 Set it first, or fix the name.
+bb2ac176 A value that was never created: {name}
+418bb0cf Uses a game switch/variable that doesn't exist (#{n})
+60eb5de9 The event uses number {n}, but the game's list is shorter.
+ab5e6d39 The event does not work as intended.
+27e3bd51 Pick an existing switch/variable in the event.
+5e339cd0 A game switch/variable has no name (#{n})
+e3546a24 It is used, but has no name in the Database.
+15f64977 Nothing visible. It is just easy to mix up.
+a8723260 Give it a name in the Database.
+bd3955c1 A reusable block is defined twice: {name}
+0a743f0a Two definitions share this name.
+4d983cee Only one version is used.
+08c1e9fa Delete or rename one of them.
+20982092 A reusable block will not load
+3ed9bdd5 Its scene is missing the "widget" tag.
+4f7fa681 Every scene that uses it shows an error.
+a3c57c94 Add the tag "widget" to that scene in Twine.
+769d38d3 An unused reusable block: {name}
+91caae31 It is defined but never used.
+92f3557e Nothing breaks.
+48518178 Nothing needed.
+549a08bd A missing quote mark in page code
+2616e9ea A quote mark " is missing inside a page tag (often a picture).
+c1ac2a6e The picture or element may not show, or the layout breaks.
+a82d56f5 A page box is not closed: <{tag}> on line {line}
+5c73814e The <{tag}> on line {line} is never closed with </{tag}>.
+bff958b5 Text or pictures may end up in the wrong place or with the wrong style.
+b587a89d Add </{tag}> where the box should end.
+f1a6f13d An extra closing tag: </{tag}> on line {line}
+d887494b The </{tag}> on line {line} closes a box that was never opened.
+f3d6de5f Delete the extra </{tag}>, or add the missing <{tag}>.
+1359ec48 Page boxes that are not closed properly
+c5eaf192 A layout box (like <div> or <center>) is opened but not closed, or closed too often.
+2055d18e Add the missing closing tag, or remove the extra one.
+3ec38cbd Two things share the same name tag (id)
+0bf6eee0 Each id must be unique on the page.
+ff424805 Buttons that update this part may change the wrong spot.
+3d5e5acf Give each one its own id.
+9ef419aa A picture or link with no file
+41c88499 The tag points at nothing.
+30064ec6 A broken picture icon may show.
+0e8cdbfd Fill in the file name, or remove the tag.
+8c62dd1b Picture sizes written in a way browsers ignore
+c97c9dc5 Picture sizes like height="450wv" have letters the browser does not understand ("wv" is not a unit).
+38f858bc Pictures still show, just at a fixed pixel size. Usually harmless.
+c33de17c Optional: remove the letters, e.g. height="450".
+b2030de7 A style name that doesn't match: "{name}"
+912e16dc The look of this part is chosen by the name "{name}", but the style is called "{near}".
+93f6e366 This part shows without its intended colours or layout.
+de3efded A style name with no style: "{name}"
+46cc76e2 No style rule uses this name.
+3a6cc944 Usually harmless.
+d91f6b60 Unfinished text players can see
+a2d31ceb The developer left a note like "PLACEHOLDER" or "TODO" in the story.
+33f40845 Players see this note, or the scene is unfinished.
+a398b7c0 Write the real text, or remove the note.
+94b62097 Spelling: "{wrong}" should be "{a}" or "{b}"
+45919c5c A common spelling mistake. It can mean two different words.
+979c6e99 Players see the misspelled word.
+d3631b3f Read the sentence and change "{wrong}" to "{a}" or to "{b}", whichever fits.
+a89ee2d1 Spelling: "{wrong}" should be "{right}"
+bf0afa72 A common spelling mistake.
+7e32de5a Change "{wrong}" to "{right}".
+b2d44d92 Doubled word: "{words}"
+670755a1 The same word is typed twice in a row.
+f901109b Players see the doubled word.
+c8f90b31 Delete one of them.
+fd88a85b Shows a picture that doesn't exist: "{name}"
+d99288f0 No picture with this name is defined, and no file in images/ matches.
+61cd07a0 Players see a placeholder or an error.
+3b215908 Add the picture, or fix the name.
+a08bad60 The game has no ID number
+91a06fd9 Twine uses an ID to tell stories apart.
+7ff45b55 Publish the story again from Twine.
+ce8325ca Shows a red error box when played: "{name}"
+212a3e36 When the scene was actually played, the game showed this error: {msg}
+1cda4ad4 Players see a red error box in this scene, and part of it is missing.
+fe183b9c Look at the problems listed for this same scene - they usually explain the cause.
+5a4709f8 A script cannot even be read by the browser
+417e0923 The browser found a typing error in this script, so none of it runs.
+711c9902 Features made by this script (special commands, settings) are missing or broken.
+289bf8bb Look for a missing bracket, quote or comma on this line or the line before.
+fefc36ad Pictures or sounds missing while playing
+d47a66be These files were requested while the scenes were played, but they do not exist.
+80b8b71b Players see broken pictures or hear nothing in some scenes.
+9733445f Add the missing files, or fix their names.
+4f504ebe An error while the game starts
+92243591 The browser reported an error while loading the game.
+2fea6477 The start screen or some features may be broken.
+608156d3 Look at the game's main script for the problem named in the message.
+aa1a0c6f Delete them if you are sure they are not needed. (Some may be picked by the game in clever ways the scanner can't see.)
+231d0f49 Misspelled command: {name}
+388bf136 Unknown command: {name}
+9b686aa1 The game doesn't know this command. It is almost certainly a typo of {near}.
+d1f769ee The game doesn't know this command.
+6a1cce2c Change it to {near}.
+46c692e0 Check the spelling of the command.
+6db67833 A value that never gets set: {name}
+c0ceb098 The game uses "{name}", but everywhere else it is called "{near}". It's a typo.
+8acbe929 The game checks or shows "{name}", but nothing ever gives it a value.
+fbb2c20c Give it a starting value, or fix the name.
+4f2e0c01 Nothing needed, unless one was meant to be used.
+33e186ef A value the game never uses: {name}
+72bf1ee8 This changes "{name}", but the game only ever looks at "${near}". It's a typo.
+7f81aa2e "{name}" gets changed, but the game never looks at it.
+fd3f859d The change is lost - for example a stat increase that never counts.
+4857ea9f Nothing breaks. It may be left over from older versions.
+d2118ba7 Change "{name}" to "${near}".
+3867ee62 Nothing needed, unless it was meant to be used.
+11e31f78 "{name}" was never created. It is probably a typo of "{near}".
+8f03aa6d "{name}" was never created at the start of the game.
+dd8d9eef Create it at the start of the game.
+37a88891 Usually nothing: the browser closes it by itself at the end of the scene.
+a62731f6 passage
+f8de5ecc One page or scene of a Twine game. Each passage has a name, and links go from one passage to another.
+ea5e0445 scene
+ad88890f One page of the story. In Twine this is called a "passage".
+78f3a3d9 macro
+480a06b0 A game command written between << and >>, like <<if>> or <<set>>. The game runs it instead of showing it.
+1925f793 command
+410ae6be An instruction for the game, like "show this picture" or "if the player has 5 gold". In SugarCube they are written between << and >>.
+b46d0172 variable
+2ef301de A named value the game remembers, like $gold or $mother_love. It starts with $ in SugarCube.
+f32b67c7 value
+a746abd2 A number, word or yes/no the game remembers, like the amount of gold.
+afad9a69 condition
+1dc59f8f A check like "$gold gte 5" (does the player have at least 5 gold?). The text after it only shows when the check is true.
+5e9b60f6 tag
+1df6d68c A marker in code. Opening tags like <<if>> start a part, closing tags like <</if>> end it.
+4f0aa52d link
+5afc9751 Clickable text that takes the player to another scene. In Twine: [[Text|Scene name]].
+d3ecb0d8 include
+bbc9ce26 A command that pastes another passage into this one: <<include "Name">>.
+ff700e02 widget
+fd5df966 A home-made command defined once and reused in many scenes.
+9f738ce8 HTML
+16d38297 The language web pages are written in. Tags like <img> (picture) and <div> (box).
+194e13da CSS
+28d26723 Style rules: colours, sizes and layout. A "class" connects an element to a style.
+ee620923 JavaScript
+2d04472d The programming language of web pages. Games use it for special features.
+cb5346a0 script
+302bcb23 A piece of program code (usually JavaScript).
+0c4da6cb Twine
+5deecf78 The free program many text games are made with. It publishes the game as one .html file.
+9b2ab238 SugarCube
+5a15607f The most common "story format" (engine) for Twine games. It provides the << >> commands.
+5e2fb0c2 publish
+9eb9fe5a In Twine: Build > Publish to File. It writes the playable .html file from your story.
+1af607c7 file path
+3bee6183 Where a file is, like images/hero.png (the folder "images", the file "hero.png").
+264f39ca line
+f44c6b66 One row of text in the file. Text editors show line numbers on the left.
+3cc46d20 indent
+2a14602c Spaces at the start of a line. Some engines use them to know which lines belong together.
+64c65374 label
+0419b517 A named spot in a Ren'Py or ChoiceScript story that other parts can jump to.
+40a22a4a knot
+fba17772 A named section of an Ink story. "-> name" jumps to it.
+fd8c7c8e plugin
+45e375e0 An extra script added to an RPG Maker game.
+67db3ab6 1. What is a passage (scene)?
+6cfa54e4 2. Commands between << and >>
+fcaf062f 3. Opening and closing
+47887091 4. Values the game remembers ($variables)
+c3bcb980 5. "If" checks
+d8cc0b48 6. Pictures and sounds
+c413d282 7. Editing safely
+fb4c49ae 8. Reading this app
+a9af7910 Start here: open the game's .html file (or a Ren'Py, RPG Maker, Ink or ChoiceScript game folder). The check starts by itself.
+de845e69 "Simple words" explains everything in plain English. Switch it off to see technical details.
+6c84c615 Developer or Player: players get a short, spoiler-light list of broken scenes and a bug report for the developer. Developers get the fixing tools.
+ba413de9 All problems found. Red is broken, yellow is probably broken, blue is worth checking. Click one to see what to do.
+476c1a70 Here you see what is wrong, what players will notice and exactly how to fix it - with the line before and after.
+e871d7cc The Fix wizard takes you through the problems one at a time, and checks each fix for you.
+3d56d049 Play-test plays every scene in an invisible browser and finds errors that only show while playing.
+41da0a4f Tools: back up the game, test a line before you change it, compare two versions, write a bug report, watch for changes.
+75d05bed Help: lessons, a word list, this tour, and comfort settings like extra-large text.
+52c5f193 The code health score: 100% excellent, 90% great, 80% good, 70% fine.
+bcecc3cb A Twine game is made of passages. Each passage is one scene: some text, maybe a picture, and links to other passages.
+b1f433c6 Links look like this. The part before | is what the player sees, the part after | is the name of the passage it opens:
+33dd3c05 The name must match exactly, including capital letters and spaces. "kitchen" and "Kitchen" are different passages.
+14a03cdc SugarCube games use commands written between << and >>. The game runs them instead of showing them.
+fffc20ea Always exactly two < at the start and two > at the end. One too many or too few breaks the command:
+1e192fbd Some commands are like brackets: they open a part and must be closed. <<if>> is closed by <</if>>.
+fd08a19b If the closing <</if>> is missing, the game shows a red error box. If there is one too many, too.
+b25bf333 A word starting with $ is a value the game remembers between scenes, like $gold or $mother_love.
+d4d0415d Capital letters count: $Gold and $gold are two different values. A typo creates a new, empty value, so the change is lost.
+340aacf8 To change a value use "to", "+=" or "-=". A plain "-" calculates but changes nothing:
+87dc8b35 Inside an "if", compare with "is", "isnot", "gte" (at least), "lte" (at most). A single "=" is wrong there:
+add346a2 "and" is checked before "or". Use brackets to group, otherwise the check can be true at the wrong time:
+f07da221 Pictures are shown with an <img> tag. The path says where the file is, starting from the game's folder:
+9e333b42 Use / between folders. \ works on Windows only. Capital letters must match the real file name for phones, Macs and websites.
+9d1c8406 Every quote mark " that opens must close, or the picture will not show.
+6f7151f5 Before changing anything, make a backup (Tools > Back up the game file).
+73b5381e If the game is made in Twine, make changes in Twine and publish again. Changes made directly in the .html file are lost the next time the game is published from Twine.
+0dab15d3 If you only have the .html file (no Twine story), edit it with a text editor like Notepad++. Inside the .html file, < and > are written as &lt; and &gt; - the app shows the exact text to copy.
+a877adb7 After each change: save, reload the game in the browser, and press "I fixed it - check" in this app.
+e6cfd88c Red = broken: players will run into it. Yellow = probably broken. Blue = worth checking, often fine.
+3c06ac34 Start with the "Start here" list in the summary, or use the Fix wizard: it walks you through one problem at a time.
+f5a4fb88 "Mark as intentional" hides a finding you have checked and want to keep. It stays hidden for this game.
+f3979521 About 1 minute
+d621d05d 5-15 minutes
+bea680e1 Needs the developer (a story or design decision)
+0c6c4102 Optional
+e53abb3c Easy fix
+c4f93c0c Takes a little care
+a22663d7 Needs the developer
+230659f7 Probably yes, but have a quick look.
+9c393632 Yes. It is in a scene nobody can reach, so players never see it. Fix it only if you add a link to that scene later.
+6d9d36d5 No. Players will run into this.
+ddad7bf2 Only if you have checked the logic and it does what you want. Then mark it as intentional.
+6cf97a3f Yes, if the scene is old or not meant to be played.
+d54dbf6e Yes. Nothing breaks.
+3b411bc1 Yes, if the game is only played on Windows.
+667e089a Yes, for now. It may break in a future engine update.
+ca7eea8c Yes, but players will see the typo.
+6225e68e Only if the scene is unfinished on purpose.
+47ecb09c Yes. Pictures still show.
+178ca96e Yes. Nothing visible changes.
+e2fca6c0 Usually yes. It is often left over from older versions.
+bcc248b9 Better not. It is very likely a real mistake.
+557f2555 not
+cffa50a3 and
+1758356d or
+6981b0db No scene links to "{name}" in a way the scanner can follow. Players may never see it, or it is reached through code that builds the scene name from variables.
+0f56183f Players reach "{name}" from {n} place(s):
+02e974ba This is the first scene of the game.
+5ffe533b true
+7cb6efb9 false
+1ed06825 a link
+3d22ef57 an include
+ccdfd8c1 an automatic jump
+3f80e4d1 From "{src}" ({how}), when: {cond}
+084fcdcf From "{src}" ({how}), always.
+8adbc573 …and more.
+1aafbf54 Excellent
+bd846adf Great
+61dedcf0 Good
+226d7ec9 Fine
+eafabce9 Needs work
+4e0fa437 Poor
+75fb2b10 Reading file
+ac133acf Finding story data
+456caef0 Collecting scripts and styles
+fc404c89 Checking passages and links
+6a4d36f9 Checking macro tags
+546de9d0 Checking conditions and code logic
+c338107e Checking variables
+5730c93f Checking HTML tags
+ea4c65ed Checking CSS classes
+d874e65d Checking images, audio, video and files
+6517d389 Checking text (typos, placeholders)
+87beeee4 Checking JavaScript
+7b7efd8b Checking story-format rules
+25f3b361 Reading the {label} game
+a28b6c50 Checking files for damage
+5aedb280 Starting the invisible browser
+f5a5071d Loading the game
+8466e7c7 Checking scripts with the browser's JavaScript engine
+bf197daa Playing scenes ({mode}): {k} of {n}
+f70cf464 Play-test finished
