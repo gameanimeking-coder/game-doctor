@@ -33,5 +33,6 @@
   "<<click>> is an old SugarCube macro",
   "Passage \"Lonely\" is never linked"
  ],
- "must_not": []
+ "must_not": [],
+ "must_not_text": []
 }

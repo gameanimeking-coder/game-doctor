@@ -16,5 +16,6 @@
   "Image \"eileen happy\"",
   "Image \"bg room\"",
   "Audio not found: audio/theme.ogg"
- ]
+ ],
+ "must_not_text": []
 }

@@ -16,5 +16,6 @@
   "Image not found: img/faces/Actor1",
   "Audio not found: audio/bgm/Theme1",
   "GoodPlugin"
- ]
+ ],
+ "must_not_text": []
 }

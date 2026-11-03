@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><title>Test</title></head><body>
+<tw-storydata name="Test" startnode="1" creator="Twine" creator-version="2.6" format="Harlowe" format-version="1.0" ifid="11111111-2222-3333-4444-555555555555" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">const base="img/minigame/";const pics={"001":{images:["001/1 thick.jpg"]}};
+const lost=["zzz/nothing here.jpg"];
+const fmts=new Set(["","mp3","opus"]);
+function q(e){e=e.replace(/&quot;/g,'"');return e.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;"})[c])}
+const t=`a${fmts.size?`b${1}`:"c"}d`;
+</script>
+<tw-passagedata pid="1" name="Start" tags="" position="0,0" size="100,100">&lt;audio src=&quot;aud/song.mp3&quot;&gt;&lt;/audio&gt;&lt;audio src=&quot;aud/rain.wav&quot;&gt;&lt;/audio&gt;
+&lt;img src=&quot;pics/bell.jpg&quot;&gt;
+(link-goto: &quot;Storm&quot;, &quot;storm night&quot;)
+(set: _h to &quot;&lt;script&gt;&quot; + &quot;go(&quot; + &quot;&lt;/script&gt;&quot;)
+(set: $pic to &quot;places/bar.jpg&quot;)&lt;img src=&quot;places/door.jpg&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="2" name="storm night" tags="" position="0,0" size="100,100">(if: $fem)[(display: &quot;storm night girl&quot;)](else:)[(display: &quot;storm night guy&quot;)]</tw-passagedata>
+<tw-passagedata pid="3" name="storm night girl" tags="" position="0,0" size="100,100">Thunder. [[Start]]</tw-passagedata>
+</tw-storydata></body></html>

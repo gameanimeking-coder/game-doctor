@@ -7,5 +7,6 @@
   "JavaScript brackets/quotes problem",
   "Class \"boxx\" does not match"
  ],
- "must_not": []
+ "must_not": [],
+ "must_not_text": []
 }

@@ -14,5 +14,6 @@
  "must_not": [
   "*set on undeclared variable \"gold\"",
   "*goto to missing label \"top\""
- ]
+ ],
+ "must_not_text": []
 }

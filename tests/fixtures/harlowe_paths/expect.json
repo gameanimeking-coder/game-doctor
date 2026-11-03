@@ -1,0 +1,20 @@
+{
+ "open": "game.html",
+ "must": [
+  "Warning|Missing files|Image not found: zzz/nothing here.jpg",
+  "Warning|Missing files|Audio not found: aud/rain.wav (a ogg file is there instead)",
+  "Error|Missing files|Image not found: pics/bell.jpg",
+  "Error|Missing files|Image not found: places/door.jpg",
+  "Harlowe link to missing passage \"storm night guy\""
+ ],
+ "must_not": [
+  "Image not found: 001/1 thick.jpg",
+  "Image not found: places/bar.jpg",
+  "Audio not found: aud/song.mp3",
+  "JavaScript brackets/quotes problem"
+ ],
+ "must_not_text": [
+  "probably \"aud/bell.opus\"",
+  "Did you mean \"storm night\"?"
+ ]
+}

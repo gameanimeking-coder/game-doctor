@@ -4,5 +4,6 @@
  "must_not": [
   "Error|",
   "Warning|"
- ]
+ ],
+ "must_not_text": []
 }

@@ -7,5 +7,6 @@
  ],
  "must_not": [
   "s.gold is used but never set"
- ]
+ ],
+ "must_not_text": []
 }

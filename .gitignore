@@ -10,3 +10,5 @@ selftest-report.txt
 # test snapshots contain scene names and paths from other people's games
 tests/snapshots/
 forum post (F95zone).txt
+# notes for Claude (personal, stays local)
+CLAUDE.md

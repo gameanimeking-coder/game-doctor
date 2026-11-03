@@ -297,10 +297,12 @@ class Scanner:
                              what=f'The story says it starts at passage id {startnode}, but no passage has that id.',
                              fix='In Twine, right-click (or hover) the passage the game should start on and choose "Start Story Here".')
             # Story JavaScript / Stylesheet blocks
+            # Twine stores these two as they are (not HTML-escaped like passages): unescaping them would turn
+            # "&quot;" inside the script into a real quote and break it
             for sm in re.finditer(r'<script[^>]*id="twine-user-script"[^>]*>(.*?)</script>', raw, re.S):
-                self.js_text += '\n' + html.unescape(sm.group(1))
+                self.js_text += '\n' + sm.group(1)
             for sm in re.finditer(r'<style[^>]*id="twine-user-stylesheet"[^>]*>(.*?)</style>', raw, re.S):
-                self.css_text += '\n' + html.unescape(sm.group(1))
+                self.css_text += '\n' + sm.group(1)
         elif re.search(r'<div[^>]+tiddler="', raw):
             self.format = 'Twine 1'
             for pm in re.finditer(r'<div\b[^>]*tiddler="([^"]*)"([^>]*)>(.*?)</div>', raw, re.S):
@@ -428,6 +430,8 @@ class Scanner:
             near = _close(t, names_list, cutoff=0.82)
             if near and re.sub(r'\d+', '#', near) == re.sub(r'\d+', '#', t) and near.lower() != t.lower():
                 near = None  # "rank 4" vs "rank 3" are different passages, not a typo
+            if near == p.name:
+                near = None  # pointing a passage at itself would loop forever, never suggest it
             if near:
                 referenced[near] += 1
             if re.match(r'https?://|mailto:|#', t):
@@ -1076,6 +1080,7 @@ class Scanner:
         dynamic = 0
         ref_count = 0
         by_problem = collections.defaultdict(list)
+        in_tag = set()  # paths written straight into an <img src=...>-style tag at least once
         backslash = collections.defaultdict(list)
 
         sources = [(p, p.text) for p in self.passages]
@@ -1117,10 +1122,47 @@ class Scanner:
                     referenced.add(key)
                 else:
                     by_problem[('missing', path)].append(ppos)
+                    if p == '(page)' or m.group(4) is None:
+                        in_tag.add(path)
         self._asset_ref_count = ref_count
+
+        # Second look at "missing" files, so games that build paths in code are not flooded with false alarms.
+        by_stem = collections.defaultdict(list)  # file name without its ending -> every path with that name
+        for k in files_lower:
+            by_stem[k.rsplit('/', 1)[-1].rsplit('.', 1)[0]].append(k)
+        # file types the game's code names on their own ("opus", ".ogg"): a sign it swaps formats while playing
+        code_exts = {e.lower() for e in re.findall(r'["\']\.?(%s)["\']' % ext_re, self.js_text, re.I)}
+        format_swap = {}  # path -> the file with another ending that is there instead
+        for key in [k for k in by_problem if k[0] == 'missing']:
+            places = by_problem[key]
+            rel = os.path.relpath(os.path.normpath(os.path.join(base, key[1].replace('\\', '/'))), base).replace('\\', '/').lower()
+            stem, ext = rel.rsplit('.', 1)
+            same_kind = lambda k: K.asset_kind(k.rsplit('.', 1)[-1]) == K.asset_kind(ext)
+            looks = [k for k in by_stem.get(stem.rsplit('/', 1)[-1], []) if k.rsplit('.', 1)[0] == stem]
+            if all(pp is None for pp, _ in places) or key[1] not in in_tag:
+                # Only named as text in code (JavaScript, or a quoted name in a scene's macros): the code usually
+                # puts a folder in front of it ("img/" + "places/bar.jpg"), so a file ending in this path anywhere
+                # counts. Names straight in an <img src=...> tag are checked strictly: a wrong path there is broken.
+                tail = '/' + stem.lstrip('./')
+                looks += [k for k in by_stem.get(stem.rsplit('/', 1)[-1], []) if k.rsplit('.', 1)[0].endswith(tail)]
+            found = [k for k in looks if k.rsplit('.', 1)[-1] == ext]
+            if found:
+                referenced.update(found)
+                del by_problem[key]
+                continue
+            # same name with another ending of the same kind (song.mp3 -> song.opus)
+            alt = [k for k in looks if same_kind(k)]
+            if alt:
+                referenced.update(alt)
+                if ext in code_exts and alt[0].rsplit('.', 1)[-1] in code_exts:
+                    del by_problem[key]  # the game's code names both file types: it switches while playing
+                else:
+                    format_swap[key[1]] = files_lower[alt[0]]
 
         def where(places):
             names = [pp.name for pp, _ in places if pp]
+            if not names:
+                return "the game's JavaScript"
             c = collections.Counter(names)
             return ', '.join(f'"{n}"' + (f' ×{k}' if k > 1 else '') for n, k in list(c.items())[:6]) + (' …' if len(c) > 6 else '')
 
@@ -1132,14 +1174,28 @@ class Scanner:
             snip = self.snippet_at(p, off) if p else path
             ext = path.rsplit('.', 1)[-1].lower()
             label = K.asset_kind(ext)
-            if kind == 'missing':
+            if kind == 'missing' and path in format_swap:
+                self.add(WARNING, 'Missing files', f'{label} not found: {path} (a {format_swap[path].rsplit(".", 1)[-1]} file is there instead)',
+                         **line_args, snippet=snip,
+                         what=f'The game asks for "{path}", but the folder has "{format_swap[path]}". Many games switch file types '
+                              f'in their code while playing; if this one does not, it will not load. Used in: {where(places)}.',
+                         fix=f'If it does not load in the game, change the name to "{format_swap[path]}".')
+            elif kind == 'missing' and all(pp is None for pp, _ in places):
+                self.add(WARNING, 'Missing files', f'{label} not found: {path}', **line_args, snippet=snip,
+                         what=f'This name is only in the game\'s JavaScript and no file ending in it is in the game folder. '
+                              f'The script may put a folder in front of it that this check cannot see. Used in: {where(places)}.',
+                         fix='If the picture or sound is missing while playing, put the file in the game folder.')
+            elif kind == 'missing':
                 fname = path.replace('\\', '/').rsplit('/', 1)[-1].lower()
                 stem = fname.rsplit('.', 1)[0]
                 folder = os.path.dirname(path.replace('\\', '/')).lower()
-                cands = [r for r in files_lower.values() if r.rsplit('/', 1)[-1].lower().rsplit('.', 1)[0] == stem]
+                # only files of the same kind: a sound is never "the picture meant"
+                cands = [r for r in files_lower.values() if r.rsplit('/', 1)[-1].lower().rsplit('.', 1)[0] == stem
+                         and K.asset_kind(r.rsplit('.', 1)[-1].lower()) == label]
                 near = []
                 if not cands:
-                    pool = [r for r in files_lower.values() if os.path.dirname(r).lower() == folder]
+                    pool = [r for r in files_lower.values() if os.path.dirname(r).lower() == folder
+                            and K.asset_kind(r.rsplit('.', 1)[-1].lower()) == label]
                     cands = [r for r in pool if file_typo(path, r)][:1]
                     near = difflib.get_close_matches(fname, [r.rsplit('/', 1)[-1] for r in pool], n=1, cutoff=0.75)
                 if cands:
@@ -1279,13 +1335,16 @@ class Scanner:
                 blocks.append((p, p.raw_text, 0))
             else:
                 for m in SCRIPT_BODY_RE.finditer(p.text):
+                    if m.start() and p.text[m.start() - 1] in '"\'':
+                        continue  # "<script>" + ... is text the passage builds up, not a script of its own
                     body = m.group(2) if m.group(2) is not None else m.group(5)
                     if body is not None and not re.search(r'\bsrc\s*=', m.group(4) or ''):
                         blocks.append((p, body, m.start(2) if m.group(2) is not None else m.start(5)))
         if self.is_twine:
             for sm in re.finditer(r'<script[^>]*id="twine-user-script"[^>]*>(.*?)</script>', self.raw, re.S):
                 line = self.raw.count('\n', 0, sm.start(1)) + 1
-                blocks.append((Passage('', 'Story JavaScript', ['script'], html.unescape(sm.group(1)), html.unescape(sm.group(1)), line), html.unescape(sm.group(1)), 0))
+                code = sm.group(1)  # stored as it is, see parse()
+                blocks.append((Passage('', 'Story JavaScript', ['script'], code, code, line), code, 0))
         for p, code, base in blocks:
             problem = _js_bracket_problem(code)
             if problem:
@@ -1362,14 +1421,43 @@ def _js_bracket_problem(code):
     stack = []
     i, n = 0, len(code)
     prev_sig = ''
+    word_re = re.compile(r'[\w$]+')
+
+    def template_end(j):
+        """Read the text part of `text ${...} text` from j: returns (where to go on, True if a ${ starts there),
+        or (None, False) when the closing ` never comes."""
+        while j < n:
+            if code[j] == '\\':
+                j += 2
+                continue
+            if code[j] == '`':
+                return j + 1, False
+            if code.startswith('${', j):
+                return j + 2, True
+            j += 1
+        return None, False
+
     while i < n:
         c = code[i]
-        if c in '"\'`':
+        if c == '`' or (c == '}' and stack and stack[-1][0] == '${'):
+            # template text: `...${ code }...` (the code part can hold more templates)
+            start = i if c == '`' else stack.pop()[1]
+            j, inner = template_end(i + 1)
+            if j is None:
+                return start, 'text string starting with ` is never closed'
+            if inner:
+                stack.append(('${', start))
+                prev_sig = '('
+            else:
+                prev_sig = 'x'
+            i = j
+            continue
+        if c in '"\'':
             q, j = c, i + 1
             while j < n and code[j] != q:
                 if code[j] == '\\':
                     j += 1
-                elif code[j] == '\n' and q != '`':
+                elif code[j] == '\n':
                     return i, f'text string starting with {q} is not closed on its line'
                 j += 1
             if j >= n:
@@ -1387,7 +1475,7 @@ def _js_bracket_problem(code):
                 return i, 'comment /* is never closed with */'
             i = j + 2
             continue
-        if c == '/' and prev_sig in ('', '(', ',', '=', ':', '[', '!', '&', '|', '?', '{', '}', ';', 'return'):
+        if c == '/' and prev_sig in ('', '(', ',', '=', ':', '[', '!', '&', '|', '?', '{', '}', ';', 'return', 'op'):
             # regex literal
             j = i + 1
             in_class = False
@@ -1413,16 +1501,16 @@ def _js_bracket_problem(code):
             stack.pop()
         if not c.isspace():
             if c.isalnum() or c in '_$':
-                m = re.match(r'[\w$]+', code[i:])
-                word = m.group()
-                prev_sig = 'return' if word in ('return', 'typeof', 'case', 'in', 'of') else 'x'
+                word = word_re.match(code, i).group()  # match in place: copying the rest of a big script per word is very slow
+                prev_sig = 'return' if word in ('return', 'typeof', 'case', 'in', 'of', 'else', 'do', 'void', 'delete',
+                                                 'throw', 'new', 'yield', 'await', 'instanceof') else 'x'
                 i += len(word)
                 continue
-            prev_sig = c if c in '(,=:[!&|?{};' else 'x'
+            prev_sig = c if c in '(,=:[!&|?{};' else 'op' if c in '+-*%<>~^' else 'x'
         i += 1
     if stack:
         c, off = stack[-1]
-        return off, f'"{c}" is never closed'
+        return off, ('text string starting with ` is never closed' if c == '${' else f'"{c}" is never closed')
     return None
 
 

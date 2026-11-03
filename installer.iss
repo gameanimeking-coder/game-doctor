@@ -2,7 +2,7 @@
 ; Build it with make_installer.bat (after build.bat has made dist\GameDoctor.exe).
 
 #define AppName "Game Doctor"
-#define AppVersion "2.0.3"
+#define AppVersion "2.0.4"
 #define AppExe "GameDoctor.exe"
 
 [Setup]

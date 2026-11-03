@@ -87,6 +87,8 @@ def run_fixtures():
         titles = [f'{i.severity}|{i.category}|{i.title}' for i in res.issues]
         missing = [m for m in spec.get('must', []) if not any(m.lower() in t.lower() for t in titles)]
         unwanted = [m for m in spec.get('must_not', []) if any(m.lower() in t.lower() for t in titles)]
+        texts = [f'{i.title}: {i.what} {i.fix}' for i in res.issues]
+        unwanted += [f'text "{m}" in: {t[:160]}' for m in spec.get('must_not_text', []) for t in texts if m.lower() in t.lower()]
         scanner_errors = [t for t in titles if '|Scanner|' in t]
         if missing or unwanted or scanner_errors:
             ok = False

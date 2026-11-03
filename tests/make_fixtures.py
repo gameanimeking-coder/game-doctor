@@ -35,8 +35,9 @@ def twine(fmt, passages, script='', style='', start=1):
     return (f'<!DOCTYPE html><html><head><title>Test</title></head><body>\n'
             f'<tw-storydata name="Test" startnode="{start}" creator="Twine" creator-version="2.6" format="{fmt}" '
             f'format-version="1.0" ifid="11111111-2222-3333-4444-555555555555" options="" tags="" zoom="1" hidden>'
-            f'<style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">{html.escape(style)}</style>'
-            f'<script role="script" id="twine-user-script" type="text/twine-javascript">{html.escape(script)}</script>\n'
+            # Twine writes the story stylesheet and script as they are, not HTML-escaped
+            f'<style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">{style}</style>'
+            f'<script role="script" id="twine-user-script" type="text/twine-javascript">{script}</script>\n'
             + '\n'.join(out) + '\n</tw-storydata></body></html>\n')
 
 
@@ -49,8 +50,10 @@ def media_files(d):
     write(os.path.join(d, 'images', 'photo.jpg'), png_bytes())                  # PNG named .jpg
 
 
-def spec(d, open_, must, must_not=()):
-    write(os.path.join(d, 'expect.json'), json.dumps(dict(open=open_, must=must, must_not=list(must_not)), indent=1))
+def spec(d, open_, must, must_not=(), must_not_text=()):
+    # must_not_text: words that must not be in any finding's explanation or suggested fix
+    write(os.path.join(d, 'expect.json'), json.dumps(dict(open=open_, must=must, must_not=list(must_not),
+                                                          must_not_text=list(must_not_text)), indent=1))
 
 
 def sugarcube():
@@ -120,6 +123,38 @@ def harlowe():
                           'Single "=" inside a condition', '(if:) has no hook', 'Hook "[" is never closed', '$goldd is used but never set',
                           'Image not found: images/gone.png'],
          must_not=['Unknown macro (if:)', 'Unknown macro (else:)', 'Unknown macro (set:)'])
+
+
+def harlowe_paths():
+    """Things a big game does that must not be reported as broken (found in X-Change Life)."""
+    d = os.path.join(FIX, 'harlowe_paths')
+    write(os.path.join(d, 'img', 'minigame', '001', '1 thick.jpg'), png_bytes())
+    write(os.path.join(d, 'img', 'places', 'bar.jpg'), png_bytes())
+    write(os.path.join(d, 'img', 'places', 'door.jpg'), png_bytes())
+    write(os.path.join(d, 'aud', 'song.opus'), b'OggS' + b'\x00' * 60)
+    write(os.path.join(d, 'aud', 'rain.ogg'), b'OggS' + b'\x00' * 60)
+    write(os.path.join(d, 'aud', 'bell.opus'), b'OggS' + b'\x00' * 60)
+    script = ('const base="img/minigame/";const pics={"001":{images:["001/1 thick.jpg"]}};\n'  # folder added in code
+              'const lost=["zzz/nothing here.jpg"];\n'
+              'const fmts=new Set(["","mp3","opus"]);\n'  # the game switches mp3 -> opus itself
+              'function q(e){e=e.replace(/&quot;/g,\'"\');return e.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;"})[c])}\n'
+              'const t=`a${fmts.size?`b${1}`:"c"}d`;\n')
+    passages = [
+        ('Start', '', '<audio src="aud/song.mp3"></audio><audio src="aud/rain.wav"></audio>\n'
+                      '<img src="pics/bell.jpg">\n(link-goto: "Storm", "storm night")\n'
+                      '(set: _h to "<script>" + "go(" + "</script>")\n'
+                      '(set: $pic to "places/bar.jpg")<img src="places/door.jpg">'),  # macros add "img/" in front
+        ('storm night', '', '(if: $fem)[(display: "storm night girl")](else:)[(display: "storm night guy")]'),
+        ('storm night girl', '', 'Thunder. [[Start]]'),
+    ]
+    write(os.path.join(d, 'game.html'), twine('Harlowe', passages, script=script))
+    spec(d, 'game.html', ['Warning|Missing files|Image not found: zzz/nothing here.jpg',
+                          'Warning|Missing files|Audio not found: aud/rain.wav (a ogg file is there instead)',
+                          'Error|Missing files|Image not found: pics/bell.jpg',
+                          'Error|Missing files|Image not found: places/door.jpg',
+                          'Harlowe link to missing passage "storm night guy"'],
+         must_not=['Image not found: 001/1 thick.jpg', 'Image not found: places/bar.jpg', 'Audio not found: aud/song.mp3', 'JavaScript brackets/quotes problem'],
+         must_not_text=['probably "aud/bell.opus"', 'Did you mean "storm night"?'])
 
 
 def chapbook():
@@ -235,6 +270,6 @@ def choicescript():
 if __name__ == '__main__':
     if os.path.isdir(FIX):
         shutil.rmtree(FIX)
-    for fn in (sugarcube, clean_sugarcube, harlowe, chapbook, snowman, plain_html, renpy, rpgmaker, ink, choicescript):
+    for fn in (sugarcube, clean_sugarcube, harlowe, harlowe_paths, chapbook, snowman, plain_html, renpy, rpgmaker, ink, choicescript):
         fn()
     print('fixtures written to', FIX)

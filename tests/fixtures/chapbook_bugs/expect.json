@@ -10,5 +10,6 @@
  "must_not": [
   "gold is used but never set",
   "Unknown insert {link to"
- ]
+ ],
+ "must_not_text": []
 }

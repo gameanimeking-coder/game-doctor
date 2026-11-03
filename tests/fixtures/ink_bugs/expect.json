@@ -11,5 +11,6 @@
  "must_not": [
   "Divert to missing knot/stitch \"town\"",
   "Divert to missing knot/stitch \"END\""
- ]
+ ],
+ "must_not_text": []
 }
