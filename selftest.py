@@ -741,6 +741,10 @@ def start_fake_ai():
 def main(args):
     opts = {'playtest': '--playtest' in sys.argv}
     tmp = tempfile.mkdtemp(prefix='gbs-selftest-')
+    try:   # a console that can't show a character (e.g. ⚠) must not fail a check
+        sys.stdout.reconfigure(errors='replace')
+    except (AttributeError, ValueError):
+        pass
     print('Self-test working folder:', tmp)
     game = os.path.join(tmp, os.path.basename(GAME))
     shutil.copy2(GAME, game)

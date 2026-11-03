@@ -272,7 +272,22 @@ def rpa_names(path):
         return set()
 
 
+# files Ren'Py itself ships with, so a game can use them without having them in its folder
+RENPY_BUILTIN = {'DejaVuSans.ttf', 'DejaVuSans-Bold.ttf', 'SourceHanSansLite.ttf'}
+
+
 class RenPy(EngineScan):
+    def _image_shown(self, name, files):
+        """True when an "image NAME = ..." picture is used anywhere other than where it is defined."""
+        if not hasattr(self, '_words'):
+            self._words = collections.Counter()
+            for p in files:
+                for l in self.files[p]:
+                    if not l.lstrip().startswith('#'):
+                        self._words.update(re.findall(r'[\w]+', l))
+        # seen only once = only in its own definition
+        return self._words[name.split()[0]] > 1
+
     engine, label = 'renpy', "Ren'Py"
     SPECIAL = {'start', 'splashscreen', 'main_menu', 'after_load', 'quit', 'after_warp', 'before_main_menu',
                'hide_windows', 'save_screenshot', 'main_menu_screen'}
@@ -325,7 +340,7 @@ class RenPy(EngineScan):
                 for m in re.finditer(r'\b(jump|call)\s+(?!expression\b|screen\b)([\w.]+)', s):
                     if s.startswith(('jump', 'call')) or re.search(r'\bJump\(|\bCall\(', s) is None:
                         jumps.append((m.group(2), path, n, m.group(1)))
-                for m in re.finditer(r'\b(Jump|Call)\(\s*["\']([\w.]+)["\']', line):
+                for m in re.finditer(r'\b(Jump|Call)\(\s*["\']([\w.]+)["\']', '' if line.lstrip().startswith('#') else line):
                     jumps.append((m.group(2), path, n, m.group(1).lower()))
                 m = re.match(r'(?:call|show|hide)\s+screen\s+(\w+)', s)
                 if m:
@@ -344,12 +359,15 @@ class RenPy(EngineScan):
                 for m in re.finditer(r'\[([A-Za-z_]\w*)(?:[.!\]:])', line):
                     if '"' in line:
                         used.append((m.group(1), path, n, line))
-                code = '' if s.startswith('#') else line   # a "# ..." line is a note, not code
-                for m in re.finditer(r'(?:play|queue)\s+(?:music|sound|voice|audio|\w+)\s+["\']([^"\']+)["\']|\bvoice\s+["\']([^"\']+)["\']', code):
-                    media_refs.append((m.group(1) or m.group(2), path, n, line, 'Audio'))
-                for m in re.finditer(r'["\']([^"\'\[\]{}]+\.(?:png|jpe?g|webp|gif|avif|ogg|mp3|wav|opus|webm|mp4|ogv|ttf|otf))["\']', code, re.I):
-                    if not any(m.group(1) == r[0] for r in media_refs if r[1] == path and r[2] == n):
-                        media_refs.append((m.group(1), path, n, line, K.asset_kind(m.group(1).rsplit('.', 1)[-1])))
+                code = '' if line.lstrip().startswith('#') else line   # a "# ..." line is a note, not code
+                # a name may hold the other quote mark, e.g. "80's.mp3", so the closing quote must match the opening one
+                for m in re.finditer(r'(?:play|queue)\s+(?:music|sound|voice|audio|\w+)\s+(["\'])(.+?)\1|\bvoice\s+(["\'])(.+?)\3', code):
+                    media_refs.append((m.group(2) or m.group(4), path, n, line, 'Audio'))
+                for m in re.finditer(r'(["\'])([^"\'\[\]{}]+(?:(?!\1)["\'][^"\'\[\]{}]*)*\.(?:png|jpe?g|webp|gif|avif|ogg|mp3|wav|opus|webm|mp4|ogv|ttf|otf))\1', code, re.I):
+                    ref = m.group(2)
+                    if ref in RENPY_BUILTIN or any(ref == r[0] for r in media_refs if r[1] == path and r[2] == n):
+                        continue
+                    media_refs.append((ref, path, n, line, K.asset_kind(ref.rsplit('.', 1)[-1])))
                 block = re.match(r'(if|elif|else|while|menu)\b', s)
                 # a condition can continue on the next lines inside brackets, or after a "\"
                 open_brackets = s.count('(') + s.count('[') + s.count('{') > s.count(')') + s.count(']') + s.count('}')
@@ -413,10 +431,11 @@ class RenPy(EngineScan):
                          what=f'"{v}" is never defined or assigned, but "{near}" is. The game will stop with "NameError".',
                          fix=f'Change "{v}" to "{near}".')
         self.refs = len(media_refs)
-        packed = set()
+        packed = {}   # lower-case name -> name inside the .rpa
         for rel, full in self._all:
             if rel.lower().endswith('.rpa'):
-                packed |= {x.lower() for x in rpa_names(full)}
+                packed.update({x.lower(): x for x in rpa_names(full)})
+        packed_stems = {os.path.splitext(k)[0]: v for k, v in packed.items()}
         if self._all and any(rel.lower().endswith('.rpa') for rel, _ in self._all) and not packed:
             self.add(INFO, 'Missing files', 'Packed .rpa archives could not be read', '', 0, '',
                      what='This game keeps files in .rpa archives in a format the scanner cannot read, so missing pictures '
@@ -426,9 +445,9 @@ class RenPy(EngineScan):
             if re.search(r'[\[\]{}%]', ref):
                 continue
             status, real = self.check_ref(ref, self.root)
-            if status != 'ok' and kind in ('Image', 'Audio'):
-                # Ren'Py also looks in game/images for pictures and game/audio for sounds
-                st2, real2 = self.check_ref(ref, os.path.join(self.root, 'images' if kind == 'Image' else 'audio'))
+            if status != 'ok' and kind in ('Image', 'Audio', 'Font'):
+                # Ren'Py also looks in game/images for pictures, game/audio for sounds and game/fonts for fonts
+                st2, real2 = self.check_ref(ref, os.path.join(self.root, {'Image': 'images', 'Audio': 'audio'}.get(kind, 'fonts')))
                 if st2 == 'ok':
                     continue
                 if status == 'missing' and st2 == 'case':
@@ -436,11 +455,22 @@ class RenPy(EngineScan):
             if status == 'case':
                 continue   # Ren'Py finds files whatever their capital letters
             if status == 'missing' and packed:
-                r = ref.replace('\\', '/').lower()
+                r = ref.replace('\\', '/').lstrip('/').lower()
                 sub = 'images/' if kind == 'Image' else 'audio/' if kind == 'Audio' else ''
                 if r in packed or sub + r in packed:
                     continue   # inside a .rpa archive
+                stem = os.path.splitext(r)[0]
+                other = packed_stems.get(stem) or packed_stems.get(sub + stem)
+                if other:
+                    real = other   # packed with another extension (e.g. .webp instead of .png)
+            before = len(self.issues)
             self.file_issue(ref, status, real, path, n, '', kind, line.strip())
+            m = re.match(r'\s*image\s+([\w ]+?)\s*=', line)
+            if m and len(self.issues) > before and not self._image_shown(m.group(1), files):
+                i = self.issues[-1]
+                i.severity = INFO
+                i.what += (f' The picture "{" ".join(m.group(1).split())}" made from it is never shown in any scene, '
+                           'so players will not notice. It may be meant for a later update.')
         for path in sorted(files):
             for n, line in enumerate(self.files[path], 1):
                 m = re.match(r'\s*(show|scene)\s+(?!expression\b|screen\b)([A-Za-z_][\w ]*?)(?:\s+(?:at|with|as|behind|onlayer|zorder)\b.*)?\s*:?\s*$', line)
