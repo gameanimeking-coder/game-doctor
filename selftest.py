@@ -128,6 +128,7 @@ class Runner:
                  self.t_editor_dialog, self.t_languages, self.t_other_engines]
         if self.opts.get('playtest'):
             steps.insert(-1, self.t_playtest)
+            steps.insert(-1, self.t_fullscan)
         for step in steps:
             try:
                 step()
@@ -607,6 +608,9 @@ class Runner:
         self.check('text editor picker lists editors', isinstance(w, D.EditorDialog) and w.path_var.get())
         w.close()
 
+    # buttons added in 3.0 that are English-only for now (see ENGLISH_ONLY in tools/strings.py)
+    ENGLISH_ONLY_UI = ('Quick scan', 'Full scan…', '❚❚ Pause Full scan')
+
     def t_languages(self):
         a = self.app
         langs = sorted(i18n.available())
@@ -622,7 +626,7 @@ class Runner:
             texts = self.texts()
             skip = set() if code in AID.AI_LANGS else ai_menu
             same = [t for t in texts if t in english - skip and len(t) > 3 and not t.isdigit() and '%' not in t
-                    and t not in ('Game Doctor',) and not t.startswith(('\U0001F310', 'Condemned'))]
+                    and t not in ('Game Doctor',) + self.ENGLISH_ONLY_UI and not t.startswith(('\U0001F310', 'Condemned'))]
             report[code] = same
             summary = a.text.get('1.0', 'end')
             self.check(f'language {code}: window rebuilt without errors', not a.errors, (a.errors or [''])[-1][-300:])
@@ -640,6 +644,30 @@ class Runner:
         lp = getattr(a, 'last_playtest', None)
         self.check('Play-test runs and reports how many scenes were played', lp and lp[1].get('renders', 0) > 1000,
                    str(lp[1] if lp else self.dialog_log[-1:]))
+
+    def t_fullscan(self):
+        """Start a Full scan, pause it once a group of scenes is saved, continue from the saved state, finish."""
+        import fullscan
+        a = self.app
+        fullscan.clear_state(a.result)
+        self.dialog_answers['yesno'] = True                     # "Start the Full scan?"
+        a.btn_full.invoke()
+        self.wait(lambda: fullscan.load_state(a.result), 300, 'first group of the Full scan')
+        a.btn_full.invoke()                                     # pause
+        self.wait(lambda: not a.fullscanning, 300, 'Full scan pause')
+        st = fullscan.load_state(a.result) or {}
+        self.check('Full scan pauses and keeps what it did on disk', st.get('scenes') and not st.get('finished'),
+                   str(len(st.get('scenes', {}))))
+        self.dialog_answers['yesno'] = True                     # "...paused at N%. Continue it?"
+        a.btn_full.invoke()
+        self.wait(lambda: not a.fullscanning, 600, 'Full scan')
+        fs = getattr(a, 'last_fullscan', None) or {}
+        confirmed = [i for i in a.result.issues if i.severity == scanner.ERROR and 'Confirmed while playing' in i.what]
+        self.check('Full scan continues and finishes, with problems confirmed while playing',
+                   fs.get('finished') and fs.get('covered', 0) > 1000 and confirmed, str({k: fs.get(k) for k in ('finished', 'covered')}))
+        self.check('buttons back after the Full scan', a.btn_full.cget('text') == 'Full scan…'
+                   and str(a.btn_scan.cget('state')) == 'normal')
+        fullscan.clear_state(a.result)
 
     def t_other_engines(self):
         a = self.app

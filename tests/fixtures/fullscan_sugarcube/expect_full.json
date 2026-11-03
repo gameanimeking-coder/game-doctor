@@ -1,0 +1,21 @@
+{
+ "must": [
+  "red error box saying: Error: <<include>>: passage \"Missing female scene\" does not exist",
+  "with $gender = \"f\"",
+  "it asks for \"images/rich.png\", but the file is not there",
+  "File failed to load while playing: images/pic3.png",
+  "and the player clicks \"Buy bread\"",
+  "when the game shows \"Market\" on its own",
+  "red error box saying: Error: <<include>>: passage \"Anna rich scene\" does not exist",
+  "depends on scenes seen before",
+  "no values found that open it"
+ ],
+ "must_not": [
+  "<<return>>: cannot find",
+  "load while playing: images/pic1.png",
+  "load while playing: images/pic2.png",
+  "load while playing: images/hero.png",
+  "load while playing: images/female.png"
+ ],
+ "min_covered": 0.8
+}

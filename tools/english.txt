@@ -13,6 +13,11 @@ adac6937 Code
 6b21fb79 About
 b8bb1461 How do players reach this scene?
 d07d7afa How do players reach "{name}"?
+650406ed The Full scan plays every scene of the game with many different values, until every "if" part has been shown, and clicks the buttons in it. Every problem it reports is proven by playing.
+
+This game has {n} scenes with about {b} "if" parts. That should take about {low} to {high} minutes. You can pause at any time and continue later, even after closing Game Doctor. Windows will not go to sleep while it runs.
+
+Start the Full scan?
 fa893d87 Clean
 70440046 Notes
 1430f976 Warnings
@@ -22,7 +27,8 @@ dcad8ee5 Preparing the code view…
 e9c45563 Warning
 2c924e30 Note
 f4808ecd Open game…
-f6ab55dd Scan again
+081824ec Quick scan
+aa889f52 Full scan…
 dd3fa3ce ▶ Play-test
 5e4797ea Fix wizard
 4fa8cc86 Tools
@@ -103,6 +109,12 @@ fc5e62a8 Settings file: {path}
 6bbf59c5 Stopping the play-test…
 c5726162 Play-testing needs Microsoft Edge or Google Chrome, and neither was found.
 efe69072 The game changed during the play-test. Run it again.
+ae924bdd Pausing the Full scan after this group of scenes…
+ccd10e97 The Full scan needs Microsoft Edge or Google Chrome, and neither was found.
+6c8bd74b A Full scan of this game was paused at {pct}%. Continue it?
+7ca998c5 The game changed during the Full scan. What was done so far is kept.
+e0386b3f Full scan finished: {n} scenes, {b} of {t} "if" parts played, {c} problem(s) confirmed while playing.
+f1a36b8f Full scan paused at {pct}%. Click "Full scan…" to continue, also after closing Game Doctor.
 4e1a8e3c No problems
 59cd52ee Worth checking
 80c66d73 Probably broken
@@ -120,6 +132,7 @@ de314fa0 Severity
 fc55cc19 Passage / place
 3deb7456 Type
 61790945 ■ Stop play-test
+1c6c9666 ❚❚ Pause Full scan
 e23fd7cf Un-mark as intentional
 5ffa6ce4 Checks games for mistakes and tells you in plain words what is wrong and how to fix it. Works with Twine games (SugarCube, Harlowe, Chapbook, Snowman), other HTML games, Ren'Py, RPG Maker MV/MZ, Ink and ChoiceScript.
 e13e18f3 How to use it
@@ -230,6 +243,9 @@ a37a62b5 2. Click a problem in the list. Below it you see what is wrong, what pl
 47faaf63 Play-test stopped
 9de8b1a5 1. Click "Open game…" and pick the game's .html file (or use Tools for a game folder). The check starts by itself.
 836bf385 The play-test could not run:
+4ef29fed Full scan stopped
+22dc478f What was done so far is kept. Click "Full scan…" to continue.
+dfecc68f The Full scan could not run:
 3dd51c5a Choose your text editor
 1f7611ea Text editor set to {name}
 43320d49 Test a line before you change it
@@ -393,7 +409,6 @@ a17d6d9d Fix the name of the spot, or remove the link.
 f7e0927c Missing {kind}: {file}
 471ab6b6 The game wants to use the {kind} "{path}", but there is no such file in the game folder.
 215d84f2 Players see a broken picture or empty space, or hear nothing.
-95495e08 Put the file in that place, or change the name in the game file to the file that really exists.
 4e187285 File name has wrong capital letters: {file}
 10dd7eb2 The file exists, but the game writes its name with different capital letters.
 445b1f51 Works on Windows. On phones, Macs, Linux or a website the picture or sound will be missing.
@@ -658,10 +673,27 @@ fefc36ad Pictures or sounds missing while playing
 d47a66be These files were requested while the scenes were played, but they do not exist.
 80b8b71b Players see broken pictures or hear nothing in some scenes.
 9733445f Add the missing files, or fix their names.
+0c6a98a1 Missing picture or sound, seen while playing: {file}
+6a401edf Players see a broken picture or hear nothing in this scene.
+2890295c Add the missing file, or fix the name the scene uses.
+81c91aa0 Maybe a red error box: "{name}"
+c962a970 It only showed when this scene was played on its own. In the real game an earlier scene may set things up first, so players may never see it.
+a8b5fae1 Play to this scene the normal way. If the red box shows up, look at the problems listed for this scene.
+e69fdd92 Maybe a missing picture or sound: "{name}"
+8c46aa24 It only happened with unusual values, so players may never see it.
+27af1761 Play to this scene the normal way and see if a picture or sound is missing.
+38247ca3 The game froze in this scene while testing: "{name}"
+93ee6007 If it happens in the real game too, the game stops answering here.
+69e3b642 Play to this scene and see if the game freezes. If it does, look for a loop that never ends.
+3451e196 Parts of scenes the Full scan could not open
+78db9cc0 Nothing is wrong. Problems inside these parts could only be checked by reading, not by playing.
+cde8e09b Nothing to do, unless you expect players to see these parts.
 4f504ebe An error while the game starts
 92243591 The browser reported an error while loading the game.
 2fea6477 The start screen or some features may be broken.
 608156d3 Look at the game's main script for the problem named in the message.
+a0a5b983 The name looks mistyped: the file meant is probably "{real}". Check it, and if it is the right file, correct the name in the game yourself. If not, put the missing file in the game folder.
+6889b4ad Put the file in the game folder with exactly this name. Only change the name in the game if you know which file was meant: files with similar names are usually different pictures (another character, another scene, or one of several random versions).
 aa1a0c6f Delete them if you are sure they are not needed. (Some may be picked by the game in clever ways the scanner can't see.)
 231d0f49 Misspelled command: {name}
 388bf136 Unknown command: {name}
@@ -834,3 +866,67 @@ f5a5071d Loading the game
 8466e7c7 Checking scripts with the browser's JavaScript engine
 bf197daa Playing scenes ({mode}): {k} of {n}
 f70cf464 Play-test finished
+08bea0de Playing every branch: {k} of {n} scenes, about {left} left
+b25b8284 Full scan finished
+e9b058a5 Log saved: {path}. Give it to the AI together with the game file.
+a8a6f74d Save a log of the scan for an AI assistant
+52201ef5 Open and scan a game first.
+e93ed82c AI helper
+aa327b42 AI helper set to {name} · {model}
+20116b76 Fix with AI
+71f130f7 Notes from the AI
+9a0eb772 Fixed copy saved: {path}
+fd3e7969 Connecting…
+bca95cf6 Every problem that has a line
+0cd22701 Ask the AI
+9e253470 Stop
+cf9f36fa Nothing changes until you save, and your game file itself is never changed: accepted fixes go into a copy.
+1d4d43cc Use
+64fbd995 Change
+c0ead91e Use / don't use (double-click)
+abd560d5 Save fixed copy…
+3af8d35a Open the fixed copy
+62e9e012 AI: {name} · {model}
+19d67c10 {n} problems, {k} request(s) to the AI
+a10b5042 Asking the AI…
+794d2fe9 Stopping after the current request…
+90a140c8 Saved. Checking the fixed copy again…
+d7a9d07e Could not save the log:
+08f10c7c No key needed: it runs on this computer.
+8bfda18c Pick a model first. "Get the model list" shows what this service has.
+8acf5561 There are no problems with a line number to send.
+0269e2d4 The AI suggested no usable changes. See "Notes from the AI".
+1acb1c04 Line {n}
+369fa391 Save the fixed copy
+35016002 Choose an empty folder for the fixed files
+2ed6e93e Saved {n} fixed files and a list of the changes in {path}. Back up the game, then copy them over the game's files.
+1cb92041 Saved, but the fixed copy could not be checked: {error}
+81f33f1f Which AI should suggest fixes?
+61c4c23f Online services need an API key from their website and charge you for use. LM Studio and Ollama run models on this computer for free; start them and load a model first.
+329cb8b6 Service
+cf678cab API key
+d70f93df Address
+68c2cc7f Model
+09f75534 Get the model list
+179eef0b The key is stored scrambled by Windows, so only your Windows account can read it. With an online service, the problems and the lines around them are sent to that company.
+ccf66f07 Test connection
+e99b26ba {n} models found. Pick one from the list.
+3172147f It works. The AI answered: {text}
+73aa5d05 Change AI…
+c341e94c Fix:
+4b22bf04 {n} changes suggested. Check each one, untick the ones you don't want, then save a fixed copy.
+a61d4e29 Now:
+a31dc672 Change to:
+df54f9e4 Could not save the fixed copy:
+6bfc7a64 Saved and checked: {fixed} problems gone, {new} new problems.
+67dc3dda (no model picked)
+e569e017 Asking the AI… request {k} of {n}
+8a1ab9c3 Game file
+f92e6d42 Open the fixed copy to see them.
+512da9fc {k} marked ⚠ swap a missing picture or sound for another file: check those yourself.
+01bb3cc1 Why:
+ee8688be {n} more problems were found on the changed lines (often a second problem on the same line).
+f59ae03b Fix with AI…
+eb2e87db Export log for AI (text)…
+cc50bbf1 AI helper settings…
+fd643cda Check this one yourself: a similar file name is often a different picture (another character, scene or one of several random versions).

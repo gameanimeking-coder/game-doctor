@@ -21,7 +21,9 @@ EXTRA = ['Excellent', 'Great', 'Good', 'Fine', 'Needs work', 'Poor',
          'Checking CSS classes', 'Checking images, audio, video and files', 'Checking text (typos, placeholders)',
          'Checking JavaScript', 'Checking story-format rules', 'Done', 'Reading the {label} game', 'Checking files for damage',
          'Starting the invisible browser', 'Loading the game', "Checking scripts with the browser's JavaScript engine",
-         'Playing scenes ({mode}): {k} of {n}', 'Play-test finished']
+         'Playing scenes ({mode}): {k} of {n}', 'Play-test finished',
+         # sent by fullscan.py
+         'Playing every branch: {k} of {n} scenes, about {left} left', 'Full scan finished']
 # The AI helper windows are translated only into the most used languages; the others show them in English.
 AI_SOURCES = ['ai_dialogs.py']
 AI_LANGS = next(ast.literal_eval(n.value) for n in ast.parse(open(os.path.join(ROOT, 'ai_dialogs.py'), encoding='utf-8').read()).body
@@ -29,7 +31,18 @@ AI_LANGS = next(ast.literal_eval(n.value) for n in ast.parse(open(os.path.join(R
 # New texts the user chose to keep English-only for now (shown in English in every language).
 # Texts starting with these words are not counted as missing.
 ENGLISH_ONLY = ('The name looks mistyped: the file meant is probably',
-                'Put the file in the game folder with exactly this name. Only change the name')
+                'Put the file in the game folder with exactly this name. Only change the name',
+                # Full scan (3.0)
+                'Quick scan', 'Full scan', 'The Full scan', '❚❚ Pause Full scan', 'Pausing the Full scan',
+                'A Full scan of this game', 'The game changed during the Full scan', 'What was done so far is kept',
+                'Playing every branch', 'Missing picture or sound, seen while playing',
+                'Players see a broken picture or hear nothing in this scene.',
+                'Add the missing file, or fix the name the scene uses.', 'Maybe a red error box',
+                'It only showed when this scene was played on its own', 'Play to this scene the normal way',
+                'Maybe a missing picture or sound', 'It only happened with unusual values',
+                'The game froze in this scene while testing', 'If it happens in the real game too',
+                'Play to this scene and see if the game freezes', 'Parts of scenes the Full scan could not open',
+                'Nothing is wrong. Problems inside these parts', 'Nothing to do, unless you expect players to see')
 
 
 def ai_texts():

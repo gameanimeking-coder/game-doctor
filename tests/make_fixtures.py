@@ -267,9 +267,87 @@ def choicescript():
          must_not=['*set on undeclared variable "gold"', '*goto to missing label "top"'])
 
 
+def fullscan_sugarcube():
+    """Bugs that only show behind a branch: Full scan must find each one by playing, with the values that
+    open it, and must not report things that only fail because a scene was played on its own.
+    story.html has no SugarCube engine; tests/run_tests.py puts one around it from a real game."""
+    d = os.path.join(FIX, 'fullscan_sugarcube')
+    for n in ('hero', 'pic1', 'pic2', 'female'):
+        write(os.path.join(d, 'images', n + '.png'), png_bytes())
+    passages = [
+        ('Start', '', 'Welcome. [[Shop]] [[Mirror]] [[Dice]] [[Market]] [[Secret]] [[Memory]] [[Back door]]'),
+        ('StoryInit', '', '<<set $gender to "m">><<set $money to 20>><<set $met_anna to false>><<set $flag to false>>'),
+        # only when rich (the scan can see this one too)
+        ('Shop', '', '<<if $money gte 50>><img src="images/rich.png"><<else>><img src="images/hero.png"><</if>> [[Start]]'),
+        # only for a female player
+        ('Mirror', '', '<<if $gender is "f">><img src="images/female.png"><<include "Missing female scene">>'
+                       '<<else>>He smiles.<</if>> [[Start]]'),
+        # file name built from a dice roll: pic3 is missing, only the dice can show it
+        ('Dice', '', '<<set _n to random(1, 3)>><img @src="\'images/pic\' + _n + \'.png\'"> [[Start]]'),
+        # error only when poor AND the button is clicked
+        ('Market', '', '<<link "Buy bread">><<if $money lt 10>><<print $basket.length>><<else>><<set $money -= 5>><</if>>'
+                       '<</link>> [[Start]]'),
+        # error only inside two nested branches
+        ('Secret', '', '<<if $met_anna is true>>Anna waves.<<if $money gt 100>><<include "Anna rich scene">><</if>><</if>> [[Start]]'),
+        # can never be true; and one that needs the scenes played before
+        ('Memory', '', '<<if $flag and not $flag>>[[Ghost]]<</if>><<if visited("Shop") gt 2>>Regular customer.<</if>> [[Start]]'),
+        # going back needs history: not a bug
+        ('Back door', '', '<<link "Go back">><<return>><</link>> [[Start]]'),
+    ]
+    write(os.path.join(d, 'story.html'), twine('SugarCube', passages))
+    spec(d, 'story.html', ['Error|Missing files|Image not found: images/rich.png',
+                           '<<include>> to missing passage "Missing female scene"'])
+    write(os.path.join(d, 'expect_full.json'), json.dumps(dict(
+        # the Quick scan's findings, confirmed by playing (the run is merged with them), and the new ones
+        must=['red error box saying: Error: <<include>>: passage "Missing female scene" does not exist',
+              'with $gender = "f"',
+              'it asks for "images/rich.png", but the file is not there',
+              'File failed to load while playing: images/pic3.png',
+              'and the player clicks "Buy bread"',
+              # $basket is read before anything sets it: depends on values, so worth checking, not confirmed
+              'when the game shows "Market" on its own',
+              'red error box saying: Error: <<include>>: passage "Anna rich scene" does not exist',
+              'depends on scenes seen before', 'no values found that open it'],
+        must_not=['<<return>>: cannot find', 'load while playing: images/pic1.png', 'load while playing: images/pic2.png',
+                  'load while playing: images/hero.png', 'load while playing: images/female.png'],
+        min_covered=0.8), indent=1))
+
+
+def fullscan_harlowe():
+    """Harlowe test game for the Full scan: bugs that only show behind branches and links, a game-made
+    condition macro ($is_fem:) like X-Change Life's (is_fem:), and a broken link players never see."""
+    d = os.path.join(FIX, 'fullscan_harlowe')
+    write(os.path.join(d, 'images', 'hero.png'), png_bytes())
+    write(os.path.join(d, 'images', 'female.png'), png_bytes())
+    passages = [
+        ('Start', '', 'Welcome. [[Shop]] [[Mirror]] [[Market]]\n(if: ($is_fem:))[ [[Ladies Room]] ]'),
+        ('Init', 'startup', '(set: $money to 20)(set: $gender to "m")(set: $basket to 0)\n'
+                            '(set: $is_fem to (macro: [(output-data: $gender is "f")]))'),
+        # picture missing only when rich
+        ('Shop', '', '(if: $money > 50)[<img src="images/rich.png">](else:)[<img src="images/hero.png">]'),
+        # missing passage only for one gender
+        ('Mirror', '', '(if: $gender is "m")[(display: "Missing male scene")](else:)[<img src="images/female.png">]'),
+        # error box after a click, from a value an earlier scene would set: worth checking, not confirmed
+        ('Market', '', '(link: "Buy bread")[(print: $basket\'s 1st)]'),
+        # only reachable behind ($is_fem:), so its (else:) part is never seen
+        ('Ladies Room', '', '(if: ($is_fem:))[You freshen up. [[Start]]](else:)[ [[Nowhere room]] ]'),
+    ]
+    write(os.path.join(d, 'story.html'), twine('Harlowe', passages))
+    spec(d, 'story.html', ['Image not found: images/rich.png'])
+    write(os.path.join(d, 'expect_full.json'), json.dumps(dict(
+        must=['Confirmed while playing: when the game shows "Shop" with',
+              'it asks for "images/rich.png", but the file is not there',
+              'Missing male scene', 'and the player clicks "Buy bread"',
+              'when the game shows "Market" on its own',
+              'Worth checking: players never see this. "Ladies Room" only opens from links that need ($gender is "f")'],
+        must_not=['hero.png', 'female.png'],
+        min_covered=0.8), indent=1))
+
+
 if __name__ == '__main__':
     if os.path.isdir(FIX):
         shutil.rmtree(FIX)
-    for fn in (sugarcube, clean_sugarcube, harlowe, harlowe_paths, chapbook, snowman, plain_html, renpy, rpgmaker, ink, choicescript):
+    for fn in (sugarcube, clean_sugarcube, harlowe, harlowe_paths, chapbook, snowman, plain_html, renpy, rpgmaker, ink,
+               choicescript, fullscan_sugarcube, fullscan_harlowe):
         fn()
     print('fixtures written to', FIX)

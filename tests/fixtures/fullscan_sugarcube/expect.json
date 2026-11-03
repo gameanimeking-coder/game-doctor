@@ -1,0 +1,9 @@
+{
+ "open": "story.html",
+ "must": [
+  "Error|Missing files|Image not found: images/rich.png",
+  "<<include>> to missing passage \"Missing female scene\""
+ ],
+ "must_not": [],
+ "must_not_text": []
+}

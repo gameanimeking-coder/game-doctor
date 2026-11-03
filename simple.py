@@ -727,10 +727,52 @@ def _(m, i):
                 effect=T('Players see broken pictures or hear nothing in some scenes.'), fix=T('Add the missing files, or fix their names.'))
 
 
+# ---------------------------------------------------------------------- Full scan (the finding's own text already
+# names the values that caused it, in plain words, so it is kept as "what")
+@rule(r'^File failed to load while playing: (.+)$')
+def _(m, i):
+    return dict(title=T('Missing picture or sound, seen while playing: {file}', file=_file(m.group(1))), what=i.what,
+                effect=T('Players see a broken picture or hear nothing in this scene.'),
+                fix=T('Add the missing file, or fix the name the scene uses.'))
+
+
+@rule(r'^(?:Error box|\d+ error boxes) when the scene is shown on its own')
+def _(m, i):
+    return dict(title=T('Maybe a red error box: "{name}"', name=i.passage), what=i.what,
+                effect=T('It only showed when this scene was played on its own. In the real game an earlier scene may '
+                         'set things up first, so players may never see it.'),
+                fix=T('Play to this scene the normal way. If the red box shows up, look at the problems listed for '
+                      'this scene.'))
+
+
+@rule(r'^(?:File failed|\d+ files failed) to load when the scene is shown on its own')
+def _(m, i):
+    return dict(title=T('Maybe a missing picture or sound: "{name}"', name=i.passage), what=i.what,
+                effect=T('It only happened with unusual values, so players may never see it.'),
+                fix=T('Play to this scene the normal way and see if a picture or sound is missing.'))
+
+
+@rule(r'^The scene froze the game while it was tested')
+def _(m, i):
+    return dict(title=T('The game froze in this scene while testing: "{name}"', name=i.passage), what=i.what,
+                effect=T('If it happens in the real game too, the game stops answering here.'),
+                fix=T('Play to this scene and see if the game freezes. If it does, look for a loop that never ends.'))
+
+
+@rule(r'branch\(es\) never ran with any values tried$')
+def _(m, i):
+    return dict(title=T('Parts of scenes the Full scan could not open'), what=i.what,
+                effect=T('Nothing is wrong. Problems inside these parts could only be checked by reading, not by playing.'),
+                fix=T('Nothing to do, unless you expect players to see these parts.'))
+
+
 @rule(r'^Error while the game starts')
 def _(m, i):
     return dict(title=T('An error while the game starts'), what=T('The browser reported an error while loading the game.'),
                 effect=T('The start screen or some features may be broken.'), fix=T('Look at the game\'s main script for the problem named in the message.'))
+
+
+PLAY_NOTES = ('Confirmed while playing:', 'Not checked by playing:', 'Worth checking:')
 
 
 def simplify(i):
@@ -743,6 +785,10 @@ def simplify(i):
     else:
         d = dict(title=i.title, what=i.what, effect='', fix=i.fix)
     d.setdefault('effect', '')
+    # what the Full scan added to a Quick scan finding (confirmed while playing, never shown, players never see it)
+    notes = [p for p in i.what.split('\n\n')[1:] if p.startswith(PLAY_NOTES)]
+    if notes and d['what'] != i.what:
+        d['what'] = '\n\n'.join([d['what']] + notes)
     if i.unreachable:
         d['effect'] = T('Players never see this: it is in a scene nobody can reach. Safe to leave.')
     return d

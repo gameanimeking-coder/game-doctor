@@ -1,0 +1,8 @@
+{
+ "open": "story.html",
+ "must": [
+  "Image not found: images/rich.png"
+ ],
+ "must_not": [],
+ "must_not_text": []
+}

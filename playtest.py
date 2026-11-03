@@ -14,6 +14,7 @@ and the browser uses a temporary empty profile that is deleted afterwards.
 Nothing in the game folder is changed.
 """
 import base64
+import contextlib
 import http.server
 import json
 import os
@@ -60,6 +61,22 @@ def find_browser():
 # ---------------------------------------------------------------------- tiny web server
 class _QuietHandler(http.server.SimpleHTTPRequestHandler):
     fallback = None   # pictures/sounds folder, when it is not the folder the game file is in
+    patch = None      # (url path of the game file, function changing its text): only the browser's copy changes
+
+    def do_GET(self):
+        if self.patch and urllib.parse.unquote(self.path.split('?', 1)[0]) == self.patch[0]:
+            try:
+                with open(self.translate_path(self.path), encoding='utf-8', errors='replace') as f:
+                    body = self.patch[1](f.read()).encode('utf-8')
+            except OSError:
+                return super().do_GET()
+            self.send_response(200)
+            self.send_header('Content-Type', 'text/html; charset=utf-8')
+            self.send_header('Content-Length', str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        return super().do_GET()
 
     def log_message(self, *a):
         pass
@@ -89,10 +106,11 @@ class _Server(socketserver.ThreadingMixIn, http.server.HTTPServer):
         pass   # the browser cancelling a download is normal; never print tracebacks
 
 
-def start_server(root, fallback=None):
+def start_server(root, fallback=None, patch=None):
     class Handler(_QuietHandler):
         pass
     Handler.fallback = fallback
+    Handler.patch = patch
     handler = lambda *a, **kw: Handler(*a, directory=root, **kw)
     srv = _Server(('127.0.0.1', 0), handler)
     threading.Thread(target=srv.serve_forever, daemon=True).start()
@@ -280,10 +298,21 @@ SYNTAX_JS = r'''
 
 
 # ---------------------------------------------------------------------- main
-def run(res, progress=None, modes=None, stop=None):
-    """Play-test the scanned game. Returns (issues, summary dict)."""
+class Session:
+    """A running game in the invisible browser (see launch())."""
+    dt = srv = None
+    is_sc = False
+    load_events = ()
+
+    @property
+    def port(self):
+        return self.srv.server_address[1]
+
+
+@contextlib.contextmanager
+def launch(res, progress=None, patch=None):
+    """Start the invisible browser with the game loaded; yields a Session. Cleans up afterwards."""
     progress = progress or (lambda p, m: None)
-    stop = stop or (lambda: False)
     if res.engine not in ('twine', 'html'):
         raise PlaytestError('Play-testing works for HTML games (Twine / SugarCube and other web games).')
     exe = find_browser()
@@ -296,9 +325,9 @@ def run(res, progress=None, modes=None, stop=None):
     root = res.game_dir if same_drive and os.path.commonpath([game_dir, html_abs]) == game_dir \
         else os.path.dirname(html_path)
     rel_url = '/'.join(urllib.parse.quote(p) for p in os.path.relpath(html_path, root).replace('\\', '/').split('/'))
-    issues, summary = [], {'passages': 0, 'renders': 0, 'modes': []}
     profile = tempfile.mkdtemp(prefix='gbs-playtest-')
-    srv = start_server(root, fallback=None if root == res.game_dir else res.game_dir)
+    srv = start_server(root, fallback=None if root == res.game_dir else res.game_dir,
+                       patch=(urllib.parse.unquote('/' + rel_url), patch) if patch else None)
     proc = None
     dt = None
     try:
@@ -340,8 +369,36 @@ def run(res, progress=None, modes=None, stop=None):
                 time.sleep(1.5)
                 break
             time.sleep(0.2)
-        load_events = list(dt.events)
+        ses = Session()
+        ses.dt, ses.srv, ses.is_sc, ses.load_events = dt, srv, is_sc, list(dt.events)
+        yield ses
+    finally:
+        try:
+            if dt:
+                try:
+                    dt.call('Browser.close', timeout=5)
+                except Exception:
+                    pass
+                dt.close()
+        finally:
+            if proc and proc.poll() is None:
+                proc.terminate()
+                try:
+                    proc.wait(10)
+                except subprocess.TimeoutExpired:
+                    proc.kill()
+            srv.shutdown()
+            srv.server_close()
+            shutil.rmtree(profile, ignore_errors=True)
 
+
+def run(res, progress=None, modes=None, stop=None):
+    """Play-test the scanned game. Returns (issues, summary dict)."""
+    progress = progress or (lambda p, m: None)
+    stop = stop or (lambda: False)
+    issues, summary = [], {'passages': 0, 'renders': 0, 'modes': []}
+    with launch(res, progress) as ses:
+        dt, srv, is_sc, load_events = ses.dt, ses.srv, ses.is_sc, ses.load_events
         # syntax of every script, using the browser's own engine
         progress(14, 'Checking scripts with the browser\'s JavaScript engine')
         blocks = script_blocks(res)
@@ -403,24 +460,6 @@ def run(res, progress=None, modes=None, stop=None):
                                     fix=playtest_fix(msg)))
         # runtime load problems
         issues += runtime_issues(dt.events, load_events, srv.server_address[1], res)
-    finally:
-        try:
-            if dt:
-                try:
-                    dt.call('Browser.close', timeout=5)
-                except Exception:
-                    pass
-                dt.close()
-        finally:
-            if proc and proc.poll() is None:
-                proc.terminate()
-                try:
-                    proc.wait(10)
-                except subprocess.TimeoutExpired:
-                    proc.kill()
-            srv.shutdown()
-            srv.server_close()
-            shutil.rmtree(profile, ignore_errors=True)
     progress(100, 'Play-test finished')
     return issues, summary
 

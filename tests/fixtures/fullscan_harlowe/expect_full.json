@@ -1,0 +1,15 @@
+{
+ "must": [
+  "Confirmed while playing: when the game shows \"Shop\" with",
+  "it asks for \"images/rich.png\", but the file is not there",
+  "Missing male scene",
+  "and the player clicks \"Buy bread\"",
+  "when the game shows \"Market\" on its own",
+  "Worth checking: players never see this. \"Ladies Room\" only opens from links that need ($gender is \"f\")"
+ ],
+ "must_not": [
+  "hero.png",
+  "female.png"
+ ],
+ "min_covered": 0.8
+}

@@ -259,6 +259,87 @@ def run_playtest():
     return ok
 
 
+MB_GAME = os.path.join(GAMES_ROOT, 'MB.5', 'MB.5', 'MB 0.24.6.html')     # its Harlowe 3.3.7 runs the Harlowe test game
+
+
+def _fullscan_test_game(folder, engine_path, version, label):
+    """Full scan a test game from tests/fixtures/<folder>: its story put into a real game's engine. Quick scan
+    findings are laid next to what playing showed (fullscan.merge_quick) before checking expect_full.json."""
+    import re
+    import shutil
+    import tempfile
+    import fullscan
+    src = os.path.join(FIX_DIR, folder)
+    spec = json.load(open(os.path.join(src, 'expect_full.json'), encoding='utf-8'))
+    tmp = tempfile.mkdtemp()
+    try:
+        shutil.copytree(src, tmp, dirs_exist_ok=True)
+        story = open(os.path.join(src, 'story.html'), encoding='utf-8').read()
+        engine = open(engine_path, encoding='utf-8').read()
+        ours = re.search(r'<tw-storydata.*?</tw-storydata>', story, re.S).group(0).replace(
+            'format-version="1.0"', f'format-version="{version}"')
+        a, b = re.search(r'<tw-storydata.*?</tw-storydata>', engine, re.S).span()
+        game = os.path.join(tmp, 'game.html')
+        with open(game, 'w', encoding='utf-8') as f:
+            f.write(engine[:a] + ours + engine[b:])
+        res = scanner.scan_any(game)
+        t = time.time()
+        state = {}
+        fullscan.run(res, state=state)
+        issues, summ = fullscan.merge_quick(res, list(res.issues), state)
+        texts = [f'{i.title} | {i.what} | {i.fix}' for i in issues]
+        missing = [m for m in spec['must'] if not any(m in t for t in texts)]
+        unwanted = [m for m in spec['must_not'] for t in texts if m in t]
+        share = summ['covered'] / max(1, summ['branches'])
+        if missing or unwanted or share < spec['min_covered']:
+            print(f'  [FAIL] {label}: {summ["covered"]}/{summ["branches"]} branches')
+            for m in missing:
+                print(f'      missing: {m}')
+            for m in unwanted:
+                print(f'      should not appear: {m}')
+            for t in texts:
+                print(f'        got: {t[:200]}')
+            return False
+        print(f'  [ok] {label}: every branch-gated bug found, {summ["covered"]}/{summ["branches"]} branches, '
+              f'{time.time() - t:.0f}s')
+        return True
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def run_fullscan():
+    """Full scan of test games whose bugs only show behind branches, buttons and dice (SugarCube, Harlowe).
+    The test games have no engine of their own; it is taken from real games. Then Condemned Town 1.08a in full."""
+    import fullscan
+    import playtest
+    if not playtest.find_browser():
+        print('  [skip] Edge/Chrome not installed')
+        return True
+    if not os.path.isfile(GAMES['1.08a']):
+        print('  [skip] Condemned Town (needed for its SugarCube engine) not found')
+        return True
+    ok = _fullscan_test_game('fullscan_sugarcube', GAMES['1.08a'], '2.37.3', 'SugarCube test game')
+    if os.path.isfile(MB_GAME):
+        ok = _fullscan_test_game('fullscan_harlowe', MB_GAME, '3.3.7', 'Harlowe test game') and ok
+    else:
+        print('  [skip] MB 0.24.6 (needed for its Harlowe engine) not found')
+    res = scanner.scan_any(GAMES['1.08a'])
+    t = time.time()
+    issues, summ = fullscan.run(res)
+    want = {'MC alone time with Mark', 'Secretary information', 'Gf in her bathroom', 'Sleep_event Mark house',
+            'Military base office', 'Sleep with Ying'}
+    got = {i.passage for i in issues if i.severity == 'Error' and i.title.startswith('Error box')}
+    files = {i.title for i in issues if i.severity == 'Error' and i.title.startswith('File failed')}
+    share = summ['covered'] / max(1, summ['branches'])
+    if not want <= got or share < 0.85 or len(files) != 2:
+        ok = False
+        print(f'  [FAIL] 1.08a: error scenes {sorted(got)}, missing files {sorted(files)}, {summ["covered"]}/{summ["branches"]}')
+    else:
+        print(f'  [ok] 1.08a: {summ["renders"]} plays in {time.time() - t:.0f}s, {summ["covered"]}/{summ["branches"]} '
+              f'branches ({share:.0%}), {len(got)} scenes with error boxes, {len(files)} missing files')
+    return ok
+
+
 if __name__ == '__main__':
     import re
     update = '--update' in sys.argv
@@ -276,5 +357,7 @@ if __name__ == '__main__':
     if '--no-playtest' not in sys.argv:
         print('Play-testing in the invisible browser:')
         d = run_playtest()
+        print('Full scan (every branch played):')
+        d = run_fullscan() and d
     print('\nRESULT:', 'PASS' if a and b and c and d and e else 'FAIL (see above)')
     sys.exit(0 if a and b and c and d and e else 1)

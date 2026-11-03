@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><title>Test</title></head><body>
+<tw-storydata name="Test" startnode="1" creator="Twine" creator-version="2.6" format="Harlowe" format-version="1.0" ifid="11111111-2222-3333-4444-555555555555" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script>
+<tw-passagedata pid="1" name="Start" tags="" position="0,0" size="100,100">Welcome. [[Shop]] [[Mirror]] [[Market]]
+(if: ($is_fem:))[ [[Ladies Room]] ]</tw-passagedata>
+<tw-passagedata pid="2" name="Init" tags="startup" position="0,0" size="100,100">(set: $money to 20)(set: $gender to &quot;m&quot;)(set: $basket to 0)
+(set: $is_fem to (macro: [(output-data: $gender is &quot;f&quot;)]))</tw-passagedata>
+<tw-passagedata pid="3" name="Shop" tags="" position="0,0" size="100,100">(if: $money &gt; 50)[&lt;img src=&quot;images/rich.png&quot;&gt;](else:)[&lt;img src=&quot;images/hero.png&quot;&gt;]</tw-passagedata>
+<tw-passagedata pid="4" name="Mirror" tags="" position="0,0" size="100,100">(if: $gender is &quot;m&quot;)[(display: &quot;Missing male scene&quot;)](else:)[&lt;img src=&quot;images/female.png&quot;&gt;]</tw-passagedata>
+<tw-passagedata pid="5" name="Market" tags="" position="0,0" size="100,100">(link: &quot;Buy bread&quot;)[(print: $basket&#x27;s 1st)]</tw-passagedata>
+<tw-passagedata pid="6" name="Ladies Room" tags="" position="0,0" size="100,100">(if: ($is_fem:))[You freshen up. [[Start]]](else:)[ [[Nowhere room]] ]</tw-passagedata>
+</tw-storydata></body></html>

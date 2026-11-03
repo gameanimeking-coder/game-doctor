@@ -148,6 +148,8 @@ class App:
         self.scanning = False
         self.playtesting = False
         self._pt_stop = False
+        self.fullscanning = False
+        self._fs_stop = False
         self.windows = []
         self.tour = None
         self.code_built_for = None
@@ -293,8 +295,10 @@ class App:
         left.grid(row=0, column=0, sticky='w')
         self.btn_open = ttk.Button(left, text=T('Open game…'), style='Accent.TButton', command=self.choose_file)
         self.btn_open.pack(side='left')
-        self.btn_scan = ttk.Button(left, text=T('Scan again'), command=self.start_scan, state='disabled')
+        self.btn_scan = ttk.Button(left, text=T('Quick scan'), command=self.start_scan, state='disabled')
         self.btn_scan.pack(side='left', padx=(6, 0))
+        self.btn_full = ttk.Button(left, text=T('Full scan…'), command=self.toggle_fullscan, state='disabled')
+        self.btn_full.pack(side='left', padx=(6, 0))
         self.btn_playtest = ttk.Button(left, text=T('▶ Play-test'), command=self.toggle_playtest, state='disabled')
         self.btn_playtest.pack(side='left', padx=(6, 0))
         self.btn_wizard = ttk.Button(left, text=T('Fix wizard'), command=self.open_wizard, state='disabled')
@@ -986,7 +990,7 @@ class App:
         self.scanning = True
         self._scan_reason = reason
         self._check_cb = callback
-        for b in (self.btn_scan, self.btn_playtest, self.btn_wizard):
+        for b in (self.btn_scan, self.btn_full, self.btn_playtest, self.btn_wizard):
             b.configure(state='disabled')
         self.progress['value'] = 0
         self.set_status(T('Scanning…'))
@@ -1035,6 +1039,14 @@ class App:
                     self.update_buttons()
                     self.set_status(T('Play-test stopped'))
                     messagebox.showerror(APP_NAME, T('The play-test could not run:') + f'\n\n{msg[1]}')
+                elif kind == 'fs_done':
+                    self.fullscan_done(*msg[1:])
+                elif kind == 'fs_error':
+                    self.fullscanning = False
+                    self.update_buttons()
+                    self.set_status(T('Full scan stopped'))
+                    messagebox.showerror(APP_NAME, T('The Full scan could not run:') + f'\n\n{msg[1]}'
+                                         + '\n\n' + T('What was done so far is kept. Click "Full scan…" to continue.'))
         except queue.Empty:
             pass
         try:
@@ -1053,6 +1065,7 @@ class App:
         keep_key = sel.key if (sel and reason != 'scan') else None
         self.result = res
         self._mtime = self.target_mtime()
+        self.saved_fullscan(res, fresh=reason == 'scan' and not self._check_cb)
         self.after_result(keep_key=keep_key)
         if reason == 'scan' or not keep_key:
             if not self.selected_issue():
@@ -1085,10 +1098,15 @@ class App:
 
     def update_buttons(self):
         has = self.result is not None and not self.scanning
-        self.btn_scan.configure(state='normal' if self.target and not self.scanning else 'disabled')
-        can_pt = has and self.result.engine in ('twine', 'html')
+        full = self.fullscanning
+        self.btn_scan.configure(state='normal' if self.target and not self.scanning and not full else 'disabled')
+        can_pt = has and self.result.engine in ('twine', 'html') and not full
         self.btn_playtest.configure(state='normal' if (can_pt or self.playtesting) else 'disabled',
                                     text=T('■ Stop play-test') if self.playtesting else T('▶ Play-test'))
+        import fullscan
+        can_full = has and fullscan.can_play(self.result) and not self.playtesting
+        self.btn_full.configure(state='normal' if (can_full or full) else 'disabled',
+                                text=T('❚❚ Pause Full scan') if full else T('Full scan…'))
         self.btn_wizard.configure(state='normal' if has else 'disabled')
 
     def target_mtime(self):
@@ -1917,6 +1935,118 @@ class App:
         if not self.selected_issue():
             self.show_summary()
         self.set_status(msg)
+
+    # ================================================================ full scan
+    def toggle_fullscan(self):
+        import fullscan
+        import playtest
+        if self.fullscanning:
+            self._fs_stop = True
+            self.set_status(T('Pausing the Full scan after this group of scenes…'))
+            return
+        res = self.result
+        if not res or not fullscan.can_play(res):
+            return
+        if not playtest.find_browser():
+            messagebox.showinfo(APP_NAME, T('The Full scan needs Microsoft Edge or Google Chrome, and neither was found.'))
+            return
+        state = fullscan.load_state(res)
+        if state and not state.get('finished') and messagebox.askyesno(
+                APP_NAME, T('A Full scan of this game was paused at {pct}%. Continue it?',
+                            pct=int(100 * fullscan.share_done(res, state)))):
+            self.start_fullscan(state)
+            return
+        n, b, low, high = fullscan.estimate(res)
+        if messagebox.askyesno(APP_NAME, T(
+                'The Full scan plays every scene of the game with many different values, until every "if" part has '
+                'been shown, and clicks the buttons in it. Every problem it reports is proven by playing.\n\n'
+                'This game has {n} scenes with about {b} "if" parts. That should take about {low} to {high} minutes. '
+                'You can pause at any time and continue later, even after closing Game Doctor. Windows will not go to '
+                'sleep while it runs.\n\nStart the Full scan?', n=n, b=b, low=low, high=high)):
+            fullscan.clear_state(res)
+            self.start_fullscan({})
+
+    def start_fullscan(self, state):
+        import fullscan
+        self.fullscanning = True
+        self._fs_stop = False
+        self.update_buttons()
+        res = self.result
+
+        def work():
+            awake = getattr(getattr(ctypes, 'windll', None), 'kernel32', None)
+            if awake:   # keep Windows awake (not the screen) while playing
+                awake.SetThreadExecutionState(0x80000000 | 0x00000001)
+            try:
+                fullscan.run(res, progress=lambda p, m: self.q.put(('progress', p, m)), stop=lambda: self._fs_stop,
+                             state=state, on_save=lambda st: fullscan.save_state(res, st))
+                fullscan.save_state(res, state)
+                self.q.put(('fs_done', res, state))
+            except Exception as e:
+                self.q.put(('fs_error', e))
+            finally:
+                if awake:
+                    awake.SetThreadExecutionState(0x80000000)
+        threading.Thread(target=work, daemon=True).start()
+
+    def apply_fullscan(self, res, state):
+        """Lay the Quick scan's findings next to what the Full scan showed (also for a paused one: what it has
+        played is proven). The Quick scan's own list is kept, so this can be done again."""
+        import copy
+        import fullscan
+        if not hasattr(res, 'quick_issues'):
+            res.quick_issues = [i for i in res.issues if i.category != 'Play-test']
+        issues, summary = fullscan.merge_quick(res, copy.deepcopy(res.quick_issues), state)
+        played = [i for i in issues if i.category == 'Play-test']
+        scanner.mark_unreachable(played, res.unreachable)
+        for i in played:
+            fixes.enrich_issue(i, res)
+        res.issues = issues
+        from collections import Counter
+        c = Counter(i.severity for i in res.issues)
+        res.stats.update(errors=c[scanner.ERROR], warnings=c[scanner.WARNING], infos=c[scanner.INFO])
+        self.last_fullscan = summary
+        return summary
+
+    def fullscan_done(self, res, state):
+        import fullscan
+        self.fullscanning = False
+        if res is not self.result:
+            self.update_buttons()
+            self.set_status(T('The game changed during the Full scan. What was done so far is kept.'))
+            return
+        summary = self.apply_fullscan(res, state)
+        sel = self.selected_issue()
+        self.after_result(keep_key=sel.key if sel else None)
+        if not self.selected_issue():
+            self.show_summary()
+        confirmed = sum(1 for i in res.issues if i.severity == scanner.ERROR and 'Confirmed while playing' in i.what)
+        if state.get('finished'):
+            self.set_status(T('Full scan finished: {n} scenes, {b} of {t} "if" parts played, {c} problem(s) confirmed '
+                              'while playing.', n=summary['passages'], b=summary['covered'], t=summary['branches'],
+                              c=confirmed))
+        else:
+            self.set_status(T('Full scan paused at {pct}%. Click "Full scan…" to continue, also after closing Game Doctor.',
+                              pct=int(100 * fullscan.share_done(res, state))))
+
+    def saved_fullscan(self, res, fresh):
+        """After a scan: show an earlier finished Full scan of the same unchanged game again; offer to continue a
+        paused one when the game was just opened."""
+        import fullscan
+        if not fullscan.can_play(res):
+            return
+        state = fullscan.load_state(res)
+        if not state:
+            return
+        if state.get('finished'):
+            self.apply_fullscan(res, state)
+        elif fresh:
+            def ask():
+                if res is self.result and not self.fullscanning and messagebox.askyesno(
+                        APP_NAME, T('A Full scan of this game was paused at {pct}%. Continue it?',
+                                    pct=int(100 * fullscan.share_done(res, state)))):
+                    self.start_fullscan(state)
+            self.root.after(300, ask)
 
     # ================================================================ code view
     def on_tab(self):
