@@ -1,0 +1,30 @@
+{
+ "path": "Karma is a Bitch 1.9.9.5\\Karma is a Bitch 1.9.9.5.html",
+ "format": "SugarCube 2.36.1",
+ "seconds": 2,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": false,
+ "confirmed": [
+  {
+   "key": "Error | Missing files | Video not found: Source/Characters/Jared/Mother/Film/Pregnant Suck 1.webm | Relaxe",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). Names/folders differ from the real files (e.g. \"Suck Pregnant 1.webm\", Characters/Mother/Events)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: Source/Locations/Center/Police/Report/5.webm | Police 5",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). Names/folders differ from the real files (e.g. \"Suck Pregnant 1.webm\", Characters/Mother/Events)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: Source/Locations/College/Dave/Message/Pregnant 9.webm | Dave Video Pregnant",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). Names/folders differ from the real files (e.g. \"Suck Pregnant 1.webm\", Characters/Mother/Events)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: Source/System/Characters/Mother/Events/Filled 1.webm | Mother Slut Contraceptives Bought",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). Names/folders differ from the real files (e.g. \"Suck Pregnant 1.webm\", Characters/Mother/Events)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: Source/System/Characters/Mother/Events/Filled 2.webm | Mother Slut Contraceptives Bought",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). Names/folders differ from the real files (e.g. \"Suck Pregnant 1.webm\", Characters/Mother/Events)."
+  }
+ ],
+ "known_false": []
+}

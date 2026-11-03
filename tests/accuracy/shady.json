@@ -1,0 +1,18 @@
+{
+ "path": "Shady Deals v0.28.0\\Shady Deals.html",
+ "format": "SugarCube 2.36.1",
+ "seconds": 6,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": false,
+ "confirmed": [
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | Camshow Widgets",
+   "why": "<<set _webcam_no_space == true>> in a used widget only compares."
+  },
+  {
+   "key": "Error | HTML | <span> tag has an unclosed quote | Bleach Event 0",
+   "why": "class=\"not_available>Doesn't ... - the class value never closes, the text becomes part of the tag."
+  }
+ ],
+ "known_false": []
+}

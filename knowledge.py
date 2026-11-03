@@ -4,7 +4,7 @@ file types and common English misspellings."""
 # SugarCube 2 built-in macros
 SUGARCUBE_MACROS = {
     'capture', 'set', 'unset', 'run', 'script', 'include', 'nobr', 'print', '=', '-',
-    'do', 'silently', 'type', 'if', 'elseif', 'else', 'for', 'break', 'continue',
+    'do', 'silent', 'silently', 'type', 'if', 'elseif', 'else', 'for', 'break', 'continue',
     'switch', 'case', 'default', 'button', 'checkbox', 'cycle', 'option', 'optionsfrom',
     'link', 'linkappend', 'linkprepend', 'linkreplace', 'listbox', 'numberbox',
     'radiobutton', 'textarea', 'textbox', 'actions', 'back', 'choice', 'return',
@@ -18,7 +18,7 @@ SUGARCUBE_MACROS = {
 
 # Container macros: name -> allowed child tags
 SUGARCUBE_CONTAINERS = {
-    'capture': set(), 'script': set(), 'nobr': set(), 'silently': set(), 'type': set(),
+    'capture': set(), 'script': set(), 'nobr': set(), 'silent': set(), 'silently': set(), 'type': set(),
     'do': set(), 'if': {'elseif', 'else'}, 'for': set(), 'switch': {'case', 'default'},
     'button': set(), 'cycle': {'option', 'optionsfrom'}, 'link': set(),
     'linkappend': set(), 'linkprepend': set(), 'linkreplace': set(),

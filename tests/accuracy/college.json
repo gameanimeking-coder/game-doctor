@@ -1,0 +1,1190 @@
+{
+ "path": "College Daze - .554c\\College Daze.html",
+ "format": "SugarCube 2.30.0",
+ "seconds": 47,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": true,
+ "confirmed": [
+  {
+   "key": "Error | Broken links | <<display>> to missing passage \"ThursdayMorning600aPregnancy5\" | ThursdayMorning600aPregnancy4",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Karen1\" | Apprentice205aStart1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Lydia1\" | Apprentice205aStart1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Lydia1Brittany1\" | Apprentice205aStart1Brittany1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Lydia1Brittany1\" | Apprentice205aStart1Brittany1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Lydia1Monica1\" | Apprentice205aStart1Monica1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Lydia1Monica1\" | Apprentice205aStart1Monica1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Lydia1Ward1\" | Apprentice205aStart1Ward1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Lydia1Ward1\" | Apprentice205aStart1Ward1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Monica1Karen1\" | Apprentice205aStart1Monica1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Monica1Karen1\" | Apprentice205aStart1Monica1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Monica1Ward1\" | Apprentice205aStart1Monica1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Monica1Ward1\" | Apprentice205aStart1Monica1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Monica1Ward1\" | Apprentice205aStart1Ward1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Monica1Ward1\" | Apprentice205aStart1Ward1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Rio1\" | Apprentice205aStart1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Rio1Brittany1\" | Apprentice205aStart1Brittany1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Rio1Brittany1\" | Apprentice205aStart1Brittany1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Rio1Ward1\" | Apprentice205aStart1Ward1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Rio1Ward1\" | Apprentice205aStart1Ward1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Sydney1\" | Apprentice205aStart1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Sydney1Monica1\" | Apprentice205aStart1Monica1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Sydney1Monica1\" | Apprentice205aStart1Monica1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Sydney1Ward1\" | Apprentice205aStart1Ward1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Apprentice205aStart1Sydney1Ward1\" | Apprentice205aStart1Ward1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ChangEvening196aBaseStart1AssistantUnleashed1\" | Chang071EveningpinkLight1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ChangEvening196aBaseStart1AssistantUnleashed1\" | Chang072OrangeStart1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ShopPhase156aMorning1UpgradesAssignment\" | ShopPhase156aMorning1Upgrades",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ShopPhase156aMorning1UpgradesAssignment\" | ShopPhase156aMorning1Upgrades",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ShopPhase156aMorning1UpgradesAssignment\" | ShopPhase156aMorning1Upgrades",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ShopPhase156aMorning1UpgradesAssignment\" | ShopPhase156aMorning1Upgrades",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ShopPhase156aMorning1UpgradesAssignment\" | ShopPhase156aMorning1Upgrades",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ShopPhase156aMorning1UpgradesAssignment\" | ShopPhase156aMorning1Upgrades",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ShopPhase156aMorning1UpgradesAssignment\" | ShopPhase156aMorning1Upgrades",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ShopPhase156aMorning1UpgradesAssignment\" | ShopPhase156aMorning1Upgrades",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ShopPhase156aMorning1UpgradesAssignment\" | ShopPhase156aMorning1Upgrades",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ShopPhase156aMorning1UpgradesAssignment\" | ShopPhase156aMorning1Upgrades",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ShopPhase156aMorning1UpgradesAssignment\" | ShopPhase156aMorning1Upgrades",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"Sorority094End1BrittLeave1\" | Sorority094End1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"SundayMorning300aStart1HillMaywoodGame1Rules1EndYouLose1\" | SundayMorning300aStart1HillMaywoodGame1Rules1OrangeStart1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"SundayMorning300aStart1HillMaywoodGame1Rules1EndYouWin1\" | SundayMorning300aStart1HillMaywoodGame1Rules1OrangeStart1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aPregnancy2NotSororityNotJennyDeny1MeanBoth2\" | ThursdayMorning600aPregnancy2NotSororityNotJennyDeny1MeanBoth1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aPregnancy3Devin1Abort1Nice1Fuck1\" | ThursdayMorning600aPregnancy3Devin1Abort1Nice",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4AbortionDemons1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4AbortionDemons1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4AbortionDemons1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4AbortionDemons1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4AbortionDemons1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4QueenSpecies1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4YouSpecies1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4YouSpecies1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4YouSpecies1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4YouSpecies1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link to missing passage \"ThursdayMorning600aQueenMeeting1\" | ThursdayMorning600aPregnancy4YouSpecies1",
+   "why": "No passage with this name exists (checked all 9515 names, any letter case)."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | Alternate_Variable_Init4",
+   "why": "<<set $x == ...>> only compares; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | History071greenJillCum1",
+   "why": "<<set $x == ...>> only compares; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | KaylaHanaApartment260aStart4Hana3PinkBlue",
+   "why": "<<set $x == ...>> only compares; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | RioCalls062KeeraBossFightRoundX",
+   "why": "<<set $x == ...>> only compares; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | RioCalls062KeeraBossFightRoundX",
+   "why": "<<set $x == ...>> only compares; nothing is set."
+  },
+  {
+   "key": "Error | Conditions | Brackets do not match in condition | ThursdayMorning600aDreamMarketOrange2LydiaBoys2",
+   "why": "<<if visited(\"...\">> - the \")\" of visited( is missing."
+  },
+  {
+   "key": "Error | Conditions | Brackets do not match in condition | ThursdayMorning600aDreamMarketOrange2LydiaBoys2",
+   "why": "<<if visited(\"...\">> - the \")\" of visited( is missing."
+  },
+  {
+   "key": "Error | Macro tags | <<if>> is never closed | ThursdayMorning600aDreamMarketOrange2ChangSoloClaimed2",
+   "why": "Counted with comments removed: one <<if>> more than <</if>>."
+  },
+  {
+   "key": "Error | Macro tags | <<if>> is never closed | ThursdayMorning600aLydiaIgnored1",
+   "why": "Counted with comments removed: one <<if>> more than <</if>>."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\013\\nikki_013_flirty.jpg | Math071greencontractNikkistart1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\037\\heather_bimbo_closeupW.jpg | heather_closeup",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\050\\monica_mightnight_alt.jpg | MonicaMorning063NoLightJustChat1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\062\\ward_closeup.jpg | WardSeduction062Start1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\063\\tom_dreamshield.jpg | ThursdayMorning540aScience1purpleLight1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmass1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmass10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmass2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmass3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmass4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmass5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmass6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmass7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmass8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmass9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbar1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbar10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbar2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbar3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbar4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbar5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbar6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbar7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbar8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbar9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbb1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbb10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbb2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbb3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbb4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbb5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbb6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbb7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbb8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmbb9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmcleric1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmcleric10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmcleric2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmcleric3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmcleric4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmcleric5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmcleric6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmcleric7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmcleric8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmcleric9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmdr1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmdr10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmdr2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmdr3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmdr4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmdr5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmdr6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmdr7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmdr8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmdr9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmnecro1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmnecro10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmnecro2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmnecro3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmnecro4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmnecro5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmnecro6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmnecro7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmnecro8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmnecro9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmpal1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmpal10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmpal2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmpal3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmpal4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmpal5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmpal6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmpal7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmpal8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmpal9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmran1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmran10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmran2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmran3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmran4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmran5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmran6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmran7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmran8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmran9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmwz1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmwz10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmwz2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmwz3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmwz4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmwz5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmwz6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmwz7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmwz8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_fmwz9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mass1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mass10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mass2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mass3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mass4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mass5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mass6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mass7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mass8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mass9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbar1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbar10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbar2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbar3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbar4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbar5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbar6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbar7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbar8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbar9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbb1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbb10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbb2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbb3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbb4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbb5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbb6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbb7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbb8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mbb9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mcleric1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mcleric10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mcleric2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mcleric3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mcleric4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mcleric5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mcleric6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mcleric7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mcleric8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mcleric9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mdr1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mdr10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mdr2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mdr3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mdr4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mdr5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mdr6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mdr7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mdr8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mdr9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mnecro1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mnecro10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mnecro2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mnecro3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mnecro4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mnecro5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mnecro6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mnecro7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mnecro8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mnecro9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mpal1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mpal10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mpal2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mpal3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mpal4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mpal5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mpal6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mpal7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mpal8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mpal9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mran1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mran10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mran2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mran3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mran4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mran5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mran6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mran7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mran8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mran9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mwz1.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mwz10.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mwz2.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mwz3.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mwz4.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mwz5.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mwz6.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mwz7.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mwz8.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\156\\val_game_mwz9.jpg | val_game_classImage8shop",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images\\360\\mw_engagedb1.jpg | NadirWard330aStart1Harem4cEngage1MRSWardOnly1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\013\\pregnant_cum.mp4 | Dream013JakeMom3",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\062\\ward_maid3.mp4 | NadirDinner071pink7PullOut",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\071\\rio_schoolgirl_preg1.mp4 | RioSofia071PinkRio1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\074\\a_blood_you.mp4 | SuzieBunker104MonsterPathPunch2Maybe1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\107\\monica_preg_rio_threesome1.mp4 | monica_sex2",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\107\\rio_preg_se1.mp4 | RioSofia071PinkRio4",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\121\\wilson_victory1.mp4 | WilsonHillFridayDinner121bStart14PINK",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\130\\maywood_pregp.mp4 | MaywoodConfrontation330aStart2Normal2ContractHim1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\130\\monica_contractc_preg.mp4 | HouseParty260aStart1MaywoodOrangeOrientation5",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\130\\monica_rio_threesome2.mp4 | FinalDnD130bStart2Branch2HeroesDefeated1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\156\\maywood_contractp_preg.mp4 | Morning156aStart4Part4Maywood3",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\156\\mm_contract1_preg.mp4 | WeddingStartMorning300aStart6Emma1Property1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\156\\mm_contract2_preg.mp4 | WeddingStartMorning300aStart6Emma1Property2",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\230\\sally_oldcum.mp4 | DrugEmpire230aWarehouseStart2NoParty1SallyDemonFight1Sally3",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\230\\sally_oldpull.mp4 | DrugEmpire230aWarehouseStart2NoParty1SallyDemonFight1Sally3",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\360\\mrsw_engagedb1.mp4 | MonaEvening205aStartWardsMomContract3",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\390\\hill_young1a.mp4 | JaneDate390aStart1JakeDate1Voyeur1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\390\\hill_young1d.mp4 | JaneDate390aStart1JakeDate1Voyeur3",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\390\\hill_young2b.mp4 | JaneDate390aStart1JakeDate1Voyeur2",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\390\\hill_youngcb.mp4 | JaneDate390aStart1JakeDate1Voyeur3",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\420\\hill_threesomenicep.mp4 | TuesdayMorning420aStart1HeatherHill3Jane1Joined2Pull1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\480\\emma_office1p.mp4 | MaywoodBusiness480aStart7Emma3C",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: images\\aug02\\base_cockteasing.mp4 | WeddingStartMorning300aStart7Bride2greenLight1MM1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<assistant_base>> | Monday330Morning2Kitty1",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop10>> | ShopPhase156aMorning1",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop10>> | ShopPhase156aMorning1Upgrades",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop2>> | ShopPhase156aMorning1",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop2>> | ShopPhase156aMorning1Upgrades",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop3>> | ShopPhase156aMorning1",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop3>> | ShopPhase156aMorning1Upgrades",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop4>> | ShopPhase156aMorning1",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop4>> | ShopPhase156aMorning1Upgrades",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop5>> | ShopPhase156aMorning1",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop5>> | ShopPhase156aMorning1Upgrades",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop6>> | ShopPhase156aMorning1",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop6>> | ShopPhase156aMorning1Upgrades",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop7>> | ShopPhase156aMorning1",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop7>> | ShopPhase156aMorning1Upgrades",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop8>> | ShopPhase156aMorning1",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop8>> | ShopPhase156aMorning1Upgrades",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop9>> | ShopPhase156aMorning1",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  },
+  {
+   "key": "Error | Unknown macros | Unknown macro <<val_game_upgradeshop9>> | ShopPhase156aMorning1Upgrades",
+   "why": "No widget or Macro.add defines it anywhere in the game (val_game_upgradeshop1-10, assistant_base)."
+  }
+ ],
+ "known_false": []
+}

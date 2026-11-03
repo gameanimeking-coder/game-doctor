@@ -1,0 +1,326 @@
+{
+ "path": "Society v1.28\\index.html",
+ "format": "SugarCube 2.36.1",
+ "seconds": 2,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": false,
+ "confirmed": [
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/instruct/sEvent0.webp | DLC0 Training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/instruct/sEvent1.webp | DLC0 Training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/instruct/sEvent2.webp | DLC0 Training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/instruct/sEvent3.webp | DLC0 Training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/instruct/sEvent4.webp | DLC0 Training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/instruct/sEvent5.webp | DLC0 Training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/instruct/sEvent6.webp | DLC0 Training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/instruct/sEvent7.webp | DLC0 Training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/instruct/sEvent8.webp | DLC0 Training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/instruct/sEvent9.webp | DLC0 Training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/invite/sEvent0.webp | DLC0 sInvite",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/invite/sEvent1.webp | DLC0 mInvite",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/negotiation/sEvent0.webp | DLC0 Coffee Business Deal",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/negotiation/sEvent1.webp | DLC0 Coffee Business Deal",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/negotiation/sEvent2.webp | DLC0 Coffee Business Deal",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/aEvent0.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/aEvent2.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/aEvent3.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent0.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent1.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent10.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent11.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent12.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent13.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent14.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent2.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent3.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent4.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent5.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent6.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent7.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent8.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mEvent9.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/mansion.jpg | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/pEvent0.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/pEvent1.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/pEvent2.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/party/pEvent3.webp | DLC0 Party",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/cEvent0.webp | DLC0 Sleep",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/cEvent1.webp | DLC0 Sleep",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/cEvent2.webp | DLC0 Sleep",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/cEvent3.webp | DLC0 Sleep",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/mEvent0.webp | DLC0 Room",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/mEvent1.webp | DLC0 Room",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/mEvent2.webp | DLC0 Sleep",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/mEvent3.webp | DLC0 Room",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/mEvent4.webp | DLC0 Shower",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/mEvent5.webp | DLC0 Shower",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/pEvent0.webp | DLC0 Room",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/pEvent1.webp | DLC0 Room",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/sEvent0.webp | DLC0 Shower",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/sEvent1.webp | DLC0 Shower",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/sEvent2.webp | DLC0 Shower",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/shower.webp | DLC0 Shower",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/wEvent0.webp | DLC0 Room",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/wEvent1.webp | DLC0 Room",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/wEvent2.webp | DLC0 Room",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/room/wEvent3.webp | DLC0 Room",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/skip/img.webp | DLC0 Skip",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/skip/sEvent0.webp | DLC0 Skip",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/skip/sEvent1.webp | DLC0 Skip",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/skip/sEvent2.webp | DLC0 Skip",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/skip/sEvent3.webp | DLC0 Skip",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/skip/sEvent4.webp | DLC0 Skip",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/skip/sEvent5.webp | DLC0 Skip",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/bEvent0.webp | DLC0 Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/bEvent1.webp | DLC0 Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/bEvent2.webp | DLC0 Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/background.jpg | DLC0 TV",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/cEvent0.webp | DLC0 Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/cEvent1.webp | DLC0 Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/dEvent1.webp | DLC0 Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/dEvent2.webp | DLC0 Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/fEvent0.webp | DLC0 Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/fEvent1.webp | DLC0 Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/fEvent2.webp | DLC0 Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/gameplay.gif | DLC0 Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img/dlc0/stream/minecraft.gif | DLC0 Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). The paid DLC images are not shipped (img/dlc0 has only a readme), but its scenes are linked from the island/hotel scenes."
+  },
+  {
+   "key": "Error | Missing files | Image not found: img\\streams\\sEvent9.webp | Watch Stream",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  }
+ ],
+ "known_false": []
+}

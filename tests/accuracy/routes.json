@@ -1,0 +1,22 @@
+{
+ "path": "Routes of Life\\Routes of Life.html",
+ "format": "SugarCube 2.37.3",
+ "seconds": 8,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": false,
+ "confirmed": [
+  {
+   "key": "Error | Conditions | \"+=\" inside a condition | Go back to the clothing store ❗",
+   "why": "<<if $money += 125>> adds money instead of comparing."
+  },
+  {
+   "key": "Error | Conditions | \"+=\" inside a condition | Pay the $100 fee",
+   "why": "<<if $money += 125>> adds money instead of comparing."
+  },
+  {
+   "key": "Error | Missing files | Video not found: videos\\Oliver\\corrupt\\kittem and puppy/sch ollie rain 3.webm | The last days ⭐",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  }
+ ],
+ "known_false": []
+}

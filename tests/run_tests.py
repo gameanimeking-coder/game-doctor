@@ -7,7 +7,11 @@
    the saved snapshot, so changes to old checks are always noticed.
 2. Fixtures: small test games with planted bugs. Each must produce the expected
    findings (and clean ones must produce none of the listed kinds).
+3. Accuracy: real games in tests/accuracy/*.json, each "Broken" finding checked by hand.
+   A Broken finding not in the verified list fails the test; precision is printed.
+   --full-accuracy also scans the big games (several minutes); --no-accuracy skips this part.
 """
+import collections
 import json
 import os
 import sys
@@ -175,6 +179,60 @@ def run_fix_application():
     return ok
 
 
+ACC_DIR = os.path.join(HERE, 'accuracy')
+GAMES_ROOT = r'E:\E-Games\English'
+
+
+def run_accuracy(full):
+    """Real games whose every "Broken" (Error) finding was checked by hand. Fails when a scan gives a
+    Broken finding that is not in the game's verified list (a new false alarm, or a real problem nobody
+    checked yet), or when a confirmed one disappears. Prints how many Broken results are real."""
+    ok = True
+    total_real = total_all = 0
+    if not os.path.isdir(ACC_DIR):
+        return ok
+    for fn in sorted(os.listdir(ACC_DIR)):
+        if not fn.endswith('.json'):
+            continue
+        spec = json.load(open(os.path.join(ACC_DIR, fn), encoding='utf-8'))
+        name = fn[:-5]
+        if spec.get('optional') and not full:
+            print(f'  [skip] {name}: big game, only with --full-accuracy ({spec.get("seconds", "?")}s)')
+            continue
+        path = os.path.join(GAMES_ROOT, spec['path'])
+        if not os.path.isfile(path):
+            print(f'  [skip] {name}: game file not found')
+            continue
+        t = time.time()
+        res = scanner.scan(path)
+        got = collections.Counter(key(i) for i in res.issues if i.severity == scanner.ERROR)
+        real = collections.Counter(c['key'] for c in spec['confirmed'])
+        false = collections.Counter(c['key'] for c in spec.get('known_false', []))
+        unchecked = got - real - false
+        lost = real - got
+        n_real = sum((got & real).values())
+        n_all = sum(got.values())
+        total_real += n_real
+        total_all += n_all
+        pct = f'{100 * n_real / n_all:.1f}%' if n_all else '-'
+        line = f'{name}: {n_real}/{n_all} Broken results real ({pct}), {time.time() - t:.0f}s'
+        if unchecked or lost:
+            ok = False
+            print(f'  [FAIL] {line}')
+            for k in sorted(unchecked.elements()):
+                print(f'      not verified (check by hand, then add to tests/accuracy/{fn}): {k}')
+            for k in sorted(lost.elements()):
+                print(f'      confirmed real problem no longer found: {k}')
+        else:
+            print(f'  [ok] {line}')
+    if total_all:
+        pct = 100 * total_real / total_all
+        print(f'  Precision over the set: {total_real}/{total_all} Broken results real = {pct:.1f}% (target 99%)')
+        if pct < 99:
+            ok = False
+    return ok
+
+
 def run_playtest():
     """Play the real games in the invisible browser; the expected runtime errors must match."""
     import playtest
@@ -210,9 +268,13 @@ if __name__ == '__main__':
     b = run_fixtures()
     print('Applying every suggested fix:')
     c = run_fix_application()
+    e = True
+    if '--no-accuracy' not in sys.argv:
+        print('Real games: are the "Broken" results really broken?')
+        e = run_accuracy('--full-accuracy' in sys.argv)
     d = True
     if '--no-playtest' not in sys.argv:
         print('Play-testing in the invisible browser:')
         d = run_playtest()
-    print('\nRESULT:', 'PASS' if a and b and c and d else 'FAIL (see above)')
-    sys.exit(0 if a and b and c and d else 1)
+    print('\nRESULT:', 'PASS' if a and b and c and d and e else 'FAIL (see above)')
+    sys.exit(0 if a and b and c and d and e else 1)

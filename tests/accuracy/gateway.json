@@ -1,0 +1,82 @@
+{
+ "path": "Gateway 0.4.3\\Gateway.html",
+ "format": "SugarCube 2.37.3",
+ "seconds": 10,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": false,
+ "confirmed": [
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | eastsex",
+   "why": "<<set $x == \"...\">> / <<set $fail is \"true\">> only compare; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | eva",
+   "why": "<<set $x == \"...\">> / <<set $fail is \"true\">> only compare; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | housestuff",
+   "why": "<<set $x == \"...\">> / <<set $fail is \"true\">> only compare; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | housestuff",
+   "why": "<<set $x == \"...\">> / <<set $fail is \"true\">> only compare; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | intro",
+   "why": "<<set $x == \"...\">> / <<set $fail is \"true\">> only compare; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | intro2",
+   "why": "<<set $x == \"...\">> / <<set $fail is \"true\">> only compare; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | intro2",
+   "why": "<<set $x == \"...\">> / <<set $fail is \"true\">> only compare; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | intro2",
+   "why": "<<set $x == \"...\">> / <<set $fail is \"true\">> only compare; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | meetdaughters",
+   "why": "<<set $x == \"...\">> / <<set $fail is \"true\">> only compare; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | peeping",
+   "why": "<<set $x == \"...\">> / <<set $fail is \"true\">> only compare; nothing is set."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | vannasex",
+   "why": "<<set $x == \"...\">> / <<set $fail is \"true\">> only compare; nothing is set."
+  },
+  {
+   "key": "Error | Macro tags | <</say>> has no opening <<say>> | krissyanswers",
+   "why": "krissyanswers: <<think krissy>>...<</say>> - opened as think, closed as say."
+  },
+  {
+   "key": "Error | Macro tags | <<link>> is never closed | kenziesex",
+   "why": "kenziesex: <<link \"Yes\" kenziesex>>...<<link>> - the closing tag is written <<link>> instead of <</link>>, so both links are open."
+  },
+  {
+   "key": "Error | Macro tags | <<link>> is never closed | kenziesex",
+   "why": "kenziesex: <<link \"Yes\" kenziesex>>...<<link>> - the closing tag is written <<link>> instead of <</link>>, so both links are open."
+  },
+  {
+   "key": "Error | Macro tags | <<link>> is never closed | kenziesex",
+   "why": "kenziesex: <<link \"Yes\" kenziesex>>...<<link>> - the closing tag is written <<link>> instead of <</link>>, so both links are open."
+  },
+  {
+   "key": "Error | Macro tags | <<link>> is never closed | kenziesex",
+   "why": "kenziesex: <<link \"Yes\" kenziesex>>...<<link>> - the closing tag is written <<link>> instead of <</link>>, so both links are open."
+  },
+  {
+   "key": "Error | Macro tags | <<think>> is never closed | krissyanswers",
+   "why": "krissyanswers: <<think krissy>>...<</say>> - opened as think, closed as say."
+  },
+  {
+   "key": "Error | Missing files | Image not found: offworld/cassie/cassiecrop.jpg | possess",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). <<center>> adds img/: img/offworld/cassie/ does not exist (the file is in img/cassie/)."
+  }
+ ],
+ "known_false": []
+}

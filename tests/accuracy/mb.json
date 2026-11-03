@@ -1,0 +1,22 @@
+{
+ "path": "MB.5\\MB.5\\MB 0.24.6.html",
+ "format": "Harlowe 3.3.7",
+ "seconds": 2,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": false,
+ "confirmed": [
+  {
+   "key": "Error | Missing files | Image not found: images/enemies/awolf.jpg | Alpha Wolf",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images/events/dog.jpg | Adventure",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: images/items/awcharm.jpg | Your Home",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  }
+ ],
+ "known_false": []
+}

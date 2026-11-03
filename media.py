@@ -130,8 +130,19 @@ def check_file(path):
             return ('cut', kind)
         return ('wrong', kind)
     if truncated(kind, head, tail, size):
+        if kind in ('png', 'jpg') and size > TAIL and _end_mark_anywhere(path, kind):
+            return None   # extra bytes after the end (e.g. a web page glued on by a download site): still shows
         return ('cut', kind)
     return None
+
+
+def _end_mark_anywhere(path, kind):
+    try:
+        with open(path, 'rb') as f:
+            data = f.read()
+    except OSError:
+        return False
+    return (b'IEND' if kind == 'png' else b'\xff\xd9') in data[HEAD:]
 
 
 def check_files(sc, all_files, referenced):

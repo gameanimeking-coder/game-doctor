@@ -1,0 +1,214 @@
+{
+ "path": "Destroyer v1.54\\Destroyer.html",
+ "format": "SugarCube 2.36.1",
+ "seconds": 35,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": true,
+ "confirmed": [
+  {
+   "key": "Error | Broken links | <<goto>> to missing passage \"redlinegirl11finalfail\" | redlinegirl11final",
+   "why": "No passage \"redlinegirl11finalfail\" exists."
+  },
+  {
+   "key": "Error | Broken links | <<goto>> to missing passage \"redlinegirl11finalfail\" | redlinegirl11final1",
+   "why": "No passage \"redlinegirl11finalfail\" exists."
+  },
+  {
+   "key": "Error | Broken links | <<goto>> to missing passage \"redlinegirl11finalfail\" | redlinegirl11final2",
+   "why": "No passage \"redlinegirl11finalfail\" exists."
+  },
+  {
+   "key": "Error | Broken links | <<goto>> to missing passage \"redlinegirl11finalfail\" | redlinegirl11final3",
+   "why": "No passage \"redlinegirl11finalfail\" exists."
+  },
+  {
+   "key": "Error | Broken links | data-passage link to missing passage \"Univesrsity\" | Romi teacher",
+   "why": "Typo: the passage is \"University\"."
+  },
+  {
+   "key": "Error | Code | Unclosed quote in <<speech>> | candievent1",
+   "why": "<<speech \"candi \"Candi\">> - three quotes."
+  },
+  {
+   "key": "Error | Code | Unclosed quote in <<speech>> | candievent1",
+   "why": "<<speech \"candi \"Candi\">> - three quotes."
+  },
+  {
+   "key": "Error | Macro tags | <</nobr>> has no opening <<nobr>> | scottyevent4a",
+   "why": "scottyevent4a: <<if>> opened before <<nobr>> and closed inside it (crossed tags)."
+  },
+  {
+   "key": "Error | Macro tags | <<if>> is never closed | adrianagym",
+   "why": "adrianagym: 1 <<if>>, 0 <</if>>."
+  },
+  {
+   "key": "Error | Macro tags | <<nobr>> is never closed | scottyevent4a",
+   "why": "scottyevent4a: <<if>> opened before <<nobr>> and closed inside it (crossed tags)."
+  },
+  {
+   "key": "Error | Macro tags | <<replace>> is never closed | hero1",
+   "why": "Closed with <<replace>> or </replace> instead of <</replace>>."
+  },
+  {
+   "key": "Error | Macro tags | <<replace>> is never closed | hero1",
+   "why": "Closed with <<replace>> or </replace> instead of <</replace>>."
+  },
+  {
+   "key": "Error | Macro tags | <<replace>> is never closed | ryanevent4",
+   "why": "Closed with <<replace>> or </replace> instead of <</replace>>."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assemale/img/downtown/malefuck1.webp | downtownguy",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assemale/img/downtown/malefuck2.webp | downtownguy",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assemale/img/downtown/malefuck3.webp | downtownguy",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assemale/img/downtown/malefuck4.webp | downtownguy",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assemale/img/downtown/malefuck5.webp | downtownguy",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/beach/girllaugh.jpg | beachgirl",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/beach/guylaugh.jpg | beachguy",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/beach/translaugh.jpg | beachtrans",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/bonnie/clubwc12.webp | Toilet",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/mandy/analcum.jpg | mandyfuckanal",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/mandy/analcum1.webp | mandyfuckanal",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/mandy/analcum2.jpg | mandyfuckanal",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/mandy/analcum3.jpg | mandyfuckanal",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/mandy/gym.jpg | mandygym",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/mandy/gym1.jpg | mandy",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/mandy/pussycum.webp | mandyfuckpus",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/perverse/stick.jpg | Gather some sticks",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/img/tinder/brunetfuck8.webp | brunetdate",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/cherry/fuck3.mp4 | cherryfuck",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/india/shower.mp4 | stepmombath",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/india/shower1.mp4 | stepmomshower1",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/india/shower2.mp4 | stepmomshower2",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/india/shower3.mp4 | stepmomshower3",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/india/showerbj.mp4 | stepmomshower4",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/india/showersex.mp4 | stepmomshowersex",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/india/showersex1.mp4 | stepmomshowersex",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/isa/sex9.mp4 | isasex",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/isa/suck4.mp4 | isablow",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/isa/suck5.mp4 | isablow",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/mandy/gym.mp4 | Help Mandy with weight training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/mandy/gym4.mp4 | Help Mandy with weight training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/mandy/gym6.mp4 | Help Mandy with weight training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/mandy/yoga.mp4 | Help Mandy with yoga training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/mandy/yoga2.mp4 | Help Mandy with yoga training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/mandy/yoga3.mp4 | Help Mandy with yoga training",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/ryan/blow3.mp4 | ryanblow",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/ryan/fuck2.mp4 | ryanfuck",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: assets/img/teagan/living46.mp4 | sisliving4",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  }
+ ],
+ "known_false": []
+}

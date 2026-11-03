@@ -1,0 +1,58 @@
+{
+ "path": "Corpo Life v.20\\cl020\\index.html",
+ "format": "SugarCube 2.36.1",
+ "seconds": 10,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": false,
+ "confirmed": [
+  {
+   "key": "Error | Broken links | <<link>> to missing passage \"Back Yard\" | Home",
+   "why": "No passage with this name exists (checked, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | <<link>> to missing passage \"Gal Dining\" | Gal House",
+   "why": "No passage with this name exists (checked, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | <<link>> to missing passage \"Gal Living\" | Gal House",
+   "why": "No passage with this name exists (checked, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | <<link>> to missing passage \"Gal Shower\" | Gal House",
+   "why": "No passage with this name exists (checked, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | <<link>> to missing passage \"Lolipop\" | Normal Escort",
+   "why": "No passage with this name exists (checked, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | <<link>> to missing passage \"Plane Event Bali\" | Flight Page",
+   "why": "No passage with this name exists (checked, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | <<link>> to missing passage \"Plane Event Bern\" | Flight Page",
+   "why": "No passage with this name exists (checked, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | <<link>> to missing passage \"Plane Event Dubai\" | Flight Page",
+   "why": "No passage with this name exists (checked, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | <<link>> to missing passage \"Pool\" | Home",
+   "why": "No passage with this name exists (checked, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | <<link>> to missing passage \"Rent Large Apartment\" | Rent Property",
+   "why": "No passage with this name exists (checked, any letter case)."
+  },
+  {
+   "key": "Error | Broken links | Link is not closed with ]] on the same line | Have Breakfast",
+   "why": "[[Go Back|Studio Apartmen - the link is cut off at the line end, no ]]."
+  },
+  {
+   "key": "Error | Macro tags | <</nobr>> has no opening <<nobr>> | Bedroom",
+   "why": "Eva bedroom: <<nobr>>...<</nobr>> followed by a second <</nobr>>."
+  }
+ ],
+ "known_false": []
+}

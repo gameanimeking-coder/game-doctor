@@ -1,0 +1,114 @@
+{
+ "path": "Become Someone V195\\index.html",
+ "format": "SugarCube 2.37.3",
+ "seconds": 26,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": true,
+ "confirmed": [
+  {
+   "key": "Error | Conditions | Brackets do not match in condition | Highlight Widget",
+   "why": "Highlight Widget condition: 11 \"(\" and 12 \")\"."
+  },
+  {
+   "key": "Error | Macro tags | <</if>> has no opening <<if>> | Kitchen Irene",
+   "why": "Counted with comments removed: the scene has one <</if>> more / fewer than <<if>>."
+  },
+  {
+   "key": "Error | Macro tags | <</if>> has no opening <<if>> | Living room Anastasia",
+   "why": "Counted with comments removed: the scene has one <</if>> more / fewer than <<if>>."
+  },
+  {
+   "key": "Error | Macro tags | <</if>> has no opening <<if>> | Mansion's pool Anastasia",
+   "why": "Counted with comments removed: the scene has one <</if>> more / fewer than <<if>>."
+  },
+  {
+   "key": "Error | Macro tags | <</if>> has no opening <<if>> | Mansion's pool Suzy",
+   "why": "Counted with comments removed: the scene has one <</if>> more / fewer than <<if>>."
+  },
+  {
+   "key": "Error | Macro tags | <<if>> is never closed | Kitchen Anastasia",
+   "why": "Counted with comments removed: the scene has one <</if>> more / fewer than <<if>>."
+  },
+  {
+   "key": "Error | Missing files | Image not found: ressources/credits/babes.webp | Credits",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: ressources/credits/bangbros.webp | Credits",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: ressources/credits/brazzers.webp | Credits",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: ressources/credits/digitalplayground.webp | Credits",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: ressources/credits/fakehub.webp | Credits",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: ressources/credits/littlecapricedreams.webp | Credits",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: ressources/credits/mofos.webp | Credits",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: ressources/credits/pornhub.webp | Credits",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: ressources/credits/realitykings.webp | Credits",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: ressources/credits/teamskeet.png | Credits",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: ressources/credits/unsplash.webp | Credits",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Image not found: ressources/credits/wicked.webp | Credits",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: ressources/scene/carla/gf/bath.mp4 | Bathroom Carla",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: ressources/scene/carla/gf/living.mp4 | Living room Carla",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: ressources/scenes/sarai/stage1/facefuck.mp4 | gallerysarai3",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: ressources/scenes/sarai/stage1/facial.mp4 | gallerysarai3",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: ressources/videos/porn/softporn/10.webm | Softporn",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: ressources/videos/porn/softporn/7.webm | Softporn",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: ressources/videos/porn/softporn/8.webm | Softporn",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  },
+  {
+   "key": "Error | Missing files | Video not found: ressources/videos/porn/softporn/9.webm | Softporn",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here)."
+  }
+ ],
+ "known_false": []
+}

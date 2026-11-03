@@ -1,0 +1,30 @@
+{
+ "path": "Family Ties 0.1.3\\Family Ties Remake 1.3.html",
+ "format": "SugarCube 2.36.1",
+ "seconds": 6,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": false,
+ "confirmed": [
+  {
+   "key": "Error | Broken links | <<link>> to missing passage \"pornhub\" | phone",
+   "why": "No passage \"pornhub\" exists (any letter case)."
+  },
+  {
+   "key": "Error | Broken links | <<link>> to missing passage \"pornhub\" | phone",
+   "why": "No passage \"pornhub\" exists (any letter case)."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | husbNtrEvent2",
+   "why": "<<set $sexPose == \"analspitroast\">> only compares."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | husbNtrEvent2",
+   "why": "<<set $sexPose == \"analspitroast\">> only compares."
+  },
+  {
+   "key": "Error | Macro tags | <<if>> is never closed | homeHisBroAutoSexEvent1",
+   "why": "homeHisBroAutoSexEvent1: 23 <<if>>, 22 <</if>> (comments removed)."
+  }
+ ],
+ "known_false": []
+}

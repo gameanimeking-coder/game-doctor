@@ -10,6 +10,7 @@ import html
 import os
 import re
 import time
+import urllib.parse
 from dataclasses import dataclass, field
 
 import knowledge as K
@@ -155,8 +156,64 @@ def _blank(m):
 
 
 COMMENT_RE = re.compile(r'/\*.*?\*/|<!--.*?-->|/%.*?%/', re.S)
-SCRIPT_BODY_RE = re.compile(r'(<<script\b[^>]*>>)(.*?)(<</script>>)|(<script\b[^>]*>)(.*?)(</script>)', re.S | re.I)
+SCRIPT_BODY_RE = re.compile(r'(<<script\b[^>]*>>)(.*?)(<</script>>|<<endscript>>)|(<script\b[^>]*>)(.*?)(</script>)', re.S | re.I)
+DEAD = '\0dead branch'   # stands for "a link nobody can click" in the reachability check
+QUOTED_NAME = r'''(?:"([^"]+)"|'([^']+)')'''   # "..." or '...', each may hold the other quote
+MACRO_SCRIPT_TAG_RE = re.compile(r'<<script\b[^>]*>>|<</script>>|<<endscript>>', re.I)
+
+
+class _ScriptMatch:
+    """Looks like a SCRIPT_BODY_RE match; groups 1-3 = <<script>> open/body/close, 4-6 = <script> open/body/close."""
+    def __init__(self, text, spans):
+        self._text, self._spans = text, spans   # spans[i] = (start, end) of group i, or None
+
+    def group(self, i=0):
+        s = self._spans[i]
+        return None if s is None else self._text[s[0]:s[1]]
+
+    def start(self, i=0):
+        s = self._spans[i]
+        return -1 if s is None else s[0]
+
+    def end(self, i=0):
+        s = self._spans[i]
+        return -1 if s is None else s[1]
+
+
+def script_matches(text):
+    """Script blocks in a passage. A <<script>> inside a <<script>> (e.g. in a text the script shows with
+    Dialog.wiki) is counted the way SugarCube counts it, so the outer block ends at its own <</script>>."""
+    out = []
+    pos = 0
+    while True:
+        m = SCRIPT_BODY_RE.search(text, pos)
+        if not m:
+            return out
+        if m.group(1) is None:   # <script>...</script>
+            out.append(m)
+            pos = m.end()
+            continue
+        depth, close = 0, None
+        for t in MACRO_SCRIPT_TAG_RE.finditer(text, m.start()):
+            depth += -1 if t.group().lower().startswith(('<</', '<<end')) else 1
+            if depth == 0:
+                close = t
+                break
+        if close is None:
+            pos = m.end(1)   # never closed: left as it is, so the macro check reports "<<script>> is never closed"
+            continue
+        out.append(_ScriptMatch(text, [(m.start(), close.end()), m.span(1), (m.end(1), close.start()), close.span(),
+                                       None, None, None]))
+        pos = close.end()
+
+
 STYLE_BODY_RE = re.compile(r'(<style\b[^>]*>)(.*?)(</style>)', re.S | re.I)
+# a whole macro tag with every quote closed, read the way SugarCube reads it (">>" inside quotes is text)
+QUOTED_ARGS = r'(?:"(?:\\.|[^"\\\n])*"|\'(?:\\.|[^\'\\\n])*\'|`(?:\\.|[^`\\\n])*`|[^>"\'`]|>(?!>))*?'
+MACRO_TAG_RE = re.compile(r'<<[A-Za-z][\w-]*' + QUOTED_ARGS + '>>')
+# a whole HTML tag with every quoted value closed (">" inside a quoted value is text;
+# a "<" inside one means the quote ran on into the next tag)
+HTML_TAG_RE = re.compile(r'<[A-Za-z][\w-]*(?:\s(?:"[^"<]*"|\'[^\'<]*\'|[^"\'<>])*)?>')
 VERBATIM_RE = re.compile(r'"""(.*?)"""|<nowiki>(.*?)</nowiki>|\{\{\{(.*?)\}\}\}', re.S)
 
 
@@ -179,8 +236,10 @@ class Scanner:
         self.passage_names = set()
         self.start_passage = ''
         self.link_edges = []       # (from passage, to passage, offset in from-passage text, kind)
+        self.near_edges = []       # (from passage, passage a misspelled link probably means)
         self.known_vars = set()
         self.unreachable = set()   # passages players can't reach
+        self.dead_widget_spans = collections.defaultdict(list)   # passage -> [(first line, last line, widget nothing calls)]
 
     # ------------------------------------------------------------------ helpers
     def add(self, severity, category, title, passage=None, offset=None, line=None, **kw):
@@ -241,6 +300,7 @@ class Scanner:
             except Exception as e:  # one broken check must not stop the scan
                 self.add(INFO, 'Scanner', f'Check "{msg}" stopped early: {e}',
                          what='The scanner hit something it did not expect. Other results are still valid.')
+        mark_dead_widgets(self.issues, self.dead_widget_spans)
         mark_unreachable(self.issues, self.unreachable)
         self.issues.sort(key=lambda i: (SEVERITY_ORDER[i.severity], i.category, i.line))
         self.progress(100, 'Done')
@@ -327,7 +387,12 @@ class Scanner:
 
     def _add_passage(self, pid, name, tags, raw_body, raw_pos, escaped=False):
         text = html.unescape(raw_body)
-        line = self.raw.count('\n', 0, raw_pos) + 1
+        # count lines on from the previous passage instead of from the top of the file (passages come in order)
+        last_pos, last_line = getattr(self, '_line_mark', (0, 1))
+        if raw_pos < last_pos:
+            last_pos, last_line = 0, 1
+        line = last_line + self.raw.count('\n', last_pos, raw_pos)
+        self._line_mark = (raw_pos, line)
         clean = COMMENT_RE.sub(_blank, text) if 'script' not in tags and 'stylesheet' not in tags else text
         self.passages.append(Passage(pid, name, tags, clean, text, line))
 
@@ -339,8 +404,8 @@ class Scanner:
             elif 'stylesheet' in p.tags:
                 self.css_text += '\n' + p.raw_text
             else:
-                for m in SCRIPT_BODY_RE.finditer(p.text):
-                    self.js_text += '\n' + (m.group(2) or m.group(5) or '')
+                for m in script_matches(p.text):
+                    self.js_text +='\n' + (m.group(2) or m.group(5) or '')
                 for m in STYLE_BODY_RE.finditer(p.text):
                     self.css_text += '\n' + m.group(2)
         if self.format == 'HTML':
@@ -361,19 +426,20 @@ class Scanner:
                 except OSError:
                     pass
         # Macros defined in JavaScript
-        for m in re.finditer(r'Macro\.add\(\s*(\[[^\]]*\]|["\'][^"\']+["\'])\s*,(.{0,600})', self.js_text, re.S):
+        for m in re.finditer(r'Macro\.add\(\s*(\[[^\]]*\]|["\'][^"\']+["\'])\s*,(?=(.{0,600}))', self.js_text, re.S):   # look ahead: the next Macro.add may be close
             names = re.findall(r'["\']([^"\']+)["\']', m.group(1))
             container = bool(re.search(r'\btags\s*:', m.group(2)))
             for n in names:
                 self.js_macros[n] = container
         # Widgets
         for p in self.passages:
-            for m in re.finditer(r'<<widget\s+["\']([^"\']+)["\']([^>]*)>>', p.text):
-                name, container = m.group(1), 'container' in m.group(2)
+            for m in re.finditer(r'<<widget\s+(?:["\']([^"\']+)["\']|([A-Za-z_][\w-]*))([^>]*)>>', p.text):   # name may be unquoted
+                name, container = m.group(1) or m.group(2), 'container' in m.group(3)
                 if name in self.widgets:
-                    self.add(ERROR, 'Widgets', f'Widget "{name}" is defined twice', p, m.start(),
+                    self.add(WARNING, 'Widgets', f'Widget "{name}" is defined twice', p, m.start(),
                              snippet=self.snippet_at(p, m.start()),
-                             what=f'"{name}" is also defined in passage "{self.widgets[name][1]}". Only one definition will be used.',
+                             what=f'"{name}" is also defined in passage "{self.widgets[name][1]}". The game uses only the one it loads last; '
+                                  'that is a problem only if the two are different.',
                              fix='Delete or rename one of the two definitions.')
                 self.widgets[name] = (container, p.name)
                 if self.format.lower().startswith('sugarcube') and 'widget' not in p.tags:
@@ -387,10 +453,14 @@ class Scanner:
         return [p for p in self.passages if 'script' not in p.tags and 'stylesheet' not in p.tags]
 
     def markup_text(self, p):
-        """Passage text with script/style/verbatim bodies blanked out."""
-        t = SCRIPT_BODY_RE.sub(lambda m: (m.group(1) or m.group(4)) + _blank_str(m.group(2) or m.group(5) or '') + (m.group(3) or m.group(6)), p.text)
-        t = STYLE_BODY_RE.sub(lambda m: m.group(1) + _blank_str(m.group(2)) + m.group(3), t)
-        t = VERBATIM_RE.sub(_blank, t)
+        """Passage text with script/style/verbatim bodies blanked out. Same length as p.text, so an offset
+        in it points at the same place (line and snippet) in p.text."""
+        t = p.text
+        for m in reversed(script_matches(t)):
+            g = 2 if m.group(2) is not None else 5
+            t = t[:m.start(g)] + _blank_keep(m.group(g)) + t[m.end(g):]
+        t = STYLE_BODY_RE.sub(lambda m: m.group(1) + _blank_keep(m.group(2)) + m.group(3), t)
+        t = VERBATIM_RE.sub(lambda m: _blank_keep(m.group()), t)
         return t
 
     @property
@@ -434,6 +504,7 @@ class Scanner:
                 near = None  # pointing a passage at itself would loop forever, never suggest it
             if near:
                 referenced[near] += 1
+                self.near_edges.append((p.name, near))
             if re.match(r'https?://|mailto:|#', t):
                 return
             self.add(ERROR, 'Broken links', f'{how} to missing passage "{_short(t, 80)}"', p, offset,
@@ -445,7 +516,10 @@ class Scanner:
         for p in self.story_passages():
             t = self.markup_text(p)
             # [[links]] and [img[...][link]]
+            code = [c.span() for c in re.finditer(r'<<(?:set|run|print|=|-|if|elseif|for|switch|case|unset)\b' + QUOTED_ARGS + '>>', t)]
             for m in re.finditer(r'\[\[(.*?)\]\]', t, re.S):
+                if any(a < m.start() < b for a, b in code):
+                    continue   # [[0,1],[2,3]] inside <<set>> etc. is a JavaScript list, not a link
                 body = m.group(1)
                 if '\n' in body:
                     self.add(ERROR, 'Broken links', 'Link is not closed with ]] on the same line', p, m.start(),
@@ -479,22 +553,25 @@ class Scanner:
                 for m in re.finditer(r'<<(link|button|back|return|click)\s+\[\[([^\]]*)\]\]', t):
                     b = m.group(2)
                     target_check(p, b.rsplit('|', 1)[1] if '|' in b else b, m.start(), f'<<{m.group(1)}>>')
-            for m in re.finditer(r'data-passage\s*=\s*["\']([^"\']+)["\']', t):
-                target_check(p, m.group(1), m.start(), 'data-passage link')
+            for m in re.finditer(r'data-passage\s*=\s*(?:"([^"]+)"|\'([^\']+)\')', t):   # "Justin's house" holds a '
+                target_check(p, m.group(1) or m.group(2), m.start(), 'data-passage link')
             for m in re.finditer(r'\((?:link-goto|click-goto|goto|go-to|display|link-reveal-goto):\s*(?:"[^"]*"\s*,\s*)?"([^"]+)"\s*\)', t):
                 target_check(p, m.group(1), m.start(), 'Harlowe link')
-            for m in re.finditer(r'Engine\.play\(\s*["\']([^"\']+)["\']|Story\.get\(\s*["\']([^"\']+)["\']', t):
+            for m in re.finditer(r'(?:Engine\.play|Story\.get)\(\s*' + QUOTED_NAME, t):   # "Mandy's house" holds a '
                 target_check(p, m.group(1) or m.group(2), m.start(), 'Script link')
             if self.format.lower().startswith('chapbook'):
-                for m in re.finditer(r'\{(?:link to|back link|reveal link|embed passage(?: named)?|restart link)\s*:?\s*["\']([^"\']+)["\']', t):
-                    target_check(p, m.group(1), m.start(), 'Chapbook link')
+                for m in re.finditer(r'\{(?:link to|back link|reveal link|embed passage(?: named)?|restart link)\s*:?\s*' + QUOTED_NAME, t):
+                    target_check(p, m.group(1) or m.group(2), m.start(), 'Chapbook link')
             if self.format.lower().startswith('snowman'):
-                for m in re.finditer(r'\b(?:story|s)\.(?:show|passage)\(\s*["\']([^"\']+)["\']', t):
-                    target_check(p, m.group(1), m.start(), 'Script link')
+                for m in re.finditer(r'\b(?:story|s)\.(?:show|passage)\(\s*' + QUOTED_NAME, t):
+                    target_check(p, m.group(1) or m.group(2), m.start(), 'Script link')
         # JS references to passages count as uses
+        dom_call = re.compile(r'(?:\.(?:css|attr|prop|data|addClass|removeClass|toggleClass|hasClass|on|off|one|trigger|'
+                              r'getAttribute|setAttribute|removeAttribute|querySelector|querySelectorAll|getElementById|'
+                              r'getElementsByClassName|createElement|addEventListener|removeEventListener)|\bjQuery|\$)\(\s*$')
         for m in re.finditer(r'["\']([^"\'\n]{1,80})["\']', self.js_text):
-            if m.group(1) in names:
-                referenced[m.group(1)] += 1
+            if m.group(1) in names and not dom_call.search(self.js_text, max(0, m.start() - 40), m.start()):
+                referenced[m.group(1)] += 1   # (not .css("display", ...) when a passage happens to be called "display")
 
         # Unused passages
         maybe = (f' ({dynamic_refs} links are built from variables and could not be followed, so it might still be reachable.)'
@@ -551,24 +628,68 @@ class Scanner:
         return found
 
     def find_unreachable(self, unused, referenced):
-        """`unused` plus passages whose every link comes from an unreachable passage (scripts and
-        near-miss links count as reachable, so nothing is hidden on a guess)."""
+        """`unused` plus passages whose every link comes from an unreachable passage (scripts count as
+        reachable, so nothing is hidden on a guess; a misspelled link counts as a link to the passage it
+        probably means)."""
+        dead = self.dead_branches()
         into = collections.defaultdict(list)
-        for f, t, *_ in self.link_edges:
+        for f, t, off, *_ in self.link_edges:
+            # a link inside <<if $devMode>> where nothing ever sets $devMode can never be clicked
+            into[t].append(DEAD if any(a <= off < b for a, b in dead.get(f, ())) else f)
+        for f, t in self.near_edges:
             into[t].append(f)
-        out = set(unused)
+        # Start from every passage reached only by plain links, then keep removing those with a link from
+        # outside the group. What stays can't be reached, including groups that only link to each other
+        # (e.g. a cheat menu and its pages that nothing else links to).
+        out = set(unused) | {DEAD}
+        for p in self.passages:
+            n = p.name
+            if n in out or n in K.SPECIAL_PASSAGES or set(p.tags) & K.SPECIAL_TAGS or n == self.start_passage:
+                continue
+            src = into.get(n)
+            if src and len(src) == referenced[n]:
+                out.add(n)
         changed = True
         while changed:
             changed = False
-            for p in self.passages:
-                n = p.name
-                if n in out or n in K.SPECIAL_PASSAGES or set(p.tags) & K.SPECIAL_TAGS or n == self.start_passage:
-                    continue
-                src = into.get(n)
-                if src and len(src) == referenced[n] and all(f in out for f in src):
-                    out.add(n)
+            for n in list(out - unused):
+                if any(f not in out for f in into[n]):
+                    out.discard(n)
                     changed = True
-        return out
+        return out - {DEAD}
+
+    def dead_branches(self):
+        """Passage -> [(start, end)] of <<if $x>> / <<if $x is true>> blocks where $x is never set: the game only
+        ever checks it (its <<set>> commented out, a developer switch), so nothing in the block can run.
+        Careful on purpose: a variable named anywhere else (scripts, settings, setter links) counts as set."""
+        if not (self.is_sugarcube or self.format == 'Twine 1'):
+            return {}
+        texts = [(p, self.markup_text(p)) for p in self.passages if 'stylesheet' not in p.tags]
+        cond_re = re.compile(r'<<(?:else\s*)?if\b(' + QUOTED_ARGS + ')>>')
+        total, in_cond = collections.Counter(), collections.Counter()
+        for p, t in texts:
+            total.update(re.findall(r'\$([A-Za-z_]\w*)', t))
+            for c in cond_re.finditer(t):
+                in_cond.update(re.findall(r'\$([A-Za-z_]\w*)', c.group(1)))
+        never = {v for v in total if total[v] == in_cond[v] and not re.search(r'\b%s\b' % re.escape(v), self.js_text)}
+        spans = collections.defaultdict(list)
+        if not never:
+            return spans
+        for p, t in texts:
+            for m in re.finditer(r'<<if\s+\$([A-Za-z_]\w*)(?:\s*(?:==|===|\bis\b|\beq\b)\s*true)?\s*>>', t):
+                if m.group(1) not in never:
+                    continue
+                depth = 0
+                for tag in re.finditer(r'<<(/?)(if|else|elseif|endif)\b', t[m.end():]):
+                    closing = tag.group(1) or tag.group(2) == 'endif'
+                    if tag.group(2) == 'if' and not closing:
+                        depth += 1
+                    elif closing and depth:
+                        depth -= 1
+                    elif not depth:   # <<else>>, <<elseif>> or the <</if>> of this block
+                        spans[p.name].append((m.end(), m.end() + tag.start()))
+                        break
+        return spans
 
     def check_anchor_links(self):
         ids = set(re.findall(r'\bid\s*=\s*["\']([^"\']+)["\']', self.raw))
@@ -707,11 +828,21 @@ class Scanner:
             if len(places) > 50:
                 self.add(WARNING, 'Unknown macros', f'<<{name}>> used {len(places) - 50} more times', places[50][0], places[50][1],
                          what='Only the first 50 uses are listed.', fix='Fix the spelling everywhere it is used.')
-        for name, (is_c, pname) in self.widgets.items():
-            if widget_used[name] == 0 and name not in self.js_text:
-                self.add(INFO, 'Widgets', f'Widget <<{name}>> is never used', line=0, passage=pname,
-                         what='It is defined but no passage calls it.',
-                         fix='Remove it if it is left over.')
+        unused = {name for name in self.widgets if widget_used[name] == 0 and name not in self.js_text}
+        for name in unused:
+            self.add(INFO, 'Widgets', f'Widget <<{name}>> is never used', line=0, passage=self.widgets[name][1],
+                     what='It is defined but no passage calls it.',
+                     fix='Remove it if it is left over.')
+        # Code inside a widget that nothing calls never runs, so its problems are not certain to show up
+        # (see mark_dead_widgets, which runs after all checks).
+        spans = self.dead_widget_spans
+        for p in self.story_passages():
+            if 'widget' not in p.tags:
+                continue
+            t = self.markup_text(p)
+            for m in re.finditer(r'<<widget\s+["\']?([\w-]+)["\']?[^>]*>>(.*?)(?:<</widget>>|<<endwidget>>|$)', t, re.S):
+                if m.group(1) in unused:
+                    spans[p.name].append((p.line + t.count('\n', 0, m.start()), p.line + t.count('\n', 0, m.end()), m.group(1)))
 
     # ------------------------------------------------------------------ logic
     def check_logic(self):
@@ -719,8 +850,8 @@ class Scanner:
             return
         for p in self.story_passages():
             t = self.markup_text(p)
-            for m in re.finditer(r'<<(if|elseif)\b(.*?)>>', t, re.S):
-                expr, kind = m.group(2), m.group(1)
+            for m in re.finditer(r'<<(if|elseif)\b(' + QUOTED_ARGS + r')>>|<<(if|elseif)\b(.*?)>>', t, re.S):   # ">>" in quotes is text
+                expr, kind = (m.group(2), m.group(1)) if m.group(1) else (m.group(4), m.group(3))
                 e = re.sub(r'"(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\'', '""', expr)
                 snip = self.snippet_at(p, m.start())
                 if not e.strip():
@@ -728,11 +859,17 @@ class Scanner:
                              what='The condition is empty; SugarCube shows an error.',
                              fix='Write the condition, e.g. <<if $money gte 10>>.')
                     continue
-                if re.search(r'(?<![=!<>])=(?![=>])', e):
+                op = re.search(r'([-+*/%]?)(?<![=!<>])=(?![=>])', e)
+                if op and op.group(1):
+                    self.add(ERROR, 'Conditions', f'"{op.group(1)}=" inside a condition', p, m.start(), snippet=snip,
+                             what=f'"{op.group(1)}=" changes the variable instead of comparing it, so the condition is almost always true '
+                                  'and the value changes every time this line runs.',
+                             fix='Compare instead, e.g. <<if $money gte 125>>.')
+                elif op:
                     self.add(ERROR, 'Conditions', 'Single "=" inside a condition', p, m.start(), snippet=snip,
                              what='"=" means "set to", not "is equal to". SugarCube shows the error "assignment operator found within <<if>> clause" and the condition does not work.',
                              fix='Use "is" or "==" to compare, e.g. <<if _x is 1>>.')
-                if re.search(r'=>|=<', e):
+                if re.search(r'=>|=<', re.sub(r'[(,]\s*(?:[A-Za-z]\w*|\([^()]*\))\s*=>', '', e)):   # not JS "item => ..." functions
                     self.add(ERROR, 'Conditions', 'Wrong comparison operator "=>" or "=<"', p, m.start(), snippet=snip,
                              what='"=>" and "=<" are not comparisons in JavaScript ("=>" makes a function). The condition will not work as intended.',
                              fix='Use ">=" (or gte) and "<=" (or lte).')
@@ -754,14 +891,15 @@ class Scanner:
                              what='"and" is checked before "or", so "A and B or C" means "(A and B) or C". The scene can show when it should not '
                                   '(for example when a character is kidnapped or a stat is too low).',
                              fix='Add brackets to group the parts that belong together, e.g. A and (B or C).')
-            for m in re.finditer(r'<<set\b(.*?)>>', t, re.S):
-                body = re.sub(r'"(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\'', '""', m.group(1))
+            for m in re.finditer(r'<<set\b(' + QUOTED_ARGS + r')>>|<<set\b(.*?)>>', t, re.S):   # ">>" in quotes is text
+                body = re.sub(r'"(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\'', '""', m.group(1) if m.group(1) is not None else m.group(2))
                 snip = self.snippet_at(p, m.start())
                 if not body.strip():
                     self.add(ERROR, 'Code', '<<set>> with nothing to set', p, m.start(), snippet=snip,
                              what='The macro is empty and shows an error.', fix='Delete it or write e.g. <<set $x to 1>>.')
                     continue
-                if not re.search(r'\bto\b|(?<![=!<>])=(?!=)|\+=|-=|\*=|/=|%=|\+\+|--|\.\w+\(|\bdelete\b', body):
+                # a function call or an if (...) {...} can change things too: <<set if (x === 0) { showNotice(); }>>
+                if not re.search(r'\bto\b|(?<![=!<>])=(?!=)|\+=|-=|\*=|/=|%=|\+\+|--|\w\s*\(|\bdelete\b|\bif\b', body):
                     if re.search(r'==|\bis\b|\beq\b', body):
                         self.add(ERROR, 'Code', '<<set>> compares instead of setting', p, m.start(), snippet=snip,
                                  what='"is" / "==" compares values; inside <<set>> nothing is changed.',
@@ -779,6 +917,8 @@ class Scanner:
                 args = m.group(2)
                 stripped = re.sub(r"'[^'\n]*'", '', re.sub(r'\\"', '', args))
                 if stripped.count('"') % 2 == 1:
+                    if MACRO_TAG_RE.match(t, m.start()):
+                        continue   # ">>" inside a quoted text, e.g. <<button ">>">>: SugarCube reads it as text too
                     self.add(ERROR, 'Code', f'Unclosed quote in <<{m.group(1)}>>', p, m.start(), snippet=self.snippet_at(p, m.start()),
                              what='The macro has an odd number of " quotes, so one text value never ends.',
                              fix='Add the missing " or remove the extra one.')
@@ -842,6 +982,8 @@ class Scanner:
         set_names = sorted(sets)
         unused_vars = []
         for v in all_vars:
+            if v not in first:
+                continue   # only seen in scripts (no place in a passage to point at); was a crash on Destroyer
             used = reads[v] - sets[v]  # reads also counts the "$x" in "<<set $x to>>"
             if sets[v] == 0:
                 near = _typo_of(v, set_names)
@@ -950,11 +1092,13 @@ class Scanner:
                 t = re.sub(r'<(script|style)\b[^>]*>.*?</\1>', _blank, t, flags=re.S | re.I)
             bad_units = []
             # quotes inside tags
-            for m in re.finditer(r'<([A-Za-z][\w-]*)(\s[^<>]*)?>', t):
+            for m in re.finditer(r'(?<!<)<([A-Za-z][\w-]*)(\s[^<>]*)?>', t):   # not <<macro "a > b">>
                 attrs = m.group(2) or ''
                 if '<<' in attrs or '>>' in attrs:
                     continue
                 if attrs.count('"') % 2 == 1:
+                    if HTML_TAG_RE.match(t, m.start()):
+                        continue   # a ">" inside a quoted value (onclick="if(a>0)..."): the browser reads it as text too
                     self.add(ERROR, 'HTML', f'<{m.group(1)}> tag has an unclosed quote', p, m.start(),
                              snippet=self.snippet_at(p, m.start()),
                              what='One attribute value is missing its closing ", so the browser reads the rest of the tag wrongly (images may not show).',
@@ -1025,14 +1169,17 @@ class Scanner:
     def check_css_classes(self):
         css = COMMENT_RE.sub('', self.css_text)
         defined = set()
-        for sel in re.findall(r'([^{}]+)\{', css):
+        parts = re.split(r'([{}])', css)   # (a findall for "text{" took forever on a big embedded font)
+        for sel in (parts[i - 1] for i in range(1, len(parts)) if parts[i] == '{' and parts[i - 1].strip()):
             if sel.strip().startswith('@') and 'media' not in sel and 'supports' not in sel:
                 continue
             defined.update(re.findall(r'\.(-?[_a-zA-Z][\w-]*)', sel))
         if not defined:
             return
         defined_list = sorted(defined)
-        js = self.js_text
+        # names the scripts mention ("on", '.on', ' on '), collected once: searching the whole script again
+        # for every class took minutes on College Daze
+        js_words = set(re.findall(r'(?<=["\'.\s])([\w-]+)(?=["\'\s])', self.js_text))
         used = collections.defaultdict(list)
         for p in self.story_passages():
             t = self.markup_text(p)
@@ -1044,7 +1191,7 @@ class Scanner:
             for m in re.finditer(r'@@\.([\w-]+)', t):
                 used[m.group(1)].append((p, m.start()))
         for c, places in used.items():
-            if c in defined or c in K.BUILTIN_CLASSES or re.search(r'["\'.\s]' + re.escape(c) + r'["\'\s]', js):
+            if c in defined or c in K.BUILTIN_CLASSES or c in js_words:
                 continue
             near = _close(c, defined_list, cutoff=0.8)
             p, off = places[0]
@@ -1081,6 +1228,7 @@ class Scanner:
         ref_count = 0
         by_problem = collections.defaultdict(list)
         in_tag = set()  # paths written straight into an <img src=...>-style tag at least once
+        hidden_if_missing, shown_if_missing = set(), set()   # missing paths in a tag with / without onerror="..."
         backslash = collections.defaultdict(list)
 
         sources = [(p, p.text) for p in self.passages]
@@ -1097,6 +1245,8 @@ class Scanner:
                 if not ref or ref.startswith(('http://', 'https://', '//', 'data:', 'mailto:', 'javascript:', '#', 'blob:')):
                     continue
                 path = re.split(r'[?#]', ref)[0]
+                if re.search(r'%[0-9A-Fa-f]{2}', path):
+                    path = urllib.parse.unquote(path)   # the browser reads "stage%202" as "stage 2"
                 ext = path.rsplit('.', 1)[-1].lower() if '.' in path.rsplit('/', 1)[-1].rsplit('\\', 1)[-1] else ''
                 if ext not in K.ALL_ASSET_EXT:
                     continue
@@ -1124,6 +1274,9 @@ class Scanner:
                     by_problem[('missing', path)].append(ppos)
                     if p == '(page)' or m.group(4) is None:
                         in_tag.add(path)
+                    end = text.find('>', m.end())
+                    tag = text[text.rfind('<', 0, m.start()) + 1:end if end != -1 else len(text)]
+                    (hidden_if_missing if re.search(r'\bonerror\s*=', tag, re.I) else shown_if_missing).add(path)
         self._asset_ref_count = ref_count
 
         # Second look at "missing" files, so games that build paths in code are not flooded with false alarms.
@@ -1185,6 +1338,17 @@ class Scanner:
                          what=f'This name is only in the game\'s JavaScript and no file ending in it is in the game folder. '
                               f'The script may put a folder in front of it that this check cannot see. Used in: {where(places)}.',
                          fix='If the picture or sound is missing while playing, put the file in the game folder.')
+            elif kind == 'missing' and path in hidden_if_missing and path not in shown_if_missing:
+                self.add(WARNING, 'Missing files', f'{label} not found: {path}', **line_args, snippet=snip,
+                         what=f'The file is not in the game folder, but the game handles that (onerror="..." on the tag, usually '
+                              f'hiding the picture), so players see no broken image, just nothing. Used in: {where(places)}.',
+                         fix='If something should be shown there, put the missing file in the game folder.')
+            elif kind == 'missing' and path not in in_tag and not re.search(r'[/\\]', path):
+                self.add(WARNING, 'Missing files', f'{label} not found: {path}', **line_args, snippet=snip,
+                         what=f'This bare file name (no folder) is only written as text in the scenes\' code, and no file with this name '
+                              f'is in the game folder. It may only be shown as a label, or the code may load it from a folder this check '
+                              f'cannot see. Used in: {where(places)}.',
+                         fix='If the picture, sound or video is missing while playing, put the file in the game folder.')
             elif kind == 'missing':
                 fname = path.replace('\\', '/').rsplit('/', 1)[-1].lower()
                 stem = fname.rsplit('.', 1)[0]
@@ -1334,7 +1498,7 @@ class Scanner:
             if 'script' in p.tags:
                 blocks.append((p, p.raw_text, 0))
             else:
-                for m in SCRIPT_BODY_RE.finditer(p.text):
+                for m in script_matches(p.text):
                     if m.start() and p.text[m.start() - 1] in '"\'':
                         continue  # "<script>" + ... is text the passage builds up, not a script of its own
                     body = m.group(2) if m.group(2) is not None else m.group(5)
@@ -1345,7 +1509,10 @@ class Scanner:
                 line = self.raw.count('\n', 0, sm.start(1)) + 1
                 code = sm.group(1)  # stored as it is, see parse()
                 blocks.append((Passage('', 'Story JavaScript', ['script'], code, code, line), code, 0))
+        nobr_all = re.search(r'Config\.passages\.nobr\s*=\s*true', self.js_text)
         for p, code, base in blocks:
+            if 'script' not in p.tags and (nobr_all or 'nobr' in p.tags):
+                code = code.replace('\n', ' ')   # SugarCube turns line breaks into spaces in nobr passages, scripts included
             problem = _js_bracket_problem(code)
             if problem:
                 off, msg = problem
@@ -1360,6 +1527,18 @@ class Scanner:
 
 
 # ---------------------------------------------------------------------- utilities
+def mark_dead_widgets(issues, spans):
+    """Code inside a widget that nothing calls never runs: its problems are not certain, so they are Warnings."""
+    for i in issues:
+        if i.severity != ERROR or i.passage not in spans:
+            continue
+        for a, b, w in spans[i.passage]:
+            if a <= i.line <= b:
+                i.severity = WARNING
+                i.what += f' (It is inside the widget <<{w}>>, which nothing seems to call, so players may never see this.)'
+                break
+
+
 def mark_unreachable(issues, passages):
     """Problems in scenes players can't reach can't hurt players: show them as notes."""
     for i in issues:

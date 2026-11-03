@@ -1,0 +1,14 @@
+{
+ "path": "X-Change Sleepover\\X-Change Sleepover.html",
+ "format": "SugarCube 2.36.1",
+ "seconds": 3,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": false,
+ "confirmed": [
+  {
+   "key": "Error | Code | Unclosed quote in <<speech>> | Stephie Horny",
+   "why": "<<speech \"Stephie>> misses the closing quote; SugarCube shows an error."
+  }
+ ],
+ "known_false": []
+}

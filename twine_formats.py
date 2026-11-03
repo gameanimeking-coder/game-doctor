@@ -26,7 +26,17 @@ checkbox checkbox-fullscreen cycling-link seq-link sequence-link dropdown meter 
 icon-undo icon-redo icon-fullscreen icon-restart icon-counter redo page-url current-date current-time monthday
 weekday open-url goto-url seed debug ignore test-true test-false metadata storylet open-storylets exclusivity urgency
 mock-turns mock-visits datatype datapattern partial bind 2bind bind-2 dm-named-entries split splitted
+for loop undos forget-undos forget-visits animate str-replaced string-replaced replaced p p-many p-either p-opt
+p-optional p-not p-before p-not-before p-start p-end p-ins p-insensitive
 '''.split())
+
+
+def _norm(name):
+    """Harlowe ignores capitals, "-" and "_" in macro names: (textcolor:) is (text-colour:)."""
+    return re.sub(r'[-_]', '', name.lower())
+
+
+HARLOWE_NORM = {_norm(n) for n in HARLOWE_MACROS}
 
 CHAPBOOK_INSERTS = {
     'back link', 'cycling link', 'dropdown menu', 'embed passage', 'embed passage named', 'embed image',
@@ -49,7 +59,8 @@ def check(sc):
 
 
 def _strip_strings(s):
-    return re.sub(r'"(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\'', lambda m: '"' + ' ' * (len(m.group()) - 2) + '"', s)
+    # a ' right after a name or bracket is Harlowe's "'s" ($bag's 1), not a text in quotes
+    return re.sub(r'"(?:\\.|[^"\\])*"|(?<![\w)\]])\'(?:\\.|[^\'\\])*\'', lambda m: '"' + ' ' * (len(m.group()) - 2) + '"', s)
 
 
 def _match_paren(t, start):
@@ -64,7 +75,7 @@ def _match_paren(t, start):
                 i += 1
             elif c == in_str:
                 in_str = None
-        elif c in '"\'':
+        elif c == '"' or (c == "'" and not (i and (t[i - 1].isalnum() or t[i - 1] in '_)]'))):   # $bag's is not a quote
             in_str = c
         elif c == '(':
             depth += 1
@@ -84,6 +95,8 @@ class Harlowe:
         from scanner import ERROR, WARNING, INFO, _close, _typo_of
         sc = self.sc
         known = sorted(HARLOWE_MACROS)
+        # macros a game adds in its JavaScript: Harlowe.macro("name", ...)
+        own = {_norm(n) for n in re.findall(r'Harlowe\.macro\(\s*["\']([\w-]+)["\']', sc.js_text)}
         sets, reads, first = collections.Counter(), collections.Counter(), {}
         for p in sc.story_passages():
             t = re.sub(r'`[^`]*`', lambda m: ' ' * len(m.group()), sc.markup_text(p))  # verbatim markup
@@ -97,7 +110,7 @@ class Harlowe:
                            what='The macro call has no closing bracket, so Harlowe shows an error and the rest of the passage may break.',
                            fix='Add the missing ")" at the end of the macro call.')
                     continue
-                if name not in HARLOWE_MACROS:
+                if _norm(name) not in HARLOWE_NORM and _norm(name) not in own:
                     near = _close(name, known, cutoff=0.75)
                     sc.add(ERROR if near else WARNING, 'Unknown macros', f'Unknown macro ({m.group(1)}:)', p, m.start(), snippet=snip,
                            what=f'Harlowe has no macro called "{m.group(1)}".' + (f' It is very close to ({near}:).' if near else ''),
@@ -131,7 +144,8 @@ class Harlowe:
                                         'so Harlowe shows an error or the text is not controlled by it.',
                                    fix=f'Put the text it controls in square brackets right after it: ({m.group(1)}: ...)[text].')
             # hooks: count [ and ] outside [[links]]
-            hook_text = re.sub(r'\[\[.*?\]\]', lambda m: ' ' * len(m.group()), t, flags=re.S)
+            # a link starts at the last "[[" of "[[[": "(if: $x)[[[Go->Home]]]" is a hook holding a link
+            hook_text = re.sub(r'\[\[(?!\[).*?\]\]', lambda m: ' ' * len(m.group()), t, flags=re.S)
             depth, last_open = 0, []
             for m in re.finditer(r'[\[\]]', hook_text):
                 if m.group() == '[':

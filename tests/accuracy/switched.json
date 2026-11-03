@@ -1,0 +1,30 @@
+{
+ "path": "Switched 0.2.0\\Switched.html",
+ "format": "SugarCube 2.37.3",
+ "seconds": 7,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": false,
+ "confirmed": [
+  {
+   "key": "Error | Missing files | Image not found: assets/Campus/collegelibrarynight.webp | Campus Library",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). e.g. archive/cal_before.webp is calbefore.webp; ryanfingeringorgasm4.webp is in apartment/PC/."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/Suburbs/Family/brotherlaundry_bj2.webp | Widgets",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). e.g. archive/cal_before.webp is calbefore.webp; ryanfingeringorgasm4.webp is in apartment/PC/."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/apartment/ryanfingeringorgasm4.webp | Ryan Fingering",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). e.g. archive/cal_before.webp is calbefore.webp; ryanfingeringorgasm4.webp is in apartment/PC/."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/phone/dates/emmanightclubhome1.webp | Phone Date Emma Nightclub Home",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). e.g. archive/cal_before.webp is calbefore.webp; ryanfingeringorgasm4.webp is in apartment/PC/."
+  },
+  {
+   "key": "Error | Missing files | Image not found: assets/phone/dates/emmanightclubhome2.webp | Phone Date Emma Nightclub Home",
+   "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). e.g. archive/cal_before.webp is calbefore.webp; ryanfingeringorgasm4.webp is in apartment/PC/."
+  }
+ ],
+ "known_false": []
+}

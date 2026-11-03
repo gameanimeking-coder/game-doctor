@@ -1,0 +1,27 @@
+{
+ "path": "Love & Vice R17\\Love & Vice.html",
+ "format": "SugarCube 2.36.1",
+ "seconds": 5,
+ "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
+ "optional": false,
+ "confirmed": [
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | lydiaPartyEvents",
+   "why": "<<set ... == true>> only compares; nothing is set."
+  },
+  {
+   "key": "Error | Macro tags | <<append>> is never closed | pcJobWidget",
+   "why": "pcJobWidget has \"<<append ...>><<append ...>>\" twice in a row: 52 opens, 51 closes."
+  },
+  {
+   "key": "Error | Macro tags | <<silently>> is never closed | miscCodeWidgets",
+   "why": "Widget sleepCode in miscCodeWidgets: 2 <<silently>>, 1 <</silently>>."
+  }
+ ],
+ "known_false": [
+  {
+   "key": "Error | Unknown macros | Unknown macro <<chrisStageDisplay>> | uiWidgets",
+   "why": "Only runs when $statBarToggle.chris is true; the only button that sets it is commented out. Scanner cannot follow that."
+  }
+ ]
+}
