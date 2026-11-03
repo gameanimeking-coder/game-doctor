@@ -376,6 +376,8 @@ def advice(i):
         return T("Yes. It is in a scene nobody can reach, so players never see it. Fix it only if you add a link to that scene later.")
     if i.severity == scanner.ERROR:
         return T('No. Players will run into this.')
+    if (getattr(i, 'settle', None) or {}).get('state') == 'fine':
+        return T('Yes. Game Doctor checked it and nothing is wrong.')
     if 'mixes "and" and "or"' in t:
         return T('Only if you have checked the logic and it does what you want. Then mark it as intentional.')
     if c == 'Unused passages':

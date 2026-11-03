@@ -41,6 +41,21 @@ def severity_meaning(sev):
     return T(_MEANING[sev])
 
 
+def _settled_fine(i):
+    return (getattr(i, 'settle', None) or {}).get('state') == 'fine'
+
+
+def label(i):
+    """The word for the list: a result Game Doctor checked and found fine (settle.py) is "Fine"."""
+    return T('Fine') if _settled_fine(i) else severity(i.severity)
+
+
+def meaning_of(i):
+    if _settled_fine(i):
+        return T('Game Doctor checked this: nothing is wrong.')
+    return severity_meaning(i.severity)
+
+
 def category(name):
     return T(_CATEGORY.get(name, name))
 
@@ -772,7 +787,7 @@ def _(m, i):
                 effect=T('The start screen or some features may be broken.'), fix=T('Look at the game\'s main script for the problem named in the message.'))
 
 
-PLAY_NOTES = ('Confirmed while playing:', 'Not checked by playing:', 'Worth checking:')
+PLAY_NOTES = ('Confirmed while playing:', 'Not checked by playing:', 'Worth checking:', 'Checked by Game Doctor:')
 
 
 def simplify(i):

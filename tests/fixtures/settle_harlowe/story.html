@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><title>Test</title></head><body>
+<tw-storydata name="Test" startnode="1" creator="Twine" creator-version="2.6" format="Harlowe" format-version="1.0" ifid="11111111-2222-3333-4444-555555555555" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script>
+<tw-passagedata pid="1" name="Start" tags="" position="0,0" size="100,100">Welcome. [[Bad]] [[Good]] [[Unsure]] [[Void]]</tw-passagedata>
+<tw-passagedata pid="2" name="Init" tags="startup" position="0,0" size="100,100">(set: $gold to 5)(set: $pic to &quot;frown.png&quot;)</tw-passagedata>
+<tw-passagedata pid="3" name="Bad" tags="" position="0,0" size="100,100">(frobnicate: 2)
+TODO write this part
+Gold: (print: $golld)
+(print: &#x27;&lt;img src=&quot;images/&#x27; + $pic + &#x27;&quot;&gt;&#x27;)
+[[Start]]</tw-passagedata>
+<tw-passagedata pid="4" name="Good" tags="" position="0,0" size="100,100">(if: $gold is 5 or 6)[Right amount.]
+&lt;span id=&quot;lonely&quot;&gt;1&lt;/span&gt;&lt;span id=&quot;lonely&quot;&gt;2&lt;/span&gt;
+(display: &quot;Blank&quot;)
+[[Start]]</tw-passagedata>
+<tw-passagedata pid="5" name="Unsure" tags="" position="0,0" size="100,100">Bold &lt;span&gt;start
+&lt;img src=&quot;images/HERO.png&quot;&gt;
+[[Start]]</tw-passagedata>
+<tw-passagedata pid="6" name="Void" tags="" position="0,0" size="100,100"></tw-passagedata>
+<tw-passagedata pid="7" name="Blank" tags="" position="0,0" size="100,100"></tw-passagedata>
+</tw-storydata></body></html>

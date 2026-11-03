@@ -49,6 +49,30 @@ _JS_RECORD = r'''
   };
   window.GBF_HIT = (k, id) => { if (k === curKey && hits) hits.add(id); };
 
+  // ---- what settle.py looks for on screen: text players see, boxes with one id, page anchors
+  let probes = {};
+  const visText = el => {
+    let s = '';
+    const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, { acceptNode: n => n.parentElement &&
+      n.parentElement.closest('script, style, tw-error, .error-view, .error') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+    while (w.nextNode()) s += w.currentNode.nodeValue;
+    return s.replace(/\s+/g, '');
+  };
+  const look = (el, name, out) => {
+    const list = probes[name];
+    if (!list) return out;
+    out = out || {};
+    const text = visText(el);
+    for (const p of list) {
+      let v = 0;
+      if (p.text !== undefined) v = text.includes(p.text) ? 1 : 0;
+      else if (p.count !== undefined) v = [...el.querySelectorAll('[id]')].filter(x => x.id === p.count).length;
+      else if (p.anchor !== undefined) v = (document.getElementById(p.anchor) || document.getElementsByName(p.anchor).length) ? 1 : 0;
+      out[p.id] = Math.max(out[p.id] || 0, v);
+    }
+    return out;
+  };
+
   // ---- record every file the scene asks for
   const note = v => {
     if (!rec || v == null) return;
@@ -180,6 +204,7 @@ window.__gbf = window.__gbf || (function () {
   }
 
   return {
+    setProbes(p) { probes = p || {}; return true; },
     structure(names) {
       const out = {};
       for (const name of names) {
@@ -231,6 +256,7 @@ window.__gbf = window.__gbf || (function () {
           try { new SC.Wikifier(el, instrument(P.processText(), curKey)); }
           catch (e) { errs.push(['Script error: ' + (e && e.message ? e.message : e), null]); }
           errorsIn(el, null, errs);
+          let seenP = look(el, j.name);
           // click every button the scene made (links that run code: <<link>>, <<button>>, <<linkreplace>> ...)
           const clicked = new Set();
           for (let n = 0; n < 40; n++) {
@@ -247,8 +273,9 @@ window.__gbf = window.__gbf || (function () {
             errorsIn(el, label, errs);
           }
           fromDom(el);
+          seenP = look(el, j.name, seenP);
           const seen = new Set();
-          res.push({ taken: [...hits], errs: errs.filter(e => !seen.has(e[0]) && seen.add(e[0])), urls: [...rec] });
+          res.push({ taken: [...hits], errs: errs.filter(e => !seen.has(e[0]) && seen.add(e[0])), urls: [...rec], seen: seenP });
           curKey = 0; hits = null; rec = null;
         }
       } finally {
@@ -397,6 +424,7 @@ window.__gbf = window.__gbf || (function () {
   }
 
   return {
+    setProbes(p) { probes = p || {}; return true; },
     structure(names) {
       const out = {};
       for (const name of names) {
@@ -451,6 +479,7 @@ window.__gbf = window.__gbf || (function () {
           const ps = document.querySelectorAll('tw-story > tw-passage');
           const el = ps[ps.length - 1] || document.body;
           errorsIn(el, null, errs);
+          let seenP = look(el, j.name);
           // click every link that opens more of the scene ((link:), (click:) ...), not links to other scenes
           const clicked = new Set();
           for (let n = 0; n < 40; n++) {
@@ -467,9 +496,10 @@ window.__gbf = window.__gbf || (function () {
             errorsIn(el, label, errs);
           }
           fromDom(el);
+          seenP = look(el, j.name, seenP);
           playing = false;
           const seen = new Set();
-          res.push({ taken: [...hits], errs: errs.filter(e => !seen.has(e[0]) && seen.add(e[0])), urls: [...rec] });
+          res.push({ taken: [...hits], errs: errs.filter(e => !seen.has(e[0]) && seen.add(e[0])), urls: [...rec], seen: seenP });
           curKey = 0; hits = null; rec = null;
           if (State.pastLength > 50 && State.forgetUndos) { try { State.forgetUndos(-1); } catch (e) {} }
         }
@@ -816,6 +846,7 @@ class Scene:
         self.frozen = False
         self.errors = {}           # message -> [first job, ways it happened, happened with start values, button clicked]
         self.files = {}            # url -> first job that asked for it
+        self.seen = {}             # settle.py probe id -> [most found at once, first job that found it]
 
     def frontier(self):
         return [b for b in self.branches if b['id'] not in self.covered
@@ -892,6 +923,10 @@ class Scene:
                 e[2] = True
         for u in r.get('urls', []):
             self.files.setdefault(u, job)
+        for k, v in (r.get('seen') or {}).items():
+            e = self.seen.setdefault(k, [0, None])
+            if v > e[0]:
+                e[0], e[1] = v, e[1] or job
 
     @property
     def finished(self):
@@ -905,7 +940,7 @@ class Scene:
 
     def result(self):
         return dict(branches=self.branches, covered={str(k): v for k, v in self.covered.items()}, renders=self.renders,
-                    errors=self.errors, files=self.files)
+                    errors=self.errors, files=self.files, seen=self.seen)
 
 
 def _job_json(name, job):
@@ -919,10 +954,13 @@ def scene_names(res):
             if not set(tags) & {'widget', 'script', 'stylesheet', 'Twine.private'} and n != 'StoryInit']
 
 
-def run(res, progress=None, stop=None, state=None, on_save=None, budget=None, only=None, patch=None):
+def run(res, progress=None, stop=None, state=None, on_save=None, budget=None, only=None, patch=None,
+        probes=None, facts=None):
     """Full scan of a scanned SugarCube game. `state` (a dict, may be from an earlier, paused run) is
     filled with each finished scene, and on_save(state) is called after every batch.
     patch(text) changes the browser's copy of the game first (fixtest.py plays a fixed copy this way).
+    settle.py: probes {scene: [probe]} are looked for on screen (results in each scene's "seen"), and the
+    JavaScript `facts` is run once after the game has started (result in state['facts']).
     Returns (issues, summary)."""
     progress = progress or (lambda p, m: None)
     stop = stop or (lambda: False)
@@ -930,7 +968,9 @@ def run(res, progress=None, stop=None, state=None, on_save=None, budget=None, on
     done = state.setdefault('scenes', {})
     file_status = state.setdefault('file_status', {})
     t0 = time.time()
-    with Player(res, progress, patch) as pl:
+    with Player(res, progress, patch, probes) as pl:
+        if facts:
+            state['facts'] = pl.evaluate(facts, 90, retry=True)
         names = scene_names(res)
         todo = [n for n in names if n not in done and (only is None or n in only)]
         texts = [p.text for p in res.context.passages] if res.context is not None else []
@@ -991,8 +1031,8 @@ class Player:
     """The hidden browser with the game loaded. When a scene freezes it (endless loop) or the game
     leaves the page (reload, link to another file), the browser is started again and Lost is raised."""
 
-    def __init__(self, res, progress, patch=None):
-        self.res, self.progress = res, progress
+    def __init__(self, res, progress, patch=None, probes=None):
+        self.res, self.progress, self.probes = res, progress, probes
         self.patch = (lambda t: harlowe_door(patch(t))) if patch else harlowe_door
         self.stack = self.ses = self.first_load = None
 
@@ -1010,6 +1050,13 @@ class Player:
         self.ses = self.stack.enter_context(playtest.launch(self.res, (lambda p, m: None) if quiet else self.progress,
                                                             patch=self.patch))
         self.engine = 'sugarcube' if self.ses.is_sc else None
+        for _ in range(50 if self.engine else 0):     # wait until StoryInit has run and the first scene shows
+            try:
+                if self.ses.dt.evaluate('!!SugarCube.State.passage', 10):
+                    break
+            except PlaytestError:
+                pass
+            time.sleep(0.2)
         if not self.engine:
             for _ in range(50):     # Harlowe shows its first scene a moment after loading
                 try:
@@ -1025,6 +1072,8 @@ class Player:
         if self.first_load is None:
             self.first_load = (self.ses.load_events, self.ses.load_events, self.ses.port)
         self.ses.dt.evaluate(FULL_JS if self.engine == 'sugarcube' else HARLOWE_JS, 30)
+        if self.probes:
+            self.ses.dt.evaluate(f'__gbf.setProbes({json.dumps(self.probes)})', 30)
 
     def close(self):
         if self.stack:

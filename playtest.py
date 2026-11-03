@@ -309,6 +309,11 @@ class Session:
         return self.srv.server_address[1]
 
 
+ALERTS_JS = ("window.__gbfAlerts = [];"
+             "for (const k of ['alert', 'confirm', 'prompt']) window[k] = function (m) {"
+             " window.__gbfAlerts.push(String(m)); return k === 'confirm' ? true : null; };")
+
+
 @contextlib.contextmanager
 def launch(res, progress=None, patch=None):
     """Start the invisible browser with the game loaded; yields a Session. Cleans up afterwards."""
@@ -352,6 +357,8 @@ def launch(res, progress=None, patch=None):
         dt = DevTools(page['webSocketDebuggerUrl'])
         for d in ('Runtime.enable', 'Log.enable', 'Network.enable', 'Page.enable'):
             dt.call(d)
+        # a pop-up (alert) at start would freeze the hidden page: note its text instead (window.__gbfAlerts)
+        dt.call('Page.addScriptToEvaluateOnNewDocument', {'source': ALERTS_JS})
         progress(8, 'Loading the game')
         url = f'http://127.0.0.1:{srv.server_address[1]}/{rel_url}'
         dt.call('Page.navigate', {'url': url})

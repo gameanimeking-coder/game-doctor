@@ -46,7 +46,12 @@ ENGLISH_ONLY = ('The name looks mistyped: the file meant is probably',
                 # Tested fixes (after 3.0.0)
                 'Tested fix', 'Tested: this removes the problem.', 'No working fix found.',
                 'The change that was tried (it does not work):', 'Testing this fix on a hidden copy',
-                'Testing {n} suggested fix(es) on a hidden copy', 'Suggested fixes tested on a hidden copy')
+                'Testing {n} suggested fix(es) on a hidden copy', 'Suggested fixes tested on a hidden copy',
+                # Settled results (after 3.0.0)
+                'Checking {n} "worth checking" result(s)', '"Worth checking" results checked:',
+                'Game Doctor checked {n} "worth checking" result(s) itself', 'Game Doctor is checking this by playing',
+                'Checking the "worth checking" results', 'Yes. Game Doctor checked it and nothing is wrong.',
+                'Game Doctor checked this: nothing is wrong.')
 
 
 def ai_texts():

@@ -152,6 +152,8 @@ class App:
         self._fs_stop = False
         self.auto_fixtest = True  # try every suggested fix on a hidden copy after each scan (fixtest.py)
         self._ft_gen = 0
+        self.auto_settle = True   # settle "worth checking" results by playing, after each scan (settle.py)
+        self._st_gen = 0
         self.windows = []
         self.tour = None
         self.code_built_for = None
@@ -269,6 +271,10 @@ class App:
             return simple.severity(sev)
         return {scanner.ERROR: T('Errors') if plural else T('Error'), scanner.WARNING: T('Warnings') if plural else T('Warning'),
                 scanner.INFO: T('Notes') if plural else T('Note')}[sev]
+
+    def sev_word_of(self, i):
+        """Like sev_word, but a result Game Doctor checked and found fine is called "Fine" in Simple mode."""
+        return simple.label(i) if self.simple_on else self.sev_word(i.severity)
 
     def cat_word(self, c):
         return simple.category(c) if self.simple_on else c
@@ -1047,6 +1053,8 @@ class App:
                     self.fullscan_done(*msg[1:])
                 elif kind == 'ft_done':
                     self.fixtest_done(*msg[1:])
+                elif kind == 'st_done':
+                    self.settle_done(*msg[1:])
                 elif kind == 'fs_error':
                     self.fullscanning = False
                     self.update_buttons()
@@ -1259,7 +1267,7 @@ class App:
             if effort and (getattr(i, 'tested', None) or {}).get('state') == 'works':
                 effort = '✓ ' + effort      # the suggested fix was tried on a hidden copy and works
             tree.insert(parent, 'end', iid=f'i{self.index[id(i)]}', text='',
-                        values=(f'{SEV_ICON[i.severity]} {self.sev_word(i.severity)}', self.title_of(i),
+                        values=(f'{SEV_ICON[i.severity]} {self.sev_word_of(i)}', self.title_of(i),
                                 i.passage or '—', i.line or '', effort), tags=tags)
         mode = self.group_mode()
         if mode == 'Nothing':
@@ -1406,6 +1414,13 @@ class App:
         for sev in (scanner.ERROR, scanner.WARNING, scanner.INFO):
             t.insert('end', f'{n[sev]} {self.sev_word(sev, True).lower()}', sev)
             t.insert('end', '  ' + simple.severity_meaning(sev) + '\n', 'muted')
+        settled = [i.settle['state'] for i in act if getattr(i, 'settle', None)]
+        if settled:
+            t.insert('end', T('Game Doctor checked {n} "worth checking" result(s) itself: {b} broken, {f} fine, {o} could '
+                              'not be settled (each one says why).', n=len(settled), b=settled.count('broken'),
+                              f=settled.count('fine'), o=settled.count('open')) + '\n', 'muted')
+        elif getattr(self.result, 'settling', False):
+            t.insert('end', '⏳ ' + T('Checking the "worth checking" results by playing the game…') + '\n', 'muted')
         top = self.start_here()
         if top and self.is_dev:
             t.insert('end', T('Start here - the most important fixes') + '\n', 'label')
@@ -1483,8 +1498,8 @@ class App:
         d = simple.simplify(i) if self.simple_on else dict(title=i.title, what=i.what, effect='', fix=i.fix)
         t.delete('1.0', 'end')
         t.insert('end', d['title'] + '\n', 'title')
-        t.insert('end', f'{SEV_ICON[i.severity]} {self.sev_word(i.severity)}', i.severity)
-        t.insert('end', '  ·  ' + (simple.severity_meaning(i.severity) if self.simple_on else i.category), 'muted')
+        t.insert('end', f'{SEV_ICON[i.severity]} {self.sev_word_of(i)}', i.severity)
+        t.insert('end', '  ·  ' + (simple.meaning_of(i) if self.simple_on else i.category), 'muted')
         if self.is_dev and i.difficulty:
             t.insert('end', '  ·  ' + fixes.difficulty_label(i) + ' (' + fixes.effort_text(i) + ')', 'muted')
         t.insert('end', '\n')
@@ -1497,6 +1512,9 @@ class App:
         if d.get('effect'):
             t.insert('end', T('What players will notice') + '\n', 'label')
             t.insert('end', d['effect'] + '\n')
+        if i.severity == scanner.WARNING and not getattr(i, 'settle', None) and getattr(res, 'settling', False):
+            t.insert('end', '⏳ ' + T('Game Doctor is checking this by playing the game in the invisible browser…') + '\n',
+                     'muted')
         if not self.is_dev:
             self.insert_tested(t, i, short=True)
             if i.severity == scanner.ERROR and i.passage:
@@ -1981,6 +1999,7 @@ class App:
         gen = self._ft_gen
         n = fixtest.count_testable(res)
         if not self.auto_fixtest or not n:
+            self.start_settle(res)
             return
         res.fix_testing = True
         target, game_dir = self.target, self.game_dir or None
@@ -2014,6 +2033,51 @@ class App:
         if not self.fullscanning and not self.playtesting and not self.scanning:
             self.set_status(T('Suggested fixes tested on a hidden copy: {w} work, {f} had no working fix.',
                               w=works, f=len(out) - works))
+        self.start_settle(res)
+
+    # ================================================================ settled results
+    def start_settle(self, res, full_state=None):
+        """Settle the "worth checking" results (Broken / Fine / open with a reason) while the list is shown."""
+        import fullscan
+        import settle
+        self._st_gen += 1
+        gen = self._st_gen
+        n = settle.count(res)
+        if not self.auto_settle or not n:
+            return
+        res.settling = True
+        if full_state is None and fullscan.can_play(res):
+            full_state = fullscan.load_state(res)      # a saved Full scan adds what it saw while playing
+        if not self.fullscanning and not self.playtesting:
+            msg = T('Checking {n} "worth checking" result(s) by playing the game in the invisible browser (about {s} '
+                    'seconds)…', n=n, s=max(1, settle.estimate_seconds(res)))
+            self.root.after(60, lambda: self.scanning or self.set_status(msg))
+
+        def work():
+            out = {}
+            try:
+                out = settle.Settler(res, stop=lambda: gen != self._st_gen, full_state=full_state).run()
+            except Exception:      # settling must never break the normal results
+                import traceback
+                self.q.put(('call', lambda tb=traceback.format_exc(): self.errors.append(tb)))
+            self.q.put(('st_done', res, gen, out))
+        threading.Thread(target=work, daemon=True).start()
+
+    def settle_done(self, res, gen, out):
+        import settle
+        if gen != self._st_gen or res is not self.result:
+            return
+        res.settling = False
+        res.settled = {**(getattr(res, 'settled', None) or {}), **out}
+        settle.apply(res)
+        sel = self.selected_issue()
+        self.after_result(keep_key=sel.key if sel else None)
+        if not sel and not self.scanning:
+            self.show_summary()
+        c = {k: sum(1 for v in out.values() if v['state'] == k) for k in (settle.BROKEN, settle.FINE, settle.OPEN)}
+        if not self.fullscanning and not self.playtesting and not self.scanning:
+            self.set_status(T('"Worth checking" results checked: {b} broken, {f} fine, {o} could not be settled.',
+                              b=c[settle.BROKEN], f=c[settle.FINE], o=c[settle.OPEN]))
 
     def toggle_fullscan(self):
         import fullscan
@@ -2081,7 +2145,9 @@ class App:
             fixes.enrich_issue(i, res)
         res.issues = issues
         import fixtest
+        import settle
         fixtest.apply(res)
+        settle.apply(res)
         from collections import Counter
         c = Counter(i.severity for i in res.issues)
         res.stats.update(errors=c[scanner.ERROR], warnings=c[scanner.WARNING], infos=c[scanner.INFO])
@@ -2101,6 +2167,7 @@ class App:
         if not self.selected_issue():
             self.show_summary()
         confirmed = sum(1 for i in res.issues if i.severity == scanner.ERROR and 'Confirmed while playing' in i.what)
+        self.start_settle(res, full_state=state)
         if state.get('finished'):
             self.set_status(T('Full scan finished: {n} scenes, {b} of {t} "if" parts played, {c} problem(s) confirmed '
                               'while playing.', n=summary['passages'], b=summary['covered'], t=summary['branches'],

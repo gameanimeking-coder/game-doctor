@@ -1,0 +1,18 @@
+{
+ "broken": [
+  "Unknown macro (frobnicate:)",
+  "\"TODO\" text shown to players",
+  "$golld is used but never set",
+  "not found: frown.png",
+  "Passage \"Void\" is empty"
+ ],
+ "fine": [
+  "\"$gold is 5 or 6\" does not compare both",
+  "id=\"lonely\" used 2 times",
+  "Passage \"Blank\" is empty"
+ ],
+ "open": [
+  "<span> opened more times",
+  "wrong capital letters: images/HERO.png"
+ ]
+}

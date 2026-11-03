@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head><title>Test</title></head><body>
+<tw-storydata name="Test" startnode="1" creator="Twine" creator-version="2.6" format="SugarCube" format-version="1.0" ifid="11111111-2222-3333-4444-555555555555" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.glowx { color: blue; }</style><script role="script" id="twine-user-script" type="text/twine-javascript">Macro.add('blo' + 'rpify', { handler() { $(this.output).append('ok'); } });
+$('head').append('<style>.glo' + 'wy { color: red; }</style>');</script>
+<tw-passagedata pid="1" name="Start" tags="" position="0,0" size="100,100">Welcome. [[Bad]] [[Good]] [[Unsure]] [[Void]]</tw-passagedata>
+<tw-passagedata pid="2" name="StoryInit" tags="" position="0,0" size="100,100">&lt;&lt;set $gold to 5&gt;&gt;&lt;&lt;set $name to &quot;Kim&quot;&gt;&gt;&lt;&lt;set $seen to false&gt;&gt;&lt;&lt;set $label to &quot;banner.png&quot;&gt;&gt;&lt;&lt;set $face to &quot;smile.png&quot;&gt;&gt;&lt;&lt;set $never to false&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="3" name="Bad" tags="" position="0,0" size="100,100">&lt;&lt;set $x to 1&gt;&gt;&gt;Hello there
+&lt;&lt;frobnicate&gt;&gt;
+Gold: &lt;&lt;print $golld&gt;&gt;
+&lt;img @src=&quot;&#x27;images/&#x27; + $face&quot;&gt;
+&lt;span id=&quot;msg&quot;&gt;A&lt;/span&gt; &lt;span id=&quot;msg&quot;&gt;B&lt;/span&gt; &lt;&lt;link &quot;Shout&quot;&gt;&gt;&lt;&lt;replace &quot;#msg&quot;&gt;&gt;X&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
+TODO write this part
+&lt;&lt;if $gold is not 5&gt;&gt;Odd.&lt;&lt;/if&gt;&gt;
+Bold &lt;span class=&quot;big&quot;&gt;start
+[[Start]]</tw-passagedata>
+<tw-passagedata pid="4" name="Good" tags="" position="0,0" size="100,100">&lt;span &lt;&lt;if $gold gt 1&gt;&gt;class=&quot;glowx&quot;&lt;&lt;/if&gt;&gt;&gt;Big text&lt;/span&gt;
+&lt;&lt;blorpify&gt;&gt;
+&lt;&lt;include &quot;Blank&quot;&gt;&gt;
+&lt;span class=&quot;glowy&quot;&gt;Shiny&lt;/span&gt;
+Hi $name-san, welcome back.
+Label: $label
+&lt;&lt;if $seen is not true&gt;&gt;First time here.&lt;&lt;/if&gt;&gt;
+&lt;span id=&quot;lonely&quot;&gt;1&lt;/span&gt;&lt;span id=&quot;lonely&quot;&gt;2&lt;/span&gt;
+&lt;&lt;if $gold gt 3&gt;&gt;&lt;span id=&quot;cnt&quot;&gt;a&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;span id=&quot;cnt&quot;&gt;b&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;link &quot;Count&quot;&gt;&gt;&lt;&lt;replace &quot;#cnt&quot;&gt;&gt;c&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;hello&gt;&gt; &lt;&lt;bye&gt;&gt;
+[[Start]]</tw-passagedata>
+<tw-passagedata pid="5" name="Unsure" tags="" position="0,0" size="100,100">&lt;&lt;if $gold gt 1 and $seen or $never&gt;&gt;Maybe.&lt;&lt;/if&gt;&gt;
+&lt;img src=&quot;images/HERO.png&quot;&gt;
+&lt;&lt;if $never and not $never&gt;&gt;&lt;&lt;set $y to 2&gt;&gt;&gt;Ghost words&lt;&lt;/if&gt;&gt;
+&lt;&lt;greet&gt;&gt;
+[[Start]]</tw-passagedata>
+<tw-passagedata pid="6" name="Void" tags="" position="0,0" size="100,100"></tw-passagedata>
+<tw-passagedata pid="7" name="Blank" tags="" position="0,0" size="100,100"></tw-passagedata>
+<tw-passagedata pid="8" name="Widgets" tags="widget" position="0,0" size="100,100">&lt;&lt;widget &quot;hello&quot;&gt;&gt;Hello!&lt;&lt;/widget&gt;&gt;
+&lt;&lt;widget &quot;bye&quot;&gt;&gt;Bye.&lt;&lt;/widget&gt;&gt;
+&lt;&lt;widget &quot;greet&quot;&gt;&gt;Hi.&lt;&lt;/widget&gt;&gt;</tw-passagedata>
+</tw-storydata></body></html>

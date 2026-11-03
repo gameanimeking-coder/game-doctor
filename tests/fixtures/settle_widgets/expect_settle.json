@@ -1,0 +1,8 @@
+{
+ "broken": [
+  "Widget \"hello\" is defined twice",
+  "Widget \"bye\" is defined twice"
+ ],
+ "fine": [],
+ "open": []
+}

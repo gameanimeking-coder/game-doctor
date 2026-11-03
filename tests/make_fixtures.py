@@ -394,10 +394,104 @@ def fixtest_harlowe():
                   ['link to missing passage "Market Sqaure" | Market Sqaure is far'], played='Start')
 
 
+def _settle_spec(d, broken, fine, open_):
+    """Planted "worth checking" results (title | text on the line) that the app must settle itself: to Broken, to Fine,
+    or left open with a reason. Checked by tests/run_tests.py with the browser (engine taken from a real game)."""
+    write(os.path.join(d, 'expect_settle.json'), json.dumps(dict(broken=broken, fine=fine, open=open_), indent=1))
+
+
+def settle_sugarcube():
+    d = os.path.join(FIX, 'settle_sugarcube')
+    write(os.path.join(d, 'images', 'hero.png'), png_bytes())
+    script = ("Macro.add('blo' + 'rpify', { handler() { $(this.output).append('ok'); } });\n"
+              "$('head').append('<style>.glo' + 'wy { color: red; }</style>');")
+    passages = [
+        ('Start', '', 'Welcome. [[Bad]] [[Good]] [[Unsure]] [[Void]]'),
+        ('StoryInit', '', '<<set $gold to 5>><<set $name to "Kim">><<set $seen to false>><<set $label to "banner.png">>'
+                          '<<set $face to "smile.png">><<set $never to false>>'),
+        ('Bad', '', '<<set $x to 1>>>Hello there\n'
+                    '<<frobnicate>>\n'
+                    'Gold: <<print $golld>>\n'
+                    '<img @src="\'images/\' + $face">\n'
+                    '<span id="msg">A</span> <span id="msg">B</span> <<link "Shout">><<replace "#msg">>X<</replace>><</link>>\n'
+                    'TODO write this part\n'
+                    '<<if $gold is not 5>>Odd.<</if>>\n'
+                    'Bold <span class="big">start\n[[Start]]'),
+        ('Good', '', '<span <<if $gold gt 1>>class="glowx"<</if>>>Big text</span>\n'
+                     '<<blorpify>>\n'
+                     '<<include "Blank">>\n'
+                     '<span class="glowy">Shiny</span>\n'
+                     'Hi $name-san, welcome back.\n'
+                     'Label: $label\n'
+                     '<<if $seen is not true>>First time here.<</if>>\n'
+                     '<span id="lonely">1</span><span id="lonely">2</span>\n'
+                     '<<if $gold gt 3>><span id="cnt">a</span><<else>><span id="cnt">b</span><</if>>'
+                     '<<link "Count">><<replace "#cnt">>c<</replace>><</link>>\n'
+                     '<<hello>> <<bye>>\n[[Start]]'),
+        ('Unsure', '', '<<if $gold gt 1 and $seen or $never>>Maybe.<</if>>\n'
+                       '<img src="images/HERO.png">\n'
+                       '<<if $never and not $never>><<set $y to 2>>>Ghost words<</if>>\n'
+                       '<<greet>>\n[[Start]]'),
+        ('Void', '', ''),
+        ('Blank', '', ''),
+        ('Widgets', 'widget', '<<widget "hello">>Hello!<</widget>>\n<<widget "bye">>Bye.<</widget>>'
+                              '\n<<widget "greet">>Hi.<</widget>>'),
+    ]
+    write(os.path.join(d, 'story.html'), twine('SugarCube', passages, script=script, style='.glowx { color: blue; }'))
+    # a macro inside an HTML tag (Big text) is no exception: SugarCube shows the ">" as text
+    _settle_spec(d, broken=['Extra ">" after a macro tag | Hello there', 'Extra ">" after a macro tag | Big text',
+                            'Unknown macro <<frobnicate>>', '$golld is used but never set', 'not found: smile.png',
+                            'id="msg" used 2 times', '"TODO" text shown to players',
+                            '"is not" instead of "isnot" | $gold is not 5', '<span> opened more times',
+                            'Passage "Void" is empty'],
+                 fine=['Unknown macro <<blorpify>>', 'Passage "Blank" is empty', 'Class "glowy" does not match',
+                       '"$name-san" is read as', 'not found: banner.png', '"is not" instead of "isnot" | $seen is not true',
+                       'id="lonely" used 2 times', 'id="cnt" used 2 times'],
+                 open_=['Condition mixes "and" and "or"', 'wrong capital letters: images/HERO.png',
+                        'Extra ">" after a macro tag | Ghost words'])
+
+
+def settle_widgets():
+    """SugarCube 2.37 refuses a widget defined twice (error pop-up when the game starts), even two the same."""
+    d = os.path.join(FIX, 'settle_widgets')
+    passages = [
+        ('Start', '', 'Welcome. <<hello>> <<bye>>'),
+        ('Widgets', 'widget', '<<widget "hello">>Hello!<</widget>>\n<<widget "bye">>Bye.<</widget>>'),
+        ('Widgets 2', 'widget', '<<widget "hello">>Hello!<</widget>>\n<<widget "bye">>See you.<</widget>>'),
+    ]
+    write(os.path.join(d, 'story.html'), twine('SugarCube', passages))
+    _settle_spec(d, broken=['Widget "hello" is defined twice', 'Widget "bye" is defined twice'], fine=[], open_=[])
+
+
+def settle_harlowe():
+    d = os.path.join(FIX, 'settle_harlowe')
+    write(os.path.join(d, 'images', 'hero.png'), png_bytes())
+    passages = [
+        ('Start', '', 'Welcome. [[Bad]] [[Good]] [[Unsure]] [[Void]]'),
+        ('Init', 'startup', '(set: $gold to 5)(set: $pic to "frown.png")'),
+        ('Bad', '', '(frobnicate: 2)\n'
+                    'TODO write this part\n'
+                    'Gold: (print: $golld)\n'
+                    '(print: \'<img src="images/\' + $pic + \'">\')\n[[Start]]'),
+        ('Good', '', '(if: $gold is 5 or 6)[Right amount.]\n'
+                     '<span id="lonely">1</span><span id="lonely">2</span>\n'
+                     '(display: "Blank")\n[[Start]]'),
+        ('Unsure', '', 'Bold <span>start\n<img src="images/HERO.png">\n[[Start]]'),
+        ('Void', '', ''),
+        ('Blank', '', ''),
+    ]
+    write(os.path.join(d, 'story.html'), twine('Harlowe', passages))
+    _settle_spec(d, broken=['Unknown macro (frobnicate:)', '"TODO" text shown to players', '$golld is used but never set',
+                            'not found: frown.png', 'Passage "Void" is empty'],
+                 fine=['"$gold is 5 or 6" does not compare both', 'id="lonely" used 2 times', 'Passage "Blank" is empty'],
+                 open_=['<span> opened more times', 'wrong capital letters: images/HERO.png'])
+
+
 if __name__ == '__main__':
     if os.path.isdir(FIX):
         shutil.rmtree(FIX)
     for fn in (sugarcube, clean_sugarcube, harlowe, harlowe_paths, chapbook, snowman, plain_html, renpy, rpgmaker, ink,
-               choicescript, fullscan_sugarcube, fullscan_harlowe, fixtest_sugarcube, fixtest_harlowe):
+               choicescript, fullscan_sugarcube, fullscan_harlowe, fixtest_sugarcube, fixtest_harlowe, settle_sugarcube, settle_harlowe,
+               settle_widgets):
         fn()
     print('fixtures written to', FIX)

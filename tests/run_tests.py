@@ -421,6 +421,85 @@ def run_fixtests(play):
     return ok
 
 
+def run_settle(play):
+    """Settled results: the planted "worth checking" results in the settle_* games must end as Broken, Fine or open
+    (with a reason), each with its proof; nothing may be dropped and the game file must stay unchanged. Played with a
+    real game's engine; without the browser only the results that need no playing are checked."""
+    import hashlib
+    import shutil
+    import tempfile
+    import playtest
+    import settle
+    ok = True
+    play = play and playtest.find_browser()
+    for folder, engine, version in (('settle_sugarcube', GAMES['1.08a'], '2.37.3'),
+                                   ('settle_widgets', GAMES['1.08a'], '2.37.3'), ('settle_harlowe', MB_GAME, '3.3.7')):
+        src = os.path.join(FIX_DIR, folder)
+        spec = json.load(open(os.path.join(src, 'expect_settle.json'), encoding='utf-8'))
+        if not (play and os.path.isfile(engine)):
+            print(f'  [skip] {folder}: needs Edge/Chrome and the engine of a real game')
+            continue
+        tmp = tempfile.mkdtemp()
+        try:
+            game = engine_copy(src, engine, version, tmp)
+            before = hashlib.sha1(open(game, 'rb').read()).hexdigest()
+            res = scanner.scan_any(game)
+            n_before = len(res.issues)
+            warned = [i for i in res.issues if i.severity == scanner.WARNING]
+            t = time.time()
+            res.settled = settle.Settler(res).run()
+            settle.apply(res)
+            bad = []
+
+            def find(k):
+                title, _, text = k.partition(' | ')
+                return [i for i in res.issues if title.lower() in i.title.lower() and text in (i.snippet or '')]
+            for want, keys in ((settle.BROKEN, spec['broken']), (settle.FINE, spec['fine']), (settle.OPEN, spec['open'])):
+                sev = settle.SEVERITY[want]
+                for k in keys:
+                    got = find(k)
+                    v = getattr(got[0], 'settle', None) if got else None
+                    if not got:
+                        bad.append(f'{k}: no such finding')
+                    elif not v or v['state'] != want or got[0].severity != sev or settle.NOTE not in got[0].what:
+                        bad.append(f'{k}: expected {want}, got {v and v["state"]}: {v and v["proof"]}')
+            if len(res.issues) != n_before or any(not getattr(i, 'settle', None) for i in warned):
+                bad.append('a "worth checking" result was dropped or left without a note')
+            if hashlib.sha1(open(game, 'rb').read()).hexdigest() != before:
+                bad.append('THE GAME FILE WAS CHANGED')
+            if bad:
+                ok = False
+                print(f'  [FAIL] {folder}')
+                for b in bad:
+                    print(f'      {b}')
+            else:
+                c = collections.Counter(i.settle['state'] for i in warned)
+                print(f'  [ok] {folder}: {len(warned)} worth checking -> {c[settle.BROKEN]} broken, {c[settle.FINE]} fine, '
+                      f'{c[settle.OPEN]} open with a reason, game unchanged, {time.time() - t:.0f}s')
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+    # other formats (no playing): every "worth checking" result gets a verdict or a plain reason, nothing crashes
+    for folder in ('sugarcube_bugs', 'harlowe_bugs', 'chapbook_bugs', 'snowman_bugs', 'plain_html', 'renpy_bugs',
+                   'rpgmaker_bugs', 'ink_bugs', 'choicescript_bugs'):
+        d = os.path.join(FIX_DIR, folder)
+        if not os.path.isfile(os.path.join(d, 'expect.json')):
+            continue
+        open_ = json.load(open(os.path.join(d, 'expect.json'), encoding='utf-8'))['open']
+        res = scanner.scan_any(os.path.join(d, open_) if open_ else d)
+        warned = [i for i in res.issues if i.severity == scanner.WARNING and not i.unreachable]
+        res.settled = settle.Settler(res, play=False).run()
+        settle.apply(res)
+        bad = [i.title for i in warned if not getattr(i, 'settle', None) or not i.settle['proof']]
+        if bad:
+            ok = False
+            print(f'  [FAIL] {folder}: no verdict for {bad[:3]}')
+        else:
+            c = collections.Counter(i.settle['state'] for i in warned)
+            print(f'  [ok] {folder} (no playing): {len(warned)} worth checking -> {c[settle.BROKEN]} broken, '
+                  f'{c[settle.FINE]} fine, {c[settle.OPEN]} open with a reason')
+    return ok
+
+
 if __name__ == '__main__':
     import re
     update = '--update' in sys.argv
@@ -432,6 +511,8 @@ if __name__ == '__main__':
     c = run_fix_application()
     print('Tested fixes (each suggestion tried on a hidden copy):')
     c = run_fixtests('--no-playtest' not in sys.argv) and c
+    print('Settled results ("worth checking" results proven broken or fine):')
+    c = run_settle('--no-playtest' not in sys.argv) and c
     e = True
     if '--no-accuracy' not in sys.argv:
         print('Real games: are the "Broken" results really broken?')

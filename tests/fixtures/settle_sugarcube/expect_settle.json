@@ -1,0 +1,29 @@
+{
+ "broken": [
+  "Extra \">\" after a macro tag | Hello there",
+  "Extra \">\" after a macro tag | Big text",
+  "Unknown macro <<frobnicate>>",
+  "$golld is used but never set",
+  "not found: smile.png",
+  "id=\"msg\" used 2 times",
+  "\"TODO\" text shown to players",
+  "\"is not\" instead of \"isnot\" | $gold is not 5",
+  "<span> opened more times",
+  "Passage \"Void\" is empty"
+ ],
+ "fine": [
+  "Unknown macro <<blorpify>>",
+  "Passage \"Blank\" is empty",
+  "Class \"glowy\" does not match",
+  "\"$name-san\" is read as",
+  "not found: banner.png",
+  "\"is not\" instead of \"isnot\" | $seen is not true",
+  "id=\"lonely\" used 2 times",
+  "id=\"cnt\" used 2 times"
+ ],
+ "open": [
+  "Condition mixes \"and\" and \"or\"",
+  "wrong capital letters: images/HERO.png",
+  "Extra \">\" after a macro tag | Ghost words"
+ ]
+}

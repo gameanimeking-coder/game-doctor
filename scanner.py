@@ -979,6 +979,7 @@ class Scanner:
 
         all_vars = sorted(set(sets) | set(reads))
         self.known_vars = set(all_vars)
+        self.var_counts = (reads, sets, treads, tsets)   # for settle.py
         set_names = sorted(sets)
         unused_vars = []
         for v in all_vars:

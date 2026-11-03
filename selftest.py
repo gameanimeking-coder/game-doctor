@@ -130,7 +130,9 @@ class Runner:
             steps.insert(-1, self.t_playtest)
             steps.insert(-1, self.t_fullscan)
             steps.insert(-1, self.t_tested_fixes)
+            steps.insert(-1, self.t_settle)
         a.auto_fixtest = False      # only t_tested_fixes tries fixes, so the other checks see steady results
+        a.auto_settle = False       # only t_settle settles "worth checking" results, for the same reason
         for step in steps:
             try:
                 step()
@@ -728,6 +730,72 @@ class Runner:
             self.check('trying the fixes never changed the game file', hashlib.sha1(open(game, 'rb').read()).hexdigest() == before)
         finally:
             a.auto_fixtest = False
+
+    def t_settle(self):
+        """Settled results: open a small game with planted "worth checking" results (in the SugarCube engine of the old
+        test game), let the app settle them by playing, and check what the window says. The game must not change."""
+        import hashlib
+        a = self.app
+        src = os.path.join(FIXTURES, 'settle_sugarcube')
+        if not os.path.isdir(src) or not os.path.isfile(OLD_GAME):
+            self.check('settled results: test game available', False, src)
+            return
+        dst = os.path.join(self.tmp, 'settle')
+        shutil.copytree(src, dst, dirs_exist_ok=True)
+        story = open(os.path.join(src, 'story.html'), encoding='utf-8').read()
+        engine = open(OLD_GAME, encoding='utf-8').read()
+        ours = re.search(r'<tw-storydata.*?</tw-storydata>', story, re.S).group(0).replace('format-version="1.0"', 'format-version="2.37.3"')
+        x, y = re.search(r'<tw-storydata.*?</tw-storydata>', engine, re.S).span()
+        game = os.path.join(dst, 'game.html')
+        with open(game, 'w', encoding='utf-8') as f:
+            f.write(engine[:x] + ours + engine[y:])
+        before = hashlib.sha1(open(game, 'rb').read()).hexdigest()
+        a.auto_settle = True
+        try:
+            a.open_path(game)
+            self.wait(lambda: a.result is not None and not a.scanning and os.path.normcase(a.result.html_path) == os.path.normcase(game), 60,
+                      'scan of the settle game')
+            self.wait(lambda: getattr(a.result, 'settled', None) is not None, 240, '"worth checking" results settled')
+            res = a.result
+            find = lambda title, text='': next((i for i in res.issues if title in i.title and text in (i.snippet or '')), None)
+
+            def detail(i):
+                a.select_issue(i)
+                self.pump(0.1)
+                return a.text.get('1.0', 'end')
+            left = [i.title for i in res.issues if i.severity == 'Warning' and not getattr(i, 'settle', None)]
+            self.check('every "worth checking" result was settled or says why not', not left, str(left[:3]))
+            gt = find('Extra ">" after a macro tag', 'Hello there')
+            t = detail(gt) if gt else ''
+            self.check('settled broken: moved to Error with the proof from playing', gt is not None and gt.severity == 'Error'
+                       and 'Checked by Game Doctor: broken. Seen while playing' in t and 'Hello there' in t, t[:600])
+            ok = find('Unknown macro <<blorpify>>')
+            t = detail(ok) if ok else ''
+            self.check('settled fine: moved to the notes with the proof', ok is not None and ok.severity == 'Info'
+                       and 'Checked by Game Doctor: fine.' in t, t[:600])
+            mix = find('Condition mixes "and" and "or"')
+            t = detail(mix) if mix else ''
+            self.check('could not be settled: stays "worth checking" with a plain reason', mix is not None
+                       and mix.severity == 'Warning' and 'could not be settled automatically, because' in t, t[:600])
+            was = a.simple_on
+            if not was:
+                a.btn_simple.invoke()
+                self.pump()
+            t = detail(ok) if ok else ''
+            rows = [a.tree.item(k, 'values') for g in a.tree.get_children() for k in (a.tree.get_children(g) or [g])]
+            if not was:
+                a.btn_simple.invoke()
+                self.pump()
+            self.check('Simple mode: says "Fine" and shows the proof in plain words',
+                       'Fine' in t.split('\n')[1] and 'Checked by Game Doctor: fine.' in t
+                       and any('Fine' in str(v[0]) for v in rows), t[:400])
+            a.show_summary()
+            self.pump(0.1)
+            t = a.text.get('1.0', 'end')
+            self.check('summary says how many results Game Doctor checked itself', 'result(s) itself:' in t, t[:800])
+            self.check('settling never changed the game file', hashlib.sha1(open(game, 'rb').read()).hexdigest() == before)
+        finally:
+            a.auto_settle = False
 
     def t_other_engines(self):
         a = self.app
