@@ -67,7 +67,7 @@ Chrome. Nothing is sent anywhere: the game is served from your own computer
 (127.0.0.1) and the browser uses a temporary profile that is deleted after.
 
 
-AI HELPER (English only for now)
+AI HELPER (in English, German, Spanish, French, Portuguese, Russian, Japanese and Chinese)
 ---------
 Tools > Fix with AI… sends the problems and the lines around them to an AI and
 shows every change it suggests as "Now" / "Change to". Untick the ones you

@@ -1,5 +1,5 @@
 """Windows for the AI helper: choosing the AI service, and "Fix with AI".
-English only for now (not in tools/strings.py, so the language files don't need these texts)."""
+Translated only into the most used languages (AI_LANGS); the other languages show these texts in English."""
 import os
 import queue
 import threading
@@ -11,6 +11,8 @@ import scanner
 import simple
 from i18n import T
 from ui_dialogs import APP_NAME, InfoWindow, Window
+
+AI_LANGS = ('de', 'es', 'fr', 'pt', 'ru', 'ja', 'zh')
 
 # Menu entries (in the Tools menu of the main window)
 MENU_FIX = 'Fix with AI…'

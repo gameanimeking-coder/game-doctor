@@ -834,3 +834,65 @@ d3631b3f Lee la frase y cambia "{wrong}" por "{a}" o por "{b}", según lo que en
 4f2e0c01 No hace falta nada, salvo que uno debiera usarse.
 37a88891 Normalmente nada: el navegador la cierra solo al final de la escena.
 9c393632 Sí. Está en una escena a la que nadie puede llegar, así que los jugadores nunca lo ven. Arréglalo solo si más adelante añades un enlace a esa escena.
+e9b058a5 Registro guardado: {path}. Dáselo a la IA junto con el archivo del juego.
+a8a6f74d Guardar un registro del análisis para un asistente de IA
+52201ef5 Primero abre y analiza un juego.
+e93ed82c Ayudante de IA
+aa327b42 Ayudante de IA configurado: {name} · {model}
+20116b76 Arreglar con IA
+71f130f7 Notas de la IA
+9a0eb772 Copia arreglada guardada: {path}
+fd3e7969 Conectando…
+bca95cf6 Todos los problemas que tienen línea
+0cd22701 Preguntar a la IA
+9e253470 Parar
+cf9f36fa Nada cambia hasta que guardes, y tu archivo del juego nunca se modifica: los arreglos aceptados van a una copia.
+1d4d43cc Usar
+64fbd995 Cambio
+c0ead91e Usar / no usar (doble clic)
+abd560d5 Guardar copia arreglada…
+3af8d35a Abrir la copia arreglada
+62e9e012 IA: {name} · {model}
+19d67c10 {n} problemas, {k} petición(es) a la IA
+a10b5042 Preguntando a la IA…
+794d2fe9 Parando tras la petición actual…
+90a140c8 Guardado. Volviendo a revisar la copia arreglada…
+d7a9d07e No se pudo guardar el registro:
+08f10c7c No hace falta clave: funciona en este ordenador.
+8bfda18c Elige primero un modelo. «Obtener la lista de modelos» muestra lo que ofrece este servicio.
+8acf5561 No hay problemas con número de línea para enviar.
+0269e2d4 La IA no sugirió cambios útiles. Mira «Notas de la IA».
+1acb1c04 Línea {n}
+369fa391 Guardar la copia arreglada
+35016002 Elige una carpeta vacía para los archivos arreglados
+2ed6e93e Se guardaron {n} archivos arreglados y una lista de los cambios en {path}. Haz una copia de seguridad del juego y luego cópialos encima de los archivos del juego.
+1cb92041 Guardado, pero la copia arreglada no se pudo revisar: {error}
+81f33f1f ¿Qué IA debe sugerir arreglos?
+61c4c23f Los servicios en línea necesitan una clave API de su web y cobran por el uso. LM Studio y Ollama ejecutan modelos en este ordenador gratis; ábrelos y carga un modelo primero.
+329cb8b6 Servicio
+cf678cab Clave API
+d70f93df Dirección
+68c2cc7f Modelo
+09f75534 Obtener la lista de modelos
+179eef0b Windows guarda la clave cifrada, así que solo tu cuenta de Windows puede leerla. Con un servicio en línea, los problemas y las líneas de alrededor se envían a esa empresa.
+ccf66f07 Probar conexión
+e99b26ba Se encontraron {n} modelos. Elige uno de la lista.
+3172147f Funciona. La IA respondió: {text}
+73aa5d05 Cambiar IA…
+c341e94c Arreglo:
+4b22bf04 Se sugieren {n} cambios. Revisa cada uno, desmarca los que no quieras y luego guarda una copia arreglada.
+a61d4e29 Ahora:
+a31dc672 Cambiar a:
+df54f9e4 No se pudo guardar la copia arreglada:
+6bfc7a64 Guardado y revisado: {fixed} problemas resueltos, {new} problemas nuevos.
+67dc3dda (ningún modelo elegido)
+e569e017 Preguntando a la IA… petición {k} de {n}
+8a1ab9c3 Archivo del juego
+f92e6d42 Abre la copia arreglada para verlos.
+512da9fc {k} marcados con ⚠ cambian una imagen o sonido que falta por otro archivo: revísalos tú mismo.
+01bb3cc1 Por qué:
+ee8688be Se encontraron {n} problemas más en las líneas cambiadas (a menudo un segundo problema en la misma línea).
+f59ae03b Arreglar con IA…
+eb2e87db Exportar registro para IA (texto)…
+cc50bbf1 Ajustes del ayudante de IA…
+fd643cda Revisa este tú mismo: un nombre de archivo parecido suele ser otra imagen (otro personaje, otra escena o una de varias versiones aleatorias).

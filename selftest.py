@@ -612,7 +612,7 @@ class Runner:
         langs = sorted(i18n.available())
         # Each language's own name stays the same in every language (the language menu).
         english = set(self.texts()) - set(i18n.LANGUAGES.values())
-        english -= {AID.MENU_FIX, AID.MENU_LOG, AID.MENU_SETTINGS}   # the AI helper is English only for now
+        ai_menu = {AID.MENU_FIX, AID.MENU_LOG, AID.MENU_SETTINGS}   # the AI helper is translated only into AI_LANGS
         report = {}
         for code in langs:
             if code == 'en':
@@ -620,7 +620,8 @@ class Runner:
             a.set_language(code)
             self.pump(0.1)
             texts = self.texts()
-            same = [t for t in texts if t in english and len(t) > 3 and not t.isdigit() and '%' not in t
+            skip = set() if code in AID.AI_LANGS else ai_menu
+            same = [t for t in texts if t in english - skip and len(t) > 3 and not t.isdigit() and '%' not in t
                     and t not in ('Game Doctor',) and not t.startswith(('\U0001F310', 'Condemned'))]
             report[code] = same
             summary = a.text.get('1.0', 'end')

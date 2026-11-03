@@ -1,5 +1,5 @@
 @echo off
-rem Builds installer\GameDoctor-2.0.2-Setup.exe with Inno Setup (run build.bat first).
+rem Builds installer\GameDoctor-2.0.3-Setup.exe with Inno Setup (run build.bat first).
 cd /d "%~dp0"
 if not exist dist\GameDoctor.exe call build.bat || goto :error
 set ISCC=%LOCALAPPDATA%\Programs\Inno Setup 6\ISCC.exe
@@ -11,7 +11,7 @@ if not exist "%ISCC%" (
 )
 "%ISCC%" /Q installer.iss || goto :error
 echo.
-echo Built: %~dp0installer\GameDoctor-2.0.2-Setup.exe
+echo Built: %~dp0installer\GameDoctor-2.0.3-Setup.exe
 exit /b 0
 :error
 echo Installer build failed.

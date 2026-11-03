@@ -834,3 +834,65 @@ d3631b3f Lies den Satz und ändere „{wrong}“ zu „{a}“ oder zu „{b}“,
 4f2e0c01 Nichts nötig, außer einer sollte benutzt werden.
 37a88891 Meist nichts: Der Browser schließt ihn am Ende der Szene von selbst.
 9c393632 Ja. Es steht in einer Szene, die niemand erreichen kann, also sehen Spieler es nie. Behebe es nur, wenn du später einen Link zu dieser Szene hinzufügst.
+e9b058a5 Protokoll gespeichert: {path}. Gib es der KI zusammen mit der Spieldatei.
+a8a6f74d Ein Protokoll des Scans für einen KI-Assistenten speichern
+52201ef5 Öffne und prüfe zuerst ein Spiel.
+e93ed82c KI-Helfer
+aa327b42 KI-Helfer eingestellt auf {name} · {model}
+20116b76 Mit KI reparieren
+71f130f7 Hinweise der KI
+9a0eb772 Reparierte Kopie gespeichert: {path}
+fd3e7969 Verbinde…
+bca95cf6 Jedes Problem mit einer Zeilennummer
+0cd22701 KI fragen
+9e253470 Stopp
+cf9f36fa Nichts ändert sich, bevor du speicherst, und deine Spieldatei selbst wird nie geändert: angenommene Korrekturen kommen in eine Kopie.
+1d4d43cc Nutzen
+64fbd995 Änderung
+c0ead91e Nutzen / nicht nutzen (Doppelklick)
+abd560d5 Reparierte Kopie speichern…
+3af8d35a Reparierte Kopie öffnen
+62e9e012 KI: {name} · {model}
+19d67c10 {n} Probleme, {k} Anfrage(n) an die KI
+a10b5042 Frage die KI…
+794d2fe9 Stoppe nach der aktuellen Anfrage…
+90a140c8 Gespeichert. Prüfe die reparierte Kopie erneut…
+d7a9d07e Das Protokoll konnte nicht gespeichert werden:
+08f10c7c Kein Schlüssel nötig: läuft auf diesem Computer.
+8bfda18c Wähle zuerst ein Modell. „Modellliste holen“ zeigt, was dieser Dienst anbietet.
+8acf5561 Es gibt keine Probleme mit einer Zeilennummer zum Senden.
+0269e2d4 Die KI hat keine brauchbaren Änderungen vorgeschlagen. Siehe „Hinweise der KI“.
+1acb1c04 Zeile {n}
+369fa391 Reparierte Kopie speichern
+35016002 Wähle einen leeren Ordner für die reparierten Dateien
+2ed6e93e {n} reparierte Dateien und eine Liste der Änderungen in {path} gespeichert. Sichere das Spiel, dann kopiere sie über die Dateien des Spiels.
+1cb92041 Gespeichert, aber die reparierte Kopie konnte nicht geprüft werden: {error}
+81f33f1f Welche KI soll Korrekturen vorschlagen?
+61c4c23f Online-Dienste brauchen einen API-Schlüssel von ihrer Website und berechnen die Nutzung. LM Studio und Ollama führen Modelle kostenlos auf diesem Computer aus; starte sie und lade zuerst ein Modell.
+329cb8b6 Dienst
+cf678cab API-Schlüssel
+d70f93df Adresse
+68c2cc7f Modell
+09f75534 Modellliste holen
+179eef0b Der Schlüssel wird von Windows verschlüsselt gespeichert, nur dein Windows-Konto kann ihn lesen. Bei einem Online-Dienst werden die Probleme und die Zeilen drumherum an diese Firma gesendet.
+ccf66f07 Verbindung testen
+e99b26ba {n} Modelle gefunden. Wähle eins aus der Liste.
+3172147f Es funktioniert. Die KI antwortete: {text}
+73aa5d05 KI wechseln…
+c341e94c Korrektur:
+4b22bf04 {n} Änderungen vorgeschlagen. Prüfe jede, entferne den Haken bei denen, die du nicht willst, und speichere dann eine reparierte Kopie.
+a61d4e29 Jetzt:
+a31dc672 Ändern zu:
+df54f9e4 Die reparierte Kopie konnte nicht gespeichert werden:
+6bfc7a64 Gespeichert und geprüft: {fixed} Probleme weg, {new} neue Probleme.
+67dc3dda (kein Modell gewählt)
+e569e017 Frage die KI… Anfrage {k} von {n}
+8a1ab9c3 Spieldatei
+f92e6d42 Öffne die reparierte Kopie, um sie zu sehen.
+512da9fc {k} mit ⚠ markiert tauschen ein fehlendes Bild oder einen Ton gegen eine andere Datei: prüfe diese selbst.
+01bb3cc1 Warum:
+ee8688be {n} weitere Probleme wurden in den geänderten Zeilen gefunden (oft ein zweites Problem in derselben Zeile).
+f59ae03b Mit KI reparieren…
+eb2e87db Protokoll für KI exportieren (Text)…
+cc50bbf1 Einstellungen KI-Helfer…
+fd643cda Prüfe das selbst: ein ähnlicher Dateiname ist oft ein anderes Bild (andere Figur, andere Szene oder eine von mehreren Zufallsversionen).

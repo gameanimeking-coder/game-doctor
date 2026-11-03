@@ -834,3 +834,65 @@ d3631b3f Lisez la phrase et remplacez « {wrong} » par « {a} » ou par « {b} 
 4f2e0c01 Rien à faire, sauf si l'une devait être utilisée.
 37a88891 En général rien : le navigateur la ferme tout seul à la fin de la scène.
 9c393632 Oui. C'est dans une scène que personne ne peut atteindre, donc les joueurs ne le voient jamais. Corrigez-le seulement si vous ajoutez plus tard un lien vers cette scène.
+e9b058a5 Journal enregistré : {path}. Donnez-le à l’IA avec le fichier du jeu.
+a8a6f74d Enregistrer un journal de l’analyse pour un assistant IA
+52201ef5 Ouvrez et analysez d’abord un jeu.
+e93ed82c Assistant IA
+aa327b42 Assistant IA réglé sur {name} · {model}
+20116b76 Corriger avec l’IA
+71f130f7 Remarques de l’IA
+9a0eb772 Copie corrigée enregistrée : {path}
+fd3e7969 Connexion…
+bca95cf6 Tous les problèmes qui ont une ligne
+0cd22701 Demander à l’IA
+9e253470 Arrêter
+cf9f36fa Rien ne change avant d’enregistrer, et votre fichier de jeu n’est jamais modifié : les corrections acceptées vont dans une copie.
+1d4d43cc Utiliser
+64fbd995 Modification
+c0ead91e Utiliser / ne pas utiliser (double-clic)
+abd560d5 Enregistrer la copie corrigée…
+3af8d35a Ouvrir la copie corrigée
+62e9e012 IA : {name} · {model}
+19d67c10 {n} problèmes, {k} demande(s) à l’IA
+a10b5042 Question à l’IA…
+794d2fe9 Arrêt après la demande en cours…
+90a140c8 Enregistré. Nouvelle vérification de la copie corrigée…
+d7a9d07e Impossible d’enregistrer le journal :
+08f10c7c Pas de clé nécessaire : il fonctionne sur cet ordinateur.
+8bfda18c Choisissez d’abord un modèle. « Obtenir la liste des modèles » montre ce que propose ce service.
+8acf5561 Aucun problème avec un numéro de ligne à envoyer.
+0269e2d4 L’IA n’a proposé aucune modification utilisable. Voir « Remarques de l’IA ».
+1acb1c04 Ligne {n}
+369fa391 Enregistrer la copie corrigée
+35016002 Choisissez un dossier vide pour les fichiers corrigés
+2ed6e93e {n} fichiers corrigés et une liste des modifications enregistrés dans {path}. Sauvegardez le jeu, puis copiez-les par-dessus les fichiers du jeu.
+1cb92041 Enregistré, mais la copie corrigée n’a pas pu être vérifiée : {error}
+81f33f1f Quelle IA doit proposer des corrections ?
+61c4c23f Les services en ligne demandent une clé API obtenue sur leur site et font payer l’utilisation. LM Studio et Ollama font tourner des modèles gratuitement sur cet ordinateur ; lancez-les et chargez d’abord un modèle.
+329cb8b6 Service
+cf678cab Clé API
+d70f93df Adresse
+68c2cc7f Modèle
+09f75534 Obtenir la liste des modèles
+179eef0b La clé est enregistrée chiffrée par Windows, seul votre compte Windows peut la lire. Avec un service en ligne, les problèmes et les lignes autour sont envoyés à cette société.
+ccf66f07 Tester la connexion
+e99b26ba {n} modèles trouvés. Choisissez-en un dans la liste.
+3172147f Ça marche. L’IA a répondu : {text}
+73aa5d05 Changer d’IA…
+c341e94c Correction :
+4b22bf04 {n} modifications proposées. Vérifiez-les une à une, décochez celles que vous ne voulez pas, puis enregistrez une copie corrigée.
+a61d4e29 Actuellement :
+a31dc672 Remplacer par :
+df54f9e4 Impossible d’enregistrer la copie corrigée :
+6bfc7a64 Enregistré et vérifié : {fixed} problèmes disparus, {new} nouveaux problèmes.
+67dc3dda (aucun modèle choisi)
+e569e017 Question à l’IA… demande {k} sur {n}
+8a1ab9c3 Fichier du jeu
+f92e6d42 Ouvrez la copie corrigée pour les voir.
+512da9fc {k} marquées ⚠ remplacent une image ou un son manquant par un autre fichier : vérifiez-les vous-même.
+01bb3cc1 Pourquoi :
+ee8688be {n} autres problèmes ont été trouvés sur les lignes modifiées (souvent un second problème sur la même ligne).
+f59ae03b Corriger avec l’IA…
+eb2e87db Exporter le journal pour l’IA (texte)…
+cc50bbf1 Réglages de l’assistant IA…
+fd643cda Vérifiez celle-ci vous-même : un nom de fichier proche est souvent une autre image (autre personnage, autre scène ou une de plusieurs versions aléatoires).

@@ -834,3 +834,65 @@ d3631b3f Leia a frase e troque "{wrong}" por "{a}" ou por "{b}", conforme fizer 
 4f2e0c01 Nada a fazer, a não ser que algum devesse ser usado.
 37a88891 Normalmente nada: o navegador fecha-a sozinho no fim da cena.
 9c393632 Sim. Está numa cena que ninguém consegue alcançar, por isso os jogadores nunca veem. Corrija só se depois adicionar um link para essa cena.
+e9b058a5 Registro salvo: {path}. Entregue-o à IA junto com o arquivo do jogo.
+a8a6f74d Salvar um registro da análise para um assistente de IA
+52201ef5 Abra e analise um jogo primeiro.
+e93ed82c Assistente de IA
+aa327b42 Assistente de IA definido como {name} · {model}
+20116b76 Corrigir com IA
+71f130f7 Observações da IA
+9a0eb772 Cópia corrigida salva: {path}
+fd3e7969 Conectando…
+bca95cf6 Todos os problemas que têm linha
+0cd22701 Perguntar à IA
+9e253470 Parar
+cf9f36fa Nada muda até você salvar, e o arquivo do seu jogo nunca é alterado: as correções aceitas vão para uma cópia.
+1d4d43cc Usar
+64fbd995 Alteração
+c0ead91e Usar / não usar (clique duplo)
+abd560d5 Salvar cópia corrigida…
+3af8d35a Abrir a cópia corrigida
+62e9e012 IA: {name} · {model}
+19d67c10 {n} problemas, {k} pedido(s) à IA
+a10b5042 Perguntando à IA…
+794d2fe9 Parando após o pedido atual…
+90a140c8 Salvo. Verificando a cópia corrigida de novo…
+d7a9d07e Não foi possível salvar o registro:
+08f10c7c Não precisa de chave: roda neste computador.
+8bfda18c Escolha um modelo primeiro. "Obter a lista de modelos" mostra o que este serviço oferece.
+8acf5561 Não há problemas com número de linha para enviar.
+0269e2d4 A IA não sugeriu alterações utilizáveis. Veja "Observações da IA".
+1acb1c04 Linha {n}
+369fa391 Salvar a cópia corrigida
+35016002 Escolha uma pasta vazia para os arquivos corrigidos
+2ed6e93e {n} arquivos corrigidos e uma lista das alterações foram salvos em {path}. Faça backup do jogo e depois copie-os por cima dos arquivos do jogo.
+1cb92041 Salvo, mas a cópia corrigida não pôde ser verificada: {error}
+81f33f1f Qual IA deve sugerir correções?
+61c4c23f Serviços online precisam de uma chave de API do site deles e cobram pelo uso. LM Studio e Ollama rodam modelos neste computador de graça; abra-os e carregue um modelo primeiro.
+329cb8b6 Serviço
+cf678cab Chave de API
+d70f93df Endereço
+68c2cc7f Modelo
+09f75534 Obter a lista de modelos
+179eef0b A chave é guardada criptografada pelo Windows, então só a sua conta do Windows pode lê-la. Com um serviço online, os problemas e as linhas ao redor são enviados para essa empresa.
+ccf66f07 Testar conexão
+e99b26ba {n} modelos encontrados. Escolha um na lista.
+3172147f Funciona. A IA respondeu: {text}
+73aa5d05 Trocar IA…
+c341e94c Correção:
+4b22bf04 {n} alterações sugeridas. Confira cada uma, desmarque as que não quiser e depois salve uma cópia corrigida.
+a61d4e29 Agora:
+a31dc672 Mudar para:
+df54f9e4 Não foi possível salvar a cópia corrigida:
+6bfc7a64 Salvo e verificado: {fixed} problemas resolvidos, {new} problemas novos.
+67dc3dda (nenhum modelo escolhido)
+e569e017 Perguntando à IA… pedido {k} de {n}
+8a1ab9c3 Arquivo do jogo
+f92e6d42 Abra a cópia corrigida para vê-los.
+512da9fc {k} marcadas com ⚠ trocam uma imagem ou som que falta por outro arquivo: confira essas você mesmo.
+01bb3cc1 Por quê:
+ee8688be Mais {n} problemas foram encontrados nas linhas alteradas (muitas vezes um segundo problema na mesma linha).
+f59ae03b Corrigir com IA…
+eb2e87db Exportar registro para IA (texto)…
+cc50bbf1 Configurações do assistente de IA…
+fd643cda Confira esta você mesmo: um nome de arquivo parecido muitas vezes é outra imagem (outro personagem, outra cena ou uma de várias versões aleatórias).

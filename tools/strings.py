@@ -22,10 +22,30 @@ EXTRA = ['Excellent', 'Great', 'Good', 'Fine', 'Needs work', 'Poor',
          'Checking JavaScript', 'Checking story-format rules', 'Done', 'Reading the {label} game', 'Checking files for damage',
          'Starting the invisible browser', 'Loading the game', "Checking scripts with the browser's JavaScript engine",
          'Playing scenes ({mode}): {k} of {n}', 'Play-test finished']
+# The AI helper windows are translated only into the most used languages; the others show them in English.
+AI_SOURCES = ['ai_dialogs.py']
+AI_LANGS = next(ast.literal_eval(n.value) for n in ast.parse(open(os.path.join(ROOT, 'ai_dialogs.py'), encoding='utf-8').read()).body
+                if isinstance(n, ast.Assign) and getattr(n.targets[0], 'id', '') == 'AI_LANGS')
 # New texts the user chose to keep English-only for now (shown in English in every language).
 # Texts starting with these words are not counted as missing.
 ENGLISH_ONLY = ('The name looks mistyped: the file meant is probably',
                 'Put the file in the game folder with exactly this name. Only change the name')
+
+
+def ai_texts():
+    """Texts of the AI helper windows: T('...') in ai_dialogs.py, its MENU_ labels and the note from ai.py."""
+    found = []
+    for name in AI_SOURCES + ['ai.py']:
+        tree = ast.parse(open(os.path.join(ROOT, name), encoding='utf-8').read())
+        for node in ast.walk(tree):
+            if name in AI_SOURCES and isinstance(node, ast.Call) and getattr(node.func, 'id', None) == 'T' and node.args:
+                if isinstance(node.args[0], ast.Constant) and isinstance(node.args[0].value, str):
+                    found.append(node.args[0].value)
+        for node in tree.body:
+            if isinstance(node, ast.Assign) and isinstance(node.value, ast.Constant) and isinstance(node.value.value, str):
+                if any(getattr(t, 'id', '').startswith('MENU_') or getattr(t, 'id', '') == 'CHECK_NOTE' for t in node.targets):
+                    found.append(node.value.value)
+    return list(dict.fromkeys(found))
 
 
 def extract():
@@ -44,7 +64,7 @@ def extract():
             if isinstance(node, ast.Assign) and any(getattr(t, 'id', None) in DICT_NAMES for t in node.targets):
                 if isinstance(node.value, ast.Dict):
                     found += [v.value for v in node.value.values if isinstance(v, ast.Constant) and isinstance(v.value, str)]
-    found += EXTRA
+    found += EXTRA + ai_texts()
     seen, out = set(), []
     for s in found:
         if s not in seen:
@@ -65,6 +85,7 @@ def check():
     ok = len(set(ids)) == len(ids)
     if not ok:
         print('  [FAIL] two texts share an id')
+    ai_only = set(ai_texts())
     d = os.path.join(ROOT, 'lang')
     for f in sorted(os.listdir(d)):
         if not f.endswith('.txt'):
@@ -74,7 +95,8 @@ def check():
         extra = set(by_id) - set(ids)
         if extra:
             print(f'       {len(extra)} unused lines in {f}')
-        missing = [t for t in texts if t not in tr and not t.startswith(ENGLISH_ONLY)]
+        missing = [t for t in texts if t not in tr and not t.startswith(ENGLISH_ONLY)
+                   and not (t in ai_only and f[:-4] not in AI_LANGS)]
         bad = [t for t in texts if t in tr and placeholders(t) != placeholders(tr[t])]
         broken = []
         for t in texts:
