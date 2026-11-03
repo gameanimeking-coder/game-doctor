@@ -262,6 +262,22 @@ def run_playtest():
 MB_GAME = os.path.join(GAMES_ROOT, 'MB.5', 'MB.5', 'MB 0.24.6.html')     # its Harlowe 3.3.7 runs the Harlowe test game
 
 
+def engine_copy(src, engine_path, version, tmp):
+    """The test game in folder `src` (story.html, no engine of its own) put into a real game's engine, in tmp."""
+    import re
+    import shutil
+    shutil.copytree(src, tmp, dirs_exist_ok=True)
+    story = open(os.path.join(src, 'story.html'), encoding='utf-8').read()
+    engine = open(engine_path, encoding='utf-8').read()
+    ours = re.search(r'<tw-storydata.*?</tw-storydata>', story, re.S).group(0).replace(
+        'format-version="1.0"', f'format-version="{version}"')
+    a, b = re.search(r'<tw-storydata.*?</tw-storydata>', engine, re.S).span()
+    game = os.path.join(tmp, 'game.html')
+    with open(game, 'w', encoding='utf-8') as f:
+        f.write(engine[:a] + ours + engine[b:])
+    return game
+
+
 def _fullscan_test_game(folder, engine_path, version, label):
     """Full scan a test game from tests/fixtures/<folder>: its story put into a real game's engine. Quick scan
     findings are laid next to what playing showed (fullscan.merge_quick) before checking expect_full.json."""
@@ -273,15 +289,7 @@ def _fullscan_test_game(folder, engine_path, version, label):
     spec = json.load(open(os.path.join(src, 'expect_full.json'), encoding='utf-8'))
     tmp = tempfile.mkdtemp()
     try:
-        shutil.copytree(src, tmp, dirs_exist_ok=True)
-        story = open(os.path.join(src, 'story.html'), encoding='utf-8').read()
-        engine = open(engine_path, encoding='utf-8').read()
-        ours = re.search(r'<tw-storydata.*?</tw-storydata>', story, re.S).group(0).replace(
-            'format-version="1.0"', f'format-version="{version}"')
-        a, b = re.search(r'<tw-storydata.*?</tw-storydata>', engine, re.S).span()
-        game = os.path.join(tmp, 'game.html')
-        with open(game, 'w', encoding='utf-8') as f:
-            f.write(engine[:a] + ours + engine[b:])
+        game = engine_copy(src, engine_path, version, tmp)
         res = scanner.scan_any(game)
         t = time.time()
         state = {}
@@ -340,6 +348,79 @@ def run_fullscan():
     return ok
 
 
+def run_fixtests(play):
+    """Tested fixes: every suggested fix is tried on a hidden copy. The planted bugs in the fixtest_* games must get
+    the right tested fix (and the right pick when several names work); the planted dead end must get none; the game
+    file must stay unchanged. With the browser, the scene is played too (engine taken from a real game)."""
+    import hashlib
+    import shutil
+    import tempfile
+    import fixtest
+    import playtest
+    ok = True
+    play = play and playtest.find_browser()
+    for folder, engine, version in (('fixtest_sugarcube', GAMES['1.08a'], '2.37.3'), ('fixtest_harlowe', MB_GAME, '3.3.7')):
+        src = os.path.join(FIX_DIR, folder)
+        spec = json.load(open(os.path.join(src, 'expect_fixtest.json'), encoding='utf-8'))
+        tmp = tempfile.mkdtemp()
+        try:
+            with_engine = play and os.path.isfile(engine)
+            game = engine_copy(src, engine, version, tmp) if with_engine else os.path.join(src, 'story.html')
+            before = hashlib.sha1(open(game, 'rb').read()).hexdigest()
+            res = scanner.scan_any(game)
+            t = time.time()
+            res.fix_tests = fixtest.Tester(res, game, play=with_engine).run()
+            fixtest.apply(res)
+            bad = []
+
+            def find(k):
+                title, _, text = k.partition(' | ')
+                return [i for i in res.issues if title.lower() in i.title.lower() and text in (i.snippet or '')]
+            for k, pick in spec['works'].items():
+                got = find(k)
+                v = getattr(got[0], 'tested', None) if got else None
+                if not v or v['state'] != 'works' or v['picked'] != pick:
+                    bad.append(f'{k}: expected a tested fix "{pick}", got {v and (v["state"], v.get("picked"), v["how"])}')
+                elif with_engine and spec.get('played') and got[0].passage == spec['played'] and 'played the scene' not in v['how']:
+                    bad.append(f'{k}: the scene was not played: {v["how"]}')
+            for k in spec['failed'] + (spec.get('failed_playing', []) if with_engine else []):
+                got = find(k)
+                v = getattr(got[0], 'tested', None) if got else None
+                if not v or v['state'] != 'failed' or got[0].new or got[0].old:
+                    bad.append(f'{k}: expected "no working fix", got {v and v["state"]}')
+            several = [i for i in res.issues if getattr(i, 'tested', None) and i.tested.get('others')]
+            if not any('was picked because' in i.tested['how'] for i in several):
+                bad.append('no finding says which of several working names was picked and why')
+            if hashlib.sha1(open(game, 'rb').read()).hexdigest() != before:
+                bad.append('THE GAME FILE WAS CHANGED')
+            label = f'{folder} ({"scan again + played" if with_engine else "scan again only"})'
+            if bad:
+                ok = False
+                print(f'  [FAIL] {label}')
+                for b in bad:
+                    print(f'      {b}')
+            else:
+                print(f'  [ok] {label}: {len(res.fix_tests)} fixes tested, right ones offered, dead end refused, '
+                      f'game unchanged, {time.time() - t:.0f}s')
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+    # other formats: the scan-again part, and nothing crashes; a tested fix that works must really remove the problem
+    for folder in ('chapbook_bugs', 'snowman_bugs', 'renpy_bugs', 'rpgmaker_bugs', 'ink_bugs', 'choicescript_bugs', 'sugarcube_bugs'):
+        d = os.path.join(FIX_DIR, folder)
+        open_ = json.load(open(os.path.join(d, 'expect.json'), encoding='utf-8'))['open']
+        target = os.path.join(d, open_) if open_ else d
+        res = scanner.scan_any(target)
+        n = fixtest.count_testable(res)
+        out = fixtest.Tester(res, target, play=False).run()
+        works = sum(1 for v in out.values() if v['state'] == 'works')
+        if n and not out:
+            ok = False
+            print(f'  [FAIL] {folder}: {n} suggested fixes, none tested')
+        else:
+            print(f'  [ok] {folder}: {len(out)} of {n} suggested fixes tested, {works} work')
+    return ok
+
+
 if __name__ == '__main__':
     import re
     update = '--update' in sys.argv
@@ -349,6 +430,8 @@ if __name__ == '__main__':
     b = run_fixtures()
     print('Applying every suggested fix:')
     c = run_fix_application()
+    print('Tested fixes (each suggestion tried on a hidden copy):')
+    c = run_fixtests('--no-playtest' not in sys.argv) and c
     e = True
     if '--no-accuracy' not in sys.argv:
         print('Real games: are the "Broken" results really broken?')

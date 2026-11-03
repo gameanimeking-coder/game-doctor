@@ -1,0 +1,16 @@
+{
+ "works": {
+  "link to missing passage \"Market Sqaure\" | [[Go to the market|Market Sqaure]]": "Market Square",
+  "link to missing passage \"Castel\" | [[Visit|Castel]]": "Castle",
+  "Image not found: images/heroo.png": "images/hero.png",
+  "$goldd is used but never set": "$gold",
+  "Unknown macro <<prnt>> | <<prnt $gold>>": "<<print>>"
+ },
+ "failed": [
+  "link to missing passage \"Market Sqaure\" | Market Sqaure is closed"
+ ],
+ "played": "Start",
+ "failed_playing": [
+  "Unknown macro <<prnt>> | The shop."
+ ]
+}

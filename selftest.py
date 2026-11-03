@@ -129,6 +129,8 @@ class Runner:
         if self.opts.get('playtest'):
             steps.insert(-1, self.t_playtest)
             steps.insert(-1, self.t_fullscan)
+            steps.insert(-1, self.t_tested_fixes)
+        a.auto_fixtest = False      # only t_tested_fixes tries fixes, so the other checks see steady results
         for step in steps:
             try:
                 step()
@@ -668,6 +670,64 @@ class Runner:
         self.check('buttons back after the Full scan', a.btn_full.cget('text') == 'Full scan…'
                    and str(a.btn_scan.cget('state')) == 'normal')
         fullscan.clear_state(a.result)
+
+    def t_tested_fixes(self):
+        """Tested fixes: open a small game with planted bugs (put into the SugarCube engine of the old test game),
+        let the app try every suggested fix on a hidden copy, and check what the window says. The game must not change."""
+        import hashlib
+        a = self.app
+        src = os.path.join(FIXTURES, 'fixtest_sugarcube')
+        if not os.path.isdir(src) or not os.path.isfile(OLD_GAME):
+            self.check('tested fixes: test game available', False, src)
+            return
+        dst = os.path.join(self.tmp, 'fixtest')
+        shutil.copytree(src, dst, dirs_exist_ok=True)
+        story = open(os.path.join(src, 'story.html'), encoding='utf-8').read()
+        engine = open(OLD_GAME, encoding='utf-8').read()
+        ours = re.search(r'<tw-storydata.*?</tw-storydata>', story, re.S).group(0).replace('format-version="1.0"', 'format-version="2.37.3"')
+        x, y = re.search(r'<tw-storydata.*?</tw-storydata>', engine, re.S).span()
+        game = os.path.join(dst, 'game.html')
+        with open(game, 'w', encoding='utf-8') as f:
+            f.write(engine[:x] + ours + engine[y:])
+        before = hashlib.sha1(open(game, 'rb').read()).hexdigest()
+        a.auto_fixtest = True
+        try:
+            a.open_path(game)
+            self.wait(lambda: a.result is not None and not a.scanning and os.path.normcase(a.result.html_path) == os.path.normcase(game), 60,
+                      'scan of the tested-fixes game')
+            self.wait(lambda: getattr(a.result, 'fix_tests', None) is not None, 240, 'fixes tested')
+            res = a.result
+            find = lambda title, text: next((i for i in res.issues if title in i.title and text in (i.snippet or '')), None)
+
+            def detail(i):
+                a.select_issue(i)
+                self.pump(0.1)
+                return a.text.get('1.0', 'end')
+            castle = find('"Castel"', '')
+            t = detail(castle) if castle else ''
+            self.check('tested fix: shows "Tested: this removes the problem" and the scene was played',
+                       '✓ Tested: this removes the problem.' in t and 'played the scene "Start"' in t, t[:600])
+            self.check('tested fix: two names work, says which one was picked and why',
+                       '"Castles" would also remove the problem. "Castle" was picked because' in t, t[:800])
+            dead = find('"Market Sqaure"', 'is closed')
+            t = detail(dead) if dead else ''
+            self.check('no working fix: says so plainly, no "Change to" offered', dead is not None and not dead.new
+                       and 'No working fix found.' in t and 'Change to' not in t.split('No working fix found.')[1], t[:600])
+            shop = find('<<prnt>>', 'The shop')
+            t = detail(shop) if shop else ''
+            self.check('no working fix found only by playing the scene', 'playing the scene "Shop" then shows a new problem' in t,
+                       t[:600])
+            rows = [a.tree.item(k, 'values') for g in a.tree.get_children() for k in (a.tree.get_children(g) or [g])]
+            self.check('list marks tested fixes with ✓', any(str(v[4]).startswith('✓') for v in rows), str(rows[:3]))
+            a.btn_simple.invoke()
+            self.pump()
+            t = detail(castle) if castle else ''
+            a.btn_simple.invoke()
+            self.pump()
+            self.check('tested fix shown in Simple words too', '✓ Tested' in t, t[:400])
+            self.check('trying the fixes never changed the game file', hashlib.sha1(open(game, 'rb').read()).hexdigest() == before)
+        finally:
+            a.auto_fixtest = False
 
     def t_other_engines(self):
         a = self.app

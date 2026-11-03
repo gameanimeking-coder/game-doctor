@@ -919,9 +919,10 @@ def scene_names(res):
             if not set(tags) & {'widget', 'script', 'stylesheet', 'Twine.private'} and n != 'StoryInit']
 
 
-def run(res, progress=None, stop=None, state=None, on_save=None, budget=None, only=None):
+def run(res, progress=None, stop=None, state=None, on_save=None, budget=None, only=None, patch=None):
     """Full scan of a scanned SugarCube game. `state` (a dict, may be from an earlier, paused run) is
     filled with each finished scene, and on_save(state) is called after every batch.
+    patch(text) changes the browser's copy of the game first (fixtest.py plays a fixed copy this way).
     Returns (issues, summary)."""
     progress = progress or (lambda p, m: None)
     stop = stop or (lambda: False)
@@ -929,7 +930,7 @@ def run(res, progress=None, stop=None, state=None, on_save=None, budget=None, on
     done = state.setdefault('scenes', {})
     file_status = state.setdefault('file_status', {})
     t0 = time.time()
-    with Player(res, progress) as pl:
+    with Player(res, progress, patch) as pl:
         names = scene_names(res)
         todo = [n for n in names if n not in done and (only is None or n in only)]
         texts = [p.text for p in res.context.passages] if res.context is not None else []
@@ -990,8 +991,9 @@ class Player:
     """The hidden browser with the game loaded. When a scene freezes it (endless loop) or the game
     leaves the page (reload, link to another file), the browser is started again and Lost is raised."""
 
-    def __init__(self, res, progress):
+    def __init__(self, res, progress, patch=None):
         self.res, self.progress = res, progress
+        self.patch = (lambda t: harlowe_door(patch(t))) if patch else harlowe_door
         self.stack = self.ses = self.first_load = None
 
     def __enter__(self):
@@ -1006,7 +1008,7 @@ class Player:
         self.stack = contextlib.ExitStack()
         quiet = self.first_load is not None     # a restart does not show 'Loading the game' again
         self.ses = self.stack.enter_context(playtest.launch(self.res, (lambda p, m: None) if quiet else self.progress,
-                                                            patch=harlowe_door))
+                                                            patch=self.patch))
         self.engine = 'sugarcube' if self.ses.is_sc else None
         if not self.engine:
             for _ in range(50):     # Harlowe shows its first scene a moment after loading

@@ -344,10 +344,60 @@ def fullscan_harlowe():
         min_covered=0.8), indent=1))
 
 
+def _fixtest_spec(d, works, failed, played, failed_playing=()):
+    """works: {"title | text on the line": name the tested fix must pick}; failed: problems with no working fix;
+    failed_playing: no working fix, found only by playing the scene (checked when the browser can play it)."""
+    write(os.path.join(d, 'expect_fixtest.json'), json.dumps(dict(works=works, failed=failed, played=played,
+                                                                  failed_playing=list(failed_playing)), indent=1))
+
+
+def fixtest_sugarcube():
+    """Tested fixes: planted bugs whose right fix is known, two names that both work, and one suggestion that
+    does not work (the wrong name is also in the text before the link, so the change hits the text)."""
+    d = os.path.join(FIX, 'fixtest_sugarcube')
+    write(os.path.join(d, 'images', 'hero.png'), png_bytes())
+    passages = [
+        ('Start', '', 'Welcome. [[Go to the market|Market Sqaure]]\n[[Visit|Castel]]\n<img src="images/heroo.png">\n'
+                      'Market Sqaure is closed. [[Hall|Market Sqaure]]\nGold: <<print $goldd>> <<print $goldd>>\n<<prnt $gold>>'),
+        ('StoryInit', '', '<<set $gold to 5>>'),
+        ('Market Square', '', 'The market. $gold [[Start]] [[Castle]] [[Castles]] [[Shop]]'),
+        # <<prnt>> -> <<print>> looks right and scans clean, but <<print>> with nothing to print is an error box
+        ('Shop', '', 'The shop. <<prnt>> [[Start]]'),
+        ('Castle', '', 'The castle. [[Start]]'),
+        ('Castles', '', 'Many castles. [[Start]]'),
+    ]
+    write(os.path.join(d, 'story.html'), twine('SugarCube', passages))
+    _fixtest_spec(d, {'link to missing passage "Market Sqaure" | [[Go to the market|Market Sqaure]]': 'Market Square',
+                      'link to missing passage "Castel" | [[Visit|Castel]]': 'Castle',
+                      'Image not found: images/heroo.png': 'images/hero.png',
+                      '$goldd is used but never set': '$gold',
+                      'Unknown macro <<prnt>> | <<prnt $gold>>': '<<print>>'},
+                  ['link to missing passage "Market Sqaure" | Market Sqaure is closed'], played='Start',
+                  failed_playing=['Unknown macro <<prnt>> | The shop.'])
+
+
+def fixtest_harlowe():
+    d = os.path.join(FIX, 'fixtest_harlowe')
+    write(os.path.join(d, 'images', 'hero.png'), png_bytes())
+    passages = [
+        ('Start', '', '(set: $gold to 5)\n(link-goto: "Go", "Market Sqaure")\n[[Castel]]\n<img src="images/heroo.png">\n'
+                      'Market Sqaure is far. [[Market Sqaure]]\n(prnt: $gold)'),
+        ('Market Square', '', 'The market. [[Start]] [[Castle]] [[Castles]]'),
+        ('Castle', '', 'The castle. [[Start]]'),
+        ('Castles', '', 'Many castles. [[Start]]'),
+    ]
+    write(os.path.join(d, 'story.html'), twine('Harlowe', passages))
+    _fixtest_spec(d, {'link to missing passage "Market Sqaure" | (link-goto: "Go", "Market Sqaure")': 'Market Square',
+                      'link to missing passage "Castel"': 'Castle',
+                      'Image not found: images/heroo.png': 'images/hero.png',
+                      'Unknown macro (prnt:)': '(print:)'},
+                  ['link to missing passage "Market Sqaure" | Market Sqaure is far'], played='Start')
+
+
 if __name__ == '__main__':
     if os.path.isdir(FIX):
         shutil.rmtree(FIX)
     for fn in (sugarcube, clean_sugarcube, harlowe, harlowe_paths, chapbook, snowman, plain_html, renpy, rpgmaker, ink,
-               choicescript, fullscan_sugarcube, fullscan_harlowe):
+               choicescript, fullscan_sugarcube, fullscan_harlowe, fixtest_sugarcube, fixtest_harlowe):
         fn()
     print('fixtures written to', FIX)

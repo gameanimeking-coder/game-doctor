@@ -1,0 +1,13 @@
+{
+ "works": {
+  "link to missing passage \"Market Sqaure\" | (link-goto: \"Go\", \"Market Sqaure\")": "Market Square",
+  "link to missing passage \"Castel\"": "Castle",
+  "Image not found: images/heroo.png": "images/hero.png",
+  "Unknown macro (prnt:)": "(print:)"
+ },
+ "failed": [
+  "link to missing passage \"Market Sqaure\" | Market Sqaure is far"
+ ],
+ "played": "Start",
+ "failed_playing": []
+}

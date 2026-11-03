@@ -150,6 +150,8 @@ class App:
         self._pt_stop = False
         self.fullscanning = False
         self._fs_stop = False
+        self.auto_fixtest = True  # try every suggested fix on a hidden copy after each scan (fixtest.py)
+        self._ft_gen = 0
         self.windows = []
         self.tour = None
         self.code_built_for = None
@@ -727,6 +729,8 @@ class App:
         t.tag_configure('chg_before', foreground=c['error'], underline=True, font=self.fonts['fixed'])
         t.tag_configure('chg_after', foreground=c['clean'], underline=True, font=self.fonts['fixed'])
         t.tag_configure('banner', background=c['warning_bg'], lmargin1=8, lmargin2=8, rmargin=8, spacing1=4, spacing3=4)
+        t.tag_configure('tested_ok', foreground=c['clean'], font=self.f_bold)
+        t.tag_configure('tested_bad', foreground=c['error'], font=self.f_bold)
         t.tag_configure('link', foreground=c['link'], underline=True)
         t.tag_configure('gloss', underline=True)
         for key in ('clean', 'info', 'warning', 'error'):
@@ -1041,6 +1045,8 @@ class App:
                     messagebox.showerror(APP_NAME, T('The play-test could not run:') + f'\n\n{msg[1]}')
                 elif kind == 'fs_done':
                     self.fullscan_done(*msg[1:])
+                elif kind == 'ft_done':
+                    self.fixtest_done(*msg[1:])
                 elif kind == 'fs_error':
                     self.fullscanning = False
                     self.update_buttons()
@@ -1066,6 +1072,7 @@ class App:
         self.result = res
         self._mtime = self.target_mtime()
         self.saved_fullscan(res, fresh=reason == 'scan' and not self._check_cb)
+        self.start_fixtest(res)
         self.after_result(keep_key=keep_key)
         if reason == 'scan' or not keep_key:
             if not self.selected_issue():
@@ -1249,6 +1256,8 @@ class App:
         def row(parent, i):
             tags = (i.severity,) + (('ignored',) if i.key in ig else ())
             effort = fixes.difficulty_label(i) if self.is_dev else ''
+            if effort and (getattr(i, 'tested', None) or {}).get('state') == 'works':
+                effort = '✓ ' + effort      # the suggested fix was tried on a hidden copy and works
             tree.insert(parent, 'end', iid=f'i{self.index[id(i)]}', text='',
                         values=(f'{SEV_ICON[i.severity]} {self.sev_word(i.severity)}', self.title_of(i),
                                 i.passage or '—', i.line or '', effort), tags=tags)
@@ -1489,12 +1498,14 @@ class App:
             t.insert('end', T('What players will notice') + '\n', 'label')
             t.insert('end', d['effect'] + '\n')
         if not self.is_dev:
+            self.insert_tested(t, i, short=True)
             if i.severity == scanner.ERROR and i.passage:
                 t.insert('end', T('Tip') + '\n', 'label')
                 t.insert('end', T('Save your game before you reach this scene, so you can go back if it breaks.') + '\n')
             self.add_glossary_tags(t)
             return
         t.insert('end', T('How to fix it') + '\n', 'label')
+        self.insert_tested(t, i)
         ff = self.fix_form(i)
         search = self.search_form(i) if i.search else ''
         steps = []
@@ -1544,6 +1555,31 @@ class App:
         if not wizard or ff is None:
             self.insert_code(t, i)
         self.add_glossary_tags(t)
+
+    def insert_tested(self, t, i, short=False):
+        """Was the suggested fix tried on a hidden copy of the game? (fixtest.py)"""
+        import fixtest
+        v = getattr(i, 'tested', None)
+        if v and v['state'] == fixtest.WORKS:
+            if short:
+                t.insert('end', T('Fix') + '\n', 'label')
+                t.insert('end', '✓ ' + T('Tested fix ready: the developer can fix this with a change that was tried and works.')
+                         + '\n', 'tested_ok')
+                return
+            t.insert('end', '✓ ' + T('Tested: this removes the problem.') + '\n', 'tested_ok')
+            t.insert('end', v['how'] + '\n', 'muted')
+        elif v and v['state'] == fixtest.FAILED:
+            if short:
+                return
+            t.insert('end', '✗ ' + T('No working fix found.') + '\n', 'tested_bad')
+            t.insert('end', v['how'] + '\n', 'muted')
+            old, new = getattr(i, 'tried', None) or ('', '')
+            if old:
+                t.insert('end', T('The change that was tried (it does not work):') + '\n', 'muted')
+                self.insert_change(t, old, new, before=True)
+                self.insert_change(t, old, new, before=False)
+        elif not short and (i.old or i.new) and getattr(self.result, 'fix_testing', False) and i.category != 'Play-test':
+            t.insert('end', '⏳ ' + T('Testing this fix on a hidden copy of the game…') + '\n', 'muted')
 
     def insert_change(self, t, old, new, before):
         """One side of a before/after pair, changed characters highlighted, long lines trimmed around the change."""
@@ -1937,6 +1973,48 @@ class App:
         self.set_status(msg)
 
     # ================================================================ full scan
+    # ================================================================ tested fixes
+    def start_fixtest(self, res):
+        """Try every suggested fix on a hidden copy of the game while the list is already shown; results fill in."""
+        import fixtest
+        self._ft_gen += 1
+        gen = self._ft_gen
+        n = fixtest.count_testable(res)
+        if not self.auto_fixtest or not n:
+            return
+        res.fix_testing = True
+        target, game_dir = self.target, self.game_dir or None
+        if not self.fullscanning and not self.playtesting:
+            msg = T('Testing {n} suggested fix(es) on a hidden copy of the game (about {s} seconds)…',
+                    n=n, s=max(1, fixtest.estimate_seconds(res)))
+            self.root.after(50, lambda: self.scanning or self.set_status(msg))
+
+        def work():
+            out = {}
+            try:
+                out = fixtest.Tester(res, target, game_dir, stop=lambda: gen != self._ft_gen).run()
+            except Exception:      # testing fixes must never break the normal results
+                import traceback
+                self.q.put(('call', lambda tb=traceback.format_exc(): self.errors.append(tb)))
+            self.q.put(('ft_done', res, gen, out))
+        threading.Thread(target=work, daemon=True).start()
+
+    def fixtest_done(self, res, gen, out):
+        import fixtest
+        res.fix_testing = False
+        if gen != self._ft_gen or res is not self.result:
+            return
+        res.fix_tests = out
+        fixtest.apply(res)
+        sel = self.selected_issue()
+        self.after_result(keep_key=sel.key if sel else None)
+        if not sel and not self.scanning:
+            self.show_summary()
+        works = sum(1 for v in out.values() if v['state'] == fixtest.WORKS)
+        if not self.fullscanning and not self.playtesting and not self.scanning:
+            self.set_status(T('Suggested fixes tested on a hidden copy: {w} work, {f} had no working fix.',
+                              w=works, f=len(out) - works))
+
     def toggle_fullscan(self):
         import fullscan
         import playtest
@@ -2002,6 +2080,8 @@ class App:
         for i in played:
             fixes.enrich_issue(i, res)
         res.issues = issues
+        import fixtest
+        fixtest.apply(res)
         from collections import Counter
         c = Counter(i.severity for i in res.issues)
         res.stats.update(errors=c[scanner.ERROR], warnings=c[scanner.WARNING], infos=c[scanner.INFO])

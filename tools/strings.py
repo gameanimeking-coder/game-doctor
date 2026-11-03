@@ -42,7 +42,11 @@ ENGLISH_ONLY = ('The name looks mistyped: the file meant is probably',
                 'Maybe a missing picture or sound', 'It only happened with unusual values',
                 'The game froze in this scene while testing', 'If it happens in the real game too',
                 'Play to this scene and see if the game freezes', 'Parts of scenes the Full scan could not open',
-                'Nothing is wrong. Problems inside these parts', 'Nothing to do, unless you expect players to see')
+                'Nothing is wrong. Problems inside these parts', 'Nothing to do, unless you expect players to see',
+                # Tested fixes (after 3.0.0)
+                'Tested fix', 'Tested: this removes the problem.', 'No working fix found.',
+                'The change that was tried (it does not work):', 'Testing this fix on a hidden copy',
+                'Testing {n} suggested fix(es) on a hidden copy', 'Suggested fixes tested on a hidden copy')
 
 
 def ai_texts():
