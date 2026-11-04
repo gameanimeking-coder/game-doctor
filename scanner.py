@@ -238,6 +238,7 @@ class Scanner:
         self.passage_names = set()
         self.start_passage = ''
         self.link_edges = []       # (from passage, to passage, offset in from-passage text, kind)
+        self.data_edges = []       # same, for scene names handed to the game's own macros (not links a player sees)
         self.near_edges = []       # (from passage, passage a misspelled link probably means)
         self.known_vars = set()
         self.unreachable = set()   # passages players can't reach
@@ -595,6 +596,27 @@ class Scanner:
             if m.group(1) in names and not dom_call.search(self.js_text, max(0, m.start() - 40), m.start()):
                 referenced[m.group(1)] += 1   # (not .css("display", ...) when a passage happens to be called "display")
 
+        # A scene name handed to the game's own macros or kept in its data ("id": "Scene") is a use, as is a name built
+        # in code ("About-" + who): the game can open it in ways that can't be followed from here
+        for q in self.passages:
+            for cm in re.finditer(r'<<(?!/|=|-|(?:if|elseif|unless|switch|case|print)\b)(?:[^<>]|<(?!<)|>(?!>))*>>|\((?!if:|else-?if:|unless:|print:)[a-z-]+:[^()]*\)', q.text):
+                if re.search(r'''\b(?:visited|hasVisited|lastVisited|passage|previous|tags)\(| (?:is|isnot|eq|neq|==|!=|===|!==) ["']''', cm.group()):
+                    continue    # asks about a scene, does not open it
+                for m in re.finditer(r'"([^"\n]{1,80})"|\'([^\'\n]{1,80})\'', cm.group()):
+                    name = m.group(1) or m.group(2)
+                    if name in names and name != q.name:
+                        referenced[name] += 1
+                        self.data_edges.append((q.name, name, cm.start() + m.start()))
+        built = set()
+        for code in [self.js_text] + [q.text for q in self.passages]:
+            built.update(m.group(1) for m in re.finditer(r'["\']([\w -]{3,60})["\']\s*\+\s*[$_\w]', code))
+            built.update(m.group(1) for m in re.finditer(r'`([\w -]{3,60})\$\{', code))
+        if built:
+            prefixes = tuple(built)
+            for name in names:
+                if name.startswith(prefixes) and name not in prefixes:
+                    referenced[name] += 1
+
         # Unused passages
         maybe = (f' ({dynamic_refs} links are built from variables and could not be followed, so it might still be reachable.)'
                  if dynamic_refs else '')
@@ -625,7 +647,7 @@ class Scanner:
         self.unreachable = self.find_unreachable(unused, referenced)
         for name in sorted(self.unreachable - unused):
             p = next(x for x in self.passages if x.name == name)
-            via = sorted({f for f, t, *_ in self.link_edges if t == name})
+            via = sorted({f for f, t, *_ in self.link_edges + self.data_edges if t == name})
             self.add(INFO, 'Unused passages', f'Passage "{name}" is only linked from scenes players can\'t reach', p,
                      what='The only links to this passage are in passages players can\'t reach ('
                           + ', '.join(f'"{v}"' for v in via[:5]) + (' …' if len(via) > 5 else '')
@@ -655,7 +677,7 @@ class Scanner:
         probably means)."""
         dead = self.dead_branches()
         into = collections.defaultdict(list)
-        for f, t, off, *_ in self.link_edges:
+        for f, t, off, *_ in self.link_edges + self.data_edges:
             # a link inside <<if $devMode>> where nothing ever sets $devMode can never be clicked
             into[t].append(DEAD if any(a <= off < b for a, b in dead.get(f, ())) else f)
         for f, t in self.near_edges:
@@ -1311,7 +1333,7 @@ class Scanner:
                 ref = next(g for g in m.groups() if g is not None).strip()
                 if not ref or ref.startswith(('http://', 'https://', '//', 'data:', 'mailto:', 'javascript:', '#', 'blob:')):
                     continue
-                path = re.split(r'[?#]', ref)[0]
+                path = re.split(r'[?#]', ref)[0].replace('\t', '').replace('\n', '').replace('\r', '')   # the browser drops these from a file path
                 if re.search(r'%[0-9A-Fa-f]{2}', path):
                     path = urllib.parse.unquote(path)   # the browser reads "stage%202" as "stage 2"
                 ext = path.rsplit('.', 1)[-1].lower() if '.' in path.rsplit('/', 1)[-1].rsplit('\\', 1)[-1] else ''

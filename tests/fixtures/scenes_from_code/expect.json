@@ -1,0 +1,12 @@
+{
+ "open": "game.html",
+ "must": [
+  "Passage \"Left over\" is never linked or included"
+ ],
+ "must_not": [
+  "Passage \"Event one\" is never linked",
+  "Passage \"Event two\" is never linked",
+  "Passage \"About-kim\" is never linked"
+ ],
+ "must_not_text": []
+}

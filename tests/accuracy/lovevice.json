@@ -16,6 +16,10 @@
   {
    "key": "Error | Macro tags | <<silently>> is never closed | miscCodeWidgets",
    "why": "Widget sleepCode in miscCodeWidgets: 2 <<silently>>, 1 <</silently>>."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | atoniaStoryContent",
+   "why": "<<set $atoniaEventObj.officeEndPromoValKnock.viewed == true>> only compares; nothing is set. The scene name is built in code."
   }
  ],
  "known_false": [

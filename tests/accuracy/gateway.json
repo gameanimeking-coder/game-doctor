@@ -76,6 +76,18 @@
   {
    "key": "Error | Missing files | Image not found: offworld/cassie/cassiecrop.jpg | possess",
    "why": "Checked by hand: the file is not in the game folder under any letter case (the code adds no folder here). <<center>> adds img/: img/offworld/cassie/ does not exist (the file is in img/cassie/)."
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | buffer2",
+   "why": "<<set $x is \"...\">> / <<set $x == ...>> only compare; nothing is set. The scene is reached through the game's own macros. (data-passage button in \"buffer\")"
+  },
+  {
+   "key": "Error | Code | <<set>> compares instead of setting | postbuffer",
+   "why": "<<set $x is \"...\">> / <<set $x == ...>> only compare; nothing is set. The scene is reached through the game's own macros. (data-passage button in \"buffer\")"
+  },
+  {
+   "key": "Error | Missing files | Image not found: kylie/tennis02.jpg | tennis",
+   "why": "img/kylie has no tennis02 file (only img/cassie does). Scene opened by <<build \"tennis\">> / <<event>>."
   }
  ],
  "known_false": []

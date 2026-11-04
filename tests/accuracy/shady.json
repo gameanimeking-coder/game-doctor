@@ -28,6 +28,14 @@
   {
    "key": "Error | Broken links | Input box to missing passage \"Tax Evasion Minigame\" | HeistTE",
    "why": "Checked by hand: <<numberbox ... \"Tax Evasion Minigame\">> goes there on Enter; the game has no such passage (only \"Tax Evasion Widget\")."
+  },
+  {
+   "key": "Error | HTML | <span> tag has an unclosed quote | Lab Event 0",
+   "why": "<span class=\"not_available>...: the closing quote is missing. Opened by either(\"Lab Event 0\") in Player Lab."
+  },
+  {
+   "key": "Error | Macro tags | <<set ...> is not closed with \">>\" | Lab Event 0",
+   "why": "<<set $reputation += random(35, 60)`>>: a stray ` breaks the macro. Opened by either(\"Lab Event 0\") in Player Lab."
   }
  ],
  "known_false": []

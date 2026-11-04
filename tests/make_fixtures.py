@@ -125,6 +125,22 @@ def harlowe():
          must_not=['Unknown macro (if:)', 'Unknown macro (else:)', 'Unknown macro (set:)'])
 
 
+def scenes_from_code():
+    """Scenes a game opens through its own macros and data, or by a name built in code (found in BBCA)."""
+    d = os.path.join(FIX, 'scenes_from_code')
+    passages = [
+        ('Start', '', '<<addEvent "Event one">> <<set _d to {"id": "Event two"}>> '
+                      '<<script>>Engine.play("About-" + State.variables.who)<</script>>'),
+        ('Event one', '', 'One. <<set $seen to "Event one">>'),
+        ('Event two', '', 'Two.'),
+        ('About-kim', '', 'Kim.'),
+        ('Left over', '', 'Nothing leads here. <<set $seen to "Left over">>'),
+    ]
+    write(os.path.join(d, 'game.html'), twine('SugarCube', passages, script='Macro.add("addEvent",{handler(){}});'))
+    spec(d, 'game.html', ['Passage "Left over" is never linked or included'],
+         must_not=['Passage "Event one" is never linked', 'Passage "Event two" is never linked', 'Passage "About-kim" is never linked'])
+
+
 def harlowe_paths():
     """Things a big game does that must not be reported as broken (found in X-Change Life)."""
     d = os.path.join(FIX, 'harlowe_paths')
@@ -491,7 +507,7 @@ def settle_harlowe():
 if __name__ == '__main__':
     if os.path.isdir(FIX):
         shutil.rmtree(FIX)
-    for fn in (sugarcube, clean_sugarcube, harlowe, harlowe_paths, chapbook, snowman, plain_html, renpy, rpgmaker, ink,
+    for fn in (sugarcube, clean_sugarcube, scenes_from_code, harlowe, harlowe_paths, chapbook, snowman, plain_html, renpy, rpgmaker, ink,
                choicescript, fullscan_sugarcube, fullscan_harlowe, fixtest_sugarcube, fixtest_harlowe, settle_sugarcube, settle_harlowe,
                settle_widgets):
         fn()

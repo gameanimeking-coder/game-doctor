@@ -4,6 +4,11 @@
  "seconds": 11,
  "checked": "2026-11-03, Game Doctor 2.0.4 + accuracy fixes",
  "optional": false,
- "confirmed": [],
+ "confirmed": [
+  {
+   "key": "Error | Broken links | <<include>> to missing passage \"CustomScenario\" | intro-custom-scenario",
+   "why": "No scene \"CustomScenario\" exists. The scene is opened by <<btn \"intro-custom-scenario\" ...>> in InnerSettings-2."
+  }
+ ],
  "known_false": []
 }
