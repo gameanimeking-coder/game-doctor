@@ -14,6 +14,8 @@
   "JavaScript brackets/quotes problem"
  ],
  "must_not_text": [
+  "buildnote.js",
+  "oldnote.png",
   "probably \"aud/bell.opus\"",
   "Did you mean \"storm night\"?"
  ]

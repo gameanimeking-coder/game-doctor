@@ -337,19 +337,26 @@ def launch(res, progress=None, patch=None):
     dt = None
     try:
         progress(3, 'Starting the invisible browser')
+        # With this set (Windows compatibility setting on Game Doctor) Edge starts itself again and the first one
+        # exits, so the browser would no longer be ours
+        env = {k: v for k, v in os.environ.items() if k.upper() != '__COMPAT_LAYER'}
         proc = subprocess.Popen([exe, '--headless=new', '--remote-debugging-port=0', f'--user-data-dir={profile}',
                                  '--no-first-run', '--no-default-browser-check', '--disable-extensions', '--mute-audio',
                                  '--disable-gpu', '--remote-allow-origins=*', '--disable-background-networking',
                                  '--autoplay-policy=no-user-gesture-required', 'about:blank'],
-                                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, env=env,
                                 creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0))
         port_file = os.path.join(profile, 'DevToolsActivePort')
         end = time.time() + 30
-        while not os.path.isfile(port_file) or not open(port_file).read().strip():
-            if time.time() > end or proc.poll() is not None:
-                raise PlaytestError('The browser did not start.')
-            time.sleep(0.1)
-        port = int(open(port_file).read().split()[0])
+        port = None
+        while not port:     # no check on proc here: a browser that starts itself again exits while the new one starts
+            try:
+                with open(port_file) as f:
+                    port = int(f.read().split()[0])
+            except (OSError, ValueError, IndexError):   # not there yet, or the browser is still writing it
+                if time.time() > end:
+                    raise PlaytestError('The browser did not start.') from None
+                time.sleep(0.1)
         targets = json.loads(urllib.request.urlopen(f'http://127.0.0.1:{port}/json/list', timeout=10).read())
         page = next((t for t in targets if t.get('type') == 'page'), None)
         if not page:

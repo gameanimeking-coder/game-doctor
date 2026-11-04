@@ -134,7 +134,8 @@ def harlowe_paths():
     write(os.path.join(d, 'aud', 'song.opus'), b'OggS' + b'\x00' * 60)
     write(os.path.join(d, 'aud', 'rain.ogg'), b'OggS' + b'\x00' * 60)
     write(os.path.join(d, 'aud', 'bell.opus'), b'OggS' + b'\x00' * 60)
-    script = ('const base="img/minigame/";const pics={"001":{images:["001/1 thick.jpg"]}};\n'  # folder added in code
+    script = ('/* twine-user-script #1: "buildnote.js" */\n// see "oldnote.png"\n'    # notes name no file the game loads
+              'const base="img/minigame/";const pics={"001":{images:["001/1 thick.jpg"]}};\n'  # folder added in code
               'const lost=["zzz/nothing here.jpg"];\n'
               'const fmts=new Set(["","mp3","opus"]);\n'  # the game switches mp3 -> opus itself
               'function q(e){e=e.replace(/&quot;/g,\'"\');return e.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;"})[c])}\n'
@@ -154,7 +155,7 @@ def harlowe_paths():
                           'Error|Missing files|Image not found: places/door.jpg',
                           'Harlowe link to missing passage "storm night guy"'],
          must_not=['Image not found: 001/1 thick.jpg', 'Image not found: places/bar.jpg', 'Audio not found: aud/song.mp3', 'JavaScript brackets/quotes problem'],
-         must_not_text=['probably "aud/bell.opus"', 'Did you mean "storm night"?'])
+         must_not_text=['buildnote.js', 'oldnote.png', 'probably "aud/bell.opus"', 'Did you mean "storm night"?'])
 
 
 def chapbook():

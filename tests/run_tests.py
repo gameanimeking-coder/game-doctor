@@ -318,6 +318,15 @@ def _fullscan_test_game(folder, engine_path, version, label):
 
 
 def run_fullscan():
+    # with this set (as on some installed copies) Edge starts itself again: the browser start must cope
+    os.environ['__COMPAT_LAYER'] = 'RunAsInvoker'
+    try:
+        return _run_fullscan()
+    finally:
+        os.environ.pop('__COMPAT_LAYER', None)
+
+
+def _run_fullscan():
     """Full scan of test games whose bugs only show behind branches, buttons and dice (SugarCube, Harlowe).
     The test games have no engine of their own; it is taken from real games. Then Condemned Town 1.08a in full."""
     import fullscan

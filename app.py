@@ -36,7 +36,7 @@ import ui_dialogs as D
 from i18n import T
 
 APP_NAME = 'Game Doctor'
-APP_VERSION = '3.5.0'
+APP_VERSION = '3.5.1'
 SETTINGS_DIR = os.path.join(os.environ.get('APPDATA') or os.path.expanduser('~'), 'GameDoctor')
 OLD_SETTINGS_DIR = os.path.join(os.path.dirname(SETTINGS_DIR), 'GameBugScanner')   # name before 2.0 shipped
 SETTINGS_FILE = os.path.join(SETTINGS_DIR, 'settings.json')

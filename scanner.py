@@ -1298,7 +1298,8 @@ class Scanner:
         backslash = collections.defaultdict(list)
 
         sources = [(p, p.text) for p in self.passages]
-        sources.append((None, self.js_text))
+        # a line that is only a note names no file the game loads (Tweego: /* twine-user-script #1: "a.js" */)
+        sources.append((None, re.sub(r'^[ \t]*(?:/\*(?:(?!\*/).)*\*/[ \t]*\r?$|//.*$)', _blank, self.js_text, flags=re.M)))
         if self.format != 'HTML':
             # template/head part of the file outside story data
             head = re.sub(r'<tw-storydata.*</tw-storydata>', _blank, self.raw, flags=re.S)
