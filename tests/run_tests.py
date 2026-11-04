@@ -10,6 +10,8 @@
 3. Accuracy: real games in tests/accuracy/*.json, each "Broken" finding checked by hand.
    A Broken finding not in the verified list fails the test; precision is printed.
    --full-accuracy also scans the big games (several minutes); --no-accuracy skips this part.
+4. Missed bugs: one known bug at a time is planted in a copy of a small game and must be found (tests/missed_bugs.py,
+   about 3-4 minutes); fails when the score drops below its floor. --no-missed skips this part.
 """
 import collections
 import json
@@ -517,6 +519,10 @@ if __name__ == '__main__':
     if '--no-accuracy' not in sys.argv:
         print('Real games: are the "Broken" results really broken?')
         e = run_accuracy('--full-accuracy' in sys.argv)
+    if '--no-missed' not in sys.argv:
+        print('Missed bugs: planted bugs the scan must find:')
+        import missed_bugs
+        e = missed_bugs.run(play='--no-playtest' not in sys.argv, misses=True) and e
     d = True
     if '--no-playtest' not in sys.argv:
         print('Play-testing in the invisible browser:')

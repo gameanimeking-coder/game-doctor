@@ -52,6 +52,18 @@
   {
    "key": "Error | Macro tags | <</nobr>> has no opening <<nobr>> | Bedroom",
    "why": "Eva bedroom: <<nobr>>...<</nobr>> followed by a second <</nobr>>."
+  },
+  {
+   "key": "Error | Broken links | Link is not closed with ]] on the same line | Home Karen Sex1 R2 BJ",
+   "why": "Checked by hand: \"[[ <<if $lust >90>>[[Cum on face|...]]\" has a leftover \"[[\" in front; players see it as text."
+  },
+  {
+   "key": "Error | Broken links | Link is not closed with ]] on the same line | Home Karen Sex1 R2 Doggy",
+   "why": "Checked by hand: same leftover \"[[\" as in the BJ scene."
+  },
+  {
+   "key": "Error | Broken links | Link is not closed with ]] on the same line | Reona House 7",
+   "why": "Checked by hand: \"[[ [[Doggy on the Floor|...]]\" has a leftover \"[[\" in front; players see it as text."
   }
  ],
  "known_false": []

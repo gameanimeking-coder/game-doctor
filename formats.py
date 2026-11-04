@@ -350,7 +350,12 @@ class RenPy(EngineScan):
                     defined.add(m.group(2).split('.')[-1] if m.group(2).startswith(('persistent.', 'config.', 'gui.')) else m.group(2))
                 m = re.match(r'\$\s*([A-Za-z_]\w*)\s*(=|\+=|-=|\*=|/=)', s)
                 if m:
-                    assigned.add(m.group(1))
+                    if m.group(2) == '=':
+                        assigned.add(m.group(1))
+                    else:
+                        used.append((m.group(1), path, n, line))   # "+=" needs a value that is already there
+                    for v in re.finditer(r'(?<![\w.])([A-Za-z_]\w*)(?![\w(]|\s*=)', s[m.end():]):
+                        used.append((v.group(1), path, n, line))
                 for m in re.finditer(r'\b(?:for)\s+([A-Za-z_]\w*)\s+in\b', s):
                     assigned.add(m.group(1))
                 if re.match(r'(if|elif|while)\b', s):
@@ -581,7 +586,7 @@ class RpgMaker(EngineScan):
 
     def asset(self, ref, exts, file, where):
         self.refs += 1
-        key = ref.lower()
+        key = ref   # exact: "theme1" must not hide behind "Theme1"
         if key in self.seen_refs:
             return
         status, real = self.check_ref(ref, self.base, exts)
@@ -708,6 +713,7 @@ class Ink(EngineScan):
         knots, stitches, labels = {}, {}, set()
         globals_, temps = set(), set()
         diverts, assigns, prints = [], [], []
+        reads, calls, externals = [], [], set()
         for f in files:
             knot = None
             for n, raw in enumerate(self.read(f), 1):
@@ -740,8 +746,19 @@ class Ink(EngineScan):
                         globals_.update(re.findall(r'\(?(\w+)\)?', line.split('=', 1)[1]))
                 for tm in re.finditer(r'~\s*temp\s+(\w+)', line):
                     temps.add(tm.group(1))
-                for dm in re.finditer(r'->\s*([\w.]+)', line):
-                    diverts.append((dm.group(1), knot, f, n, raw))
+                for dm in re.finditer(r'->\s*([\w.]+)|^\s*<-\s*([\w.]+)', line):
+                    diverts.append((dm.group(1) or dm.group(2), knot, f, n, raw))
+                m = re.match(r'\s*EXTERNAL\s+(\w+)', line)
+                if m:
+                    externals.add(m.group(1))
+                plain = re.sub(r'"(?:\\.|[^"\\])*"', '""', line)
+                for cm in re.finditer(r'\{([^{}:|]+)(?::|\}|\|)', plain):       # {x > 1: ...} and {x}
+                    reads.extend((v, f, n, raw) for v in re.findall(r'(?<![\w.])([A-Za-z_]\w*)(?![\w(])', cm.group(1)))
+                cm = re.match(r'\s*~\s*(?:temp\s+\w+\s*=|\w+\s*(?:=|\+=|-=))?(.*)', plain)
+                if cm:
+                    reads.extend((v, f, n, raw) for v in re.findall(r'(?<![\w.])([A-Za-z_]\w*)(?![\w(])', cm.group(1)))
+                for cm in re.finditer(r'(?:^\s*~\s*|\{\s*|[=(+\-*/,]\s*)([A-Za-z_]\w*)\(', plain):
+                    calls.append((cm.group(1), knot, f, n, raw))
                 am = re.match(r'\s*~\s*(?!temp\b|return\b)(\w+)\s*(=|\+=|-=|\+\+|--)', line)
                 if am:
                     assigns.append((am.group(1), f, n, raw))
@@ -792,6 +809,19 @@ class Ink(EngineScan):
                 if near:
                     self.add(WARNING, 'Variables', f'"{v}" looks like a misspelling of "{near}"', f, n, snippet=raw.strip(),
                              what=f'{{{v}}} prints something that is never declared.', fix=f'Change it to {{{near}}}.')
+        word_ops = {'and', 'or', 'not', 'mod', 'true', 'false', 'temp', 'return', 'has', 'hasnt'}
+        printed = {(v, f, n) for v, f, n, _ in prints}
+        for v, f, n, raw in reads:
+            if v not in declared and v not in labels and v not in word_ops and not v.isupper() and (v, f, n) not in printed:
+                near = _typo_of(v, sorted(declared))
+                if near:
+                    self.add(WARNING, 'Variables', f'"{v}" looks like a misspelling of "{near}"', f, n, snippet=raw.strip(),
+                             what=f'"{v}" is used but never declared, so Ink will not compile.', fix=f'Change it to {near}.')
+        for name, knot, f, n, raw in calls:
+            if name not in knots and name not in externals and name not in globals_ and not name.isupper() and name not in word_ops:
+                self.add(WARNING, 'Broken links', f'Call to missing function "{name}"', f, n, knot or '', snippet=raw.strip(),
+                         what=f'No "=== function {name}" or EXTERNAL {name} exists, so Ink will not compile.',
+                         fix='Create the function, or fix the name.')
         for k, (f, n) in knots.items():
             if used[k] == 0 and f == self.main and n != min(ln for ff, ln in knots.values() if ff == f):
                 self.add(INFO, 'Unused passages', f'Knot "{k}" is never diverted to', f, n, k,
@@ -802,6 +832,7 @@ class Ink(EngineScan):
 # ---------------------------------------------------------------------- ChoiceScript
 class ChoiceScript(EngineScan):
     engine, label = 'choicescript', 'ChoiceScript'
+    WORDS = {'and', 'or', 'not', 'modulo', 'true', 'false', 'round', 'length', 'timestamp', 'log', 'choice_purchased', 'choice_time_stamp'}
     COMMANDS = set('''
 achieve achievement allow_reuse author bug check_achievements check_purchase check_registration choice comment create
 delay_break delay_ending disable_reuse else elseif elsif ending fake_choice finish gosub gosub_scene goto goto_random_scene
@@ -849,6 +880,9 @@ title youtube kindle_search kindle_product abort create_array temp_array delete 
             for n, line in enumerate(self.read(f), 1):
                 m = re.match(r'\s*\*label\s+(\S+)', line)
                 if m:
+                    if m.group(1).lower() in labels_by_scene[sname]:
+                        self.add(ERROR, 'Passages', f'Label "{m.group(1)}" is defined twice', f, n, sname, snippet=line,
+                                 what='Two labels in this scene share this name. ChoiceScript stops with an error.', fix='Rename one of them.')
                     labels_by_scene[sname][m.group(1).lower()] = n
         cmds = sorted(self.COMMANDS)
         for f in files:
@@ -915,12 +949,23 @@ title youtube kindle_search kindle_product abort create_array temp_array delete 
                                      what=f'"{v}" was never created with *create (startup) or *temp. The game stops with an error.'
                                           + (f' Did you mean "{near}"?' if near else ''),
                                      fix=(f'Change it to "{near}".' if near else f'Add "*create {v} 0" to startup.txt.'))
-                    elif cmd == 'image':
+                    elif cmd in ('image', 'sound'):
                         img = args.split()[0] if args.split() else ''
                         if img:
                             status, real = self.check_ref(img, os.path.dirname(scenes_dir))
-                            self.file_issue(img, status, real, f, n, sname, 'Image', line)
-                for vm in re.finditer(r'[$@]!{0,2}\{(\w+)\}', line):
+                            self.file_issue(img, status, real, f, n, sname, 'Image' if cmd == 'image' else 'Audio', line)
+                    if cmd in ('if', 'elseif', 'elsif', 'set', 'selectable_if'):
+                        expr = re.sub(r'"(?:\\.|[^"\\])*"', '""', args.split(' #', 1)[0])
+                        if expr.count('(') != expr.count(')'):
+                            self.add(ERROR, 'Code', f'Brackets do not match in *{cmd}', f, n, sname, snippet=line,
+                                     what='Every ( needs a matching ). ChoiceScript stops with an error.', fix='Add or remove brackets.')
+                        words = re.findall(r'(?<![\w#{])[A-Za-z_]\w*', expr)
+                        for v in words[1:] if cmd == 'set' else words:
+                            near = _typo_of(v.lower(), known_list) if v.lower() not in known and v.lower() not in self.WORDS else None
+                            if near:
+                                self.add(ERROR, 'Variables', f'"{v}" looks like a misspelling of "{near}"', f, n, sname, snippet=line,
+                                         what=f'"{v}" was never created, so the game stops with an error here.', fix=f'Change it to {near}.')
+                for vm in re.finditer(r'[$@]!{0,2}\{(\w+)[\s}]', line):
                     v = vm.group(1).lower()
                     if v not in known and v not in ('choice_randomtest', 'choice_quicktest'):
                         near = _typo_of(v, known_list)

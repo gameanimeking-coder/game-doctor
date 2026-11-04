@@ -214,6 +214,8 @@ MACRO_TAG_RE = re.compile(r'<<[A-Za-z][\w-]*' + QUOTED_ARGS + '>>')
 # a whole HTML tag with every quoted value closed (">" inside a quoted value is text;
 # a "<" inside one means the quote ran on into the next tag)
 HTML_TAG_RE = re.compile(r'<[A-Za-z][\w-]*(?:\s(?:"[^"<]*"|\'[^\'<]*\'|[^"\'<>])*)?>')
+TAG_END_RE = re.compile(r'''<<[A-Za-z][\w-]*(?:"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|`(?:\\.|[^`\\])*`|[^>"'`]|>(?!>))*?>>''')   # quoted text may span lines
+UNFINISHED_RE = re.compile(r'(?:\b(?:is|isnot|eq|neq|gt|gte|lt|lte|and|or|not|to)|==|!=|<=|>=|<|>|&&|\|\||(?<![-+])[-+]|[*/%])\s*$')   # code cut off
 VERBATIM_RE = re.compile(r'"""(.*?)"""|<nowiki>(.*?)</nowiki>|\{\{\{(.*?)\}\}\}', re.S)
 
 
@@ -517,11 +519,13 @@ class Scanner:
             t = self.markup_text(p)
             # [[links]] and [img[...][link]]
             code = [c.span() for c in re.finditer(r'<<(?:set|run|print|=|-|if|elseif|for|switch|case|unset)\b' + QUOTED_ARGS + '>>', t)]
-            for m in re.finditer(r'\[\[(.*?)\]\]', t, re.S):
+            closed = []
+            for m in re.finditer(r'\[\[(?!\[)(.*?)\]\]', t, re.S):   # "[[[" starts a link at its last "[["
                 if any(a < m.start() < b for a, b in code):
                     continue   # [[0,1],[2,3]] inside <<set>> etc. is a JavaScript list, not a link
+                closed.append(m.span())
                 body = m.group(1)
-                if '\n' in body:
+                if '\n' in body or '[[' in body:
                     self.add(ERROR, 'Broken links', 'Link is not closed with ]] on the same line', p, m.start(),
                              snippet=self.snippet_at(p, m.start()),
                              what='A [[link is missing its closing ]] (or has a line break inside), so the rest of the text is swallowed.',
@@ -537,6 +541,13 @@ class Scanner:
                 else:
                     target = body
                 target_check(p, target, m.start(), 'Link')
+            if self.is_sugarcube or self.format == 'Twine 1':
+                for m in re.finditer(r'\[\[(?!\[)', t):   # no "]]" anywhere after it
+                    if not any(a <= m.start() < b for a, b in closed + code):
+                        self.add(ERROR, 'Broken links', 'Link is not closed with ]] on the same line', p, m.start(),
+                                 snippet=self.snippet_at(p, m.start()),
+                                 what='A [[link is missing its closing ]], so the game shows the code as text instead of a link.',
+                                 fix='Add ]] at the end of the link text.')
             for m in re.finditer(r'\[img\[[^\]]*\]\[([^\]]+)\]', t):
                 target_check(p, m.group(1), m.start(), 'Image link')
             if self.is_sugarcube or self.format == 'Twine 1':
@@ -553,17 +564,28 @@ class Scanner:
                 for m in re.finditer(r'<<(link|button|back|return|click)\s+\[\[([^\]]*)\]\]', t):
                     b = m.group(2)
                     target_check(p, b.rsplit('|', 1)[1] if '|' in b else b, m.start(), f'<<{m.group(1)}>>')
+            if self.is_sugarcube or self.format == 'Twine 1':
+                for m in re.finditer(r'<<(?:textbox|numberbox)\s+(?:"[^"]*"|\'[^\']*\')\s+(?:"[^"]*"|\'[^\']*\'|[$_]?[\w.]+)\s+' + QUOTED_NAME, t):
+                    if (m.group(1) or m.group(2)) != 'autofocus':   # the box's third value: the scene to go to
+                        target_check(p, m.group(1) or m.group(2), m.start(), 'Input box')
+                for sm in script_matches(p.text):
+                    g = 2 if sm.group(2) is not None else 5
+                    for m in re.finditer(r'\bEngine\.play\(\s*' + QUOTED_NAME, sm.group(g) or ''):
+                        target_check(p, m.group(1) or m.group(2), sm.start(g) + m.start(), 'Script link')
             for m in re.finditer(r'data-passage\s*=\s*(?:"([^"]+)"|\'([^\']+)\')', t):   # "Justin's house" holds a '
                 target_check(p, m.group(1) or m.group(2), m.start(), 'data-passage link')
-            for m in re.finditer(r'\((?:link-goto|click-goto|goto|go-to|display|link-reveal-goto):\s*(?:"[^"]*"\s*,\s*)?"([^"]+)"\s*\)', t):
-                target_check(p, m.group(1), m.start(), 'Harlowe link')
+            for m in re.finditer(r'\((?:link-goto|click-goto|goto|go-to|display|redirect|link-reveal-goto|mouseover-goto|mouseout-goto|visited|passage):'
+                                 r'\s*(?:(?:"[^"]*"|\'[^\']*\'|\?[\w-]+)\s*,\s*)?' + QUOTED_NAME + r'\s*\)', t, re.I):
+                target_check(p, m.group(1) or m.group(2), m.start(), 'Harlowe link')
             for m in re.finditer(r'(?:Engine\.play|Story\.get)\(\s*' + QUOTED_NAME, t):   # "Mandy's house" holds a '
                 target_check(p, m.group(1) or m.group(2), m.start(), 'Script link')
             if self.format.lower().startswith('chapbook'):
-                for m in re.finditer(r'\{(?:link to|back link|reveal link|embed passage(?: named)?|restart link)\s*:?\s*' + QUOTED_NAME, t):
+                for m in re.finditer(r'\{(?:link to|back link|embed passage(?: named)?|restart link)\s*:?\s*' + QUOTED_NAME, t):
+                    target_check(p, m.group(1) or m.group(2), m.start(), 'Chapbook link')
+                for m in re.finditer(r'\{(?:reveal link|back link)[^{}]*?\bpassage\s*:\s*' + QUOTED_NAME, t):   # {reveal link: 'Go', passage: 'Name'}
                     target_check(p, m.group(1) or m.group(2), m.start(), 'Chapbook link')
             if self.format.lower().startswith('snowman'):
-                for m in re.finditer(r'\b(?:story|s)\.(?:show|passage)\(\s*' + QUOTED_NAME, t):
+                for m in re.finditer(r'\b(?:story|s)\.(?:show|passage|render)\(\s*' + QUOTED_NAME, t):
                     target_check(p, m.group(1) or m.group(2), m.start(), 'Script link')
         # JS references to passages count as uses
         dom_call = re.compile(r'(?:\.(?:css|attr|prop|data|addClass|removeClass|toggleClass|hasClass|on|off|one|trigger|'
@@ -720,7 +742,7 @@ class Scanner:
 
         for p in self.story_passages():
             t = self.markup_text(p)
-            stack = []
+            stack, else_seen = [], set()
             for m in re.finditer(r'<<(/?)\s*([A-Za-z][\w-]*|=|-)', t):
                 closing, name = m.group(1) == '/', m.group(2)
                 if name.startswith('end') and name[3:] in containers:
@@ -737,6 +759,21 @@ class Scanner:
                                  snippet=self.snippet_at(p, m.start()),
                                  what=f'<<{name}>> only works between <<{parent}>> and <</{parent.split("/")[0]}>>. Here it is not inside one (often because a closing tag above it is misplaced). The game shows an error.',
                                  fix=f'Check the <<{parent}>> above: make sure it is opened before this <<{name}>> and closed after it.')
+                    if name in ('else', 'elseif') and stack and stack[-1][0] == 'if':
+                        if stack[-1][1] in else_seen:
+                            self.add(ERROR, 'Macro tags', f'<<{name}>> comes after <<else>>', p, m.start(),
+                                     snippet=self.snippet_at(p, m.start()),
+                                     what='<<else>> must be the last part of an <<if>>. The game shows the error "<<else>> must be the final clause".',
+                                     fix=f'Move <<else>> to the end of the <<if>>, or change this <<{name}>>.')
+                        if name == 'else':
+                            else_seen.add(stack[-1][1])
+                            args = t[m.end():t.find('>>', m.end())].strip()
+                            if args:
+                                wrote_if = re.match(r'if\b', args)
+                                self.add(ERROR, 'Macro tags', '<<else if>> must be written <<elseif>>' if wrote_if else '<<else>> cannot have a condition',
+                                         p, m.start(), snippet=self.snippet_at(p, m.start()),
+                                         what='<<else>> takes no condition, so the game shows an error here.',
+                                         fix='Write <<elseif condition>>' + ('.' if wrote_if else ', or remove the condition.'))
                     continue
                 if name not in containers:
                     if closing and name in known:
@@ -794,13 +831,29 @@ class Scanner:
                          snippet=self.snippet_at(p, m.start()),
                          what='"<<" starts a macro, but nothing follows it. This breaks the macro after it.',
                          fix='Delete the stray "<<", or finish writing the macro.')
+            not_closed = set()
             for m in re.finditer(r'<<([A-Za-z][\w-]*)\b([^<>]*?)(?:\n\s*\n|$)', t):
                 seg = m.group(2)
                 if '>>' not in seg and m.group(1) not in ('script', 'set', 'run', 'print', 'if', 'elseif', 'for', 'switch', 'case'):
                     nxt = t[m.end(): m.end() + 1]
+                    not_closed.add(m.start())
                     self.add(ERROR, 'Macro tags', f'<<{m.group(1)} ...> is not closed with ">>"', p, m.start(),
                              snippet=self.snippet_at(p, m.start()),
                              what='The macro tag never ends with ">>", so it eats the text after it.',
+                             fix='Add ">>" at the end of the macro tag.')
+
+            # a tag that runs on into the next macro, or to the end of the scene: <<print 1>  (">" for ">>")
+            for m in re.finditer(r'<<([A-Za-z][\w-]*)\b', t):
+                if m.group(1) not in K.SUGARCUBE_MACROS or m.start() in not_closed:   # a game's own macros may hold free text
+                    continue
+                tag = TAG_END_RE.match(t, m.start())
+                rest = t[m.end():].split('\n', 1)[0] if tag is None else ''
+                if tag is None and (rest.count('"') % 2 or rest.count("'") % 2):
+                    continue   # an open quote: reported as "Unclosed quote"
+                if tag is None or '<<' in re.sub(r'"(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\'', '', tag.group()[2:]):
+                    self.add(ERROR, 'Macro tags', f'<<{m.group(1)} ...> is not closed with ">>"', p, m.start(),
+                             snippet=self.snippet_at(p, m.start()),
+                             what='The macro tag never ends with ">>", so it eats the text after it and the game shows an error.',
                              fix='Add ">>" at the end of the macro tag.')
 
             # Deprecated macros
@@ -881,6 +934,10 @@ class Scanner:
                     self.add(WARNING, 'Conditions', f'"{mm.group(1)} is {mm.group(2)} or {mm.group(3)}" does not compare both', p, m.start(), snippet=snip,
                              what=f'The part after "or" is checked on its own, and "{mm.group(3)}" is always true, so the whole condition is always true.',
                              fix=f'Repeat the variable: {mm.group(1)} is {mm.group(2)} or {mm.group(1)} is {mm.group(3)}.')
+                if UNFINISHED_RE.search(e):
+                    self.add(ERROR, 'Conditions', 'Condition is unfinished', p, m.start(), snippet=snip,
+                             what='The condition ends in the middle: nothing follows the last word or sign. SugarCube shows an error.',
+                             fix='Finish the comparison, e.g. <<if $money gte 10>>.')
                 ops, depth = _top_level_ops(e)
                 if depth != 0:
                     self.add(ERROR, 'Conditions', 'Brackets do not match in condition', p, m.start(), snippet=snip,
@@ -908,10 +965,18 @@ class Scanner:
                         self.add(WARNING, 'Code', '<<set>> does not change anything', p, m.start(), snippet=snip,
                                  what='There is no "to", "=", "+=", "++" etc. in this <<set>>, so no variable changes.',
                                  fix='Write what the variable should become, e.g. <<set $x to 5>> or <<set $x++>>.')
-                ops, depth = _top_level_ops(body)
-                if depth != 0:
+                if UNFINISHED_RE.search(body):
+                    self.add(ERROR, 'Code', '<<set>> is unfinished', p, m.start(), snippet=snip,
+                             what='The code ends in the middle: nothing follows the last word or sign. SugarCube shows an error.',
+                             fix='Finish it, e.g. <<set $x to 5>>.')
+                if '<<' not in body and _brackets_off(body):
                     self.add(ERROR, 'Code', 'Brackets do not match in <<set>>', p, m.start(), snippet=snip,
-                             what='Every ( needs a matching ). SugarCube shows an error.', fix='Add or remove brackets.')
+                             what='Every (, [ and { needs a partner. SugarCube shows an error.', fix='Add or remove brackets.')
+            for m in re.finditer(r'<<(run|print|=|-)(?=[\s(])(' + QUOTED_ARGS + r')>>', t):
+                body = re.sub(r'"(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\'', '""', m.group(2))
+                if '<<' not in body and _brackets_off(body):
+                    self.add(ERROR, 'Code', f'Brackets do not match in <<{m.group(1)}>>', p, m.start(), snippet=self.snippet_at(p, m.start()),
+                             what='Every (, [ and { needs a partner. SugarCube shows an error.', fix='Add or remove brackets.')
             # Odd number of quotes inside a macro
             for m in re.finditer(r'<<(?!script)([A-Za-z][\w-]*)([^<>]*?)>>', t):
                 args = m.group(2)
@@ -1090,7 +1155,7 @@ class Scanner:
         for p in self.story_passages():
             t = self.markup_text(p)
             if self.format == 'HTML':
-                t = re.sub(r'<(script|style)\b[^>]*>.*?</\1>', _blank, t, flags=re.S | re.I)
+                t = re.sub(r'<(script|style)\b[^>]*>.*?</\1>', lambda m: _blank_keep(m.group()), t, flags=re.S | re.I)
             bad_units = []
             # quotes inside tags
             for m in re.finditer(r'(?<!<)<([A-Za-z][\w-]*)(\s[^<>]*)?>', t):   # not <<macro "a > b">>
@@ -1223,7 +1288,7 @@ class Scanner:
                 all_files.append((rel, full))
         self._asset_file_count = len(all_files)
         ext_re = '|'.join(sorted(K.ALL_ASSET_EXT, key=len, reverse=True))
-        ref_re = re.compile(r'''(?:src|href|poster|data-src)\s*=\s*["']([^"'<>]+)["']|url\(\s*["']?([^"')]+?)["']?\s*\)|\[img\[(?:[^\]|]*\|)?([^\]]+)\]|["']([^"'<>\n]{1,260}?\.(?:%s))(?:[?#][^"']*)?["']''' % ext_re, re.I)
+        ref_re = re.compile(r'''(?:src|href|poster|data-src)\s*=\s*["']([^"'<>]+)["']|url\(\s*["']?([^"')]+?)["']?\s*\)|\[img\[(?:[^\]|]*\|)?([^\]]+)\]|["']([^"'<>\n]{1,260}?\.(?:%s))(?:[?#][^"']*)?["']|\b(?:src|poster)\s*=\s*([^\s"'<>]+\.(?:%s))(?=[\s>/])''' % (ext_re, ext_re), re.I)
         referenced = set()
         dynamic = 0
         ref_count = 0
@@ -1592,6 +1657,14 @@ def _top_level_ops(expr):
         elif depth == 0:
             ops.add('and' if g in ('&&', 'and') else 'or')
     return ops, depth
+
+
+def _brackets_off(code):
+    """Brackets in macro code (texts in quotes already blanked to ""). Quotes left over mean text that spans lines
+    or \\' marks, which only the game can read, so then only ( and ) are counted."""
+    if _top_level_ops(code)[1] != 0:
+        return True
+    return not re.search(r"""['"`]""", code.replace('""', '')) and bool(_js_bracket_problem(code))
 
 
 def _js_bracket_problem(code):

@@ -12,6 +12,22 @@
   {
    "key": "Error | HTML | <span> tag has an unclosed quote | Bleach Event 0",
    "why": "class=\"not_available>Doesn't ... - the class value never closes, the text becomes part of the tag."
+  },
+  {
+   "key": "Error | Broken links | Input box to missing passage \"Tax Evasion Minigame\" | HeistTE",
+   "why": "Checked by hand: <<numberbox ... \"Tax Evasion Minigame\">> goes there on Enter; the game has no such passage (only \"Tax Evasion Widget\")."
+  },
+  {
+   "key": "Error | Broken links | Input box to missing passage \"Tax Evasion Minigame\" | HeistTE",
+   "why": "Checked by hand: <<numberbox ... \"Tax Evasion Minigame\">> goes there on Enter; the game has no such passage (only \"Tax Evasion Widget\")."
+  },
+  {
+   "key": "Error | Broken links | Input box to missing passage \"Tax Evasion Minigame\" | HeistTE",
+   "why": "Checked by hand: <<numberbox ... \"Tax Evasion Minigame\">> goes there on Enter; the game has no such passage (only \"Tax Evasion Widget\")."
+  },
+  {
+   "key": "Error | Broken links | Input box to missing passage \"Tax Evasion Minigame\" | HeistTE",
+   "why": "Checked by hand: <<numberbox ... \"Tax Evasion Minigame\">> goes there on Enter; the game has no such passage (only \"Tax Evasion Widget\")."
   }
  ],
  "known_false": []

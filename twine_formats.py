@@ -31,6 +31,14 @@ p-optional p-not p-before p-not-before p-start p-end p-ins p-insensitive
 '''.split())
 
 
+# hooks every Harlowe page has
+HARLOWE_HOOKS = {'page', 'passage', 'sidebar', 'link', 'links', 'visited', 'hook', 'hooks'}
+# code that stops in the middle: nothing follows the last word or sign
+UNFINISHED_RE = re.compile(r'(?:\b(?:is|to|into|and|or|not|contains|of)|(?<![-+])[-+]|[*/%<>])\s*$')
+# places that give a temporary variable its value
+TEMP_SET_RE = re.compile(r"(?:\beach\s+|-type\s+|\btype\s+|\bmaking\s+|\bvia\s+|\bwith\s+|\binto\s+)_([A-Za-z]\w*)|(?<![\w$.'])_([A-Za-z]\w*)\s+to\b")
+
+
 def _norm(name):
     """Harlowe ignores capitals, "-" and "_" in macro names: (textcolor:) is (text-colour:)."""
     return re.sub(r'[-_]', '', name.lower())
@@ -98,6 +106,12 @@ class Harlowe:
         # macros a game adds in its JavaScript: Harlowe.macro("name", ...)
         own = {_norm(n) for n in re.findall(r'Harlowe\.macro\(\s*["\']([\w-]+)["\']', sc.js_text)}
         sets, reads, first = collections.Counter(), collections.Counter(), {}
+        treads, tsets, tfirst, hook_uses = collections.Counter(), collections.Counter(), {}, {}
+        hook_names = set(HARLOWE_HOOKS)
+        for p in sc.story_passages():
+            for a, b in re.findall(r'\|([\w-]+)[>)]|<([\w-]+)\|', p.text):
+                hook_names.add(_norm(a or b))
+            hook_names.update(_norm(n) for n in re.findall(r'\(hook:\s*["\']([\w-]+)', p.text))
         for p in sc.story_passages():
             t = re.sub(r'`[^`]*`', lambda m: ' ' * len(m.group()), sc.markup_text(p))  # verbatim markup
             # macros
@@ -121,11 +135,49 @@ class Harlowe:
                         sc.add(ERROR, 'Code', f'({m.group(1)}:) uses "=" instead of "to"', p, m.start(), snippet=snip,
                                what='Harlowe sets variables with "to" (or "into" for put). "=" causes an error.',
                                fix='Write e.g. (set: $gold to 5).')
+                    elif not re.search(r'\b(?:to|into)\b', args):
+                        sc.add(ERROR, 'Code', f'({m.group(1)}:) has no "to" or "into"', p, m.start(), snippet=snip,
+                               what='Harlowe needs to know what to set the variable to. This shows an error.',
+                               fix='Write e.g. (set: $gold to 5).')
+                    elif UNFINISHED_RE.search(args):
+                        sc.add(ERROR, 'Code', f'({m.group(1)}:) is unfinished', p, m.start(), snippet=snip,
+                               what='The code ends in the middle: nothing follows the last word or sign. Harlowe shows an error.',
+                               fix='Finish it, e.g. (set: $gold to 5).')
+                    bare = re.match(r'\s*([A-Za-z]\w*)\s+to\b', args)
+                    if bare and bare.group(1) != 'it':
+                        sc.add(ERROR, 'Code', f'({m.group(1)}:) sets "{bare.group(1)}", which has no "$" or "_"', p, m.start(), snippet=snip,
+                               what='Variables start with $ (or _ for temporary ones). Without it Harlowe shows an error.',
+                               fix=f'Write ${bare.group(1)}.')
+                    if re.search(r'\binto\s+(?![$_]|its?\b)\S', args):
+                        sc.add(ERROR, 'Code', f'({m.group(1)}:) puts a value into something that is not a variable', p, m.start(), snippet=snip,
+                               what='"into" must be followed by the variable that gets the value. Harlowe shows an error.',
+                               fix='Write e.g. (put: 5 into $gold).')
                     pattern = r'\$([A-Za-z_]\w*)\s+to\b' if name == 'set' else r'into\s+\$([A-Za-z_]\w*)'
                     for v in re.finditer(pattern, args):
                         sets[v.group(1)] += 1
+                if name == 'print' and UNFINISHED_RE.search(args):
+                    sc.add(ERROR, 'Code', '(print:) is unfinished', p, m.start(), snippet=snip,
+                           what='The code ends in the middle: nothing follows the last word or sign. Harlowe shows an error.',
+                           fix='Finish it, e.g. (print: $gold + 1).')
+                for v in re.finditer(r"(?<![\w$.'])_([A-Za-z]\w*)", args):
+                    treads[v.group(1)] += 1
+                    tfirst.setdefault(v.group(1), (p, m.start()))
+                for a, b in TEMP_SET_RE.findall(args):
+                    tsets[a or b] += 1
+                for h in re.finditer(r'\?([A-Za-z][\w-]*)', args):
+                    hook_uses.setdefault(_norm(h.group(1)), (h.group(1), p, m.start()))
                 if name in ('if', 'unless', 'else-if', 'elseif'):
-                    if re.search(r'(?<![=!<>])=(?![=>])', args):
+                    if not args.strip():
+                        sc.add(ERROR, 'Conditions', f'({m.group(1)}:) has no condition', p, m.start(), snippet=snip,
+                               what='The condition is empty, so Harlowe shows an error.', fix='Write the condition, e.g. (if: $gold is 5).')
+                    elif re.search(r'=>|=<', args):
+                        sc.add(ERROR, 'Conditions', 'Wrong comparison operator "=>" or "=<"', p, m.start(), snippet=snip,
+                               what='"=>" and "=<" are not comparisons. Harlowe shows an error.', fix='Use ">=" and "<=".')
+                    elif UNFINISHED_RE.search(args):
+                        sc.add(ERROR, 'Conditions', 'Condition is unfinished', p, m.start(), snippet=snip,
+                               what='The condition ends in the middle: nothing follows the last word or sign. Harlowe shows an error.',
+                               fix='Finish the comparison, e.g. (if: $gold is 5).')
+                    elif re.search(r'(?<![=!<>])=(?![=>])', args):
                         sc.add(ERROR, 'Conditions', 'Single "=" inside a condition', p, m.start(), snippet=snip,
                                what='Harlowe compares with "is", not "=". This causes an error.',
                                fix='Use "is" (or "is not"), e.g. (if: $gold is 5).')
@@ -143,6 +195,7 @@ class Harlowe:
                                    what=f'({m.group(1)}:) changes the hook right after it, written in square brackets. Here nothing follows, '
                                         'so Harlowe shows an error or the text is not controlled by it.',
                                    fix=f'Put the text it controls in square brackets right after it: ({m.group(1)}: ...)[text].')
+            self.lone_else(p, t)
             # hooks: count [ and ] outside [[links]]
             # a link starts at the last "[[" of "[[[": "(if: $x)[[[Go->Home]]]" is a hook holding a link
             hook_text = re.sub(r'\[\[(?!\[).*?\]\]', lambda m: ' ' * len(m.group()), t, flags=re.S)
@@ -171,6 +224,42 @@ class Harlowe:
                 sc.add(WARNING if near else INFO, 'Variables', f'${v} is used but never set', p, off, snippet=sc.snippet_at(p, off),
                        what=f'${v} never gets a value with (set:) or (put:), so it is always 0/empty.' + (f' It looks like a misspelling of ${near}.' if near else ''),
                        fix=(f'Rename ${v} to ${near}.' if near else f'Set it first, e.g. (set: ${v} to 0) in the startup passage.'))
+            elif reads[v] <= sets[v]:
+                near = _typo_of(v, [x for x in reads if x != v and (reads[x] > sets[x] or reads[x] >= 5)])
+                if near:
+                    p, off = first[v]
+                    sc.add(WARNING, 'Variables', f'${v} is set but never checked or shown', p, off, snippet=sc.snippet_at(p, off),
+                           what=f'${v} gets a value but nothing ever reads it. The game does read ${near}, so this is probably a misspelling and the change is lost.',
+                           fix=f'Rename ${v} to ${near}.')
+        for v in treads:
+            near = _typo_of(v, sorted(tsets)) if not tsets[v] else None
+            if near:
+                p, off = tfirst[v]
+                sc.add(WARNING, 'Variables', f'Temporary variable _{v} is used but never set', p, off, snippet=sc.snippet_at(p, off),
+                       what=f'_{v} never gets a value anywhere, so Harlowe shows an error here. Did you mean _{near}?', fix=f'Rename it to _{near}.')
+        for norm, (name, p, off) in hook_uses.items():
+            if norm not in hook_names:
+                sc.add(WARNING, 'Macro tags', f'Hook ?{name} does not exist', p, off, snippet=sc.snippet_at(p, off),
+                       what=f'No hook in the game is named "{name}" (written |{name}>[...]), so this does nothing.',
+                       fix='Fix the name, or give the hook this name.')
+
+    def lone_else(self, p, t):
+        # (else:) and (else-if:) need an (if:) or (unless:) before them in the same hook; Harlowe shows an error otherwise
+        from scanner import ERROR
+        text = re.sub(r'\[\[(?!\[).*?\]\]', lambda m: ' ' * len(m.group()), t, flags=re.S)
+        had_if = [False]
+        for m in re.finditer(r'\[|\]|\((if|unless|else-if|elseif|else)\s*:', text, re.I):
+            if m.group() == '[':
+                had_if.append(False)
+            elif m.group() == ']':
+                if len(had_if) > 1:
+                    had_if.pop()
+            elif m.group(1).lower() in ('else', 'else-if', 'elseif') and not had_if[-1]:
+                self.sc.add(ERROR, 'Macro tags', f'({m.group(1)}:) has no (if:) before it', p, m.start(), snippet=self.sc.snippet_at(p, m.start()),
+                            what=f'({m.group(1)}:) works only after an (if:) in the same place. Here there is nothing before it, so Harlowe shows an error.',
+                            fix=f'Add the (if:) it belongs to, or remove this ({m.group(1)}:).')
+            else:
+                had_if[-1] = True
 
 
 class Chapbook:
@@ -178,7 +267,7 @@ class Chapbook:
         self.sc = sc
 
     def run(self):
-        from scanner import ERROR, WARNING, INFO, _close, _typo_of
+        from scanner import ERROR, WARNING, INFO, _close, _typo_of, _js_bracket_problem
         sc = self.sc
         sets, uses, first = collections.Counter(), collections.Counter(), {}
         inserts = sorted(CHAPBOOK_INSERTS)
@@ -224,6 +313,12 @@ class Chapbook:
                         off = body_start + mm.start()
                         sc.add(WARNING, 'Unknown macros', f'Unknown modifier [{mod}]', p, off, snippet=sc.snippet_at(p, off),
                                what=f'"{word}" is not a Chapbook modifier. Did you mean "{near}"?', fix=f'Change it to [{near} ...].')
+                if word == 'javascript':
+                    end = re.search(r'^\[', body[mm.end():], re.M)
+                    prob = _js_bracket_problem(body[mm.end():mm.end() + end.start()] if end else body[mm.end():])
+                    if prob:
+                        sc.add(ERROR, 'JavaScript', f'Script code problem: {prob[1]}', p, body_start + mm.start(), snippet=sc.snippet_at(p, body_start + mm.start()),
+                               what='The JavaScript in this [javascript] part has an unclosed or extra bracket or quote.', fix='Check the brackets and quotes.')
                 if word in ('if', 'unless') and re.search(r'(?<![=!<>])=(?![=>])', mod):
                     off = body_start + mm.start()
                     sc.add(ERROR, 'Conditions', 'Single "=" inside a condition', p, off, snippet=sc.snippet_at(p, off),
@@ -262,6 +357,11 @@ class Snowman:
             if prob:
                 sc.add(ERROR, 'JavaScript', f'Script code problem: {prob[1]}', p, snippet=code[max(0, prob[0] - 60):prob[0] + 60],
                        what='The JavaScript inside <% %> has an unclosed or extra bracket or quote.', fix='Check the brackets and quotes.')
+            for m in re.finditer(r'<%[^%]*?\bif\s*\(((?:[^()]|\([^()]*\))*?)\)', t):
+                if re.search(r'(?<![=!<>])=(?![=>])', _strip_strings(m.group(1))):
+                    sc.add(ERROR, 'Conditions', 'Single "=" inside a condition', p, m.start(), snippet=sc.snippet_at(p, m.start()),
+                           what='"=" sets the variable instead of comparing it, so the condition is almost always true and the value changes.',
+                           fix='Use "===" to compare, e.g. if (s.gold === 5).')
             for m in re.finditer(r'\b(?:s|story\.state)\.([A-Za-z_]\w*)\s*(=(?!=)|\+=|-=|\+\+|--)', t):
                 sets[m.group(1)] += 1
             for m in re.finditer(r'\b(?:s|story\.state)\.([A-Za-z_]\w*)', t):
